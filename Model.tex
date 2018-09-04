@@ -1,0 +1,149 @@
+\chapter{Double QD coupled to a Majorana Bound State}
+
+\begin{figure}[bh]
+\includegraphics[scale=0.4]{IMAGES/2Dot-chain.eps}\caption{\label{Fig_2QD-Majorana} Two Qds ($a$ \& $b$) coupled to a TS sustaining
+a Majorana Bound State(MBS) at the edge. To the other side they are
+coupled to a methallic reservoir where conductivity is measured. }
+
+
+\end{figure}
+
+
+We now intend to study the transport properties through two QDs that
+are coupled to a topological superconducting (TS) chain sustaining
+a Majorana Bound State (MBS) as it is observe in \ref{Fig_2QD-Majorana}.
+In \prettyref{sec:The-Numerical-Renormaliztion} we saw how the NRG
+code can be applied to study the physics of transport through a QD.
+In our case, we can set-up a similar Anderson-model to the one used
+in \ref{eq:hamB0} taking
+
+\[
+H=H_{TS-2QDs}+H_{lead}+H_{int}=H_{M-QDs}+\sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}+\sum_{il\sigma}V_{il}c_{\mathbf{k}\sigma l}^{\dagger}d_{i\sigma}+V_{il}^{*}d_{i\sigma}^{\dagger}c_{\mathbf{k}\sigma l}.
+\]
+
+
+with the new index $i\in\{1,2\}$ summing over both dots and $H_{TS-2QDs}$
+representing the initial Hamiltonian system, which couples the two
+Qds $\left(d_{1\sigma}^{\dagger},d_{2\sigma}^{\dagger}\right)$ with
+the superconducting wire. The hamiltonian $H_{TS-2QDs}$ can be be
+divided in three components
+
+\[
+H_{TS-2QDs}=H_{2QDs}+H_{int}+H_{TS}=H_{d_{i}}+\sum_{\sigma}\left(td_{1\sigma}^{\dagger}d_{2\sigma}+t^{*}d_{1\sigma}^{\dagger}d_{2\sigma}\right)+H_{int}+H_{TS}
+\]
+
+
+where $H_{d_{i}}$is the QD hamiltonian for dot $i$ \prettyref{eq:DotHam}
+,$t$ is the hopping term between both dots, $H_{int}$is the dot-TS
+interaction and $H_{TS}$ is the TS-hamiltonian . In \citep{vernek_subtle_2014},
+the TS is modeled as a Kitaev chain \citep{kitaev_unpaired_2001}
+and $H_{int}$ is the hopping interaction between dots and chain 
+
+\begin{eqnarray}
+H_{TS} & = & -\sum_{j=1}^{N}\mu a_{j}^{\dagger}a_{j}+\sum_{j=1}^{N-1}\left[-t'(a_{j}^{\dagger}a_{i+1}+a_{j+1}^{\dagger}a_{j})+\Delta a_{j}a_{j+1}+\Delta^{*}a_{j+1}^{\dagger}a_{j}^{\dagger}\right]\nonumber \\
+H_{int} & = & \sum t_{i}d_{i\downarrow}^{\dagger}a_{1}+t_{i}^{*}a_{1}^{\dagger}d_{i\downarrow},\label{eq:Kitaev-dot}
+\end{eqnarray}
+
+
+where $a_{j}^{\dagger}$is the creation operator at site $j$ of the
+chain, $t'$ is the hopping term between consecutive sites, $\Delta$
+is the superconducting gap and $t_{i}$ is the hopping interaction
+between the dot $i$ and the first site of the chain. We also assume
+the dot only interact with spin-down $\downarrow$ operators in the
+chain. \\
+
+Using a Green's function approach on \prettyref{eq:Kitaev-dot} ,
+\citet{vernek_subtle_2014} concludes that the Majorana mode at the
+end of the chain leaks inside the QD when the TS is in the topological
+phase . This fact favors a more simple effective model that has been
+used in literature for simulation QD-TS interactions \citep{liu_detecting_2011,golub_kondo_2011,lee_kondo_2013}.
+The model consists in considering only the coupling between the dots
+and the Majorana modes that emerge in the topological phase. The resulting
+hamiltonian is 
+
+\begin{eqnarray}
+H_{TS} & = & 2\epsilon_{m}\gamma_{1}\gamma_{2}\nonumber \\
+H_{int} & = & \sum_{i}t_{i1}\left(d_{i\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{i\downarrow}\right)+it_{i2}\left(d_{i\downarrow}^{\dagger}\gamma_{2}+\gamma_{2}d_{i\downarrow}\right),\label{eq:Majorana-ham}
+\end{eqnarray}
+
+
+where $\gamma_{1,2}$are the two majorana operators and$t_{i1,2}$
+are the hopping terms between the majoranas and the QDs.
+
+The fidelity of this new model has been discussed by \citet{ruiz-tijerina_interaction_2015}
+concluding that the majorana effective hamiltonian reproduces the
+same results than the Kitaev chain model in the topological phase
+(This statement is true even for more realistic models of the TS that
+include Rashba spin-orbit interactions and a Zeeman field \citep{ruiz-tijerina_interaction_2015}
+).\\
+
+We now want to come back to a fermionic model, which was broken with
+the introduction of majorana operators in the hamiltonian \prettyref{eq:Majorana-ham}.
+For this we just need to replace the majorana operators $\gamma_{i}$
+with their corresponding fermion operator
+
+\[
+f_{\downarrow}^{\dagger}=\frac{1}{\sqrt{2}}\left(\gamma_{1}-i\gamma_{2}\right)\ ,\ f_{\downarrow}=\frac{1}{\sqrt{2}}\left(\gamma_{1}+i\gamma_{2}\right)
+\]
+
+
+so that 
+
+\[
+\gamma_{1}=\frac{1}{\sqrt{2}}\left(f_{\downarrow}^{\dagger}+f_{\downarrow}\right)\ ,\gamma_{2}=\frac{1}{i\sqrt{2}}\left(f_{\downarrow}^{\dagger}-f_{\downarrow}\right).
+\]
+
+
+Supposing $t_{i1}=\left|t_{i1}\right|$ and $t_{i2}=\left|t_{i2}\right|e^{i\phi_{i}}$
+to have a $\phi_{i}$-phase with respect to $t_{i1}$, we get to the
+following hamiltonian 
+
+\begin{eqnarray*}
+H_{TS} & = & 2\epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}-\epsilon_{m}\\
+H_{int} & = & \sum_{i}\tilde{t_{i-}}d_{i\downarrow}^{\dagger}f_{\downarrow}+\tilde{t_{i-}}^{*}f_{\downarrow}^{\dagger}d_{i\downarrow}+\tilde{t_{i+}}d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\tilde{t_{i+}}^{*}f_{\downarrow}d_{i\downarrow}
+\end{eqnarray*}
+
+
+with $\tilde{t}_{i\pm}=\frac{1}{\sqrt{2}}\left(\left|t_{i1}\right|-i\left|t_{i1}\right|e^{i\phi_{i}}\right).$
+Therefore the final model for our initial hamiltonian is 
+
+\begin{eqnarray}
+H_{TS-2QDs} & = & H_{d_{i}}+\sum_{\sigma}\left(td_{1\sigma}^{\dagger}d_{2\sigma}+t^{*}d_{1\sigma}^{\dagger}d_{2\sigma}\right)\nonumber \\
+ &  & \ \enskip\ \enskip+\sum_{i}\left[\tilde{t_{i-}}d_{i\downarrow}^{\dagger}f_{\downarrow}+\tilde{t_{i-}}^{*}f_{\downarrow}^{\dagger}d_{i\downarrow}+\tilde{t_{i+}}d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\tilde{t_{i+}}^{*}f_{\downarrow}d_{i\downarrow}\right]+2\epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}-\epsilon_{m}.\label{eqFinalMJ-2QDs}
+\end{eqnarray}
+
+
+The dimensionality of this system is $4\times4\times2=32.$ Again
+we can write this hamiltonian by blocks using the preserved symmetries.
+This time we can observe that the number of $\uparrow$-particles
+$\left(N_{\uparrow}\right)$ is preserved in \ref{eqFinalMJ-2QDs},
+but it is not for $\downarrow$-particles due to the terms $\left(d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger},\ f_{\downarrow}d_{i\downarrow}\right)$.
+However, the parity of $\downarrow$-particle $\left(P_{\downarrow}\right)$
+is always preserved since $\left(d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger},\ f_{\downarrow}d_{i\downarrow}\right)$
+create or annihilate $2$-particles in the system. 
+
+The final computations for $H_{TS-2QDs}$ in terms of the $N_{\uparrow},P_{\downarrow}$-symmetry
+can be found in \prettyref{chap:Double-Dot-Majorana-Hamiltonian.}.
+Setting $H_{-1}=H_{TS-2QDs}$ we can use the NRG algorithm \prettyref{eq:NRG-Iteration Hamiltonians}
+to iteratively diagonalize this hamiltonian by 
+
+\[
+H_{N+1}=\Lambda^{\frac{1}{2}}\left[H_{N}+\frac{1}{2}\left(1+\Lambda^{-1}\right)\xi_{N}\left(f_{N\sigma}^{\dagger}f_{N+1,\sigma}+f_{N+1\sigma}^{\dagger}f_{N\sigma}\right)\right]\ \mbox{for \ensuremath{N\geq0}}.
+\]
+
+
+At $N=-1$ the equation above won't work since there are two QDs coupled
+with the leads. The answer to this problem is simply to define constants
+$\xi_{0i}$ that characterizes the coupling between dot $i$ and the
+first opperator $f_{0}^{\dagger}.$ Thus we obtain 
+
+\[
+H_{0}=\Lambda^{\frac{1}{2}}\left[H_{-1}+\frac{1}{2}\left(1+\Lambda^{-1}\right)\sum_{i}\xi_{i0}\left(i_{i\sigma}^{\dagger}f_{0,\sigma}+f_{0\sigma}^{\dagger}d_{i\sigma}\right)\right]\ \mbox{for \ensuremath{N\geq0}}.
+\]
+
+
+This idea completes the NRG algorithm for the $2$QD-TS model coupled
+to metallic lead. An NRG extension of the code developed by my thesis
+advisor has been implemented \footnote{The code can be found in \url{https://github.com/cifu9502/nrgcode}}
+and it is now in the error-correction stage. We hope for a rapid correction
+of these errors to start running the program. 

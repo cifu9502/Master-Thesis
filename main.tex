@@ -1,0 +1,223 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english,msc,oneside]{ubcthesis}
+\usepackage{mathptmx}
+\usepackage{helvet}
+\renewcommand{\ttdefault}{cmtt}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,lmargin=3.5cm,rmargin=3.5cm}
+\usepackage{color}
+\usepackage{babel}
+\usepackage{prettyref}
+
+\usepackage{float}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{esint}
+\usepackage[numbers]{natbib}
+
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 1},backref=section,colorlinks=true]
+ {hyperref}
+\usepackage{cleveref}
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+
+\let\pr@chap=\pr@cha
+%% A simple dot to overcome graphicx limitations
+\newcommand{\lyxdot}{.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\usepackage{enumitem}		% customizable list environments
+\newlength{\lyxlabelwidth}      % auxiliary length 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+
+\usepackage{afterpage}
+
+\usepackage{float}
+
+%\usepackage{alltt}
+
+\usepackage{longtable}
+
+\usepackage{graphicx}
+
+\usepackage{lscape}
+
+%\usepackage[numbers,sort&compress]{natbib}
+
+\usepackage{psfrag}
+\usepackage{multicol}
+
+%\usepackage[hypertex,final=true,unicode=true, pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,breaklinks=true,pdfborder={0 0 1},backref=true,colorlinks=true,citecolor=black, filecolor=black, linkcolor=black, urlcolor=black]{hyperref}
+\usepackage{hyperref}
+\usepackage{caption}
+\captionsetup[figure]{font=small}
+
+\hypersetup{
+hypertex=true,
+unicode=true, pdfusetitle,
+bookmarks=true,
+bookmarksnumbered=false,
+bookmarksopen=true,
+breaklinks=true,
+pdfborder={0 0 1},
+backref=true,
+colorlinks=true,
+citecolor=black,
+filecolor=black,
+linkcolor=black,
+urlcolor=black
+}
+
+% These commands are optional.  The defaults are shown.  You only
+% need to include them if you need a different value
+\institution{Universidade de S\~ao Paulo}
+
+% If you are at the Okanagan campus, then you should specify these
+% instead.
+%\faculty{The College of Graduate Studies}
+%\institutionaddress{Okanagan}
+\faculty{Instituto de F\'isica}
+\institutionaddress{ R. do Mat\~ao, 1371 - Butant\~a, S\~ao Paulo}
+
+% You can issue as many of these as you have...
+%\previousdegree{B.Sc., The University of British Columbia, 1999}
+%\previousdegree{M.Sc., The University of British Columbia, 2001}
+%\previousdegree{Ph.D., Massachusetts Institute of Technology, 2005}
+
+% You can override the option setting here.
+% \degreetitle{Jack of All Trades}
+
+% These commands are required.
+\title{Indirect exchange and Kondo interactions in Majorana-double quantum dot systems.}
+%\subtitle{Master Thesis}
+\author{Jes\'us David Cifuentes Pardo}
+\copyrightyear{2017}
+\submitdate{\today}
+
+\program{Condensed Matter Physics}
+
+% These commands are presently not required for UBC theses as the
+% advisor's name and title are not presently required anywhere.
+%\advisor{Ariel R.~Zhitnitsky}
+%\advisortitle{Professor of Physics}
+
+% One might want to override the format of the section and chapter
+% numbers.  This shows you how to do it.  Note that the current
+% format is acceptable for submission to the FoGS: If you wish to modify
+% these, you should check with the FoGS explicity. prior to making
+% the modifications.
+\renewcommand\thepart         {\Roman{part}}
+\renewcommand\thechapter      {\arabic{chapter}}
+\renewcommand\thesection      {\thechapter.\arabic{section}}
+\renewcommand\thesubsection   {\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+\renewcommand\theparagraph    {\thesubsubsection.\arabic{paragraph}}
+\renewcommand\thesubparagraph {\theparagraph.\arabic{subparagraph}}
+
+% Following now set in LyX
+%\setcounter{tocdepth}{2}
+%\setcounter{secnumdepth}{2}
+
+% Here is an example of a "Program" environment defined with the
+% "float" package.  The list of programs will be stored in the file
+% ubcsample.lop and the numbering will start with the chapter
+% number.  The style will be "ruled".
+\floatstyle{ruled}
+\newfloat{Program}{htbp}{lop}[chapter]
+\AtBeginDocument{%
+\let\ref\autoref
+\renewcommand\equationautorefname{\@gobble}
+}
+
+\@ifundefined{showcaptionsetup}{}{%
+ \PassOptionsToPackage{caption=false}{subfig}}
+\usepackage{subfig}
+\makeatother
+
+
+
+\newcommand{\nhat}{\hat{n}}
+\newcommand{\veck}{\textbf{k}}
+\newcommand\ep{\epsilon}
+\newcommand\g{\gamma}
+\newcommand\s{\sigma}
+\newcommand\up{\uparrow}
+\newcommand\dw{\downarrow}
+\newcommand\down{\downarrow}
+\newcommand{\ed}[1]{\ep_{d#1}}
+\newcommand{\ket}[1]{\vert #1 \rangle}
+\newcommand{\ann}{a^{\dagger}}
+\newcommand{\dann}{d^{\dagger}}
+\newcommand{\gammaA}[1]{\gamma_{A,#1}}
+\newcommand{\gammaB}[1]{\gamma_{B,#1}}
+%\newcommand{\bra}[3]{\langle {#3} \vert}
+
+\newcommand{\super}{\vert \Delta \vert}
+
+\begin{document}
+\mainmatter
+\maketitle
+\begin{abstract}
+The interesting prospect of creating devices that could realize quantum
+computation operations by exploring the non-Abelian character of Majorana
+quasiparticles has spurred the so-called \textquotedblleft search
+for Majorana fermions\textquotedblright{} in condensed matter systems
+\citep{kitaev_unpaired_2001}. As recently as 2012, experimental works
+reporting the detection of such quasiparticles have been put forward
+\citep{alicea_majorana_2010,alicea_new_2012}. Later works \citep{liu_detecting_2011,lee_kondo_2013,vernek_subtle_2014,deng_majorana_2016},
+including a recent paper published by the advisor of this dissertation
+and collaborators \citep{ruiz-tijerina_interaction_2015}, set out
+to explore the interplay of such Majorana zero-modes with strongly
+interacting systems such as semiconductor quantum dots, which can
+be readily integrated in the device. This research project aims to
+expand these interesting connections by studying a double quantum
+dot coupled to metallic leads and to a topological superconductor
+supporting edge Majorana zero modes. The interplay of Kondo correlations
+(between each dot and the leads), exchange interaction (between the
+dots) and Kondo-Majorana interaction (between the dot and the Majorana
+modes) will be investigated. The work involves the numerical calculation
+of the many-body spectrum of the system with Wilson\textquoteright s
+Numerical Renormalization Group (NRG) technique.
+\begin{description}
+\item [{}]~{\small \par}
+\end{description}
+\end{abstract}
+
+
+
+
+%\tableofcontents{}
+\include{Intro}
+\include{Preliminars}
+%\include{Majorana}
+\include{Model}
+\include{NResults}
+
+
+
+
+
+
+
+\bibliographystyle{unsrtnat}
+\addcontentsline{toc}{section}{\textbf{References}}
+\bibliography{master,Majorana-QD,Kitaev-Majorana,Kondo}
+\appendix
+%dummy comment inserted by tex2lyx to ensure that this paragraph is not empty
+\include{Abstract_A}
+\include{AbstractB}
+% Indices come here.
+
+\end{document}
