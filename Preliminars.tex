@@ -1,12 +1,10 @@
 \chapter{Preliminaries}
 
-
-
-
+%-------------------------------------------------------------
+%Here goes the introduction of transport between quantum dots. stil need to add important considerations like the smooth varying DOS. Not so discrete. 
+%Assumption: 
+%   1-Only the level immediately at the bottom of the fermi       level is considered
 \section{Transport in Quantum Dots (QDs)}
-
-
-
 Quantum mechanical effects are visible when the system size is of
 the order of the de Broglie wavelength \citep[(1.1)]{bimberg_quantum_1999}
 \[
@@ -20,7 +18,7 @@ A device confined in the three dimensions up to this length-scale
 will present the behavior of a $0$D quantum system, which is what
 we call a Quantum Dot (QD).\\
 
-Nowadays there exist several methods for manufacturing QDs \citep{bimberg_quantum_1999}.
+Nowadays there are several methods for manufacturing QDs \citep{bimberg_quantum_1999}.
 One of them can be observed in \ref{QD} where 2 QDs are defined by
 metallic gates on top of a semiconductor structure. Between the gates
 a $2$-dimensional electron gas (2DEG) forms. A negative voltage is
@@ -56,17 +54,20 @@ H\Psi(r)=\left(\frac{\hbar^{2}}{2m^{*}}\nabla^{2}+V(r)\right)\Psi(r)\ ,\ \textrm
 \]
 
 
-An analysis of this potential will verify this discretization an shows
-the energy level spacing \citep[Equation (5.44)]{bimberg_quantum_1999}
+The 
+the energy level spacing is  \citep[Equation (5.44)]{bimberg_quantum_1999}
 
 \[
 \delta E\propto\frac{1}{R^{2}}.
 \]
 
 
+
+%------------------------------------------------------------
+\subsection{The Anderson Model}
+
 For more electrons, due to the small spatial confinement, the coulomb
-repulsion inside the dot is important. There are also spin-spin interactions
-between different electrons. Hence, using the Hunds rule we know that
+repulsion inside the dot is important. We also consider that the system is interacting. Hence, using the Hunds rule we know that
 the energy levels should be filled from lower to higher energies with
 two electrons with different spin at each state. Taking in account
 all these interactions we can get to a second quantization QD-Hamiltonian
@@ -132,468 +133,118 @@ This hamiiltonian is a particular case of a more general theory for
 impurities in metals known as the Anderson model \citep{anderson_localized_1961}.
 
 
-\section{The Numerical Renormalization Group\label{sec:The-Numerical-Renormaliztion} }
+%------------------------------------------------------------
+\section{Kondo Effect}
 
-The big problem of the Anderson model is that the states in the leads
-in general depend on a (quasi)continuum set of crystal momentums $\mathbf{k}$
-and therefore one should consider a wide range of energies up to a
-high energy cutoff. The idea that G.Wilson uses to solve this problem
-is called the Numerical Renormalization Group \citep{bulla_numerical_2008,wilson_renormalization_1975,krishna-murthy_renormalization-group_1980}
-and consists of two basic steps :
+In the early 30s the physicist where intrigued by the observation of a resistance minimum in some metals at low temperatures $(\sim 10K)$ \cite{sindel_numerical_2005} . The phenomenon received the name of Kondo effect \citep{hewson_kondo_1997}. This effect is attributed to the electron-scattering with the magnetic impurities present in the materials. 
+
+Using perturbation theory is possible to explain how this spin flip produces a  temperature dependent effect which  introduces an additional logarithmic term to the resistivity of the form
+
+\begin{equation}
+\rho_{Kondo}(T) \propto \ln{\left( \frac{T_{kondo}}{T} \right)},
+\label{logKondo}
+\end{equation}
+
+
+
+which occurs due to the spin-flip between the particles in the impurity and in the reservoir. The entire resistivity including  and 
+
+We can seen that under the scale of temperature defined by $T_k$ the Kondo effect dominates over all other interactions. However, there is a fundamental problem in the Kondo model. For temperatures much smaller than $T_K$ the resistivity diverges. This problem is solved by applying a re-normalization group approach to treat the strong correlations appearing at low temperatures. In the Kondo problem a logarithmic discretization is used. The numerical procedure receives the name of Numerical renormalization Group (NRG). 
+
+
+\subsection{Kondo Effect in QDs}
+
+
+The problem of magnetic impurities in metals can be treated using the Anderson model in a similar form as the transport
+ in quantum dots. Hence, it is not a surprise that Kondo Effect could also occur in QDs. When an odd number of electrons is in the QD the last level bellow the Fermi energy is half-occupied and hence the dot is magnetized. The unlocalized electrons in the reservoirs then interact with this localized electron . Spin-flip can occur as in the case of  magnetic impurities in metals. At low temperatures, this magnetic  interaction gives rise to strong quantum correlations that favor the formation of a singlet state between the localized electron and the electrons in the leads. As a result, the zero-bias density of states is increased producing a zero-bias conductance peak. \\
+
+Note that the physical implications of the Kondo effect  between the case of magnetic impurities in metals and transport through QD are different. The reason for this is difference in the dimension in both processes . While the scattering at 3D systems against magnetic impurities should produce a drop in the conductivity at low temperatures, the scattering in 0D systems enhances the conductivity of the QD due to the few scattering directions. This implies that the Kondo Effect in QDs acts in the opposite way as in the impurity case. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% The next part of thess preliminaries will be to compute the conductivity
+% through the QD as a function of the gate voltage.
+% In regular metals the Kondo effect manifests as a drop in conductivity
+% under a certain Kondo temperature $(T_{Kondo})$ due to spin- scattering
+% between the conduction electrons and the impurities of the material.
+% The Anderson models, hence the NRG, are the perfect tools to study
+% the physics of impurieties. Thus the computations we previously developed
+% in this chapter will provide the right formalism to introduce the
+% Kondo physics. This study will be an important part of the prelimiraries
+% in the final document. 
+
+
+
+%-----------------------------------------------------------
+
+\section{Majorana Fermions}
+
+The  Majorana Fermions, so called in the name of the Italian physicist Ettore Majorana, where first defined in the attempt to find a real solution of the Dirac equation. The real field that solves this equation $\Psi_M$ , describes a fermion which is its own antiparticle. Hence it has no electric charge nor mass.  Till these days, no fundamental particle with these characteristics has been observed. However, in the last few years, there has been a huge speculation about the possibility of finding Majorana Fermions as a quasiparticle inside certain condensed matter systems. 
+
+One of the most famous examples of these systems is the Kitaev chain which is the main objective of the this subsection. 
+
+
+\subsection{The Kitaev Chain}
+The Kitaev chain is a toy model in tight binding that represents a  finite $p$-wave superconducting wire. The main Hamiltonian is given by 
+\begin{equation}
+H = \sum_{i} \left[ -t(a_i^{\dagger} a_{i+1} + a_{i+1}^{\dagger}a_i) -\mu a_i^{\dagger} a_{i} +  \Delta a_{i}a_{i+1} + \Delta^* a_{i+1}^{\dagger}a_i^{\dagger} \right].  \label{eq:kitaevHam}
+\end{equation}
+
+Where $\mu$ is the chemical potential, so that $\mu a_i^{\dagger} a_{i}$ is the energy associated to each free state. $t(a_i^{\dagger} a_{i+1} + a_{i+1}^{\dagger}a_i)$ represents the interaction between neighbouring sites which is determined by the hopping term $t$. The remaining terms describe the superconducting properties of the system as is is established by the BCS theory of superconductivity. $\Delta$ is a complex superconducting parameter with the form  $\Delta = e^{i\theta} \super$. The associated terms represent the Cooper pairs which can be created or annihilated at neighbouring sites of the system.
+
+The form of hamiltonian \prettyref{eq:kitaevHam} favors the possibility of introducing new operators $\gammaA{j}$ and $\gammaB{j}$ such that
+
+\begin{equation}
+\gammaA{j} = e^{i\theta /2}a_j+ e^{-i\theta/2 } \ann_j \ \ , \ \ \gammaB{j} = -i(e^{i\theta /2}a_j - e^{-i\theta/2} \ann_j).
+\label{eq:majoranaTrans}
+\end{equation}
+It is simple check that these operators are self-adjoint $(\gammaA{j}^\dagger = \gammaA{j}, \gammaA{j}^\dagger = \gammaB{j})$. This is a required constraint for the Majorana particles. In addition they satisfy the fermionic anti-commutation relations
+\begin{equation}
+\begin{aligned}
+\{\gammaA{i}, \gammaA{j}\} = \{ & \gammaB{i} , \gammaB{j}\} = 2\delta_{ij}  ,\\ 
+  \{\gammaA{i}, \gammaB{j} & \} =0.
+\end{aligned} 
+\label{majoranaRel}
+\end{equation} 
+This allows us to understand the operators $\gammaA{i} , \gammaB{i}$ as majorana fermions. If we also take the inverse of \prettyref{eq:majoranaTrans} we obtain that each  (Dirac) fermion in Hamiltonian \eqref{eq:kitaevHam} is composed by two majorana fermions such that 
+$$a_j = \frac{e^{-i\theta/2}}{2}(\gammaA{j}+ i\gammaB{j})$$
+We could even adventure to say that these majorana operators are actually dividing the Dirac fermions into real($\gammaA{}$) and imaginary $(\gammaB{})$ part ,the same way as complex numbers are a composite of two real numbers. 
+
+The new Kitaev Hamiltonian in the Majorana representation looks like 
+
+\begin{equation}
+H = \frac{i}{2} \sum_{j} \left[ -\mu \gammaA{j}\gammaB{j}  + (t- \super) \gammaB{j}\gammaA{j+1} + (t+ \super) \gammaA{j}\gammaB{j+1} \right]+Const,\label{eq:HamMajorana}
+\end{equation}
+
+Depending on the values of parameters $\mu, t$ and $\super$ we can identify two regimes represented by the following situations:
+
+
+%\begin{figure}[t]
+%$$\includegraphics[scale=0.5]{KitaevtopPhases.jpg}
+%\centering
+%\label{top.phases kitaev}
+%\caption{{\small \textit{Taken from \cite{bernevig2015topological}. Ilustration of the Kitaev chain for open boundary conditions in the Majorana representation. a)Represents the trivial case where the hopping and the superconducting term approaches to $0$. b) The non-trivial topological phase. The coupling is produced between Majoranas in different Dirac fermions }}}
+%\end{figure}
+
+
 \begin{enumerate}
-\item Discretization the energy spectrum in logarithmic intervals. The information
-is kept in discrete set of quantum states. 
-\item Mapping the discretized model onto a semi-infinity chain and performing
-iterative diagonalization. 
+\item{If $\super = t = 0, \mu <0$} Hamiltonian \eqref{eq:HamMajorana} becomes $\frac{-i\mu}{2} \sum_{j} \gammaA{j}\gammaB{j}$ which represents the coupling of the Majoranas in the same Dirac fermion. (See figure \ref{top.phases kitaev} (a))
+
+\item{If $\super = t > 0, \mu =0$} the situation is much more interesting. The Hamiltonian \eqref{HamMajorana} takes the form $H = 2ti\sum_{j} \gammaA{j}\gammaB{j+1}$. This implies that the coupling is performed between  Majoranas of different Dirac fermions leaving the edge Majorana operators ($\gammaA{1}$ and $\gammaA{2}$) uncoupled . This produces a new degeneracy in the ground state due to the emergence of a state produced by the uncoupled Majorana operators. The new state is localized at the edges of the chain.(See figure \ref{top.phases kitaev} (b)) 
 \end{enumerate}
-This procedure will finally give the low spectrum of the Hamiltonian.
-Other important properties of the material such as conductivity, specific
-heat, susceptibility, etc ... can also be computed during the iterative
-diagonalization. \\
 
-We know proceed to describe step by step how the NRG is applied to
-solve the Anderson model in a QD:\\
 
-\subsubsection{Logarithmic Discretization:}
-
-We start with an Anderson model hamiltonian such as the one we have
-in \prettyref{eq:Anderson} without magnetic field
-
-\begin{equation}
-H=H_{d}+H_{lead}+H_{int}=\sum_{\sigma}\epsilon_{d}d_{\sigma}^{\dagger}d_{\sigma}+U\hat{n}_{\uparrow}\hat{n}_{\downarrow}+\sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}+V_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}d_{\sigma}+V_{\mathbf{k}l}^{*}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma l}.\label{eq:hamB0}
-\end{equation}
-
-
-Using the anti-commutation properties of the fermion operators 
-\[
-\left\{ d_{\sigma}^{\dagger},d_{\sigma'}\right\} =\delta_{\sigma\sigma'}\ ,\ \left\{ d_{\sigma}^{\dagger},d_{\sigma'}^{\dagger}\right\} =\left\{ d_{\sigma},d_{\sigma'}\right\} =0
-\]
-we observe $\left(d_{\sigma}^{\dagger}d_{\sigma}\right)^{2}=d_{\sigma}^{\dagger}d_{\sigma}d_{\sigma}^{\dagger}d_{\sigma}=d_{\sigma}^{\dagger}d_{\sigma}(1-d_{\sigma}d_{\sigma}^{\dagger})=d_{\sigma}^{\dagger}d_{\sigma}$,
-so that 
-\begin{eqnarray*}
-\left(d_{\up}^{\dagger}d_{\up}+d_{\down}^{\dagger}d_{\down}-1\right){}^{2} & = & \sum_{\sigma}\left(d_{\sigma}^{\dagger}d_{\sigma}\right)^{2}-2\sum_{\sigma}d_{\sigma}^{\dagger}d_{\sigma}+2d_{\up}^{\dagger}d_{\up}d_{\down}^{\dagger}d_{\down}-1\\
- & = & 2d_{\up}^{\dagger}d_{\up}d_{\down}^{\dagger}d_{\down}-\sum_{\sigma}d_{\sigma}^{\dagger}d_{\sigma}-1
-\end{eqnarray*}
-
-
-Hence we obtain a nicer spin-symmetric form of hamiltonian \prettyref{eq:hamB0} 
-
-\begin{equation}
-H=\frac{U}{2}+\sum_{\sigma}\left[\left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\sum_{\mathbf{k}}\ep_{\mathbf{k}}c_{\mathbf{k}\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\mathbf{k}}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\mathbf{k}}^{*}c_{\mathbf{k}\sigma}^{\dagger}d_{\sigma}\right].\label{HamWilson}
-\end{equation}
-
-
-At this point we do the assumption that the Fermi surface is contained
-in a single, isotropic conduction band extending in energy inside
-the cutoffs $-D$ and $D$. This treatment corresponds to a low-energy
-approximation where the QD couples only to s-wave states in the leads\citep{krishna-murthy_renormalization-group_1980}.
-In this case $\epsilon_{\mathbf{k}}$ only depends on $\left|\mathbf{k}\right|$,
-so that it is possible to transform the sum over $\mathbf{k}$ in
-equation \ref{HamWilson} into an integral over $\epsilon$ between
-the energy cutoffs
-\begin{eqnarray}
-H & =\sum_{\sigma} & \Biggl[\left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\int_{-D}^{D}\mbox{d}\epsilon\ \epsilon c_{\epsilon\sigma}^{\dagger}c_{\epsilon\sigma}\nonumber \\
- &  & \qquad\qquad\qquad\qquad\qquad\qquad+\int_{-D}^{D}\sqrt{\rho_{\sigma}(\epsilon)}\mbox{d}\epsilon\ V_{\epsilon}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\epsilon}^{*}c_{\epsilon\sigma}^{\dagger}d_{\sigma}\Biggr],\label{eq:hamEnergy}
-\end{eqnarray}
-
-
-where $c_{\epsilon\sigma}^{\dagger}$ creates an electron with energy
-$\epsilon$ and $\rho_{\sigma}(\epsilon)$ is the density of states
-of the system per spin, which appears in the integral due to the change
-of variable from $\mathbf{k}$ to $\epsilon\propto\left|\mathbf{k}\right|^{2}.$
-Finally, we ignore the energy dependence of $\rho$ and $V_{d}$ and
-we replace them by their values in the Fermi energy (This approximation
-has no great relevance which is justified in \citep{krishna-murthy_renormalization-group_1980})
-and we renormalize the energy band doing the replacements $k=\frac{\epsilon}{D}$
-and $c_{k\sigma}:=\sqrt{D}c_{\epsilon\sigma}$ so that \prettyref{eq:hamEnergy}
-becomes
-
-\begin{eqnarray}
-H & = & D\sum_{\sigma}\Biggl[\frac{1}{D}\left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2D}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\int_{-1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma}\nonumber \\
- &  & \qquad\qquad\qquad\qquad\qquad\qquad\qquad+\sqrt{\frac{\Gamma}{\pi D}}\int_{-1}^{1}\mbox{d}k\ d_{\sigma}^{\dagger}c_{k\sigma}+c_{k\sigma}^{\dagger}d_{\sigma}\label{eq:Norm-HamEnergy}\\
- & = & H_{d}+D\sum_{\sigma}\Biggl[\int_{-1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma}+\sqrt{\frac{\Gamma}{\pi D}}\int_{-1}^{1}\mbox{d}k\ d_{\sigma}^{\dagger}c_{k\sigma}+c_{k\sigma}^{\dagger}d_{\sigma}\Biggr],
-\end{eqnarray}
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.3]{IMAGES/Log-disc.png}\caption{\label{FigDiscretization} Taken from \citep{krishna-murthy_renormalization-group_1980}.
-Energy interval discretization. \label{Energy-interval-discretization}}
-\end{figure}
-
-
-where $\Gamma=\pi\rho V^{2}$ is associated to the lever-width \citep[(3.5)]{sindel_numerical_2005}.
-At this point we have our model dependent of three unit-less constants
-$\frac{\epsilon_{d}}{D}\ ,\ \frac{U}{2D}$ and $\frac{\Gamma}{\pi D}$.
-The logarithmic discretization starts by defining an scaling parameter
-$\Lambda\geq1$ in diving the energy domain $[-1,1]$ into an array
-of intervals of the form $\{[\pm\Lambda^{-(n+1)},\pm\Lambda^{n}]\}_{n\in\mathbb{N}}$,
-as we can observe in \ref{FigDiscretization}. Note that the width
-of these intervals is decreasing exponentially by 
-\[
-d_{n}=\Lambda^{-n}\left(1-\Lambda^{-1}\right).
-\]
-
-
-Then inside of these energy intervals we can define a set of orthonormal
-Fourier series of the form
-\begin{equation}
-\phi_{np}^{\pm}(\epsilon)=\begin{cases}
-\frac{1}{\sqrt{d_{n}}}e^{\pm i\omega_{n}p\epsilon} & \epsilon\in[\pm\Lambda^{-(n+1)},\pm\Lambda^{n}]\\
-0 & \mbox{a.o.c },
-\end{cases}\label{eq:orthonormal-Fourier}
-\end{equation}
-
-
-with $\omega_{n}:=\frac{2\pi}{d_{n}}$ so that $\phi_{np}^{\pm}\left(\pm\Lambda^{-(n+1)}\right)=\phi_{np}^{\pm}\left(\pm\Lambda^{-n)}\right).$
-Then we can decompose the creation operators $c_{k}^{\dagger}$ into
-their interval-Fourier contributions as 
-\begin{equation}
-c_{k\sigma}^{\dagger}=\sum_{np}\phi_{np}^{+}(k)c_{np\sigma}^{+\dagger}+\phi_{np}^{-}(k)c_{np\sigma}^{-\dagger}\label{eq:Fourier-interval decomposition}
-\end{equation}
-
-
-with the new creation operators defined as 
-\[
-c_{np\sigma}^{\pm\dagger}:=\left(c_{np\sigma}^{\pm}\right)^{\dagger}=\int_{-1}^{1}\mbox{d}\epsilon\ \left[\phi_{np}^{+}(\epsilon)\right]^{*}c_{\epsilon\sigma}^{\dagger}.
-\]
-
-
-This decomposition \prettyref{eq:Fourier-interval decomposition}
-is a simple consequence of the orthonormality of the functions defined
-in \prettyref{eq:orthonormal-Fourier}. In addition we can readily
-proof that $c_{np\sigma}^{\pm\dagger}$-operators satisfy the anti-commutation
-relations, so that they are rightful fermionic creation operators. 
-
-We can now use \prettyref{eq:Fourier-interval decomposition} to replace
-the $k$-dependent terms in hamiltonian \prettyref{eq:Norm-HamEnergy}.
-Then we obtain
-
-\begin{eqnarray}
-\int_{-1}^{1}\mbox{d}k\ c_{k\sigma}^{\dagger}d_{\sigma} & = & \int_{-1}^{1}\mbox{d}k\ \left(\sum_{np}\phi_{np}^{+}(k)c_{np\sigma}^{+\dagger}+\phi_{np}^{-}(k)c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
- & = & \left(\sum_{np}\left(\int_{-1}^{1}\mbox{d}k\ \phi_{np}^{+}(k)\right)c_{np\sigma}^{+\dagger}+\left(\int_{-1}^{1}\mbox{d}k\ \phi_{np}^{-}(k)\right)c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
- & = & \left(\sum_{np}\left(\int_{\Lambda^{-(n+1)}}^{\Lambda^{-n}}\mbox{d}k\ \frac{e^{i\omega_{n}pk}}{\sqrt{d_{n}}}\right)c_{np\sigma}^{+\dagger}+\left(\int_{-\Lambda^{-n}}^{-\Lambda^{-(n+1)}}\mbox{d}k\ \frac{e^{-i\omega_{n}pk}}{\sqrt{d_{n}}}\right)c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
- & = & \left(\sum_{np}\sqrt{d_{n}}\delta_{p}c_{np\sigma}^{+\dagger}+\sqrt{d_{n}}\delta_{p}c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
- & = & \sqrt{1-\Lambda^{-1}}\sum_{n}\Lambda^{-\frac{n}{2}}\left(c_{np\sigma}^{+\dagger}+c_{np\sigma}^{-\dagger}\right)d_{\sigma}.\label{eq:firt-Integral}
-\end{eqnarray}
-
-
-And 
-
-\begin{eqnarray}
-\int_{-1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma} & = & \sum_{n,n',p,p'}\sum_{s,s'=\pm}\left(\int_{-1}^{1}k\mbox{d}k\ \phi_{np}^{s}(k)\left(\phi_{np}^{s'}(k)\right)^{*}\right)c_{np\sigma}^{s\dagger}c_{n'p'\sigma}^{s'}\nonumber \\
- & = & \sum_{n,n',p,p'}\sum_{s,s'=\pm}\left(\frac{\delta_{nn'}\delta_{ss'}}{d_{n}}\int_{\Lambda^{-(n+1)}}^{\Lambda^{-n}}k\mbox{d}k\ e^{is\omega_{n}k\left(p-p'\right)}\right)c_{np\sigma}^{s\dagger}c_{np'\sigma}^{s}\nonumber \\
- & = & \sum_{npp'}\sum_{s=\pm}\left(\frac{s}{2}\Lambda^{-2n}\left(1-\Lambda^{-2}\right)\delta_{pp'}+\frac{1-\delta_{pp'}}{is\omega_{n}\left(p-p'\right)}\left[ke^{is\omega_{n}k\left(p-p'\right)}\right]_{\Lambda^{-(n+1)}}^{\Lambda^{-n}}\right)\frac{c_{np\sigma}^{s\dagger}c_{np'\sigma}^{s'}}{d_{n}}\nonumber \\
- & = & \frac{1}{2}\left(1+\Lambda^{-1}\right)\sum_{np}\Lambda^{-n}\left(c_{np\sigma}^{+\dagger}c_{np\sigma}^{+}-c_{np\sigma}^{-\dagger}c_{np\sigma}^{-}\right)\nonumber \\
- &  & \ \ \ \ \ \ \!\ \ \ \ \!\ \ +\sum_{n}\sum_{p\neq p'}\frac{1-\Lambda^{-1}}{2i\pi\left(p'-p\right)}\left(c_{np\sigma}^{+\dagger}c_{np'\sigma}^{+}-c_{np'\sigma}^{-\dagger}c_{np\sigma}^{-}\right)e^{\frac{2i\pi\left(p-p'\right)}{1-\Lambda^{-1}}}.\label{eq:second-integral}
-\end{eqnarray}
-
-
-Thus, if we replace \prettyref{eq:firt-Integral} and \prettyref{eq:second-integral}
-into \prettyref{eq:Norm-HamEnergy} we will obtain a logarithmic discretization
-of the hamiltonian. The next part will we to map this discretization
-to an iterative process that is worth for a numerical computations. 
-
-\subsubsection{Mapping the Anderson model to a Chain-Hamiltonian}
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5]{IMAGES/NRGchain.png}\caption{\label{FigNRG-chain} Chain-Hamiltonian describing the Anderson model.
-The chain starts at the initial dot hamiltonian $H_{d}$. The $f_{m}^{\dagger}$'s
-are the creation operators at the $n^{\mbox{th}}$-site of the chain.
-The $\xi_{n}$'s describe the magnitude of the interaction between
-consecutive sites. }
-\end{figure}
-
-
-We are looking for a model just like the one we have in \ref{FigNRG-chain}.
-This is because a Chain-Hamiltonian will give an iterative approximation
-of the Anderson model with an increasing (but still controllable)
-number of degrees of freedom. This will provide the rightful structure
-for a numerical diagonalization of the hamiltonian. \\
-
-To do this, observe from equations \prettyref{eq:firt-Integral},\prettyref{eq:second-integral}
-that the QD ($d_{\sigma}$) couples directly only to the operators
-with $p=0$$\left(c_{n0\sigma}^{\pm\dagger}\right)$. The $p\neq0$
-terms will appear in the hamiltonian only because they are coupled
-to $c_{np\sigma}^{+\dagger}$ in Equation \prettyref{eq:second-integral}.
-Thus, as a first approximation we can neglect all terms in \prettyref{eq:second-integral}
-with $p\neq0$. This leaves only the first part of \prettyref{eq:second-integral},
-so that we can define $c_{n\sigma}^{\pm\dagger}:=c_{np\sigma}^{\pm\dagger}$
-. Let 
-\begin{equation}
-f_{0\sigma}^{\dagger}=\sqrt{\frac{1-\Lambda^{-1}}{2}}\sum_{n}\Lambda^{-\frac{n}{2}}\left(c_{n\sigma}^{+\dagger}+c_{n\sigma}^{-\dagger}\right),\mbox{ so that }\sqrt{2}f_{0\sigma}^{\dagger}d_{\sigma}=\int_{-1}^{1}\mbox{d}k\ c_{k\sigma}^{\dagger}d_{\sigma}.\label{eq:f_0}
-\end{equation}
-
-
-Note $\left\{ f_{0\sigma}^{\dagger},f_{0\sigma}\right\} =\frac{1-\Lambda^{-1}}{2}\sum_{n}2\Lambda^{-n}=1$.
-Replacing this in \prettyref{eq:Norm-HamEnergy}we get 
-\[
-H=H_{d}+D\sum_{\sigma}\Biggl[\sqrt{\frac{2\Gamma}{\pi D}}\left(d_{\sigma}^{\dagger}f_{0\sigma}+f_{0\sigma}^{\dagger}d_{\sigma}\right)+\frac{1}{2}\left(1+\Lambda^{-1}\right)\sum_{n}\Lambda^{-n}\left(c_{n\sigma}^{+\dagger}c_{n\sigma}^{+}-c_{n\sigma}^{-\dagger}c_{n\sigma}^{-}\right)\Biggr].
-\]
-
-
-$f_{0}^{\dagger}$will represent the first site of the chain-hamiltonian
-in \ref{FigNRG-chain} since no other term is coupled to the dot hamiltonian.
-We also have the coupling term $\xi_{0}=\sqrt{\frac{2\Gamma}{\pi D}}$.
-It is possible to obtain the following $f_{m}^{\dagger}$-operators
-by supposing a solution of the form 
-\begin{equation}
-f_{m\sigma}^{\dagger}=\sum_{n}a_{mn}^{+}c_{n\sigma}^{+\dagger}+a_{mn}^{-}c_{n\sigma}^{-\dagger}=\sum_{n}\sum_{s=\pm}a_{mn}^{s}c_{n\sigma}^{s\dagger},\label{eq:chain elements}
-\end{equation}
- such that they satisfy the anti-commutation relations 
-\[
-\left\{ f_{m\sigma}^{\dagger},f_{m\sigma}\right\} =\delta_{mm'}\delta_{\sigma\sigma'}\ ,\ \left\{ f_{m\sigma}^{\dagger},f_{m\sigma}^{\dagger}\right\} =\left\{ f_{m\sigma}^{\dagger},f_{m\sigma}^{\dagger}\right\} =0
-\]
-and 
-\begin{equation}
-\frac{1}{2}\left(1+\Lambda^{-1}\right)\sum_{n}\Lambda^{-n}\left(c_{n\sigma}^{+\dagger}c_{n\sigma}^{+}-c_{n\sigma}^{-\dagger}c_{n\sigma}^{-}\right)=\sum_{m=0}^{\infty}\Lambda^{\frac{-m}{2}}\xi_{m}\left(f_{m\sigma}^{\dagger}f_{m+1,\sigma}+f_{m+1\sigma}^{\dagger}f_{m\sigma}\right).\label{eq:final equation}
-\end{equation}
-
-
-It is possible to find a solution for this system using the formula of
-the right part of equation \ref{eq:final equation}. Since the relation
-is only given between consecutive terms $m,m+1$ and we already have
-the coefficients for $m=0$ $\left(a_{0n}^{s}=\sqrt{\frac{1-\Lambda^{-1}}{2}}\Lambda^{-\frac{n}{2}}\right).$
-Then it is possible to determine the upper coefficients in a recursive way starting
-from $m=0$. Supposing we can obtain the $m^{\mbox{th}}$-coefficients
-$(a_{mn}^{s})$ and then finding iteratively the coefficients of $m+1\ (a_{mn}^{s})$
-using the relation given by equation \prettyref{eq:final equation}.
-This provides a numerical way for obtaining the $f_{m\sigma}^{\dagger}$
-operators. In fact in our case, where we actually did important assumptions,
-the problem can be solved analytically obtaining that the final hamiltonian
-is given by 
-
-\begin{equation}
-H=H_{d}+D\sum_{\sigma}\Biggl[\sqrt{\frac{2\Gamma}{\pi D}}\left(d_{\sigma}^{\dagger}f_{0\sigma}+f_{0\sigma}^{\dagger}d_{\sigma}\right)+\frac{1}{2}\left(1+\Lambda^{-1}\right)\sum_{n=0}^{\infty}\Lambda^{\frac{-n}{2}}\xi_{n}\left(f_{n\sigma}^{\dagger}f_{n+1,\sigma}+f_{n+1\sigma}^{\dagger}f_{n\sigma}\right)\Biggr].\label{eq:chain-Hamiltonian}
-\end{equation}
-
-
-with 
-\[
-\xi_{n}=\frac{1-\Lambda^{-n-1}}{\left(1-\Lambda^{-2n-1}\right)^{\frac{1}{2}}\left(1-\Lambda^{-2n-3}\right)^{\frac{1}{2}}}.
-\]
-
-
-The formal recursive-solution of this problem can be found in \citep{bulla_numerical_2008}
-. Note that equation \prettyref{eq:chain-Hamiltonian} describes the
-chain hamiltonian model that we where looking for in \ref{FigNRG-chain}.
-Note that in the limit when $n\longrightarrow\infty$ 
-
-\[
-\Lambda^{\frac{-n}{2}}\xi_{n}\longrightarrow\frac{\Lambda^{\frac{-n}{2}}\left(1-\Lambda^{-n}\right)}{1-\Lambda^{-2n}}\sim\frac{\Lambda^{\frac{-n}{2}}}{1+\Lambda^{-n}},
-\]
-
-
-which implies an exponential decaying of the hopping term in the chain. 
-
-\subsubsection{Iterative Diagonalization}
-
-Now that we have an iterative representation of the Anderson Model
-Hamiltonian \prettyref{eq:chain-Hamiltonian}, lets take a look to
-how the NRG code would work for a QD. We start with the dot hamiltonian.
-(Since the $D$ term is always present as a normalizing factor, we
-are going to avoid this term in future computations and suppose that
-we are working with unit-less variables $\epsilon_{d},\ U$ and $\Gamma':=\sqrt{\frac{2\Gamma}{\pi D}}$
-).
-\begin{equation}
-H_{d}=\frac{1}{D}\left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2D}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}.\label{eq:DotHam}
-\end{equation}
-
-
-Now observe that hamiltonian \ref{eq:DotHam} already has a
-diagonal form in the base $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $
-\[
-H_{d}=\frac{1}{D}\left[\begin{array}{cccc}
-2\epsilon_{d}+\frac{3U}{2} & 0 & 0 & 0\\
-0 & \epsilon_{d}+\frac{U}{2} & 0 & 0\\
-0 & 0 & \epsilon_{d}+\frac{U}{2} & 0\\
-0 & 0 & 0 & \frac{U}{2}
-\end{array}\right].
-\]
-
-
-Lets define $H_{-1}=\Lambda^{\frac{-1}{2}}H_{d}.$ Adding the first
-chain interaction to $H_{d}$ we obtain a new hamiltonian of the form 
-
-\begin{equation}
-H_{0}=\Lambda^{\frac{1}{2}}H_{-1}+\Gamma'\left(d_{\sigma}^{\dagger}f_{0\sigma}+f_{0\sigma}^{\dagger}d_{\sigma}\right).\label{eq:H0fromH-1}
-\end{equation}
-
-
-The Hilbert space for this hamiltonian has to be extended to include
-the $4$ degrees of freedom of the $f_{0\sigma}^{\dagger}$ particles
-which are also given by $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $.
-Therefore the total Hilbert space for $H_{0}$ is given by a base
-of the form 
-\[
-\vert s_{1}\rangle\vert s_{2}\rangle:=\vert s_{1}\rangle\otimes\vert s_{2}\rangle\mbox{ with }\vert s_{1,2}\rangle\in\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} .
-\]
-
-
-This gives an space of dimension $4\times4=16.$ Now before adventuring
-to write the hamiltonian for $H_{0}$ as a $16\times16$-matrix note
-that $H_{0}$ preserves particle number $N$ and the total spin $S$.
- Therefore we can use  $N$ and $S$ as quantum numbers and generate the Hamiltonian $H_{0}$ in blocks.
-We will observe that the terms in the diagonal will correspond to
-the eigenvalues of $H_{-1}$ for the first space. The non-diagonal
-terms are the result of the hopping interactions with the first site. 
-
-\begin{multicols}{2}
-
-$H_{N=0,S=0}:$
-\[
-\begin{array}{c}
-\vert0\rangle\vert0\rangle\rightarrow\end{array}\begin{array}{c}
-\left[\frac{U}{2}\right]\end{array}
-\]
-
-
-$H_{N=4,S=0}:$
-\[
-\begin{array}{c}
-\vert\uparrow\!\downarrow\rangle\vert\uparrow\!\downarrow\rangle\rightarrow\end{array}\begin{array}{c}
-\left[2\epsilon_{d}+\frac{3U}{2}\right]\end{array}
-\]
-
-
-\end{multicols}
-
-\begin{multicols}{2}
-
-$H_{N=1,S=\frac{1}{2}}:$
-\[
-\begin{array}{c}
-\vert\uparrow\rangle\vert0\rangle\rightarrow\\
-\vert0\rangle\vert\uparrow\rangle\rightarrow
-\end{array}\left[\begin{array}{cc}
-\epsilon_{d}+\frac{U}{2} & \Gamma'\\
-\Gamma' & \frac{U}{2}
-\end{array}\right]
-\]
-
-
-$H_{N=1,S=\frac{-1}{2}}:$
-\[
-\begin{array}{c}
-\vert\uparrow\rangle\vert0\rangle\rightarrow\\
-\vert0\rangle\vert\uparrow\rangle\rightarrow
-\end{array}\left[\begin{array}{cc}
-\epsilon_{d}+\frac{U}{2} & \Gamma'\\
-\Gamma' & \frac{U}{2}
-\end{array}\right]
-\]
-
-
-\end{multicols}
-
-\begin{multicols}{2}
-
-$H_{N=2,S=-1}:$
-\[
-\begin{array}{c}
-\vert\downarrow\rangle\vert\downarrow\rangle\rightarrow\end{array}\begin{array}{c}
-\left[\epsilon_{d}+\frac{U}{2}\right]\end{array}
-\]
-
-
-$H_{N=2,S=1}:$
-\[
-\begin{array}{c}
-\vert\uparrow\rangle\vert\uparrow\rangle\rightarrow\end{array}\begin{array}{c}
-\left[\epsilon_{d}+\frac{U}{2}\right]\end{array}
-\]
-
-
-\end{multicols}
-
-$H_{N=2,S=0}:$
-\[
-\begin{array}{c}
-\vert\uparrow\!\downarrow\rangle\vert0\rangle\rightarrow\\
-\vert\uparrow\rangle\vert\downarrow\rangle\rightarrow\\
-\vert\downarrow\rangle\vert\uparrow\rangle\rightarrow\\
-\vert0\rangle\vert\uparrow\!\downarrow\rangle\rightarrow
-\end{array}\left[\begin{array}{cccc}
-2\epsilon_{d}+\frac{3U}{2} & \Gamma & -\Gamma & 0\\
-\Gamma & \epsilon_{d}+\frac{U}{2} & 0 & \Gamma\\
--\Gamma & 0 & \epsilon_{d}+\frac{U}{2} & -\Gamma\\
-0 & \Gamma & -\Gamma & \frac{U}{2}
-\end{array}\right]
-\]
-
-
-\begin{multicols}{2}
-
-$H_{N=3,S=\frac{1}{2}}:$
-\[
-\begin{array}{c}
-\vert\uparrow\!\downarrow\rangle\vert\uparrow\rangle\rightarrow\\
-\vert\uparrow\rangle\vert\uparrow\!\downarrow\rangle\rightarrow
-\end{array}\left[\begin{array}{cc}
-\epsilon_{d}+\frac{U}{2} & -\Gamma'\\
--\Gamma' & \frac{U}{2}
-\end{array}\right]
-\]
-
-
-$H_{N=3,S=\frac{-1}{2}}:$
-\[
-\begin{array}{c}
-\vert\uparrow\!\downarrow\rangle\vert\downarrow\rangle\rightarrow\\
-\vert\downarrow\rangle\vert\uparrow\!\downarrow\rangle\rightarrow
-\end{array}\left[\begin{array}{cc}
-\epsilon_{d}+\frac{U}{2} & -\Gamma'\\
--\Gamma' & \frac{U}{2}
-\end{array}\right]
-\]
-
-
-\end{multicols}
-
-Finally, we proceed to diagonalize $H_{0}$ by blocks $H_{N,S}$.
-The resulting eigenvectors will be characterized by both quantum numbers
-so that we can write them in the form $\vert N,S,i\rangle$ with $i$
-takes as many values as the degeneracy of its block. For higher values of $N$,
-the general formula for equation \prettyref{eq:H0fromH-1} looks as 
-\begin{equation}
-H_{N+1}=\Lambda^{\frac{1}{2}}\left[H_{N}+\frac{1}{2}\left(1+\Lambda^{-1}\right)\xi_{N}\left(f_{N\sigma}^{\dagger}f_{N+1,\sigma}+f_{N+1\sigma}^{\dagger}f_{N\sigma}\right)\right].\label{eq:NRG-Iteration Hamiltonians}
-\end{equation}
-
-
-We now proceed by induction supossing that for each $N$ the Hamiltonian $H_{N}$ is already
-diagonalized and the eigenvectors are organized in states with labels
-$\vert N,S,i\rangle.$ The next step will be to add the $4$-Hilbert
-space corresponding to $f_{N+1,\sigma}$ organized the eigenvectors
-according to the quantum numbers $\vert N',S',i\rangle$ and proceed
-to diagonalize by blocks the new Hamiltonian. Apart of it, the code
-must have a cutoff to the number of states. \\
-
-This NRG code was previously implemented in C++ language by the advisor
-of this thesis. In \ref{Fig-Dot-Spectrum} we observe the evolution
-of the spectrum of the Hamiltonian according to the number of iterations
-of the code. As we can appreciate, this evolution converges for even
-and odd number around $N=30$. \\
-
-
-\subsection{Kondo Effect}
-
-The next part of thess preliminaries will be to compute the conductivity
-through the QD as a function of the gate voltage. For temperatures
-$T$ lower than a certain contant value $(T_{Kondo})$ these computations
-will reveal a peak in conductance through the dot. This peak is the
-consequence of a phenomena known as Kondo effect\citep{hewson_kondo_1997}.
-In regular metals the Kondo effect manifests as a drop in conductivity
-under a certain Kondo temperature $(T_{Kondo})$ due to spin- scattering
-between the conduction electrons and the impurities of the material.
-The Anderson models, hence the NRG, are the perfect tools to study
-the physics of impurieties. Thus the computations we previously developed
-in this chapter will provide the right formalism to introduce the
-Kondo physics. This study will be an important part of the prelimiraries
-in the final document. 
-
-\begin{figure}[h]
-\subfloat[$N$ run only through even values]{\includegraphics[scale=0.5]{IMAGES/even.png}}\subfloat[$N$ run only through odd values]{\includegraphics[scale=0.5]{IMAGES/odd.png}}\caption{\label{Fig-Dot-Spectrum} Evolution of the QD-spectrum vs number of
-iterations of the code for $U=0.5,\ e_{d}=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
-\end{figure}
 
