@@ -5,22 +5,16 @@
 %Assumption: 
 %   1-Only the level immediately at the bottom of the fermi       level is considered
 \section{Transport in Quantum Dots (QDs)}
-Quantum mechanical effects are visible when the system size is of
-the order of the de Broglie wavelength \citep[(1.1)]{bimberg_quantum_1999}
+Quantum mechanical effects are visible when the system size is of the order of the de Broglie wavelength \citep[(1.1)]{bimberg_quantum_1999}
 \[
 \lambda_{f}=\frac{h}{\sqrt{3m_{\mathsf{eff}}k_{B}T}}
 \]
  where $m_{\mathsf{eff}}$ is the electron effective mass in the crystal.
-Since this mass can be much smaller than the free electron mass in
-some semiconducting materials, size quantization effects can be observed
-at system of sizes $\sim100\mbox{nm}$ \citep[2.1]{sindel_numerical_2005}.
-A device confined in the three dimensions up to this length-scale
-will present the behavior of a $0$D quantum system, which is what
-we call a Quantum Dot (QD).\\
+Since $m_{\mathsf{eff}}$ can be much smaller than the free electron mass in some semiconducting materials, size quantization effects can be observed at system of sizes $\sim100\mbox{nm}$ \citep[2.1]{sindel_numerical_2005}. A device confined in the three dimensions up to this length-scale will present the behavior of a $0$D quantum system, which is what we call a Quantum Dot (QD).\\
 
-Nowadays there are several methods for manufacturing QDs \citep{bimberg_quantum_1999}.
-One of them can be observed in \ref{QD} where 2 QDs are defined by
-metallic gates on top of a semiconductor structure. Between the gates
+Nowadays, QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}. Among all of these, two main types of QDs can be distinguished : Vertical and lateral QDs. 
+
+One of them can be observed in \ref{QD} where 2 QDs are defined by metallic gates on top of a semiconductor structure. Between the gates
 a $2$-dimensional electron gas (2DEG) forms. A negative voltage is
 applied at the top of gates $A,\ B,\ 1$ and $2$ such that the electron
 gas is confined into the small electron droplets in the middle of
@@ -32,44 +26,43 @@ in transport measurements. \\
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.55]{IMAGES/QD-horizontal.png}\caption{Taken from \citep{holleitner_probing_2002}. Atomic force microscopy
+\includegraphics[scale=0.55]{IMAGES/QD-horizontal.png}\caption{ Atomic force microscopy
 picture of two coupled lateral QDs (bright central circles). A negative
 voltage is applied at gates $A$,$B$,$1$ and $2$, which leads to
-a partial depletion of the 2DEG.\label{QD}}
+a partial depletion of the 2DEG. \Source{\cite{holleitner_probing_2002}} \label{QD}}
+
 \end{figure}
 
-
+fg,
 The great advantage of QDs is that their spectrum looks pretty similar
 to the spectrum of an atom, which is a discrete set of energy levels.
-Indeed we can model an ideal single-electron QD as a quantum well
-with a negative constant potential inside the dot . For example an
-spherical quantum dot with radius $R$ will take the following Schr�dinger
-Hamiltonian 
+% Indeed we can model an ideal single-electron QD as a quantum well
+% with a negative constant potential inside the dot . For example an
+% spherical quantum dot with radius $R$ will take the following Schr�dinger
+% Hamiltonian 
 
-\[
-H\Psi(r)=\left(\frac{\hbar^{2}}{2m^{*}}\nabla^{2}+V(r)\right)\Psi(r)\ ,\ \textrm{with }V(r)=\begin{cases}
--V_{0} & r<R\\
-0 & r\geq R
-\end{cases}.
-\]
-
-
-The 
-the energy level spacing is  \citep[Equation (5.44)]{bimberg_quantum_1999}
-
-\[
-\delta E\propto\frac{1}{R^{2}}.
-\]
+% \[
+% H\Psi(r)=\left(\frac{\hbar^{2}}{2m^{*}}\nabla^{2}+V(r)\right)\Psi(r)\ ,\ \textrm{with }V(r)=\begin{cases}
+% -V_{0} & r<R\\
+% 0 & r\geq R
+% \end{cases}.
+% \]
 
 
+% The 
+% the energy level spacing is  \citep[Equation (5.44)]{bimberg_quantum_1999}
+
+% \[
+% \delta E\propto\frac{1}{R^{2}}.
+% \]
+
+On an ideal QD the energy
 
 %------------------------------------------------------------
 \subsection{The Anderson Model}
 
-For more electrons, due to the small spatial confinement, the coulomb
-repulsion inside the dot is important. We also consider that the system is interacting. Hence, using the Hunds rule we know that
-the energy levels should be filled from lower to higher energies with
-two electrons with different spin at each state. Taking in account
+For more electrons, the coulomb
+repulsion inside the dot is important.. Hence, using the Hunds rule we know that the energy levels should be filled from lower to higher energies with two electrons with different spin at each state. Taking in account
 all these interactions we can get to a second quantization QD-Hamiltonian
 of the form \citep[(3.2)]{sindel_numerical_2005}
 
@@ -194,7 +187,9 @@ Note that the physical implications of the Kondo effect  between the case of mag
 
 The  Majorana Fermions, so called in the name of the Italian physicist Ettore Majorana, where first defined in the attempt to find a real solution of the Dirac equation. The real field that solves this equation $\Psi_M$ , describes a fermion which is its own antiparticle. Hence it has no electric charge nor mass.  Till these days, no fundamental particle with these characteristics has been observed. However, in the last few years, there has been a huge speculation about the possibility of finding Majorana Fermions as a quasiparticle inside certain condensed matter systems. 
 
-One of the most famous examples of these systems is the Kitaev chain which is the main objective of the this subsection. 
+
+
+One of the most famous (and simle) examples of these systems is the toy model known as the  Kitaev chain . 
 
 
 \subsection{The Kitaev Chain}
@@ -246,5 +241,11 @@ Depending on the values of parameters $\mu, t$ and $\super$ we can identify two 
 \item{If $\super = t > 0, \mu =0$} the situation is much more interesting. The Hamiltonian \eqref{HamMajorana} takes the form $H = 2ti\sum_{j} \gammaA{j}\gammaB{j+1}$. This implies that the coupling is performed between  Majoranas of different Dirac fermions leaving the edge Majorana operators ($\gammaA{1}$ and $\gammaA{2}$) uncoupled . This produces a new degeneracy in the ground state due to the emergence of a state produced by the uncoupled Majorana operators. The new state is localized at the edges of the chain.(See figure \ref{top.phases kitaev} (b)) 
 \end{enumerate}
 
+
+\subsection{Realistic approaches to the Kitaev Chain}
+
+
+
+\subsection{Coupling Majoranas with Quantum Dots}
 
 
