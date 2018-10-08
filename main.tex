@@ -61,8 +61,11 @@
 
 %\usepackage[hypertex,final=true,unicode=true, pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,breaklinks=true,pdfborder={0 0 1},backref=true,colorlinks=true,citecolor=black, filecolor=black, linkcolor=black, urlcolor=black]{hyperref}
 \usepackage{hyperref}
-\usepackage{caption}
+\usepackage[caption = false]{subfig}
 \captionsetup[figure]{font=small}
+
+
+
 
 \hypersetup{
 hypertex=true,
@@ -170,7 +173,7 @@ urlcolor=black
 
 \newcommand{\super}{\vert \Delta \vert}
 \newcommand{\Jesus}[1]{\textcolor{red}{\fbox{Jesus} {\sl#1}}}
-\newcommand{\Source}[1]{\textcolor{red}{\\ {\small \fbox{Source: {\sl#1}}} }}
+\newcommand{\Source}[1]{\textcolor{red}{\\ {\footnotesize \fbox{Source: {\sl#1}}} }}
 \begin{document}
 \mainmatter
 \maketitle
