@@ -1,10 +1,24 @@
 \chapter{Preliminaries}
 
+We will start this thesis by discussing some of the main facts 
+
+We will start with a  description of transport processes in QDs. Then we will talk about talk about the Anderson model. The next part will be to Kondo effect and specially, its consequences in quantum dots.  
+
 %-------------------------------------------------------------
 %Here goes the introduction of transport between quantum dots. stil need to add important considerations like the smooth varying DOS. Not so discrete. 
 %Assumption: 
 %   1-Only the level immediately at the bottom of the fermi       level is considered
 \section{Transport in Quantum Dots (QDs)}
+% --------------Figure-------------------------
+\begin{figure}[hbt]
+    \centering
+    \subfloat[\label{QD-figuresA}\label{QD-figures}]{\includegraphics[scale=0.3]{IMAGES/Preliminars/VerticalQD.png}}\hspace{6mm}
+    \subfloat[\label{QD-figuresB}]{\includegraphics[scale=0.4]{IMAGES/Preliminars/QD-horizontal.png}}
+    \caption{ a) Vertical quantum dot.  b)Atomic force microscopy
+    picture of two coupled lateral QDs (bright central circles). Gates 1 and 2 act as drain and source voltage. A negative
+    voltage is applied at gates $A$,$B$ to allow the formation of the droplets inside the free space in the 2D electron gas. \protect\Source{\cite{holleitner_probing_2002}} }
+\end{figure}
+
 Quantum mechanical effects are visible when the system size is of the order of the de Broglie wavelength \citep[(1.1)]{bimberg_quantum_1999}
 \[
 \lambda_{f}=\frac{h}{\sqrt{3m_{\mathsf{eff}}k_{B}T}}
@@ -16,23 +30,14 @@ Nowadays, QDs can be manufactured with several methods, forms and orientations \
 
 
 
-\begin{figure}[hbt]
-\centering
-\subfloat[\label{QD-figuresA}\label{QD-figures}]{\includegraphics[scale=0.3]{IMAGES/Preliminars/VerticalQD.png}}\hspace{6mm}
-\subfloat[\label{QD-figuresB}]{\includegraphics[scale=0.4]{IMAGES/Preliminars/QD-horizontal.png}}
-
-\caption{ a) Vertical quantum dot.  b)Atomic force microscopy
-picture of two coupled lateral QDs (bright central circles). Gates 1 and 2 act as drain and source voltage. A negative
-voltage is applied at gates $A$,$B$ to allow the formation of the droplets inside the free space in the 2D electron gas. \Source{\cite{holleitner_probing_2002}} }
-
-\end{figure}
 
 
 Ideally, the energy spectrum of a QD is a discrete set of energy levels resembling the spectrum of an atom. However, when the QD is connected to metallic leads these energy levels hybridized with respect to a hybridization parameter $\Gamma$ which depends on the voltage connecting the lead with the dots $V_L$.
 \begin{equation}
-    \Gamma = \pi \Vert V_l \Vert^2 
+    \Gamma = \pi \Vert V_l \Vert^2. 
 \end{equation}
 
+A pictorial representation of this fact can be found in Figure \ref{fig:specDots}. Ideally, $\Gamma \ll \Delta E$ such that the energy levels do not overlap each other. In addition the gate voltage allows us to tune the fermi energy which, by convention, will be declared our $0$ of energy. 
 
 
 The great advantage of QDs is that their spectrum looks pretty similar
@@ -58,6 +63,12 @@ to the spectrum of an atom, which is a discrete set of energy levels.
 % \]
 
 On an ideal QD the energy
+\begin{figure}[bt]
+    \centering
+    \includegraphics[scale=0.65]{IMAGES/Preliminars/specDot.png}
+    \label{fig:specDots}
+    \caption{Pictorial representation of the Density of States of a QD. The gate potential $V_G$ can be tuned to change the fermi energy of the dot.  \protect\Source{By the author} }
+\end{figure}
 
 %------------------------------------------------------------
 \subsection{The Anderson Model}
