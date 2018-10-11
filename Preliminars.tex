@@ -12,30 +12,29 @@ Quantum mechanical effects are visible when the system size is of the order of t
  where $m_{\mathsf{eff}}$ is the electron effective mass in the crystal.
 Since $m_{\mathsf{eff}}$ can be much smaller than the free electron mass in some semiconducting materials, size quantization effects can be observed at system of sizes $\sim100\mbox{nm}$ \citep[2.1]{sindel_numerical_2005}. A device confined in the three dimensions up to this length-scale will present the behavior of a $0$D quantum system, which is what we call a Quantum Dot (QD).\\
 
-Nowadays, QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}. Among all of these, two main types of QDs can be distinguished : Vertical and lateral QDs. 
+Nowadays, QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}. According to their orientation with respect to the based 2D-plane , two main types of QDs can be distinguished : Vertical (Figure \ref{QD-figuresA}) and lateral (Figure \ref{QD-figuresB}) QDs. Both types of of quantum dots have $3$-main gates. Two of them are the Drain $V_D$ and source $V_S$ gate voltages used to control the current trough the QD. The third one is the gate voltage $V_G$. This one controls the electron confinement inside the QD. Therefore, tuning the gate voltage it is possible to control accurately the energy levels of the QD. 
 
-One of them can be observed in \ref{QD} where 2 QDs are defined by metallic gates on top of a semiconductor structure. Between the gates
-a $2$-dimensional electron gas (2DEG) forms. A negative voltage is
-applied at the top of gates $A,\ B,\ 1$ and $2$ such that the electron
-gas is confined into the small electron droplets in the middle of
-the gates. Furthermore, it is possible to control accurately the tunnel
-barriers between the dots and the environment by setting appropriate
-gate-voltages. This property is extremely useful since it allows us
-to control the energy levels inside the QD and will take a huge relevance
-in transport measurements. \\
 
-\begin{figure}[h]
+
+\begin{figure}[hbt]
 \centering
-\subfloat[$ M = \cir, N = \cir $]{\includegraphics[scale=0.3]{}}
-\subfloat[$ M = \cir, N = \cir $]{\includegraphics[scale=0.3]{cob2.eps}}
-\caption{ Atomic force microscopy
-picture of two coupled lateral QDs (bright central circles). A negative
-voltage is applied at gates $A$,$B$,$1$ and $2$, which leads to
-a partial depletion of the 2DEG. \Source{\cite{holleitner_probing_2002}} \label{QD}}
+\subfloat[\label{QD-figuresA}\label{QD-figures}]{\includegraphics[scale=0.3]{IMAGES/Preliminars/VerticalQD.png}}\hspace{6mm}
+\subfloat[\label{QD-figuresB}]{\includegraphics[scale=0.4]{IMAGES/Preliminars/QD-horizontal.png}}
+
+\caption{ a) Vertical quantum dot.  b)Atomic force microscopy
+picture of two coupled lateral QDs (bright central circles). Gates 1 and 2 act as drain and source voltage. A negative
+voltage is applied at gates $A$,$B$ to allow the formation of the droplets inside the free space in the 2D electron gas. \Source{\cite{holleitner_probing_2002}} }
 
 \end{figure}
 
-fg,
+
+Ideally, the energy spectrum of a QD is a discrete set of energy levels resembling the spectrum of an atom. However, when the QD is connected to metallic leads these energy levels hybridized with respect to a hybridization parameter $\Gamma$ which depends on the voltage connecting the lead with the dots $V_L$.
+\begin{equation}
+    \Gamma = \pi \Vert V_l \Vert^2 
+\end{equation}
+
+
+
 The great advantage of QDs is that their spectrum looks pretty similar
 to the spectrum of an atom, which is a discrete set of energy levels.
 % Indeed we can model an ideal single-electron QD as a quantum well
@@ -184,70 +183,4 @@ Note that the physical implications of the Kondo effect  between the case of mag
 
 
 %-----------------------------------------------------------
-
-\section{Majorana Fermions}
-
-The  Majorana Fermions, so called in the name of the Italian physicist Ettore Majorana, where first defined in the attempt to find a real solution of the Dirac equation. The real field that solves this equation $\Psi_M$ , describes a fermion which is its own antiparticle. Hence it has no electric charge nor mass.  Till these days, no fundamental particle with these characteristics has been observed. However, in the last few years, there has been a huge speculation about the possibility of finding Majorana Fermions as a quasiparticle inside certain condensed matter systems. 
-
-
-
-One of the most famous (and simle) examples of these systems is the toy model known as the  Kitaev chain . 
-
-
-\subsection{The Kitaev Chain}
-The Kitaev chain is a toy model in tight binding that represents a  finite $p$-wave superconducting wire. The main Hamiltonian is given by 
-\begin{equation}
-H = \sum_{i} \left[ -t(a_i^{\dagger} a_{i+1} + a_{i+1}^{\dagger}a_i) -\mu a_i^{\dagger} a_{i} +  \Delta a_{i}a_{i+1} + \Delta^* a_{i+1}^{\dagger}a_i^{\dagger} \right].  \label{eq:kitaevHam}
-\end{equation}
-
-Where $\mu$ is the chemical potential, so that $\mu a_i^{\dagger} a_{i}$ is the energy associated to each free state. $t(a_i^{\dagger} a_{i+1} + a_{i+1}^{\dagger}a_i)$ represents the interaction between neighbouring sites which is determined by the hopping term $t$. The remaining terms describe the superconducting properties of the system as is is established by the BCS theory of superconductivity. $\Delta$ is a complex superconducting parameter with the form  $\Delta = e^{i\theta} \super$. The associated terms represent the Cooper pairs which can be created or annihilated at neighbouring sites of the system.
-
-The form of hamiltonian \prettyref{eq:kitaevHam} favors the possibility of introducing new operators $\gammaA{j}$ and $\gammaB{j}$ such that
-
-\begin{equation}
-\gammaA{j} = e^{i\theta /2}a_j+ e^{-i\theta/2 } \ann_j \ \ , \ \ \gammaB{j} = -i(e^{i\theta /2}a_j - e^{-i\theta/2} \ann_j).
-\label{eq:majoranaTrans}
-\end{equation}
-It is simple check that these operators are self-adjoint $(\gammaA{j}^\dagger = \gammaA{j}, \gammaA{j}^\dagger = \gammaB{j})$. This is a required constraint for the Majorana particles. In addition they satisfy the fermionic anti-commutation relations
-\begin{equation}
-\begin{aligned}
-\{\gammaA{i}, \gammaA{j}\} = \{ & \gammaB{i} , \gammaB{j}\} = 2\delta_{ij}  ,\\ 
-  \{\gammaA{i}, \gammaB{j} & \} =0.
-\end{aligned} 
-\label{majoranaRel}
-\end{equation} 
-This allows us to understand the operators $\gammaA{i} , \gammaB{i}$ as majorana fermions. If we also take the inverse of \prettyref{eq:majoranaTrans} we obtain that each  (Dirac) fermion in Hamiltonian \eqref{eq:kitaevHam} is composed by two majorana fermions such that 
-$$a_j = \frac{e^{-i\theta/2}}{2}(\gammaA{j}+ i\gammaB{j})$$
-We could even adventure to say that these majorana operators are actually dividing the Dirac fermions into real($\gammaA{}$) and imaginary $(\gammaB{})$ part ,the same way as complex numbers are a composite of two real numbers. 
-
-The new Kitaev Hamiltonian in the Majorana representation looks like 
-
-\begin{equation}
-H = \frac{i}{2} \sum_{j} \left[ -\mu \gammaA{j}\gammaB{j}  + (t- \super) \gammaB{j}\gammaA{j+1} + (t+ \super) \gammaA{j}\gammaB{j+1} \right]+Const,\label{eq:HamMajorana}
-\end{equation}
-
-Depending on the values of parameters $\mu, t$ and $\super$ we can identify two regimes represented by the following situations:
-
-
-%\begin{figure}[t]
-%$$\includegraphics[scale=0.5]{KitaevtopPhases.jpg}
-%\centering
-%\label{top.phases kitaev}
-%\caption{{\small \textit{Taken from \cite{bernevig2015topological}. Ilustration of the Kitaev chain for open boundary conditions in the Majorana representation. a)Represents the trivial case where the hopping and the superconducting term approaches to $0$. b) The non-trivial topological phase. The coupling is produced between Majoranas in different Dirac fermions }}}
-%\end{figure}
-
-
-\begin{enumerate}
-\item{If $\super = t = 0, \mu <0$} Hamiltonian \eqref{eq:HamMajorana} becomes $\frac{-i\mu}{2} \sum_{j} \gammaA{j}\gammaB{j}$ which represents the coupling of the Majoranas in the same Dirac fermion. (See figure \ref{top.phases kitaev} (a))
-
-\item{If $\super = t > 0, \mu =0$} the situation is much more interesting. The Hamiltonian \eqref{HamMajorana} takes the form $H = 2ti\sum_{j} \gammaA{j}\gammaB{j+1}$. This implies that the coupling is performed between  Majoranas of different Dirac fermions leaving the edge Majorana operators ($\gammaA{1}$ and $\gammaA{2}$) uncoupled . This produces a new degeneracy in the ground state due to the emergence of a state produced by the uncoupled Majorana operators. The new state is localized at the edges of the chain.(See figure \ref{top.phases kitaev} (b)) 
-\end{enumerate}
-
-
-\subsection{Realistic approaches to the Kitaev Chain}
-
-
-
-\subsection{Coupling Majoranas with Quantum Dots}
-
 
