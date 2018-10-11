@@ -1,6 +1,6 @@
 \chapter{Majorana Fermions \label{chap:Majorana}}
 
-The  Majorana Fermions, so called in the name of the Italian physicist Ettore Majorana, were first defined in the attempt to find a real solution of the Dirac equation. The real field that solves this equation $\Psi_M$ , describes a fermion which is its own antiparticle. Hence it has no electric charge nor mass.  Till these days, no fundamental particle with these characteristics has been observed. However, in the last decade, there has been a huge speculation about the possibility of finding Majorana Fermions as a quasi-particles of certain types of topological superconductors.
+The  Majorana Fermions, so called in the name of the Italian physicist Ettore Majorana, were first defined in the attempt to find a real solution of the Dirac equation. The real field that solves this equation describes a fermion which is its own antiparticle. Hence it has no electric charge  nor mass.  Till these days, no fundamental particle with these characteristics has been observed. However, in the last decade, there has been a huge speculation about the possibility of finding Majorana Fermions as a quasi-particles of certain types of topological superconductors.
 
 The topological materials are a novel type of material that experiences phase transitions without any symmetry breaking. As consequence, they cannot be characterized by the Landau theory. Instead, the phase transition is characterized with a topological order . Since topological characters are discrete parameters that describe non-local features of the material, the phases with this characterization present robust characteristics that are difficult to alter. An example of this is the quantum hall effect which robustness is famous and widely used in high precision devices. 
 
@@ -10,7 +10,7 @@ In this chapter we will present a review of the main topics about majorana fermi
 
 
 % ------------------------Section: Kitaev *------------------
-\subsection{The Kitaev Chain \label{sec:KitaevChain}}
+\section{The Kitaev Chain \label{sec:KitaevChain}}
 In this section we discuss the main aspects of Kitaev's toy model. This is a toy model in tight binding that represents a  finite $p$-wave superconducting wire with the following Hamiltonian
 
 \begin{equation}
@@ -54,23 +54,41 @@ Depending on the values of parameters $\mu, t$ and $\super$ we can identify two 
 %\end{figure}
 
 \begin{figure}[hbt]
-\centering
-\includegraphics[scale=0.35]{IMAGES/Ma}
-\caption{\label{fig:2D/Shift_t1=t2} Evolution of the DOS of both QDs through $t_1 = t_2$ tuning. UP: Energy scale $\omega \sim 10^{-2}D$. DOWN: Energy scale $\omega \sim 10^{-3}D$. LEFT: Spin $\up$. RIGHT: Spin $\dw$.}
+    \centering
+    \includegraphics[scale=0.5]{IMAGES/Majorana/KitaevChain.png}
+    \label{fig:top.phases kitaev}
+    \caption{Illustration of the Kitaev chain for open boundary conditions in the Majorana representation. a)Represents the trivial case where the hopping and the superconducting term approaches to $0$. b) The non-trivial topological phase. The coupling is produced between Majoranas in different Dirac fermions \protect\Source{By the author} }
 \end{figure}
 
 
 \begin{enumerate}
-\item{If $\super = t = 0, \mu <0$} Hamiltonian \eqref{eq:HamMajorana} becomes $\frac{-i\mu}{2} \sum_{j} \gammaA{j}\gammaB{j}$ which represents the coupling of the Majoranas in the same Dirac fermion. (See figure \ref{top.phases kitaev} (a))
+\item{If $\super = t = 0, \mu <0$} Hamiltonian \eqref{eq:HamMajorana} becomes $\frac{-i\mu}{2} \sum_{j} \gammaA{j}\gammaB{j}$ which represents the coupling of the Majoranas in the same Dirac fermion. (See Figure \ref{fig:top.phases kitaev} (a))
 
-\item{If $\super = t > 0, \mu =0$} the situation is much more interesting. The Hamiltonian \eqref{HamMajorana} takes the form $H = 2ti\sum_{j} \gammaA{j}\gammaB{j+1}$. This implies that the coupling is performed between  Majoranas of different Dirac fermions leaving the edge Majorana operators ($\gammaA{1}$ and $\gammaA{2}$) uncoupled . This produces a new degeneracy in the ground state due to the emergence of a state produced by the uncoupled Majorana operators. The new state is localized at the edges of the chain.(See figure \ref{top.phases kitaev} (b)) 
+\item{If $\super = t > 0, \mu =0$} the situation is much more interesting. The Hamiltonian \eqref{eq:HamMajorana} takes the form $H = 2ti\sum_{j} \gammaA{j}\gammaB{j+1}$. This implies that the coupling is performed between  Majoranas of different Dirac fermions leaving the edge Majorana operators ($\gammaA{1}$ and $\gammaB{N}$) uncoupled (See Figure \ref{fig:top.phases kitaev}b)). Note that these uncoupled majorana fermions can be at any state without any  repercussion in the energy of the system. This explains the emergence of a  ground state localized at edges of the chain. 
 \end{enumerate}
 
+These two situations are representatives of two different phases that can be characterized by a topological parameter. To understand this characterization we need to take a look to the spectrum of Hamiltonian \ref{eq:Majorana-ham}.
+
+\begin{figure}[hbt]
+    \centering
+    \includegraphics[scale=0.5]{IMAGES/Majorana/KitaevChain.png}
+    \label{fig:top.phases kitaev}
+    \caption{Illustration of the Kitaev chain for open boundary conditions in the Majorana representation. a)Represents the trivial case where the hopping and the superconducting term approaches to $0$. b) The non-trivial topological phase. The coupling is produced between Majoranas in different Dirac fermions \protect\Source{By the author} }
+\end{figure}
+
+
+
+The non-trivial phase An explanation to this phase transition can be given in terms of the topological 
+
+
+
+
+
 % -----------------------Section: Modern and Experimental-------------
-\subsection{Real implementations of majorana chains}
+\section{Real implementations of majorana chains}
 
 
 % -----------------------Leaking majorana modes in quantum dots-------------
-\subsection{Leaking of Majorana modes in QDs}
+\section{Leaking of Majorana modes in QDs}
 
 
