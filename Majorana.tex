@@ -119,38 +119,23 @@ H_k = \begin{pmatrix}
     \end{pmatrix}. 
 \end{equation}
 
-Note that $\super^2 \sin^2 k + (\frac{\mu}{2}- t \cos k)^2 \neq 0$ for all the values of $k$ as long as $\frac{\mu}{2t} \neq 1$ . When $\frac{\mu}{2t} = 1$ the $H_{k=0}=0$, so it cannot be normalized. \textbf{This is the same point were the phase transition occurs!}. At any other value of $\frac{\mu}{2t}$ it is possible to normalize $H_{k}$ for all values of $k\in BZ$. The result of mapping $\hat{H}_k$ for all $k$ is a path around the unitary circle. This path can take two forms.
+Note that $\super^2 \sin^2 k + (\frac{\mu}{2}- t \cos k)^2 \neq 0$ for all the values of $k$ as long as $\frac{\mu}{2t} \neq 1$ . When $\frac{\mu}{2t} = 1$ the $H_{k=0}=0$, so it cannot be normalized. \textbf{This is the same point were the phase transition occurs!}. At any other value of $\frac{\mu}{2t}$ it is possible to normalize $H_{k}$ for all values of $k\in BZ$. The result of mapping $\hat{H}_k$ for all $k$ is a path around the unitary circle. \\
 
+This path can take two forms as we can observe in Figure \ref{fig:topological}. If $\frac{\mu}{2t} > 1$ the path reduced to a line in the upward part of the circle. In the non-trivial phase $\frac{\mu}{2t} < 1$ the path completes the round to the entire circle. Note that this method states a topological difference between the two phases. While the path described by the trivial phase can be contracted to a single dot, the path described by the non-trivial one is a circle that cannot be contracted. \\
 
+Note that to determine whether path of a given phase is of type a) or type b) we only need to check if $\hat{H}_{k=0}$ and $\hat{H}_{k=\pi}$ are the same point or opposite points. This transforms into a simple equation 
+\begin{equation}
+    \hat{H}_{k=0,y}\hat{H}_{k=\pi,y}=\begin{cases}
+1 & \mbox{trivial phase}\\
+-1 & \mbox{non-trivial phase}
+\end{cases}
+\end{equation}
+where $\hat{H}_{k=0,y}$ is the $y$-th component of $$\hat{H}_{k}$$. The term $\hat{H}_{k,y}$ is a particular case of the Pfaffian $\mathcal{P}(k)$, which widely used as topological order in  phases transition including  majorana modes . 
 
+The mean idea behind this topological characterization relies in the adiabatic theorem.  In simple words, the adiabatic theorem says that a slow evolution of a gaped Hamiltonian will produce a smooth evolution of its ordered eigenstates. i.g The order of the eigenstates remains unchanged. \\
 
+The keyword in the previous definition is "gaped". As we can observe in Figure \ref{fig:KitaevSpec} the phase transition occurs at $\frac{\mu}{2t}=1$. This is when the system transitions between a gapless and gaped Hamiltonians.  \\
 
-
-Since we have only the matrices $\sigma_x$ and $\sigma_y$, we can think of $H_k$ as an element of the unitary circle $\mathbb{S}^1$, described by the normalization of the vector  $(\super \sin k, \frac{\mu}{2}- t \cos k)$. However, not all the elements in $\mathbb{S}^1$ will be a representation of $H_k$ for some $k$. To see this, let us take the path in $\mathbb{S}^1$ given by the elements of $H_k$ for $k \in [- \pi , \pi]$.
-
-First note that for $k = 0$, $H_0$ corresponds to the normalization of $(0,\frac{\mu}{2}- t)$ which is simply $(0,1)$ or $(0,-1)$ depending on the case when $\frac{\mu}{2}- t$  is greater or less than $0$, respectively. This corresponds to saying that $\lambda$ is greater or less than $1$ in each case.  Meanwhile, when $k = \pi = -\pi $ the corresponding vector in $\mathbb{S}^1$ can only be $(0,1)$. \\
-
-Again, our problem is divided in two phases. In the trivial phase $(\lambda >1)$ we will obtain a path in $\mathbb{S}^1$ that starts in $(0,1)$  at $k = -\pi $ and passes again through $(0,1)$ at $k = 0$. It is simple to see that the point $(1,0)$ is not in this path since it would imply that $\frac{\mu}{2}- t \cos k = 0$ for some $k$ which is impossible in the trivial phase. See figure \ref{top} (a).
-
-In the non-trivial phase  $(\lambda < 1)$ the situation is completely different. Since we have that $H_0$ corresponds to the point $(0,-1)$ in $\mathbb{S}^1$ and $H_{\pi} = H_{- \pi}$ corresponds to $(0,1)$. It follows that in the non-trivial case the path given by $k \in [- \pi , \pi]$ corresponds to a closed loop around the circle that starts in the north pole $(0,1)$, passes through the south pole $(0,-1)$ at $k = 0$ and then comes back to the north.  See figure \ref{top} (b).
-
-
-\begin{figure}[t]
-\subfloat[$\lambda > 1$]{\includegraphics[width = 2.9in]{topTriv.png}} $\ \ $
-\subfloat[$\lambda < 1$]{\includegraphics[width = 3.1in]{topNon.png}}
-\label{top}
-\caption{{\small \textit{The following represents the path of $H_k$ for the interval $[ -\pi, \pi ]$. $a)$ Corresponds to the trivial phase. The resulting path can be homotopically deformed to a point. $b)$ The non-trivial phase corresponds to a non-contractible loop around $\mathbb{S}^1$.} }}
-\end{figure}
-
-Figure \ref{top} represents the first topological description that we have for the phase transition in the Kitaev chain. The topological order that characterizes this chain will be a $\mathbb{Z}_2$ invariant:
-\begin{itemize}
-\item $0$ for the trivial phase since the final loop is contractible. 
-\item $1$ for the non-trivial phase since it corresponds to a non-contractible cycle around $\mathbb{S}^1$.
-\end{itemize}
-
-The mean idea behind this relies in the adiabatic theorem.  In simple words, the adiabatic theorem says that a slow evolution of a gaped Hamiltonian will produce a smooth evolution of its ordered eigenstates. i.g The order of the eigenstates remains unchanged. \\
-
-The keyword in the previous definition is "gaped". As we can observe in Figure \ref{fig:KitaevSpec} the phase transition occurs at $\frac{\mu}{2t}=1$. This is when the system transitions between a gapless and gaped Hamiltonians.
 The connection with topology comes from the fact that adiabatic evolutions can be understood as smooth deformations of the Hamiltonian. However since gapless Hamiltonians imply phase transitions, the theory defines the gapless points as holes (or forbidden points) in the phase space. Then characterizing the phase transitions in the Kitaev chain is mainly a topological problem where gaped Hamiltonians are holes in the topological space. In addition, the topological orders characterizing this transition will be Chern or Winding numbers. \\
 
 
@@ -159,8 +144,24 @@ Though this connection between physics and topology is quite interesting, I will
 
 
 
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.8]{IMAGES/Majorana/Topological.png}
+\label{fig:topological}
+\caption{ The following represents the path of $\hat{H}_k$ for the interval $[ -\pi, \pi ]$. a) Corresponds to the trivial phase. The resulting path can be homotopically deformed to a point. b) The non-trivial phase corresponds to a non-contractible loop around the unitary circle. \protect \Source{By the author}} 
+\end{figure}
+
+
+
+
+
+
+
 % -----------------------Section: Modern and Experimental-------------
-\section{Real implementations of majorana chains}
+\section{Real implementations of Majorana Chains}
+
+
+
 
 
 % -----------------------Leaking majorana modes in quantum dots-------------
