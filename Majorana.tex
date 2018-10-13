@@ -78,6 +78,9 @@ These two situations are representatives of two different phases. The trivial ph
     \caption{Spectrum of Hamiltonian \eqref{eq:HamMajorana} with $30$ sites and $t=\super$ s. Method: Numerical diagonalization. \protect \Source{By the author} }
 \end{figure}
 
+
+
+% ---------------Subsection: Topological phase transition-------------
 \subsection{Topological phase transition}
 
 The two regimes described previously  can be characterized with a topological parameter.  One of the methods for this is following the idea used by \citeauthor{alicea_new_2012}\cite{alicea_new_2012}. The first part is to suppose that we have an infinite chain $(N=\infty)$ in Hamiltonian \eqref{eq:HamMajorana}. The new system is translation invariant, hence we can make a transformation to the momentum space. Then we may rewrite Hamiltonian \eqref{eq:HamMajorana}  as
@@ -130,7 +133,15 @@ Note that to determine whether path of a given phase is of type a) or type b) we
 -1 & \mbox{non-trivial phase}
 \end{cases}
 \end{equation}
-where $\hat{H}_{k=0,y}$ is the $y$-th component of $$\hat{H}_{k}$$. The term $\hat{H}_{k,y}$ is a particular case of the Pfaffian $\mathcal{P}(k)$, which widely used as topological order in  phases transition including  majorana modes . 
+where $\hat{H}_{k=0,y}$ is the $y$-th component of $\hat{H}_{k}$. The term $\hat{H}_{k,y}$ is a particular case of the Pfaffian $\mathcal{P}(k)$, which widely used as topological order in  phases transition including  majorana modes . 
+
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[scale=0.8]{IMAGES/Majorana/Topological.png}
+    \label{fig:topological}
+    \caption{ The following represents the path of $\hat{H}_k$ for the interval $[ -\pi, \pi ]$. a) Corresponds to the trivial phase. The resulting path can be homotopically deformed to a point. b) The non-trivial phase corresponds to a non-contractible loop around the unitary circle. \protect \Source{By the author}} 
+\end{figure}
 
 The mean idea behind this topological characterization relies in the adiabatic theorem.  In simple words, the adiabatic theorem says that a slow evolution of a gaped Hamiltonian will produce a smooth evolution of its ordered eigenstates. i.g The order of the eigenstates remains unchanged. \\
 
@@ -139,17 +150,10 @@ The keyword in the previous definition is "gaped". As we can observe in Figure \
 The connection with topology comes from the fact that adiabatic evolutions can be understood as smooth deformations of the Hamiltonian. However since gapless Hamiltonians imply phase transitions, the theory defines the gapless points as holes (or forbidden points) in the phase space. Then characterizing the phase transitions in the Kitaev chain is mainly a topological problem where gaped Hamiltonians are holes in the topological space. In addition, the topological orders characterizing this transition will be Chern or Winding numbers. \\
 
 
-Though this connection between physics and topology is quite interesting, I will stop here because it is taking us out of our real discussion which is majorana fermions.  You can find more information about this in ( \Jesus{add references}). However for this case the  \\
+Though this connection between physics and topology is quite interesting, I will stop here because it is taking us out of our real discussion which is majorana fermions.  You can find more information about this in ( \Jesus{add references}). 
 
-
-
-
-\begin{figure}[t]
-\centering
-\includegraphics[scale=0.8]{IMAGES/Majorana/Topological.png}
-\label{fig:topological}
-\caption{ The following represents the path of $\hat{H}_k$ for the interval $[ -\pi, \pi ]$. a) Corresponds to the trivial phase. The resulting path can be homotopically deformed to a point. b) The non-trivial phase corresponds to a non-contractible loop around the unitary circle. \protect \Source{By the author}} 
-\end{figure}
+% -----------------------Subsection: Non-abelian Statistics -------------
+\subsection{Non-abelian statistics}
 
 
 
@@ -161,10 +165,23 @@ Though this connection between physics and topology is quite interesting, I will
 \section{Real implementations of Majorana Chains}
 
 
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.7]{IMAGES/Majorana/Mwire.png}
+\label{fig:topological}
+\caption{  \protect\Source{\cite{alicea_new_2012}}}
+\end{figure}
 
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.7]{IMAGES/Majorana/majorana-wire.jpg}}
+\label{fig:topological}
+\caption{  \protect\Source{\cite{alicea_new_2012}}}
+
+\end{figure}
 
 
 % -----------------------Leaking majorana modes in quantum dots-------------
-\section{Leaking of Majorana modes in QDs}
+\section{Coupling Majorana modes with QDs}
 
 

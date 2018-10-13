@@ -54,6 +54,58 @@ T
 
 
 
+Graph theory provides a powerful shortcut to the solution of transport equations. Though this method doesn't brings any additional insight to transport theory, it does provide a straightforward method to compute the green functions and allows a better understanding of the physical meaning of green functions.
+
+To explain the idea behind graph method we will solve the transport equations for a non-interacting U=0 DQD connected to one lead. According to the Anderson model the Hamiltonian for this system looks like 
+\begin{equation}
+    H=\epsilon_{di}d_{i}^{\dagger}d_{i}+t_{dots}\left(d_{1}^{\dagger}d_{2}+d_{2}^{\dagger}d_{1}\right)+\sum_{k}\left(V_{i}d_{i}^{\dagger}c_{\mathbf{k}}+V_{i}^{*}c_{\mathbf{k}}^{\dagger}d_{i}\right).
+\end{equation} 
+
+
+with i summing over the terms \{1,2\}. Since the system is non-interacting we can ignore the spin-degeneracy in the Hamiltonian. Using we can compute some  of transport equations for this system \footnote{In general there are much more equations including all possible combinations of operators , but these 4 equations will be enough to make our point.} 
+\begin{align}
+     \left(\omega-\epsilon_{1}\right)\Green{d_{1},d_{1}^{\dagger}}&=1+t_{dots}\Green{d_{2},d_{1}^{\dagger}}+V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}}  \\
+     \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1}^{\dagger}} &= V_{1}\Green{d_{1},d_{1}^{\dagger}}+V_{2}\Green{d_{2},d_{1}^{\dagger}}  \\
+     \left(\omega-\epsilon_{2}\right)\Green{d_{2},d_{1}^{\dagger}}&= t_{dots}\Green{d_{1},d_{1}^{\dagger}}+V_{2}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}} 
+\end{align}
+    %  \left(\omega-\epsilon_{1}\right)\Green{d_{1},d_{1}^{\dagger}}	= & 1+t_{dots}\Green{d_{2},d_{1}^{\dagger}}+V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}} \\
+
+    % \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1}^{\dagger}}= & V_{1}\Green{d_{1},d_{1}^{\dagger}}+V_{2}\Green{d_{2},d_{1}^{\dagger}} \\
+
+    % \left(\omega-\epsilon_{2}\right)\Green{d_{2},d_{1}^{\dagger}}= & t_{dots}\Green{d_{1},d_{1}^{\dagger}}+V_{2}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}}. \\
+
+
+
+
+Our objective is to compute the green function for $\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}$. This process consist in solving $3$ linear diferential equations which is not difficult at all.  In fact the result is 
+
+\begin{equation}
+\Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\left(\omega-\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)-\frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)^{*}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}}.
+\end{equation}
+
+However this method lacks of any useful intuition that could help us  to  solve larger systems which remarks the real importance of the graph method. We proceed with the construction of the graph. Lets define the vertexes of the graph as any operator appearing in the the first site of the green functions . Thus, the vertex in our graph will be $d_{1\downarrow},d_{2},c_{\boldsymbol{k}}$. In addition the edges will carry a weight given by the coupling energy between the two vertexes that it is connecting. The graphs will look like the following
+
+
+
+
+
+Now, the green functions are representing all this possible transitions. For instance the green function \Green{d_{1},d_{1}^{\dagger}} represents the acumulated energy for the 
+
+For simplicity I will now give the result for the green function and I will explain later how graph in Figure takes us to that result. The green function
+
+
+
+The green functions will always have the form \frac{1}{\omega-E} where E is an energy. Looking at equation [eq:green1] we observe that if we can express \Green{d_{2},d_{1}^{\dagger}} and \sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}} as multiples of \Green{d_{1},d_{1}^{\dagger}} (i.e \Green{d_{2},d_{1}^{\dagger}}=\eta_{2}\Green{d_{1},d_{1}^{\dagger}},\Green{c_{\mathbf{k}},d_{1}^{\dagger}}=\eta_{\boldsymbol{k}}\Green{d_{1},d_{1}^{\dagger}}) , the result for \Green{d_{1},d_{1}^{\dagger}} will be \Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\omega-\epsilon_{1}-\sum_{\boldsymbol{k}}V_{1}^{*}\eta_{\boldsymbol{k}}+t_{dots}\eta_{2}}
+
+Hence to obtain \Green{d_{1},d_{1}^{\dagger}} we need to find \eta_{\boldsymbol{k}} and \eta_{2}. Now note from equation [eq:ck-green] that \left(\omega-\epsilon_{\boldsymbol{k}}\right)\eta_{\boldsymbol{k}}=V_{1}+V_{2}\eta_{2}
+
+\Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\omega-\epsilon_{1}-\sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}+V_{1}^{*}V_{2}t_{dots}\eta_{2}\eta_{2}}
+
+Now, probably at this point you might already know what is happening here. Basically the energy E represents the sum of all possible transitions in the graph from figure starting and finishing at d_{1} . The first term is \epsilon_{1} that is the energy of dot 1. The next term is \frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}} which represents a path d_{1}\rightarrow c_{k}\rightarrow d_{1}. Note that \frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}} is basically the energy needed to go from d_{1} to c_{\boldsymbol{k}}and coming back divided by the energy consumed for passing through c_{\boldsymbol{k}} which is \omega-\epsilon_{\boldsymbol{k}}. We can then explain why the last term is\frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)\left(t_{dots}^{*}+\sum_{\mathbf{k}}\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}.
+
+The term \left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right) is the energy needed to go from d_{1} to d_{2}, let it be passing through c_{\boldsymbol{k}}\left(\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right) or going directly \left(t_{dots}\right). The term is multiplied by \left(t_{dots}^{*}+\sum_{\mathbf{k}}\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}\right) which represents the opposed transition from d_{2} to d_{1}. Finally we need to divide by the cost of passing through d_{2} and c_{\boldsymbol{k}}.This is basically to multiply by the green function taking d_{1} out of graph in Figure . The result of this green function is \frac{1}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}.
+
+
 
 % --------------------------------------------------
 \section{The Numerical Renormalization Group\label{sec:The-Numerical-Renormaliztion} (NRG) }
