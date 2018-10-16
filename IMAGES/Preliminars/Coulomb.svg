@@ -26,9 +26,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="278.83627"
-     inkscape:cx="288.77017"
-     inkscape:zoom="0.98994949"
+     inkscape:cy="459.6487"
+     inkscape:cx="208.01374"
+     inkscape:zoom="0.7"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -2453,52 +2453,76 @@
     <circle
        style="opacity:0.95999995;fill:#ffffff;fill-opacity:0.24519228;stroke:#020203;stroke-width:4;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21471"
-       cx="187.91347"
-       cy="747.28271"
-       r="81.914436" />
+       cx="212.48489"
+       cy="740.13983"
+       r="81.914436"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="opacity:0.95999995;fill:#ffffff;fill-opacity:0.24519228;stroke:#f4121f;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21471-9"
        sodipodi:type="arc"
-       sodipodi:cx="-188.41847"
-       sodipodi:cy="-746.4884"
+       sodipodi:cx="-212.9899"
+       sodipodi:cy="-739.34552"
        sodipodi:rx="81.914436"
        sodipodi:ry="81.914436"
        sodipodi:start="0.78539816"
        sodipodi:end="2.3561945"
-       d="m -130.49622,-688.56615 a 81.914436,81.914436 0 0 1 -57.92225,23.99218 81.914436,81.914436 0 0 1 -57.92226,-23.99218"
+       d="m -155.06765,-681.42327 a 81.914436,81.914436 0 0 1 -57.92225,23.99219 81.914436,81.914436 0 0 1 -57.92225,-23.99219"
        transform="scale(-1,-1)"
-       sodipodi:open="true" />
+       sodipodi:open="true"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker21521);marker-end:url(#marker21527)"
-       d="m 188.41852,648.79281 0,97.47972 0,94.95434"
+       d="m 212.98995,641.64995 0,97.47972 0,94.95434"
        id="path21517"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker21534);marker-end:url(#marker21530)"
-       d="m 287.91855,746.27253 -99.50003,0 -98.48987,0"
+       d="m 312.48998,739.12967 -99.50003,0 -98.48987,0"
        id="path21519"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 129.82967,688.69384 58.08377,58.08377 58.08378,-58.08377"
+       d="m 154.4011,681.55098 58.08377,58.08377 58.08378,-58.08377"
        id="path21537"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#f67272;fill-opacity:0.48557691;stroke:#b82b07;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541"
-       cx="130.31223"
-       cy="689.77582"
-       r="2.5253813" />
+       cx="154.88365"
+       cy="682.63293"
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#f67272;fill-opacity:0.48557691;stroke:#b82b07;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2"
-       cx="246.47977"
-       cy="688.76569"
-       r="2.5253813" />
+       cx="271.05121"
+       cy="681.6228"
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
-       transform="matrix(0.3055224,0,0,0.3055224,47.095333,531.69301)"
-       id="g21881">
+       transform="matrix(0.3055224,0,0,0.3055224,72.676915,526.57046)"
+       id="g21881"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="g21883"
@@ -2513,7 +2537,7 @@
          letter-spacing="normal"
          word-spacing="normal"><polygon
            style="fill:#000000;stroke-width:0"
-           points="481.05,453.38 474.38,446.6 475.27,445.71 481.05,450.79 486.79,445.71 487.68,446.6 "
+           points="487.68,446.6 481.05,453.38 474.38,446.6 475.27,445.71 481.05,450.79 486.79,445.71 "
            id="polygon21885" /><path
            style="fill:#000000;stroke-width:0"
            inkscape:connector-curvature="0"
@@ -2544,7 +2568,7 @@
            d="m 620,412.82 0.07,0 0.06,0 0.14,0.01 0.14,0 0.07,0 0.07,0.01 0.07,0.01 0.07,0 0.06,0.01 0.07,0.02 0.07,0.01 0.06,0.02 0.07,0.02 0.06,0.02 0.06,0.02 0.06,0.03 0.05,0.03 0.05,0.04 0.05,0.04 0.05,0.04 0.04,0.05 0.02,0.02 0.02,0.03 0.02,0.02 0.02,0.03 0.01,0.03 0.02,0.03 0.01,0.03 0.02,0.03 0.01,0.04 0.01,0.03 0.01,0.04 0.01,0.04 0,0.04 0.01,0.04 0,0.04 0.01,0.04 0,0.05 0,0.04 c 0,1 -0.95,1 -1.69,1 l -29.75,0 c -0.75,0 -1.68,0 -1.68,-1 0,-1 0.93,-1 1.64,-1 z"
            id="path21899" /><polygon
            style="fill:#000000;stroke-width:0"
-           points="663.81,453.38 657.14,446.6 658.03,445.71 663.81,450.79 669.55,445.71 670.44,446.6 "
+           points="670.44,446.6 663.81,453.38 657.14,446.6 658.03,445.71 663.81,450.79 669.55,445.71 "
            id="polygon21901" /><path
            style="fill:#000000;stroke-width:0"
            inkscape:connector-curvature="0"
@@ -2597,45 +2621,69 @@
     <circle
        style="opacity:0.95999995;fill:#ffffff;fill-opacity:0.24519228;stroke:#ed0606;stroke-width:4;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.94711537"
        id="path21471-5"
-       cx="493.68033"
+       cx="557.6803"
        cy="746.56763"
-       r="81.914436" />
+       r="81.914436"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker21534-2);marker-end:url(#marker21530-7)"
-       d="m 593.68542,745.55746 -99.50003,0 -98.48986,0"
+       d="m 657.68542,745.55746 -99.50003,0 -98.48986,0"
        id="path21519-8"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#f67272;fill-opacity:0.48557691;stroke:#b82b07;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-9"
-       cx="188.22554"
-       cy="664.02155"
-       r="2.5253813" />
+       cx="212.79697"
+       cy="656.87866"
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        inkscape:connector-curvature="0"
        id="path22305"
-       d="m 202.86865,647.94991 -15.43677,16.88657 0,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker22314)" />
+       d="m 227.44008,640.80705 -15.43677,16.88657 0,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker22314)"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker21521-3);marker-end:url(#marker21527-8)"
-       d="m 493.72389,650.51751 0,97.47972 0,94.95434"
+       d="m 557.72389,650.51751 0,97.47972 0,94.95434"
        id="path21517-2"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#f67272;fill-opacity:0.48557691;stroke:#b82b07;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-9-1"
-       cx="493.42856"
+       cx="557.42859"
        cy="664.93365"
-       r="2.5253813" />
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#f67272;fill-opacity:0.48557691;stroke:#b82b07;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-9-1-0"
-       cx="493.42856"
+       cx="557.42859"
        cy="827.07654"
-       r="2.5253813" />
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
-       transform="matrix(0.33585102,0,0,0.29946372,355.57406,750.71884)"
-       id="g22726">
+       transform="matrix(0.33585102,0,0,0.29946372,419.57406,750.71884)"
+       id="g22726"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          word-spacing="normal"
@@ -2651,7 +2699,7 @@
          id="g22728"><polygon
            style="fill:#000000;stroke-width:0"
            id="polygon22730"
-           points="481.05,453.38 474.38,446.6 475.27,445.71 481.05,450.79 486.79,445.71 487.68,446.6 " /><path
+           points="474.38,446.6 475.27,445.71 481.05,450.79 486.79,445.71 487.68,446.6 481.05,453.38 " /><path
            style="fill:#000000;stroke-width:0"
            inkscape:connector-curvature="0"
            id="path22732"
@@ -2706,7 +2754,10 @@
            d="m 782.73,418.65 0,0.37 0,0.39 -0.01,0.39 -0.01,0.41 -0.04,0.84 -0.06,0.88 -0.09,0.92 -0.1,0.95 -0.14,0.97 -0.16,1.01 -0.2,1.02 -0.23,1.03 -0.26,1.05 -0.31,1.06 -0.35,1.07 -0.39,1.07 -0.21,0.53 -0.23,0.53 -0.24,0.53 -0.25,0.53 c -2.98,6.12 -7.26,9.36 -7.76,9.36 -0.3,0 -0.5,-0.19 -0.5,-0.49 0,-0.15 0,-0.25 0.93,-1.15 4.9,-4.92 7.74,-12.85 7.74,-23.27 0,-8.51 -1.84,-17.28 -8.03,-23.56 -0.64,-0.59 -0.64,-0.7 -0.64,-0.84 0,-0.3 0.2,-0.5 0.5,-0.5 0.5,0 4.97,3.39 7.92,9.71 2.53,5.47 3.12,11 3.12,15.19 z" /></g>    </g>
     <g
        id="g24290"
-       transform="matrix(0.31540019,0,0,0.31540019,392.64457,527.91964)">
+       transform="matrix(0.31540019,0,0,0.31540019,456.64457,527.91964)"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          word-spacing="normal"
          letter-spacing="normal"
@@ -2721,7 +2772,7 @@
          id="g24292"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><polygon
            id="polygon24294"
-           points="486.79,445.71 487.68,446.6 481.05,453.38 474.38,446.6 475.27,445.71 481.05,450.79 "
+           points="487.68,446.6 481.05,453.38 474.38,446.6 475.27,445.71 481.05,450.79 486.79,445.71 "
            style="fill:#000000;stroke-width:0" /><path
            id="path24296"
            d="m 493.54,436.39 0.04,0.16 0.04,0.16 0.04,0.15 0.04,0.14 0.04,0.14 0.04,0.13 0.04,0.12 0.05,0.11 0.05,0.11 0.05,0.11 0.06,0.09 0.07,0.09 0.07,0.09 0.08,0.08 0.09,0.07 0.09,0.07 0.11,0.06 0.11,0.06 0.13,0.05 0.14,0.05 0.15,0.04 0.16,0.04 0.09,0.02 0.09,0.02 0.09,0.01 0.1,0.02 0.1,0.01 0.1,0.01 0.11,0.02 0.11,0.01 0.12,0.01 0.12,0 0.13,0.01 0.13,0.01 0.13,0.01 0.14,0 0.14,0 0.15,0.01 0.15,0 0.16,0 0.16,0 0.17,0 c 1.3,0 1.69,0 1.69,1 0,0.55 -0.55,0.55 -0.7,0.55 -1.39,0 -4.97,-0.16 -6.38,-0.16 -1.44,0 -4.98,0.16 -6.42,0.16 -0.39,0 -0.95,0 -0.95,-1 0,-0.55 0.45,-0.55 1.4,-0.55 0.1,0 1.05,0 1.89,-0.09 0.89,-0.11 1.35,-0.16 1.35,-0.8 0,-0.2 -0.05,-0.31 -0.21,-0.95 l -2.98,-12.16 -15.2,0 2.95,11.71 c 0.44,1.79 0.59,2.29 4.17,2.29 1.3,0 1.71,0 1.71,1 0,0.55 -0.55,0.55 -0.71,0.55 -1.39,0 -4.98,-0.16 -6.37,-0.16 -1.44,0 -4.99,0.16 -6.42,0.16 -0.41,0 -0.96,0 -0.96,-1 0,-0.55 0.46,-0.55 1.39,-0.55 0.11,0 1.05,0 1.91,-0.09 0.89,-0.11 1.34,-0.16 1.34,-0.8 0,-0.2 -0.06,-0.36 -0.2,-0.95 l -6.67,-26.75 c -0.5,-1.95 -0.61,-2.34 -4.55,-2.34 -0.89,0 -1.34,0 -1.34,-1 0,-0.55 0.61,-0.55 0.7,-0.55 1.39,0 4.94,0.16 6.33,0.16 1.05,0 2.14,-0.07 3.19,-0.07 1.09,0 2.18,-0.09 3.23,-0.09 0.41,0 1,0 1,1 0,0.55 -0.45,0.55 -1.39,0.55 -1.84,0 -3.23,0 -3.23,0.89 0,0.29 0.09,0.54 0.14,0.84 l 3.39,13.66 15.18,0 c -2.09,-8.27 -3.23,-13 -3.43,-13.75 -0.49,-1.6 -1.44,-1.64 -4.53,-1.64 -0.75,0 -1.19,0 -1.19,-1 0,-0.55 0.59,-0.55 0.69,-0.55 1.4,0 4.93,0.16 6.32,0.16 1.05,0 2.14,-0.07 3.19,-0.07 1.11,0 2.2,-0.09 3.25,-0.09 0.39,0 0.99,0 0.99,1 0,0.55 -0.44,0.55 -1.4,0.55 -1.84,0 -3.23,0 -3.23,0.89 0,0.29 0.09,0.54 0.14,0.84 z"
@@ -2773,9 +2824,12 @@
            style="fill:#000000;stroke-width:0" /></g>    </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24731)"
-       d="m 508.86217,842.49297 -14.86009,-15.31663 0,0"
+       d="m 572.86217,842.49297 -14.86009,-15.31663 0,0"
        id="path24729"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 651.54839,1000.8444 21.2132,-61.6193"
@@ -2783,12 +2837,18 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker24739)"
-       d="m 509.17365,647.26477 -15.97955,18.52028 0.31333,0"
+       d="m 573.17365,647.26477 -15.97955,18.52028 0.31333,0"
        id="path24737"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
-       transform="matrix(0.3524601,0,0,0.3524601,390.63198,614.61558)"
-       id="g25140">
+       transform="matrix(0.3524601,0,0,0.3524601,454.63198,614.61558)"
+       id="g25140"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="g25142"
@@ -2823,8 +2883,11 @@
            d="m 561.22,418.65 0,0.37 -0.01,0.39 -0.01,0.39 -0.01,0.41 -0.04,0.84 -0.06,0.88 -0.08,0.92 -0.11,0.95 -0.13,0.97 -0.17,1.01 -0.19,1.02 -0.23,1.03 -0.27,1.05 -0.31,1.06 -0.34,1.07 -0.4,1.07 -0.21,0.53 -0.22,0.53 -0.24,0.53 -0.25,0.53 c -2.99,6.12 -7.27,9.36 -7.77,9.36 -0.29,0 -0.5,-0.19 -0.5,-0.49 0,-0.15 0,-0.25 0.94,-1.15 4.89,-4.92 7.73,-12.85 7.73,-23.27 0,-8.51 -1.84,-17.28 -8.03,-23.56 -0.64,-0.59 -0.64,-0.7 -0.64,-0.84 0,-0.3 0.21,-0.5 0.5,-0.5 0.5,0 4.97,3.39 7.92,9.71 2.53,5.47 3.13,11 3.13,15.19 z"
            id="path25152" /></g>    </g>
     <g
-       transform="matrix(0.34190563,0,0,0.34190563,478.7259,615.44809)"
-       id="g25952">
+       transform="matrix(0.34190563,0,0,0.34190563,542.7259,615.44809)"
+       id="g25952"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          word-spacing="normal"
@@ -2859,8 +2922,11 @@
            id="path25964"
            d="m 561.22,418.65 0,0.37 -0.01,0.39 -0.01,0.39 -0.01,0.41 -0.04,0.84 -0.06,0.88 -0.08,0.92 -0.11,0.95 -0.13,0.97 -0.17,1.01 -0.19,1.02 -0.23,1.03 -0.27,1.05 -0.31,1.06 -0.34,1.07 -0.4,1.07 -0.21,0.53 -0.22,0.53 -0.24,0.53 -0.25,0.53 c -2.99,6.12 -7.27,9.36 -7.77,9.36 -0.29,0 -0.5,-0.19 -0.5,-0.49 0,-0.15 0,-0.25 0.94,-1.15 4.89,-4.92 7.73,-12.85 7.73,-23.27 0,-8.51 -1.84,-17.28 -8.03,-23.56 -0.64,-0.59 -0.64,-0.7 -0.64,-0.84 0,-0.3 0.21,-0.5 0.5,-0.5 0.5,0 4.97,3.39 7.92,9.71 2.53,5.47 3.13,11 3.13,15.19 z" /></g>    </g>
     <g
-       transform="matrix(0.34759363,0,0,0.34759363,249.96731,611.39384)"
-       id="g26778">
+       transform="matrix(0.34759363,0,0,0.34759363,313.96731,611.39384)"
+       id="g26778"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="g26780"
@@ -2901,36 +2967,54 @@
     <circle
        style="opacity:0.95999995;fill:#000000;fill-opacity:0.48557691;stroke:#0c0300;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-5"
-       cx="270"
-       cy="745.64789"
-       r="2.5253813" />
+       cx="294.57144"
+       cy="738.505"
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#000000;fill-opacity:0.48557691;stroke:#0c0300;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-1"
-       cx="187.85715"
-       cy="829.21936"
-       r="2.5253813" />
+       cx="212.42857"
+       cy="822.07648"
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#000000;fill-opacity:0.48557691;stroke:#0c0300;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-10"
-       cx="105.00001"
-       cy="746.36218"
-       r="2.5253813" />
+       cx="129.57143"
+       cy="739.2193"
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#f67272;fill-opacity:0.48557691;stroke:#b82b07;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-9-1-0-8"
-       cx="411.64285"
+       cx="475.64285"
        cy="745.29077"
-       r="2.5253813" />
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#f67272;fill-opacity:0.48557691;stroke:#b82b07;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-9-1-0-5"
-       cx="575.57141"
+       cx="639.57141"
        cy="744.57648"
-       r="2.5253813" />
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
-       transform="matrix(0.34759363,0,0,0.34759363,-57.678553,610.99066)"
-       id="g26778-0">
+       transform="matrix(0.34759363,0,0,0.34759363,-39.107124,599.56209)"
+       id="g26778-0"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="g26780-6"
@@ -2969,8 +3053,11 @@
            d="m 599.98,418.65 0,0.37 -0.01,0.39 -0.01,0.39 -0.01,0.41 -0.04,0.84 -0.06,0.88 -0.08,0.92 -0.11,0.95 -0.13,0.97 -0.17,1.01 -0.19,1.02 -0.23,1.03 -0.27,1.05 -0.31,1.06 -0.35,1.07 -0.39,1.07 -0.21,0.53 -0.23,0.53 -0.23,0.53 -0.25,0.53 c -2.99,6.12 -7.27,9.36 -7.77,9.36 -0.3,0 -0.5,-0.19 -0.5,-0.49 0,-0.15 0,-0.25 0.94,-1.15 4.89,-4.92 7.73,-12.85 7.73,-23.27 0,-8.51 -1.84,-17.28 -8.03,-23.56 -0.64,-0.59 -0.64,-0.7 -0.64,-0.84 0,-0.3 0.2,-0.5 0.5,-0.5 0.5,0 4.97,3.39 7.92,9.71 2.53,5.47 3.13,11 3.13,15.19 z"
            id="path26792-6" /></g>    </g>
     <g
-       transform="matrix(0.34190563,0,0,0.34190563,167.94131,612.94872)"
-       id="g25952-2">
+       transform="matrix(0.34190563,0,0,0.34190563,192.51274,605.80586)"
+       id="g25952-2"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          word-spacing="normal"
@@ -3006,7 +3093,10 @@
            d="m 561.22,418.65 0,0.37 -0.01,0.39 -0.01,0.39 -0.01,0.41 -0.04,0.84 -0.06,0.88 -0.08,0.92 -0.11,0.95 -0.13,0.97 -0.17,1.01 -0.19,1.02 -0.23,1.03 -0.27,1.05 -0.31,1.06 -0.34,1.07 -0.4,1.07 -0.21,0.53 -0.22,0.53 -0.24,0.53 -0.25,0.53 c -2.99,6.12 -7.27,9.36 -7.77,9.36 -0.29,0 -0.5,-0.19 -0.5,-0.49 0,-0.15 0,-0.25 0.94,-1.15 4.89,-4.92 7.73,-12.85 7.73,-23.27 0,-8.51 -1.84,-17.28 -8.03,-23.56 -0.64,-0.59 -0.64,-0.7 -0.64,-0.84 0,-0.3 0.21,-0.5 0.5,-0.5 0.5,0 4.97,3.39 7.92,9.71 2.53,5.47 3.13,11 3.13,15.19 z" /></g>    </g>
     <g
        id="g27759"
-       transform="matrix(0.30476428,0,0,0.30476428,104.5734,739.10982)">
+       transform="matrix(0.30476428,0,0,0.30476428,129.14483,731.96696)"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          word-spacing="normal"
          letter-spacing="normal"
@@ -3045,8 +3135,11 @@
            inkscape:connector-curvature="0"
            style="fill:#000000;stroke-width:0" /></g>    </g>
     <g
-       transform="matrix(0.3524601,0,0,0.3524601,83.274987,640.10575)"
-       id="g25140-3">
+       transform="matrix(0.3524601,0,0,0.3524601,107.84642,632.96289)"
+       id="g25140-3"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="g25142-9"
@@ -3083,19 +3176,25 @@
     <circle
        style="opacity:0.95999995;fill:#000000;fill-opacity:0.48557691;stroke:#0c0300;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-1-3"
-       cx="188.89853"
-       cy="746.28601"
-       r="2.5253813" />
+       cx="213.46996"
+       cy="739.14313"
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <circle
        style="opacity:0.95999995;fill:#000000;fill-opacity:0.48557691;stroke:#0c0300;stroke-width:5;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path21541-2-1-8"
-       cx="493.74124"
+       cx="557.74121"
        cy="746.28595"
-       r="2.5253813" />
+       r="2.5253813"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
-       transform="matrix(0.58972315,0,0,0.58972315,190.61477,436.70123)"
+       transform="matrix(0.58972315,0,0,0.58972315,217.47191,443.84409)"
        id="g13394-0"
-       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/KitaevChain"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -3121,8 +3220,8 @@
            id="path13400-6" /></g>    </g>
     <g
        id="g13022-4"
-       transform="matrix(0.57021911,0,0,0.57021911,-115.41799,432.79752)"
-       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/KitaevChain"
+       transform="matrix(0.57021911,0,0,0.57021911,-121.13228,444.2261)"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <g
@@ -3146,5 +3245,109 @@
            d="m 494.87,418.65 0,0.37 -0.01,0.39 -0.01,0.39 -0.01,0.41 -0.04,0.84 -0.06,0.88 -0.08,0.92 -0.11,0.95 -0.13,0.97 -0.17,1.01 -0.19,1.02 -0.23,1.03 -0.27,1.05 -0.31,1.06 -0.35,1.07 -0.39,1.07 -0.21,0.53 -0.23,0.53 -0.23,0.53 -0.25,0.53 c -2.99,6.12 -7.27,9.36 -7.77,9.36 -0.3,0 -0.5,-0.19 -0.5,-0.49 0,-0.15 0,-0.25 0.94,-1.15 4.89,-4.92 7.73,-12.85 7.73,-23.27 0,-8.51 -1.84,-17.28 -8.03,-23.56 -0.64,-0.59 -0.64,-0.7 -0.64,-0.84 0,-0.3 0.2,-0.5 0.5,-0.5 0.5,0 4.97,3.39 7.92,9.71 2.53,5.47 3.13,11 3.13,15.19 z"
            inkscape:connector-curvature="0"
            style="fill:#000000;stroke-width:0" /></g>    </g>
+    <g
+       id="g28814"
+       transform="matrix(0.53624432,0,0,0.53624432,-116.89371,610.10204)"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         id="g28816"
+         transform="matrix(1.0629921,0,0,-1.0629921,-186.02362,789.27165)"
+         xml:space="preserve"
+         stroke-miterlimit="10.433"
+         font-style="normal"
+         font-variant="normal"
+         font-weight="normal"
+         font-stretch="normal"
+         font-size-adjust="none"
+         letter-spacing="normal"
+         word-spacing="normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           d="m 468.8,422.79 -0.01,-0.05 -0.02,-0.04 0,-0.05 -0.01,-0.04 -0.01,-0.04 -0.01,-0.04 -0.01,-0.03 -0.01,-0.04 0,-0.03 -0.01,-0.03 0,-0.03 -0.01,-0.03 0,-0.03 -0.01,-0.02 0,-0.03 0,-0.02 -0.01,-0.02 0,-0.02 0,-0.02 0,-0.02 0,-0.01 0,-0.01 -0.01,-0.02 0,-0.01 0,-0.01 0,-0.01 0,-0.01 0,-0.01 0,0 0,-0.01 0,0 0,-0.01 c 0,-0.76 0.63,-1.1 1.17,-1.1 1.27,0 1.54,1.14 1.68,1.73 0.07,0.17 0.76,2.97 1.6,6.37 1.08,-0.71 2.47,-1 3.74,-1 2.98,0 4.94,2.44 5.02,2.5 0.65,-2.4 3.06,-2.5 3.57,-2.5 1.27,0 2.13,0.77 2.77,1.85 0.76,1.36 1.22,3.34 1.22,3.48 0,0.46 -0.46,0.46 -0.56,0.46 -0.49,0 -0.54,-0.14 -0.77,-1.08 -0.42,-1.67 -1.08,-3.74 -2.55,-3.74 -0.9,0 -1.15,0.77 -1.15,1.71 0,0.59 0.28,1.86 0.53,2.76 0.25,0.94 0.59,2.36 0.76,3.13 l 0.8,3.11 c 0.22,0.87 0.59,2.4 0.59,2.57 0,0.69 -0.54,1.11 -1.14,1.11 -0.39,0 -1.04,-0.17 -1.43,-0.82 -0.11,-0.22 -0.38,-1.33 -0.57,-2.04 l -0.72,-2.89 -1.07,-4.36 c -0.25,-0.85 -0.25,-0.93 -0.57,-1.39 -1.07,-1.53 -2.61,-2.89 -4.61,-2.89 -2.84,0 -2.84,2.47 -2.84,3.11 0,0.91 0.09,1.36 0.59,3.24 0.35,1.53 0.41,1.78 0.77,3.14 l 0.48,1.95 c 0.18,0.72 0.52,2.05 0.52,2.19 0,0.62 -0.48,1.11 -1.19,1.11 -1.25,0 -1.56,-1.22 -1.67,-1.63 z"
+           id="path28818"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><polyline
+           points="462,418 496.92,418 496.92,420.04 462,420.04 "
+           id="polyline28820"
+           style="fill:#000000;fill-rule:nonzero;stroke-width:0" /><path
+           d="m 479.11,395.38 -1.18,0 c -0.1,-0.76 -0.46,-2.83 -0.91,-3.17 -0.27,-0.2 -2.95,-0.2 -3.44,-0.2 l -6.42,0 c 3.66,3.23 4.88,4.2 6.97,5.84 2.58,2.06 4.98,4.22 4.98,7.53 0,4.22 -3.68,6.8 -8.15,6.8 -4.32,0 -7.25,-3.03 -7.25,-6.23 0,-1.79 1.5,-1.96 1.86,-1.96 0.82,0 1.84,0.6 1.84,1.85 0,0.62 -0.25,1.84 -2.06,1.84 1.08,2.47 3.45,3.23 5.09,3.23 3.49,0 5.3,-2.7 5.3,-5.53 0,-3.03 -2.16,-5.43 -3.28,-6.68 l -8.39,-8.3 c -0.36,-0.31 -0.36,-0.39 -0.36,-1.36 l 14.36,0 z"
+           id="path28822"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><path
+           d="m 489.89,402.8 3.55,0 c 0.66,0 1.11,0 1.11,0.77 0,0.48 -0.45,0.48 -1.03,0.48 l -3.31,0 1.28,5.16 c 0.03,0.17 0.11,0.34 0.11,0.49 0,0.64 -0.49,1.12 -1.19,1.12 -0.87,0 -1.39,-0.59 -1.64,-1.5 -0.23,-0.87 0.22,0.8 -1.33,-5.27 l -3.55,0 c -0.65,0 -1.1,0 -1.1,-0.76 0,-0.49 0.4,-0.49 1.04,-0.49 l 3.3,0 -2.05,-8.21 c -0.22,-0.88 -0.53,-2.13 -0.53,-2.58 0,-2.06 1.75,-3.31 3.74,-3.31 3.87,0 6.06,4.87 6.06,5.32 0,0.46 -0.46,0.46 -0.56,0.46 -0.41,0 -0.46,-0.08 -0.72,-0.66 -0.99,-2.2 -2.77,-4.16 -4.68,-4.16 -0.73,0 -1.21,0.46 -1.21,1.71 0,0.36 0.14,1.09 0.2,1.43 z"
+           id="path28824"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><path
+           d="m 549.86,417.56 0.1,0.05 0.1,0.04 0.05,0.03 0.04,0.02 0.05,0.03 0.04,0.02 0.05,0.03 0.04,0.02 0.04,0.03 0.03,0.03 0.04,0.03 0.04,0.03 0.03,0.03 0.03,0.03 0.04,0.03 0.03,0.03 0.02,0.04 0.03,0.03 0.02,0.04 0.03,0.04 0.02,0.04 0.01,0.04 0.02,0.04 0.01,0.04 0.02,0.05 0.01,0.05 0.01,0.04 0,0.05 0,0.06 0.01,0.05 c 0,0.6 -0.41,0.85 -0.96,1.1 l -27.59,13.01 c -0.66,0.35 -0.75,0.35 -0.91,0.35 -0.54,0 -0.98,-0.46 -0.98,-1 0,-0.46 0.25,-0.75 0.94,-1.1 l 26.15,-12.36 -26.15,-12.36 c -0.69,-0.34 -0.94,-0.64 -0.94,-1.09 0,-0.55 0.44,-1 0.98,-1 0.16,0 0.25,0 0.91,0.36 z"
+           id="path28826"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><path
+           d="m 583.44,438.09 0,0.05 0,0.06 0,0.05 0,0.05 0,0.05 0,0.05 0,0.04 0,0.05 -0.01,0.04 0,0.04 0,0.04 0,0.04 0,0.04 0,0.03 -0.01,0.04 0,0.03 -0.01,0.07 -0.01,0.06 -0.01,0.05 -0.01,0.05 -0.02,0.05 -0.02,0.04 -0.02,0.04 -0.02,0.03 -0.03,0.03 -0.04,0.03 -0.03,0.03 -0.04,0.02 -0.04,0.02 -0.03,0.01 -0.02,0.01 -0.03,0 -0.03,0.01 -0.02,0.01 -0.03,0 -0.03,0.01 -0.04,0 -0.03,0.01 -0.03,0 -0.04,0 -0.04,0.01 -0.04,0 -0.04,0 -0.04,0 -0.04,0 -0.05,0 -0.04,0.01 -0.05,0 -0.05,0 -0.05,0 -0.05,0 c -3.1,-3.19 -7.47,-3.19 -9.07,-3.19 l 0,-1.55 c 1,0 3.94,0 6.52,1.3 l 0,-25.81 c 0,-1.8 -0.14,-2.39 -4.63,-2.39 l -1.59,0 0,-1.55 c 1.75,0.16 6.08,0.16 8.06,0.16 2,0 6.33,0 8.08,-0.16 l 0,1.55 -1.59,0 c -4.49,0 -4.64,0.54 -4.64,2.39 z"
+           id="path28828"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /></g>    </g>
+    <g
+       id="g29764"
+       transform="matrix(0.55126082,0,0,0.55126082,222.18577,607.12894)"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         transform="matrix(1.0629921,0,0,-1.0629921,-186.02362,789.27165)"
+         id="g29766"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path29768"
+           d="m 468.8,422.79 -0.01,-0.05 -0.02,-0.04 0,-0.05 -0.01,-0.04 -0.01,-0.04 -0.01,-0.04 -0.01,-0.03 -0.01,-0.04 0,-0.03 -0.01,-0.03 0,-0.03 -0.01,-0.03 0,-0.03 -0.01,-0.02 0,-0.03 0,-0.02 -0.01,-0.02 0,-0.02 0,-0.02 0,-0.02 0,-0.01 0,-0.01 -0.01,-0.02 0,-0.01 0,-0.01 0,-0.01 0,-0.01 0,-0.01 0,0 0,-0.01 0,0 0,-0.01 c 0,-0.76 0.63,-1.1 1.17,-1.1 1.27,0 1.54,1.14 1.68,1.73 0.07,0.17 0.76,2.97 1.6,6.37 1.08,-0.71 2.47,-1 3.74,-1 2.98,0 4.94,2.44 5.02,2.5 0.65,-2.4 3.06,-2.5 3.57,-2.5 1.27,0 2.13,0.77 2.77,1.85 0.76,1.36 1.22,3.34 1.22,3.48 0,0.46 -0.46,0.46 -0.56,0.46 -0.49,0 -0.54,-0.14 -0.77,-1.08 -0.42,-1.67 -1.08,-3.74 -2.55,-3.74 -0.9,0 -1.15,0.77 -1.15,1.71 0,0.59 0.28,1.86 0.53,2.76 0.25,0.94 0.59,2.36 0.76,3.13 l 0.8,3.11 c 0.22,0.87 0.59,2.4 0.59,2.57 0,0.69 -0.54,1.11 -1.14,1.11 -0.39,0 -1.04,-0.17 -1.43,-0.82 -0.11,-0.22 -0.38,-1.33 -0.57,-2.04 l -0.72,-2.89 -1.07,-4.36 c -0.25,-0.85 -0.25,-0.93 -0.57,-1.39 -1.07,-1.53 -2.61,-2.89 -4.61,-2.89 -2.84,0 -2.84,2.47 -2.84,3.11 0,0.91 0.09,1.36 0.59,3.24 0.35,1.53 0.41,1.78 0.77,3.14 l 0.48,1.95 c 0.18,0.72 0.52,2.05 0.52,2.19 0,0.62 -0.48,1.11 -1.19,1.11 -1.25,0 -1.56,-1.22 -1.67,-1.63 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><polyline
+           id="polyline29770"
+           points="462,418 496.92,418 496.92,420.04 462,420.04 "
+           style="fill:#000000;fill-rule:nonzero;stroke-width:0" /><path
+           id="path29772"
+           d="m 479.11,395.38 -1.18,0 c -0.1,-0.76 -0.46,-2.83 -0.91,-3.17 -0.27,-0.2 -2.95,-0.2 -3.44,-0.2 l -6.42,0 c 3.66,3.23 4.88,4.2 6.97,5.84 2.58,2.06 4.98,4.22 4.98,7.53 0,4.22 -3.68,6.8 -8.15,6.8 -4.32,0 -7.25,-3.03 -7.25,-6.23 0,-1.79 1.5,-1.96 1.86,-1.96 0.82,0 1.84,0.6 1.84,1.85 0,0.62 -0.25,1.84 -2.06,1.84 1.08,2.47 3.45,3.23 5.09,3.23 3.49,0 5.3,-2.7 5.3,-5.53 0,-3.03 -2.16,-5.43 -3.28,-6.68 l -8.39,-8.3 c -0.36,-0.31 -0.36,-0.39 -0.36,-1.36 l 14.36,0 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><path
+           id="path29774"
+           d="m 489.89,402.8 3.55,0 c 0.66,0 1.11,0 1.11,0.77 0,0.48 -0.45,0.48 -1.03,0.48 l -3.31,0 1.28,5.16 c 0.03,0.17 0.11,0.34 0.11,0.49 0,0.64 -0.49,1.12 -1.19,1.12 -0.87,0 -1.39,-0.59 -1.64,-1.5 -0.23,-0.87 0.22,0.8 -1.33,-5.27 l -3.55,0 c -0.65,0 -1.1,0 -1.1,-0.76 0,-0.49 0.4,-0.49 1.04,-0.49 l 3.3,0 -2.05,-8.21 c -0.22,-0.88 -0.53,-2.13 -0.53,-2.58 0,-2.06 1.75,-3.31 3.74,-3.31 3.87,0 6.06,4.87 6.06,5.32 0,0.46 -0.46,0.46 -0.56,0.46 -0.41,0 -0.46,-0.08 -0.72,-0.66 -0.99,-2.2 -2.77,-4.16 -4.68,-4.16 -0.73,0 -1.21,0.46 -1.21,1.71 0,0.36 0.14,1.09 0.2,1.43 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><path
+           id="path29776"
+           d="m 549.86,431.01 0.06,0.03 0.05,0.03 0.06,0.02 0.05,0.03 0.05,0.03 0.05,0.03 0.04,0.02 0.05,0.03 0.04,0.03 0.04,0.03 0.04,0.03 0.04,0.02 0.04,0.03 0.03,0.03 0.04,0.03 0.03,0.04 0.03,0.03 0.03,0.03 0.02,0.03 0.03,0.04 0.02,0.03 0.02,0.04 0.02,0.04 0.01,0.04 0.02,0.04 0.01,0.04 0.01,0.04 0.01,0.04 0.01,0.05 0,0.05 0,0.04 0.01,0.06 c 0,0.54 -0.46,1 -1,1 -0.14,0 -0.25,0 -0.89,-0.35 l -27.61,-13.01 c -0.55,-0.25 -0.94,-0.5 -0.94,-1.1 0,-0.59 0.39,-0.84 0.94,-1.09 l 27.61,-13 c 0.64,-0.36 0.75,-0.36 0.89,-0.36 0.54,0 1,0.45 1,1 0,0.55 -0.35,0.8 -0.96,1.09 l -26.15,12.36 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><path
+           id="path29778"
+           d="m 583.44,438.09 0,0.05 0,0.06 0,0.05 0,0.05 0,0.05 0,0.05 0,0.04 0,0.05 -0.01,0.04 0,0.04 0,0.04 0,0.04 0,0.04 0,0.03 -0.01,0.04 0,0.03 -0.01,0.07 -0.01,0.06 -0.01,0.05 -0.01,0.05 -0.02,0.05 -0.02,0.04 -0.02,0.04 -0.02,0.03 -0.03,0.03 -0.04,0.03 -0.03,0.03 -0.04,0.02 -0.04,0.02 -0.03,0.01 -0.02,0.01 -0.03,0 -0.03,0.01 -0.02,0.01 -0.03,0 -0.03,0.01 -0.04,0 -0.03,0.01 -0.03,0 -0.04,0 -0.04,0.01 -0.04,0 -0.04,0 -0.04,0 -0.04,0 -0.05,0 -0.04,0.01 -0.05,0 -0.05,0 -0.05,0 -0.05,0 c -3.1,-3.19 -7.47,-3.19 -9.07,-3.19 l 0,-1.55 c 1,0 3.94,0 6.52,1.3 l 0,-25.81 c 0,-1.8 -0.14,-2.39 -4.63,-2.39 l -1.59,0 0,-1.55 c 1.75,0.16 6.08,0.16 8.06,0.16 2,0 6.33,0 8.08,-0.16 l 0,1.55 -1.59,0 c -4.49,0 -4.64,0.54 -4.64,2.39 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /></g>    </g>
+    <rect
+       style="opacity:0.95999995;fill:none;fill-opacity:0.24519228;stroke:#5d004e;stroke-width:3.79899502;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect30254"
+       width="86.834175"
+       height="50.201004"
+       x="39.042355"
+       y="771.40454"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:0.95999995;fill:none;fill-opacity:0.24519228;stroke:#5d004e;stroke-width:3.79899502;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect30254-6"
+       width="86.834175"
+       height="50.201004"
+       x="381.15433"
+       y="775.83313"
+       inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/Majorana/Topological.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>
