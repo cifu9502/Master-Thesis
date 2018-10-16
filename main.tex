@@ -58,6 +58,7 @@
 %\usepackage[hypertex,final=true,unicode=true, pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,breaklinks=true,pdfborder={0 0 1},backref=true,colorlinks=true,citecolor=black, filecolor=black, linkcolor=black, urlcolor=black]{hyperref}
 \usepackage{hyperref}
 \usepackage[caption = false]{subfig}
+\usepackage{MnSymbol}
 \captionsetup[figure]{font=small}
 
 
@@ -161,14 +162,18 @@ urlcolor=black
 \newcommand{\dann}{d^{\dagger}}
 \newcommand{\gammaA}[1]{\gamma_{A,#1}}
 \newcommand{\gammaB}[1]{\gamma_{B,#1}}
-\newcommand{\Green}[1]{\mathcal{G}_{#1}(\omega) }
+\newcommand{\Green}[1]{G_{#1}(\omega) }
+
+\newcommand{\GreenG}[2]{G_{#1}^{ #2} (\omega) }
 %\newcommand{\bra}[3]{\langle {#3} \vert}
+\newcommand{\GDQD}{DQD}
+
 
 
 
 
 \newcommand{\super}{\vert \Delta \vert}
-\newcommand{\Jesus}[1]{\textcolor{red}{\fbox{Jesus} {\sl#1}}}
+\newcommand{\Jesus}[1]{\textcolor{red}{\fbox{Note} {\sl#1}}}
 \newcommand{\Source}[1]{\textcolor{red}{\\ {\footnotesize \fbox{Source: {\sl#1} } } }}
 
 \begin{document}
