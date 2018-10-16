@@ -2,10 +2,11 @@
 
 \section{Transport Equations \label{sec:transport} }
 
-The Green function $G$ of a Hamiltonian $H$ is the operator that satisfies the equation 
+The Green function $G$ of a Hamiltonian $H$ is the operator that satisfies the homogenous equation 
 \begin{equation}
     \left(i\hbar\frac{\partial}{\partial t}-H\right)G\left(t-t'\right)=\delta(t-t').
 \end{equation}
+
 This type of differential equations are solved taking the Fourier transform 
 \begin{equation}
     \Green{H}=\int_{-\infty}^{\infty}G(t-t')e^{i\omega(t-t')/\hbar}\delta(t-t')
@@ -14,12 +15,12 @@ This type of differential equations are solved taking the Fourier transform
 In this new space the solution of the equation is 
 $$(\omega+is -H)\Green{\omega}=I.$$ 
 
-The term $+is$ in the previous hamiltonian is part of a mathematical trick quite common in this field. During the equations we can think act Green function acts on the complex field. But when we need to obtain a physical interpretation we will take the limit $s\rightarrow0$ to obtain the result for real energies. 
+The term $+is$ in the previous hamiltonian is part of a mathematical trick quite common in this theory. During the whole procedure, the Green function acts on the complex field. But when we need to obtain a physical interpretation we will take the limit $s\rightarrow0$ to obtain the result for real energies. 
 The next step is to decompose $\Green{H}$ in the eigenbase of the Hamiltonian $\{\ket{\alpha}\}$  by 
 
 
 \begin{equation}
-    \Green{\alpha,\alpha'}=\langle \alpha  \vert \Green{H}\ket{\alpha'}=\frac{\delta_{\alpha\alpha'}}{\omega + is -\ep_\alpha}=\frac{\delta_{\alpha\alpha'}(\omega + is -\ep_\alpha)}{(\omega-\epsilon_{\alpha})^{2}+s^{2}}.
+    \Green{\alpha,\alpha'}=\langle \alpha  \vert \Green{H}\ket{\alpha'}=\frac{\delta_{\alpha\alpha'}}{\omega - is -\ep_\alpha}=\frac{\delta_{\alpha\alpha'}(\omega + is -\ep_\alpha)}{(\omega-\epsilon_{\alpha})^{2}+s^{2}}.
 \end{equation}
 
 From the famous formula 
@@ -28,97 +29,135 @@ From the famous formula
 \end{equation}
 we obtain 
 \begin{equation}
-    Im[\Green{\alpha,\alpha'}] =\pi \delta(\omega -\epsilon_\alpha)\delta_{\alpha,\alpha'}.
+    Im[\Green{\alpha,\alpha'}] = \pi \delta(\omega -\epsilon_\alpha)\delta_{\alpha,\alpha'}.
 \end{equation}
-Note, that if we sum among  the states of $H$ we obtain the formula for the Density of States. 
+Note that the sum of $Im[\Green{\alpha,\alpha}]$ over all the eigenstates of $H$ is simply the $\pi$ times the Density of States:
 
 \begin{equation}
-    \rho_{i,j}=-\frac{1}{\pi}Im\left[\Green{d_{i},d_{j}^{\dagger}}\right]
+    \rho(\omega)=-\frac{1}{\pi}Im\left[\Green{\alpha,\alpha}^{\dagger}}\right].
 \end{equation}
-And taking the imaginary part we get to the Density of States 
+
+An extended definition of the Green function  can be given in terms of fermionic operators in second quantization.  The time-green function for two fermionic operators $A$ and $B$ is
 \begin{equation}
-    \rho_{i,j}=-\frac{1}{\pi}Im\left[\Green{d_{i},d_{j}^{\dagger}}\right]
+  G_{A,B}(t-t') = \mathcal{T}[\{ A(t),B(t') \} ].
 \end{equation}
-
-An extended definition of the Green function  can be given in terms of fermionic operators in second quantization. The green function defined in terms of two operators $A$ and $B$ is given by 
-
+Here, causality is important, which is the reason why we use the time-order operator $\mathcal{T}$. Again, it is possible to define the green-functions in the energy space applying a Fourier transform. The evolution of these Green functions will be determined by the Schrodringuer equation. At the end, the result will be
 
 \begin{equation}
-    \omega\Green{A,B}=\delta_{A^{\dagger},B}+\Green{\left[A,H\right],B}
+    \omega\Green{A,B}=\delta_{A^{\dagger},B}+\Green{\left[A,H\right],B}.
 \end{equation}
+
+The equation above receives the name of transport equation. This will be our leading method to compute the green functions of the system. In addition we can define the Density of states associated to an operator $A$ to be 
+
 \begin{equation}
-    \rho_{i,j}=-\frac{1}{\pi}Im\left[\Green{d_{i},d_{j}^{\dagger}}\right]
+    \rho_{A,A^\dagger}=-\frac{1}{\pi}Im\left[\Green{A,A^\dagger}\right].
 \end{equation}
 
-T
+This density of states contains important physical information related to operator $A$. In our case, operator $A^\dagger$ will be related to the creation operator of a quantum dot $d^\dagger$. Our mean purpose will be to compute the density of states of a quantum dot $\rho_{d,d^\dagger}$. This 
+that allows us to obtain other transport 
+
+\subsection{Solving transport equations using graphs \label{sec:GraphMethod}}
 
 
+Solving transport equation involves solving a set of linear equations depending on our energy parameter $\omega$. Though this process can be performed by performed by using current matrix procedures like Gauss-Jordan or even writing the matrix in Mathematica. However, if the model is too complex the solution of the problem will be give a huge equation, difficult to understand. 
 
-Graph theory provides a powerful shortcut to the solution of transport equations. Though this method doesn't brings any additional insight to transport theory, it does provide a straightforward method to compute the green functions and allows a better understanding of the physical meaning of green functions.
+Instead of this we prefer to use graph theory to provide a shortcut to the solution of transport equations. The reason for this is that complex Hamiltonian usually do not  connect all the operators. This means that the total matrix representing the transport equations is full of $0$'a . Graphs allows us to understand these connections, including which operators are connected and which are not,  and then use them to decompose the solution of the green equation. 
 
-To explain the idea behind graph method we will solve the transport equations for a non-interacting U=0 DQD connected to one lead. According to the Anderson model the Hamiltonian for this system looks like 
+
+To explain the idea behind graph method we will solve the transport equations for a non-interacting $(U=0)$ DQD connected to one lead. According to the Anderson model the Hamiltonian for this system looks like 
 \begin{equation}
     H=\epsilon_{di}d_{i}^{\dagger}d_{i}+t_{dots}\left(d_{1}^{\dagger}d_{2}+d_{2}^{\dagger}d_{1}\right)+\sum_{k}\left(V_{i}d_{i}^{\dagger}c_{\mathbf{k}}+V_{i}^{*}c_{\mathbf{k}}^{\dagger}d_{i}\right).
 \end{equation} 
 
 
-with i summing over the terms \{1,2\}. Since the system is non-interacting we can ignore the spin-degeneracy in the Hamiltonian. Using we can compute some  of transport equations for this system \footnote{In general there are much more equations including all possible combinations of operators , but these 4 equations will be enough to make our point.} 
+with $i$ summing over the terms $\{1,2\}$. Since the system is non-interacting we can ignore the spin-degeneracy in the Hamiltonian. Using we can compute the following  of transport equations for this system.
 \begin{align}
-     \left(\omega-\epsilon_{1}\right)\Green{d_{1},d_{1}^{\dagger}}&=1+t_{dots}\Green{d_{2},d_{1}^{\dagger}}+V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}}  \\
-     \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1}^{\dagger}} &= V_{1}\Green{d_{1},d_{1}^{\dagger}}+V_{2}\Green{d_{2},d_{1}^{\dagger}}  \\
-     \left(\omega-\epsilon_{2}\right)\Green{d_{2},d_{1}^{\dagger}}&= t_{dots}\Green{d_{1},d_{1}^{\dagger}}+V_{2}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}} 
+     \left(\omega-\epsilon_{1}\right)\Green{d_{1},d_{1}^{\dagger}}&=1+t_{dots}\Green{d_{2},d_{1}^{\dagger}}+V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}} \label{eq:green1}  \\
+     \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1}^{\dagger}} &= V_{1}\Green{d_{1},d_{1}^{\dagger}}+V_{2}\Green{d_{2},d_{1}^{\dagger}} \label{eq:green2} \\
+     \left(\omega-\epsilon_{2}\right)\Green{d_{2},d_{1}^{\dagger}}&= t_{dots}\Green{d_{1},d_{1}^{\dagger}}+V_{2}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}} \label{eq:green3} 
 \end{align}
     %  \left(\omega-\epsilon_{1}\right)\Green{d_{1},d_{1}^{\dagger}}	= & 1+t_{dots}\Green{d_{2},d_{1}^{\dagger}}+V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}} \\
 
     % \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1}^{\dagger}}= & V_{1}\Green{d_{1},d_{1}^{\dagger}}+V_{2}\Green{d_{2},d_{1}^{\dagger}} \\
 
     % \left(\omega-\epsilon_{2}\right)\Green{d_{2},d_{1}^{\dagger}}= & t_{dots}\Green{d_{1},d_{1}^{\dagger}}+V_{2}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}}. \\
+ Note that we only wrote  the green functions where the second operator is $d_1^\dagger$. This system is already closed which means that we don't need any other equation to find the solution. 
 
-
-
-
-Our objective is to compute the green function for $\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}$. This process consist in solving $3$ linear diferential equations which is not difficult at all.  In fact the result is 
+Our objective is to compute the green function for $\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}$. This process consist in solving the system of $3$ linear differential equations, which is not difficult.  In fact it is possible to compute the result to be 
 
 \begin{equation}
-\Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\left(\omega-\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)-\frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)^{*}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}}.
+\Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\left(\omega-\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)-\frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)^{*}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}}. \label{eq:solGreen}
 \end{equation}
 
-However this method lacks of any useful intuition that could help us  to  solve larger systems which remarks the real importance of the graph method. We proceed with the construction of the graph. Lets define the vertexes of the graph as any operator appearing in the the first site of the green functions . Thus, the vertex in our graph will be $d_{1\downarrow},d_{2},c_{\boldsymbol{k}}$. In addition the edges will carry a weight given by the coupling energy between the two vertexes that it is connecting. The graphs will look like the following
+However this method lacks of any useful intuition that could help us  to  solve more complex systems. This remarks the  importance of pursuing alternative methods. \\
+
+This procedure is what we called the graph method.  We will call our graph $\GDQD$ to imply that it represents a Double Quantum Dot. The vertexes of this graph will be the operator appearing in the left-side of the green functions in  \eqref{eq:green1}\eqref{eq:green2}\eqref{eq:green3}. These  are $d_{1\downarrow},d_{2},c_{\boldsymbol{k}}$. $d_1^\dagger$ is not included since it only appears in the right of the green function. 
+
+We then proceed to define the edges. Let $v_1$ and $v_2$ be two operators in $\GDQD$. If an operator $v_2$ appears in the right side of the transport equation for vertex $v$, the graph will have  a directed edge from $v_2$ to $v_1$. A weight is assign to this edge given by the coefficient of $v_2$ in $v_1$'s transport equation. Note that this relation is reciprocal since the Hamiltonian is hermitian. Hence if there is an arrow from $v_1$ to $v_2$ with weight $t$, then there there will be an opposite arrow from $v_2$ to $v_1$ with weight $t^*$. e.g. In this case, the tree operators  $d_{1\downarrow},d_{2},c_{\boldsymbol{k}}$ are connected. The weights of these connections are observed in \ref{fig:graphDQD}.\\
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[scale=0.7]{IMAGES/Graphs/DQD.png}
+    \caption{ Graph $\GDQD$  \protect\Source{By the author.}}
+    \label{fig:graphDQD}
+\end{figure}
 
 
+Now, the Green functions $\Green{d_{1},d_{1}^{\dagger}}$ will always have the form $\frac{1}{\omega-E} $ where $E$ is an energy. This form is also observed in \ref{eq:solGreen}.  Looking at equation \ref{eq:green1},  observe that if $\Green{d_{2},d_{1}^{\dagger}}$ and $\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}}$ are multiples of $\Green{d_{1},d_{1}^{\dagger}}$ (i.e $\Green{d_{2},d_{1}^{\dagger}}=\eta_{2}\Green{d_{1},d_{1}^{\dagger}},\Green{c_{\mathbf{k}},d_{1}^{\dagger}}=\eta_{\boldsymbol{k}}\Green{d_{1},d_{1}^{\dagger}})$ , the result for $\Green{d_{1},d_{1}^{\dagger}}$ will be 
+\begin{equation}
+    \Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\omega-\epsilon_{1}-\sum_{\boldsymbol{k}}V_{1}^{*}\eta_{\boldsymbol{k}}+t_{dots}\eta_{2}}.
+\end{equation}
+
+Hence to obtain $\Green{d_{1},d_{1}^{\dagger}}$ we need to find $\eta_{\boldsymbol{k}}$ and $\eta_{2}$. Now note from equation \eqref{eq:green2} that $\left(\omega-\epsilon_{\boldsymbol{k}}\right)\eta_{\boldsymbol{k}}=V_{1}+V_{2}\eta_{2}$
+
+\begin{equation}
+\Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\omega-\epsilon_{1}-\sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}+V_{1}^{*}V_{2}t_{dots}\eta_{2}\eta_{2}}    
+\end{equation}
 
 
+Now, probably at this point you might already know what is happening here. Basically the energy $E$ represents the sum of all possible transitions in the graph that start and finish at $d_{1}$ . The first term is $\epsilon_{1}$, which is the energy of dot $1$. The next term is $\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}$ which represents the transition $d_{1}\rightarrow c_{k}\rightarrow d_{1}$. Note that $\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}$ is basically the energy needed to go from $d_{1}$ to $c_{\boldsymbol{k}}$ and coming back divided by the energy "cost" of passing through $c_{\boldsymbol{k}}$ which is $\omega-\epsilon_{\boldsymbol{k}}$. The sum over $\textbf{k}$ can be ignored in this analysis. Now we can then explain why the last term in \eqref{eq:solGreen} is 
+\begin{equation}
+    \frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)\left(t_{dots}^{*}+\sum_{\mathbf{k}}\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}. \label{term}
+\end{equation}
 
-Now, the green functions are representing all this possible transitions. For instance the green function \Green{d_{1},d_{1}^{\dagger}} represents the acumulated energy for the 
-
-For simplicity I will now give the result for the green function and I will explain later how graph in Figure takes us to that result. The green function
-
-
-
-The green functions will always have the form \frac{1}{\omega-E} where E is an energy. Looking at equation [eq:green1] we observe that if we can express \Green{d_{2},d_{1}^{\dagger}} and \sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}} as multiples of \Green{d_{1},d_{1}^{\dagger}} (i.e \Green{d_{2},d_{1}^{\dagger}}=\eta_{2}\Green{d_{1},d_{1}^{\dagger}},\Green{c_{\mathbf{k}},d_{1}^{\dagger}}=\eta_{\boldsymbol{k}}\Green{d_{1},d_{1}^{\dagger}}) , the result for \Green{d_{1},d_{1}^{\dagger}} will be \Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\omega-\epsilon_{1}-\sum_{\boldsymbol{k}}V_{1}^{*}\eta_{\boldsymbol{k}}+t_{dots}\eta_{2}}
-
-Hence to obtain \Green{d_{1},d_{1}^{\dagger}} we need to find \eta_{\boldsymbol{k}} and \eta_{2}. Now note from equation [eq:ck-green] that \left(\omega-\epsilon_{\boldsymbol{k}}\right)\eta_{\boldsymbol{k}}=V_{1}+V_{2}\eta_{2}
-
-\Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\omega-\epsilon_{1}-\sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}+V_{1}^{*}V_{2}t_{dots}\eta_{2}\eta_{2}}
-
-Now, probably at this point you might already know what is happening here. Basically the energy E represents the sum of all possible transitions in the graph from figure starting and finishing at d_{1} . The first term is \epsilon_{1} that is the energy of dot 1. The next term is \frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}} which represents a path d_{1}\rightarrow c_{k}\rightarrow d_{1}. Note that \frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}} is basically the energy needed to go from d_{1} to c_{\boldsymbol{k}}and coming back divided by the energy consumed for passing through c_{\boldsymbol{k}} which is \omega-\epsilon_{\boldsymbol{k}}. We can then explain why the last term is\frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)\left(t_{dots}^{*}+\sum_{\mathbf{k}}\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}.
-
-The term \left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right) is the energy needed to go from d_{1} to d_{2}, let it be passing through c_{\boldsymbol{k}}\left(\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right) or going directly \left(t_{dots}\right). The term is multiplied by \left(t_{dots}^{*}+\sum_{\mathbf{k}}\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}\right) which represents the opposed transition from d_{2} to d_{1}. Finally we need to divide by the cost of passing through d_{2} and c_{\boldsymbol{k}}.This is basically to multiply by the green function taking d_{1} out of graph in Figure . The result of this green function is \frac{1}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}.
+Firs note that $\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)$ is the energy needed to go from $d_{1}$ to $d_{2}$. This could occur by passing through $c_{\boldsymbol{k}} \ \left(\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)$ or going directly to $d_ 2$ $\left(t_{dots}\right)$. The term is multiplied by $\left(t_{dots}^{*}+\sum_{\mathbf{k}}\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}\right)$ which represents the opposed transition from $d_{2}$ to $d_{1}$.  Finally, we  divide this by the cost of passing through $d_{2}$ and $c_{\boldsymbol{k}}$. This is basically to multiply by the green function taking the point $d_{1}$ out of $\GDQD$ . This green function is
 
 
+\begin{equation}
+    \GreenG{d_2,d_2^\dagger}{\GDQD-d1}= \frac{1}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}.
+\end{equation}
+where $\GreenG{d_2,d_2^\dagger}{\GDQD-d_1}$ is the green function of $d_2,d_2^\dagger$ in the smaller graph $\GDQD-d_1$. 
+
+The last equation not only explains the meaning of term \eqref{term} in equation \eqref{eq:solGreen}. It also gives us an iterative method to find the green function. To understand this, note that the solution in \eqref{eq:solGreen} can also be written as 
+
+\begin{equation}
+\left( \GreenG{d_{1},d_{1}^{\dagger}}{\GDQD} \right) ^{-1}= \omega - \epsilon_1- \sum_\textbf{k} E_{d_1c_k}^{\GDQD-d_2} \GreenG{c_\textbf{k}c^\dagger_\textbf{k}}{\GDQD-d_2-d_1}  - E_{d_1d_2}^{\GDQD} \GreenG{d_2,d_2^\dagger}{\GDQD-d_1} . \label{eq:solGreen}
+\end{equation}
+Where $E_{d_1c_k}^{\GDQD-d_2} = \sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}} $  represents the accumulated energy of going from $d_1$ to $c_k$ and coming back. The upper-index $\GDQD-d_2$ represents that at this step second dot is ignored. Similarly $E_{d_1d_2}^{\GDQD}$ is the numerator of \eqref{term}. It represents the energy accumulated in at going from $d_1$ to $d_2$. Since this time no point is ignored, the upper-index remains as $\GDQD$. \\
+
+Now the amazing thing about the last equation is that it decomposes the green function $\GreenG{d_{1},d_{1}^{\dagger}}{\GDQD}$  into green functions of smaller graphs. This gives an iterative process to compute green functions using induction in graphs .  Now, as you might see, the complexity of these green functions reduce strongly after a single point is removed out of the graph . This makes green function computation a pretty simple task using the graph method. 
+
+\Jesus{I promise a real proof of this fact to be included in the abstract. The idea is using induction in graphs  \ref{sec:AbsGraphmethod}. }
+
+\subsection{Density of states of the non-interacting Double Quantum Dot \label{sec:GreedDQD}}
+The only missing 
 
 % --------------------------------------------------
 \section{The Numerical Renormalization Group\label{sec:The-Numerical-Renormaliztion} (NRG) }
 
-The big problem of the Anderson model is that the states in the leads depend on a (quasi)continuum set of crystal momentums $\mathbf{k}$ and therefore one should consider a wide range of energies. In particular, at low energies a renormalization group approach is necessary to deal with  the effects of high correlations. This implies that the divergent resistivity in Kondo model will be renormalized to a finite quantity. 
+ At low energies a renormalization group approach is necessary to deal with the effects of high correlations. This implies that the divergent resistivity in Kondo model will be renormalized to a finite quantity. 
+ 
+ 
 \Jesus{I need to reference Kondo equations. Include advantages}
 
 In the 1970's G.Wilson created a numerical method to solve the Anderson model . This method receives the name of Numerical Renormalization Group (NRG) \citep{bulla_numerical_2008,wilson_renormalization_1975,krishna-murthy_renormalization-group_1980}. It consists of three basic steps :
 \begin{enumerate}
-\item To perform a numerical discretization of the energy spectrum in logarithmic intervals. The information is kept in discrete set of quantum states. \item To map the discretized model onto a semi-infinity chain Hamiltonian. 
+\item To perform a numerical discretization of the energy spectrum in logarithmic intervals. 
+\item To map the discretized model onto a semi-infinity chain Hamiltonian. 
 \item  To diagonalize iteratively the chain hamiltonian . 
 \end{enumerate}
-This procedure final result will be the spectrum of the Hamiltonian. Other important properties of the material such as density of states conductivity, specific heat, susceptibility can also be computed during the iterative diagonalization. On this project we are mainly interested in the Density of States (DOS). The method used to compute the DOS is the Density Matrix numerical renormalization Group (DM-NRG). A complete description of this algorithm will be given in the followin sections.  \\
+
+The final result will be the spectrum of the Hamiltonian. Other important properties of the material such as density of states, conductivity, specific heat, susceptibility can also be computed. On this project we are mainly interested in the Density of States (DOS). The method used to compute the DOS is the Density Matrix numerical renormalization Group (DM-NRG). A complete description of this algorithm will be given in the followin sections.  \\
 
 For now, we proceed to describe how the NRG is applied to solve the Anderson model in a QD:\\
 
