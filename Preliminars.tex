@@ -29,7 +29,7 @@ Since $m_{\mathsf{eff}}$ can be much smaller than the free electron mass in some
 Nowadays, QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}. According to their orientation with respect to the based 2D-plane , two main types of QDs can be distinguished : Vertical (Figure \ref{QD-figuresA}) and lateral (Figure \ref{QD-figuresB}) QDs. Both types of of quantum dots have $3$-main gates. Two of them are the Drain $V_D$ and source $V_S$ gate voltages used to control the current trough the QD. The third one is the gate voltage $V_G$. This one controls the electron confinement inside the QD. Therefore, tuning the gate voltage it is possible to control accurately the energy levels of the QD. 
 \begin{figure}[tb]
     \centering
-    \includegraphics[scale=0.65]{IMAGES/Preliminars/specDot.png}
+    \includegraphics[scale=0.6]{IMAGES/Preliminars/specDot.png}
     \caption{Pictorial representation of the Density of States of a QD. The gate potential $V_G$ can be tuned to change the fermi energy of the dot.  \protect\Source{By the author} }
     \label{fig:specDots}
 \end{figure}
@@ -37,8 +37,8 @@ Nowadays, QDs can be manufactured with several methods, forms and orientations \
 
 \begin{figure}[b]
     \centering
-    \includegraphics[scale=0.65]{IMAGES/Preliminars/QD-Transport.png}
-    \caption{ Representation of transport through QD.   \protect\Source{By the author} }
+    \includegraphics[scale=0.7]{IMAGES/Preliminars/QD-Transport.png}
+    \caption{ Representation of transport through QD. The red curve represents the hybridized energy level. The gate voltage tunnes this level. In the case represented, the energy level is in the middle of the drain and source voltages allowing transport between the leads.   \protect\Source{By the author} }
     \label{fig:QD-transport}
 \end{figure}
 
@@ -52,9 +52,15 @@ Ideally, the energy spectrum of a QD is a discrete set of energy levels resembli
 
 in a flat band. A representation of this fact can be found in  \ref{fig:specDots}. Ideally, $\Gamma \ll \Delta E$ such that the energy levels do not overlap each other. In addition the gate voltage allows us to tune the energy levels of the QD.
 
-To execute transport measurements the QD must be attached to two leads (See \ref{fig:QD-transport}). Each lead will have a characteristic gate voltage $V_L$ (Left lead) and $V_R$ (Right lead). An electron can pass from the left lead to the right lead if there is an energy level in the middle of the two voltages, just as in \ref{fig:QD-transport}. However if this condition is not satisfied the dot enters into a coulomb blockade region without  electron transport between both leads. Since all of these effects can be controlled by a tuning the gate voltage, the system described is indeed a single electron transistor (SET).  
+To execute transport measurements the QD must be attached to two leads (See \ref{fig:QD-transport}). Each lead will have a characteristic gate voltage $V_S$ (Left lead) and $V_D$ (Right lead). An electron can pass from the source to the drain if there is an energy level in the middle of the two voltages, just as in \ref{fig:QD-transport}. However if this condition is not satisfied the dot enters into a coulomb blockade region without  electron transport between both leads as can be observed in \ref{fig:QD-Blockade}. Inside the coulomb blockade regions the number of electrons is constant. When increasing $V_G$ a single electron enters into the dot each time. Since all of these effects can be controlled by a tuning the gate voltage, the system described is indeed a single electron transistor (SET).  
 
 
+\begin{figure}[tb]
+    \centering
+    \includegraphics[scale=0.3]{IMAGES/Preliminars/QD-Blockade.png}
+    \caption{ Charging diagram of a quantum dot. The conductance is plotted vs the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$ \protect\Source{\cite{sindel_numerical_2005} } }
+    \label{fig:QD-Blockade}
+\end{figure}
 
 
 
@@ -81,11 +87,17 @@ To execute transport measurements the QD must be attached to two leads (See \ref
 
 
 %------------------------------------------------------------
-\subsection{The Anderson Model}
+\section{The Anderson Model}
+The Anderson model \citep{anderson_localized_1961} was first design to study physics of magnetic impurities. However a QD behaves like  a magnetic impurity and hence the Anderson model also works in this case. 
 
-For more electrons, the coulomb
-repulsion inside the dot is important.. Hence, using the Hunds rule we know that the energy levels should be filled from lower to higher energies with two electrons with different spin at each state. Taking in account
-all these interactions we can get to a second quantization QD-Hamiltonian
+There are two types of systems that we will study in this theses depending on whether Coulomb repulsion is important or not. 
+\begin{itemize}
+    \item In non-interacting systems the coulomb repulsion is not relevant $U =0$. In this case, spin-$\uparrow$ and spin-$\dw$ channels are independent which simplifies many of the procedures. The method used to describe solve this systems is ballistic transport. 
+    \item In the interacting case $U>0$ , the spin-$\uparrow$ and spin-$\dw$ channels are not independent because there is coulomb repulsion if both particles are inside the dot. 
+\end{itemize}
+
+
+The Anderson model takes in account both regimes and  the only difference in each case will be the value of $U$ ($U=0$ non-interacting , $U>0$ interacting).Using the Hunds rule we know that the energy levels inside the dot should be filled from lower to higher energies with two electrons with different spin at each state. Taking in account all these interactions we can get to a very general second quantization QD-Hamiltonian
 of the form \citep[(3.2)]{sindel_numerical_2005}
 
 \[
@@ -101,24 +113,20 @@ the coulomb repulsion between electrons in the same energy level $i$,
 $U_{ij}$ is the coulomb interaction between electrons in different
 levels (And therefore smaller than $U_{i}$), \textbf{$B$} is an
 applied magnetic field in the $\hat{z}$-direction and $J$ is the
-term representing the Zeeman splitting. We now use that we can control
-the energy levels of the QD by switching set the gate-voltage, such
-that we only take in consideration one level in the QD. Taking this
-assumption the dot Hamiltonian becomes \\
+term representing the Zeeman splitting. 
+
+At low temperatures, the main interactions only with the level closest to the Fermi energy. This allows us to make the single-level approximation, neglecting the other energy levels. This assumption reduces the complexity of the dot Hamiltonian to \\
 
 
-\[
-H_{d}=\sum_{\sigma}\epsilon_{d}d_{\sigma}^{\dagger}d_{\sigma}+U\hat{n}_{\uparrow}\hat{n}_{\downarrow}-\mu_{B}gBS^{z}.
-\]
+\begin{equation}
+    H_{d}=\sum_{\sigma}\epsilon_{d}d_{\sigma}^{\dagger}d_{\sigma}+U\hat{n}_{\uparrow}\hat{n}_{\downarrow}-\mu_{B}gBS^{z}. \label{eq:hdot}
+\end{equation}
 
 
-Since we are interested in implementing transport measurements through
-the QD we need to link the dot to two metallic leads ($L$(left) and
-$R$(right)) so that electron conduction can be performed (\ref{QD-transport}).
-For this we can add two new hamiltonians in second quantization that
-represent the energy of the electrons inside the leads $H_{lead}$
-and the interaction between the leads and the quantum dot $H_{int}$.
-These hamiltonians take the form 
+
+
+
+The lead hambiltonian is decomposed in two hamiltonians. The energy of the electrons inside the leads $H_{lead}$ and the interaction between the leads and the quantum dot $H_{int}$. These hamiltonians take the form 
 
 \begin{eqnarray*}
 H_{lead} & = & \sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}\\
@@ -127,7 +135,7 @@ H_{int} & = & \sum_{\mathbf{k}\sigma l}V_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\d
 
 
 where $\mathbf{k}$ represents the possible crystal momentums in the
-leads, $l\in\{L,R\}$, $c_{\mathbf{k}\sigma l}^{\dagger}(c_{\mathbf{k}\sigma l})$
+leads, $l\in\{S,D\}$, $c_{\mathbf{k}\sigma l}^{\dagger}(c_{\mathbf{k}\sigma l})$
 creates(annihilates) an electron with momentum $\mathbf{k}$ and spin
 $\sigma$ in the lead $l$, $\epsilon_{\mathbf{k}l}$ is the energy
 of the electron in the leads and $V_{\mathbf{k}l}$ is a hopping exchange
@@ -138,9 +146,43 @@ H & = & H_{d}+H_{lead}+H_{int}\nonumber \\
  & = & \sum_{\sigma}\epsilon_{d}d_{\sigma}^{\dagger}d_{\sigma}+U\hat{n}_{\uparrow}\hat{n}_{\downarrow}-\mu_{B}gBS^{z}+\sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}+\sum_{\mathbf{k}\sigma l}V_{\mathbf{k}l}c_{k\sigma l}^{\dagger}d_{\sigma}+V_{\mathbf{k}l}^{*}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma l}.\label{eq:Anderson}
 \end{eqnarray}
 
+This is the usual form of the Anderson model. However, just for this project, we will make a few changes. Using the anti-commutation properties of the fermion operators
 
-This hamiiltonian is a particular case of a more general theory for
-impurities in metals known as the Anderson model \citep{anderson_localized_1961}.
+% \begin{equation}
+% H=H_{d}+H_{lead}+H_{int}=\sum_{\sigma}\epsilon_{d}d_{\sigma}^{\dagger}d_{\sigma}+U\hat{n}_{\uparrow}\hat{n}_{\downarrow}+\sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}+V_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}d_{\sigma}+V_{\mathbf{k}l}^{*}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma l}.\label{eq:hamB0}
+% \end{equation}
+\[
+\left\{ d_{\sigma}^{\dagger},d_{\sigma'}\right\} =\delta_{\sigma\sigma'}\ ,\ \left\{ d_{\sigma}^{\dagger},d_{\sigma'}^{\dagger}\right\} =\left\{ d_{\sigma},d_{\sigma'}\right\} =0
+\]
+we get
+
+
+\begin{eqnarray*}
+\left(d_{\up}^{\dagger}d_{\up}+d_{\down}^{\dagger}d_{\down}-1\right){}^{2} & = & \sum_{\sigma}\left(d_{\sigma}^{\dagger}d_{\sigma}\right)^{2}-2\sum_{\sigma}d_{\sigma}^{\dagger}d_{\sigma}+2d_{\up}^{\dagger}d_{\up}d_{\down}^{\dagger}d_{\down}-1\\
+ & = & 2d_{\up}^{\dagger}d_{\up}d_{\down}^{\dagger}d_{\down}-\sum_{\sigma}d_{\sigma}^{\dagger}d_{\sigma}-1.
+\end{eqnarray*}
+
+Replacing this in \eqref{eq:hdot} we obtain a  nice spin-symmetric form of the dot hamiltonian
+
+\begin{equation}
+    \left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}-\mu_{B}gBS^{z}. 
+    \label{eq:hdot2}
+\end{equation}
+
+In addition, it is possible to do a linear transform to the lead opperators 
+\begin{equation}
+    \frac{1}{\sqrt{V_{S}^{2}+V_{R}^{2}}}\left[\begin{array}{cc}
+V_{S} & V_{R}\\
+-V_{R} & V_{S}
+\end{array}\right]\left[\begin{array}{c}
+c_{\mathbf{k}\sigma S}\\
+c_{\mathbf{k}\sigma D}
+\end{array}\right]=\left[\begin{array}{c}
+c_{\mathbf{k}\sigma+}\\
+c_{\mathbf{k}\sigma-}
+\end{array}\right]
+\end{equation}
+After the transformation the operator will be decoupled from the dot hamiltonian $c_{\mathbf{k}\sigma-}$ . This implies that we can suppose that the  \textbf{dot is coupled wit just one lead}. During the rest of the thesis we will mantain this convention. 
 
 
 %------------------------------------------------------------
