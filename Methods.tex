@@ -1,6 +1,6 @@
 \chapter{Theory and Methods}
 
-\section{Transport Equations \label{sec:transport} }
+\section{Ballistic transport \label{sec:transport} }
 
 The Green function $G$ of a Hamiltonian $H$ is the operator that satisfies the homogenous equation 
 \begin{equation}
@@ -165,25 +165,6 @@ For now, we proceed to describe how the NRG is applied to solve the Anderson mod
 
 We start with an Anderson model hamiltonian such as the one 
 in \prettyref{eq:Anderson} without magnetic field
-
-\begin{equation}
-H=H_{d}+H_{lead}+H_{int}=\sum_{\sigma}\epsilon_{d}d_{\sigma}^{\dagger}d_{\sigma}+U\hat{n}_{\uparrow}\hat{n}_{\downarrow}+\sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}+V_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}d_{\sigma}+V_{\mathbf{k}l}^{*}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma l}.\label{eq:hamB0}
-\end{equation}
-
-
-Using the anti-commutation properties of the fermion operators 
-\[
-\left\{ d_{\sigma}^{\dagger},d_{\sigma'}\right\} =\delta_{\sigma\sigma'}\ ,\ \left\{ d_{\sigma}^{\dagger},d_{\sigma'}^{\dagger}\right\} =\left\{ d_{\sigma},d_{\sigma'}\right\} =0
-\]
-we observe $\left(d_{\sigma}^{\dagger}d_{\sigma}\right)^{2}=d_{\sigma}^{\dagger}d_{\sigma}d_{\sigma}^{\dagger}d_{\sigma}=d_{\sigma}^{\dagger}d_{\sigma}(1-d_{\sigma}d_{\sigma}^{\dagger})=d_{\sigma}^{\dagger}d_{\sigma}$,
-so that 
-\begin{eqnarray*}
-\left(d_{\up}^{\dagger}d_{\up}+d_{\down}^{\dagger}d_{\down}-1\right){}^{2} & = & \sum_{\sigma}\left(d_{\sigma}^{\dagger}d_{\sigma}\right)^{2}-2\sum_{\sigma}d_{\sigma}^{\dagger}d_{\sigma}+2d_{\up}^{\dagger}d_{\up}d_{\down}^{\dagger}d_{\down}-1\\
- & = & 2d_{\up}^{\dagger}d_{\up}d_{\down}^{\dagger}d_{\down}-\sum_{\sigma}d_{\sigma}^{\dagger}d_{\sigma}-1
-\end{eqnarray*}
-
-
-This gives a nice spin-symmetric form of hamiltonian \prettyref{eq:hamB0} 
 
 \begin{equation}
 H=\frac{U}{2}+\sum_{\sigma}\left[\left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\sum_{\mathbf{k}}\ep_{\mathbf{k}}c_{\mathbf{k}\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\mathbf{k}}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\mathbf{k}}^{*}c_{\mathbf{k}\sigma}^{\dagger}d_{\sigma}\right].\label{HamWilson}
