@@ -27,21 +27,37 @@ Quantum mechanical effects are visible when the system size is of the order of t
 Since $m_{\mathsf{eff}}$ can be much smaller than the free electron mass in some semiconducting materials, size quantization effects can be observed at system of sizes $\sim100\mbox{nm}$ \citep[2.1]{sindel_numerical_2005}. A device confined in the three dimensions up to this length-scale will present the behavior of a $0$D quantum system, which is what we call a Quantum Dot (QD).\\
 
 Nowadays, QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}. According to their orientation with respect to the based 2D-plane , two main types of QDs can be distinguished : Vertical (Figure \ref{QD-figuresA}) and lateral (Figure \ref{QD-figuresB}) QDs. Both types of of quantum dots have $3$-main gates. Two of them are the Drain $V_D$ and source $V_S$ gate voltages used to control the current trough the QD. The third one is the gate voltage $V_G$. This one controls the electron confinement inside the QD. Therefore, tuning the gate voltage it is possible to control accurately the energy levels of the QD. 
+\begin{figure}[tb]
+    \centering
+    \includegraphics[scale=0.65]{IMAGES/Preliminars/specDot.png}
+    \caption{Pictorial representation of the Density of States of a QD. The gate potential $V_G$ can be tuned to change the fermi energy of the dot.  \protect\Source{By the author} }
+    \label{fig:specDots}
+\end{figure}
+
+
+\begin{figure}[b]
+    \centering
+    \includegraphics[scale=0.65]{IMAGES/Preliminars/QD-Transport.png}
+    \caption{ Representation of transport through QD.   \protect\Source{By the author} }
+    \label{fig:QD-transport}
+\end{figure}
 
 
 
 
-
-Ideally, the energy spectrum of a QD is a discrete set of energy levels resembling the spectrum of an atom. However, when the QD is connected to metallic leads these energy levels hybridized with respect to a hybridization parameter $\Gamma$ which depends on the voltage connecting the lead with the dots $V_L$.
+Ideally, the energy spectrum of a QD is a discrete set of energy levels resembling the spectrum of an atom. However, when the QD is connected to metallic leads these energy levels hybridized with respect to a hybridization parameter $\Gamma$ which depends on the voltage connecting the lead with the dots $V$ as 
 \begin{equation}
-    \Gamma \propto \pi \Vert V_l \Vert^2. 
+    \Gamma \propto \pi \Vert V \Vert^2
 \end{equation}
 
-A pictorial representation of this fact can be found in Figure \ref{fig:specDots}. Ideally, $\Gamma \ll \Delta E$ such that the energy levels do not overlap each other. In addition the gate voltage allows us to tune the fermi energy which, by convention, will be declared our $0$ of energy. 
+in a flat band. A representation of this fact can be found in  \ref{fig:specDots}. Ideally, $\Gamma \ll \Delta E$ such that the energy levels do not overlap each other. In addition the gate voltage allows us to tune the energy levels of the QD.
+
+To execute transport measurements the QD must be attached to two leads (See \ref{fig:QD-transport}). Each lead will have a characteristic gate voltage $V_L$ (Left lead) and $V_R$ (Right lead). An electron can pass from the left lead to the right lead if there is an energy level in the middle of the two voltages, just as in \ref{fig:QD-transport}. However if this condition is not satisfied the dot enters into a coulomb blockade region without  electron transport between both leads. Since all of these effects can be controlled by a tuning the gate voltage, the system described is indeed a single electron transistor (SET).  
 
 
-The great advantage of QDs is that their spectrum looks pretty similar
-to the spectrum of an atom, which is a discrete set of energy levels.
+
+
+
 % Indeed we can model an ideal single-electron QD as a quantum well
 % with a negative constant potential inside the dot . For example an
 % spherical quantum dot with radius $R$ will take the following Schr�dinger
@@ -62,13 +78,7 @@ to the spectrum of an atom, which is a discrete set of energy levels.
 % \delta E\propto\frac{1}{R^{2}}.
 % \]
 
-On an ideal QD the energy
-\begin{figure}[bt]
-    \centering
-    \includegraphics[scale=0.65]{IMAGES/Preliminars/specDot.png}
-    \label{fig:specDots}
-    \caption{Pictorial representation of the Density of States of a QD. The gate potential $V_G$ can be tuned to change the fermi energy of the dot.  \protect\Source{By the author} }
-\end{figure}
+
 
 %------------------------------------------------------------
 \subsection{The Anderson Model}
@@ -95,11 +105,6 @@ term representing the Zeeman splitting. We now use that we can control
 the energy levels of the QD by switching set the gate-voltage, such
 that we only take in consideration one level in the QD. Taking this
 assumption the dot Hamiltonian becomes \\
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.45]{IMAGES/QD_transport.png}\caption{\label{QD-transport}Transport measurement scheme in the QD. }
-\end{figure}
 
 
 \[
