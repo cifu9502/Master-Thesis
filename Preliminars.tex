@@ -26,23 +26,30 @@ Quantum mechanical effects are visible when the system size is of the order of t
  where $m_{\mathsf{eff}}$ is the electron effective mass in the crystal.
 Since $m_{\mathsf{eff}}$ can be much smaller than the free electron mass in some semiconducting materials, size quantization effects can be observed at system of sizes $\sim100\mbox{nm}$ \citep[2.1]{sindel_numerical_2005}. A device confined in the three dimensions up to this length-scale will present the behavior of a $0$D quantum system, which is what we call a Quantum Dot (QD).\\
 
-Nowadays, QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}. According to their orientation with respect to the based 2D-plane , two main types of QDs can be distinguished : Vertical (Figure \ref{QD-figuresA}) and lateral (Figure \ref{QD-figuresB}) QDs. Both types of of quantum dots have $3$-main gates. Two of them are the Drain $V_D$ and source $V_S$ gate voltages used to control the current trough the QD. The third one is the gate voltage $V_G$. This one controls the electron confinement inside the QD. Therefore, tuning the gate voltage it is possible to control accurately the energy levels of the QD. 
 \begin{figure}[tb]
     \centering
-    \includegraphics[scale=0.6]{IMAGES/Preliminars/specDot.png}
+    \includegraphics[scale=0.5]{IMAGES/Preliminars/specDot.png}
     \caption{Pictorial representation of the Density of States of a QD. The gate potential $V_G$ can be tuned to change the fermi energy of the dot.  \protect\Source{By the author} }
     \label{fig:specDots}
 \end{figure}
 
 
-\begin{figure}[b]
-    \centering
-    \includegraphics[scale=0.7]{IMAGES/Preliminars/QD-Transport.png}
-    \caption{ Representation of transport through QD. The red curve represents the hybridized energy level. The gate voltage tunnes this level. In the case represented, the energy level is in the middle of the drain and source voltages allowing transport between the leads.   \protect\Source{By the author} }
-    \label{fig:QD-transport}
+\begin{figure}[t]
+     \centering
+    
+     \subfloat[ \label{fig:QD-transport}]{\includegraphics[scale=0.7]{IMAGES/Preliminars/QD-Transport.png}}
+    \subfloat[\label{fig:QD-Blockade}]{\includegraphics[scale=0.3]{IMAGES/Preliminars/QD-Blockade.png}}
+     \caption{ a) Representation of transport through QD. The red curve represents the hybridized energy level. The gate voltage tunes this level. In the case represented, the energy level is in the middle of the drain and source voltages allowing transport between the leads.   Charging diagram of a quantum dot. b) Plot of the conductance vs the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$ \protect\Source{a) By the Author , b) \cite{sindel_numerical_2005}  }}
 \end{figure}
 
+Nowadays, QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}. According to their orientation with respect to the based 2D-plane , two main types of QDs can be distinguished : Vertical (Figure \ref{QD-figuresA}) and lateral (Figure \ref{QD-figuresB}) QDs. Both types of of quantum dots have $3$-main gates. Two of them are the Drain $V_D$ and source $V_S$ gate voltages used to control the current trough the QD. The third one is the gate voltage $V_G$. This one controls the electron confinement inside the QD. Therefore, tuning the gate voltage it is possible to control accurately the energy levels of the QD. 
 
+% \begin{figure}[t]
+%     \centering
+%     \includegraphics[scale=0.3]{IMAGES/Preliminars/QD-Blockade.png}
+%     \caption{ Charging diagram of a quantum dot. The conductance is plotted vs the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$ \protect\Source{\cite{sindel_numerical_2005} } }
+%     \label{fig:QD-Blockade}
+% \end{figure}
 
 
 Ideally, the energy spectrum of a QD is a discrete set of energy levels resembling the spectrum of an atom. However, when the QD is connected to metallic leads these energy levels hybridized with respect to a hybridization parameter $\Gamma$ which depends on the voltage connecting the lead with the dots $V$ as 
@@ -55,12 +62,7 @@ in a flat band. A representation of this fact can be found in  \ref{fig:specDots
 To execute transport measurements the QD must be attached to two leads (See \ref{fig:QD-transport}). Each lead will have a characteristic gate voltage $V_S$ (Left lead) and $V_D$ (Right lead). An electron can pass from the source to the drain if there is an energy level in the middle of the two voltages, just as in \ref{fig:QD-transport}. However if this condition is not satisfied the dot enters into a coulomb blockade region without  electron transport between both leads as can be observed in \ref{fig:QD-Blockade}. Inside the coulomb blockade regions the number of electrons is constant. When increasing $V_G$ a single electron enters into the dot each time. Since all of these effects can be controlled by a tuning the gate voltage, the system described is indeed a single electron transistor (SET).  
 
 
-\begin{figure}[tb]
-    \centering
-    \includegraphics[scale=0.3]{IMAGES/Preliminars/QD-Blockade.png}
-    \caption{ Charging diagram of a quantum dot. The conductance is plotted vs the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$ \protect\Source{\cite{sindel_numerical_2005} } }
-    \label{fig:QD-Blockade}
-\end{figure}
+
 
 
 
@@ -88,16 +90,18 @@ To execute transport measurements the QD must be attached to two leads (See \ref
 
 %------------------------------------------------------------
 \section{The Anderson Model}
-The Anderson model \citep{anderson_localized_1961} was first design to study physics of magnetic impurities. However a QD behaves like  a magnetic impurity and hence the Anderson model also works in this case. 
+The Anderson model \citep{anderson_localized_1961} was originally designed to study the physics of magnetic impurities, which makes it a perfect model to study the Kondo Effect that we will describe in the following section. However,  QDs also behave like magnetic impurities. Hence the physics of QDs can be studied using the Anderson model.
 
-There are two types of systems that we will study in this theses depending on whether Coulomb repulsion is important or not. 
+Moreover, there are two regimes that  will be particularly important in this thesis.  They depend on whether Coulomb repulsion is important or not. These are
 \begin{itemize}
-    \item In non-interacting systems the coulomb repulsion is not relevant $U =0$. In this case, spin-$\uparrow$ and spin-$\dw$ channels are independent which simplifies many of the procedures. The method used to describe solve this systems is ballistic transport. 
-    \item In the interacting case $U>0$ , the spin-$\uparrow$ and spin-$\dw$ channels are not independent because there is coulomb repulsion if both particles are inside the dot. 
+    \item \textbf{Non-interacting systems:} This means the coulomb repulsion is not relevant . In this case, spin-$\uparrow$ and spin-$\dw$ channels are independent which simplifies many of the procedures. The method used to describe solve this systems is ballistic transport. 
+    \item \textbf{Interacting systems:} The coulomb repulsion is relevant. The repulsion factor will be defined by the factor $U$. In this case, the spin-$\uparrow$ and spin-$\dw$ channels are not independent since the coulomb repulsion limits the number of particles inside each dot. We will use the Numerical Renormalization Group to treat this kind of systems.  
 \end{itemize}
 
 
-The Anderson model takes in account both regimes and  the only difference in each case will be the value of $U$ ($U=0$ non-interacting , $U>0$ interacting).Using the Hunds rule we know that the energy levels inside the dot should be filled from lower to higher energies with two electrons with different spin at each state. Taking in account all these interactions we can get to a very general second quantization QD-Hamiltonian
+The Anderson model takes in account both regimes and  the only difference in each case will be the value of $U$ parameter ($U=0$ non-interacting , $U>0$ interacting). Taking this in account we proceed to present the Anderson model in QDs.
+
+Using the Hunds rules we know that the energy levels inside the dot should be filled from lower to higher energies with two electrons with different spin at each state. Each pair of electrons will interact magnetically and electrically. In addition, there is and energy associated to each electron and a Zeeman splitting factor in case a $\hat{z}$-directed magnetic field $B$ is placed.  Considering these interactions we can obtain a very general expression in second quantization for the QD Hamiltonian
 of the form \citep[(3.2)]{sindel_numerical_2005}
 
 \[
@@ -139,14 +143,16 @@ leads, $l\in\{S,D\}$, $c_{\mathbf{k}\sigma l}^{\dagger}(c_{\mathbf{k}\sigma l})$
 creates(annihilates) an electron with momentum $\mathbf{k}$ and spin
 $\sigma$ in the lead $l$, $\epsilon_{\mathbf{k}l}$ is the energy
 of the electron in the leads and $V_{\mathbf{k}l}$ is a hopping exchange
-term between the leads and the QD. Therefore the final form of the
-transport Hamiltonian through the quantum dot takes the form of 
+term between the leads and the QD. 
+
+
+In conclusion the sum of these three interactions is receives the name of Anderson Model. 
 \begin{eqnarray}
 H & = & H_{d}+H_{lead}+H_{int}\nonumber \\
  & = & \sum_{\sigma}\epsilon_{d}d_{\sigma}^{\dagger}d_{\sigma}+U\hat{n}_{\uparrow}\hat{n}_{\downarrow}-\mu_{B}gBS^{z}+\sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}+\sum_{\mathbf{k}\sigma l}V_{\mathbf{k}l}c_{k\sigma l}^{\dagger}d_{\sigma}+V_{\mathbf{k}l}^{*}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma l}.\label{eq:Anderson}
 \end{eqnarray}
 
-This is the usual form of the Anderson model. However, just for this project, we will make a few changes. Using the anti-commutation properties of the fermion operators
+For this project, we will make two extra changes to the Anderson model. Using the anti-commutation properties of the fermion operators
 
 % \begin{equation}
 % H=H_{d}+H_{lead}+H_{int}=\sum_{\sigma}\epsilon_{d}d_{\sigma}^{\dagger}d_{\sigma}+U\hat{n}_{\uparrow}\hat{n}_{\downarrow}+\sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}+V_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}d_{\sigma}+V_{\mathbf{k}l}^{*}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma l}.\label{eq:hamB0}
@@ -187,6 +193,8 @@ After the transformation the operator will be decoupled from the dot hamiltonian
 
 %------------------------------------------------------------
 \section{Kondo Effect}
+
+\Jesus{Here goes a review about the Kondo Effect. I am still trying to figure out how it section will look like. For now Im just leaving some ideas and plots.}\\
 
 In the early 30s the physicist where intrigued by the observation of a resistance minimum in some metals at low temperatures $(\sim 10K)$ \cite{sindel_numerical_2005} . The phenomenon received the name of Kondo effect \citep{hewson_kondo_1997}. This effect is attributed to the electron-scattering with the magnetic impurities present in the materials. 
 
