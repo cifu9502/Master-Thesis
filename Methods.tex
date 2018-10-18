@@ -173,7 +173,7 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
      \subfloat[Attaching QD2 to the lead \label{fig:DQD-G2}]{\includegraphics[scale=0.6]{IMAGES/DQD/g1g2-m.png}} \\
     \subfloat[Indirect connection of QD2 \label{fig:DQD-tdots}]{\includegraphics[scale=0.6]{IMAGES/DQD/tdots-m.png}}\\
     \subfloat[Breaking PHS with triangular connection \label{fig:DQD-PHS}]{\includegraphics[scale=0.6]{IMAGES/DQD/phs-m.png}}
-     \caption{\label{fig:GreenDQD} \protect\Source{ By the Author  }}
+     \caption{\label{fig:GreenDQD} For the tree cases we considered $e_1 =e_2 =0$. The inset shows the set-up. At each case the purple coupling shows the tuning variable. \protect\Source{ By the Author  }}
 \end{figure}
 
 \newpage
@@ -542,6 +542,10 @@ $H_{N=2,S=1}:$
 
 
 \end{multicols}
+\begin{figure}[t]
+\subfloat[$N$ takes only even values]{\includegraphics[scale=0.5]{IMAGES/even.png}}\subfloat[$N$ run only through odd values]{\includegraphics[scale=0.5]{IMAGES/odd.png}}\caption{\label{Fig-Dot-Spectrum} Evolution of the QD-spectrum vs number of
+iterations of the code for $U=0.5,\ e_{d}=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
+\end{figure}
 
 $H_{N=2,S=0}:$
 \[
@@ -601,13 +605,21 @@ We now proceed by induction supossing that for each $N$ the Hamiltonian $H_{N}$ 
 
 This NRG code was previously implemented in C++ language by the advisor of this thesis. In \ref{Fig-Dot-Spectrum} we observe the evolution of the spectrum of the Hamiltonian according to the number of iterations of the code. As we can appreciate, this evolution converges for even and odd number around $N=30$.  \\
 
-\begin{figure}[h]
-\subfloat[$N$ run only through even values]{\includegraphics[scale=0.5]{IMAGES/even.png}}\subfloat[$N$ run only through odd values]{\includegraphics[scale=0.5]{IMAGES/odd.png}}\caption{\label{Fig-Dot-Spectrum} Evolution of the QD-spectrum vs number of
-iterations of the code for $U=0.5,\ e_{d}=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
-\end{figure}
+
+
 \subsection{Density Matrix Renormalization Group (DM-NRG)}
 To compute  dynamical quantities \cite{costi_transport_1994} like the density of states  is the DMNRG \cite{hofstetter_generalized_2000}. 
 \Jesus{Sill planning this section }
 
 \subsection{NRG results in a Double Quantum Dot}
 
+In the single dot case the DOS 
+
+\begin{figure}[H]
+     \centering
+    \subfloat[ \label{fig:NRG-1D}]{\includegraphics[scale=0.2]{IMAGES/DQD/NRG-QD.png}}
+     \subfloat[Attaching QD2 to the lead \label{fig:NRGDQD-G2}]{\includegraphics[scale=0.42]{IMAGES/DQD/NRG-DQD.png}} 
+    \subfloat[Indirect connection of QD2 \label{fig:NRGDQD-tdots}]{\includegraphics[scale=0.4]{IMAGES/DQD/NRG-IndirectDQD.png}}
+    
+     \caption{\label{fig:NRG-DQD}  \protect\Source{ By the Author  }}
+\end{figure}
