@@ -162,7 +162,7 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
     \item \textbf{Coupling QD2 (Figure \ref{fig:DQD-G2}):} It shows the evolution of the DOS when the second dot's coupling scales from $0$ to $4\Gamma$. At $\Gamma_2=0$  the second dot is decoupled. The first dot's DOS is the same of a single dot case. The maximum height is achieved at $\rho \pi \Gamma_1 =1$ and the width at the half of this height $(\rho \pi \Gamma_1 =0.5)$ is $\Gamma_1$ just as in Figure \ref{fig:specDots}. When the second dot is attached $\Gamma_2 >0$ the density of states is divided between both dots. At $\Gamma_1 = \Gamma_2$ both DOS are equal to $\frac{1}{4\pi\Gamma}$. 
     \item \textbf{Indirect Coupling of QD2 (Figure \ref{fig:DQD-tdots}):} This is the most interesting case. When the second dot is connected indirectly through the first dot there appears a quantum inference that splits the central peak in two new states. We will observe later that in the interacting case this procedure can also destroy the Kondo signature. This has interesting consequences when combined with majorana physics, since the interference patter destroy the Kondo effect but not the majorana signature. 
     \item \textbf{Breaking Particle Hole Symmetry (Figure \ref{fig:DQD-PHS}):}
-    Suppose we have $\Gamma_2 = \Gamma_1$. The "triangular connections" break Particle Hole Symmetry. The central peak is displaced to the positive part of the spectrum.
+    Suppose we have $\Gamma_2 = \Gamma_1$. The "triangular connections" break Particle Hole Symmetry. The central peak is displaced to the positive part of the spectrum. Contrary to the previous case, this situation will be avoided during this project. This is because breaking PHS in both dots will prevent the Majorana to tunnel inside the DQD. 
     
 \end{enumerate}
 
@@ -170,9 +170,9 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
 \begin{figure}[H]
      \centering
     
-     \subfloat[ \label{fig:DQD-G2}]{\includegraphics[scale=0.6]{IMAGES/DQD/g1g2-m.png}} \\
-    \subfloat[\label{fig:DQD-tdots}]{\includegraphics[scale=0.6]{IMAGES/DQD/tdots-m.png}}\\
-    \subfloat[\label{fig:DQD-PHS}]{\includegraphics[scale=0.6]{IMAGES/DQD/phs-m.png}}
+     \subfloat[Attaching QD2 to the lead \label{fig:DQD-G2}]{\includegraphics[scale=0.6]{IMAGES/DQD/g1g2-m.png}} \\
+    \subfloat[Indirect connection of QD2 \label{fig:DQD-tdots}]{\includegraphics[scale=0.6]{IMAGES/DQD/tdots-m.png}}\\
+    \subfloat[Breaking PHS with triangular connection \label{fig:DQD-PHS}]{\includegraphics[scale=0.6]{IMAGES/DQD/phs-m.png}}
      \caption{\label{fig:GreenDQD} \protect\Source{ By the Author  }}
 \end{figure}
 
@@ -209,6 +209,8 @@ In the 1970's G.Wilson created a numerical method to solve the Anderson model . 
 The final result will be the spectrum of the Hamiltonian. Other important properties of the material such as density of states, conductivity, specific heat, susceptibility can also be computed. On this project we are mainly interested in the Density of States (DOS). The method used to compute the DOS is the Density Matrix numerical renormalization Group (DM-NRG). A complete description of this algorithm will be given in the followin sections.  \\
 
 For now, we proceed to describe how the NRG is applied to solve the Anderson model in a QD:\\
+
+\Jesus{I still need to do a long revision to this section. Probably I will send most of the computations to the abstract and leave a summary of NRG and its advantages in the main text.}
 
 \subsubsection{Logarithmic Discretization:}
 
@@ -597,15 +599,15 @@ H_{N+1}=\Lambda^{\frac{1}{2}}\left[H_{N}+\frac{1}{2}\left(1+\Lambda^{-1}\right)\
 
 We now proceed by induction supossing that for each $N$ the Hamiltonian $H_{N}$ is already diagonalized and the eigenvectors are organized in states with labels $\vert N,S,i\rangle.$ The next step will be to add the $4$-Hilbert space corresponding to $f_{N+1,\sigma}$ organized the eigenvectors according to the quantum numbers $\vert N',S',i\rangle$ and proceed to diagonalize by blocks the new Hamiltonian. Apart of it, the code must have a cutoff to the number of states. \\
 
-This NRG code was previously implemented in C++ language by the advisor of this thesis. In \ref{Fig-Dot-Spectrum} we observe the evolution of the spectrum of the Hamiltonian according to the number of iterations of the code. As we can appreciate, this evolution converges for even and odd number around $N=30$. \\
+This NRG code was previously implemented in C++ language by the advisor of this thesis. In \ref{Fig-Dot-Spectrum} we observe the evolution of the spectrum of the Hamiltonian according to the number of iterations of the code. As we can appreciate, this evolution converges for even and odd number around $N=30$.  \\
 
 \begin{figure}[h]
 \subfloat[$N$ run only through even values]{\includegraphics[scale=0.5]{IMAGES/even.png}}\subfloat[$N$ run only through odd values]{\includegraphics[scale=0.5]{IMAGES/odd.png}}\caption{\label{Fig-Dot-Spectrum} Evolution of the QD-spectrum vs number of
 iterations of the code for $U=0.5,\ e_{d}=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
 \end{figure}
 \subsection{Density Matrix Renormalization Group (DM-NRG)}
-To compute  dynamical quantities \cite{} like the density of states  is the DMNRG \cite{}. 
+To compute  dynamical quantities \cite{costi_transport_1994} like the density of states  is the DMNRG \cite{hofstetter_generalized_2000}. 
+\Jesus{Sill planning this section }
 
+\subsection{NRG results in a Double Quantum Dot}
 
-
-\section{NRG of the Kondo Effect}
