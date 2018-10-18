@@ -612,14 +612,27 @@ To compute  dynamical quantities \cite{costi_transport_1994} like the density of
 \Jesus{Sill planning this section }
 
 \subsection{NRG results in a Double Quantum Dot}
+We ran the NRG code for the DQD with the following set of parameters:
 
-In the single dot case the DOS 
 
-\begin{figure}[H]
+$$  U_{1,2} = -2\ed{1,2} = 8.62\Gamma_1$$
+
+\ref{fig:NRG-DQD} shows the NRG results for the density of states of QD1 in different states. The three plots show the external Coulomb peaks at $e_1 = \frac{U}{2} \sim 8.62\Gamma_1$, which represent the DOS of the energy levels. In addition  Figure \ref{fig:NRG-1D} shows a central peak at the fermi energy. \textbf{This is the Kondo Peak}. 
+
+Figure \ref{fig:NRGDQD-G2} shows the DOS in the case where the two QDs are symmetrically attached.  At low energies, the inset shows the appearance of two satellite peaks representing the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction. This interaction is explained for this particular case in section \ref{sec:DoublePeak}.  
+
+Again, the most interesting case is in Figure \ref{fig:NRGDQD-tdots}. The additional interference with the second dot completely destroys the Knondo effect. This effect is observed at energies closed to $t_{dots}=0.689\Gamma$ and  will take its relevance in the last chapter. 
+
+
+
+
+
+%There is a problem with thes plots in xlabel.
+\begin{figure}[t]
      \centering
-    \subfloat[ \label{fig:NRG-1D}]{\includegraphics[scale=0.2]{IMAGES/DQD/NRG-QD.png}}
-     \subfloat[Attaching QD2 to the lead \label{fig:NRGDQD-G2}]{\includegraphics[scale=0.42]{IMAGES/DQD/NRG-DQD.png}} 
-    \subfloat[Indirect connection of QD2 \label{fig:NRGDQD-tdots}]{\includegraphics[scale=0.4]{IMAGES/DQD/NRG-IndirectDQD.png}}
+    \subfloat[  \label{fig:NRG-1D}]{\includegraphics[scale=0.5]{IMAGES/DQD/NRG-QD.png}}
+     \subfloat[$\Gamma_2 = \Gamma_1$ . Inset: Low energy DOS. \label{fig:NRGDQD-G2}]{\includegraphics[scale=0.42]{IMAGES/DQD/NRG-DQD.png}} 
+    \subfloat[\label{fig:NRGDQD-tdots} $t_{dots}=0.689\Gamma$. Low energy DOS. ]{\includegraphics[scale=0.4]{IMAGES/DQD/NRG-IndirectDQD.png}}
     
-     \caption{\label{fig:NRG-DQD}  \protect\Source{ By the Author  }}
+     \caption{\label{fig:NRG-DQD} Density of states in QD1 predicted by NRG at each case. . The insets show the.  Note that figure a) is in a different scale due to a major central peak .. \protect\Source{ By the Author  }}
 \end{figure}
