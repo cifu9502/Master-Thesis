@@ -131,7 +131,7 @@ where $\GreenG{d_2,d_2^\dagger}{\GDQD-d_1}$ is the green function of $d_2,d_2^\d
 The last equation not only explains the meaning of term \eqref{term} in equation \eqref{eq:solGreen}. It also gives us an iterative method to find the green function. To understand this, note that the solution in \eqref{eq:solGreen} can also be written as 
 
 \begin{equation}
-\left( \GreenG{d_{1},d_{1}^{\dagger}}{\GDQD} \right) ^{-1}= \omega - \epsilon_1- \sum_\textbf{k} E_{d_1c_k}^{\GDQD-d_2} \GreenG{c_\textbf{k}c^\dagger_\textbf{k}}{\GDQD-d_2-d_1}  - E_{d_1d_2}^{\GDQD} \GreenG{d_2,d_2^\dagger}{\GDQD-d_1} . \label{eq:solGreen}
+\left( \GreenG{d_{1},d_{1}^{\dagger}}{\GDQD} \right) ^{-1}= \omega - \epsilon_1- \sum_\textbf{k} E_{d_1c_k}^{\GDQD-d_2} \GreenG{c_\textbf{k}c^\dagger_\textbf{k}}{\GDQD-d_2-d_1}  - E_{d_1d_2}^{\GDQD} \GreenG{d_2,d_2^\dagger}{\GDQD-d_1} . \label{eq:solGreen2}
 \end{equation}
 Where $E_{d_1c_k}^{\GDQD-d_2} = \sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}} $  represents the accumulated energy of going from $d_1$ to $c_k$ and coming back. The upper-index $\GDQD-d_2$ represents that at this step second dot is ignored. Similarly $E_{d_1d_2}^{\GDQD}$ is the numerator of \eqref{term}. It represents the energy accumulated in at going from $d_1$ to $d_2$. Since this time no point is ignored, the upper-index remains as $\GDQD$. \\
 
@@ -139,8 +139,54 @@ Now the amazing thing about the last equation is that it decomposes the green fu
 
 \Jesus{I promise a real proof of this fact to be included in the abstract. The idea is using induction in graphs  \ref{sec:AbsGraphmethod}. }
 
-\subsection{Density of states of the non-interacting Double Quantum Dot \label{sec:GreedDQD}}
-The only missing 
+\subsection{Ballistic transport in  Double Quantum Dot \label{sec:GreedDQD}}
+The is only one factor missing in equation \eqref{eq:solGreen}. During the  entire procedure we carried the factor $\sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}$. This factor describes the broadening of the DOS when the QD enters in contact with the lead. This broadening is usually named $\Gamma=V_{1}^{*}V_{1}$ (Or $\Delta$ depending on the text book). 
+% $$-\Gamma_i = \sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}. $$
+In general $V_i$  is a function of $\textbf{k}$. However, in the limit of flat-band that is the case we are interested in , we can assume that $V_i $ is constant. Therefore, it is enough to integrate
+\begin{equation}
+    \sum_{\boldsymbol{k}}\frac{1}{\omega-\epsilon_{\boldsymbol{k}}+is}=\int_{-D}^{D}\frac{d\epsilon_{\boldsymbol{k}}}{\omega-\epsilon_{\boldsymbol{k}}+is}=-\ln\left(\frac{D-\epsilon_{\boldsymbol{k}}+is}{-D-\epsilon_{\boldsymbol{k}}+is}\right)\xrightarrow[D\rightarrow\infty]{}-i.
+\end{equation}
+Where we assumed that there is a maximum  energy cutoff $D$ going to infinity in the wide-band limit. Hence 
+\begin{equation}
+   -i\Gamma_i = \sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}.
+\end{equation}
+
+We can replace this in equation \eqref{eq:solGreen} to obtain the real expression for the green function $\Green{d_1,d_1^\dagger}$. The terms of the form $V_1V_2*$ can be replaced for $\sqrt{\Gamma_1\Gamma_2}$, supposing there is no additional complex phase. 
+\newpage
+\begin{figure}[H]
+     \centering
+    
+     \subfloat[ \label{fig:DQD-G2}]{\includegraphics[scale=0.5]{IMAGES/DQD/g1g2-m.png}} \\
+    \subfloat[\label{fig:DQD-tdots}]{\includegraphics[scale=0.5]{IMAGES/DQD/tdots-m.png}}\\
+    \subfloat[\label{fig:DQD-PHS}]{\includegraphics[scale=0.5]{IMAGES/DQD/phs-m.png}}
+     \caption{ \protect\Source{ By the Author  }}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+
+
+
+
+
+
+
+
+
 
 % --------------------------------------------------
 \section{The Numerical Renormalization Group\label{sec:The-Numerical-Renormaliztion} (NRG) }
