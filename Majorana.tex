@@ -173,6 +173,7 @@ Spin is a major problem. A material with spin-orbit coupling is  the solution to
 
 \begin{equation}
     H =\int\mbox{d}x\psi^{\dagger}\left(\frac{\partial^{2}}{2m\partial x^{2}}-\mu -i\alpha\sigma_{y}\partial x+h\sigma_{x}\right)\psi+\Delta\psi_{\downarrow}\psi_{\uparrow}+\Delta^{*}\psi_{\downarrow}\psi_{\uparrow},
+    \label{eq:MajoranaChainHam}
 \end{equation}
 
 
@@ -196,104 +197,187 @@ Spin is a major problem. A material with spin-orbit coupling is  the solution to
 
 % -----------------------Leaking majorana modes in quantum dots-------------
 
-\section{Coupling Majorana modes with QDs}
+\section{Coupling Majoranas to QDs}
+\citeauthor{liu_detecting_2011} was one of the first in proposing the possibility of using QDs in the pursuit of Majorana fermions . When a QD is attached to a the end of a majorana chain in the topological phase,  the majorana mode at the end of the chain then leaks inside the QD \cite{vernek_subtle_2014}. This produces a zero-bias conductance peak of half a quanta $\frac{e^{2}}{2h}$ through the dot.
 
+ We can reconstruct these results using the methods that we developed in \ref{chap: Methods}. To this lets first define our model hamiltonian:
+\begin{equation}
+    H=H_{QD-Lead}+H_{M-QD}+H_M.
+\end{equation}
+Where $H_{QD-Lead}$ is the Hamiltonian for the non-interacting Anderson model \eqref{eq:Anderson}, $H_M$ is the Hamiltonian of the majorana chain and $H_{M-QD}$ represents the coupling between the QD and the Majorana Fermion at the boundary.
 
+Now, the real question is how to define the coupling between the QD and the majorana fermion. In fact, there are many ways to represent this interaction. One alternative is to replace in $H_{M}$ with the entire Kitaev chain hamiltonian \eqref{eq:kitaevHam} (or  even with the  majorana chain \eqref{eq:MajoranaChainHam}) and then pick $H_{M-QD}$ as a simple coupling between the QD and the first site of the chain \cite{vernek_subtle_2014}.  A simpler approach is  to define an effective coupling with the majorana operator at the edge of the majorana chain. Since the Kitaev chain is spin-less, we choose to couple the majorana to the spin-$\dw$ channel of the QD \footnote{An appropriate justification of this fact can be found in \cite{ruiz-tijerina_interaction_2015}} . Therefore, the majorana fermion should be the superposition of the creation and annihilation operators of a spin $\dw$ particle $f_\dw$:
 
+$$\gamma_1 := \frac{1}{\sqrt{2}} \left( f^\dagger_{\dw} + f_{\dw}\ \right) , \gamma_2 := \frac{1}{\sqrt{2}} \left( f^\dagger_{\dw} - f_{\dw} \right).$$
 
-\[
-H=H_{TS-2QDs}+H_{lead}+H_{int}=H_{M-QDs}+\sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}+\sum_{il\sigma}V_{il}c_{\mathbf{k}\sigma l}^{\dagger}d_{i\sigma}+V_{il}^{*}d_{i\sigma}^{\dagger}c_{\mathbf{k}\sigma l}.
-\]
+This makes possible to define an effective coupling between the Majorana Mode and the dot by attaching $\gamma_1$ with the spin-$\dw$ channel in the QD
 
-
-with the new index $i\in\{1,2\}$ summing over both dots and $H_{TS-2QDs}$
-representing the initial Hamiltonian system, which couples the two
-Qds $\left(d_{1\sigma}^{\dagger},d_{2\sigma}^{\dagger}\right)$ with
-the superconducting wire. The hamiltonian $H_{TS-2QDs}$ can be be
-divided in three components
-
-\[
-H_{TS-2QDs}=H_{2QDs}+H_{int}+H_{TS}=H_{d_{i}}+\sum_{\sigma}\left(td_{1\sigma}^{\dagger}d_{2\sigma}+t^{*}d_{1\sigma}^{\dagger}d_{2\sigma}\right)+H_{int}+H_{TS}
-\]
-
-
-where $H_{d_{i}}$is the QD hamiltonian for dot $i$ \prettyref{eq:DotHam}
-,$t$ is the hopping term between both dots, $H_{int}$is the dot-TS
-interaction and $H_{TS}$ is the TS-hamiltonian . In \citep{vernek_subtle_2014},
-the TS is modeled as a Kitaev chain \citep{kitaev_unpaired_2001}
-and $H_{int}$ is the hopping interaction between dots and chain 
-
+%H_{TS} & = & 2\epsilon_{m}\gamma_{1}\gamma_{2}\nonumber \\
 \begin{eqnarray}
-H_{TS} & = & -\sum_{j=1}^{N}\mu a_{j}^{\dagger}a_{j}+\sum_{j=1}^{N-1}\left[-t'(a_{j}^{\dagger}a_{i+1}+a_{j+1}^{\dagger}a_{j})+\Delta a_{j}a_{j+1}+\Delta^{*}a_{j+1}^{\dagger}a_{j}^{\dagger}\right]\nonumber \\
-H_{int} & = & \sum t_{i}d_{i\downarrow}^{\dagger}a_{1}+t_{i}^{*}a_{1}^{\dagger}d_{i\downarrow},\label{eq:Kitaev-dot}
+H_{M-QD} & = &  t \left(d_{\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{\downarrow}\right) 
+% \\
+% & = &  \sum_{i}t_{i} \left(d_{i\downarrow}^{\dagger}f^\dagger_{\dw} + 
+% f_{\downarrow}d_{i\dw} +d_{i\downarrow}^{\dagger}f_{\dw}+
+% +f_{\downarrow}^{\dagger} d_{i\downarrow}\right).
+\label{eq:MajoranaCoupling}
 \end{eqnarray}
 
 
-where $a_{j}^{\dagger}$is the creation operator at site $j$ of the
-chain, $t'$ is the hopping term between consecutive sites, $\Delta$
-is the superconducting gap and $t_{i}$ is the hopping interaction
-between the dot $i$ and the first site of the chain. We also assume
-the dot only interact with spin-down $\downarrow$ operators in the
-chain. \\
-
-Using a Green's function approach on \prettyref{eq:Kitaev-dot} ,
-\citet{vernek_subtle_2014} concludes that the Majorana mode at the
-end of the chain leaks inside the QD when the TS is in the topological
-phase . This fact favors a more simple effective model that has been
-used in literature for simulation QD-TS interactions \citep{liu_detecting_2011,golub_kondo_2011,lee_kondo_2013}.
-The model consists in considering only the coupling between the dots
-and the Majorana modes that emerge in the topological phase. The resulting
-hamiltonian is 
-
-\begin{eqnarray}
-H_{TS} & = & 2\epsilon_{m}\gamma_{1}\gamma_{2}\nonumber \\
-H_{int} & = & \sum_{i}t_{i1}\left(d_{i\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{i\downarrow}\right)+it_{i2}\left(d_{i\downarrow}^{\dagger}\gamma_{2}+\gamma_{2}d_{i\downarrow}\right),\label{eq:Majorana-ham}
-\end{eqnarray}
 
 
-where $\gamma_{1,2}$are the two majorana operators and$t_{i1,2}$
-are the hopping terms between the majoranas and the QDs.
+% \begin{equation}
+%     \omega\Green{A,B} =\delta_{A^{\dagger},B}+\Green{\left[A,H\right],B}
+% \end{equation}
 
-The fidelity of this new model has been discussed by \citet{ruiz-tijerina_interaction_2015}
+Then the coupling with the chain is given by 
+
+\begin{eqnarray*}
+H_{M} & = & \epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}\\
+H_{M-QD}&=&\frac{t}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}+\frac{t^{*}}{\sqrt{2}}f_{\downarrow}^{\dagger}d_{1\downarrow}+\frac{t}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\frac{t^{*}}{\sqrt{2}}f_{\downarrow}d_{1\downarrow}
+\end{eqnarray*}
+
+Finally we obtain the following hamiltonian
+
+\begin{equation}
+H =\sum_{k,\sigma}\left(\epsilon_1+\frac{U_1}{2}\right)d_{1\sigma}^{\dagger}d_{1\sigma}+ \frac{U}{2}(d_{1\sigma}^{\dagger}d_{1\sigma}-1)^{2} + t \left(d_{1\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{1\downarrow}\right) + Vd^\dagger_{1\sigma}c_{k\sigma}+V^* c^\dagger_{k\sigma}d_{1\sigma}+ \epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}.
+\label{eq:QD-Mham}
+\end{equation}
+
+
+The fidelity of this effective model has been discussed by \citet{ruiz-tijerina_interaction_2015}
 concluding that the majorana effective hamiltonian reproduces the
 same results than the Kitaev chain model in the topological phase
 (This statement is true even for more realistic models of the TS that
 include Rashba spin-orbit interactions and a Zeeman field \citep{ruiz-tijerina_interaction_2015}
 ).\\
 
-We now want to come back to a fermionic model, which was broken with
-the introduction of majorana operators in the hamiltonian \prettyref{eq:Majorana-ham}.
-For this we just need to replace the majorana operators $\gamma_{i}$
-with their corresponding fermion operator
 
-\[
-f_{\downarrow}^{\dagger}=\frac{1}{\sqrt{2}}\left(\gamma_{1}-i\gamma_{2}\right)\ ,\ f_{\downarrow}=\frac{1}{\sqrt{2}}\left(\gamma_{1}+i\gamma_{2}\right)
-\]
+\subsection{Non-interacting QD coupled to a Majorana chain}
 
+In the non-interacting case we can use the ballistic transport equations from \ref{sec:transport}.The green functions are then determined by the following set of linear equations. 
 
-so that 
-
-\[
-\gamma_{1}=\frac{1}{\sqrt{2}}\left(f_{\downarrow}^{\dagger}+f_{\downarrow}\right)\ ,\gamma_{2}=\frac{1}{i\sqrt{2}}\left(f_{\downarrow}^{\dagger}-f_{\downarrow}\right).
-\]
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.5]{IMAGES/Majorana/Grenn-Majorana.png}
+\caption{ Graph $\GM$ representing the transport equations.  \label{fig:green-M-QD} \protect\Source{\cite{By the author}}}
+\end{figure}
 
 
-Supposing $t_{i1}=\left|t_{i1}\right|$ and $t_{i2}=\left|t_{i2}\right|e^{i\phi_{i}}$
-to have a $\phi_{i}$-phase with respect to $t_{i1}$, we get to the
-following hamiltonian 
+\begin{align}
+    \left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}&=\left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}=\frac{t}{\sqrt{2}}\left(\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}-\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}\right)\\
+    \left(\omega-\epsilon_{1}\right)\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}&=1+\frac{t}{\sqrt{2}}t_{1}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}+\frac{t}{\sqrt{2}}t_{1}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}+V_{1}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}},d_{1\downarrow}^{\dagger}}\\
+    \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1\downarrow}^{\dagger}}&=V_{1}^{*}\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}\\
+    \left(\omega+\epsilon_{1}\right)\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}&=-\frac{t}{\sqrt{2}}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}-\frac{t}{\sqrt{2}}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}-V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}}^{\dagger},d_{1\downarrow}^{\dagger}}\\
+    \left(\omega+\epsilon_{\mathbf{k}}\right)\Green{c^\dagger_{\mathbf{k}},d_{1\downarrow}^{\dagger}}&=-V_{1}^{*}\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}
+\end{align}
 
-\begin{eqnarray*}
-H_{TS} & = & 2\epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}-\epsilon_{m}\\
-H_{int} & = & \sum_{i}\tilde{t_{i-}}d_{i\downarrow}^{\dagger}f_{\downarrow}+\tilde{t_{i-}}^{*}f_{\downarrow}^{\dagger}d_{i\downarrow}+\tilde{t_{i+}}d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\tilde{t_{i+}}^{*}f_{\downarrow}d_{i\downarrow}
-\end{eqnarray*}
+The graph representing these green functions is represented in \ref{fig:green-M-QD} a)  (Look \ref{sec:GraphMethod} for details). However using that $\left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}=\left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}$ we can take
+ $\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}$ out of the equations getting the system in \ref{fig:green-M-QD} b) .  Following the graph method the green function for dot 1 is
+\begin{equation}
+    \Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}=\left[\omega-\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{1}}-\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\left[\GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\GM-d_{1}}\right]^{-1}}\right]^{-1}.
+\end{equation}
+Hence we just need the green function of $\GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\GM-d_{1}}$ removing $d_1$ out of the graph. This case is much simpler since $f_\downarrow$ is just attached to $d^\dagger_1$ . Thus we get
+\begin{equation}
+    \GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\GM-d_{1}}=\left[\omega-\epsilon_{M}-\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega+\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}}\right]^{-1}.
+\end{equation}
 
 
-with $\tilde{t}_{i\pm}=\frac{1}{\sqrt{2}}\left(\left|t_{i1}\right|-i\left|t_{i1}\right|e^{i\phi_{i}}\right).$
-Therefore the final model for our initial hamiltonian is 
 
-\begin{eqnarray}
-H_{TS-2QDs} & = & H_{d_{i}}+\sum_{\sigma}\left(td_{1\sigma}^{\dagger}d_{2\sigma}+t^{*}d_{1\sigma}^{\dagger}d_{2\sigma}\right)\nonumber \\
- &  & \ \enskip\ \enskip+\sum_{i}\left[\tilde{t_{i-}}d_{i\downarrow}^{\dagger}f_{\downarrow}+\tilde{t_{i-}}^{*}f_{\downarrow}^{\dagger}d_{i\downarrow}+\tilde{t_{i+}}d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\tilde{t_{i+}}^{*}f_{\downarrow}d_{i\downarrow}\right]+2\epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}-\epsilon_{m}.\label{eqFinalMJ-2QDs}
-\end{eqnarray}
+
+
+
+\subsection{NRG results for QD-Majorana system }
+
+
+
+ \citeauthor{ruiz-tijerina_interaction_2015}  proved that this effective coupling  is able to reproduce efficiently the results obtained when the Kitaev chain in the topological phase is attached to a single QD. 
+
+% \begin{eqnarray*}
+% H_{TS} & = & 2\epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}-\epsilon_{m}\\
+% H_{int} & = & \sum_{i}\tilde{t_{i-}}d_{i\downarrow}^{\dagger}f_{\downarrow}+\tilde{t_{i-}}^{*}f_{\downarrow}^{\dagger}d_{i\downarrow}+\tilde{t_{i+}}d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\tilde{t_{i+}}^{*}f_{\downarrow}d_{i\downarrow}
+% \end{eqnarray*}
+
+% with $\tilde{t}_{i\pm}=\frac{1}{\sqrt{2}}\left(\left|t_{i1}\right|-i\left|t_{i1}\right|e^{i\phi_{i}}\right).$
+
+
+
+% so that 
+
+% \[
+% \gamma_{1}=\frac{1}{\sqrt{2}}\left(f_{\downarrow}^{\dagger}+f_{\downarrow}\right)\ ,\gamma_{2}=\frac{1}{i\sqrt{2}}\left(f_{\downarrow}^{\dagger}-f_{\downarrow}\right).
+% \]
+
+
+% \begin{eqnarray}
+% H_{TS} & = & 2\epsilon_{m}\gamma_{1}\gamma_{2}\nonumber \\
+% H_{int} & = & \sum_{i}t_{i1}\left(d_{i\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{i\downarrow}\right)+it_{i2}\left(d_{i\downarrow}^{\dagger}\gamma_{2}+\gamma_{2}d_{i\downarrow}\right),\label{eq:Majorana-ham}
+% \end{eqnarray}
+
+
+% where $\gamma_{1,2}$are the two majorana operators and$t_{i1,2}$
+% are the hopping terms between the majoranas and the QDs.
+
+
+
+
+% A Majorana chain coupled to a QD can be studied using the methods described in chapter \ref{chap: Methods}
+
+
+
+
+
+
+% % where $H_{d_{i}}$is the QD hamiltonian for dot $i$ \prettyref{eq:DotHam}
+% % ,$t$ is the hopping term between both dots, $H_{int}$is the dot-TS
+% % interaction and $H_{TS}$ is the TS-hamiltonian . In \citep{vernek_subtle_2014},
+% % the TS is modeled as a Kitaev chain \citep{kitaev_unpaired_2001}
+% % and $H_{int}$ is the hopping interaction between dots and chain 
+
+% \begin{eqnarray}
+% H_{TS} & = & -\sum_{j=1}^{N}\mu a_{j}^{\dagger}a_{j}+\sum_{j=1}^{N-1}\left[-t'(a_{j}^{\dagger}a_{i+1}+a_{j+1}^{\dagger}a_{j})+\Delta a_{j}a_{j+1}+\Delta^{*}a_{j+1}^{\dagger}a_{j}^{\dagger}\right]\nonumber \\
+% H_{int} & = & \sum t_{i}d_{i\downarrow}^{\dagger}a_{1}+t_{i}^{*}a_{1}^{\dagger}d_{i\downarrow},\label{eq:Kitaev-dot}
+% \end{eqnarray}
+
+
+% where $a_{j}^{\dagger}$is the creation operator at site $j$ of the
+% chain, $t'$ is the hopping term between consecutive sites, $\Delta$
+% is the superconducting gap and $t_{i}$ is the hopping interaction
+% between the dot $i$ and the first site of the chain. We also assume
+% the dot only interact with spin-down $\downarrow$ operators in the
+% chain. \\
+
+% Using a Green's function approach on \prettyref{eq:Kitaev-dot} ,
+% \citet{vernek_subtle_2014} concludes that the Majorana mode at the
+% end of the chain leaks inside the QD when the TS is in the topological
+% phase . This fact favors a more simple effective model that has been
+% used in literature for simulation QD-TS interactions \citep{liu_detecting_2011,golub_kondo_2011,lee_kondo_2013}.
+% The model consists in considering only the coupling between the dots
+% and the Majorana modes that emerge in the topological phase. The resulting
+% hamiltonian is 
+
+
+
+% \[
+% f_{\downarrow}^{\dagger}=\frac{1}{\sqrt{2}}\left(\gamma_{1}-i\gamma_{2}\right)\ ,\ f_{\downarrow}=\frac{1}{\sqrt{2}}\left(\gamma_{1}+i\gamma_{2}\right)
+% \]
+
+
+% so that 
+
+% \[
+% \gamma_{1}=\frac{1}{\sqrt{2}}\left(f_{\downarrow}^{\dagger}+f_{\downarrow}\right)\ ,\gamma_{2}=\frac{1}{i\sqrt{2}}\left(f_{\downarrow}^{\dagger}-f_{\downarrow}\right).
+% \]
+
+
+% Supposing $t_{i1}=\left|t_{i1}\right|$ and $t_{i2}=\left|t_{i2}\right|e^{i\phi_{i}}$
+% to have a $\phi_{i}$-phase with respect to $t_{i1}$, we get to the
+% following hamiltonian 
+
+
+
+% \begin{eqnarray}
+% H_{TS-2QDs} & = & H_{d_{i}}+\sum_{\sigma}\left(td_{1\sigma}^{\dagger}d_{2\sigma}+t^{*}d_{1\sigma}^{\dagger}d_{2\sigma}\right)\nonumber \\
+%  &  & \ \enskip\ \enskip+\sum_{i}\left[\tilde{t_{i-}}d_{i\downarrow}^{\dagger}f_{\downarrow}+\tilde{t_{i-}}^{*}f_{\downarrow}^{\dagger}d_{i\downarrow}+\tilde{t_{i+}}d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\tilde{t_{i+}}^{*}f_{\downarrow}d_{i\downarrow}\right]+2\epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}-\epsilon_{m}.\label{eqFinalMJ-2QDs}
+% \end{eqnarray}
 
 
