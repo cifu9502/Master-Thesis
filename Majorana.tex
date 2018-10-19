@@ -214,7 +214,7 @@ This makes possible to define an effective coupling between the Majorana Mode an
 
 %H_{TS} & = & 2\epsilon_{m}\gamma_{1}\gamma_{2}\nonumber \\
 \begin{eqnarray}
-H_{M-QD} & = &  t \left(d_{\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{\downarrow}\right) 
+H_{M-QD} & = &  t_1 \left(d_{\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{\downarrow}\right) 
 % \\
 % & = &  \sum_{i}t_{i} \left(d_{i\downarrow}^{\dagger}f^\dagger_{\dw} + 
 % f_{\downarrow}d_{i\dw} +d_{i\downarrow}^{\dagger}f_{\dw}+
@@ -233,13 +233,13 @@ Then the coupling with the chain is given by
 
 \begin{eqnarray*}
 H_{M} & = & \epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}\\
-H_{M-QD}&=&\frac{t}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}+\frac{t^{*}}{\sqrt{2}}f_{\downarrow}^{\dagger}d_{1\downarrow}+\frac{t}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\frac{t^{*}}{\sqrt{2}}f_{\downarrow}d_{1\downarrow}
+H_{M-QD}&=&\frac{t_1}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}+\frac{t_1^{*}}{\sqrt{2}}f_{\downarrow}^{\dagger}d_{1\downarrow}+\frac{t_1}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\frac{t_1^{*}}{\sqrt{2}}f_{\downarrow}d_{1\downarrow}
 \end{eqnarray*}
 
 Finally we obtain the following hamiltonian
 
 \begin{equation}
-H =\sum_{k,\sigma}\left(\epsilon_1+\frac{U_1}{2}\right)d_{1\sigma}^{\dagger}d_{1\sigma}+ \frac{U}{2}(d_{1\sigma}^{\dagger}d_{1\sigma}-1)^{2} + t \left(d_{1\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{1\downarrow}\right) + Vd^\dagger_{1\sigma}c_{k\sigma}+V^* c^\dagger_{k\sigma}d_{1\sigma}+ \epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}.
+H =\sum_{k,\sigma}\left(\epsilon_1+\frac{U_1}{2}\right)d_{1\sigma}^{\dagger}d_{1\sigma}+ \frac{U}{2}(d_{1\sigma}^{\dagger}d_{1\sigma}-1)^{2} + t_1 \left(d_{1\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{1\downarrow}\right) + Vd^\dagger_{1\sigma}c_{k\sigma}+V^* c^\dagger_{k\sigma}d_{1\sigma}+ \epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}.
 \label{eq:QD-Mham}
 \end{equation}
 
@@ -252,7 +252,7 @@ include Rashba spin-orbit interactions and a Zeeman field \citep{ruiz-tijerina_i
 ).\\
 
 
-\subsection{Non-interacting QD coupled to a Majorana chain}
+\subsection{Non-interacting ($U_1 = 0$) QD coupled to a Majorana chain}
 
 In the non-interacting case we can use the ballistic transport equations from \ref{sec:transport}.The green functions are then determined by the following set of linear equations. 
 
@@ -264,10 +264,10 @@ In the non-interacting case we can use the ballistic transport equations from \r
 
 
 \begin{align}
-    \left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}&=\left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}=\frac{t}{\sqrt{2}}\left(\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}-\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}\right)\\
-    \left(\omega-\epsilon_{1}\right)\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}&=1+\frac{t}{\sqrt{2}}t_{1}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}+\frac{t}{\sqrt{2}}t_{1}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}+V_{1}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}},d_{1\downarrow}^{\dagger}}\\
+    \left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}&=\left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}=\frac{t^*_1}{\sqrt{2}}\left(\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}-\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}\right)\\
+    \left(\omega-\epsilon_{1}\right)\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}&=1+\frac{t_1}{\sqrt{2}}t_{1}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}+\frac{t_1}{\sqrt{2}}t_{1}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}+V_{1}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}},d_{1\downarrow}^{\dagger}}\\
     \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1\downarrow}^{\dagger}}&=V_{1}^{*}\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}\\
-    \left(\omega+\epsilon_{1}\right)\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}&=-\frac{t}{\sqrt{2}}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}-\frac{t}{\sqrt{2}}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}-V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}}^{\dagger},d_{1\downarrow}^{\dagger}}\\
+    \left(\omega+\epsilon_{1}\right)\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}&=-\frac{t_1}{\sqrt{2}}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}-\frac{t_1}{\sqrt{2}}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}-V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}}^{\dagger},d_{1\downarrow}^{\dagger}}\\
     \left(\omega+\epsilon_{\mathbf{k}}\right)\Green{c^\dagger_{\mathbf{k}},d_{1\downarrow}^{\dagger}}&=-V_{1}^{*}\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}
 \end{align}
 
@@ -281,7 +281,7 @@ Hence we just need the green function of $\GreenG{f_{\downarrow},f_{\downarrow}^
     \GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\GM-d_{1}}=\left[\omega-\epsilon_{M}-\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega+\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}}\right]^{-1}.
 \end{equation}
 
-
+Again, the only missing point in this equation is to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}= -i\Gamma_1$. Note that this computations are only for the spin-$\dw$ channel. The spin-$\up$ channel is even simpler since this channel is not coupled to the majorana mode. Hence it corresponds to the case of a single quantum dot coupled to a Lead. After this, we obtain 
 
 
 
