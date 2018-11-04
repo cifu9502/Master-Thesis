@@ -179,6 +179,13 @@ urlcolor=black
 \newcommand{\Jesus}[1]{\textcolor{red}{\fbox{Note} {\sl#1}}}
 \newcommand{\Source}[1]{\textcolor{red}{\\ {\footnotesize \fbox{Source: {\sl#1} } } }}
 
+\usepackage{nomencl}
+\makenomenclature
+ 
+\renewcommand{\nomname}{List of Abbreviations}
+ 
+\renewcommand{\nompreamble}{The next list describes several abbreviations that will be later used within the body of the document}
+
 \begin{document}
 \mainmatter
 \maketitle
@@ -199,13 +206,26 @@ expand this idea using the numerical renormalization group  to study the model o
 
 
 
-%\tableofcontents{}
+\tableofcontents{}
+%\listoffigures                  %% Mandatory if thesis has figures
+%\listof{Program}{Abbreviations}
+
+\nomenclature{QD}{Quantum Dot}
+\nomenclature{DQD}{Double Quantum Dot}
+\nomenclature{DOS}{Density of States}
+\nomenclature{MBS}{Majorana Bound State}
+ 
+\printnomenclature
+
+
+
+%Main chapters
 \include{Intro}
 %\include{Preliminars}
 \include{Methods}
 %\include{Model}
-\include{Majorana}
-\include{NResults}
+%\include{Majorana}
+%\include{NResults}
 
 
 

@@ -4,7 +4,7 @@
 In this section we present the results for the NRG analysis of the Anderson model applied to the case of a Double Quantum Dot (DQD) attached to a Majorana mode (See \ref{fig:GeneralModel}). Extending the  Hamiltonian \eqref{eq:QD-Mham} to a coupling with a DQD we obtain the following general Hamiltonian:   
 
 \begin{equation}
-H =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{\sigma}^{\dagger}d_{i\sigma}+ \frac{U_i}{2}(d_{i \sigma}^{\dagger}d_{i \sigma}-1)^{2} + t_i(\gamma d_{+,\dw}+d^\dagger_{+,\dw}\gamma) + V_id^\dagger_{i\sigma}c_{k\sigma}+V_i^* c^\dagger_{k\sigma}d_{i\sigma}.
+H =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{\sigma}^{\dagger}d_{i\sigma}+ \frac{U_i}{2}(d_{i \sigma}^{\dagger}d_{i \sigma}-1)^{2} + t_i(\gamma d_{i,\dw}+d^\dagger_{i,\dw}\gamma) + V_id^\dagger_{i\sigma}c_{k\sigma}+V_i^* c^\dagger_{k\sigma}d_{i\sigma}.
 \label{General model}
 \end{equation}
 
@@ -70,6 +70,7 @@ Now, note that that graph $\MDQD-d_{1}-f_{\downarrow}$ is actually a double quan
 
 % -------------------------------------------------------------
 \subsection{ a) Removing Kondo and Majorana with QD-interference \label{sec:a)}}
+\Jesus{Text coming soon}
 
 \begin{figure}[H]
     \centering
@@ -215,13 +216,13 @@ $t_{1}=t_2=0.02$. Variable $\ep_{d2} =\frac{U_{2}}{2}$}
 \caption{\label{fig:DOS/PHS-Shift_e2.png} Evolution of the QDs' DOS for the model in \ref{fig:Mod/PHS-Shift_e2.png} }
 \end{figure}
 We start again with the symmetric model with both QDs coupled to the Majorana mode, but this time the evolution is performed over $\ep_2=\frac{U}{2}$, such that the model is always Particle-Hole symmetric. This situation is very different from the previous model (\ref{sec:e2}) since the decaying of $U2$ 
-equalizes the effect of increasing the dot energy. In \ref{fig:DOS/PHS-Shift_e2.png} we observe that the DOS of QD2 increases while the QD1's DOS decreases, just as it happened in \ref{sec:e2} . However, the Majorana signature remains at $2$ for both dots (See \ref{fig:MSig/PHS-Shift_e2}), meaning that the Majorana is not preferably induced to tunnel to any QD despite the lose of symmetry in the dot energy.
+equalizes the effect of increasing the dot energy. In \ref{fig:DOS/PHS-Shift_e2.png} we observe that the DOS of QD2 increases while the QD1's DOS decreases, just as it happened in \ref{sec:e2} . However, the Majorana signature remains at $2$ for both dots , meaning that the Majorana is not preferably induced to tunnel to any QD despite the lose of symmetry in the dot energy.
 
-\begin{figure}[hbt]
-\centering
-\includegraphics[scale=0.4]{Plots/MSig/PHS-Shift_e2.png}
-\caption{\label{fig:MSig/PHS-Shift_e2} Relation between the spin up-down Zero-peaks at the Fermi level. The Majorana signature is related to $\frac{\rho_\up(0)}{\rho_\up(0)}=2$.}
-\end{figure}
+% \begin{figure}[hbt]
+% \centering
+% \includegraphics[scale=0.4]{Plots/MSig/PHS-Shift_e2.png}
+% \caption{\label{fig:MSig/PHS-Shift_e2} Relation between the spin up-down Zero-peaks at the Fermi level. The Majorana signature is related to $\frac{\rho_\up(0)}{\rho_\up(0)}=2$.}
+% \end{figure}
 
 %---------------------------------------------------------------------------
 \section{Shifting $t_2$}

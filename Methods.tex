@@ -57,12 +57,17 @@ The equation above receives the name of transport equation. This will be our lea
 This density of states contains important physical information related to operator $A$. In our case, operator $A^\dagger$ will be related to the creation operator of a quantum dot $d^\dagger$. Our mean purpose will be to compute the density of states of a quantum dot $\rho_{d,d^\dagger}$. This 
 that allows us to obtain other transport 
 
-\subsection{Solving transport equations using graphs \label{sec:GraphMethod}}
+\subsection{Solving transport equations with graphs \label{sec:GraphMethod}}
 
 
-Solving transport equation involves solving a set of linear equations depending on our energy parameter $\omega$. Though this process can be performed by performed by using current matrix procedures like Gauss-Jordan or even writing the matrix in Mathematica. However, if the model is too complex the solution of the problem will be give a huge equation, difficult to understand. \\
+Solving the transport equations involves dealing with a set of linear equations where all the possible variables including  $\omega$ , and the Hamiltonian parameters are assumed to be constant.  This can be done by  Gauss-Jordan elimination, noting that after each elimination process we need to carry on the account in terms of these variables. The solution  will be a polynomial fraction with the variable given by these parameters.  When the number of operators in the Hamiltonian increases the number of terms in the polynomial grows-up exponentially. This reveals the importance of exploring new methods that could simplify the solution.   \\
 
-Instead of this we prefer to use graph theory to provide a shortcut to the solution of transport equations. The reason for this is that complex Hamiltonian usually do not  connect all the operators. This means that the total matrix representing the transport equations is full of $0$'a . Graphs allows us to understand these connections, including which operators are connected and which are not,  and then use them to decompose the solution of the green equation.\\ 
+The method presented here uses graph theory algorithms that provide a shortcut to Gauss-Jordan elimination.
+
+These graphs allow us to reduce the complexity of the process by understanding the 
+
+
+The reason for this is that complex Hamiltonian usually do not  connect all the operators. This means that the total matrix representing the transport equations is full of $0$'a . Graphs allows us to understand these connections, including which operators are connected and which are not,  and then use them to decompose the solution of the green equation.\\ 
 
 
 To explain the idea behind graph method we will solve the transport equations for a non-interacting $(U=0)$ DQD connected to one lead. According to the Anderson model the Hamiltonian for this system looks like 
@@ -82,7 +87,24 @@ with $i$ summing over the terms $\{1,2\}$. Since the system is non-interacting w
     % \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1}^{\dagger}}= & V_{1}\Green{d_{1},d_{1}^{\dagger}}+V_{2}\Green{d_{2},d_{1}^{\dagger}} \\
 
     % \left(\omega-\epsilon_{2}\right)\Green{d_{2},d_{1}^{\dagger}}= & t_{dots}\Green{d_{1},d_{1}^{\dagger}}+V_{2}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}}. \\
- Note that we only wrote  the green functions where the second operator is $d_1^\dagger$. This system is already closed which means that we don't need any other equation to find the solution. 
+ Note that we only wrote  the green functions having $d_1^\dagger$ as second operator. This system is already closed which means that we don't need any other equation to find the solution. The matrix equation corresponding to this linear equation is 
+ \begin{equation}
+     \left[\begin{array}{ccc}
+\omega-\epsilon_{2} & V_{2} & t_{dots}\\
+V_{2}^{*} & \omega-\epsilon_{k} & V_{1}\\
+t_{dots}^{*} & V_{1}^{*} & \omega-\epsilon_{1}
+\end{array}\right]\left[\begin{array}{c}
+\Green{d_{2},d_{1}^{\dagger}}\\
+\Green{c_{\mathbf{k}},d_{1}^{\dagger}}\\
+\Green{d_{1},d_{1}^{\dagger}}
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+0\\
+1
+\end{array}\right]
+ \end{equation}
+ 
+ To simplify future computations we changed the order of the rows in the matrix.  Now 
 
 Our objective is to compute the green function for $\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}$. This process consist in solving the system of $3$ linear differential equations, which is not difficult.  In fact it is possible to compute the result to be 
 
