@@ -41,14 +41,11 @@ An extended definition of the Green function  can be given in terms of fermionic
 \begin{equation}
   G_{A,B}(t-t') = \mathcal{T}[\{ A(t),B(t') \} ].
 \end{equation}
-Here, causality is important, which is the reason why we use the time-order operator $\mathcal{T}$. Again, it is possible to define the green-functions in the energy space applying a Fourier transform. The evolution of these Green functions will be determined by the Schrodringuer equation. At the end, the result will be
+Here, causality is important, which is the reason why we use the time-order operator $\mathcal{T}$. Again, it is possible to define the green-functions in the energy space applying a Fourier transform. The evolution of these Green functions will be determined by the Schrodinger equation. At the end, the result will be
 
-\begin{equation}
-    \omega\Green{A,B}=\delta_{A^{\dagger},B}+\Green{\left[A,H\right],B}.
-    \label{eq:Transport}
-\end{equation}
 
-The equation above receives the name of transport equation. This will be our leading method to compute the green functions of the system. In addition we can define the Density of states associated to an operator $A$ to be 
+
+The equation above receives the name of transport equation. This will be our leading method to compute the green functions of the system. In addition we can define the Density of States associated to an operator $A$ to be 
 
 \begin{equation}
     \rho_{A,A^\dagger}=-\frac{1}{\pi}Im\left[\Green{A,A^\dagger}\right].
@@ -141,7 +138,7 @@ Just one additional correction. Remember that every term including $\epsilon_k$ 
      \Green{d_{1},d_{1}^{\dagger}}=\left[\left(\omega-\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)-\frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)^{*}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}\right]^{-1}. \label{eq:SumSolGreen}
 \end{equation}
 
-\subsection{Graph Algorithm}
+\subsection{Graph Algorithm \label{sec:Algorithm}}
 
 This is the same procedure we will use in future processes. Just to summarize, the algorithm consists in 
 \begin{enumerate}
@@ -212,7 +209,7 @@ In general $V_i$  is a function of $\textbf{k}$. However, in the limit of flat-b
 \end{equation}
 Where we assumed that there is a maximum  energy cutoff $D$ going to infinity in the wide-band limit. Hence 
 \begin{equation}
-   -i\Gamma_i = \sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}.
+   -i\Gamma_i = \sum_{\boldsymbol{k}}\frac{V_{i}^{*}V_{i}}{\omega-\epsilon_{\boldsymbol{k}}}.
 \end{equation}
 
 We can replace this in equation \eqref{eq:solGreen} to obtain the real expression for the green function $\Green{d_1,d_1^\dagger}$. The terms of the form $V_1V_2*$ can be replaced for $\sqrt{\Gamma_1\Gamma_2}$, supposing there is no additional complex phase.
