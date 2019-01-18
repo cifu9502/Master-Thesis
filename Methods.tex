@@ -212,31 +212,45 @@ Where we assumed that there is a maximum  energy cutoff $D$ going to infinity in
    -i\Gamma_i = \sum_{\boldsymbol{k}}\frac{V_{i}^{*}V_{i}}{\omega-\epsilon_{\boldsymbol{k}}}.
 \end{equation}
 
+
+
 We can replace this in equation \eqref{eq:solGreen} to obtain the real expression for the green function $\Green{d_1,d_1^\dagger}$. The terms of the form $V_1V_2*$ can be replaced for $\sqrt{\Gamma_1\Gamma_2}$, supposing there is no additional complex phase.
 
 Now, remember from \eqref{eq:Density of States} that the DOS $\rho$ depends on the imaginary factor of the Green Function $\Green{d_1,d_1^\dagger}$. This factor is express in the broadening $\Gamma$. In case $\Gamma = 0$ the density of states will be null. At any other case, one of the dots should be attached to the lead. Let $\Gamma_1$ be the broadening of this dot. We will take $\Gamma_1$ as unit.  
-In \ref{fig:GreenDQD} we can observe the evolution of the Density of States under certain processes. Each plot includes an inset showing the model applied to the figure. The coupling in purple indicates the tuning variable. In addition, we set $e_1 = e_2 = 0$ so that both dots satisfy hole symmetric 
+In \ref{fig:GreenDQD} we can observe the evolution of the Density of States under certain processes. Each plot includes an inset showing the model applied to the figure. The coupling in purple indicates the tuning variable. In addition, we set $e_1 = e_2 = 0$ so that both dots satisfy PHS.
+
 
 
 \begin{enumerate}
-    \item \textbf{Coupling QD2 (Figure \ref{fig:DQD-G2}):} It shows the evolution of the DOS when the second dot's coupling scales from $0$ to $4\Gamma$. At $\Gamma_2=0$  the second dot is decoupled. The first dot's DOS is the same of a single dot case. The maximum height is achieved at $\rho \pi \Gamma_1 =1$ and the width at the half of this height $(\rho \pi \Gamma_1 =0.5)$ is $\Gamma_1$ just as in Figure \ref{fig:specDots}. When the second dot is attached $\Gamma_2 >0$ the density of states is divided between both dots. At $\Gamma_1 = \Gamma_2$ both DOS are equal to $\frac{1}{4\pi\Gamma}$. 
-    \item \textbf{Indirect Coupling of QD2 (Figure \ref{fig:DQD-tdots}):} This is the most interesting case. When the second dot is connected indirectly through the first dot there appears a quantum inference that splits the central peak in two new states. We will observe later that in the interacting case this procedure can also destroy the Kondo signature. This has interesting consequences when combined with majorana physics, since the interference patter destroy the Kondo effect but not the majorana signature. 
-    \item \textbf{Breaking Particle Hole Symmetry (Figure \ref{fig:DQD-PHS}):}
+    \item \textbf{Coupling QD2,  Figure \ref{fig:GreenDQD}(a)(b):}  At $\Gamma_2=0$  the second dot is decoupled, hence the first dot's DOS is the same of a single dot case. The maximum height is achieved at  $\rho \pi \Gamma_1 =1$ and the width at the half of this height $(\rho \pi \Gamma_1 =0.5)$ is $\Gamma_1$ just as in Figure \ref{fig:specDots}. When the second dot is attached $\Gamma_2 >0$ the density of states is divided between both dots. At $\Gamma_1 = \Gamma_2$ both DOS are equal to $\frac{1}{4\pi\Gamma}$. 
+    
+    % ----------------SUPER FIGURE ---------------------------
+    \begin{figure}[H]
+        \centering
+         \includegraphics[scale=0.47]{IMAGES/DQD/Non-interacting.png}
+         \caption{\label{fig:GreenDQD} Evolution of the density of states at each QD (Left: dot 1, Right: dot 2) at three distinct arrangements of DQD-lead coupling. The inset at the first column depicts the type of coupling. The purple line represents the tuning variable. The energy unit is $\Gamma_1$. $e_1 =e_2 =0$ in all arrangements. (a),(b) The lead is connected to both QDs. Tuning variable: $\Gamma_2$. (c)(d) Indirect coupling of the second dot through dot one. Tuning variable: $\_{dots}$. (e)(f) Triangular coupling. Tuning variable: $t_{dots}$.  
+         \protect\Source{ By the Author  }}
+    \end{figure}
+% ----------------SUPER FIGURE ---------------------------
+
+    \item \textbf{Indirect Coupling of QD2, Figure \ref{fig:GreenDQD}(c)(d):} This is case is interesting. When the second dot is connected indirectly through the first dot there appears a quantum inference that splits the central peak in two new states. We will observe later that in the interacting case this procedure can also destroy the Kondo signature. This has interesting consequences when combined with majorana physics, since the interference patter destroy the Kondo effect but not the majorana signature. 
+    \item \textbf{Breaking Particle Hole Symmetry, Figure \ref{fig:GreenDQD}(e)(f):}
     Suppose we have $\Gamma_2 = \Gamma_1$. The "triangular connections" break Particle Hole Symmetry. The central peak is displaced to the positive part of the spectrum. Contrary to the previous case, this situation will be avoided during this project. This is because breaking PHS in both dots will prevent the Majorana to tunnel inside the DQD. 
     
 \end{enumerate}
 
-\newpage
-\begin{figure}[H]
-     \centering
-    
-     \subfloat[Attaching QD2 to the lead \label{fig:DQD-G2}]{\includegraphics[scale=0.6]{IMAGES/DQD/g1g2-m.png}} \\
-    \subfloat[Indirect connection of QD2 \label{fig:DQD-tdots}]{\includegraphics[scale=0.6]{IMAGES/DQD/tdots-m.png}}\\
-    \subfloat[Breaking PHS with triangular connection \label{fig:DQD-PHS}]{\includegraphics[scale=0.6]{IMAGES/DQD/phs-m.png}}
-     \caption{\label{fig:GreenDQD} For the tree cases we considered $e_1 =e_2 =0$. The inset shows the set-up. At each case the purple coupling shows the tuning variable. \protect\Source{ By the Author  }}
-\end{figure}
 
-\newpage
+
+% \begin{figure}[H]
+%      \centering
+    
+%      \subfloat[Attaching QD2 to the lead \label{fig:DQD-G2}]{\includegraphics[scale=0.6]{IMAGES/DQD/g1g2-m.png}} \\
+%     \subfloat[Indirect connection of QD2 \label{fig:DQD-tdots}]{\includegraphics[scale=0.6]{IMAGES/DQD/tdots-m.png}}\\
+%     \subfloat[Breaking PHS with triangular connection \label{fig:DQD-PHS}]{\includegraphics[scale=0.6]{IMAGES/DQD/phs-m.png}}
+%      \caption{\label{fig:GreenDQD} For the tree cases we considered $e_1 =e_2 =0$. The inset shows the set-up. At each case the purple coupling shows the tuning variable. \protect\Source{ By the Author  }}
+% \end{figure}
+
+
 
 
 
