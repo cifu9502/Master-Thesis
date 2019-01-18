@@ -55,7 +55,7 @@ The equation above receives the name of transport equation. This will be our lea
 This density of states contains important physical information related to operator $A$. In our case, operator $A^\dagger$ will be related to the creation operator of a quantum dot $d^\dagger$. Our mean purpose will be to compute the density of states of a quantum dot $\rho_{d,d^\dagger}$. This 
 that allows us to obtain other transport 
 
-\subsection{Solving transport equations with graphs \label{sec:GraphMethod}}
+\subsection{Using graph theory to solve the transport equations \label{sec:GraphMethod}}
 
 
 Solving the transport equations involves dealing with a set of linear equations where all the possible variables including  $\omega$ , and the Hamiltonian parameters are assumed to be constant.  This can be done by  Gauss-Jordan elimination, noting that after each elimination process we need to carry on the account in terms of these variables. The solution  will be a polynomial fraction with the variable given by these parameters.  When the number of operators in the Hamiltonian increases the number of terms in the polynomial grows-up exponentially. This reveals the importance of exploring new methods that could simplify the solution.   \\
@@ -142,15 +142,15 @@ Just one additional correction. Remember that every term including $\epsilon_k$ 
 
 This is the same procedure we will use in future processes. Just to summarize, the algorithm consists in 
 \begin{enumerate}
-    \item Compute the transport equations with the second term fixed in the creation operator of the dot  you are going to compute the green function. 
-     \item Set up the initial graph.
-    \item Pop out a vertex:
+    \item Computing the transport equations with the second term fixed in the creation operator of the dot.
+     \item  Setting up the  graph associated to the transport system.
+    \item Popping out the vertexes of the graph. Each popping process carries the following steps.
     \begin{enumerate}
-        \item Compute the extra-terms in the energies and couplings based on the walks passing through the vertex that will be popped out.
-        \item Eliminate this vertex from the graph. 
-        \item Iterate till having just one vertex. 
+        \item Computing the extra-terms in the energies and couplings based on the walks passing through the popped vertex.
+        \item Eliminating this vertex from the graph. 
+        \item Iterating till there is only one  vertex.
         \end{enumerate}
-    \item Invert the last energy to obtain the final green function of the dot.
+    \item The energy in the remaining vertex $d$ is $\epsilon_d = \frac{1}{\omega -\Green{d,d\dagger}}$ .
 \end{enumerate}
 
 
@@ -200,10 +200,10 @@ This is the same procedure we will use in future processes. Just to summarize, t
 
 % \Jesus{I promise a real proof of this fact to be included in the abstract. The idea is using induction in graphs  \ref{sec:AbsGraphmethod}. }
 
-\subsection{Ballistic transport in a  Double Quantum Dot \label{sec:GreedDQD}}
+\subsection{Ballistic transport in a  double quantum dot \label{sec:GreedDQD}}
 The equation \eqref{eq:SumSolGreen} depends on the factor $\sum_{\boldsymbol{k}}\frac{V_{i}^{*}V_{j}}{\omega-\epsilon_{\boldsymbol{k}}}$. This factor describes the broadening of the DOS when the QD enters in contact with the lead. This broadening is usually named $\Gamma_i=V_{i}^{*}V_{i}$ (Or $\Delta$ depending on the text book). 
 % $$-\Gamma_i = \sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}. $$
-In general $V_i$  is a function of $\textbf{k}$. However, in the limit of flat-band, that is the case we are interested in, we can assume that $V_i $ is constant. Therefore, it is enough to integrate
+In general $V_i$  is a function of $\textbf{k}$. However, in the limit of flat-band we can assume that $V_i $ is constant. Therefore, it is enough to integrate
 \begin{equation}
     \sum_{\boldsymbol{k}}\frac{1}{\omega-\epsilon_{\boldsymbol{k}}+is}=\int_{-D}^{D}\frac{d\epsilon_{\boldsymbol{k}}}{\omega-\epsilon_{\boldsymbol{k}}+is}=-\ln\left(\frac{D-\epsilon_{\boldsymbol{k}}+is}{-D-\epsilon_{\boldsymbol{k}}+is}\right)\xrightarrow[D\rightarrow\infty]{}-i.
 \end{equation}
@@ -214,15 +214,15 @@ Where we assumed that there is a maximum  energy cutoff $D$ going to infinity in
 
 
 
-We can replace this in equation \eqref{eq:solGreen} to obtain the real expression for the green function $\Green{d_1,d_1^\dagger}$. The terms of the form $V_1V_2*$ can be replaced for $\sqrt{\Gamma_1\Gamma_2}$, supposing there is no additional complex phase.
+We can replace this in equation \eqref{eq:solGreen} to obtain the real expression for the green function $\Green{d_1,d_1^\dagger}$. The terms of the form $V_1V_2^*$ can be replaced for $\sqrt{\Gamma_1\Gamma_2}$, supposing there is no additional complex phase.
 
 Now, remember from \eqref{eq:Density of States} that the DOS $\rho$ depends on the imaginary factor of the Green Function $\Green{d_1,d_1^\dagger}$. This factor is express in the broadening $\Gamma$. In case $\Gamma = 0$ the density of states will be null. At any other case, one of the dots should be attached to the lead. Let $\Gamma_1$ be the broadening of this dot. We will take $\Gamma_1$ as unit.  
-In \ref{fig:GreenDQD} we can observe the evolution of the Density of States under certain processes. Each plot includes an inset showing the model applied to the figure. The coupling in purple indicates the tuning variable. In addition, we set $e_1 = e_2 = 0$ so that both dots satisfy PHS.
+In \ref{fig:GreenDQD} we can observe the evolution of the Density of States under certain processes. Each plot includes an inset showing the model applied to the figure. The coupling in purple indicates the tuning variable. We set $e_1 = e_2 = 0$ so that both dots satisfy PHS. The primary results are the 
 
 
 
 \begin{enumerate}
-    \item \textbf{Coupling QD2,  Figure \ref{fig:GreenDQD}(a)(b):}  At $\Gamma_2=0$  the second dot is decoupled, hence the first dot's DOS is the same of a single dot case. The maximum height is achieved at  $\rho \pi \Gamma_1 =1$ and the width at the half of this height $(\rho \pi \Gamma_1 =0.5)$ is $\Gamma_1$ just as in Figure \ref{fig:specDots}. When the second dot is attached $\Gamma_2 >0$ the density of states is divided between both dots. At $\Gamma_1 = \Gamma_2$ both DOS are equal to $\frac{1}{4\pi\Gamma}$. 
+    \item \textbf{Coupling QD2. \ref{fig:GreenDQD}(a)(b):}  At $\Gamma_2=0$  the second dot is decoupled, hence the first dot's DOS is the same of a single dot case. The maximum height is achieved at  $\rho \pi \Gamma_1 =1$ and the width of this peak is about  $\Gamma_1$, just as in Figure \ref{fig:specDots}. When the second dot is attached $\Gamma_2 >0$ the density of states is divided between both dots. At $\Gamma_1 = \Gamma_2$ the DOS at the Fermi energy is equal to $\frac{1}{4\pi\Gamma}$ for both dots. 
     
     % ----------------SUPER FIGURE ---------------------------
     \begin{figure}[H]
@@ -233,9 +233,10 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
     \end{figure}
 % ----------------SUPER FIGURE ---------------------------
 
-    \item \textbf{Indirect Coupling of QD2, Figure \ref{fig:GreenDQD}(c)(d):} This is case is interesting. When the second dot is connected indirectly through the first dot there appears a quantum inference that splits the central peak in two new states. We will observe later that in the interacting case this procedure can also destroy the Kondo signature. This has interesting consequences when combined with majorana physics, since the interference patter destroy the Kondo effect but not the majorana signature. 
-    \item \textbf{Breaking Particle Hole Symmetry, Figure \ref{fig:GreenDQD}(e)(f):}
-    Suppose we have $\Gamma_2 = \Gamma_1$. The "triangular connections" break Particle Hole Symmetry. The central peak is displaced to the positive part of the spectrum. Contrary to the previous case, this situation will be avoided during this project. This is because breaking PHS in both dots will prevent the Majorana to tunnel inside the DQD. 
+    \item \textbf{Indirect Coupling of QD2. \ref{fig:GreenDQD}(c)(d):} This is case is interesting. When the second dot is connected indirectly through the first dot, quantum inference splits the central peak in two new states. We will observe later that in the interacting case this procedure can also destroy the Kondo signature. 
+    % This has interesting consequences when combined with Majorana physics.
+    \item \textbf{Breaking Particle Hole Symmetry. \ref{fig:GreenDQD}(e)(f):}
+    Suppose we have $\Gamma_2 = \Gamma_1$. The "triangular connections" break Particle Hole Symmetry. The central peak is displaced to the positive part of the spectrum. Contrary to the previous case, this situation will be avoided during this project. This is because this PHS-breaking  will prevent the Majorana to tunnel inside the DQD. 
     
 \end{enumerate}
 
@@ -266,8 +267,6 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
 % --------------------------------------------------
 \section{The Numerical Renormalization Group\label{sec:The-Numerical-Renormaliztion} (NRG) }
 
- 
-\Jesus{I need to reference Kondo equations. Include advantages}
 
 At low energies a renormalization group approach is necessary to deal with the effects of high correlations. This implies that the divergent resistivity in Kondo model will be renormalized to a finite quantity. 
  
@@ -685,8 +684,24 @@ This NRG code was previously implemented in C++ language by the advisor of this 
 To compute  dynamical quantities \cite{costi_transport_1994} like the density of states  is the DMNRG \cite{hofstetter_generalized_2000}. 
 \Jesus{Sill planning this section }
 
+
+
+
 \subsection{NRG results in a Double Quantum Dot \label{sec: NRG-DQD}}
+
+\begin{figure}[bt]
+     \centering
+    \subfloat[  \label{fig:NRG-1D}]{\includegraphics[scale=0.6]{IMAGES/DQD/NRG-QD.png}}
+     \subfloat[$\Gamma_2 = \Gamma_1$ . Inset: Low energy DOS. \label{fig:NRGDQD-G2}]{\includegraphics[scale=0.45]{IMAGES/DQD/NRG-DQD.png}} \\
+    \subfloat[\label{fig:NRGDQD-tdots} $t_{dots}=0.689\Gamma$. Low energy DOS. ]{\includegraphics[scale=0.5]{IMAGES/DQD/NRG-IndirectDQD.png}}
+    
+     \caption{\label{fig:NRG-DQD} Density of states in QD1 predicted by NRG at each case.  The insets show the.  Note that figure a) is in a different scale due to a major central peak .. \protect\Source{ By the Author  }}
+\end{figure}
+
+
 We ran the NRG code for the DQD with the following set of parameters:
+
+
 
 
 $$  U_{1,2} = -2\ed{1,2} = 8.62\Gamma_1$$
@@ -702,11 +717,3 @@ Again, the most interesting case is in Figure \ref{fig:NRGDQD-tdots}. The additi
 
 
 %There is a problem with thes plots in xlabel.
-\begin{figure}[t]
-     \centering
-    \subfloat[  \label{fig:NRG-1D}]{\includegraphics[scale=0.5]{IMAGES/DQD/NRG-QD.png}}
-     \subfloat[$\Gamma_2 = \Gamma_1$ . Inset: Low energy DOS. \label{fig:NRGDQD-G2}]{\includegraphics[scale=0.42]{IMAGES/DQD/NRG-DQD.png}} 
-    \subfloat[\label{fig:NRGDQD-tdots} $t_{dots}=0.689\Gamma$. Low energy DOS. ]{\includegraphics[scale=0.4]{IMAGES/DQD/NRG-IndirectDQD.png}}
-    
-     \caption{\label{fig:NRG-DQD} Density of states in QD1 predicted by NRG at each case.  The insets show the.  Note that figure a) is in a different scale due to a major central peak .. \protect\Source{ By the Author  }}
-\end{figure}
