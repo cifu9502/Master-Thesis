@@ -35,7 +35,7 @@ H =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{i\sigma}
 
 In order to understand the physical properties of this model, we probed a set of thought processes. The main variable in this analysis is the density of states.  We  will observe its evolution on both QDs under the tuning of the model parameters such as the majorana couplings ($t_1 , t_2$)  ,  gate voltages ($\ed{1} , \ed{2} $) and the inter dot coupling ($t_{dots}$). With these processes intend to show whether it is possible to "manipulate" the majorana modes inside the dots by tuning the established parameters. The number of possible combinations of parameters is huge and not all of them lead to important results. So on, we used the ballistic transport to select which arrangements could bring novel results. The most interesting models were simulated with NRG in the interacting case \ref{fig:Models}.  
 
-\subsection{Green function:}
+\subsection{The Green function:}
 
 %  To solve the transport equations using the graph method from \ref{sec:GraphMethod} first not that 
 This new model is a combination the DQD graph (\ref{fig:graphDQD}) with the Majorana-QD graph \ref{fig:green-M-QD}.b). We can use the trick in \ref{sec:} to get rid of the of the Green function $\Green{f_\dw,d^\dagger_1}$ for the second Majorana operator. This allows us to obtain the following transport equations 
@@ -98,21 +98,21 @@ This new model is a combination the DQD graph (\ref{fig:graphDQD}) with the Majo
     T_{\pm}=\pm t_{1}\pm t_{2}\frac{\left(\pm t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega\pm\epsilon_{2}\pm\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}. \label{eq:T+-}
 \end{equation}
 
-Finally since the Majorana is in contact with dot $2$, there is an extra-term appearing in the  Majorana energy given by 
+In addition since the Majorana is in contact with dot $2$, there is an extra-term appearing in the  Majorana energy given by 
 \begin{equation}
     \epsilon_{M2}=\omega-\epsilon_{M}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2} } {\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2}}{\omega+\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega+\epsilon_{\mathbf{k}}}}. \label{eq:M2}
 \end{equation}
-it only remains to pop out vertexes $d^\dagger_1$ and $f_\dw$ in that order to obtain the green function 
+It only remains to pop out vertexes $d^\dagger_1$ and $f_\dw$ in that order to obtain the green function 
 
 \begin{equation}
     G_{{d_{1\downarrow},d_{1\downarrow}^{\dagger}}}\left(\omega\right)=\frac{1}{\omega-\epsilon_{DQD}^{+}-\frac{\left\Vert T_{+}\right\Vert ^{2}}{\omega-\epsilon_{M2}-\frac{\left\Vert T_{-}\right\Vert ^{2}}{\epsilon_{DQD}^{-}}}}.
     \label{eq:Green_NonInteracting}
 \end{equation}
 
-This simple formula summarizes the transport information through the first dot of the non-interacting Majorana-DQD system.  To compute the DOS we just need to replace once again  $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}= -i\Gamma_1$ as performed in \ref{sec:GraphMethod}. By plotting the final DOS in Mathematica we were able to observe the transitions of the Majorana mode while manipulating the model parameters.  We obtained three models that are particularly interesting for the exotic behavior of their Majorana signature. 
+This simple formula summarizes the transport information through the first dot of the non-interacting Majorana-DQD system.  To compute the DOS we just need to replace once again  $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}= -i\Gamma_1$ as performed in \ref{sec:GraphMethod}. By plotting the final DOS in Mathematica we were able to observe the transitions of the Majorana mode while manipulating the model parameters.  
 
-
-
+\subsection{Theoretical results of the interacting system}
+In this part we will study three models that are particularly interesting for the exotic behavior of their Majorana signature. 
 
 \begin{figure}[H]
 \centering
