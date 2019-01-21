@@ -126,7 +126,17 @@ The algorithm consists in the following. Each step of Gauss-Jordan elimination l
 
 The graph associated to this matrix can be observed in \ref{fig:graphDQD}.b). The first vertex corresponding to operator $c_k$ has been popped out. The energies and couplings are modified according to the possible walks passing through the vertex $c_k$.  For instance $d_1$'s energy $\epsilon_1$ receives an extra-term $\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{k}}$ representing an additional walk  from $d_1$ to $d_1$ passing through  $c_k$. The same logic can be applied to the other terms.  
 
-The next  stage will turn out into a single vertex as in \ref{fig:graphDQD}.c). As a result of Gauss-Jordan elimination it turns out that the energy of this vertex is the inverse of the green function $G_{d_1d^\dagger_1}$. The final result is then 
+The final step is to pop vertex $d_2$ which leaves just a single vertex with energy 
+\begin{equation}
+    \epsilon^+_{DQD}=\epsilon_{1}+\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}+\frac{\left\Vert t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right\Vert ^{2}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}} \label{eq:EnDQD}
+\end{equation}
+
+as  the graph \ref{fig:graphDQD}.c). 
+The energy of this vertex is 
+\begin{equation}
+    \epsilon
+\end{equation}
+As a result of Gauss-Jordan elimination it turns out that the energy of this vertex is the inverse of the green function $G_{d_1d^\dagger_1}$. The final result is then 
 
 \begin{equation}
     \Green{d_{1},d_{1}^{\dagger}}=\left[\left(\omega-\epsilon_{1}-\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)-\frac{\left(t_{dots}+\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)\left(t_{dots}+\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)^{*}}{\omega-\epsilon_{2}-\frac{\Gamma_{2}^{2}}{\omega-\epsilon_{\mathbf{k}}}}\right]^{-1}. \label{eq:solGreen}
