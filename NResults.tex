@@ -1,5 +1,10 @@
 \chapter{Coupling Majorana Mode to a Double Quantum Dot \label{chap:Results}}
 %--------------------------------------------------------------------------
+\begin{figure}[hbt]
+\centering
+\includegraphics[scale=0.4]{IMAGES/GenModel.png}
+\caption{\label{fig:GeneralModel}General model. \\ \protect\Source{ By the Author  }} 
+\end{figure}
 
 As previously stated in the , Majorana-QD  architectures turn on new lights to the area of topological quantum computing. 
 
@@ -24,20 +29,66 @@ H =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{i\sigma}
 \Jesus{I neglected $\epsilon_M$ in this case. Depending on the future NRG results I will choose to add it or leave it that way. }
 
 
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.4]{IMAGES/GenModel.png}
-\caption{\label{fig:GeneralModel}General model. \protect\Source{ By the Author  }} 
-\end{figure}
+
 
 
 
 In order to understand the physical properties of this model, we probed a set of thought processes. The main variable in this analysis is the density of states.  We  will observe its evolution on both QDs under the tuning of the model parameters such as the majorana couplings ($t_1 , t_2$)  ,  gate voltages ($\ed{1} , \ed{2} $) and the inter dot coupling ($t_{dots}$). With these processes intend to show whether it is possible to "manipulate" the majorana modes inside the dots by tuning the established parameters. The number of possible combinations of parameters is huge and not all of them lead to important results. So on, we used the ballistic transport to select which arrangements could bring novel results. The most interesting models were simulated with NRG in the interacting case \ref{fig:Models}.  
 
 \subsection{Green function:}
-Following the steps \ref{sec:Algorithm} it is possible to find the Green function for this new model. The graph associated to this new method can be 
 
-We start with the graph in FIG.\ref{fig:Transport} and we pop out the vertexes $c_k,c^\dagger_k, d_{2,\dw}$ and $ d^\dagger_{2,\dw}$ in that order. The energies associated to $d_{1,\dw}$ and $d^\dagger_{1,\dw}$ will be similar to \eqref{eq:EnDQD} giving 
+%  To solve the transport equations using the graph method from \ref{sec:GraphMethod} first not that 
+This new model is a combination the DQD graph (\ref{fig:graphDQD}) with the Majorana-QD graph \ref{fig:green-M-QD}.b). We can use the trick in \ref{sec:} to get rid of the of the Green function $\Green{f_\dw,d^\dagger_1}$ for the second Majorana operator. This allows us to obtain the following transport equations 
+ 
+ 
+ 
+%  As we did previously in \ref{sec:GreenMaj-DQD} the transport equations for $f_\dw$ and $f^\dagger_\dw$ are 
+% \begin{align}
+%         \left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}&=\frac{t}{\sqrt{2}}\left(\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}-\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}\right) \\
+%     \left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}&=\frac{t}{\sqrt{2}}\left(\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}-\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}\right),
+% \end{align}
+% \noindent which allows us to take $\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}} = \frac{\omega + \epsilon}{\omega -\epsilon}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}} $. Therefore, we can eliminate $\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}} $ from the equations even before we start Gauss-Jordan process.
+ 
+ \begin{equation}
+     \left[\begin{array}{ccccccc}
+\omega-\epsilon_{1} & -V_{1}^{*} & -t_{dots} & -T_{1} & 0 & 0 & 0\\
+-V_{1} & \omega-\epsilon_{k} & -V_{2} & 0 & 0 & 0 & 0\\
+-t_{dots}^{*} & -V_{2}^{*} & \omega-\epsilon_{2} & -T_{2} & 0 & 0 & 0\\
+-T_{1}^{*} & 0 & -T_{2}^{*} & \omega-\epsilon_{M} & -T_{2}^{*} & 0 & -T_{1}\\
+0 & 0 & 0 & -T_{2} & \omega+\epsilon_{2} & V_{2}^{*} & t_{dots}^{*}\\
+0 & 0 & 0 & 0 & V_{2} & \omega+\epsilon_{k} & V_{1}\\
+0 & 0 & 0 & -T_{1} & t_{dots} & V_{1}^{*} & \omega+\epsilon_{1}
+\end{array}\right]\left[\begin{array}{c}
+\Green{d_{\mathbf{1\downarrow}},d_{1\downarrow}^{\dagger}}\\
+\Green{c_{k\downarrow},d_{1\downarrow}^{\dagger}}\\
+\Green{d_{2\downarrow},d_{1\downarrow}^{\dagger}}\\
+\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}\\
+\Green{d_{2\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}\\
+\Green{c_{k\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}\\
+\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}
+\end{array}\right]=\left[\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+0\\
+1
+\end{array}\right],
+ \end{equation}
+ 
+ where $T_i = \frac{t_1}{\sqrt{\omega+\epsilon_M}}$. 
+ 
+ 
+% ------------------------FIGURE GRAPH--------------------
+     \begin{figure}[bt]
+    \centering
+    \includegraphics[scale=0.4]{IMAGES/Graphs/Final Graph.png}
+    \caption{\label{fig:Graph-MDQD} Graph $\MDQD$ representing ballistic transpor through a DQD coupled to a Majorana mode. \protect\Source{ By the Author  }} 
+    \end{figure}
+
+% ------------------------FIGURE GRAPH---------------------------
+ The graph representing this equation is \ref{fig:Graph-MDQD}.a). Using the algorithm in \ref{sec:Algorithm} we start to popping the vertexes $c_k,c^\dagger_k, d_{2,\dw}$ and $ d^\dagger_{2,\dw}$ in that order. The energies associated to $d_{1,\dw}$ and $d^\dagger_{1,\dw}$ will be similar to the energy of the DQD \eqref{eq:EnDQD} giving 
 \begin{equation}
     \epsilon_{DQD}^{\pm}=\pm\epsilon_{1}+\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}+\frac{\left\Vert \pm t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right\Vert ^{2}}{\omega\pm\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}. \label{eq:epDQD}
 \end{equation}
@@ -51,34 +102,16 @@ Finally since the Majorana is in contact with dot $2$, there is an extra-term ap
 \begin{equation}
     \epsilon_{M2}=\omega-\epsilon_{M}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2} } {\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2}}{\omega+\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega+\epsilon_{\mathbf{k}}}}. \label{eq:M2}
 \end{equation}
-With all the terms of the graph in FIG.\ref{fig:Transport}.b) computed, it only remains to pop out vertexes $d^\dagger_1$ and $f_\dw$ in that order to obtain the green function in equation \eqref{eq:Green_NonInteracting}. 
-
-
-
-To built the ballistic transport graph (See \ref{sec:GraphMethod}) we just need to think that our model is actually merging the DQD graph (\ref{fig:graphDQD}) with the Majorana (Figure \ref{fig:green-M-QD}.b)). No need to write the green transport equations . Note  in graph $\MDQD$ that the  green function  $\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}{\MDQD}$  is composed by the greeen function of the DQD $\left(\GreenG{d_{1\downarrow},d_{1\downarrow}^{\dagger}}{\GDQD } \right)$ and the extra term added by the presence of the majorana opperator $f_\downarrow$. In the equations this is simply 
+it only remains to pop out vertexes $d^\dagger_1$ and $f_\dw$ in that order to obtain the green function 
 
 \begin{equation}
-    \GreenG{d_{1\downarrow},d_{1\downarrow}^{\dagger}}{\MDQD}=\left[\left(\GreenG{d_{1\downarrow},d_{1\downarrow}^{\dagger}}{\GDQD } \right)^{-1}+\frac{\omega}{\omega+\epsilon_{M}}\frac{E_{d_{1\dw}f_{\dw}}^{\MDQD}}{\left[\GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\MDQD-d_{1}}\right]^{-1}}\right]^{-1}.
-\end{equation}
-where 
-\begin{equation}
-    E_{d_{1\dw}f_{\dw}}^{\MDQD}=\left(t_{1}+t_{2}\frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}\right)\left(t_{1}^{*}+t_{2}^{*}\frac{\left(t_{dots}^{*}+\sum_{\mathbf{k}}\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}}\right).
-\end{equation}
-\Jesus{This fact is difficult to explain. I will need more plots and writing the appendix. For now I will leave here some results}
-
-We then need to compute $\GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\MDQD-d_{1}}$ . This graph is much simple. The neighborhood of  $f_{\downarrow}$ in graph ${\MDQD-d_{1}}$ are $d_2$ (above) and the inverted DQD(bellow). These neighbors are disconnected, hence we can include the in the green function independently. The term above is simply the dot $d_{2\downarrow}$ connected with the lead . 
-\begin{equation}
-    \frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}.
+    G_{{d_{1\downarrow},d_{1\downarrow}^{\dagger}}}\left(\omega\right)=\frac{1}{\omega-\epsilon_{DQD}^{+}-\frac{\left\Vert T_{+}\right\Vert ^{2}}{\omega-\epsilon_{M2}-\frac{\left\Vert T_{-}\right\Vert ^{2}}{\epsilon_{DQD}^{-}}}}.
+    \label{eq:Green_NonInteracting}
 \end{equation}
 
- 
-The term generated by the connection of $f_{\downarrow}$  with the inverted $DQD$ is a bit more complicated. First we need to include the term given by the connection with  $d_{2\downarrow}^\dagger$ which is 
+This simple formula summarizes the transport information through the first dot of the non-interacting Majorana-DQD system.  To compute the DOS we just need to replace once again  $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}= -i\Gamma_1$ as performed in \ref{sec:GraphMethod}. By plotting the final DOS in Mathematica we were able to observe the transitions of the Majorana mode while manipulating the model parameters.  We obtained three models that are particularly interesting for the exotic behavior of their Majorana signature. 
 
-The other term is the contact with the DQD which can be expressed as 
-\begin{equation}
-    \GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\MDQD-d_{1}}=\left[\omega-\epsilon_{M}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2}}{\omega+\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega+\epsilon_{\mathbf{k}}}}-\frac{\omega}{\omega+\epsilon_{M}}\frac{E_{f_{\dw}d_{1\dw}^\dagger}^{\MDQD-d_1}}{\left[\GreenG{d_{1\downarrow}^{\dagger},d_{1\downarrow}{\dagger}}{\MDQD-d_{1}-f_{\downarrow}}\right]^{-1}}\right]^{-1}.
-\end{equation}
-Now, note that that graph $\MDQD-d_{1}-f_{\downarrow}$ is actually a double quantum dot with negated couplings. Hence  $\GreenG{d_{1\downarrow}^{\dagger},d_{1\downarrow}{\dagger}}{\MDQD-d_{1}-f_{\downarrow}}$  satisfies the equation \eqref{eq:solGreen} but with variables $-t_{dots}, -t_1 , -t_2, -\ed{1}  , -\ed{2}$
+
 
 
 \begin{figure}[H]
@@ -87,11 +120,7 @@ Now, note that that graph $\MDQD-d_{1}-f_{\downarrow}$ is actually a double quan
 \caption{\label{fig:Models}Selected Models . \protect\Source{ By the Author  }} 
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.60]{IMAGES/Graphs/DQD-M-Pro.png}}
-\caption{\label{fig:Graph-MDQD} Graph $\MDQD$ representing ballistic transpor through a DQD coupled to a Majorana mode. \protect\Source{ By the Author  }} 
-\end{figure}
+
 
 
 
@@ -291,6 +320,43 @@ $t_{1}=0.02$. Variable $t_2$}
  In \ref{fig:DOS/Shift_t2D1} and \ref{fig:DOS/Shift_t2D1} we observe the evolution of DOS in the case where the second dot is smoothly connected to the Majorana, which is already attached to the first dot. The hopping parameter $t_2$ scales up to $0.015D$ where the model reaches the symmetry $t_2 = t_1$. The figures show that increasing $t_2$ leads to a drop in the DOS of QD1 while the DOS in QD2 is increased. In addition, the single peak in the first dot transforms into a three-peak due to the Majorana interference with the second dot. In \ref{fig:MSig/Shift_t2} we also observe that the reason between the zero up-down DOS  $\left(\frac{\rho_\up(0)}{\rho_\up(0)}\right)$ smoothly scales up to $2$ in QD2. At $t_2 =0.02$, when the  is completely symmetric, the Majorana signature appears in both quantum dots. Note that the relation $\frac{\rho_\up(0)}{\rho_\up(0)}$  is already close to $2$ at $t_2=0$. This implies that the second dot "feels" the Majorana even when it is not directly connected to the Majorana mode. 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+% To built the ballistic transport graph (See \ref{sec:GraphMethod}) we just need to think that our model is actually merging the DQD graph (\ref{fig:graphDQD}) with the Majorana (Figure \ref{fig:green-M-QD}.b)). No need to write the green transport equations . Note  in graph $\MDQD$ that the  green function  $\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}{\MDQD}$  is composed by the greeen function of the DQD $\left(\GreenG{d_{1\downarrow},d_{1\downarrow}^{\dagger}}{\GDQD } \right)$ and the extra term added by the presence of the majorana opperator $f_\downarrow$. In the equations this is simply 
+
+% \begin{equation}
+%     \GreenG{d_{1\downarrow},d_{1\downarrow}^{\dagger}}{\MDQD}=\left[\left(\GreenG{d_{1\downarrow},d_{1\downarrow}^{\dagger}}{\GDQD } \right)^{-1}+\frac{\omega}{\omega+\epsilon_{M}}\frac{E_{d_{1\dw}f_{\dw}}^{\MDQD}}{\left[\GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\MDQD-d_{1}}\right]^{-1}}\right]^{-1}.
+% \end{equation}
+% where 
+% \begin{equation}
+%     E_{d_{1\dw}f_{\dw}}^{\MDQD}=\left(t_{1}+t_{2}\frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}\right)\left(t_{1}^{*}+t_{2}^{*}\frac{\left(t_{dots}^{*}+\sum_{\mathbf{k}}\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}^{*}V_{2}}{\omega-\epsilon_{\mathbf{k}}}}\right).
+% \end{equation}
+% \Jesus{This fact is difficult to explain. I will need more plots and writing the appendix. For now I will leave here some results}
+
+% We then need to compute $\GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\MDQD-d_{1}}$ . This graph is much simple. The neighborhood of  $f_{\downarrow}$ in graph ${\MDQD-d_{1}}$ are $d_2$ (above) and the inverted DQD(bellow). These neighbors are disconnected, hence we can include the in the green function independently. The term above is simply the dot $d_{2\downarrow}$ connected with the lead . 
+% \begin{equation}
+%     \frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}.
+% \end{equation}
+
+ 
+% The term generated by the connection of $f_{\downarrow}$  with the inverted $DQD$ is a bit more complicated. First we need to include the term given by the connection with  $d_{2\downarrow}^\dagger$ which is 
+
+% The other term is the contact with the DQD which can be expressed as 
+% \begin{equation}
+%     \GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\MDQD-d_{1}}=\left[\omega-\epsilon_{M}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2}}{\omega+\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega+\epsilon_{\mathbf{k}}}}-\frac{\omega}{\omega+\epsilon_{M}}\frac{E_{f_{\dw}d_{1\dw}^\dagger}^{\MDQD-d_1}}{\left[\GreenG{d_{1\downarrow}^{\dagger},d_{1\downarrow}{\dagger}}{\MDQD-d_{1}-f_{\downarrow}}\right]^{-1}}\right]^{-1}.
+% \end{equation}
+% Now, note that that graph $\MDQD-d_{1}-f_{\downarrow}$ is actually a double quantum dot with negated couplings. Hence  $\GreenG{d_{1\downarrow}^{\dagger},d_{1\downarrow}{\dagger}}{\MDQD-d_{1}-f_{\downarrow}}$  satisfies the equation \eqref{eq:solGreen} but with variables $-t_{dots}, -t_1 , -t_2, -\ed{1}  , -\ed{2}$
 
 
 

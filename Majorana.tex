@@ -258,7 +258,7 @@ include Rashba spin-orbit interactions and a Zeeman field \citep{ruiz-tijerina_i
 ).\\
 
 
-\subsection{Non-interacting QD coupled to  Majorana chain}
+\subsection{Non-interacting QD coupled to  Majorana chain \label{sec:GreenMaj-DQD}}
 
 In the non-interacting case we can use the ballistic transport equations from \ref{sec:transport}.The green functions are then determined by the following set of linear equations. 
 
@@ -266,15 +266,29 @@ In the non-interacting case we can use the ballistic transport equations from \r
 
 
 \begin{align}
-    \left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}&=\left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}=\frac{t^*_1}{\sqrt{2}}\left(\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}-\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}\right)\\
-    \left(\omega-\epsilon_{1}\right)\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}&=1+\frac{t_1}{\sqrt{2}}t_{1}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}+\frac{t_1}{\sqrt{2}}t_{1}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}+V_{1}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}},d_{1\downarrow}^{\dagger}}\\
-    \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1\downarrow}^{\dagger}}&=V_{1}^{*}\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}\\
-    \left(\omega+\epsilon_{1}\right)\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}&=-\frac{t_1}{\sqrt{2}}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}-\frac{t_1}{\sqrt{2}}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}-V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}}^{\dagger},d_{1\downarrow}^{\dagger}}\\
-    \left(\omega+\epsilon_{\mathbf{k}}\right)\Green{c^\dagger_{\mathbf{k}},d_{1\downarrow}^{\dagger}}&=-V_{1}^{*}\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}
+    \left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}&=\left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}=\frac{t^*_1}{\sqrt{2}}\left(\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}-\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}\right) \label{eq:QDM1} \\ 
+    \left(\omega-\epsilon_{1}\right)\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}&=1+\frac{t_1}{\sqrt{2}}t_{1}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}+\frac{t_1}{\sqrt{2}}t_{1}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}+V_{1}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}},d_{1\downarrow}^{\dagger}} \label{eq:QDM2} \\ 
+    \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1\downarrow}^{\dagger}}&=V_{1}^{*}\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}\label{eq:QDM3} \\
+    \left(\omega+\epsilon_{1}\right)\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}&=-\frac{t_1}{\sqrt{2}}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}-\frac{t_1}{\sqrt{2}}\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}-V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}}^{\dagger},d_{1\downarrow}^{\dagger}} \label{eq:QDM4} \\
+    \left(\omega+\epsilon_{\mathbf{k}}\right)\Green{c^\dagger_{\mathbf{k}},d_{1\downarrow}^{\dagger}}&=-V_{1}^{*}\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}} \label{eq:QDM5}
 \end{align}
 
 The graph representing these green functions is represented in \ref{fig:green-M-QD} a)  (Look \ref{sec:GraphMethod} for details). However using that $\left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}=\left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}$ we can take
- $\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}$ out of the equations getting the system in \ref{fig:green-M-QD} b) .  Using the graph algorithm from \ref{sec:Algorithm}  we proceed to pop out vertexes $c_k$ , $c_k^\dagger$ and $d_1^\dagger$ in that order. The result is the graph in figure \ref{fig:green-M-QD}.c) with 
+ $\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}$ out of the equations. After eliminating this term \ref{eq:QDM2} becomes
+ 
+ \begin{align}
+\left(\omega-\epsilon_{1}\right)\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}&=1+\frac{t_{1}}{\sqrt{2}}\left(1+\frac{\omega-\epsilon_{M}}{\omega+\epsilon_{M}}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}+V_{1}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}},d_{1\downarrow}^{\dagger}} \\
+&=1+\frac{\sqrt{2}t_{1}}{\omega+\epsilon_{M}}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}+V_{1}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}},d_{1\downarrow}^{\dagger}}
+\end{align}
+
+Similarly, 
+
+\begin{equation}
+    \left(\omega+\epsilon_{1}\right)\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}=-\frac{\sqrt{2}t_{1}}{\omega+\epsilon_{M}}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}-V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}}^{\dagger},d_{1\downarrow}^{\dagger}}
+\end{equation} 
+ 
+ 
+ With these new equations we obtain new associated graph is  in \ref{fig:green-M-QD} b) .  Using the graph algorithm from \ref{sec:Algorithm}  we proceed to pop out vertexes $c_k$ , $c_k^\dagger$ and $d_1^\dagger$ in that order. The result is the graph in figure \ref{fig:green-M-QD}.c) with 
  
  \begin{figure}[t]
     \centering
@@ -291,12 +305,24 @@ The graph representing these green functions is represented in \ref{fig:green-M-
 \begin{equation}
     \Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}=\left[\omega-\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{1}}-\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega -\epsilon_{M,d_1^\dagger,c^\dagger}}\right]^{-1}.
 \end{equation}
-Hence we just need the green function of $\GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\GM-d_{1}}$ removing $d_1$ out of the graph. This case is much simpler since $f_\downarrow$ is just attached to $d^\dagger_1$ . Thus we get
-\begin{equation}
-    \GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\GM-d_{1}}=\left[\omega-\epsilon_{M}-\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega+\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}}\right]^{-1}.
-\end{equation}
+% Hence we just need the green function of $\GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\GM-d_{1}}$ removing $d_1$ out of the graph. This case is much simpler since $f_\downarrow$ is just attached to $d^\dagger_1$ . Thus we get
+% \begin{equation}
+%     \GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\GM-d_{1}}=\left[\omega-\epsilon_{M}-\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega+\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}}\right]^{-1}.
+% \end{equation}
 
-The only missing point in this equation is to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}= -i\Gamma_1$ as we already did in \ref{sec:GraphMethod}. Note that these computations are only for the spin-$\dw$ channel. The spin-$\up$ channel is even simpler since this channel is not coupled to the Majorana mode by convention. Hence it corresponds to the case of a single quantum dot coupled to a Lead.  The results for the DOS can be observed in \ref{fig:M1-Tot}. Each figure has an inset showing the model in the Majorana representation. The small blue and red balls are Majorana fermions just as the ones in figure \ref{fig:top.phases kitaev}. The Majorana at the edge of the  chain is represented by the isolated red ball connected to the QD (Figure \ref{fig:M1}). The other isolated blue ball in Figure \ref{fig:M1-em} represents the Majorana at the other edge which is connected to the sphere by the parameter $\epsilon$. 
+This is the Green function we have been looking for. After a few algebraic operations it is possible to show that this result is equivalent to the first computation done by \citeauthor{liu_detecting_2011}  in the paper \cite{liu_detecting_2011}. 
+
+\begin{figure}[t]
+     \centering
+    \subfloat[Tuning the Majorana coupling $t_1$ \label{fig:M1}]{\includegraphics[scale=0.73]{IMAGES/Majorana/M1.png}}
+     \subfloat[Tuning dot's gate voltage $\ep_1$ \label{fig:M1-e1}]{\includegraphics[scale=0.73]{IMAGES/Majorana/M1-e1.png}}  \\
+    \subfloat[Tuning $\ep_M$ \label{fig:M1-em}]{\includegraphics[scale=0.75]{IMAGES/Majorana/M1-eM.png}}
+    
+     \caption{Density of states for a Majorana coupled to a QD under the tuning of different parameter. The tuning parameter is drawn in purple line in the inset model.  \label{fig:M1-Tot} \protect\Source{ By the author  }}
+\end{figure}
+
+
+To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}= -i\Gamma_1$ as we already did in \ref{sec:GraphMethod}. Note that these computations are only for the spin-$\dw$ channel. The spin-$\up$ channel is even simpler since this channel is not coupled to the Majorana mode by convention. Hence it corresponds to the case of a single quantum dot coupled to a Lead.  The results for the DOS can be observed in \ref{fig:M1-Tot}. Each figure has an inset showing the model in the Majorana representation. The small blue and red balls are Majorana fermions just as the ones in figure \ref{fig:top.phases kitaev}. The Majorana at the edge of the  chain is represented by the isolated red ball connected to the QD (Figure \ref{fig:M1}). The other isolated blue ball in Figure \ref{fig:M1-em} represents the Majorana at the other edge which is connected to the sphere by the parameter $\epsilon$. 
 
 \begin{itemize}
     \item\textbf{ \ref{fig:M1-Tot}.(a),(b):}  The spin-$\up$ DOS shows the result of coupling the QD with the lead and without Majorana fermions. When the parameter $t$ is increased, the Majorana fermion is couple to the spin-$\dw$ which causes the dispersion of the DOS. The most relevant signature is the robust height of $0.5$  in the DOS that is observed in the central peak for all $t>0$. This mid-height DOS is responsible for the decay of half a quanta in the conductivity of the QD.
@@ -310,14 +336,6 @@ The only missing point in this equation is to replace $\sum \frac{V_1V^*_1}{\ome
 
 
 
-\begin{figure}[t]
-     \centering
-    \subfloat[Tuning the Majorana coupling $t_1$ \label{fig:M1}]{\includegraphics[scale=0.73]{IMAGES/Majorana/M1.png}}
-     \subfloat[Tuning dot's gate voltage $\ep_1$ \label{fig:M1-e1}]{\includegraphics[scale=0.73]{IMAGES/Majorana/M1-e1.png}}  \\
-    \subfloat[Tuning $\ep_M$ \label{fig:M1-em}]{\includegraphics[scale=0.75]{IMAGES/Majorana/M1-eM.png}}
-    
-     \caption{Density of states for a Majorana coupled to a QD under the tuning of different parameter. The tuning parameter is drawn in purple line in the inset model.  \label{fig:M1-Tot} \protect\Source{ By the author  }}
-\end{figure}
 
 
 
