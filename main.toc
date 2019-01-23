@@ -1,0 +1,26 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}{Abstract}}{2}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}{Table of Contents}}{3}{chapter.2}% 
+\contentsline {chapter}{\numberline {3}{Preliminaries }}{4}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}{Transport in Quantum Dots (QDs)}}{4}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}{The Anderson Model}}{6}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}{The Kondo Effect}}{8}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}{Kondo Effect in QDs}}{10}{subsection.3.3.1}% 
+\contentsline {chapter}{\numberline {4}{Theory and Methods }}{11}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}{Ballistic transport }}{11}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}{Using graph theory to solve the transport equations }}{12}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}{Graph Algorithm }}{15}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}{Ballistic transport in a double quantum dot }}{16}{subsection.4.1.3}% 
+\contentsline {section}{\numberline {4.2}{The Numerical Renormalization Group (NRG) }}{18}{section.4.2}% 
+\contentsline {subsubsection}{{Logarithmic Discretization:}}{18}{section*.1}% 
+\contentsline {subsubsection}{{Mapping the Anderson model to a Chain-Hamiltonian}}{21}{section*.2}% 
+\contentsline {subsubsection}{{Iterative Diagonalization in a Single QD process}}{23}{section*.3}% 
+\contentsline {subsection}{\numberline {4.2.1}{Density Matrix Renormalization Group (DM-NRG)}}{25}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}{NRG results in a Double Quantum Dot }}{25}{subsection.4.2.2}% 
+\contentsline {section}{\textbf {References}}{27}{figure.4.6}% 
+\contentsline {chapter}{{Bibliography}}{27}{chapter*.4}% 
+\contentsline {part}{{Appendices}}{}{}
+\contentsline {chapter}{\numberline {A}{Appendix}}{30}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}{Proof of the Graph Method for Transport Equations.}}{30}{section.A.1}% 
+\contentsline {chapter}{\numberline {B}{Three peak appearance in the Double Quantum Dot model.}}{31}{appendix.B}% 
+\contentsline {section}{\numberline {B.1}{Initial DQD-Majorana Hamiltonian.}}{32}{section.B.1}% 

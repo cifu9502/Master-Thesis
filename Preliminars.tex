@@ -23,7 +23,7 @@ Quantum mechanical effects are visible when the system size is of the order of t
 \lambda_{f}=\frac{h}{\sqrt{3m_{\mathsf{eff}}k_{B}T}}
 \]
  where $m_{\mathsf{eff}}$ is the electron effective mass in the crystal.
-Since $m_{\mathsf{eff}}$ can be much smaller than the free electron mass in some semiconducting materials, size quantization effects can be observed at system of sizes $\sim100\mbox{nm}$ \citep[2.1]{sindel_numerical_2005}. A device confined in the three dimensions up to this length-scale will present the behavior of a $0$D quantum system, which is what we call a Quantum Dot (QD).\\
+Since $m_{\mathsf{eff}}$ can be much smaller than the free electron mass in some semiconducting materials, size quantization effects can be observed at system of sizes $\sim100\mbox{nm}$ \citep[2.1]{sindel_numerical_2005}. A $0$D quantum system is a device confined in the three spacial dimensions up to this length-scale. This type of devices receive the name of quantum dots (QD). 
 
 \begin{figure}[tb]
     \centering
@@ -41,7 +41,9 @@ Since $m_{\mathsf{eff}}$ can be much smaller than the free electron mass in some
      \caption{ a) Representation of transport through QD. The red curve represents the hybridized energy level. The gate voltage tunes this level. In the case represented, the energy level is in the middle of the drain and source voltages allowing transport between the leads.   Charging diagram of a quantum dot. b) Plot of the conductance vs the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$ \protect\Source{a) By the Author , b) \cite{sindel_numerical_2005}  }}
 \end{figure}
 
-Nowadays, QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}. According to their orientation with respect to the based 2D-plane , two main types of QDs can be distinguished : Vertical (Figure \ref{QD-figuresA}) and lateral (Figure \ref{QD-figuresB}) QDs. Both types of of quantum dots have $3$-main gates. Two of them are the Drain $V_D$ and source $V_S$ gate voltages used to control the current trough the QD. The third one is the gate voltage $V_G$. This one controls the electron confinement inside the QD. Therefore, tuning the gate voltage it is possible to control accurately the energy levels of the QD. 
+ QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}.
+ \Jesus{Methods and forms}
+  According to their orientation with respect to the based 2D-plane  two main types of QDs can be distinguished : Vertical (Figure \ref{QD-figuresA}) and lateral (Figure \ref{QD-figuresB}) QDs. Both types  of quantum dots have $3$-main gates. Two of them are the Drain $V_D$ and source $V_S$ gate voltages used to control the current through the QD. The third one is the gate voltage $V_G$ which controls the electron confinement  inside the QD by tuning the  the energy levels . 
 
 % \begin{figure}[t]
 %     \centering
@@ -58,7 +60,7 @@ Ideally, the energy spectrum of a QD is a discrete set of energy levels resembli
 
 in a flat band. A representation of this fact can be found in  \ref{fig:specDots}. Ideally, $\Gamma \ll \Delta E$ such that the energy levels do not overlap each other. In addition the gate voltage allows us to tune the energy levels of the QD.
 
-To execute transport measurements the QD must be attached to two leads (See \ref{fig:QD-transport}). Each lead will have a characteristic gate voltage $V_S$ (Left lead) and $V_D$ (Right lead). An electron can pass from the source to the drain if there is an energy level in the middle of the two voltages, just as in \ref{fig:QD-transport}. However if this condition is not satisfied the dot enters into a coulomb blockade region without  electron transport between both leads as can be observed in \ref{fig:QD-Blockade}. Inside the coulomb blockade regions the number of electrons is constant. When increasing $V_G$ a single electron enters into the dot each time. Since all of these effects can be controlled by a tuning the gate voltage, the system described is indeed a single electron transistor (SET).  
+It is possible to execute transport measurements through a QD by attaching it to two leads, source and drain (See \ref{fig:QD-transport}) . Each lead will have a characteristic gate voltage $V_S$ (Left lead) and $V_D$ (Right lead). An electron can pass from the source to the drain if there is an energy level in the middle of the two voltages, just as in \ref{fig:QD-transport}. If this condition is not satisfied,  the dot enters into a coulomb blockade region without  electron transport between both leads as can be observed in \ref{fig:QD-Blockade}. Inside the coulomb blockade regions the number of electrons is constant. When increasing $V_G$ a single electron enters into the dot each time. Since all of these effects can be controlled by a tuning the gate voltage, the system described is indeed a single electron transistor (SET).  
 
 
 
@@ -89,16 +91,17 @@ To execute transport measurements the QD must be attached to two leads (See \ref
 
 %------------------------------------------------------------
 \section{The Anderson Model}
-The Anderson model \citep{anderson_localized_1961} was originally designed to study the physics of magnetic impurities, which makes it a perfect model to study the Kondo Effect that we will describe in the following section. However,  QDs also behave like magnetic impurities. Hence the physics of QDs can be studied using the Anderson model.
+The Anderson model \citep{anderson_localized_1961} was originally created to study the physics of impurities. This includes magnetic impurities in metals that are responsible for the Kondo effect as well as artificial impurities like QDs.
 
-Moreover, there are two regimes that  will be particularly important in this thesis.  They depend on whether Coulomb repulsion is important or not. These are
+ In this thesis we will mainly discuss to regimes. here are two regimes that  will be particularly important in this thesis.  They depend on whether Coulomb repulsion is important or not. These are
 \begin{itemize}
-    \item \textbf{Non-interacting systems:} This means the coulomb repulsion is not relevant . In this case, spin-$\uparrow$ and spin-$\dw$ channels are independent which simplifies many of the procedures. The method used to describe solve this systems is ballistic transport. 
+    \item \textbf{Non-interacting systems:} Coulomb repulsion is not relevant . In this case, spin-$\uparrow$ and spin-$\dw$ channels are independent which simplifies many of the procedures. The method used to describe this systems is ballistic transport. 
+
     \item \textbf{Interacting systems:} The coulomb repulsion is relevant. The repulsion factor will be defined by the factor $U$. In this case, the spin-$\uparrow$ and spin-$\dw$ channels are not independent since the coulomb repulsion limits the number of particles inside each dot. We will use the Numerical Renormalization Group to treat this kind of systems.  
 \end{itemize}
 
 
-The Anderson model takes in account both regimes and  the only difference in each case will be the value of $U$ parameter ($U=0$ non-interacting , $U>0$ interacting). Taking this in account we proceed to present the Anderson model in QDs.
+%The Anderson model takes in account both regimes and  the only difference in each case will be the value of $U$ parameter ($U=0$ non-interacting , $U>0$ interacting). 
 
 Using the Hunds rules we know that the energy levels inside the dot should be filled from lower to higher energies with two electrons with different spin at each state. Each pair of electrons will interact magnetically and electrically. In addition, there is and energy associated to each electron and a Zeeman splitting factor in case a $\hat{z}$-directed magnetic field $B$ is placed.  Considering these interactions we can obtain a very general expression in second quantization for the QD Hamiltonian
 of the form \citep[(3.2)]{sindel_numerical_2005}
@@ -129,7 +132,7 @@ At low temperatures, the main interactions only with the level closest to the Fe
 
 
 
-The lead hambiltonian is decomposed in two hamiltonians. The energy of the electrons inside the leads $H_{lead}$ and the interaction between the leads and the quantum dot $H_{int}$. These hamiltonians take the form 
+The lead Hamiltonian is decomposed in two parts. The energy of the electrons inside the leads $H_{lead}$ and the interaction between the leads and the quantum dot $H_{int}$. These Hamiltonians take the form 
 
 \begin{eqnarray*}
 H_{lead} & = & \sum_{\mathbf{k}\sigma l}\epsilon_{\mathbf{k}l}c_{\mathbf{k}\sigma l}^{\dagger}c_{\mathbf{k}\sigma l}\\
@@ -191,20 +194,48 @@ After the transformation the operator will be decoupled from the dot hamiltonian
 
 
 %------------------------------------------------------------
-\section{Kondo Effect}
+\section{The Kondo Effect}
 
 \Jesus{Here goes a review about the Kondo Effect. I am still trying to figure out how it section will look like. For now Im just leaving some ideas and plots.}\\
 
-In the early 30s the physicist where intrigued by the observation of a resistance minimum in some metals at low temperatures $(\sim 10K)$ \cite{sindel_numerical_2005} . The phenomenon received the name of Kondo effect \citep{hewson_kondo_1997}. This effect is attributed to the electron-scattering with the magnetic impurities present in the materials. 
+The resistivity of a metal is regulated by different scattering parameters including lattice vibrations $\rho_{phonon} \sim T^5$, electron-electron scattering $\sim T^2$ and the scattering between electrons and static impurities which is temperature independent. The form of these contribution implies that the resistivity decays uniformly with a decrease in temperature. Nevertheless, in the early 30s groundbreaking experiments revealed the observation of a resistance minimum in some metals at temperatures lower than $10K$ (See \ref{fig:KondoTemp}). This phenomenon intrigued the scientific community for following decades until the year 1964 when the physicist  Jun Kondo made a major contribution to the field. Kondo attributed this phenomenon spin-scattering of the electrons with a small concentration of magnetic impurities in the metal. 
+
+\begin{equation}
+H_K = H_l + 2J\hat{\textbf{S}}\cdot \hat{\textbf{s}}_0
+\end{equation}
+
+where $\hat{\textbf{S}}$ and $\hat{\textbf{s}}_0$ denot the impurity and the conduction spin operators. Kondo computed the resistivity using perturbation theory of $H_K$ over the parameter $J$, obtaining that the second order correction diverges logaritmically for temperatures $T<T:$
+
+ Kondo explained that the conducting electrons in the metal scattered with the electrons in the impurity due to the spin interaction.
+
+\citep{hewson_kondo_1997}
+
+\begin{figure}[t]
+     \centering
+    
+     \subfloat[ \label{fig:KondoTemp}]{\includegraphics[scale=0.7]{IMAGES/Preliminars/KondoTemp.png}}
+    \subfloat[\label{fig:QD-Blockade}]{\includegraphics[scale=0.3]{IMAGES/Preliminars/QD-Blockade.png}}
+     \caption{ a) Representation of transport through QD. The red curve represents the hybridized energy level. The gate voltage tunes this level. In the case represented, the energy level is in the middle of the drain and source voltages allowing transport between the leads.   Charging diagram of a quantum dot. b) Plot of the conductance vs the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$ \protect\Source{a) \cite{Kondo_deBoer1934} , b) \cite{sindel_numerical_2005}  }}
+\end{figure}
+
+The resistivity of materials is known to decay linearly with 
+
+In low temperature metals the resistivity decays uniformly with the temperature due to the absence of scattering electrons at lower energies. However, in the early 30s the physicist where intrigued by the observation of a resistance minimum in some metals at temperatures near to $ 10K$ \cite{sindel_numerical_2005}.  The effect was studied by the material physicist  Kondo  who attributed this phenomenon to a small concentration of magnetic impurities in the metal \citep{hewson_kondo_1997}. Kondo explained that the conducting electrons in the metal scattered with the electrons in the impurity due to the spin interaction. 
+
+The resistivity of a metal is normally regulated by different scattering parameters including lattice vibrations $\rho_{phonon} \sim T^5$
+
 
 Using perturbation theory is possible to explain how this spin flip produces a  temperature dependent effect which  introduces an additional logarithmic term to the resistivity of the form
 
 \begin{equation}
-\rho_{Kondo}(T) \propto \ln{\left( \frac{T_{kondo}}{T} \right)},
+\rho_{Kondo}(T)  \propto \ln{\left( \frac{T_{kondo}}{T} \right)},
 \label{logKondo}
 \end{equation}
 
-
+\begin{equation}
+{\displaystyle \rho (T)=\rho _{0}+aT^{2}+c_{m}\ln {\frac {\mu }{T}}+bT^{5},}
+\label{logKondo}
+\end{equation}
 
 which occurs due to the spin-flip between the particles in the impurity and in the reservoir. The entire resistivity including  and 
 

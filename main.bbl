@@ -1,0 +1,196 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Kitaev(2001)]{kitaev_unpaired_2001}
+A.~Yu Kitaev.
+\newblock Unpaired {Majorana} fermions in quantum wires.
+\newblock \emph{Phys.-Usp.}, 44\penalty0 (10S):\penalty0 131, 2001.
+\newblock ISSN 1063-7869.
+\newblock \doi{10.1070/1063-7869/44/10S/S29}.
+\newblock URL \url{http://stacks.iop.org/1063-7869/44/i=10S/a=S29}.
+
+\bibitem[Alicea(2010)]{alicea_majorana_2010}
+Jason Alicea.
+\newblock Majorana fermions in a tunable semiconductor device.
+\newblock \emph{Phys. Rev. B}, 81\penalty0 (12):\penalty0 125318, March 2010.
+\newblock \doi{10.1103/PhysRevB.81.125318}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.81.125318}.
+
+\bibitem[Alicea(2012)]{alicea_new_2012}
+Jason Alicea.
+\newblock New directions in the pursuit of {Majorana} fermions in solid state
+  systems.
+\newblock \emph{Rep. Prog. Phys.}, 75\penalty0 (7):\penalty0 076501, 2012.
+\newblock ISSN 0034-4885.
+\newblock \doi{10.1088/0034-4885/75/7/076501}.
+\newblock URL \url{http://stacks.iop.org/0034-4885/75/i=7/a=076501}.
+
+\bibitem[Liu and Baranger()]{liu_detecting_2011}
+Dong~E. Liu and Harold~U. Baranger.
+\newblock Detecting a majorana-fermion zero mode using a quantum dot.
+\newblock 84\penalty0 (20).
+\newblock ISSN 1098-0121, 1550-235X.
+\newblock \doi{10.1103/PhysRevB.84.201308}.
+\newblock URL \url{http://arxiv.org/abs/1107.4338}.
+
+\bibitem[Lee et~al.()Lee, Lim, and Lopez]{lee_kondo_2013}
+Minchul Lee, Jong~Soo Lim, and Rosa Lopez.
+\newblock Kondo effect in a quantum dot side-coupled to a topological
+  superconductor.
+\newblock 87\penalty0 (24):\penalty0 241402.
+\newblock \doi{10.1103/PhysRevB.87.241402}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.87.241402}.
+
+\bibitem[Vernek et~al.()Vernek, Penteado, Seridonio, and
+  Egues]{vernek_subtle_2014}
+E.~Vernek, P.~H. Penteado, A.~C. Seridonio, and J.~C. Egues.
+\newblock Subtle leakage of a majorana mode into a quantum dot.
+\newblock 89\penalty0 (16):\penalty0 165314.
+\newblock \doi{10.1103/PhysRevB.89.165314}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.89.165314}.
+
+\bibitem[Deng et~al.()Deng, Vaitiekenas, Hansen, Danon, Leijnse, Flensberg,
+  Nygard, Krogstrup, and Marcus]{deng_majorana_2016}
+M.~T. Deng, S.~Vaitiekenas, E.~B. Hansen, J.~Danon, M.~Leijnse, K.~Flensberg,
+  J.~Nygard, P.~Krogstrup, and C.~M. Marcus.
+\newblock Majorana bound state in a coupled quantum-dot hybrid-nanowire system.
+\newblock 354\penalty0 (6319):\penalty0 1557--1562.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.aaf3961}.
+\newblock URL \url{http://science.sciencemag.org/content/354/6319/1557}.
+
+\bibitem[Ruiz-Tijerina et~al.()Ruiz-Tijerina, Vernek, Dias~da Silva, and
+  Egues]{ruiz-tijerina_interaction_2015}
+David~A. Ruiz-Tijerina, E.~Vernek, Luis G. G.~V. Dias~da Silva, and J.~C.
+  Egues.
+\newblock Interaction effects on a majorana zero mode leaking into a quantum
+  dot.
+\newblock 91\penalty0 (11):\penalty0 115435.
+\newblock \doi{10.1103/PhysRevB.91.115435}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.91.115435}.
+
+\bibitem[Holleitner et~al.(2002)Holleitner, Blick, Hüttel, Eberl, and
+  Kotthaus]{holleitner_probing_2002}
+Alexander~W. Holleitner, Robert~H. Blick, Andreas~K. Hüttel, Karl Eberl, and
+  Jörg~P. Kotthaus.
+\newblock Probing and {Controlling} the {Bonds} of an {Artificial} {Molecule}.
+\newblock \emph{Science}, 297\penalty0 (5578):\penalty0 70--72, July 2002.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.1071215}.
+\newblock URL \url{http://science.sciencemag.org/content/297/5578/70}.
+
+\bibitem[Bimberg et~al.(1999)Bimberg, Grundmann, and
+  Ledentsov]{bimberg_quantum_1999}
+Dieter Bimberg, Marius Grundmann, and Nikolai~N. Ledentsov.
+\newblock \emph{Quantum {Dot} {Heterostructures}}.
+\newblock Wiley, Chichester, Eng.; New York, 1 edition, March 1999.
+\newblock ISBN 978-0-471-97388-1.
+
+\bibitem[Sindel(2005)]{sindel_numerical_2005}
+Michael Sindel.
+\newblock \emph{Numerical {Renormalization} {Group} studies of {Quantum}
+  {Impurity} {Models} in the {Strong} {Coupling} {Limit}}.
+\newblock Text.{PhDThesis}, Ludwig-Maximilians-Universität München, January
+  2005.
+\newblock URL \url{https://edoc.ub.uni-muenchen.de/3115/}.
+
+\bibitem[Anderson(1961)]{anderson_localized_1961}
+P.~W. Anderson.
+\newblock Localized {Magnetic} {States} in {Metals}.
+\newblock \emph{Physical Review}, 124\penalty0 (1):\penalty0 41--53, October
+  1961.
+\newblock \doi{10.1103/PhysRev.124.41}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.124.41}.
+
+\bibitem[de~Haas et~al.(1934)de~Haas, de~Boer, and van~dën
+  Berg]{Kondo_deBoer1934}
+W.J. de~Haas, J.~de~Boer, and G.J. van~dën Berg.
+\newblock The electrical resistance of gold, copper and lead at low
+  temperatures.
+\newblock \emph{Physica}, 1\penalty0 (7):\penalty0 1115 -- 1124, 1934.
+\newblock ISSN 0031-8914.
+\newblock \doi{https://doi.org/10.1016/S0031-8914(34)80310-2}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0031891434803102}.
+
+\bibitem[Hewson(1997)]{hewson_kondo_1997}
+Alexander~Cyril Hewson.
+\newblock \emph{The {Kondo} {Problem} to {Heavy} {Fermions}}.
+\newblock Cambridge University Press, April 1997.
+\newblock ISBN 978-0-521-59947-4.
+\newblock Google-Books-ID: fPzgHneNFDAC.
+
+\bibitem[Spielman(2010)]{spielman10}
+Daniel~A Spielman.
+\newblock Algorithms, graph theory, and linear equations in laplacian matrices.
+\newblock In \emph{Proceedings of the International Congress of
+  Mathematicians}, volume~4, pages 2698--2722, 2010.
+\newblock URL
+  \url{http://www.mathunion.org/ICM/ICM2010.4/Main/icm2010.4.2698.2722.pdf}.
+
+\bibitem[Bulla et~al.(2008)Bulla, Costi, and Pruschke]{bulla_numerical_2008}
+Ralf Bulla, Theo~A. Costi, and Thomas Pruschke.
+\newblock Numerical renormalization group method for quantum impurity systems.
+\newblock \emph{Reviews of Modern Physics}, 80\penalty0 (2):\penalty0 395--450,
+  April 2008.
+\newblock \doi{10.1103/RevModPhys.80.395}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.80.395}.
+
+\bibitem[Wilson(1975)]{wilson_renormalization_1975}
+Kenneth~G. Wilson.
+\newblock The renormalization group: {Critical} phenomena and the {Kondo}
+  problem.
+\newblock \emph{Reviews of Modern Physics}, 47\penalty0 (4):\penalty0 773--840,
+  October 1975.
+\newblock \doi{10.1103/RevModPhys.47.773}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.47.773}.
+
+\bibitem[Krishna-murthy et~al.(1980)Krishna-murthy, Wilkins, and
+  Wilson]{krishna-murthy_renormalization-group_1980}
+H.~R. Krishna-murthy, J.~W. Wilkins, and K.~G. Wilson.
+\newblock Renormalization-group approach to the {Anderson} model of dilute
+  magnetic alloys. 1. {Static} properties for the symmetric case.
+\newblock \emph{Phys.Rev.}, B21:\penalty0 1003--1043, 1980.
+\newblock \doi{10.1103/PhysRevB.21.1003}.
+
+\bibitem[Costi et~al.(1994)Costi, Hewson, and Zlatic]{costi_transport_1994}
+T.~A. Costi, A.~C. Hewson, and V.~Zlatic.
+\newblock Transport coefficients of the {Anderson} model via the numerical
+  renormalization group.
+\newblock \emph{Journal of Physics: Condensed Matter}, 6\penalty0
+  (13):\penalty0 2519, 1994.
+\newblock ISSN 0953-8984.
+\newblock \doi{10.1088/0953-8984/6/13/013}.
+\newblock URL \url{http://stacks.iop.org/0953-8984/6/i=13/a=013}.
+
+\bibitem[Hofstetter(2000)]{hofstetter_generalized_2000}
+Walter Hofstetter.
+\newblock Generalized {Numerical} {Renormalization} {Group} for {Dynamical}
+  {Quantities}.
+\newblock \emph{Physical Review Letters}, 85\penalty0 (7):\penalty0 1508--1511,
+  August 2000.
+\newblock \doi{10.1103/PhysRevLett.85.1508}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.85.1508}.
+
+\bibitem[Ruderman and Kittel(1954)]{ruderman_indirect_1954}
+M.~A. Ruderman and C.~Kittel.
+\newblock Indirect {Exchange} {Coupling} of {Nuclear} {Magnetic} {Moments} by
+  {Conduction} {Electrons}.
+\newblock \emph{Physical Review}, 96\penalty0 (1):\penalty0 99--102, October
+  1954.
+\newblock \doi{10.1103/PhysRev.96.99}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.96.99}.
+
+\bibitem[Yosida(1957)]{yosida_magnetic_1957}
+Kei Yosida.
+\newblock Magnetic {Properties} of {Cu}-{Mn} {Alloys}.
+\newblock \emph{Physical Review}, 106\penalty0 (5):\penalty0 893--898, June
+  1957.
+\newblock \doi{10.1103/PhysRev.106.893}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.106.893}.
+
+\end{thebibliography}

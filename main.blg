@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: Preliminars.aux
+A level-1 auxiliary file: Methods.aux
+The style file: unsrtnat.bst
+A level-1 auxiliary file: Append_A.aux
+Database file #1: Majorana-QD.bib
+I was expecting a `,' or a `}'---line 29 of file Majorana-QD.bib
+ : 
+ : @article{liu_detecting_2011,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Database file #2: Kitaev-Majorana.bib
+Database file #3: Kondo.bib
+Warning--empty journal in liu_detecting_2011
+Warning--empty year in liu_detecting_2011
+Warning--empty year in liu_detecting_2011
+Warning--empty journal in lee_kondo_2013
+Warning--empty year in lee_kondo_2013
+Warning--empty year in lee_kondo_2013
+Warning--empty journal in vernek_subtle_2014
+Warning--empty year in vernek_subtle_2014
+Warning--empty year in vernek_subtle_2014
+Warning--empty journal in deng_majorana_2016
+Warning--empty year in deng_majorana_2016
+Warning--empty year in deng_majorana_2016
+Warning--empty journal in ruiz-tijerina_interaction_2015
+Warning--empty year in ruiz-tijerina_interaction_2015
+Warning--empty year in ruiz-tijerina_interaction_2015
+You've used 22 entries,
+            2481 wiz_defined-function locations,
+            746 strings with 9515 characters,
+and the built_in function-call counts, 9014 in all, are:
+= -- 837
+> -- 370
+< -- 14
++ -- 152
+- -- 108
+* -- 781
+:= -- 1456
+add.period$ -- 113
+call.type$ -- 22
+change.case$ -- 43
+chr.to.int$ -- 22
+cite$ -- 37
+duplicate$ -- 427
+empty$ -- 802
+format.name$ -- 134
+if$ -- 1888
+int.to.chr$ -- 1
+int.to.str$ -- 23
+missing$ -- 23
+newline$ -- 165
+num.names$ -- 66
+pop$ -- 144
+preamble$ -- 1
+purify$ -- 22
+quote$ -- 0
+skip$ -- 228
+stack$ -- 0
+substring$ -- 456
+swap$ -- 63
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 148
+warning$ -- 15
+while$ -- 73
+width$ -- 0
+write$ -- 378
+(There was 1 error message)
