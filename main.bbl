@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -106,6 +106,13 @@ P.~W. Anderson.
 \newblock \doi{10.1103/PhysRev.124.41}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.124.41}.
 
+\bibitem[Hewson(1997)]{hewson_kondo_1997}
+Alexander~Cyril Hewson.
+\newblock \emph{The {Kondo} {Problem} to {Heavy} {Fermions}}.
+\newblock Cambridge University Press, April 1997.
+\newblock ISBN 978-0-521-59947-4.
+\newblock Google-Books-ID: fPzgHneNFDAC.
+
 \bibitem[de~Haas et~al.(1934)de~Haas, de~Boer, and van~dën
   Berg]{Kondo_deBoer1934}
 W.J. de~Haas, J.~de~Boer, and G.J. van~dën Berg.
@@ -116,13 +123,6 @@ W.J. de~Haas, J.~de~Boer, and G.J. van~dën Berg.
 \newblock \doi{https://doi.org/10.1016/S0031-8914(34)80310-2}.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S0031891434803102}.
-
-\bibitem[Hewson(1997)]{hewson_kondo_1997}
-Alexander~Cyril Hewson.
-\newblock \emph{The {Kondo} {Problem} to {Heavy} {Fermions}}.
-\newblock Cambridge University Press, April 1997.
-\newblock ISBN 978-0-521-59947-4.
-\newblock Google-Books-ID: fPzgHneNFDAC.
 
 \bibitem[Spielman(2010)]{spielman10}
 Daniel~A Spielman.
@@ -175,6 +175,26 @@ Walter Hofstetter.
   August 2000.
 \newblock \doi{10.1103/PhysRevLett.85.1508}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.85.1508}.
+
+\bibitem[Barkeshli and Sau(2015)]{barkeshli_physical_2015}
+Maissam Barkeshli and Jay~D. Sau.
+\newblock Physical {Architecture} for a {Universal} {Topological} {Quantum}
+  {Computer} based on a {Network} of {Majorana} {Nanowires}.
+\newblock \emph{arXiv:1509.07135 [cond-mat, physics:quant-ph]}, September 2015.
+\newblock URL \url{http://arxiv.org/abs/1509.07135}.
+\newblock arXiv: 1509.07135.
+
+\bibitem[Karzig et~al.(2017)Karzig, Knapp, Lutchyn, Bonderson, Hastings, Nayak,
+  Alicea, Flensberg, Plugge, Oreg, Marcus, and Freedman]{karzig_scalable_2017}
+Torsten Karzig, Christina Knapp, Roman~M. Lutchyn, Parsa Bonderson, Matthew~B.
+  Hastings, Chetan Nayak, Jason Alicea, Karsten Flensberg, Stephan Plugge,
+  Yuval Oreg, Charles~M. Marcus, and Michael~H. Freedman.
+\newblock Scalable designs for quasiparticle-poisoning-protected topological
+  quantum computation with {Majorana} zero modes.
+\newblock \emph{Physical Review B}, 95\penalty0 (23):\penalty0 235305, June
+  2017.
+\newblock \doi{10.1103/PhysRevB.95.235305}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.95.235305}.
 
 \bibitem[Ruderman and Kittel(1954)]{ruderman_indirect_1954}
 M.~A. Ruderman and C.~Kittel.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.1.13)  23 JAN 2019 00:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.1.13)  25 JAN 2019 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,7 +621,26 @@ LaTeX Warning: Label `logKondo' multiply defined.
 
 LaTeX Warning: Label `logKondo@cref' multiply defined.
 
-) (./Methods.aux) (./Append_A.aux))
+) (./Methods.aux) (./NResults.aux
+
+LaTeX Warning: Label `fig:Interference' multiply defined.
+
+
+LaTeX Warning: Label `fig:Interference@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:Interference' multiply defined.
+
+
+LaTeX Warning: Label `fig:Interference@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:GenModel' multiply defined.
+
+
+LaTeX Warning: Label `fig:GenModel@cref' multiply defined.
+
+) (./Append_A.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
@@ -641,8 +660,7 @@ LaTeX Font Info:    ... okay on input line 189.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 189.
 LaTeX Font Info:    ... okay on input line 189.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 189.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -801,53 +819,55 @@ LaTeX Font Info:    Try loading font information for U+esint on input line 2.
 File: uesint.fd 
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 22.
-)
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
+ [3
+
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
 
 No file main.nls.
-[3
+Package cleveref Info: loaded `english' language definitions on input line 224.
 
-
-]
+[4]
 \openout2 = `Preliminars.aux'.
 
  (./Preliminars.tex
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 10.
-<IMAGES/Preliminars/VerticalQD.png, id=141, 558.085pt x 474.77374pt>
+<IMAGES/Preliminars/VerticalQD.png, id=195, 558.085pt x 474.77374pt>
 File: IMAGES/Preliminars/VerticalQD.png Graphic file (type png)
 <use IMAGES/Preliminars/VerticalQD.png>
 Package pdftex.def Info: IMAGES/Preliminars/VerticalQD.png  used on input line 
 14.
 (pdftex.def)             Requested size: 167.42679pt x 142.43321pt.
-<IMAGES/Preliminars/QD-horizontal.png, id=143, 351.3125pt x 349.305pt>
+<IMAGES/Preliminars/QD-horizontal.png, id=197, 351.3125pt x 349.305pt>
 File: IMAGES/Preliminars/QD-horizontal.png Graphic file (type png)
 <use IMAGES/Preliminars/QD-horizontal.png>
 Package pdftex.def Info: IMAGES/Preliminars/QD-horizontal.png  used on input li
 ne 15.
 (pdftex.def)             Requested size: 140.5225pt x 139.71951pt.
-[4
+[5
 
 
  <./IMAGES/Preliminars/VerticalQD.png> <./IMAGES/Preliminars/QD-horizontal.png>
 ]
-<IMAGES/Preliminars/specDot.png, id=165, 546.04pt x 171.039pt>
+<IMAGES/Preliminars/specDot.png, id=215, 546.04pt x 171.039pt>
 File: IMAGES/Preliminars/specDot.png Graphic file (type png)
 <use IMAGES/Preliminars/specDot.png>
 Package pdftex.def Info: IMAGES/Preliminars/specDot.png  used on input line 30.
 
 (pdftex.def)             Requested size: 273.01933pt x 85.51929pt.
-<IMAGES/Preliminars/QD-Transport.png, id=166, 262.581pt x 187.902pt>
+<IMAGES/Preliminars/QD-Transport.png, id=216, 262.581pt x 187.902pt>
 File: IMAGES/Preliminars/QD-Transport.png Graphic file (type png)
 <use IMAGES/Preliminars/QD-Transport.png>
 Package pdftex.def Info: IMAGES/Preliminars/QD-Transport.png  used on input lin
 e 39.
 (pdftex.def)             Requested size: 183.80542pt x 131.53049pt.
-<IMAGES/Preliminars/QD-Blockade.png, id=167, 783.92876pt x 548.0475pt>
+<IMAGES/Preliminars/QD-Blockade.png, id=217, 783.92876pt x 548.0475pt>
 File: IMAGES/Preliminars/QD-Blockade.png Graphic file (type png)
 <use IMAGES/Preliminars/QD-Blockade.png>
 Package pdftex.def Info: IMAGES/Preliminars/QD-Blockade.png  used on input line
@@ -858,58 +878,57 @@ Overfull \hbox (3.86014pt too wide) in paragraph at lines 39--41
  [][][][] 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 95.
-[5 <./IMAGES/Preliminars/specDot.png>]
-Package cleveref Info: loaded `english' language definitions on input line 108.
+Package cleveref Info: loaded `english' language definitions on input line 98.
+[6 <./IMAGES/Preliminars/specDot.png>]
+Package cleveref Info: loaded `english' language definitions on input line 106.
 
- [6 <./IMAGES/Preliminars/QD-Transport.png> <./IMAGES/Preliminars/QD-Blockade.p
+ [7 <./IMAGES/Preliminars/QD-Transport.png> <./IMAGES/Preliminars/QD-Blockade.p
 ng>]
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 171.
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
-
- []
-
-Package cleveref Info: loaded `english' language definitions on input line 211.
+Package cleveref Info: loaded `english' language definitions on input line 154.
 
 [8]
-<IMAGES/Preliminars/KondoTemp.png, id=219, 264.23718pt x 261.97874pt>
+Package cleveref Info: loaded `english' language definitions on input line 217.
+
+ [9]
+Package cleveref Info: loaded `english' language definitions on input line 261.
+
+ [10]
+<IMAGES/Preliminars/KondoTemp.png, id=278, 264.23718pt x 261.97874pt>
 File: IMAGES/Preliminars/KondoTemp.png Graphic file (type png)
 <use IMAGES/Preliminars/KondoTemp.png>
 Package pdftex.def Info: IMAGES/Preliminars/KondoTemp.png  used on input line 2
-16.
+74.
 (pdftex.def)             Requested size: 184.96475pt x 183.38387pt.
 File: IMAGES/Preliminars/QD-Blockade.png Graphic file (type png)
 <use IMAGES/Preliminars/QD-Blockade.png>
 Package pdftex.def Info: IMAGES/Preliminars/QD-Blockade.png  used on input line
- 217.
+ 275.
 (pdftex.def)             Requested size: 235.18044pt x 164.41551pt.
 
-Overfull \hbox (5.01947pt too wide) in paragraph at lines 216--218
+Overfull \hbox (5.01947pt too wide) in paragraph at lines 274--276
  [][][][] 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 238.
+Package cleveref Info: loaded `english' language definitions on input line 291.
 
-[9 <./IMAGES/Preliminars/KondoTemp.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 248--250
+[11 <./IMAGES/Preliminars/KondoTemp.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
 
  []
 
 )
 Package cleveref Info: loaded `english' language definitions on input line 224.
 
- [10]
+ [12]
 \openout2 = `Methods.aux'.
 
  (./Methods.tex
 Chapter 4.
-[11
+[13
 
 
 
@@ -919,11 +938,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
  []
 
 
-LaTeX Warning: Reference `eq:Transport' on page 12 undefined on input line 68.
+LaTeX Warning: Reference `eq:Transport' on page 14 undefined on input line 68.
 
 Package cleveref Info: loaded `english' language definitions on input line 73.
-[12]
-<IMAGES/Graphs/DQD-Pro.png, id=264, 922.94812pt x 752.0597pt>
+[14]
+<IMAGES/Graphs/DQD-Pro.png, id=323, 922.94812pt x 752.0597pt>
 File: IMAGES/Graphs/DQD-Pro.png Graphic file (type png)
 <use IMAGES/Graphs/DQD-Pro.png>
 Package pdftex.def Info: IMAGES/Graphs/DQD-Pro.png  used on input line 105.
@@ -935,18 +954,18 @@ Overfull \hbox (32.13226pt too wide) detected at line 127
 
 Package cleveref Info: loaded `english' language definitions on input line 130.
 
-[13]
+[15]
 Package cleveref Info: loaded `english' language definitions on input line 152.
 
- [14 <./IMAGES/Graphs/DQD-Pro.png>]
+ [16 <./IMAGES/Graphs/DQD-Pro.png>]
 Overfull \hbox (7.68066pt too wide) detected at line 156
 []
  []
 
 Package cleveref Info: loaded `english' language definitions on input line 240.
 
-[15]
-<IMAGES/DQD/Non-interacting.png, id=307, 867.24pt x 590.4459pt>
+[17]
+<IMAGES/DQD/Non-interacting.png, id=364, 867.24pt x 590.4459pt>
 File: IMAGES/DQD/Non-interacting.png Graphic file (type png)
 <use IMAGES/DQD/Non-interacting.png>
 Package pdftex.def Info: IMAGES/DQD/Non-interacting.png  used on input line 263
@@ -954,126 +973,542 @@ Package pdftex.def Info: IMAGES/DQD/Non-interacting.png  used on input line 263
 (pdftex.def)             Requested size: 407.60286pt x 277.50961pt.
 Package cleveref Info: loaded `english' language definitions on input line 268.
 
- [16]
-Package cleveref Info: loaded `english' language definitions on input line 305.
+ [18]
+Package cleveref Info: loaded `english' language definitions on input line 306.
 
- [17 <./IMAGES/DQD/Non-interacting.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+ [19 <./IMAGES/DQD/Non-interacting.png>]
+
+LaTeX Warning: Reference `fig:Discretization' on page 20 undefined on input lin
+e 308.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
+Package cleveref Info: loaded `english' language definitions on input line 327.
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 352.
-
-[18]
-<IMAGES/DQD/NRG-Final.png, id=346, 845.559pt x 498.663pt>
+<IMAGES/DQD/NRG-Final.png, id=402, 845.559pt x 498.663pt>
 File: IMAGES/DQD/NRG-Final.png Graphic file (type png)
 <use IMAGES/DQD/NRG-Final.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-Final.png  used on input line 362.
+Package pdftex.def Info: IMAGES/DQD/NRG-Final.png  used on input line 373.
 (pdftex.def)             Requested size: 422.77847pt x 249.33089pt.
 
-Overfull \hbox (7.65276pt too wide) in paragraph at lines 362--363
+Overfull \hbox (7.65276pt too wide) in paragraph at lines 373--374
  [][] 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 377.
+Package cleveref Info: loaded `english' language definitions on input line 375.
 
-[19 <./IMAGES/DQD/NRG-Final.png>]
-Overfull \hbox (28.6966pt too wide) in alignment at lines 425--431
+[21]
+Package cleveref Info: loaded `english' language definitions on input line 420.
+
+ [22 <./IMAGES/DQD/NRG-Final.png>]
+Overfull \hbox (28.6966pt too wide) in alignment at lines 436--442
  [][][] []
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 431.
-
-[20]
-<IMAGES/NRGchain.png, id=372, 387.849pt x 87.527pt>
+<IMAGES/NRGchain.png, id=429, 387.849pt x 87.527pt>
 File: IMAGES/NRGchain.png Graphic file (type png)
 <use IMAGES/NRGchain.png>
-Package pdftex.def Info: IMAGES/NRGchain.png  used on input line 443.
+Package pdftex.def Info: IMAGES/NRGchain.png  used on input line 454.
 (pdftex.def)             Requested size: 193.92401pt x 43.76338pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--456
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--467
 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 468.
+Package cleveref Info: loaded `english' language definitions on input line 467.
 
-[21 <./IMAGES/NRGchain.png>]
-Package cleveref Info: loaded `english' language definitions on input line 527.
+[23]
+Package cleveref Info: loaded `english' language definitions on input line 519.
 
- [22]
-Overfull \hbox (10.05133pt too wide) in paragraph at lines 546--548
+ [24 <./IMAGES/NRGchain.png>]
+Overfull \hbox (10.05133pt too wide) in paragraph at lines 557--559
 []\T1/ptm/m/n/10.95 Now ob-serve that hamil-to-nian [][]4.32[][][] al-ready has
  a di-ag-o-nal form in the base $[]$ 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 585.
+Package cleveref Info: loaded `english' language definitions on input line 566.
 
-[23]
-<IMAGES/even.png, id=411, 413.545pt x 300.12125pt>
+[25]
+<IMAGES/even.png, id=470, 413.545pt x 300.12125pt>
 File: IMAGES/even.png Graphic file (type png)
 <use IMAGES/even.png>
-Package pdftex.def Info: IMAGES/even.png  used on input line 652.
+Package pdftex.def Info: IMAGES/even.png  used on input line 663.
 (pdftex.def)             Requested size: 206.77199pt x 150.06026pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 652.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 663.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 652.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 663.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 652.
-<IMAGES/odd.png, id=412, 409.53pt x 300.12125pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 663.
+<IMAGES/odd.png, id=471, 409.53pt x 300.12125pt>
 File: IMAGES/odd.png Graphic file (type png)
 <use IMAGES/odd.png>
-Package pdftex.def Info: IMAGES/odd.png  used on input line 652.
+Package pdftex.def Info: IMAGES/odd.png  used on input line 663.
 (pdftex.def)             Requested size: 204.7645pt x 150.06026pt.
-Package cleveref Info: loaded `english' language definitions on input line 705.
+Package cleveref Info: loaded `english' language definitions on input line 684.
 
- [24 <./IMAGES/even.png> <./IMAGES/odd.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 710--711
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
+ [26]
+Underfull \hbox (badness 10000) in paragraph at lines 721--722
 
  []
 
-<IMAGES/DQD/NRG-QD.png, id=427, 284.262pt x 212.795pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
+
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 736.
+
+[27 <./IMAGES/even.png> <./IMAGES/odd.png>]
+<IMAGES/DQD/NRG-QD.png, id=491, 284.262pt x 212.795pt>
 File: IMAGES/DQD/NRG-QD.png Graphic file (type png)
 <use IMAGES/DQD/NRG-QD.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-QD.png  used on input line 727.
+Package pdftex.def Info: IMAGES/DQD/NRG-QD.png  used on input line 740.
 (pdftex.def)             Requested size: 170.5585pt x 127.67796pt.
-<IMAGES/DQD/NRG-DQD.png, id=428, 366.168pt x 274.626pt>
+<IMAGES/DQD/NRG-DQD.png, id=492, 366.168pt x 274.626pt>
 File: IMAGES/DQD/NRG-DQD.png Graphic file (type png)
 <use IMAGES/DQD/NRG-DQD.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-DQD.png  used on input line 728.
+Package pdftex.def Info: IMAGES/DQD/NRG-DQD.png  used on input line 741.
 (pdftex.def)             Requested size: 164.77406pt x 123.58055pt.
-<IMAGES/DQD/NRG-IndirectDQD.png, id=429, 382.228pt x 286.671pt>
+<IMAGES/DQD/NRG-IndirectDQD.png, id=493, 382.228pt x 286.671pt>
 File: IMAGES/DQD/NRG-IndirectDQD.png Graphic file (type png)
 <use IMAGES/DQD/NRG-IndirectDQD.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-IndirectDQD.png  used on input line 729
+Package pdftex.def Info: IMAGES/DQD/NRG-IndirectDQD.png  used on input line 742
 .
 (pdftex.def)             Requested size: 191.11353pt x 143.33514pt.
-)
+Package cleveref Info: loaded `english' language definitions on input line 753.
+
+ [28 <./IMAGES/DQD/NRG-QD.png> <./IMAGES/DQD/NRG-DQD.png> <./IMAGES/DQD/NRG-Ind
+irectDQD.png>])
 Package cleveref Info: loaded `english' language definitions on input line 225.
 
- [25]
-Package cleveref Info: loaded `english' language definitions on input line 225.
+ [29]
+\openout2 = `NResults.aux'.
 
- [26 <./IMAGES/DQD/NRG-QD.png> <./IMAGES/DQD/NRG-DQD.png> <./IMAGES/DQD/NRG-Ind
-irectDQD.png>] (./main.bbl (./main.brf)
-\tf@brf=\write7
-\openout7 = `main.brf'.
+ (./NResults.tex
+Chapter 5.
+<IMAGES/GenModel.png, id=520, 543.4704pt x 390.9807pt>
+File: IMAGES/GenModel.png Graphic file (type png)
+<use IMAGES/GenModel.png>
+Package pdftex.def Info: IMAGES/GenModel.png  used on input line 5.
+(pdftex.def)             Requested size: 217.3843pt x 156.3895pt.
+! Argument of \caption@ has an extra }.
+<inserted text> 
+                \par 
+l.6 ... model.\\ \protect \Source{ By the Author}}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 15.
+Runaway argument?
+\@captype {\def \reserved@a *{\nobreak \@xcentercr }\reserved@a }\def \ETC.
+! Paragraph ended before \caption@ was complete.
+<to be read again> 
+                   \par 
+l.6 ... model.\\ \protect \Source{ By the Author}}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin9'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ...in insight  of this method is that todayâ€
+                                                  ™s precise experimental co...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin9'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ...n insight  of this method is that todayâ€™
+                                                  s precise experimental con...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+LaTeX Warning: Reference `eq:QD-Mham' on page 30 undefined on input line 23.
+
+[30
+
+
+
+ <./IMAGES/GenModel.png>]
+
+LaTeX Warning: Reference `fig:green-M-QD' on page 31 undefined on input line 42
+.
+
+
+LaTeX Warning: Reference `sec:' on page 31 undefined on input line 42.
+
+
+LaTeX Warning: File `IMAGES/Graphs/Final Graph.png' not found on input line 87.
+
+
+<IMAGES/Graphs/Final Graph.png, id=537, 849.92531pt x 702.37407pt>
+File: IMAGES/Graphs/Final Graph.png Graphic file (type png)
+<use IMAGES/Graphs/Final Graph.png>
+Package pdftex.def Info: IMAGES/Graphs/Final Graph.png  used on input line 87.
+(pdftex.def)             Requested size: 254.97955pt x 210.71384pt.
+Package cleveref Info: loaded `english' language definitions on input line 103.
+
+[31]
+<IMAGES/DQD-M/3Model.png, id=553, 479.391pt x 180.675pt>
+File: IMAGES/DQD-M/3Model.png Graphic file (type png)
+<use IMAGES/DQD-M/3Model.png>
+Package pdftex.def Info: IMAGES/DQD-M/3Model.png  used on input line 118.
+(pdftex.def)             Requested size: 335.57141pt x 126.47162pt.
+<IMAGES/GreenResults/t1=t2.png, id=554, 904.0977pt x 590.4459pt>
+File: IMAGES/GreenResults/t1=t2.png Graphic file (type png)
+<use IMAGES/GreenResults/t1=t2.png>
+Package pdftex.def Info: IMAGES/GreenResults/t1=t2.png  used on input line 126.
+
+(pdftex.def)             Requested size: 325.47493pt x 212.56036pt.
+Package cleveref Info: loaded `english' language definitions on input line 134.
+
+ [32 <./IMAGES/Graphs/Final Graph.png>]
+Package cleveref Info: loaded `english' language definitions on input line 136.
+
+ [33 <./IMAGES/DQD-M/3Model.png> <./IMAGES/GreenResults/t1=t2.png>]
+Package cleveref Info: loaded `english' language definitions on input line 152.
+
+ [34]
+<IMAGES/GreenResults/t1>0,G=t2=0.png, id=590, 867.24pt x 590.4459pt>
+File: IMAGES/GreenResults/t1>0,G=t2=0.png Graphic file (type png)
+<use IMAGES/GreenResults/t1>0,G=t2=0.png>
+Package pdftex.def Info: IMAGES/GreenResults/t1>0,G=t2=0.png  used on input lin
+e 159.
+(pdftex.def)             Requested size: 312.20616pt x 212.56036pt.
+<IMAGES/GreenResults/t2>0,G=t1=0.png, id=593, 867.24pt x 590.4459pt>
+File: IMAGES/GreenResults/t2>0,G=t1=0.png Graphic file (type png)
+<use IMAGES/GreenResults/t2>0,G=t1=0.png>
+Package pdftex.def Info: IMAGES/GreenResults/t2>0,G=t1=0.png  used on input lin
+e 172.
+(pdftex.def)             Requested size: 390.2544pt x 265.6982pt.
+
+
+LaTeX Warning: File `Graficos/t2=0.png' not found on input line 185.
+
+
+! Package pdftex.def Error: File `Graficos/t2=0.png' not found: using draft set
+ting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ...degraphics[scale=0.48]{Graficos/t2=0.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 185.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [27
+)
+
+LaTeX Warning: Reference `fig:MajoranaModels' on page 35 undefined on input lin
+e 187.
+
+
+LaTeX Warning: Reference `fig:MajoranaModels' on page 35 undefined on input lin
+e 187.
+
+
+LaTeX Warning: File `Graficos/t2=0.png' not found on input line 197.
+
+
+! Package pdftex.def Error: File `Graficos/t2=0.png' not found: using draft set
+ting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 ...degraphics[scale=0.48]{Graficos/t2=0.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:MajoranaModels' on page 35 undefined on input lin
+e 199.
+
+
+LaTeX Warning: Reference `fig:MajoranaModels' on page 35 undefined on input lin
+e 199.
+
+Package cleveref Info: loaded `english' language definitions on input line 209.
+
+[35 <./IMAGES/GreenResults/t1>0,G=t2=0.png>]
+<IMAGES/DQD-M/a).png, id=603, 938.0646pt x 361.35pt>
+File: IMAGES/DQD-M/a).png Graphic file (type png)
+<use IMAGES/DQD-M/a).png>
+Package pdftex.def Info: IMAGES/DQD-M/a).png  used on input line 218.
+(pdftex.def)             Requested size: 328.32753pt x 126.4744pt.
+Package cleveref Info: loaded `english' language definitions on input line 221.
+
+ [36 <./IMAGES/GreenResults/t2>0,G=t1=0.png>]
+<IMAGES/DQD-M/a)-NRG.png, id=609, 1156.32pt x 590.4459pt>
+File: IMAGES/DQD-M/a)-NRG.png Graphic file (type png)
+<use IMAGES/DQD-M/a)-NRG.png>
+Package pdftex.def Info: IMAGES/DQD-M/a)-NRG.png  used on input line 224.
+(pdftex.def)             Requested size: 404.71806pt x 206.65915pt.
+Package cleveref Info: loaded `english' language definitions on input line 227.
+
+ [37 <./IMAGES/DQD-M/a).png>]
+<IMAGES/DQD-M/b).png, id=619, 1008.1665pt x 361.35pt>
+File: IMAGES/DQD-M/b).png Graphic file (type png)
+<use IMAGES/DQD-M/b).png>
+Package pdftex.def Info: IMAGES/DQD-M/b).png  used on input line 233.
+(pdftex.def)             Requested size: 352.86356pt x 126.4744pt.
+<IMAGES/DQD-M/b)-NRG.png, id=620, 1156.32pt x 590.4459pt>
+File: IMAGES/DQD-M/b)-NRG.png Graphic file (type png)
+<use IMAGES/DQD-M/b)-NRG.png>
+Package pdftex.def Info: IMAGES/DQD-M/b)-NRG.png  used on input line 239.
+(pdftex.def)             Requested size: 404.71806pt x 206.65915pt.
+Package cleveref Info: loaded `english' language definitions on input line 242.
+
+ [38 <./IMAGES/DQD-M/a)-NRG.png> <./IMAGES/DQD-M/b).png>]
+Package cleveref Info: loaded `english' language definitions on input line 247.
+
+ [39 <./IMAGES/DQD-M/b)-NRG.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 251.
+<IMAGES/t1=t2/2D.png, id=635, 1038.5199pt x 695.2374pt>
+File: IMAGES/t1=t2/2D.png Graphic file (type png)
+<use IMAGES/t1=t2/2D.png>
+Package pdftex.def Info: IMAGES/t1=t2/2D.png  used on input line 260.
+(pdftex.def)             Requested size: 363.48741pt x 243.33673pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
+
+ []
+
+<IMAGES/t1=t2/LogPlot.png, id=636, 604.8999pt x 433.62pt>
+File: IMAGES/t1=t2/LogPlot.png Graphic file (type png)
+<use IMAGES/t1=t2/LogPlot.png>
+Package pdftex.def Info: IMAGES/t1=t2/LogPlot.png  used on input line 270.
+(pdftex.def)             Requested size: 211.71814pt x 151.76927pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
+
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 276.
+
+[40 <./IMAGES/t1=t2/2D.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\epsilon' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 311.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 311.
+
+Package cleveref Info: loaded `english' language definitions on input line 319.
+
+[41 <./IMAGES/t1=t2/LogPlot.png>]
+<IMAGES/ed2/2D.png, id=660, 1156.32pt x 590.205pt>
+File: IMAGES/ed2/2D.png Graphic file (type png)
+<use IMAGES/ed2/2D.png>
+Package pdftex.def Info: IMAGES/ed2/2D.png  used on input line 323.
+(pdftex.def)             Requested size: 404.71806pt x 206.57484pt.
+<IMAGES/ed2/Fermi.png, id=663, 697.4055pt x 487.8225pt>
+File: IMAGES/ed2/Fermi.png Graphic file (type png)
+<use IMAGES/ed2/Fermi.png>
+Package pdftex.def Info: IMAGES/ed2/Fermi.png  used on input line 336.
+(pdftex.def)             Requested size: 209.22325pt x 146.34787pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--338
+
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 339.
+
+[42 <./IMAGES/ed2/2D.png>]
+Package cleveref Info: loaded `english' language definitions on input line 341.
+
+ [43 <./IMAGES/ed2/Fermi.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\epsilon' on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@over' on input line 346.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 346.
+
+Package epstopdf Info: Source file: <Plots/Model/Majorana-2QD.eps>
+(epstopdf)                    date: 2019-01-02 19:19:43
+(epstopdf)                    size: 1864914 bytes
+(epstopdf)             Output file: <Plots/Model/Majorana-2QD-eps-converted-to.
+pdf>
+(epstopdf)             Command: <repstopdf --outfile=Plots/Model/Majorana-2QD-e
+ps-converted-to.pdf Plots/Model/Majorana-2QD.eps>
+(epstopdf)             \includegraphics on input line 350.
+runsystem(repstopdf --outfile=Plots/Model/Majorana-2QD-eps-converted-to.pdf Plo
+ts/Model/Majorana-2QD.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <Plots/Model/Majorana-2QD-eps-converted-to.
+pdf>.
+
+! Package pdftex.def Error: File `Plots/Model/Majorana-2QD-eps-converted-to.pdf
+' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.350 ...[scale=0.2]{Plots/Model/Majorana-2QD.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Plots/DOS/PHS-Shift_e2.png' not found on input line 356.
+
+
+! Package pdftex.def Error: File `Plots/DOS/PHS-Shift_e2.png' not found: using 
+draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.356 ...s[scale=0.38]{Plots/DOS/PHS-Shift_e2.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 369.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 369.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 369.
+
+Package epstopdf Info: Source file: <Plots/Model/Majorana-1QD.eps>
+(epstopdf)                    date: 2019-01-02 19:19:43
+(epstopdf)                    size: 1789049 bytes
+(epstopdf)             Output file: <Plots/Model/Majorana-1QD-eps-converted-to.
+pdf>
+(epstopdf)             Command: <repstopdf --outfile=Plots/Model/Majorana-1QD-e
+ps-converted-to.pdf Plots/Model/Majorana-1QD.eps>
+(epstopdf)             \includegraphics on input line 376.
+runsystem(repstopdf --outfile=Plots/Model/Majorana-1QD-eps-converted-to.pdf Plo
+ts/Model/Majorana-1QD.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <Plots/Model/Majorana-1QD-eps-converted-to.
+pdf>.
+
+! Package pdftex.def Error: File `Plots/Model/Majorana-1QD-eps-converted-to.pdf
+' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 ...[scale=0.2]{Plots/Model/Majorana-1QD.eps}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Plots/2D/Shift_t2D1.png' not found on input line 384.
+
+
+! Package pdftex.def Error: File `Plots/2D/Shift_t2D1.png' not found: using dra
+ft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.384 ...hics[scale=0.38]{Plots/2D/Shift_t2D1.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:MSig/Shift_t2' on page 44 undefined on input line
+ 402.
+
+)
+Package cleveref Info: loaded `english' language definitions on input line 228.
+
+ [44]
+Package cleveref Info: loaded `english' language definitions on input line 228.
+
+ [45] (./main.bbl (./main.brf)
+\tf@brf=\write7
+\openout7 = `main.brf'.
+
+ [46
 
 
 ]
@@ -1092,35 +1527,31 @@ or  <return>  to continue without it.
 
 Package cleveref Info: loaded `english' language definitions on input line 169.
 
-[28]) [29]
+[47]) [48]
 \openout2 = `Append_A.aux'.
 
  (./Append_A.tex
 Appendix A.
-[30
+[49
 
 
 
 ]
 Appendix B.
-
-LaTeX Warning: Reference `General model' on page 31 undefined on input line 17.
-
-
-[31
+[50
 
 ]
 
-LaTeX Warning: Reference `fig:ExchangeMod' on page 32 undefined on input line 6
+LaTeX Warning: Reference `fig:ExchangeMod' on page 51 undefined on input line 6
 2.
 
 
-LaTeX Warning: Reference `fig:MSig/Shift_t1=t2' on page 32 undefined on input l
+LaTeX Warning: Reference `fig:MSig/Shift_t1=t2' on page 51 undefined on input l
 ine 82.
 
 Package cleveref Info: loaded `english' language definitions on input line 115.
 
-[32]
+[51]
 Overfull \hbox (17.05872pt too wide) detected at line 131
 [] []
  []
@@ -1133,19 +1564,31 @@ Overfull \hbox (17.05872pt too wide) detected at line 149
 )
 Package cleveref Info: loaded `english' language definitions on input line 238.
 
- [33]
+ [52]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
  (./main.aux
 Package cleveref Info: loaded `english' language definitions on input line 19.
- (./Preliminars.aux) (./Methods.aux) (./Append_A.aux))
+ (./Preliminars.aux) (./Methods.aux) (./NResults.aux)
+(./Append_A.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 055147D8BA2B50063B193F4DD49EBE14;4147.
-Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 2471C079095611838DEE08278AE60AC6;1962.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D11124C23EB7BEA88F1DF09182FAC137;6676
+(rerunfilecheck)             After:  9724F9C2D69E98293B0F903DEB49DAE3;6638.
+
+Package rerunfilecheck Warning: File `main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `main.brf':
+(rerunfilecheck)             Before: 1F66108C34F7B99C27F9B6B38A886EFB;2130
+(rerunfilecheck)             After:  CD6AC0B434D945391C7F9533D051C709;2130.
 
 LaTeX Warning: There were undefined references.
 
@@ -1155,13 +1598,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
  ) 
 Here is how much of TeX's memory you used:
- 15174 strings out of 494561
- 232146 string characters out of 6177454
- 331710 words of memory out of 5000000
- 18401 multiletter control sequences out of 15000+600000
- 87251 words of font info for 143 fonts, out of 8000000 for 9000
+ 15457 strings out of 494561
+ 236932 string characters out of 6177454
+ 339103 words of memory out of 5000000
+ 18573 multiletter control sequences out of 15000+600000
+ 101379 words of font info for 175 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,13n,51p,1019b,697s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,51p,1369b,774s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/cifu/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600p
 k>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
@@ -1176,10 +1619,10 @@ share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (33 pages, 2117185 bytes).
+Output written on main.pdf (52 pages, 4170148 bytes).
 PDF statistics:
- 683 PDF objects out of 1000 (max. 8388607)
- 549 compressed objects within 6 object streams
- 156 named destinations out of 1000 (max. 500000)
- 244 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 957 PDF objects out of 1000 (max. 8388607)
+ 762 compressed objects within 8 object streams
+ 220 named destinations out of 1000 (max. 500000)
+ 386 words of extra memory for PDF output out of 10000 (max. 10000000)
 

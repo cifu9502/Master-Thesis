@@ -298,14 +298,25 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
 
 
 % --------------------------------------------------
+
+
 \section{The Numerical Renormalization Group\label{sec:The-Numerical-Renormaliztion} (NRG) }
 
+Maybe the most important characteristic of the Kondo effect is that leading contributions to the conductivity are caused by strong correlations with the conduction band appearing at low energy scales. This also explains the divergent logarithmic term in the Kondo resistivity. Indeed, this term predicted by Kondo is a clear signals that the physics of the Kondo effect is different at lower energy scales. The mean problem of pertubative approaches is that they often underestimate these contributions. Instead, a renormalization group approach is able to assign an appropriate effective Hamiltonian to each energy scale based a transformation of the form
+$$T[H_N] = H_{N+1}. $$
 
-At low energies a renormalization group approach is necessary to deal with the effects of high correlations. This implies that the divergent resistivity in Kondo model will be renormalized to a finite quantity. 
+In the 1970's G.Wilson used this idea to create the famous Numerical Renormalization Group (NRG). His main idea was to perform a logarithmic discretization of the conduction band in the lead as shown in \ref{fig:Discretization}. Taking in account that the mean contributions to the conductance are close to the Fermi energy, we can define a cut-off $D$ where the rest of contributions are not relevant and we use it to rescale the energy interval. As you can observe in the figure, the QD is coupled to all these energy states at the same time. The logarithmic discretization gives more relevance to the low energy scales by assigning a different Hamiltonian coupling to each one of them. To complete this, the NRG code maps the Hamiltonian of the QD-lead system to a chain of the form . A detailed description of in from the logarithmic discretization to the mapping is included in the abstract. 
+
+
+
+
+In \ref{sec:Kondo} we observed that the Kondo resistivity had a logarithmic contribution which led to a huge trouble when describing energies bellow the Kondo temperature. This logarithmic term has a  especial meaning which is that the lower energy scales are also relevant. Thus, to solve the Kondo problem it was necessary to create a theory that could efficiently integrate the contributions from all energy scales. In the 1970's G.Wilson created a numerical method that mixed ideas from scalability and renormalization group. This method proofed to be the most efficient form to understand the Kondo effect as well as other impurity problems described by the Anderson Model. 
+
+Wilson's idea was to discretize the conductance band logarithmically in energy in 
  
+In the 1970's G.Wilson created a numerical method to solve the Anderson model . This method receives the name of Numerical Renormalization Group (NRG) \citep{bulla_numerical_2008,wilson_renormalization_1975,krishna-murthy_renormalization-group_1980}.
 
-
-In the 1970's G.Wilson created a numerical method to solve the Anderson model . This method receives the name of Numerical Renormalization Group (NRG) \citep{bulla_numerical_2008,wilson_renormalization_1975,krishna-murthy_renormalization-group_1980}. It consists of three basic steps :
+It consists of three basic steps :
 \begin{enumerate}
 \item To perform a numerical discretization of the energy spectrum in logarithmic intervals. 
 \item To map the discretized model onto a semi-infinity chain Hamiltonian. 
@@ -356,13 +367,13 @@ H & = & D\sum_{\sigma}\Biggl[\frac{1}{D}\left(\epsilon_{d}+\frac{U}{2}\right)d_{
  & = & H_{d}+D\sum_{\sigma}\Biggl[\int_{-1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma}+\sqrt{\frac{\Gamma}{\pi D}}\int_{-1}^{1}\mbox{d}k\ d_{\sigma}^{\dagger}c_{k\sigma}+c_{k\sigma}^{\dagger}d_{\sigma}\Biggr],
 \end{eqnarray}
 
-
+%-------------------------------------------------------
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.5]{IMAGES/DQD/NRG-Final.png}\caption{\label{FigDiscretization}.
-Energy interval discretization. \label{Energy-interval-discretization} \protect\Source{ By the Author  } }
+\includegraphics[scale=0.5]{IMAGES/DQD/NRG-Final.png}\caption{\label{fig:Discretization}.
+Energy interval discretization. \protect\Source{ By the Author  } }
 \end{figure}
-
+%--------------------------------------------------
 
 where $\Gamma=\pi\rho V^{2}$ is associated to the lever-width \citep[(3.5)]{sindel_numerical_2005}.
 At this point we have our model dependent of three unit-less constants
@@ -573,8 +584,8 @@ of the form
 \]
 
 
-This gives an space of dimension $4\times4=16.$ Now before adventuring
-to write the hamiltonian for $H_{0}$ as a $16\times16$-matrix note
+We obtain an space of dimension $4\times4=16.$ Now before adventuring
+to write the Hamiltonian for $H_{0}$ as a $16\times16$-matrix note
 that $H_{0}$ preserves particle number $N$ and the total spin $S$.
  Therefore we can use  $N$ and $S$ as quantum numbers and generate the Hamiltonian $H_{0}$ in blocks.
 We will observe that the terms in the diagonal will correspond to
@@ -707,20 +718,22 @@ H_{N+1}=\Lambda^{\frac{1}{2}}\left[H_{N}+\frac{1}{2}\left(1+\Lambda^{-1}\right)\
 \end{equation}
 
 
-We now proceed by induction supossing that for each $N$ the Hamiltonian $H_{N}$ is already diagonalized and the eigenvectors are organized in states with labels $\vert N,S,i\rangle.$ The next step will be to add the $4$-Hilbert space corresponding to $f_{N+1,\sigma}$ organized the eigenvectors according to the quantum numbers $\vert N',S',i\rangle$ and proceed to diagonalize by blocks the new Hamiltonian. Apart of it, the code must have a cutoff to the number of states. \\
+We now proceed by induction supposing that for each $N$ the Hamiltonian $H_{N}$ is already diagonalized and the eigenvectors are organized in states with labels $\vert N,S,i\rangle.$ The next step will be to add the $4$-Hilbert space corresponding to $f_{N+1,\sigma}$ organized the eigenvectors according to the quantum numbers $\vert N',S',i\rangle$ and proceed to diagonalize by blocks the new Hamiltonian. Apart of it, the code must have a cutoff to the number of states. \\
 
 This NRG code was previously implemented in C++ language by the advisor of this thesis. In \ref{Fig-Dot-Spectrum} we observe the evolution of the spectrum of the Hamiltonian according to the number of iterations of the code. As we can appreciate, this evolution converges for even and odd number around $N=30$.  \\
 
 
 
 \subsection{Density Matrix Renormalization Group (DM-NRG)}
-To compute  dynamical quantities \cite{costi_transport_1994} like the density of states  is the DMNRG \cite{hofstetter_generalized_2000}. 
-\Jesus{Sill planning this section }
+To compute  dynamical quantities \cite{costi_transport_1994} like the density of states we used the density matrix renormalization group approach DMNRG \cite{hofstetter_generalized_2000}. 
 
 
 
 
-\subsection{NRG results in a Double Quantum Dot \label{sec: NRG-DQD}}
+
+
+
+\subsection{NRG for a double quantum dot \label{sec: NRG-DQD}}
 
 \begin{figure}[bt]
      \centering
@@ -732,20 +745,22 @@ To compute  dynamical quantities \cite{costi_transport_1994} like the density of
 \end{figure}
 
 
-We ran the NRG code for the DQD with the following set of parameters:
+The initial Hamiltonian for the double quantum dot model has initial dimension of $16$. While the symmetries in this Hamiltonian are exactly the same than the ones in the single QD case that we presented in the last section, we decided to use another model to solve this system. This system was simulated using the code for a DQD-Majorana coupling presented on \ref{chap:Results} by setting the Majorana couplings to $t_1=t_2= 0$. The viability of these result and its correspondence with previous works is an important test that supports the conclusions of our code. 
+
+We ran the NRG code for the DQD with the coulomb term fixed at 
+\begin{equation}
+ U_1 = U_2 = 17.7305
+\end{equation}
+\noindent and are set up  to emulate the same configurations in \ref{fig:GreenDQD}. 
 
 
+%$$ -\ed{1,2} = \frac{U_{1,2}}{2}  = 8.62\Gamma_1$$
 
+The single QD attached to a metallic lead is a particular case of the double quantum dot model, where the second dot is not attached $\Gamma_2 = t_{dots}=0$.  \ref{fig:NRG-DQD} shows the NRG results for this case. The three plots show the external Coulomb peaks at $e_1 = \frac{U}{2} \sim 8.62\Gamma_1$, which represent the DOS of the energy levels. In addition  Figure \ref{fig:NRG-1D} shows a central peak at the Fermi energy. \textbf{This is the Kondo Peak}. 
 
-$$  U_{1,2} = -2\ed{1,2} = 8.62\Gamma_1$$
+In Figure \ref{fig:NRGDQD-G2} we observe the DOS when the two QDs are symmetrically attached.  At low energies, the inset shows the appearance of two satellite peaks representing the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction. This is an anti-ferromagnetic coupling that appears in the interacting case due to the strong correlations between both dots. A detailed explanation of the appearance of these new states is included in section \ref{sec:DoublePeak}.  
 
-\ref{fig:NRG-DQD} shows the NRG results for the density of states of QD1 in different states. The three plots show the external Coulomb peaks at $e_1 = \frac{U}{2} \sim 8.62\Gamma_1$, which represent the DOS of the energy levels. In addition  Figure \ref{fig:NRG-1D} shows a central peak at the fermi energy. \textbf{This is the Kondo Peak}. 
-
-Figure \ref{fig:NRGDQD-G2} shows the DOS in the case where the two QDs are symmetrically attached.  At low energies, the inset shows the appearance of two satellite peaks representing the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction. This interaction is explained for this particular case in section \ref{sec:DoublePeak}.  
-
-Again, the most interesting case is in Figure \ref{fig:NRGDQD-tdots}. The additional interference with the second dot completely destroys the Knondo effect. This effect is observed at energies closed to $t_{dots}=0.689\Gamma$ and  will take its relevance in the last chapter. 
-
-
+The most interesting case is in Figure \ref{fig:NRGDQD-tdots}. As we already observed in the non-interacting case, the interference with the second dot completely destroys the Kondo peak. This effect is observed at low energies closed to $t_{dots}=0.689\Gamma$. The paper describing this result was a central part of one of my advisor's project. This result encouraged me to formulate the following question. What happens if we attached a Majorana mode to one of these dots?. Would it e destroyed by interference or it will survive to it. Answering this question is one of the mean objectives of chapter \ref{chap:Results}. 
 
 
 

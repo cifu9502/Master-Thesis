@@ -3,6 +3,7 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Preliminars.aux
 A level-1 auxiliary file: Methods.aux
+A level-1 auxiliary file: NResults.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
 Database file #1: Majorana-QD.bib
@@ -28,45 +29,45 @@ Warning--empty year in deng_majorana_2016
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
-You've used 22 entries,
+You've used 24 entries,
             2481 wiz_defined-function locations,
-            746 strings with 9515 characters,
-and the built_in function-call counts, 9014 in all, are:
-= -- 837
-> -- 370
-< -- 14
-+ -- 152
-- -- 108
-* -- 781
-:= -- 1456
-add.period$ -- 113
-call.type$ -- 22
-change.case$ -- 43
-chr.to.int$ -- 22
-cite$ -- 37
-duplicate$ -- 427
-empty$ -- 802
-format.name$ -- 134
-if$ -- 1888
+            764 strings with 10292 characters,
+and the built_in function-call counts, 9992 in all, are:
+= -- 904
+> -- 460
+< -- 15
++ -- 184
+- -- 136
+* -- 879
+:= -- 1633
+add.period$ -- 123
+call.type$ -- 24
+change.case$ -- 47
+chr.to.int$ -- 24
+cite$ -- 39
+duplicate$ -- 464
+empty$ -- 867
+format.name$ -- 166
+if$ -- 2081
 int.to.chr$ -- 1
-int.to.str$ -- 23
-missing$ -- 23
-newline$ -- 165
-num.names$ -- 66
-pop$ -- 144
+int.to.str$ -- 25
+missing$ -- 25
+newline$ -- 179
+num.names$ -- 72
+pop$ -- 156
 preamble$ -- 1
-purify$ -- 22
+purify$ -- 24
 quote$ -- 0
-skip$ -- 228
+skip$ -- 248
 stack$ -- 0
-substring$ -- 456
-swap$ -- 63
+substring$ -- 478
+swap$ -- 69
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 148
+type$ -- 162
 warning$ -- 15
-while$ -- 73
+while$ -- 78
 width$ -- 0
-write$ -- 378
+write$ -- 411
 (There was 1 error message)
