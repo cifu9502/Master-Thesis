@@ -15,11 +15,11 @@
    viewBox="0 0 744.09448819 1052.3622047"
    id="svg4907"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.4 (unknown)"
    sodipodi:docname="movements.svg"
-   inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/DQD-M/3Model.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90">
+   inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -27,16 +27,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="1333.6113"
-     inkscape:cy="324.10457"
+     inkscape:zoom="1.979899"
+     inkscape:cx="879.14827"
+     inkscape:cy="-704.47944"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1301"
-     inkscape:window-height="744"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1299"
+     inkscape:window-height="713"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
      inkscape:window-maximized="1" />
   <defs
      id="defs4909">
@@ -2112,6 +2112,50 @@
          transform="scale(0.8,0.8)"
          inkscape:connector-curvature="0" />
     </marker>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6714"
+       id="radialGradient6730-5-3-3"
+       cx="61.999977"
+       cy="276.64792"
+       fx="61.999977"
+       fy="276.64792"
+       r="17.084238"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.44595578,0,0,0.44595578,599.1506,1531.5864)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6732"
+       id="radialGradient6740-5-5-5"
+       cx="294.81854"
+       cy="274.9458"
+       fx="294.81854"
+       fy="274.9458"
+       r="29.510553"
+       gradientTransform="matrix(0.44595578,0,0,1.4641507,613.61489,1252.0129)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.73459648,0,0,0.46860653,499.13123,1306.4111)"
+       r="45.371532"
+       fy="663.79077"
+       fx="248.57144"
+       cy="663.79077"
+       cx="248.57144"
+       id="radialGradient4613-6-9-02-9-6"
+       xlink:href="#linearGradient4605"
+       inkscape:collect="always" />
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.73459648,0,0,0.46860653,499.13123,1343.6522)"
+       r="45.371532"
+       fy="736.12799"
+       fx="249.28572"
+       cy="736.12799"
+       cx="249.28572"
+       id="radialGradient4615-6-9-8-7-1"
+       xlink:href="#linearGradient4605"
+       inkscape:collect="always" />
   </defs>
   <metadata
      id="metadata4912">
@@ -2156,7 +2200,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8"
-       d="m 79.277869,11.648291 0,0"
+       d="m 79.277869,11.648291 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.83687842px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2165,7 +2209,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7"
-       d="m 79.277869,11.648291 0,0"
+       d="m 79.277869,11.648291 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.83687842px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2257,7 +2301,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-2"
-       d="m -557.81793,108.56407 0,0"
+       d="m -557.81793,108.56407 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3583647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2266,7 +2310,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-2"
-       d="m -557.81793,108.56407 0,0"
+       d="m -557.81793,108.56407 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.3583647px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2488,7 +2532,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5"
-       d="m 327.40919,1078.8322 0,0"
+       d="m 327.40919,1078.8322 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.30554986px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2497,7 +2541,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6"
-       d="m 327.40919,1078.8322 0,0"
+       d="m 327.40919,1078.8322 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.30554986px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2549,7 +2593,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-2-5-4"
-       d="m -296.76568,719.75299 0,0"
+       d="m -296.76568,719.75299 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.22422448px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2558,7 +2602,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-6-9-4"
-       d="m -296.76568,719.75299 0,0"
+       d="m -296.76568,719.75299 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.22422448px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.46171761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -2607,7 +2651,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-7"
-       d="m -295.30138,904.05213 0,0"
+       d="m -295.30138,904.05213 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.56615776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2616,7 +2660,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-65"
-       d="m -295.30138,904.05213 0,0"
+       d="m -295.30138,904.05213 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.56615776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2710,7 +2754,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-0"
-       d="m 335.67641,1331.5887 0,0"
+       d="m 335.67641,1331.5887 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.17287636px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -2719,7 +2763,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-6"
-       d="m 335.67641,1331.5887 0,0"
+       d="m 335.67641,1331.5887 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.17287636px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -3016,7 +3060,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-7-0"
-       d="m 346.69334,711.91184 0,0"
+       d="m 346.69334,711.91184 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.19022596px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -3025,7 +3069,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-65-6"
-       d="m 346.69334,711.91184 0,0"
+       d="m 346.69334,711.91184 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.19022596px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -3337,7 +3381,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-0-2"
-       d="m -298.63268,762.84982 0,0"
+       d="m -298.63268,762.84982 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4552598px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -3346,7 +3390,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-6-6"
-       d="m -298.63268,762.84982 0,0"
+       d="m -298.63268,762.84982 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.4552598px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -3593,7 +3637,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-7-4"
-       d="m 327.80148,516.32329 0,0"
+       d="m 327.80148,516.32329 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.27772689px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -3602,7 +3646,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-65-7"
-       d="m 327.80148,516.32329 0,0"
+       d="m 327.80148,516.32329 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.27772689px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -4132,7 +4176,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-7-4-1"
-       d="m -248.23138,391.41616 0,0"
+       d="m -248.23138,391.41616 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.54947519px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -4141,7 +4185,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-65-7-2"
-       d="m -248.23138,391.41616 0,0"
+       d="m -248.23138,391.41616 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.54947519px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -4330,7 +4374,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-7-0-4"
-       d="m -172.53763,48.358558 0,0"
+       d="m -172.53763,48.358558 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.30674446px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -4339,7 +4383,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-65-6-1"
-       d="m -172.53763,48.358558 0,0"
+       d="m -172.53763,48.358558 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.30674446px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -4679,7 +4723,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-6"
-       d="m -482.6017,1155.2454 0,0"
+       d="m -482.6017,1155.2454 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.6914252px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -4688,7 +4732,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-8"
-       d="m -482.6017,1155.2454 0,0"
+       d="m -482.6017,1155.2454 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.6914252px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -4877,7 +4921,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-0-6"
-       d="m -284.87174,1457.4898 0,0"
+       d="m -284.87174,1457.4898 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.57961297px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -4886,7 +4930,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-6-9"
-       d="m -284.87174,1457.4898 0,0"
+       d="m -284.87174,1457.4898 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.57961297px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -5244,7 +5288,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-0"
-       d="m -298.29227,669.36245 0,0"
+       d="m -298.29227,669.36245 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.56615776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -5253,7 +5297,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-9"
-       d="m -298.29227,669.36245 0,0"
+       d="m -298.29227,669.36245 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.56615776px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -5638,7 +5682,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-2-8"
-       d="m 81.517123,156.01003 0,0"
+       d="m 81.517123,156.01003 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.78698426px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -5647,7 +5691,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-2-7"
-       d="m 81.517123,156.01003 0,0"
+       d="m 81.517123,156.01003 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.78698426px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -6033,7 +6077,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-5-7-9"
-       d="m 1440.5576,1766.5097 0,0"
+       d="m 1440.5576,1766.5097 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.77060533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -6042,7 +6086,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-6-65-73"
-       d="m 1440.5576,1766.5097 0,0"
+       d="m 1440.5576,1766.5097 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.77060533px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -6203,7 +6247,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4518-6-8-0-4"
-       d="m 1026.1876,1754.8488 0,0"
+       d="m 1026.1876,1754.8488 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73459643px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -6212,7 +6256,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4520-5-7-9-4"
-       d="m 1026.1876,1754.8488 0,0"
+       d="m 1026.1876,1754.8488 v 0"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73459643px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifucito/Master-Thesis/IMAGES/New-Models.png"
@@ -8392,5 +8436,110 @@
            d="m 538.65,410.04 5.28,5.13 c 7.76,6.87 10.76,9.56 10.76,14.54 0,5.69 -4.48,9.68 -10.56,9.68 -5.64,0 -9.33,-4.6 -9.33,-9.03 0,-2.79 2.5,-2.79 2.64,-2.79 0.86,0 2.59,0.6 2.59,2.64 0,1.3 -0.88,2.6 -2.63,2.6 -0.4,0 -0.5,0 -0.65,-0.05 1.15,3.24 3.83,5.08 6.72,5.08 4.53,0 6.69,-4.05 6.69,-8.13 0,-3.98 -2.5,-7.92 -5.23,-11.01 l -9.57,-10.66 c -0.56,-0.54 -0.56,-0.64 -0.56,-1.84 l 18.48,0 1.41,8.67 -1.25,0 c -0.25,-1.5 -0.59,-3.69 -1.09,-4.44 -0.36,-0.39 -3.64,-0.39 -4.74,-0.39 z"
            inkscape:connector-curvature="0"
            style="fill:#000000;stroke-width:0" /></g>    </g>
+    <ellipse
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-ydpi="150"
+       inkscape:export-xdpi="150"
+       ry="19.608557"
+       rx="31.676924"
+       cy="1688.6064"
+       cx="682.25562"
+       id="path4299-3-3-3-0-4-2"
+       style="opacity:0.95999995;fill:url(#radialGradient4615-6-9-8-7-1);fill-opacity:1;stroke:#010301;stroke-width:3.30568457;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <ellipse
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-ydpi="150"
+       inkscape:export-xdpi="150"
+       ry="19.608557"
+       rx="31.676924"
+       cy="1617.4679"
+       cx="681.73096"
+       id="path4299-3-6-1-6-4-7-7"
+       style="opacity:0.95999995;fill:url(#radialGradient4613-6-9-02-9-6);fill-opacity:1;stroke:#010301;stroke-width:3.30568457;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-ydpi="150"
+       inkscape:export-xdpi="150"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4518-6-8-0-4-0"
+       d="m 667.03894,1679.656 v 0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73459649px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-ydpi="150"
+       inkscape:export-xdpi="150"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4520-5-7-9-4-9"
+       d="m 667.03894,1679.656 v 0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73459649px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-ydpi="150"
+       inkscape:export-xdpi="150"
+       d="m 756.59851,1696.13 a 23.003689,41.555058 0 0 1 -19.92178,-20.7775 23.003689,41.555058 0 0 1 0,-41.5551 23.003689,41.555058 0 0 1 19.92178,-20.7775 l 0,41.5551 z"
+       sodipodi:end="4.712389"
+       sodipodi:start="1.5707963"
+       sodipodi:ry="41.555058"
+       sodipodi:rx="23.003689"
+       sodipodi:cy="1654.575"
+       sodipodi:cx="756.59851"
+       sodipodi:type="arc"
+       id="path4549-74-0-1-3-3"
+       style="opacity:0.95999995;fill:url(#radialGradient6740-5-5-5);fill-opacity:1;stroke:#0d1c35;stroke-width:3.30568457;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-ydpi="150"
+       inkscape:export-xdpi="150"
+       inkscape:connection-end="#path4549-74-0-1-3-3"
+       inkscape:connection-start="#path4299-3-6-1-6-4-7-7"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4619-5-2-96-0-6"
+       d="m 704.19792,1631.2906 29.57022,18.193"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.35070872;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-ydpi="150"
+       inkscape:export-xdpi="150"
+       inkscape:connection-end="#path4549-74-0-1-3-3"
+       inkscape:connection-start="#path4299-3-3-3-0-4-2"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4623-2-3-2-7-0"
+       d="m 706.66926,1676.1126 27.30979,-13.976"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.35070872;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-ydpi="150"
+       inkscape:export-xdpi="150"
+       cy="1654.9589"
+       cx="626.7998"
+       id="path4340-20-6-5-54-8-6"
+       style="opacity:0.95999995;fill:url(#radialGradient6730-5-3-3);fill-opacity:1;stroke:#b40e21;stroke-width:2.64454722;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       r="6.2965412" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#661b02;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.0000001, 3.0000001;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 632.59504,1657.4207 27.42355,17.2214"
+       id="path4609-6-8-2"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path4340-20-6-5-54-8-6"
+       inkscape:connection-end="#path4299-3-3-3-0-4-2"
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#661b02;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.0000001, 3.0000001;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 632.48999,1652.2629 28.36824,-20.0457"
+       id="path4611-0-4-6"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path4340-20-6-5-54-8-6"
+       inkscape:connection-end="#path4299-3-6-1-6-4-7-7"
+       inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
   </g>
 </svg>
