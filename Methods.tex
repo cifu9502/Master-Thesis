@@ -304,13 +304,12 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
 %-------------------------------------------------------
 \begin{figure}[hbt]
 \centering
-\includegraphics[scale=0.5]{IMAGES/DQD/NRG-Final.png}\caption{\label{fig:Discretization}.
+\includegraphics[scale=0.45]{IMAGES/DQD/NRG-Final.png}\caption{\label{fig:Discretization}.
 Energy interval discretization. \protect\Source{ By the Author  } }
 \end{figure}
 %--------------------------------------------------
 
-
-The divergent logarithmic term in the resistivity predicted by Kondo is a clear signal of interesting low energy physics occurring at quantum impurity systems. The real meaning of this logarithm is that important contributions at low energy scales caused by the strong quantum correlations in the system are being neglected by perturbation theory. This problem can be solved by introducing ideas from renormalization group theory. A renormalization approach is more adequate for this type of problem since it assigns an appropriate effective Hamiltonian to each scale of temperature. This provides a more accurate representation of the increasing density of correlated states appearing close the Fermi energy. 
+ The real meaning of divergent logarithmic term in the resistivity predicted by Kondo is that important contributions at low-energy scales caused by the strong quantum correlations in the system are being neglected by perturbation theory. This problem can be solved by introducing ideas from renormalization group theory. A renormalization approach is more adequate for this type of problem since it assigns an appropriate effective Hamiltonian to each scale of temperature. This provides a more accurate representation of the increasing density of correlated states appearing close the Fermi energy. 
 
 In renormalization group theory, the Hamiltonian transformations are performed by an operator $T$ that represents an endomorphism in the space of operators. $T$ generates the semigroup  $\{ 1, T , T^2 , \ldots \}$, that defines a complete set of transformations   % transformation of the form
 $$ T[H_0] = H_1, \  T[H_1] = H_2, \ldots , T[H_N] = H_{N+1} , \ldots$$
@@ -362,7 +361,7 @@ Note that in the limit $\xrightarrow{N\rightarrow\infty}$ we should recover the 
 To this point the expression \prettyref{eq:chain-Hamiltonian} and the derived limit of $H_N$ to the Anderson Hamiltonian are exact. The first approximations arrive in the following step which include an iterative diagonalization of the Hamiltonian.
  
  \subsection{Iterative Diagonalization}
- 
+
 \begin{figure}[bt]
 \centering
 \includegraphics[scale=0.5]{IMAGES/DQD/cutting.png}
@@ -377,10 +376,27 @@ To this point the expression \prettyref{eq:chain-Hamiltonian} and the derived li
  	\item Adding the next step of the chain to form $H_{N+1}$ and diagonalizing the new Hamiltonian such that $H_{N+1} = U_{N+1}^\dagger D_{N+1} U_{N+1}$ . After this step, each of the eigenstates of $H_{N}$ will spit in up to $4$ new energy states (probably degenerate) determined by the new coupling with the  $N+1$ site basis ${\vert 0 \rangle, \vert \up \rangle, \vert \dw \rangle, \vert \up \dw \rangle}$.  \ref{fig:IterativeDiagonalization} (b)$\rightarrow$(c).
  	\item Shifting the spectrum by a certain dephase factor such that the $0$ of energy is always the ground state.  \ref{fig:IterativeDiagonalization} (c)$\rightarrow$(d).
  	\item Numerical cutting: If the number of states in the system exceeds a definite number (1000 in this thesis) the exceeding higher energy states are neglected.\footnote{ This step must be performed carefully to preserve the symmetries of the system. If two states are entangled and one of them is eliminated and the other is not, the program could lead to misleading results. Further discussions to solve this problem are presented in the symmetry subsection.  }. \ref{fig:IterativeDiagonalization} (c)$\rightarrow$(d).
- 	\item Rotating operators $f_{N,\sigma}$  by $ U_N f_{N,\sigma} U_N^\dagger$ to start the next opperation
+ 	\item Rotating operators $f_{N,\sigma}$  by $ U_N f_{N,\sigma} U_N^\dagger$ to start the next operation.
 \end{enumerate}
 
+\subsection{Symmetries \label{subsec:Syms}}
 
+The symmetries of the initial Hamiltonian take a very important role in this iterative diagonalization. Lets suppose that the initial Hamiltonian $H_d$ has certain symmetries classified by the quantum number $S$ . Then $H_d$ can be written can be represented in block Hamiltonians over a basis of the form $\vert S, i\rangle$. A diagnolization process of an square matrix with $L$ rows usually has an square order proportionate to the number of entries $\mathcal{O}\sim L^2$. However, if the matrix is organize in blocks of length $N_j$  such that $\sum_j L_j = L$, then the order of diagonalization will be around $\sum_j L_j^2  $ which is in general much smaller than $(\sum_j L_j)^2 L^2$. Therefor the block diagonalization provides important numerical advantages to the algorithm. 
+
+To keep this speed-up we must preserve this symmetry structure for the rest of the algorithm. For it, we first need to verify that the picked symmetry also commutes with the hopping terms in the chain Hamiltonian. If so, for each step  $N$ of the NRG algorithm we will have that the $H_N$ Hamiltonian can be written in a block diagonal form with basis 
+$\vert S_N, i_N\rangle$. Then it is necessary to define transition rules from the quantum numbers $S_N$ to $S_{N+1}$. By doing this, we assure that the block architecture is transmitted through the entire algorithm, hence reducing the computational time significantly at each step of the NRG chain. 
+
+
+In the following subsection we will give examples of this symmetry propagation in the example a quantum dot attached to a metallic lead. 
+
+
+
+
+% This block structure simplifies the diagonalization process since the algorithm can diagonalize each block one by one.  This is numerically favorable since the diagonalization of a quadratic matrix  
+
+% takes a quadratic order $n^2$ in a fully entry matrix. Keeping the blocks during the entire NRG 
+
+% Since a numerical diagonalization algorithm have quadratic order $n^2$, it is numerically favorable
 
 %In \ref{sec:Kondo} we observed that the Kondo resistivity had a logarithmic contribution which led to a huge trouble when describing energies bellow the Kondo temperature. This logarithmic term has a  especial meaning which is that the lower energy scales are also relevant. Thus, to solve the Kondo problem it was necessary to create a theory that could efficiently integrate the contributions from all energy scales. In the 1970's G.Wilson created a numerical method that mixed ideas from scalability and renormalization group. This method proofed to be the most efficient form to understand the Kondo effect as well as other impurity problems described by the Anderson Model. 
 
@@ -388,18 +404,20 @@ To this point the expression \prettyref{eq:chain-Hamiltonian} and the derived li
  
 %In the 1970's G.Wilson created a numerical method to solve the Anderson model . This method receives the name of Numerical Renormalization Group (NRG) \citep{bulla_numerical_2008,wilson_renormalization_1975,krishna-murthy_renormalization-group_1980}.
 
-It consists of three basic steps :
-\begin{enumerate}
-\item To perform a numerical discretization of the energy spectrum in logarithmic intervals. 
-\item To map the discretized model onto a semi-infinity chain Hamiltonian. 
-\item  To diagonalize iteratively the chain hamiltonian . 
-\end{enumerate}
 
-The final result will be the spectrum of the Hamiltonian. Other important properties of the material such as density of states, conductivity, specific heat, susceptibility can also be computed. On this project we are mainly interested in the Density of States (DOS). The method used to compute the DOS is the Density Matrix numerical renormalization Group (DM-NRG). A complete description of this algorithm will be given in the following sections.  \\
 
-For now, we proceed to describe how the NRG is applied to solve the Anderson model in a QD:\\
+% It consists of three basic steps :
+% \begin{enumerate}
+% \item To perform a numerical discretization of the energy spectrum in logarithmic intervals. 
+% \item To map the discretized model onto a semi-infinity chain Hamiltonian. 
+% \item  To diagonalize iteratively the chain hamiltonian . 
+% \end{enumerate}
 
-\Jesus{I still need to do a long revision to this section. Probably I will send most of the computations to the abstract and leave a summary of NRG and its advantages in the main text.}
+% The final result will be the spectrum of the Hamiltonian. Other important properties of the material such as density of states, conductivity, specific heat, susceptibility can also be computed. On this project we are mainly interested in the Density of States (DOS). The method used to compute the DOS is the Density Matrix numerical renormalization Group (DM-NRG). A complete description of this algorithm will be given in the following sections.  \\
+
+% For now, we proceed to describe how the NRG is applied to solve the Anderson model in a QD:\\
+
+% \Jesus{I still need to do a long revision to this section. Probably I will send most of the computations to the abstract and leave a summary of NRG and its advantages in the main text.}
 
 
 
@@ -419,11 +437,11 @@ For now, we proceed to describe how the NRG is applied to solve the Anderson mod
 
 
 
-\subsubsection{Iterative Diagonalization in a Single QD process}
+\subsubsection{Iterative Diagonalization in a Single QD Hamiltonian}
 
 Now that we have an iterative representation of the Anderson Model
 Hamiltonian \prettyref{eq:chain-Hamiltonian}, lets take a look to
-how the NRG code would work for a QD. We start with the dot hamiltonian.
+how the NRG code would work for a QD. We start with the dot Hamiltonian.
 (Since the $D$ term is always present as a normalizing factor, we
 are going to avoid this term in future computations and suppose that
 we are working with unit-less variables $\epsilon_{d},\ U$ and $\Gamma':=\sqrt{\frac{2\Gamma}{\pi D}}$
@@ -459,21 +477,31 @@ which are also given by $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\
 Therefore the total Hilbert space for $H_{0}$ is given by a base
 of the form 
 \[
-\vert s_{1}\rangle\vert s_{2}\rangle:=\vert s_{1}\rangle\otimes\vert s_{2}\rangle\mbox{ with }\vert s_{1,2}\rangle\in\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} .
+\vert s_{1}\rangle\vert s_{2}\rangle:=\vert s_{1}\rangle\otimes\vert s_{2}\rangle\mbox{ with }\vert s_{i}\rangle\in\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} .
 \]
 
 
-We obtain an space of dimension $4\times4=16.$ Now before adventuring
+We obtain an space of dimension $4\times4=16.$ Now, before adventuring
 to write the Hamiltonian for $H_{0}$ as a $16\times16$-matrix note
-that $H_{0}$ preserves particle number $N$ and the total spin $S$.
- Therefore we can use  $N$ and $S$ as quantum numbers and generate the Hamiltonian $H_{0}$ in blocks.
-We will observe that the terms in the diagonal will correspond to
-the eigenvalues of $H_{-1}$ for the first space. The non-diagonal
-terms are the result of the hopping interactions with the first site. 
+that $H_{-1}$ preserves particle number $\mathcal{N}$ and the total spin $S$.
+We can associate each state to one of these symmetries as 
+
+\begin{align}
+\uparrow\downarrow\rangle\longrightarrow\vert \mathcal{N}=2,S=0\rangle\ ,& \ \vert0\rangle\longrightarrow\vert \mathcal{N}=0,S=0\rangle \\ 
+\uparrow\rangle\longrightarrow\vert \mathcal{N}=1,S=\frac{1}{2}\rangle\ ,& \ \vert 0\rangle\longrightarrow\vert \mathcal{N}=1,S=\frac{-1}{2}\rangle.
+\end{align}
+
+The propagation rule for the symmetry is defined with the following identity 
+\begin{equation}
+  \vert N_{1},S_{1}\rangle\otimes\vert N_{2},S_{2}\rangle\subset\vert N_{1}+N_{2},S_{1}+S_{2}\rangle \label{eq:PropRuleQD}
+\end{equation} 
+  
+
+ Then we can use  $\mathcal{N}$ and $S$ as quantum numbers and generate the Hamiltonian $H_{0}$ in blocks. We will observe that the terms in the diagonal will correspond to the eigenvalues of $H_{-1}$ for the first space. The non-diagonal terms are the result of the hopping interactions with the first site. 
 
 \begin{multicols}{2}
 
-$H_{N=0,S=0}:$
+$H_{\mathcal{N}=0,S=0}:$
 \[
 \begin{array}{c}
 \vert0\rangle\vert0\rangle\rightarrow\end{array}\begin{array}{c}
@@ -481,7 +509,7 @@ $H_{N=0,S=0}:$
 \]
 
 
-$H_{N=4,S=0}:$
+$H_{\mathcal{N}=4,S=0}:$
 \[
 \begin{array}{c}
 \vert\uparrow\!\downarrow\rangle\vert\uparrow\!\downarrow\rangle\rightarrow\end{array}\begin{array}{c}
@@ -493,7 +521,7 @@ $H_{N=4,S=0}:$
 
 \begin{multicols}{2}
 
-$H_{N=1,S=\frac{1}{2}}:$
+$H_{\mathcal{N}=1,S=\frac{1}{2}}:$
 \[
 \begin{array}{c}
 \vert\uparrow\rangle\vert0\rangle\rightarrow\\
@@ -505,7 +533,7 @@ $H_{N=1,S=\frac{1}{2}}:$
 \]
 
 
-$H_{N=1,S=\frac{-1}{2}}:$
+$H_{\mathcal{N}=1,S=\frac{-1}{2}}:$
 \[
 \begin{array}{c}
 \vert\uparrow\rangle\vert0\rangle\rightarrow\\
@@ -521,7 +549,7 @@ $H_{N=1,S=\frac{-1}{2}}:$
 
 \begin{multicols}{2}
 
-$H_{N=2,S=-1}:$
+$H_{\mathcal{N}=2,S=-1}:$
 \[
 \begin{array}{c}
 \vert\downarrow\rangle\vert\downarrow\rangle\rightarrow\end{array}\begin{array}{c}
@@ -529,7 +557,7 @@ $H_{N=2,S=-1}:$
 \]
 
 
-$H_{N=2,S=1}:$
+$H_{\mathcal{N}=2,S=1}:$
 \[
 \begin{array}{c}
 \vert\uparrow\rangle\vert\uparrow\rangle\rightarrow\end{array}\begin{array}{c}
@@ -538,12 +566,9 @@ $H_{N=2,S=1}:$
 
 
 \end{multicols}
-\begin{figure}[t]
-\subfloat[$N$ takes only even values]{\includegraphics[scale=0.5]{IMAGES/even.png}}\subfloat[$N$ run only through odd values]{\includegraphics[scale=0.5]{IMAGES/odd.png}}\caption{\label{Fig-Dot-Spectrum} Evolution of the QD-spectrum vs number of
-iterations of the code for $U=0.5,\ e_{d}=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
-\end{figure}
 
-$H_{N=2,S=0}:$
+
+$H_{\mathcal{N}=2,S=0}:$
 \[
 \begin{array}{c}
 \vert\uparrow\!\downarrow\rangle\vert0\rangle\rightarrow\\
@@ -561,7 +586,7 @@ $H_{N=2,S=0}:$
 
 \begin{multicols}{2}
 
-$H_{N=3,S=\frac{1}{2}}:$
+$H_{\mathcal{N}=3,S=\frac{1}{2}}:$
 \[
 \begin{array}{c}
 \vert\uparrow\!\downarrow\rangle\vert\uparrow\rangle\rightarrow\\
@@ -573,7 +598,7 @@ $H_{N=3,S=\frac{1}{2}}:$
 \]
 
 
-$H_{N=3,S=\frac{-1}{2}}:$
+$H_{\mathcal{N}=3,S=\frac{-1}{2}}:$
 \[
 \begin{array}{c}
 \vert\uparrow\!\downarrow\rangle\vert\downarrow\rangle\rightarrow\\
@@ -587,26 +612,33 @@ $H_{N=3,S=\frac{-1}{2}}:$
 
 \end{multicols}
 
-Finally, we proceed to diagonalize $H_{0}$ by blocks $H_{N,S}$.
-The resulting eigenvectors will be characterized by both quantum numbers
-so that we can write them in the form $\vert N,S,i\rangle$ with $i$
-takes as many values as the degeneracy of its block. For higher values of $N$,
-the general formula for equation \prettyref{eq:H0fromH-1} looks as 
-\begin{equation}
-H_{N+1}=\Lambda^{\frac{1}{2}}\left[H_{N}+\frac{1}{2}\left(1+\Lambda^{-1}\right)\xi_{N}\left(f_{N\sigma}^{\dagger}f_{N+1,\sigma}+f_{N+1\sigma}^{\dagger}f_{N\sigma}\right)\right].\label{eq:NRG-Iteration Hamiltonians}
-\end{equation}
+\begin{figure}[t]
+\subfloat[$N$ takes only even values]{\includegraphics[scale=0.5]{IMAGES/even.png}}\subfloat[$N$ run only through odd values]{\includegraphics[scale=0.5]{IMAGES/odd.png}}\caption{\label{Fig-Dot-Spectrum} Evolution of the QD-spectrum vs number of
+iterations of the code for $U=0.5,\ e_{d}=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
+\end{figure}
 
+The next step would be to diagonalize $H_{0}$ by blocks $H_{\mathcal{N},S}$ and then including the next place in the chain. The following Hamiltonians are generated in the same way from equation \ref{eq:NRG-Renormalization}. The symmetries of the new states can be obtained from the propagation rule \ref{eq:PropRuleQD}. When the number of states surpasses the 1000 states, the code will automatically cutoff the higher energy states. However it is important that a Block is not divided in this cutting, since it could break the preserved symmetry. 
 
-We now proceed by induction supposing that for each $N$ the Hamiltonian $H_{N}$ is already diagonalized and the eigenvectors are organized in states with labels $\vert N,S,i\rangle.$ The next step will be to add the $4$-Hilbert space corresponding to $f_{N+1,\sigma}$ organized the eigenvectors according to the quantum numbers $\vert N',S',i\rangle$ and proceed to diagonalize by blocks the new Hamiltonian. Apart of it, the code must have a cutoff to the number of states. \\
+Finally, the spectrum for $\Lambda = 2.5$ takes the 'spaghetti' form in \ref{Fig-Dot-Spectrum}. Before $N=30$ low-energy contributions generate significant changes in the energy levels.  The stable strum after the step $N=30$ shows that the code has converged at this stage. As we previously declared, it is not $T$ but $T^2$ the transformation that has fixed points, which explains why it was necessary to plot the even and the odd spectrum separately.
 
-This NRG code was previously implemented in C++ language by the advisor of this thesis. In \ref{Fig-Dot-Spectrum} we observe the evolution of the spectrum of the Hamiltonian according to the number of iterations of the code. As we can appreciate, this evolution converges for even and odd number around $N=30$.  \\
+% The resulting eigenvectors will be characterized by both quantum numbers
+% so that we can write them in the form $\vert N,S,i\rangle$ with $i$
+% taking as many values as the degeneracy of its block. For higher values of $N$,
 
+% We now proceed by induction supposing that for each $N$ the Hamiltonian $H_{N}$ is already diagonalized and the eigenvectors are organized in states with labels $\vert N,S,i\rangle.$ The next step will be to add the $4$-Hilbert space corresponding to $f_{N+1,\sigma}$ organized the eigenvectors according to the quantum numbers $\vert N',S',i\rangle$ and proceed to diagonalize by blocks the new Hamiltonian. Apart of it, the code must have a cutoff to the number of states. \\
 
 
 \subsection{Density Matrix Renormalization Group (DM-NRG)}
 To compute  dynamical quantities \cite{costi_transport_1994} like the density of states we used the density matrix renormalization group approach DMNRG \cite{hofstetter_generalized_2000}. 
 
 
+
+\subsection{Details of the Code}
+
+
+The NRG code implemented in C++ by my advisor Luis Gregorio Dias takes in account all of the details described in this chapter. 
+
+ This NRG code was previously implemented in C++ language by the advisor of this thesis. In \ref{Fig-Dot-Spectrum} we observe the evolution of the spectrum of the Hamiltonian according to the number of iterations of the code. As we can appreciate, this evolution converges for even and odd number around $N=30$.  \\{}
 
 
 
