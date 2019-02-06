@@ -1,9 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: Preliminars.aux
 A level-1 auxiliary file: Methods.aux
-A level-1 auxiliary file: NResults.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
 Database file #1: Majorana-QD.bib
@@ -29,45 +27,45 @@ Warning--empty year in deng_majorana_2016
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
-You've used 24 entries,
+You've used 18 entries,
             2481 wiz_defined-function locations,
-            764 strings with 10292 characters,
-and the built_in function-call counts, 9992 in all, are:
-= -- 904
-> -- 460
-< -- 15
-+ -- 184
-- -- 136
-* -- 879
-:= -- 1633
-add.period$ -- 123
-call.type$ -- 24
-change.case$ -- 47
-chr.to.int$ -- 24
-cite$ -- 39
-duplicate$ -- 464
-empty$ -- 867
-format.name$ -- 166
-if$ -- 2081
+            712 strings with 8716 characters,
+and the built_in function-call counts, 7513 in all, are:
+= -- 704
+> -- 296
+< -- 13
++ -- 122
+- -- 86
+* -- 655
+:= -- 1201
+add.period$ -- 92
+call.type$ -- 18
+change.case$ -- 36
+chr.to.int$ -- 18
+cite$ -- 33
+duplicate$ -- 351
+empty$ -- 670
+format.name$ -- 110
+if$ -- 1573
 int.to.chr$ -- 1
-int.to.str$ -- 25
-missing$ -- 25
-newline$ -- 179
-num.names$ -- 72
-pop$ -- 156
+int.to.str$ -- 19
+missing$ -- 17
+newline$ -- 136
+num.names$ -- 54
+pop$ -- 117
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 18
 quote$ -- 0
-skip$ -- 248
+skip$ -- 193
 stack$ -- 0
-substring$ -- 478
-swap$ -- 69
+substring$ -- 414
+swap$ -- 52
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
+type$ -- 126
 warning$ -- 15
-while$ -- 78
+while$ -- 62
 width$ -- 0
-write$ -- 411
+write$ -- 308
 (There was 1 error message)

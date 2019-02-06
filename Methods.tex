@@ -1,8 +1,12 @@
 \chapter{Theory and Methods \label{chap: Methods}}
 
+In this chapter we describe the two methods that we will use to compute the density of states in this project. Using the ballistic transport method, we will obtain an exact analytical expression of this quantity for non-interacting systems (\ref{sec:transport}). The physics of interacting systems is more complex and does not support an exact approach. Instead, we appeal to the renown numerical renormalization group (NRG) to deal with the strong correlations of these systems \ref{sec:The-Numerical-Renormaliztion} . Both models will be tested on the model of a double quantum dot attached to a metallic lead.
+We will observe that at very low energies, the physics of interacting systems emulates characteristic features of non-interacting models. 
+
+
 \section{Ballistic transport \label{sec:transport} }
 
-The Green function $G$ of a Hamiltonian $H$ is the operator that satisfies the homogenous equation 
+The Green function $G$ of a Hamiltonian $H$ is the operator that satisfies the homogeneous equation 
 \begin{equation}
     \left(i\hbar\frac{\partial}{\partial t}-H\right)G\left(t-t'\right)=\delta(t-t').
 \end{equation}
@@ -15,12 +19,13 @@ This type of differential equations are solved taking the Fourier transform
 In this new space the solution of the equation is 
 $$(\omega+is -H)\Green{\omega}=I.$$ 
 
-The term $+is$ in the previous hamiltonian is part of a mathematical trick quite common in this theory. During the whole procedure, the Green function acts on the complex field. But when we need to obtain a physical interpretation we will take the limit $s\rightarrow0$ to obtain the result for real energies. 
+The term $+is$ in the previous Hamiltonian is part of a mathematical trick quite common in this theory. During the whole procedure, the Green function acts on the complex field. But when we need to obtain a physical interpretation we will take the limit $s\rightarrow0$ to obtain the result for real energies. 
+
 The next step is to decompose $\Green{H}$ in the eigenbase of the Hamiltonian $\{\ket{\alpha}\}$  by 
 
 
 \begin{equation}
-    \Green{\alpha,\alpha'}=\langle \alpha  \vert \Green{H}\ket{\alpha'}=\frac{\delta_{\alpha\alpha'}}{\omega - is -\ep_\alpha}=\frac{\delta_{\alpha\alpha'}(\omega + is -\ep_\alpha)}{(\omega-\epsilon_{\alpha})^{2}+s^{2}}.
+    \langle \alpha  \vert \Green{H}\ket{\alpha'}=\frac{\delta_{\alpha\alpha'}}{\omega - is -\ep_\alpha}=\frac{\delta_{\alpha\alpha'}(\omega + is -\ep_\alpha)}{(\omega-\epsilon_{\alpha})^{2}+s^{2}}.
 \end{equation}
 
 From the famous formula 
@@ -29,43 +34,58 @@ From the famous formula
 \end{equation}
 we obtain 
 \begin{equation}
-    Im[\Green{\alpha,\alpha'}] = \pi \delta(\omega -\epsilon_\alpha)\delta_{\alpha,\alpha'}.
+    Im \langle \alpha  \vert \Green{H}\ket{\alpha'}] = \pi \delta(\omega -\epsilon_\alpha)\delta_{\alpha,\alpha'}.
 \end{equation}
-Note that the sum of $Im[\Green{\alpha,\alpha}]$ over all the eigenstates of $H$ is simply the $\pi$ times the Density of States:
+Note that the sum of $Im[ \langle \alpha  \vert \Green{H}\ket{\alpha'}]$ over all the eigenstates of $H$ is simply $\pi$ times the density of states:
 
 \begin{equation}
-    \rho(\omega)=-\frac{1}{\pi} Im \left[\Green{\alpha,\alpha}^{\dagger}\right].
+    \rho(\omega)=-\frac{1}{\pi} \sum_\alpha Im \left[ \langle \alpha  \vert \Green{H}\ket{\alpha'}\right] = \sum_\alpha \delta(\omega-\epsilon_\alpha) . \label{eq:DOS_def}
 \end{equation}
 
-An extended definition of the Green function  can be given in terms of fermionic operators in second quantization.  The time-green function for two fermionic operators $A$ and $B$ is
+An extended definition of the Green function  can be given in terms of fermion operators in second quantization.  The time-green function for two fermion operators $A$ and $B$ is
 \begin{equation}
-  G_{A,B}(t-t') = \mathcal{T}[\{ A(t),B(t') \} ].
+  G_{A,B}(t-t') = \mathbb{T}[\{ A(t),B(t') \} ]. \label{eq:TempGreen}
 \end{equation}
-Here, causality is important, which is the reason why we use the time-order operator $\mathcal{T}$. Again, it is possible to define the green-functions in the energy space applying a Fourier transform. The evolution of these Green functions will be determined by the Schrodinger equation. At the end, the result will be
+In these problems, causality is important, which is the reason why we use the time-order operator $\mathbb{T}$.  In addition, the evolution of this Green function is determined by Schroedinger's differential equation. 
+\begin{equation}
+\frac{d}{dt}G_{A,B}\left(t-t'\right)=\langle\left[A(t),B(t')\right]\rangle\delta_{t-t'}+\langle\left[A(t),H'\right],B(t')\rangle
+\label{eq:Motion}
+\end{equation}
+
+Once again, we perform a Fourier transform of $G_{A,B}(t-t') $ to obtain $\Green{A,B}$. When applying this transform to \ref{eq:Motion} we obtain 
+
+\begin{equation}
+    \omega\Green{A,B}=\delta_{A^{\dagger},B}+\Green{\left[A,H\right],B}.
+    \label{eq:Transport}
+\end{equation}
 
 
+\noindent Applying \ref{eq:Transport}  to a set of operators $\{A_1, A_2, \ldots \}$ we obtain a whole set of transport equations describing the flow of state transitions of the operators in our model. In this thesis we will identify each set of equations with a flow graph. This will be our leading method to compute the green functions of the system.
 
-The equation above receives the name of transport equation. This will be our leading method to compute the green functions of the system. In addition we can define the Density of States associated to an operator $A$ to be 
+Moreover, following equation \ref{eq:DOS_def} we can define the density of states associated to an operator $A$ as
 
 \begin{equation}
     \rho_{A,A^\dagger}=-\frac{1}{\pi}Im\left[\Green{A,A^\dagger}\right].
     \label{eq:Density of States}
 \end{equation}
 
-This density of states contains important physical information related to operator $A$. In our case, operator $A^\dagger$ will be related to the creation operator of a quantum dot $d^\dagger$. Our mean purpose will be to compute the density of states of a quantum dot $\rho_{d,d^\dagger}$. This 
-that allows us to obtain other transport 
+\noindent The density of states contains important physical information related to operator $A$. In our case, operator $A^\dagger$ will be related to the dot's creation operator  $d^\dagger$. Hence computing \ref{eq:Density of States} will allow us to observe the hybridization of the dot's discrete states and the creation of other energy levels due to the interaction with the lead and other possible impurities. We will observe examples of these computations in the following sections.
 
+
+% ----------------------------- Graph Method-----------------------
 \subsection{Using graph theory to solve the transport equations \label{sec:GraphMethod}}
 
 
-Solving the transport equations involves dealing with a set of linear equations where all the possible variables including  $\omega$ , and the Hamiltonian parameters are assumed to be constant.  This can be done by  Gauss-Jordan elimination, noting that after each elimination process we need to carry on the account in terms of these variables. The solution  will be a polynomial fraction with the variable given by these parameters.  When the number of operators in the Hamiltonian increases the number of terms in the polynomial grows-up exponentially. This reveals the importance of exploring new methods that could simplify the solution.   \\
+Solving the transport equations involves dealing with a set of linear equations where all the possible variables including  $\omega$ , and the Hamiltonian parameters are assumed to be constant.  This can be done by  Gauss-Jordan elimination, noting that after each elimination process we need to carry on the account in terms of the initial  variables. The solution  will be a polynomial fraction.  When the number of operators in the Hamiltonian increases the number of terms in the polynomial grows-up rapidly according to the number of initial parameters. This reveals the importance of exploring new methods that could simplify the solution of this system, and present a readable factorized expression of the final solution.   \\
 
-The method presented here uses graph theory algorithms that provide a shortcut to Gauss-Jordan elimination \cite{spielman10}. To probe this method we solve here the transport equations for a non-interacting $(U=0)$ DQD connected to one lead. According to the Anderson model the Hamiltonian for this system looks like 
+The method presented here uses graph theory algorithms that provide a shortcut to Gauss-Jordan elimination \cite{spielman10}. To probe this method we solve here the transport equations for a non-interacting $(U=0)$ DQD connected to one lead. 
+
+According to the Anderson model the Hamiltonian for this system looks like 
 \begin{equation}
     H=t_{dots}d_{1}^{\dagger}d_{2}+t_{dots}^*d_{2}^{\dagger}d_{1}+ \sum_{i=1}^2\epsilon_{di}d_{i}^{\dagger}d_{i}+\sum_{k}\left(V_{i}d_{i}^{\dagger}c_{\mathbf{k}}+V_{i}^{*}c_{\mathbf{k}}^{\dagger}d_{i}\right) + \epsilon_{\mathbf{k}}c_{\mathbf{k}}^{\dagger}c_{\mathbf{k}}.
     \label{eq:HDQD}
 \end{equation} 
-Since the system is non-interacting we ignore the spin-degeneracy of this Hamiltonian. The only new parameter here is the term $t_{dots}$, which represents the tunneling between both quantum dots.  Using equation \eqref{eq:Transport} with $B = d_1^\dagger$ and $A$ shifting among other operators we compute the following  transport equations
+\noindent Since the system is non-interacting, we ignore the spin-degeneracy of this Hamiltonian. The only new parameter here is the term $t_{dots}$, which represents the tunneling between both quantum dots.  Using equation \eqref{eq:Transport} with $B = d_1^\dagger$ and $A$ shifting among other operators we compute the following  transport equations
 \begin{align}
      \left(\omega-\epsilon_{1}\right)\Green{d_{1},d_{1}^{\dagger}}&=1+t_{dots}\Green{d_{2},d_{1}^{\dagger}}+V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}} \label{eq:green1}  \\
      \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1}^{\dagger}} &= V_{1}\Green{d_{1},d_{1}^{\dagger}}+V_{2}\Green{d_{2},d_{1}^{\dagger}} \label{eq:green2} \\
@@ -76,8 +96,7 @@ Since the system is non-interacting we ignore the spin-degeneracy of this Hamilt
     % \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1}^{\dagger}}= & V_{1}\Green{d_{1},d_{1}^{\dagger}}+V_{2}\Green{d_{2},d_{1}^{\dagger}} \\
 
     % \left(\omega-\epsilon_{2}\right)\Green{d_{2},d_{1}^{\dagger}}= & t_{dots}\Green{d_{1},d_{1}^{\dagger}}+V_{2}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}}. \\
- This system is already closed which means that we don't need any other equation to find the solution. The matrix form takes the form
- \begin{equation}
+ This system is already closed which means that we don't need any other equation to find the solution. The associated matrix form is  \begin{equation}
 \left[\begin{array}{ccc}
 \omega-\epsilon_{2} & -V_{2} & -t_{dots}\\
 -V_{2}^{*} & \omega-\epsilon_{k} & -V_{1}\\
@@ -94,7 +113,7 @@ Since the system is non-interacting we ignore the spin-degeneracy of this Hamilt
 \label{eq:MatrixDQD}
  \end{equation}
  
-\noindent By convenience we changed the order of the rows in the matrix and we removed the sum over $k$ ($\sum_k$) to simplify the terms in the matrix. We will intert these terms back in the equations at the end of the procedure.
+\noindent By convenience we changed the order of the rows in the matrix and we removed the sum over $k$ ($\sum_k$) to simplify the algebraic operation. We will insert these terms back in the equations at the end of the procedure.
 
 Although this matrix is not Laplacian, the procedure in \cite{spielman10}  can still be applied with the downside of loosing part of the  speed-up of the algorithm. We still preserve  some of the advantages  using graphs, such as the possibility of taking minimal cuttings and the relation between Gauss-Jordan elimination and random walks \cite{spielman10}  . Both advantages simplify the complexity of the solution. 
  
@@ -109,8 +128,8 @@ Now, our objective is to compute the green function  $\Green{d_{1\downarrow},d_{
 
 
 The algorithm consists in the following. Each step of Gauss-Jordan elimination leads to a new graph with different energies and couplings. The elimination of a row and column is equivalent to pop the corresponding vertex in the graph. For instance, lets eliminate the first row and column of the matrix in \eqref{eq:MatrixDQD}. For it we just need to subtract the rank-$1$ matrix with the same first row and first column
-\begin{equation}
-        \left[\begin{array}{ccc}
+\begin{align}
+       & \left[\begin{array}{ccc}
     \omega-\epsilon_{k} & -V_{2} & -V_{1}\\
     -V_{2}^{*} & \omega-\epsilon_{2} & -t_{dots}\\
     -V_{1}^{*} & -t_{dots}^{*} & \omega-\epsilon_{1}
@@ -118,13 +137,13 @@ The algorithm consists in the following. Each step of Gauss-Jordan elimination l
     \omega-\epsilon_{k} & -V_{2} & -V_{1}\\
     -V_{2}^{*} & \frac{V_{2}^{*}V_{2}}{\omega-\epsilon_{k}} & \frac{V_{2}^{*}V_{1}}{\omega-\epsilon_{k}}\\
     -V_{1}^{*} & \frac{V_{2}V_{1}^{*}}{\omega-\epsilon_{k}} & \frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{k}}
-    \end{array}\right]=\left[\begin{array}{ccc}
+    \end{array}\right] \\ &= \left[\begin{array}{ccc}
     0 & 0 & 0\\
     0 & \omega-\epsilon_{2}-\frac{V_{2}^{*}V_{2}}{\omega-\epsilon_{k}} & -t_{dots}-\frac{V_{2}^{*}V_{1}}{\omega-\epsilon_{k}}\\
     0 & -t_{dots}^{*}-\frac{V_{2}V_{1}^{*}}{\omega-\epsilon_{k}} & \omega-\epsilon_{1}-\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{k}}
     \end{array}\right]
     \label{eq:Gauss-Jordan} 
-\end{equation}
+\end{align}
 
 The graph associated to this matrix can be observed in \ref{fig:graphDQD}.b) where operator $c_k$ has been popped out of the graph. It is possible to associate the correction to the the energies and couplings to the possible walks passing through the vertex $c_k$.  For instance $d_1$'s energy $\epsilon_1$ receives an extra-term $\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{k}}$ representing an additional walk  from $d_1$ to $d_1$ passing through  $c_k$. The same logic can be applied to the other terms coupling terms. The correction to $t_dots$ is $\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{k}}$ which corresponds to a path from $d_1$ to $d_2$ passing through the popped vertex $c_k$. Note that this term includes the multiplication both couplings with the vertex divided by the difference of $\omega$ with the energy of the vertex. This correspondence between the energy correction and eliminated paths through the graph makes the "popping" process an straightforward task. 
 
@@ -250,21 +269,23 @@ In general $V_i$  is a function of $\textbf{k}$. However, in the limit of flat-b
 We can replace this in equation \eqref{eq:SumSolGreen} to obtain the real expression for the green function $\Green{d_1,d_1^\dagger}$. The terms of the form $V_1V_2^*$ can be replaced for $\sqrt{\Gamma_1\Gamma_2}$, supposing there is no additional complex phase.
 
 Now, remember from \eqref{eq:Density of States} that the DOS $\rho$ depends on the imaginary factor of the Green Function $\Green{d_1,d_1^\dagger}$. This term depends in the broadening $\Gamma$. If $\Gamma = 0$ the density of states will be $0$ as well. At any other case, one of the dots should be attached to the lead. Let $\Gamma_1$ be the broadening of this dot. We will take $\Gamma_1$ as our natural unit for the rest of this thesis.  
+
 In \ref{fig:GreenDQD} we can observe the evolution of the Density of States under certain processes. Each plot includes an inset showing the model applied to the figure. The coupling in purple indicates the tuning variable. We set $e_1 = e_2 = 0$ so that both dots satisfy PHS. The primary results are the 
 
-
-
-\begin{enumerate}
-    \item \textbf{Coupling QD2. \ref{fig:GreenDQD}(a)(b):}  At $\Gamma_2=0$  the second dot is decoupled, hence the first dot's DOS is the same of a single dot case. The maximum height is achieved at  $\rho \pi \Gamma_1 =1$ and the width of this peak is about  $\Gamma_1$, just as in Figure \ref{fig:specDots}. When the second dot is attached $\Gamma_2 >0$ the density of states is divided between both dots. At $\Gamma_1 = \Gamma_2$ the DOS at the Fermi energy is equal to $\frac{1}{4\pi\Gamma}$ for both dots. For higher values of $\Gamma_2$ the DOS in the second dot is higher than in the first one.  
-    
-    % ----------------SUPER FIGURE ---------------------------
-    \begin{figure}[H]
+   % ----------------SUPER FIGURE ---------------------------
+    \begin{figure}[t]
         \centering
          \includegraphics[scale=0.47]{IMAGES/DQD/Non-interacting.png}
          \caption{\label{fig:GreenDQD} Evolution of the density of states at each QD (Left: dot 1, Right: dot 2) at three distinct arrangements of DQD-lead coupling. The inset at the first column depicts the type of coupling. The purple line represents the tuning variable. The energy unit is $\Gamma_1$. $e_1 =e_2 =0$ in all arrangements. (a),(b) The lead is connected to both QDs. Tuning variable: $\Gamma_2$. (c)(d) Indirect coupling of the second dot through dot one. Tuning variable: $\_{dots}$. (e)(f) Triangular coupling. Tuning variable: $t_{dots}$.  
          \protect\Source{ By the Author  }}
     \end{figure}
 % ----------------SUPER FIGURE ---------------------------
+
+
+\begin{enumerate}
+    \item \textbf{Coupling QD2. \ref{fig:GreenDQD}(a)(b):}  At $\Gamma_2=0$  the second dot is decoupled, hence the first dot's DOS is the same of a single dot case. The maximum height is achieved at  $\rho \pi \Gamma_1 =1$ and the width of this peak is about  $\Gamma_1$, just as in Figure \ref{fig:specDots}. When the second dot is attached $\Gamma_2 >0$ the density of states is divided between both dots. At $\Gamma_1 = \Gamma_2$ the DOS at the Fermi energy is equal to $\frac{1}{4\pi\Gamma}$ for both dots. For higher values of $\Gamma_2$ the DOS in the second dot is higher than in the first one.  
+    
+ 
 
     \item \textbf{Indirect Coupling of QD2. \ref{fig:GreenDQD}(c)(d):} This is case is interesting. When the second dot is connected indirectly through the first dot, quantum inference splits the central peak in two new states. We will observe later that in the interacting case this procedure can also destroy the Kondo signature. Note that the higher the coupling $t_{dots}$ is, the greater is the gap between the states. We will usually take $t_{dots} = 2\Gamma_1$ to make these gap more visible in the NRG simulations. 
     % This has interesting consequences when combined with Majorana physics.
@@ -296,10 +317,16 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
 
 
 
-% --------------------------------------------------
+% ------------------------------------------NRG----------------------
+% ---------NRG-------------------------------------------------------
+% ------------------ NRG --------------------------------------------
+% -----------------------------------------------------NRG------------
+
 
 
 \section{The Numerical Renormalization Group\label{sec:The-Numerical-Renormaliztion} (NRG) }
+
+\subsection{From the Renormalization Group to the Wilson's Chain \label{subsec:Logarithmic}}
 
 %-------------------------------------------------------
 \begin{figure}[hbt]
@@ -311,9 +338,9 @@ Energy interval discretization. \protect\Source{ By the Author  } }
 
  The real meaning of divergent logarithmic term in the resistivity predicted by Kondo is that important contributions at low-energy scales caused by the strong quantum correlations in the system are being neglected by perturbation theory. This problem can be solved by introducing ideas from renormalization group theory. A renormalization approach is more adequate for this type of problem since it assigns an appropriate effective Hamiltonian to each scale of temperature. This provides a more accurate representation of the increasing density of correlated states appearing close the Fermi energy. 
 
-In renormalization group theory, the Hamiltonian transformations are performed by an operator $T$ that represents an endomorphism in the space of operators. $T$ generates the semigroup  $\{ 1, T , T^2 , \ldots \}$, that defines a complete set of transformations   % transformation of the form
-$$ T[H_0] = H_1, \  T[H_1] = H_2, \ldots , T[H_N] = H_{N+1} , \ldots$$
-\noindent If $T$ is a contracting map  \footnote{ Let $\mathcal{O}$ be a set of operators, then $T$ is a contracting map if $T[\mathcal{O'} ] \subset \mathcal{O'}$ for every $\mathcal{O'} \subset \mathcal{O}$ .} then it is known that this set of operations should eventually lead to a fix point $ T^N[H] \xrightarrow{N\rightarrow\infty} H*$ such that $T[H*] = H*$. In numerical simulations, $N $ will only increase up to a value where $H_N$ is close enough to the fix point $H*$ so that no new significant contributions to the Hamiltonian are obtained. For the purposes of this project, taking $N = 51$ will be enough  for the NRG code to converge. 
+In renormalization group theory, the Hamiltonian transformations are performed by an operator $\mathcal{T}$ that represents an endomorphism in the space of operators. $T$ generates the semigroup  $\{ 1, \mathcal{T} , \mathcal{T}^2 , \ldots \}$, that defines a complete set of transformations   % transformation of the form
+$$ \mathcal{T}[H_0] = H_1, \  \mathcal{T}[H_1] = H_2, \ldots , \mathcal{T}[H_N] = H_{N+1} , \ldots$$
+\noindent If $\mathcal{T}$ is a contracting map  \footnote{ Let $\mathcal{O}$ be a set of operators, then $T$ is a contracting map if $\mathcal{T}[\mathcal{O'} ] \subset \mathcal{O'}$ for every $\mathcal{O'} \subset \mathcal{O}$ .} then it is known that this set of operations should eventually lead to a fix point $ \mathcal{T}^N[H] \xrightarrow{N\rightarrow\infty} H*$ such that $\mathcal{T}[H*] = H*$. In numerical simulations, $N $ will only increase up to a value where $H_N$ is close enough to the fix point $H*$ so that no new significant contributions to the Hamiltonian are obtained. For the purposes of this project, taking $N = 51$ will be enough  for the NRG code to converge. 
 
 %Maybe the most important characteristic of the Kondo effect is that leading contributions to the conductivity are caused by strong correlations with the conduction band appearing at low energy scales. This is the reason of the divergent logarithmic term in the Kondo resistivity. 
 
@@ -348,19 +375,19 @@ H_{-1} := \frac{2 H_d}{1+\Lambda^{-1}}.
 %\begin{equation}    
 %H = \lim_{N \rightarrow \infty } \frac{1+\Lambda^{-1}}{2}\Lambda^\frac{ N-1 }{2} H_N
 %\end{equation}
-The Renormalization Group transformation $T$ can be defined as 
+The Renormalization Group transformation $\mathcal{T}$ can be defined as 
 
-$$T^N H_{-1} =  \frac{1+\Lambda^{-1}}{2}\Lambda^\frac{ N-1 }{2} H_N$$
+$$\mathcal{T}^N H_{-1} =  \frac{1+\Lambda^{-1}}{2}\Lambda^\frac{ N-1 }{2} H_N$$
 
 Note that in the limit $\xrightarrow{N\rightarrow\infty}$ we should recover the initial Anderson Hamiltonian. In addition, note that the leading coefficients of the contributions to each Hamiltonian $H_N$ are given by 
 \[
 \Lambda^{\frac{-N}{2}}\xi_{N}\xrightarrow{N\rightarrow\infty}\frac{\Lambda^{\frac{-N}{2}}\left(1-\Lambda^{-N}\right)}{1-\Lambda^{-2N}}\sim\frac{\Lambda^{\frac{-N}{2}}}{1+\Lambda^{-N}},
 \]
-\noindent which decays exponentially with the length of the chain. Therefore, we may thing that at some point these new contributions will be so small that the that the map $T$ will eventually converge. Formally the theory regarding the NRG convergence is to complex for this thesis. However the results show that the operator that trully converges is $T^2$ and not $T$\cite{krishna-murthy_renormalization-group_1980}. This has important consequences, for instance the convergence of the code has to be analyzed on odd and even values of $N$ separately. 
+\noindent which decays exponentially with the length of the chain. Therefore, we may thing that at some point these new contributions will be so small that the that the map $\mathcal{T}$ will eventually converge. Formally the theory regarding the NRG convergence is to complex for this thesis. However the results show that the operator that trully converges is $\mathcal{T}^2$ and not $\mathcal{T}$\cite{krishna-murthy_renormalization-group_1980}. This has important consequences, for instance the convergence of the code has to be analyzed on odd and even values of $N$ separately. 
 
 To this point the expression \prettyref{eq:chain-Hamiltonian} and the derived limit of $H_N$ to the Anderson Hamiltonian are exact. The first approximations arrive in the following step which include an iterative diagonalization of the Hamiltonian.
  
- \subsection{Iterative Diagonalization}
+ \subsection{Iterative Diagonalization \label{subsec:IterativeDiag}}
 
 \begin{figure}[bt]
 \centering
@@ -378,6 +405,8 @@ To this point the expression \prettyref{eq:chain-Hamiltonian} and the derived li
  	\item Numerical cutting: If the number of states in the system exceeds a definite number (1000 in this thesis) the exceeding higher energy states are neglected.\footnote{ This step must be performed carefully to preserve the symmetries of the system. If two states are entangled and one of them is eliminated and the other is not, the program could lead to misleading results. Further discussions to solve this problem are presented in the symmetry subsection.  }. \ref{fig:IterativeDiagonalization} (c)$\rightarrow$(d).
  	\item Rotating operators $f_{N,\sigma}$  by $ U_N f_{N,\sigma} U_N^\dagger$ to start the next operation.
 \end{enumerate}
+
+The final outcome of this operations will be the complete spectrum of the Anderson model at each energy level. However we still need to talk about an important speed-up to the code obtain when considering the symmetries of the system. 
 
 \subsection{Symmetries \label{subsec:Syms}}
 
@@ -437,7 +466,7 @@ In the following subsection we will give examples of this symmetry propagation i
 
 
 
-\subsubsection{Iterative Diagonalization in a Single QD Hamiltonian}
+\subsection{Iterative Diagonalization in a Single QD Hamiltonian \label{subsec:QD-Diag} }
 
 Now that we have an iterative representation of the Anderson Model
 Hamiltonian \prettyref{eq:chain-Hamiltonian}, lets take a look to
@@ -464,14 +493,14 @@ H_{d}=\frac{1}{D}\left[\begin{array}{cccc}
 
 
 Lets define $H_{-1}=\Lambda^{\frac{-1}{2}}H_{d}.$ Adding the first
-chain interaction to $H_{d}$ we obtain a new hamiltonian of the form 
+chain interaction to $H_{d}$ we obtain a new Hamiltonian of the form 
 
 \begin{equation}
 H_{0}=\Lambda^{\frac{1}{2}}H_{-1}+\Gamma'\left(d_{\sigma}^{\dagger}f_{0\sigma}+f_{0\sigma}^{\dagger}d_{\sigma}\right).\label{eq:H0fromH-1}
 \end{equation}
 
 
-The Hilbert space for this hamiltonian has to be extended to include
+The Hilbert space for this Hamiltonian has to be extended to include
 the $4$ degrees of freedom of the $f_{0\sigma}^{\dagger}$ particles
 which are also given by $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $.
 Therefore the total Hilbert space for $H_{0}$ is given by a base
@@ -493,7 +522,7 @@ We can associate each state to one of these symmetries as
 
 The propagation rule for the symmetry is defined with the following identity 
 \begin{equation}
-  \vert N_{1},S_{1}\rangle\otimes\vert N_{2},S_{2}\rangle\subset\vert N_{1}+N_{2},S_{1}+S_{2}\rangle \label{eq:PropRuleQD}
+  \vert \mathcal{N}_{1},S_{1}\rangle\otimes\vert \mathcal{N}_{2},S_{2}\rangle\subset\vert \mathcal{N}_{1}+\mathcal{N}_{2},S_{1}+S_{2}\rangle \label{eq:PropRuleQD}
 \end{equation} 
   
 
@@ -613,13 +642,13 @@ $H_{\mathcal{N}=3,S=\frac{-1}{2}}:$
 \end{multicols}
 
 \begin{figure}[t]
-\subfloat[$N$ takes only even values]{\includegraphics[scale=0.5]{IMAGES/even.png}}\subfloat[$N$ run only through odd values]{\includegraphics[scale=0.5]{IMAGES/odd.png}}\caption{\label{Fig-Dot-Spectrum} Evolution of the QD-spectrum vs number of
-iterations of the code for $U=0.5,\ e_{d}=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
+	\subfloat[$N$ takes only even values]{\includegraphics[scale=0.5]{IMAGES/even.png}}\subfloat[$N$ run only through odd values]{\includegraphics[scale=0.5]{IMAGES/odd.png}}\caption{\label{Fig-Dot-Spectrum} Evolution of the QD-spectrum vs number of
+	iterations of the code for $U=0.5,\ e_{d}=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
 \end{figure}
 
 The next step would be to diagonalize $H_{0}$ by blocks $H_{\mathcal{N},S}$ and then including the next place in the chain. The following Hamiltonians are generated in the same way from equation \ref{eq:NRG-Renormalization}. The symmetries of the new states can be obtained from the propagation rule \ref{eq:PropRuleQD}. When the number of states surpasses the 1000 states, the code will automatically cutoff the higher energy states. However it is important that a Block is not divided in this cutting, since it could break the preserved symmetry. 
 
-Finally, the spectrum for $\Lambda = 2.5$ takes the 'spaghetti' form in \ref{Fig-Dot-Spectrum}. Before $N=30$ low-energy contributions generate significant changes in the energy levels.  The stable strum after the step $N=30$ shows that the code has converged at this stage. As we previously declared, it is not $T$ but $T^2$ the transformation that has fixed points, which explains why it was necessary to plot the even and the odd spectrum separately.
+Finally, the spectrum for $\Lambda = 2.5$ takes the 'spaghetti' form in \ref{Fig-Dot-Spectrum}. Before $N=30$ low-energy contributions generate significant changes in the energy levels.  The stable strum after the step $N=30$ shows that the code has converged at this stage. As we previously declared, it is not $\mathcal{T}$ but $\mathcal{T}^2$ the transformation that has fixed points, which explains why it was necessary to plot the even and the odd spectrum separately.
 
 % The resulting eigenvectors will be characterized by both quantum numbers
 % so that we can write them in the form $\vert N,S,i\rangle$ with $i$
@@ -627,18 +656,125 @@ Finally, the spectrum for $\Lambda = 2.5$ takes the 'spaghetti' form in \ref{Fig
 
 % We now proceed by induction supposing that for each $N$ the Hamiltonian $H_{N}$ is already diagonalized and the eigenvectors are organized in states with labels $\vert N,S,i\rangle.$ The next step will be to add the $4$-Hilbert space corresponding to $f_{N+1,\sigma}$ organized the eigenvectors according to the quantum numbers $\vert N',S',i\rangle$ and proceed to diagonalize by blocks the new Hamiltonian. Apart of it, the code must have a cutoff to the number of states. \\
 
+At the end of the NRG code, we obtain a complete list of the spectrum $(E_{i, N})$ and the eigenstates $(\vert i , N \rangle)$ of the Hamiltonian at each step $N$ of the chain ( See \ref{Fig-Dot-Spectrum}). It is important to keep all of these states since each one of them represents different thermodynamic regimes of the system. While the site $N=1$ represents the physics of the system relevant at temperatures around $K_B D \Lambda^{-1}$, the site $N=30$ shows the low energy contributions at $T \sim K_B D \Lambda^{-30}$ where the ground state is strongly correlated. Furthermore, the states at low temperatures are entangled with the higher energy states. We need to take this into account to extract dynamical quantities of the system, which is the objective of the following section. 
 
-\subsection{Density Matrix Renormalization Group (DM-NRG)}
-To compute  dynamical quantities \cite{costi_transport_1994} like the density of states we used the density matrix renormalization group approach DMNRG \cite{hofstetter_generalized_2000}. 
+\subsection{The Density Matrix Renormalization Group (DM-NRG) \label{subsec:DM-NRG}}
+The NRG codes allows us to compute several thermodynamic quantities such as the entropy $S$, the free energy and the partition function $Z(\beta)$. In addition, we can compute the spin magnetization or dynamical quantities such  the density of states, the magnetic susceptibility and the conductivity. To perform this we can use the spectrum obtained in the NRG code to define the Boltzman distribution of the system. Then we apply the usual methods of statistical mechanics.  
+
+% It is necessary to embed NRG with the faculty to compute these operators at each step $N$ of the code. {} 
+
+In this thesis we will focus in computing the density of states at the impurity (QD). For this, let $\vert j\rangle$ and $\vert q \rangle$ label a base of eigenstates of the Hamiltonian $H$. Now recall the definition of the time-ordered green function \ref{eq:TempGreen}
+
+\begin{align}
+G_{d,d^{\dagger}}(t)&=\left\langle \mathbb{T}\left[d(t)d^{\dagger}(0)\right]\right\rangle \\ \label{eq:MeanGreen}
+&=\theta(t)\left\langle \left[e^{\frac{i}{\hbar}Ht}de^{-\frac{i}{\hbar}Ht}d^{\dagger}\right]\right\rangle +\theta(-t)\left\langle \left[d^{\dagger}e^{\frac{i}{\hbar}Ht}de^{\frac{-i}{\hbar}Ht}\right]\right\rangle \\
+&=\theta(t)\sum_{\vert j\rangle,\vert q\rangle}p_{j}\langle j\vert e^{\frac{i}{\hbar}Ht}d\vert q\rangle\langle q\vert e^{-\frac{i}{\hbar}Ht}d^{\dagger}\vert j\rangle+\theta(-t)\sum_{\vert j\rangle,\vert q\rangle}p_{q}\langle q\vert d^{\dagger}e^{\frac{i}{\hbar}Ht}\vert j\rangle\langle j\vert de^{-\frac{i}{\hbar}Ht}\vert q\rangle\\
+&=\theta(t)\sum_{\vert j\rangle,\vert q\rangle}p_{j}e^{\frac{-i}{\hbar}t\left(E_{j}-E_{q}\right)}\left\Vert \langle j\vert d\vert q\rangle\right\Vert ^{2}+\theta(-t)\sum_{\vert j\rangle,\vert q\rangle}p_{q}e^{\frac{i}{\hbar}t\left(E_{j}-E_{q}\right)}\left\Vert \langle j\vert d\vert q\rangle\right\Vert ^{2}
+\end{align}
+
+\noindent Where $p_{j}:=\frac{e^{-\beta E_{j}}}{Z(\beta)}$ defines the Boltzmann probability of the eigenstate $\vert j\rangle$ according to Hamiltonian $H$. 
+
+It is known that the Fourier transform of an expression of the form ${\displaystyle e^{-ax}\theta(x)}$ is $\frac{1}{\omega+is-a}$. Then the Green function in the frequency space is 
+\begin{equation}
+\Green{d,d^{\dagger}}=\frac{1}{Z(\beta)}\sum_{\vert j\rangle,\vert q\rangle}{\displaystyle \frac{e^{-\beta E_{j}}+e^{-\beta E_{q}}}{\omega+is-E_{j}+E_{q}}}\left\Vert \langle j\vert d\vert q\rangle\right\Vert ^{2}
+. \label{eq:greenT}
+\end{equation}
+
+\noindent From the imaginary part of \ref{eq:greenT} we obtain a formula for the spectral density in terms of the eigenstates and energies of the Hamiltonian 
+\begin{equation}
+\rho_{d}=\frac{1}{Z(\beta)}\sum_{\vert j\rangle,\vert q\rangle}{\displaystyle \left(e^{-\beta E_{j}}+e^{-\beta E_{q}} \right) \delta\left(\omega-E_{j}+E_{q} \right) } \left\Vert \langle j\vert d\vert q\rangle \right\Vert^{2}. \label{eq:DOSeigenstates}
+\end{equation}
+
+\noindent This new expression for the DOS can be integrated to NRG code in different ways . A first method created by Costi \textit{et al.} consisted in computing \eqref{eq:DOSeigenstates} with the eigenstates of each shell Hamiltonian $H_N$  \cite{costi_transport_1994}. It is necessary to take into account that the operator $\langle j\vert d\vert q\rangle\right\Vert$ is constantly rotating after each diagonalization procedure generating different representation. Then, an important part of Costi's algorithm is to obtain these new representations of $\langle j\vert d\vert q\rangle\right\Vert_N$ recursively starting from an input representation $\langle j\vert d\vert q\rangle\right\Vert_{N=0}$.
+
+Although Costi's method predicts accurately the DOS at low-energies, it fails to fit the high energy levels. The method that corrects this problem receives the name of Density Matrix Numerical Renormalization Group (DMNRG) \cite{hofstetter_generalized_2000}. The main idea of DMNRG is to include the entanglement corrections with the lower energy-states using the density matrix formalism. For this, Hofstetter defines the density matrix at the last shell Hamiltonian $N_{max}$ $\hat{\rho}$ as the thermal mixed state 
+
+\begin{equation}
+\hat{\rho}_{N_{max}} = \sum_{j}e^{-\beta E_{j}}\vert j          \rangle_N_{max} \langle j\vert, \label{eq:rho_n}
+\end{equation}
+
+\noindent where the subindex $N_{max}$ pinpoints that $\vert j \rangle_N_{max} \langle j\vert$ is an eigenstate of the last shell Hamiltonian $H_{N_max}$. 
+
+With this new density matrix we could rewrite \ref{eq:MeanGreen} as 
+\begin{equation}
+G_{d,d^{\dagger}}^{N_{max}}(t)\left = \text{Tr}\left(\hat{\rho}_{N_{max}}\mathbb{T}\left[\left\{ d^{\dagger},d\right\} \right]\right). 
+\end{equation}
+\noindent From the Green function $G_{d,d^{\dagger}}^{N_{max}}(t)\left$ we can obtain the density of states associated to the temperature $T_{N_max}$. Nevertheless, these results are not relevant at higher temperatures. 
+
+\begin{figure}
+\centering
+\includegraphics[scale=1]{IMAGES/DQD/DMRGchain.png}
+\caption{\label{fig:OpenQuantum} Wilson's chain depicted as an open quantum system.  }
+\end{figure}
+
+To solve this problem we may think Wilson's chain as an open quantum system where the reservoir are the low-energy sites of the chain and the system contains the high energy site including the impurity/QD  as observed in \ref{fig:OpenQuantum}. Using this analogy it is possible we can readily obtain the density matrix $\rho_S$ by taking the partial trace over the reservoir
+
+\begin{equation}
+\rho_s = \text{Tr}_R[\rho_{N_{max}}].
+\end{equation} 
+
+The DM-NRG code applies recursively this idea to obtain the density matrix corresponding to each scale of temperature $T_N$. It starts from $\rho_{N_{max}}$ defined at \eqref{eq:rho_n} and obtains $\rho_{N_{max}-1} $ by taking the partial trace over the vector space corresponding to the last site of the chain
+\begin{equation}
+\rho_{N_{max}-1} = \text{Tr}_{N_{max}}[\rho_{N_{max}}].
+\end{equation}
+\noindent The other density matrices are computed by induction as 
+\begin{equation}
+\rho_{N-1} = \text{Tr}_{N}[\rho_{N}],
+\end{equation}
+and the density of states at each temperature regime can be computed at each stage from the green function 
+\begin{equation}
+G_{d,d^{\dagger}}^{N}(t)\left = \text{Tr}\left(\hat{\rho}_{N}\mathbb{T}\left[\left\{ d^{\dagger},d\right\} \right]\right). 
+\end{equation}
+
+The DM-NRG algorithm produces significantly better results  at high energies than Costi's initial idea. Indeed, DM-NRG is still one of the best methods to compute dynamic quantities of an impurity system. In the following subsection we will some details of how DM-NRG is integrated with the NRG code. 
+
+
+% Then, we could rewrite equation  \ref{eq:MeanGreen} as 
+% \begin{equation}
+% G_{d,d^{\dagger}}(t)\left = \text{Tr}\left(\hat{\rho}_{N}\mathbb{T}\left[\left\{ d^{\dagger},d\right\} \right]\right). 
+% \end{equation}
+% But this result will only give us the result 
+
+
+% But the density matrix $\hat{\rho}_{N}$ is different from \hat{\rho}_{N}$. In other 
 
 
 
-\subsection{Details of the Code}
+% In this formalism the expression at
+
+% However this last method neglected the strong correlation between the low and high energy states in the systems. 
 
 
-The NRG code implemented in C++ by my advisor Luis Gregorio Dias takes in account all of the details described in this chapter. 
 
- This NRG code was previously implemented in C++ language by the advisor of this thesis. In \ref{Fig-Dot-Spectrum} we observe the evolution of the spectrum of the Hamiltonian according to the number of iterations of the code. As we can appreciate, this evolution converges for even and odd number around $N=30$.  \\{}
+% To compute  dynamical quantities  like the density of states we used the density matrix renormalization group approach . 
+
+
+
+\subsection{Specifications of the NRG Code }
+
+The NRG code used in this thesis was implemented by my thesis advisor Luis Gregorio Dias during his posdoc at the University of Ohio.  The general scheme  is shown in \ref{fig:Code}. It incorporates different stages in order to complete the procedure described in this classes. Here we give a brief description of each step:
+
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.4]{IMAGES/NRG/NRGcode.png}
+\caption{\label{fig:Code} Diagram of the NRG code}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Model:} The model defines the type of impurity that we are going to study. It could be a single QD or more complex structures such as a DQD or a Majorana-QD system. My main contribution to this code was at this stage by designing the mode DQD-Majorana, which describes a DQD coupled to a Majorana zero mode. These models preserve different symmetries. In the single dot Hamiltonian presented in \ref{subsec:QD-Diag} we used the symmetry $\mathcal{N}S_z$, which is equivalent to charge-spin $QS_z$. However we will find that Majorana systems  require another  symmetry-type that we call as $N\up P\dw$. The model is defined by initial Hamiltonian $H_{-1}$ and the annihilation operators $d_{i\sigma}$ which must be submitted in the code written in the block symmetry representation described in \ref{subsec:Syms}.
+\item \textbf{Input:} The input is a .dat file that attributes a numerical value to each parameter of the model. In addition, it allows to set different code specifications as the number of iterations $N_{max}$, the scaling parameter $\Lambda$ and the maximum number of states before the cut-off. It is also possible to include additional implementations to improve the results of the NRG code such as the Z-trick \cite{oliveira_generalized_1994} and the Complete Fock State. In this project, we only used the Z-trick, which significantly improves the spectral resolution at high energies.
+\item \textbf{NRG-Main:} This part of the code mainly integrates the ideas of \ref{subsec:Logarithmic} and implements the iterative diagonalization described in \ref{subsec:IterativeDiag}. Each shell Hamiltonian $H_n$ is diagonalized. The high-energy eigenstates are cut-off if they exceed the limit. Then the states are rotated and the eigenvalues are rescaled to include the next step of the Wilson's chain. The symmetry block structure is preserved during the entire loop. NRG produces as out a detailed evolution of the spectrum which produces the spaghetti form. In addition, it can print the states and operators that are necessary to start other instances of the code like DM-NRG.
+\item \textbf{Site $N+1$:} This is an small class that creates another site of the chain in the base $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $ . This base must be rewritten according to the symmetry quantum number to coupled it with the matrices at the NRG code. 
+\item \textbf{DM-NRG}: As described in \ref{subsec:DM-NRG}, this code generates iteratively the density matrix associated to each energy scale. Then it computes the green function and the density of states. The DOS of the single $QD$ model is an example of its outputs. The plot shows the characteristic Kondo peak at the Fermi energy in the middle of the Coulomb peaks describing the energy states. 
+\end{itemize}
+
+ This NRG code was previously implemented in C++. It can be cloned from the Github link \url{https://git.io/fh9cM}.  To optimize the performance of NRG, the code uses the packages Boost, LAPACK and Gnu Scientific Library (GSL), which provide a rapid interface for numerical matrix diagonalization. 
+ 
+
+
+
+
+  % language by the advisor of this thesis. In \ref{Fig-Dot-Spectrum} we observe the evolution of the spectrum of the Hamiltonian according to the number of iterations of the code. As we can appreciate, this evolution converges for even and odd number around $N=30$.  \\{}
 
 
 
@@ -656,13 +792,14 @@ The NRG code implemented in C++ by my advisor Luis Gregorio Dias takes in accoun
 \end{figure}
 
 
-The initial Hamiltonian for the double quantum dot model has initial dimension of $16$. While the symmetries in this Hamiltonian are exactly the same than the ones in the single QD case that we presented in the last section, we decided to use another model to solve this system. This system was simulated using the code for a DQD-Majorana coupling presented on \ref{chap:Results} by setting the Majorana couplings to $t_1=t_2= 0$. The viability of these result and its correspondence with previous works is an important test that supports the conclusions of our code. 
+In this subsection we will observe the results of the NRG code applied to a double quantum dot attached to a metalic lead.
+The initial Hamiltonian for this system has initial dimension of $16$. While the symmetries in this Hamiltonian are exactly the same than the ones in the single QD case $\mathcal{N}S$. However, we decided to use another symmetry to solve this system. This system was simulated using the code for a DQD-Majorana coupling presented on \ref{chap:Results} by setting the Majorana couplings to $t_1=t_2= 0$. The viability of these result and its correspondence with previous works is an important test that supports our results. 
 
-We ran the NRG code for the DQD with the coulomb term fixed at 
+We ran the NRG code for the DQD with the coulomb repulsion parameter equal to
 \begin{equation}
- U_1 = U_2 = 17.7305
+ U_1 = U_2 = 17.7305.
 \end{equation}
-\noindent and are set up  to emulate the same configurations in \ref{fig:GreenDQD}. 
+\noindent We used the same configurations from \ref{fig:GreenDQD}. 
 
 
 %$$ -\ed{1,2} = \frac{U_{1,2}}{2}  = 8.62\Gamma_1$$

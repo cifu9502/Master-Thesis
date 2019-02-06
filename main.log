@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.1.31)  3 FEB 2019 23:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.1.31)  6 FEB 2019 00:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -573,26 +573,26 @@ Package caption Info: Unknown document class (or package),
 )
 
 Package hyperref Warning: Option `hypertex' has already been used,
-(hyperref)                setting the option has no effect on input line 81.
+(hyperref)                setting the option has no effect on input line 80.
 
-Package hyperref Info: Option `unicode' set `true' on input line 81.
+Package hyperref Info: Option `unicode' set `true' on input line 80.
 
 Package hyperref Warning: Option `pdfusetitle' has already been used,
-(hyperref)                setting the option has no effect on input line 81.
+(hyperref)                setting the option has no effect on input line 80.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 81.
+(hyperref)                setting the option has no effect on input line 80.
 
-Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 81.
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 80.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 81.
-Package hyperref Info: Option `breaklinks' set `true' on input line 81.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 80.
+Package hyperref Info: Option `breaklinks' set `true' on input line 80.
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 81.
+(hyperref)                setting the option has no effect on input line 80.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 81.
+Package hyperref Info: Option `colorlinks' set `true' on input line 80.
 \@float@every@Program=\toks34
 \c@Program=\count146
 (/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
@@ -619,7 +619,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \@nomenclaturefile=\write4
 \openout4 = `main.nlo'.
 
-Package nomencl Info: Writing nomenclature file main.nlo on input line 183.
+Package nomencl Info: Writing nomenclature file main.nlo on input line 182.
  (./main.aux
 (./Methods.aux) (./Append_A.aux
 
@@ -631,23 +631,23 @@ LaTeX Warning: Label `eq:chain-Hamiltonian@cref' multiply defined.
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 189.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 188.
+LaTeX Font Info:    ... okay on input line 188.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 188.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -716,8 +716,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box65
-Package backref Info: ** backref set up for natbib ** on input line 189.
-Package hyperref Info: Link coloring ON on input line 189.
+Package backref Info: ** backref set up for natbib ** on input line 188.
+Package hyperref Info: Link coloring ON on input line 188.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -727,9 +727,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count154
 )
-LaTeX Info: Redefining \ref on input line 189.
-LaTeX Info: Redefining \pageref on input line 189.
-LaTeX Info: Redefining \nameref on input line 189.
+LaTeX Info: Redefining \ref on input line 188.
+LaTeX Info: Redefining \pageref on input line 188.
+LaTeX Info: Redefining \nameref on input line 188.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -739,15 +739,15 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 192.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 192.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 191.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 191.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
  [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
@@ -757,9 +757,9 @@ Non-PDF special ignored!
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 192.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 191.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 202.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 201.
 [2
 
 
@@ -807,7 +807,7 @@ LaTeX Font Info:    Try loading font information for U+esint on input line 2.
 File: uesint.fd 
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 17.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 19.
 )
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -823,156 +823,294 @@ No file main.nls.
  (./Methods.tex
 Chapter 3.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 7.
 [4
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-
-LaTeX Warning: Reference `eq:Transport' on page 5 undefined on input line 68.
-
-Package cleveref Info: loaded `english' language definitions on input line 73.
+Package cleveref Info: loaded `english' language definitions on input line 80.
 [5]
-<IMAGES/Graphs/DQD-Pro.png, id=158, 922.94812pt x 752.0597pt>
+Package cleveref Info: loaded `english' language definitions on input line 121.
+
+ [6]
+<IMAGES/Graphs/DQD-Pro.png, id=191, 922.94812pt x 752.0597pt>
 File: IMAGES/Graphs/DQD-Pro.png Graphic file (type png)
 <use IMAGES/Graphs/DQD-Pro.png>
-Package pdftex.def Info: IMAGES/Graphs/DQD-Pro.png  used on input line 105.
+Package pdftex.def Info: IMAGES/Graphs/DQD-Pro.png  used on input line 124.
 (pdftex.def)             Requested size: 276.88657pt x 225.61964pt.
-
-Overfull \hbox (32.13226pt too wide) detected at line 127
-[] [] \OMS/ztmcm/m/n/10.95 ^^@ [] \OT1/ztmcm/m/n/10.95 = []
- []
-
-Package cleveref Info: loaded `english' language definitions on input line 130.
-
-[6]
-Package cleveref Info: loaded `english' language definitions on input line 152.
+Package cleveref Info: loaded `english' language definitions on input line 146.
 
  [7 <./IMAGES/Graphs/DQD-Pro.png>]
-Overfull \hbox (7.68066pt too wide) detected at line 156
+Overfull \hbox (7.68066pt too wide) detected at line 175
 []
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 240.
+Package cleveref Info: loaded `english' language definitions on input line 193.
 
 [8]
+Package cleveref Info: loaded `english' language definitions on input line 272.
 
-LaTeX Warning: Reference `fig:specDots' on page 9 undefined on input line 258.
-
-<IMAGES/DQD/Non-interacting.png, id=201, 867.24pt x 590.4459pt>
+ [9]
+<IMAGES/DQD/Non-interacting.png, id=232, 867.24pt x 590.4459pt>
 File: IMAGES/DQD/Non-interacting.png Graphic file (type png)
 <use IMAGES/DQD/Non-interacting.png>
-Package pdftex.def Info: IMAGES/DQD/Non-interacting.png  used on input line 263
+Package pdftex.def Info: IMAGES/DQD/Non-interacting.png  used on input line 278
 .
 (pdftex.def)             Requested size: 407.60286pt x 277.50961pt.
-Package cleveref Info: loaded `english' language definitions on input line 268.
 
-[9]
-Package cleveref Info: loaded `english' language definitions on input line 273.
 
- [10 <./IMAGES/DQD/Non-interacting.png>]
-<IMAGES/DQD/NRG-Final.png, id=219, 845.559pt x 498.663pt>
+LaTeX Warning: Reference `fig:specDots' on page 10 undefined on input line 286.
+
+
+Package cleveref Info: loaded `english' language definitions on input line 287.
+
+[10 <./IMAGES/DQD/Non-interacting.png>]
+<IMAGES/DQD/NRG-Final.png, id=243, 845.559pt x 498.663pt>
 File: IMAGES/DQD/NRG-Final.png Graphic file (type png)
 <use IMAGES/DQD/NRG-Final.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-Final.png  used on input line 307.
+Package pdftex.def Info: IMAGES/DQD/NRG-Final.png  used on input line 334.
 (pdftex.def)             Requested size: 380.49803pt x 224.39627pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 316.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 316.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 316.
-Package cleveref Info: loaded `english' language definitions on input line 317.
+Package cleveref Info: loaded `english' language definitions on input line 340.
 
  [11 <./IMAGES/DQD/NRG-Final.png>]
-Package cleveref Info: loaded `english' language definitions on input line 360.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 343.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 343.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 343.
+Package cleveref Info: loaded `english' language definitions on input line 367.
 
 
 [12]
-<IMAGES/DQD/cutting.png, id=249, 501.875pt x 318.18875pt>
+<IMAGES/DQD/cutting.png, id=273, 501.875pt x 318.18875pt>
 File: IMAGES/DQD/cutting.png Graphic file (type png)
 <use IMAGES/DQD/cutting.png>
-Package pdftex.def Info: IMAGES/DQD/cutting.png  used on input line 367.
+Package pdftex.def Info: IMAGES/DQD/cutting.png  used on input line 394.
 (pdftex.def)             Requested size: 250.93687pt x 159.09398pt.
-Package cleveref Info: loaded `english' language definitions on input line 379.
+Package cleveref Info: loaded `english' language definitions on input line 406.
 
- [13 <./IMAGES/DQD/cutting.png (PNG copy)>]
-Overfull \hbox (10.05133pt too wide) in paragraph at lines 454--456
-[]\T1/ptm/m/n/10.95 Now ob-serve that hamil-to-nian [][]3.23[][][] al-ready has
+ [13]
+Package cleveref Info: loaded `english' language definitions on input line 417.
+
+ [14 <./IMAGES/DQD/cutting.png (PNG copy)>]
+Overfull \hbox (10.05133pt too wide) in paragraph at lines 483--485
+[]\T1/ptm/m/n/10.95 Now ob-serve that hamil-to-nian [][]3.26[][][] al-ready has
  a di-ag-o-nal form in the base $[]$ 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 463.
+Package cleveref Info: loaded `english' language definitions on input line 530.
 
-[14]
-Package cleveref Info: loaded `english' language definitions on input line 548.
-
- [15]
-<IMAGES/even.png, id=284, 413.545pt x 300.12125pt>
+[15]
+<IMAGES/even.png, id=309, 462.528pt x 346.896pt>
 File: IMAGES/even.png Graphic file (type png)
 <use IMAGES/even.png>
-Package pdftex.def Info: IMAGES/even.png  used on input line 616.
-(pdftex.def)             Requested size: 206.77199pt x 150.06026pt.
-<IMAGES/odd.png, id=285, 409.53pt x 300.12125pt>
+Package pdftex.def Info: IMAGES/even.png  used on input line 645.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<IMAGES/odd.png, id=310, 485.6544pt x 346.896pt>
 File: IMAGES/odd.png Graphic file (type png)
 <use IMAGES/odd.png>
-Package pdftex.def Info: IMAGES/odd.png  used on input line 616.
-(pdftex.def)             Requested size: 204.7645pt x 150.06026pt.
+Package pdftex.def Info: IMAGES/odd.png  used on input line 645.
+(pdftex.def)             Requested size: 242.8266pt x 173.44757pt.
 
-
-LaTeX Warning: Reference `eq:PropRuleQD' on page 16 undefined on input line 620
-.
-
-Package cleveref Info: loaded `english' language definitions on input line 631.
-
-[16 <./IMAGES/even.png> <./IMAGES/odd.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 641--642
-
+Overfull \hbox (58.96431pt too wide) in paragraph at lines 645--646
+[][][][] 
  []
 
-<IMAGES/DQD/NRG-QD.png, id=300, 284.262pt x 212.795pt>
-File: IMAGES/DQD/NRG-QD.png Graphic file (type png)
-<use IMAGES/DQD/NRG-QD.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-QD.png  used on input line 651.
-(pdftex.def)             Requested size: 170.5585pt x 127.67796pt.
-<IMAGES/DQD/NRG-DQD.png, id=301, 366.168pt x 274.626pt>
-File: IMAGES/DQD/NRG-DQD.png Graphic file (type png)
-<use IMAGES/DQD/NRG-DQD.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-DQD.png  used on input line 652.
-(pdftex.def)             Requested size: 164.77406pt x 123.58055pt.
-<IMAGES/DQD/NRG-IndirectDQD.png, id=302, 382.228pt x 286.671pt>
-File: IMAGES/DQD/NRG-IndirectDQD.png Graphic file (type png)
-<use IMAGES/DQD/NRG-IndirectDQD.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-IndirectDQD.png  used on input line 653
-.
-(pdftex.def)             Requested size: 191.11353pt x 143.33514pt.
+Package cleveref Info: loaded `english' language definitions on input line 660.
 
-LaTeX Warning: Reference `chap:Results' on page 17 undefined on input line 659.
+[16]
+Package cleveref Info: loaded `english' language definitions on input line 673.
 
+ [17 <./IMAGES/even.png> <./IMAGES/odd.png>]
+! Extra \right.
+\Vert ->\delimiter "026B30D 
+                            
+l.688 ...\langle j\vert d\vert q\rangle\right\Vert
+                                                  $ is constantly rotating a...
+I'm ignoring a \right that had no matching \left.
 
+! Extra \right.
+\Vert ->\delimiter "026B30D 
+                            
+l.688 ...\langle j\vert d\vert q\rangle\right\Vert
+                                                  _N$ recursively starting f...
+I'm ignoring a \right that had no matching \left.
 
-LaTeX Warning: Reference `chap:Results' on page 17 undefined on input line 674.
+! Extra \right.
+\Vert ->\delimiter "026B30D 
+                            
+l.688 ...\langle j\vert d\vert q\rangle\right\Vert
+                                                  _{N=0}$.
+I'm ignoring a \right that had no matching \left.
 
+! Double subscript.
+l.693 ...{-\beta E_{j}}\vert j          \rangle_N_
+                                                  {max} \langle j\vert, \lab...
+I treat `x_1_2' essentially like `x_1{}_2'.
 
-Package cleveref Info: loaded `english' language definitions on input line 675.
+! Double subscript.
+l.696 ...{max}$ pinpoints that $\vert j \rangle_N_
+                                                  {max} \langle j\vert$ is a...
+I treat `x_1_2' essentially like `x_1{}_2'.
 
-[17])
-Package cleveref Info: loaded `english' language definitions on input line 225.
+! Missing delimiter (. inserted).
+<to be read again> 
+                   =
+l.700 G_{d,d^{\dagger}}^{N_{max}}(t)\left =
+                                            \text{Tr}\left(\hat{\rho}_{N_{ma...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
 
- [18 <./IMAGES/DQD/NRG-QD.png> <./IMAGES/DQD/NRG-DQD.png> <./IMAGES/DQD/NRG-Ind
-irectDQD.png>] (./main.bbl (./main.brf)
-\tf@brf=\write7
-\openout7 = `main.brf'.
+! You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.701 \end{equation}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 15.
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.701 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Package cleveref Info: loaded `english' language definitions on input line 701.
+
+[18]
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.702 ...ion $G_{d,d^{\dagger}}^{N_{max}}(t)\left$
+                                                   we can obtain the density...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.702 ...ion $G_{d,d^{\dagger}}^{N_{max}}(t)\left$
+                                                   we can obtain the density...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<IMAGES/DQD/DMRGchain.png, id=348, 273.27094pt x 111.41624pt>
+File: IMAGES/DQD/DMRGchain.png Graphic file (type png)
+<use IMAGES/DQD/DMRGchain.png>
+Package pdftex.def Info: IMAGES/DQD/DMRGchain.png  used on input line 706.
+(pdftex.def)             Requested size: 273.27025pt x 111.41597pt.
+! Missing delimiter (. inserted).
+<to be read again> 
+                   =
+l.726 G_{d,d^{\dagger}}^{N}(t)\left =
+                                      \text{Tr}\left(\hat{\rho}_{N}\mathbb{T...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+! You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.727 \end{equation}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.727 \end{equation}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Package cleveref Info: loaded `english' language definitions on input line 756.
+
+[19 <./IMAGES/DQD/DMRGchain.png (PNG copy)>]
+<IMAGES/NRG/NRGcode.png, id=363, 1026.7158pt x 748.7172pt>
+File: IMAGES/NRG/NRGcode.png Graphic file (type png)
+<use IMAGES/NRG/NRGcode.png>
+Package pdftex.def Info: IMAGES/NRG/NRGcode.png  used on input line 759.
+(pdftex.def)             Requested size: 410.67905pt x 299.48157pt.
+Package cleveref Info: loaded `english' language definitions on input line 766.
+
+ [20 <./IMAGES/NRG/NRGcode.png>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 771.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [19
+)
+<IMAGES/DQD/NRG-QD.png, id=377, 284.262pt x 212.795pt>
+File: IMAGES/DQD/NRG-QD.png Graphic file (type png)
+<use IMAGES/DQD/NRG-QD.png>
+Package pdftex.def Info: IMAGES/DQD/NRG-QD.png  used on input line 787.
+(pdftex.def)             Requested size: 170.5585pt x 127.67796pt.
+<IMAGES/DQD/NRG-DQD.png, id=378, 366.168pt x 274.626pt>
+File: IMAGES/DQD/NRG-DQD.png Graphic file (type png)
+<use IMAGES/DQD/NRG-DQD.png>
+Package pdftex.def Info: IMAGES/DQD/NRG-DQD.png  used on input line 788.
+(pdftex.def)             Requested size: 164.77406pt x 123.58055pt.
+<IMAGES/DQD/NRG-IndirectDQD.png, id=379, 382.228pt x 286.671pt>
+File: IMAGES/DQD/NRG-IndirectDQD.png Graphic file (type png)
+<use IMAGES/DQD/NRG-IndirectDQD.png>
+Package pdftex.def Info: IMAGES/DQD/NRG-IndirectDQD.png  used on input line 789
+.
+(pdftex.def)             Requested size: 191.11353pt x 143.33514pt.
+
+
+LaTeX Warning: Reference `chap:Results' on page 21 undefined on input line 796.
+
+
+Package cleveref Info: loaded `english' language definitions on input line 807.
+
+[21]
+
+LaTeX Warning: Reference `chap:Results' on page 22 undefined on input line 811.
+
+
+Package cleveref Info: loaded `english' language definitions on input line 812.
+
+[22 <./IMAGES/DQD/NRG-QD.png> <./IMAGES/DQD/NRG-DQD.png> <./IMAGES/DQD/NRG-Indi
+rectDQD.png>])
+Package cleveref Info: loaded `english' language definitions on input line 224.
+
+ [23] (./main.bbl (./main.brf)
+\tf@brf=\write7
+\openout7 = `main.brf'.
+
+ [24
 
 
 ]
@@ -983,33 +1121,33 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.100 
+l.144 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-Package cleveref Info: loaded `english' language definitions on input line 169.
+Package cleveref Info: loaded `english' language definitions on input line 162.
 
-[20]) [21]
+[25]) [26]
 \openout2 = `Append_A.aux'.
 
  (./Append_A.tex
 Appendix A.
 
-LaTeX Warning: Reference `eq:Anderson' on page 22 undefined on input line 8.
+LaTeX Warning: Reference `eq:Anderson' on page 27 undefined on input line 8.
 
-[22
+[27
 
 
 
 ]
 
-LaTeX Warning: Reference `FigDiscretization' on page 23 undefined on input line
+LaTeX Warning: Reference `FigDiscretization' on page 28 undefined on input line
  48.
 
 Package cleveref Info: loaded `english' language definitions on input line 95.
-[23]
+[28]
 Overfull \hbox (28.6966pt too wide) in alignment at lines 100--106
  [][][] []
  []
@@ -1021,40 +1159,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--121
 
 Package cleveref Info: loaded `english' language definitions on input line 131.
 
-[24]
+[29]
 
-LaTeX Warning: Reference `FigNRG-chain' on page 25 undefined on input line 144.
+LaTeX Warning: Reference `FigNRG-chain' on page 30 undefined on input line 144.
 
 
 Package cleveref Info: loaded `english' language definitions on input line 182.
 
-[25]
+[30]
 
-LaTeX Warning: Reference `FigNRG-chain' on page 26 undefined on input line 187.
+LaTeX Warning: Reference `FigNRG-chain' on page 31 undefined on input line 187.
 
 
 Package cleveref Info: loaded `english' language definitions on input line 203.
 
-[26]
+[31]
 Appendix B.
 
-LaTeX Warning: Reference `General model' on page 27 undefined on input line 212
+LaTeX Warning: Reference `General model' on page 32 undefined on input line 212
 .
 
-[27
+[32
 
 ]
 
-LaTeX Warning: Reference `fig:ExchangeMod' on page 28 undefined on input line 2
+LaTeX Warning: Reference `fig:ExchangeMod' on page 33 undefined on input line 2
 57.
 
 
-LaTeX Warning: Reference `fig:MSig/Shift_t1=t2' on page 28 undefined on input l
+LaTeX Warning: Reference `fig:MSig/Shift_t1=t2' on page 33 undefined on input l
 ine 277.
 
 Package cleveref Info: loaded `english' language definitions on input line 310.
 
-[28]
+[33]
 Overfull \hbox (17.05872pt too wide) detected at line 326
 [] []
  []
@@ -1065,43 +1203,42 @@ Overfull \hbox (17.05872pt too wide) detected at line 344
  []
 
 )
-Package cleveref Info: loaded `english' language definitions on input line 238.
+Package cleveref Info: loaded `english' language definitions on input line 237.
 
- [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 242.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 242.
+ [34]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
  (./main.aux
 Package cleveref Info: loaded `english' language definitions on input line 19.
  (./Methods.aux) (./Append_A.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 242.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 242.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: E778E774CAB42B96355A08EAEE5B69D4;4639.
 
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Package rerunfilecheck Warning: File `main.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
 
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 0C1BF29BFF1E41F2A9C298AF88196F25;3664
-(rerunfilecheck)             After:  4D8EA321EA46474C0731217592346AF7;3829.
-Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 48754A8C2F20D6A03B304CD243A5AFDF;1434.
+Package rerunfilecheck Info: Checksums for `main.brf':
+(rerunfilecheck)             Before: 6111717A2ED50C203FA77E92D6AFB235;1505
+(rerunfilecheck)             After:  170391CC137780DED8AB71FBDDDA60C1;1505.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 242.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
  ) 
 Here is how much of TeX's memory you used:
- 15405 strings out of 494485
- 235560 string characters out of 6175792
- 337961 words of memory out of 5000000
+ 15425 strings out of 494485
+ 235517 string characters out of 6175792
+ 339370 words of memory out of 5000000
  18653 multiletter control sequences out of 15000+600000
  87928 words of font info for 142 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 43i,13n,89p,1159b,700s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,15n,89p,1159b,696s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/cifu/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600p
 k>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
@@ -1116,10 +1253,10 @@ live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on main.pdf (29 pages, 849960 bytes).
+Output written on main.pdf (34 pages, 1391400 bytes).
 PDF statistics:
- 606 PDF objects out of 1000 (max. 8388607)
- 494 compressed objects within 5 object streams
- 144 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 675 PDF objects out of 1000 (max. 8388607)
+ 554 compressed objects within 6 object streams
+ 161 named destinations out of 1000 (max. 500000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
