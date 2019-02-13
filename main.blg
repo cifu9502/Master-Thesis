@@ -1,6 +1,7 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
+A level-1 auxiliary file: Methods.aux
 A level-1 auxiliary file: NResults.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
@@ -12,6 +13,10 @@ I was expecting a `,' or a `}'---line 29 of file Majorana-QD.bib
 I'm skipping whatever remains of this entry
 Database file #2: Kitaev-Majorana.bib
 Database file #3: Kondo.bib
+Repeated entry---line 165 of file Kondo.bib
+ : @article{dias_da_silva_transmission_2008
+ :                                         ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
@@ -27,45 +32,45 @@ Warning--empty year in deng_majorana_2016
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
-You've used 18 entries,
+You've used 23 entries,
             2481 wiz_defined-function locations,
-            710 strings with 8829 characters,
-and the built_in function-call counts, 7349 in all, are:
-= -- 655
-> -- 350
-< -- 11
-+ -- 140
-- -- 104
-* -- 655
-:= -- 1219
-add.period$ -- 93
-call.type$ -- 18
-change.case$ -- 35
-chr.to.int$ -- 18
-cite$ -- 33
-duplicate$ -- 336
-empty$ -- 630
-format.name$ -- 128
-if$ -- 1510
+            754 strings with 10265 characters,
+and the built_in function-call counts, 9648 in all, are:
+= -- 884
+> -- 427
+< -- 16
++ -- 172
+- -- 126
+* -- 847
+:= -- 1567
+add.period$ -- 119
+call.type$ -- 23
+change.case$ -- 45
+chr.to.int$ -- 23
+cite$ -- 38
+duplicate$ -- 445
+empty$ -- 841
+format.name$ -- 157
+if$ -- 2010
 int.to.chr$ -- 1
-int.to.str$ -- 19
-missing$ -- 18
-newline$ -- 137
-num.names$ -- 54
-pop$ -- 119
+int.to.str$ -- 24
+missing$ -- 23
+newline$ -- 173
+num.names$ -- 69
+pop$ -- 147
 preamble$ -- 1
-purify$ -- 18
+purify$ -- 23
 quote$ -- 0
-skip$ -- 173
+skip$ -- 241
 stack$ -- 0
-substring$ -- 331
-swap$ -- 41
-text.length$ -- 0
+substring$ -- 492
+swap$ -- 67
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 123
+type$ -- 158
 warning$ -- 15
-while$ -- 57
+while$ -- 77
 width$ -- 0
-write$ -- 307
-(There was 1 error message)
+write$ -- 395
+(There were 2 error messages)

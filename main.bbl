@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -73,6 +73,80 @@ David~A. Ruiz-Tijerina, E.~Vernek, Luis G. G.~V. Dias~da Silva, and J.~C.
 \newblock \doi{10.1103/PhysRevB.91.115435}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.91.115435}.
 
+\bibitem[Spielman(2010)]{spielman10}
+Daniel~A Spielman.
+\newblock Algorithms, graph theory, and linear equations in laplacian matrices.
+\newblock In \emph{Proceedings of the International Congress of
+  Mathematicians}, volume~4, pages 2698--2722, 2010.
+\newblock URL
+  \url{http://www.mathunion.org/ICM/ICM2010.4/Main/icm2010.4.2698.2722.pdf}.
+
+\bibitem[Bulla et~al.(2008)Bulla, Costi, and Pruschke]{bulla_numerical_2008}
+Ralf Bulla, Theo~A. Costi, and Thomas Pruschke.
+\newblock Numerical renormalization group method for quantum impurity systems.
+\newblock \emph{Reviews of Modern Physics}, 80\penalty0 (2):\penalty0 395--450,
+  April 2008.
+\newblock \doi{10.1103/RevModPhys.80.395}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.80.395}.
+
+\bibitem[Wilson(1975)]{wilson_renormalization_1975}
+Kenneth~G. Wilson.
+\newblock The renormalization group: {Critical} phenomena and the {Kondo}
+  problem.
+\newblock \emph{Reviews of Modern Physics}, 47\penalty0 (4):\penalty0 773--840,
+  October 1975.
+\newblock \doi{10.1103/RevModPhys.47.773}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.47.773}.
+
+\bibitem[Krishna-murthy et~al.(1980)Krishna-murthy, Wilkins, and
+  Wilson]{krishna-murthy_renormalization-group_1980}
+H.~R. Krishna-murthy, J.~W. Wilkins, and K.~G. Wilson.
+\newblock Renormalization-group approach to the {Anderson} model of dilute
+  magnetic alloys. 1. {Static} properties for the symmetric case.
+\newblock \emph{Phys.Rev.}, B21:\penalty0 1003--1043, 1980.
+\newblock \doi{10.1103/PhysRevB.21.1003}.
+
+\bibitem[Costi et~al.(1994)Costi, Hewson, and Zlatic]{costi_transport_1994}
+T.~A. Costi, A.~C. Hewson, and V.~Zlatic.
+\newblock Transport coefficients of the {Anderson} model via the numerical
+  renormalization group.
+\newblock \emph{Journal of Physics: Condensed Matter}, 6\penalty0
+  (13):\penalty0 2519, 1994.
+\newblock ISSN 0953-8984.
+\newblock \doi{10.1088/0953-8984/6/13/013}.
+\newblock URL \url{http://stacks.iop.org/0953-8984/6/i=13/a=013}.
+
+\bibitem[Hofstetter(2000)]{hofstetter_generalized_2000}
+Walter Hofstetter.
+\newblock Generalized {Numerical} {Renormalization} {Group} for {Dynamical}
+  {Quantities}.
+\newblock \emph{Physical Review Letters}, 85\penalty0 (7):\penalty0 1508--1511,
+  August 2000.
+\newblock \doi{10.1103/PhysRevLett.85.1508}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.85.1508}.
+
+\bibitem[Oliveira and Oliveira(1994)]{oliveira_generalized_1994}
+Wanda~C. Oliveira and Luiz~N. Oliveira.
+\newblock Generalized numerical renormalization-group method to calculate the
+  thermodynamical properties of impurities in metals.
+\newblock \emph{Physical Review B}, 49\penalty0 (17):\penalty0 11986--11994,
+  May 1994.
+\newblock \doi{10.1103/PhysRevB.49.11986}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.49.11986}.
+
+\bibitem[Dias~da Silva et~al.(2008)Dias~da Silva, Sandler, Ingersent, and
+  Ulloa]{dias_da_silva_transmission_2008}
+Luis G. G.~V. Dias~da Silva, Nancy Sandler, Kevin Ingersent, and Sergio~E.
+  Ulloa.
+\newblock Transmission in double quantum dots in the {Kondo} regime:
+  {Quantum}-critical transitions and interference effects.
+\newblock \emph{Physica E: Low-dimensional Systems and Nanostructures},
+  40\penalty0 (5):\penalty0 1002--1005, March 2008.
+\newblock ISSN 1386-9477.
+\newblock \doi{10.1016/j.physe.2007.08.098}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1386947707003074}.
+
 \bibitem[Barkeshli and Sau(2015)]{barkeshli_physical_2015}
 Maissam Barkeshli and Jay~D. Sau.
 \newblock Physical {Architecture} for a {Universal} {Topological} {Quantum}
@@ -99,15 +173,6 @@ Alexander~Cyril Hewson.
 \newblock Cambridge University Press, April 1997.
 \newblock ISBN 978-0-521-59947-4.
 \newblock Google-Books-ID: fPzgHneNFDAC.
-
-\bibitem[Wilson(1975)]{wilson_renormalization_1975}
-Kenneth~G. Wilson.
-\newblock The renormalization group: {Critical} phenomena and the {Kondo}
-  problem.
-\newblock \emph{Reviews of Modern Physics}, 47\penalty0 (4):\penalty0 773--840,
-  October 1975.
-\newblock \doi{10.1103/RevModPhys.47.773}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.47.773}.
 
 \bibitem[Ruderman and Kittel(1954)]{ruderman_indirect_1954}
 M.~A. Ruderman and C.~Kittel.
@@ -136,14 +201,6 @@ Kei Yosida.
 \newblock \doi{10.1103/PhysRev.106.893}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.106.893}.
 
-\bibitem[Krishna-murthy et~al.(1980)Krishna-murthy, Wilkins, and
-  Wilson]{krishna-murthy_renormalization-group_1980}
-H.~R. Krishna-murthy, J.~W. Wilkins, and K.~G. Wilson.
-\newblock Renormalization-group approach to the {Anderson} model of dilute
-  magnetic alloys. 1. {Static} properties for the symmetric case.
-\newblock \emph{Phys.Rev.}, B21:\penalty0 1003--1043, 1980.
-\newblock \doi{10.1103/PhysRevB.21.1003}.
-
 \bibitem[Sindel(2005)]{sindel_numerical_2005}
 Michael Sindel.
 \newblock \emph{Numerical {Renormalization} {Group} studies of {Quantum}
@@ -151,13 +208,5 @@ Michael Sindel.
 \newblock Text.{PhDThesis}, Ludwig-Maximilians-Universität München, January
   2005.
 \newblock URL \url{https://edoc.ub.uni-muenchen.de/3115/}.
-
-\bibitem[Bulla et~al.(2008)Bulla, Costi, and Pruschke]{bulla_numerical_2008}
-Ralf Bulla, Theo~A. Costi, and Thomas Pruschke.
-\newblock Numerical renormalization group method for quantum impurity systems.
-\newblock \emph{Reviews of Modern Physics}, 80\penalty0 (2):\penalty0 395--450,
-  April 2008.
-\newblock \doi{10.1103/RevModPhys.80.395}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.80.395}.
 
 \end{thebibliography}

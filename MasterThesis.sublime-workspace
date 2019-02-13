@@ -1,0 +1,427 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ep",
+				"epsilon"
+			],
+			[
+				"right",
+				"\\right)                                           \tlatex-document"
+			],
+			[
+				"lef",
+				"\\left(                                            \tlatex-document"
+			],
+			[
+				"item",
+				"\\item[label]                                      \tlatex-document"
+			],
+			[
+				"cap",
+				"\\caption{title}                                   \tlatex-document"
+			],
+			[
+				"lam",
+				"\\Lambda                                           \tlatex-mathsymbols"
+			],
+			[
+				"inclu",
+				"\\includegraphics[options]{name}                   \tlatex-document"
+			],
+			[
+				"footno",
+				"\\footnote{text}                                   \tlatex-document"
+			],
+			[
+				"ru",
+				"1_run"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": " \\chapter{Motivation}\n\n\\begin{chapquote}{\\textit{F. Duncan M. Haldane}}\n``It started out with a toy model demonstration, and then I realized it was very good model.  You don't understand the full implications until other people start thinking it is true and they observe the big picture [...] Now, that toy model is like Hydrogen atom for topological materials- it turned out to be the first example of topological quantum matter.''\n\\end{chapquote}\n\n% https://www.princeton.edu/news/2016/10/04/good-day-great-ideas-princetons-haldane-wins-one-theoretical-physics\n% https://www.aps.org/publications/apsnews/201611/nobel.cfm\n% https://www.nobelprize.org/prizes/physics/2016/haldane/biographical/\n\n\nIn 2001 Alexei Yu. Kitaev presented a toy model for implementing qubits\nthat could face the problem of high decoherency in quantum computation \\citep{kitaev_unpaired_2001}. Kitaev's idea was centered in using the properties of an exotic quasi-particle that appears at the edges of a quantum superconducting chain. This quasi-particle receives the name of Majorana Fermion, is characterized for being its own anti-particle, thus it has no charge or spin. It also presents non-Abelian statistics, a desired property to implement fault-tolerant quantum computers\\citep{kitaev_fault-tolerant_2003}. These majorana fermions where theoretically predicted since the 1930's by one of the genius of the era, Ettore Majorana \\citep{wilczek_majorana_2009}.\nAlthough no fundamental Majorana-particle has been discovered to the\ndate, Kitaev's model inspired the pursue of majorana fermions as\nquasi-particles in a novel exotic class of materials known as topological\nsuperconductors (TS)\\citep{fu_superconducting_2008,sato_non-abelian_2009,alicea_new_2012}.\n\\\\\n\nThe last five years have been full of excitement, as new experiments\nhave turned some of the theoretical predictions of the 1990s and 2000s\ninto a reality. Very recently the first evidence of Majorana end states\nin TS has been found in multiple experiments \\citep{mourik_signatures_2012,das_zero-bias_2012,deng_anomalous_2012}\nfollowing the prescription by \\citet{oreg_helical_2010} and \\citet{lutchyn_majorana_2010}.\nThese experiments have been based on tunneling spectroscopy in junctions\nbetween TS and non metallic (NM) leads, where resonances have been\nobserved at zero energy, consistent with the presence of Majorana\nzero\\textendash energy modes.\\\\\n\nA downside of the tunneling spectroscopy technique in this case, is\nthat it probes not only the end of the Topological Superconductor(TS), but its bulk as well ,\nwhich completely destroys the qubit information. A less destroying\nmodel presented by \\citet{liu_detecting_2011} consists consists in attaching a Quantum Dot (QD) to the edges of a majorana chain in the topological phase and executing transport measurements through the QD \\cite{liu_detecting_2011} . The majorana mode at the end of the chain then leaks inside the QD \\cite{vernek_subtle_2014} which produces a zero-bias conductance peak of half a quanta $\\frac{e^{2}}{2h}$ through the dot. This is a majorana signature which produces half of the expected peak by a regular fermion.\\\\\n\nIn fact, this phenomenon is similar to the $\\frac{e^{2}}{h}$ conductance peak caused by the Kondo effect \\citep{hewson_kondo_1997}. Since topological superconductors and the Kondo effect could coexist at temperatures of a few mili-kelvins, it should be possible to observe combined Kondo-Majorana physics in this type of devices. This idea motivated an NRG study of a Quantum dot-Majorana hibrid system in the Kondo regime  \\citep{ruiz-tijerina_interaction_2015}. \\\\\n\n\\begin{figure}[t]\n    \\centering\n    \\includegraphics[scale=0.4]{IMAGES/Kondo-MajoranaCond.png}\n    \\caption{\\label{Fig-Kondo-Majorana conductance}(a) QD spin-down\n    density of states. Because this channel couples to the Majorana mode,\n    it displays the characteristic zero-bias signature of amplitude\n    $\\frac{e^{2}}{2h}$. (b) QD spin-up density of states,\n    displaying the zero-bias peak of the Kondo effect, with\n    unit amplitude. (c) Zero-bias conductance of the QD coupled\n    to the Majorana mode, as a function of the QD energy level ($\\lambda$\n    parameterizes the strength of the Majorana-QD tunnel coupling).\n    The presence of the spin-up Kondo resonance enhances the\n    QD conductance in particle-hole symmetry ($V_{g}=0$),\n    but quickly disappears as the QD level is detuned from this point.\n    The spin-down Majorana signature, on the other hand, is\n    robust {[}7{]}, leaving a residual conductance of $\\frac{e^{2}}{2h}$.\n    \\protect\\Source{\\citep{ruiz-tijerina_interaction_2015}}.}\n\\end{figure}\n\nThis study revealed that transport measurements\nthrough the quantum dot will show contributions to the enhanced conductance\ncoming from the Kondo effect and the Majorana mode: The Majorana mode\nat the end of the wire will migrate into one of the quantum dot spin channels,\ngiving rise to a zero\\textendash energy peak in the density of states\n(\\ref{Fig-Kondo-Majorana conductance}a)) contributing a conductance\nof $\\frac{e^{2}}{2h}$(\\ref{Fig-Kondo-Majorana conductance}c)). The\nzero\\textendash bias peak from the Kondo effect appears in the other\nspin channel (\\ref{Fig-Kondo-Majorana conductance}b)), contributing\na conductance of $\\frac{e^{2}}{h}$. Then, the Kondo effect can be\n\\textquotedblleft turned off\\textquotedblright{} through gate voltages\nand magnetic fields, leaving only the Majorana contribution. Clear\nevidence of the destruction of the Kondo peak will appear in the conductance,\nallowing for a distinction between Majorana and Kondo signatures.\\\\\n\n\n\n Apart from not destroying the entire qubit-information the QD-method has another insight.  This is the possibility of manipulating  Majorana fermions  in multidot systems by shifting the QD gate voltages and tunnel couplings which brings possible applications in  braiding procedures. The simplest system where Majorana manipulation is possible is  a  Double Quantum Dot (DQD) coupled to a majorana chain. By tuning the QD gate voltages and the majorana coupling we will be able to probe the mobility of the majorana modes through the dots. \\\\\n \nIn addition, when both dots are coupled to the lead the Double Quantum Dot exhibits an anti-ferromagnetic interaction known as  Ruderman-Kittel-Kasuya-Yosida (RKKY) \\cite{ruderman_indirect_1954,kasuya_theory_1956,yosida_magnetic_1957}. On the other hand, when only one dot is coupled  and the second Dot is indirectly attached through the first dot,  the Kondo effect is annihilated due to the destructive interference  generated by extra dot \\cite{dias_da_silva_transmission_2008}. Both cases reveal interesting results for majorana manipulation and hybrid Kondo-Majorana systems.\n\n\n\\section{Structure}\n\nThis thesis is integrated by $4$-major chapters . In  \\ref{chap:Preliminaries}, we will take a review to the basis of quantum transport in single electron transistors, the Anderson model and the emergence of the Kondo effect in quantum dots. \n\nIn \\ref{chap: Methods} contains a description of the methods that we will use to study the Double Quantum Dot-majorana system. The  methods  are the Zubarev's ballistic transport\\cite{zubarev_double-time_1960} for non-interacting systems and Wilson's Numerical Renormalization\nGroup (NRG) technique \\citep{wilson_renormalization_1975} for interacting systems. We will use the Double Quantum Dot case as major example to explain both methods. Hence the background information about double quantum dots systems will be presented in this chapter. \n\nThe \\ref{chap:Majorana} changes the subject, leading us to the mean topic of this thesis, Majorana fermions. The discussion will start with the Kitaev chain addressing its main characteristics such as topological characterization and non-abelian statistics . Then we take a look to the real implementations of majorana chains were we will discuss the most recent experimental accomplishments  in the area.  At the end, we face the the problem of a hybrid Quantum Dot-Majorana system using the methods described in \\ref{chap: Methods}.\n\nUsing the methods from \\ref{chap: Methods} and the previous acquired experience with the Double Quantum Dot and the Quantum Dot-Majorana , we address in \\ref{chap:Results} the  Double Quantum Dot-Majorana system. We will study several procedures  mainly focused in the manipulation of majorana fermions and the combined effects of Kondo-Majorana physics. \n\n\n\n\n\n\n\n",
+			"file": "Intro.tex",
+			"file_size": 8458,
+			"file_write_time": 131943132810247282,
+			"settings":
+			{
+				"buffer_size": 8457,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "NResults.tex",
+			"settings":
+			{
+				"buffer_size": 46916,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.tex",
+			"settings":
+			{
+				"buffer_size": 7834,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vi",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"v",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"vie",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"view",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"git:pus",
+				"Git: Push"
+			],
+			[
+				"git:co",
+				"Git: Commit"
+			],
+			[
+				"git:a",
+				"Git: Add Current File"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build With: LaTeX - Basic Builder"
+			],
+			[
+				"b",
+				"Build With: LaTeX - Basic Builder"
+			],
+			[
+				"gi",
+				"Github: History"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"k",
+				"Preferences: Key Bindings"
+			],
+			[
+				"bu",
+				"Build With: LaTeX - Basic Builder"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/cifu/Master-Thesis"
+	],
+	"file_history":
+	[
+		"/home/cifu/Master-Thesis/Intro.tex",
+		"/home/cifu/Master-Thesis/Methods.tex",
+		"/home/cifu/Master-Thesis/Kondo.bib",
+		"/home/cifu/Master-Thesis/main.tex",
+		"/home/cifu/Master-Thesis/main.pdf",
+		"/home/cifu/Desktop/Master-Thesis/main.log",
+		"/home/cifu/Desktop/Master-Thesis/Methods.tex",
+		"/home/cifu/Desktop/Master-Thesis/main.tex",
+		"/home/cifu/Desktop/Master-Thesis/main.pdf",
+		"/home/cifu/Desktop/Kondo Notes.txt",
+		"/home/cifu/Desktop/NRG_Lectures.txt",
+		"/home/cifu/Desktop/Master-Thesis/Kondo.bib",
+		"/home/cifu/Desktop/Master-Thesis/main.bbl",
+		"/home/cifu/Master-Thesis/Append_A.tex",
+		"/home/cifu/tutorial_2019_v2/05_1_spectral_function_SIAM/g.sh",
+		"/home/cifu/tutorial_2019_v2/01_1_thermodynamics_Kondo/imp/generatedata.sh",
+		"/home/cifu/Master-Thesis/Majorana.tex",
+		"/home/cifu/Master-Thesis/NResults.tex",
+		"/home/cifu/Master-Thesis/main.bbl",
+		"/home/cifu/Manipulation-of-Majorana-Fermions/main.tex"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Intro.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8457,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								22,
+								22
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "NResults.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 46916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1071.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "main.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1716,
+								1716
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 1,
+								"count": 473,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 850.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 120.0
+	},
+	"output.latextools":
+	{
+		"height": 96.0
+	},
+	"pinned_build_system": "",
+	"project": "MasterThesis.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 203.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
