@@ -1,8 +1,16 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Methods.aux
-A level-1 auxiliary file: NResults.aux
+A level-1 auxiliary file: Majorana.aux
+White space in argument---line 142 of file Majorana.aux
+ : \citation{By
+ :              the author.}
+I'm skipping whatever remains of this command
+White space in argument---line 143 of file Majorana.aux
+ : \citation{By
+ :              the author.}
+I'm skipping whatever remains of this command
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
 Database file #1: Majorana-QD.bib
@@ -11,7 +19,12 @@ I was expecting a `,' or a `}'---line 29 of file Majorana-QD.bib
  : @article{liu_detecting_2011,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Database file #2: Kitaev-Majorana.bib
+Database file #2: Kitaev-Majorana.bib.bib
+I was expecting a `,' or a `}'---line 113 of file Kitaev-Majorana.bib.bib
+ : 
+ : @article{beenakker_search_2013,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Database file #3: Kondo.bib
 Repeated entry---line 165 of file Kondo.bib
  : @article{dias_da_silva_transmission_2008
@@ -32,45 +45,45 @@ Warning--empty year in deng_majorana_2016
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
-You've used 23 entries,
+You've used 30 entries,
             2481 wiz_defined-function locations,
-            754 strings with 10265 characters,
-and the built_in function-call counts, 9648 in all, are:
-= -- 884
-> -- 427
-< -- 16
-+ -- 172
-- -- 126
-* -- 847
-:= -- 1567
-add.period$ -- 119
-call.type$ -- 23
-change.case$ -- 45
-chr.to.int$ -- 23
-cite$ -- 38
-duplicate$ -- 445
-empty$ -- 841
-format.name$ -- 157
-if$ -- 2010
+            815 strings with 12580 characters,
+and the built_in function-call counts, 13411 in all, are:
+= -- 1161
+> -- 752
+< -- 17
++ -- 288
+- -- 228
+* -- 1249
+:= -- 2243
+add.period$ -- 158
+call.type$ -- 30
+change.case$ -- 60
+chr.to.int$ -- 30
+cite$ -- 45
+duplicate$ -- 578
+empty$ -- 1095
+format.name$ -- 266
+if$ -- 2754
 int.to.chr$ -- 1
-int.to.str$ -- 24
-missing$ -- 23
-newline$ -- 173
-num.names$ -- 69
-pop$ -- 147
+int.to.str$ -- 31
+missing$ -- 30
+newline$ -- 226
+num.names$ -- 90
+pop$ -- 176
 preamble$ -- 1
-purify$ -- 23
+purify$ -- 30
 quote$ -- 0
-skip$ -- 241
+skip$ -- 305
 stack$ -- 0
-substring$ -- 492
-swap$ -- 67
+substring$ -- 631
+swap$ -- 88
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 158
+type$ -- 207
 warning$ -- 15
-while$ -- 77
+while$ -- 100
 width$ -- 0
-write$ -- 395
-(There were 2 error messages)
+write$ -- 524
+(There were 5 error messages)

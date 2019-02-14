@@ -1,37 +1,33 @@
-\babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}{Abstract}}{2}{chapter.1}% 
-\contentsline {chapter}{\numberline {2}{Table of Contents}}{3}{chapter.2}% 
-\contentsline {chapter}{\numberline {3}{Theory and Methods }}{5}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}{Ballistic transport }}{5}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}{Using Graph Theory to Solve Ballistic Transport Equations }}{7}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}{Graph Algorithm }}{10}{subsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.1.3}{Ballistic transport in a double quantum dot }}{10}{subsection.3.1.3}% 
-\contentsline {section}{\numberline {3.2}{The Numerical Renormalization Group (NRG) }}{12}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}{From the Renormalization Group to the Wilson's Chain }}{12}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}{Iterative Diagonalization }}{14}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}{Symmetries }}{15}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}{Iterative diagonalization in a single QD Hamiltonian }}{16}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}{The Density Matrix Renormalization Group (DM-NRG) }}{18}{subsection.3.2.5}% 
-\contentsline {subsection}{\numberline {3.2.6}{Specifications of the NRG Code }}{21}{subsection.3.2.6}% 
-\contentsline {subsection}{\numberline {3.2.7}{NRG results in a Double Quantum Dot Coupled to a Metallic Lead}}{22}{subsection.3.2.7}% 
-\contentsline {chapter}{\numberline {4}{Coupling the Majorana Zero Mode to a Double Quantum Dot }}{25}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}{Non-interacting case}}{26}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}{The Green function:}}{26}{subsection.4.1.1}% 
-\contentsline {section}{\numberline {4.2}{NRG for the interacting system}}{28}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}{Manipulation of Majorana zero modes}}{28}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}{Non-interacting manipulation}}{30}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}{Interacting manipulation }}{33}{subsection.4.3.2}% 
-\contentsline {subsection}{\numberline {4.3.3}{ a) Removing Kondo and Majorana with QD-interference }}{38}{subsection.4.3.3}% 
-\contentsline {subsection}{\numberline {4.3.4}{ b) Indirect Majorana after Removing Kondo with QD-interference }}{40}{subsection.4.3.4}% 
-\contentsline {subsection}{\numberline {4.3.5}{ e) Transferring the MZM through gate voltage shifting $\epsilon _{2}$. }}{44}{subsection.4.3.5}% 
-\contentsline {section}{\numberline {4.4}{Particle-Hole symmetric shifting of $\epsilon _{2}=\frac {U}{2}$.}}{46}{section.4.4}% 
-\contentsline {section}{\numberline {4.5}{Shifting $t_2$}}{46}{section.4.5}% 
-\contentsline {section}{\textbf {References}}{48}{figure.4.30}% 
-\contentsline {chapter}{{Bibliography}}{48}{chapter*.2}% 
+\select@language {english}
+\contentsline {chapter}{\numberline {1}{Abstract}}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2}{Table of Contents}}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}{Theory and Methods }}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}{Ballistic transport }}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}{Using Graph Theory to Solve Ballistic Transport Equations }}{7}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}{Graph Algorithm }}{10}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}{Ballistic transport in a double quantum dot }}{10}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}{The Numerical Renormalization Group (NRG) }}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}{From the Renormalization Group to the Wilson's Chain }}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}{Iterative Diagonalization }}{14}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}{Symmetries }}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}{Iterative diagonalization in a single QD Hamiltonian }}{16}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}{The Density Matrix Renormalization Group (DM-NRG) }}{18}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}{Specifications of the NRG Code }}{21}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}{NRG results in a Double Quantum Dot Coupled to a Metallic Lead}}{22}{subsection.3.2.7}
+\contentsline {chapter}{\numberline {4}{The Pursuit of Majorana Fermions }}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}{The Kitaev Chain {}}}{26}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}{Topological phase transition}}{28}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}{Real implementations of Majorana Chains }}{30}{section.4.2}
+\contentsline {section}{\numberline {4.3}{Coupling Majorana Fermions to QDs}}{31}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}{Model}}{32}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}{Non-interacting QD coupled to Majorana chain }}{33}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}{Kondo-Majorana physics}}{36}{subsection.4.3.3}
+\contentsline {section}{\textbf {References}}{37}{figure.4.8}
+\contentsline {chapter}{{Bibliography}}{37}{chapter*.1}
 \contentsline {part}{{Appendices}}{}{}
-\contentsline {chapter}{\numberline {A}{Appendix}}{51}{appendix.A}% 
-\contentsline {section}{\numberline {A.1}{From the logarithmic discretization to the Wilson's chain.}}{51}{section.A.1}% 
-\contentsline {subsubsection}{{Logarithmic Discretization:}}{51}{section*.3}% 
-\contentsline {subsubsection}{{Mapping the Anderson model to a Chain-Hamiltonian}}{53}{section*.4}% 
-\contentsline {chapter}{\numberline {B}{Three peak appearance in the Double Quantum Dot model.}}{56}{appendix.B}% 
-\contentsline {section}{\numberline {B.1}{Initial DQD-Majorana Hamiltonian.}}{57}{section.B.1}% 
+\contentsline {chapter}{\numberline {A}{Appendix}}{41}{appendix.A}
+\contentsline {section}{\numberline {A.1}{From the logarithmic discretization to the Wilson's chain.}}{41}{section.A.1}
+\contentsline {subsubsection}{{Logarithmic Discretization:}}{41}{section*.2}
+\contentsline {subsubsection}{{Mapping the Anderson model to a Chain-Hamiltonian}}{43}{section*.3}
+\contentsline {chapter}{\numberline {B}{Three peak appearance in the Double Quantum Dot model.}}{46}{appendix.B}
+\contentsline {section}{\numberline {B.1}{Initial DQD-Majorana Hamiltonian.}}{47}{section.B.1}

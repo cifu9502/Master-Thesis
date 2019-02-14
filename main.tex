@@ -60,7 +60,13 @@
 %\usepackage{MnSymbol}
 \captionsetup[figure]{font=small}
 
-
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
 
 
 \hypersetup{
@@ -78,6 +84,7 @@ filecolor=black,
 linkcolor=black,
 urlcolor=black
 }
+
 
 % These commands are optional.  The defaults are shown.  You only
 % need to include them if you need a different value
@@ -140,10 +147,11 @@ urlcolor=black
 \renewcommand\equationautorefname{\@gobble}
 }
 
-\@ifundefined{showcaptionsetup}{}{%
- \PassOptionsToPackage{caption=false}{subfig}}
+
+% \@ifundefined{showcaptionsetup}{}{%
+%  \PassOptionsToPackage{caption=false}{subfig}}
 \usepackage{subfig}
-\makeatother
+% \makeatother
 
 
 
@@ -223,15 +231,15 @@ expand this idea using the numerical renormalization group  to study the model o
 % \include{Preliminars}
  \include{Methods}
 
-%\include{Majorana}
-\include{NResults}
+\include{Majorana}
+% \include{NResults}
 
 %\include{Model}
 
 
 \bibliographystyle{unsrtnat}
 \addcontentsline{toc}{section}{\textbf{References}}
-\bibliography{Majorana-QD,Kitaev-Majorana,Kondo}
+\bibliography{Majorana-QD,Kitaev-Majorana.bib,Kondo}
 \appendix
 %dummy comment inserted by tex2lyx to ensure that this paragraph is not empty
 \include{Append_A}

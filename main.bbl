@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -147,6 +147,74 @@ Luis G. G.~V. Dias~da Silva, Nancy Sandler, Kevin Ingersent, and Sergio~E.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S1386947707003074}.
 
+\bibitem[Kitaev(2003)]{kitaev_fault-tolerant_2003}
+A.~Yu Kitaev.
+\newblock Fault-tolerant quantum computation by anyons.
+\newblock \emph{Annals of Physics}, 303\penalty0 (1):\penalty0 2--30, January
+  2003.
+\newblock ISSN 00034916.
+\newblock \doi{10.1016/S0003-4916(02)00018-0}.
+\newblock URL \url{http://arxiv.org/abs/quant-ph/9707021}.
+\newblock arXiv: quant-ph/9707021.
+
+\bibitem[Pachos(2012)]{pachos_introduction_2012}
+Jiannis~K. Pachos.
+\newblock \emph{Introduction to {Topological} {Quantum} {Computation}}.
+\newblock Cambridge University Press, Cambridge ; New York, 1 edition edition,
+  May 2012.
+\newblock ISBN 978-1-107-00504-4.
+
+\bibitem[Beenakker(2013)]{beenakker_search_2013}
+C.w.j. Beenakker.
+\newblock Search for {Majorana} {Fermions} in {Superconductors}.
+\newblock \emph{Annual Review of Condensed Matter Physics}, 4\penalty0
+  (1):\penalty0 113--136, March 2013.
+\newblock ISSN 1947-5454.
+\newblock \doi{10.1146/annurev-conmatphys-030212-184337}.
+\newblock URL
+  \url{https://www.annualreviews.org/doi/10.1146/annurev-conmatphys-030212-184337}.
+
+\bibitem[Sarma et~al.(2015)Sarma, Freedman, and Nayak]{sarma_majorana_2015}
+Sankar~Das Sarma, Michael Freedman, and Chetan Nayak.
+\newblock Majorana zero modes and topological quantum computation.
+\newblock \emph{npj Quantum Information}, 1:\penalty0 15001, October 2015.
+\newblock ISSN 2056-6387.
+\newblock \doi{10.1038/npjqi.2015.1}.
+\newblock URL \url{https://www.nature.com/articles/npjqi20151}.
+
+\bibitem[Plugge et~al.(2017)Plugge, Rasmussen, Egger, and
+  Flensberg]{plugge_majorana_2017}
+Stephan Plugge, Asbjørn Rasmussen, Reinhold Egger, and Karsten Flensberg.
+\newblock Majorana box qubits.
+\newblock \emph{New Journal of Physics}, 19\penalty0 (1):\penalty0 012001,
+  January 2017.
+\newblock ISSN 1367-2630.
+\newblock \doi{10.1088/1367-2630/aa54e1}.
+\newblock URL \url{https://doi.org/10.1088%2F1367-2630%2Faa54e1}.
+
+\bibitem[Aasen et~al.(2016)Aasen, Hell, Mishmash, Higginbotham, Danon, Leijnse,
+  Jespersen, Folk, Marcus, Flensberg, and Alicea]{aasen_milestones_2016}
+David Aasen, Michael Hell, Ryan~V. Mishmash, Andrew Higginbotham, Jeroen Danon,
+  Martin Leijnse, Thomas~S. Jespersen, Joshua~A. Folk, Charles~M. Marcus,
+  Karsten Flensberg, and Jason Alicea.
+\newblock Milestones {Toward} {Majorana}-{Based} {Quantum} {Computing}.
+\newblock \emph{Physical Review X}, 6\penalty0 (3):\penalty0 031016, August
+  2016.
+\newblock \doi{10.1103/PhysRevX.6.031016}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevX.6.031016}.
+
+\bibitem[Mourik et~al.(2012)Mourik, Zuo, Frolov, Plissard, Bakkers, and
+  Kouwenhoven]{mourik_signatures_2012}
+V.~Mourik, K.~Zuo, S.~M. Frolov, S.~R. Plissard, E.~P. a.~M. Bakkers, and L.~P.
+  Kouwenhoven.
+\newblock Signatures of {Majorana} {Fermions} in {Hybrid}
+  {Superconductor}-{Semiconductor} {Nanowire} {Devices}.
+\newblock \emph{Science}, 336\penalty0 (6084):\penalty0 1003--1007, May 2012.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.1222360}.
+\newblock URL
+  \url{http://science-sciencemag-org.ez67.periodicos.capes.gov.br/content/336/6084/1003}.
+
 \bibitem[Barkeshli and Sau(2015)]{barkeshli_physical_2015}
 Maissam Barkeshli and Jay~D. Sau.
 \newblock Physical {Architecture} for a {Universal} {Topological} {Quantum}
@@ -167,12 +235,38 @@ Torsten Karzig, Christina Knapp, Roman~M. Lutchyn, Parsa Bonderson, Matthew~B.
 \newblock \doi{10.1103/PhysRevB.95.235305}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.95.235305}.
 
-\bibitem[Hewson(1997)]{hewson_kondo_1997}
-Alexander~Cyril Hewson.
-\newblock \emph{The {Kondo} {Problem} to {Heavy} {Fermions}}.
-\newblock Cambridge University Press, April 1997.
-\newblock ISBN 978-0-521-59947-4.
-\newblock Google-Books-ID: fPzgHneNFDAC.
+\bibitem[Zhang et~al.(2018)Zhang, Liu, Gazibegovic, Xu, Logan, Wang, van Loo,
+  Bommer, de~Moor, Car, Op~het Veld, van Veldhoven, Koelling, Verheijen,
+  Pendharkar, Pennachio, Shojaei, Lee, Palmstrøm, Bakkers, Sarma, and
+  Kouwenhoven]{zhang_quantized_2018}
+Hao Zhang, Chun-Xiao Liu, Sasa Gazibegovic, Di~Xu, John~A. Logan, Guanzhong
+  Wang, Nick van Loo, Jouri D.~S. Bommer, Michiel W.~A. de~Moor, Diana Car, Roy
+  L.~M. Op~het Veld, Petrus~J. van Veldhoven, Sebastian Koelling, Marcel~A.
+  Verheijen, Mihir Pendharkar, Daniel~J. Pennachio, Borzoyeh Shojaei, Joon~Sue
+  Lee, Chris~J. Palmstrøm, Erik P. A.~M. Bakkers, S.~Das Sarma, and Leo~P.
+  Kouwenhoven.
+\newblock Quantized {Majorana} conductance.
+\newblock \emph{Nature}, 556:\penalty0 74, March 2018.
+\newblock URL \url{http://dx.doi.org/10.1038/nature26142}.
+
+\bibitem[Górski et~al.(2018)Górski, Barański, Weymann, and
+  Domański]{gorski_interplay_2018}
+G.~Górski, J.~Barański, I.~Weymann, and T.~Domański.
+\newblock Interplay between correlations and {Majorana} mode in proximitized
+  quantum dot.
+\newblock \emph{Scientific Reports}, 8\penalty0 (1):\penalty0 15717, October
+  2018.
+\newblock ISSN 2045-2322.
+\newblock \doi{10.1038/s41598-018-33529-1}.
+\newblock URL \url{https://www.nature.com/articles/s41598-018-33529-1}.
+
+\bibitem[Sindel(2005)]{sindel_numerical_2005}
+Michael Sindel.
+\newblock \emph{Numerical {Renormalization} {Group} studies of {Quantum}
+  {Impurity} {Models} in the {Strong} {Coupling} {Limit}}.
+\newblock Text.{PhDThesis}, Ludwig-Maximilians-Universität München, January
+  2005.
+\newblock URL \url{https://edoc.ub.uni-muenchen.de/3115/}.
 
 \bibitem[Ruderman and Kittel(1954)]{ruderman_indirect_1954}
 M.~A. Ruderman and C.~Kittel.
@@ -183,16 +277,6 @@ M.~A. Ruderman and C.~Kittel.
 \newblock \doi{10.1103/PhysRev.96.99}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.96.99}.
 
-\bibitem[Kasuya(1956)]{kasuya_theory_1956}
-Tadao Kasuya.
-\newblock A {Theory} of {Metallic} {Ferro}- and {Antiferromagnetism} on
-  {Zener}'s {Model}.
-\newblock \emph{Progress of Theoretical Physics}, 16\penalty0 (1):\penalty0
-  45--57, July 1956.
-\newblock ISSN 0033-068X.
-\newblock \doi{10.1143/PTP.16.45}.
-\newblock URL \url{https://academic.oup.com/ptp/article/16/1/45/1861363}.
-
 \bibitem[Yosida(1957)]{yosida_magnetic_1957}
 Kei Yosida.
 \newblock Magnetic {Properties} of {Cu}-{Mn} {Alloys}.
@@ -200,13 +284,5 @@ Kei Yosida.
   1957.
 \newblock \doi{10.1103/PhysRev.106.893}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.106.893}.
-
-\bibitem[Sindel(2005)]{sindel_numerical_2005}
-Michael Sindel.
-\newblock \emph{Numerical {Renormalization} {Group} studies of {Quantum}
-  {Impurity} {Models} in the {Strong} {Coupling} {Limit}}.
-\newblock Text.{PhDThesis}, Ludwig-Maximilians-Universität München, January
-  2005.
-\newblock URL \url{https://edoc.ub.uni-muenchen.de/3115/}.
 
 \end{thebibliography}
