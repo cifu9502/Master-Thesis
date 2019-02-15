@@ -1,20 +1,16 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: Intro.aux
-A level-1 auxiliary file: Preliminars.aux
 A level-1 auxiliary file: Methods.aux
 A level-1 auxiliary file: Majorana.aux
-White space in argument---line 142 of file Majorana.aux
+White space in argument---line 155 of file Majorana.aux
  : \citation{By
  :              the author.}
 I'm skipping whatever remains of this command
-White space in argument---line 143 of file Majorana.aux
+White space in argument---line 156 of file Majorana.aux
  : \citation{By
  :              the author.}
 I'm skipping whatever remains of this command
-A level-1 auxiliary file: NResults.aux
-A level-1 auxiliary file: Model.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
 Database file #1: Majorana-QD.bib
@@ -24,23 +20,6 @@ I was expecting a `,' or a `}'---line 29 of file Majorana-QD.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Database file #2: Kitaev-Majorana.bib.bib
-I was expecting a `,' or a `}'---line 113 of file Kitaev-Majorana.bib.bib
- : 
- : @article{beenakker_search_2013,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 486 of file Kitaev-Majorana.bib.bib
- : @article{das_zero-bias_2012
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 505 of file Kitaev-Majorana.bib.bib
- : @article{deng_anomalous_2012
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 522 of file Kitaev-Majorana.bib.bib
- : @article{oreg_helical_2010
- :                           ,
-I'm skipping whatever remains of this entry
 Database file #3: Kondo.bib
 Repeated entry---line 165 of file Kondo.bib
  : @article{dias_da_silva_transmission_2008
@@ -61,45 +40,45 @@ Warning--empty year in deng_majorana_2016
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
-You've used 44 entries,
+You've used 30 entries,
             2481 wiz_defined-function locations,
-            929 strings with 15934 characters,
-and the built_in function-call counts, 19043 in all, are:
-= -- 1672
-> -- 1018
-< -- 23
-+ -- 394
-- -- 306
-* -- 1751
-:= -- 3174
-add.period$ -- 231
-call.type$ -- 44
-change.case$ -- 87
-chr.to.int$ -- 44
-cite$ -- 59
-duplicate$ -- 839
-empty$ -- 1591
-format.name$ -- 360
-if$ -- 3936
+            815 strings with 12582 characters,
+and the built_in function-call counts, 13411 in all, are:
+= -- 1161
+> -- 752
+< -- 17
++ -- 288
+- -- 228
+* -- 1249
+:= -- 2243
+add.period$ -- 158
+call.type$ -- 30
+change.case$ -- 60
+chr.to.int$ -- 30
+cite$ -- 45
+duplicate$ -- 578
+empty$ -- 1095
+format.name$ -- 266
+if$ -- 2754
 int.to.chr$ -- 1
-int.to.str$ -- 45
-missing$ -- 45
-newline$ -- 327
-num.names$ -- 132
-pop$ -- 256
+int.to.str$ -- 31
+missing$ -- 30
+newline$ -- 226
+num.names$ -- 90
+pop$ -- 176
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 30
 quote$ -- 0
-skip$ -- 439
+skip$ -- 305
 stack$ -- 0
-substring$ -- 870
-swap$ -- 128
+substring$ -- 631
+swap$ -- 88
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 299
+type$ -- 207
 warning$ -- 15
-while$ -- 143
+while$ -- 100
 width$ -- 0
-write$ -- 767
-(There were 8 error messages)
+write$ -- 524
+(There were 4 error messages)

@@ -54,8 +54,10 @@
 \usepackage{psfrag}
 \usepackage{multicol}
 
-%\usepackage[hypertex,final=true,unicode=true, pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,breaklinks=true,pdfborder={0 0 1},backref=true,colorlinks=true,citecolor=black, filecolor=black, linkcolor=black, urlcolor=black]{hyperref}
-\usepackage{hyperref}
+% \usepackage[hypertex,final=true,unicode=true, pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,breaklinks=true,pdfborder={0 0 1},backref=true,colorlinks=true,citecolor=black, filecolor=black, linkcolor=black, urlcolor=black]{hyperref}
+% \usepackage{hyperref}
+
+
 \usepackage[caption = false]{subfig}
 %\usepackage{MnSymbol}
 \captionsetup[figure]{font=small}
@@ -68,7 +70,7 @@
   {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
 \makeatother
 
-
+\usepackage{hyperref}
 \hypersetup{
 hypertex=true,
 unicode=true, pdfusetitle,
@@ -227,19 +229,25 @@ expand this idea using the numerical renormalization group  to study the model o
 
 
 %Main chapters
- \include{Intro}
- \include{Preliminars}
+ % \include{Intro}
+ % \include{Preliminars}
  \include{Methods}
 
 \include{Majorana}
- \include{NResults}
+ % \include{NResults}
 
-\include{Model}
+
+
+
+
+
+
+% \include{Model}
 
 
 \bibliographystyle{unsrtnat}
 \addcontentsline{toc}{section}{\textbf{References}}
-\bibliography{Majorana-QD,Kitaev-Majorana.bib,Kondo}
+\bibliography{Majorana-QD,Kitaev-Majorana,Kondo}
 \appendix
 %dummy comment inserted by tex2lyx to ensure that this paragraph is not empty
 \include{Append_A}

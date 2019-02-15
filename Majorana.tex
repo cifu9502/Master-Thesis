@@ -3,11 +3,22 @@
 \begin{chapquote}{\textit{F. Duncan M. Haldane}}
 ``It started out with a toy model demonstration, and then I realized it was very good model.  You don't understand the full implications until other people start thinking it is true and they observe the big picture [...] Now, that toy model is like Hydrogen atom for topological materials- it turned out to be the first example of topological quantum matter.''
 \end{chapquote}
+\begin{figure}[b]
+  \centering
+  \includegraphics[scale = 0.5]{IMAGES/Majorana/Coffe&donuts.jpg}
+  \caption{Coffe-donut: adiabatic evolution \label{fig:Coffe}}
+\end{figure}
 
 The  Majorana Fermions, so called in the name of the Italian physicist Ettore Majorana, were first proposed as the real solution of the Dirac equation. The real field that solves this equation describes a fermion which is its own antiparticle, thus it has no electric charge  nor mass.  Till these days, no fundamental particle with these characteristics has been observed. However, the last decade has been full of excitement as new Majorana quasi-particles have been observed at the edges of topological superconductors.
 
-The topological superconductors, belong to an emergent group of materials that experience phase transitions without passing through a symmetry breaking, hence they cannot be characterized by Landau theory. Instead, these phases of matter are described by  a new type of order determined by the topology of the Brilloin zone. In mathematics, topology is used to describe non-local features of surfaces (or manifolds) that are preserved under smooth deformations. This concept is usually explained by the  clich\'e joke of "a single-hole cup of coffee that can be softly deformed to a donut without loosing its whole".The  insight of topology into  the field of condensed matter physics is that those materials that are attributed a topological characterization are endowed with topological  stability under smooth deformations ( or adiabatic evolutions ) . The most famous example of this behavior is the integer quantum hall effect (IQHE) whose robust conductivity platoes representing different topological phases allowed to define with high precision a resistivity standard unit $ R_K =\frac{h}{\ep^2} = 25812.807557(18) \Omega$, hence having major impact in science and technology. 
+The topological superconductors, belong to an emergent group of materials that experience phase transitions without passing through a symmetry breaking, hence they cannot be characterized by Landau theory. Instead, these phases of matter are described by  a new type of order determined by the topology of the Brilloin zone. In mathematics, topology is used to describe non-local features of surfaces (or manifolds) that are preserved under smooth deformations. The clich\'e, but always educative, joke to explain this concept says that "Topologist cannot tell the difference between a donut and a coffee cup, since one of them 
+can always be continuously deformed into the other through a
+sequence of smooth, small alterations" (\ref{fig:Coffe}).\footnote{For decades, this has been the mean reason for the absence of donuts at topology workshops.} However it wouldn't be possible to deform soccer ball into  a donut since no there is no way of making 'softly' a hole into the ball.  
+
+The insight of topology into  the field of condensed matter physics is that those materials that are attributed a topological characterization are endowed with a characteristic stability under smooth deformations (adiabatic evolutions ) . The most famous example of this behavior is the integer quantum hall effect (IQHE) whose robust conductivity platoes representing different topological phases allowed to define with high precision a resistivity standard unit $ R_K =\frac{h}{\ep^2} = 25812.807557(18) \Omega$, hence having major impact in science and technology. 
 % have  groundbreaking in the design of high precision devices.
+
+
 
 In the last two decades, a new type promising topological material has captivated the attention of many physicists. This is the Majorana wire, inspired in a famous Kitaev's toy model representing a spinless p-wave superconducting chain \cite{kitaev_unpaired_2001}. Under certain conditions, the Majorana wires experience topological phase transition characterized by the emergence of  zero-modes localized at edges of the wire. Kitaev associated these modes with Majorana quasi-particles  appearing at the boundary of the topological superconducting wires . Just like the IQHE, topology protects these  Majorana's  from quantum decoherence. In addition, Kitaev proposed that  Majorana's non-abelian statistics provided a suitable method to encode quantum information \cite{kitaev_fault-tolerant_2003}. These two characteristics gave the   origin of an entire field called topological quantum computation \cite{pachos_introduction_2012}.
 
@@ -21,7 +32,7 @@ In this chapter we will present a review of the main ideas behind the Kitaev cha
 
 
 
-\section{The Kitaev Chain \label{sec:KitaevChain}{}}
+\section{The Kitaev Chain \label{sec:KitaevChain}}
 
 Kitaev's tight binding toy model  represents a  finite $p$-wave superconducting wire with the following Hamiltonian
 
@@ -29,9 +40,16 @@ Kitaev's tight binding toy model  represents a  finite $p$-wave superconducting 
 H = \sum_{i=1}^N \left[ -t(a_i^{\dagger} a_{i+1} + a_{i+1}^{\dagger}a_i) -\mu a_i^{\dagger} a_{i} +  \Delta a_{i}a_{i+1} + \Delta^* a_{i+1}^{\dagger}a_i^{\dagger} \right].  \label{eq:kitaevHam}
 \end{equation}
 
-Where $\mu$ is the chemical potential, so that $\mu a_i^{\dagger} a_{i}$ is the energy associated to each step in the chain. $t(a_i^{\dagger} a_{i+1} + a_{i+1}^{\dagger}a_i)$ represents the interaction between neighbouring sites which is determined by the hopping term $t$. The remaining terms describe the superconducting properties of the system as is is established by the BCS theory of superconductivity. $\Delta$ is a complex superconducting parameter with the form  $\Delta = e^{i\theta} \super$. The associated terms represent the Cooper pairs which can be created or annihilated at neighbouring sites of the system.
+\begin{figure}[t]
+    \centering
+    \includegraphics[scale=0.5]{IMAGES/Majorana/KitaevChain.png}
+    
+    \caption{ \label{fig:top.phases kitaev} Illustration of the Kitaev chain for open boundary conditions in the Majorana representation. a)Represents the trivial case where the hopping and the superconducting term approaches to $0$. b) The non-trivial topological phase. The coupling is produced between Majoranas in different Dirac fermions \protect\Source{By the author} }
+\end{figure}
 
-The form of hamiltonian \prettyref{eq:kitaevHam} favors the possibility of introducing new operators $\gammaA{j}$ and $\gammaB{j}$ such that
+Where $\mu$ is the chemical potential, so that $\mu a_i^{\dagger} a_{i}$ is the energy associated to each step in the chain. $t(a_i^{\dagger} a_{i+1} + a_{i+1}^{\dagger}a_i)$ represents the interaction between neighboring sites which is determined by the hopping term $t$. The remaining terms describe the superconducting properties of the system as is is established by the BCS theory of superconductivity. $\Delta$ is a complex superconducting parameter with the form  $\Delta = e^{i\theta} \super$. The associated terms represent the Cooper pairs which can be created or annihilated at neighboring sites of the system hence breaking particle number. However, the system still preserves parity, a property that will be very important during the rest of the project. 
+
+The form of Hamiltonian \eqref{eq:kitaevHam} favors the possibility of introducing new operators $\gammaA{j}$ and $\gammaB{j}$ such that
 
 \begin{equation}
 \gammaA{j} = e^{i\theta /2}a_j+ e^{-i\theta/2 } \ann_j \ \ , \ \ \gammaB{j} = -i(e^{i\theta /2}a_j - e^{-i\theta/2} \ann_j).
@@ -45,14 +63,14 @@ It is simple check that these operators are self-adjoint $(\gammaA{j}^\dagger = 
 \end{aligned} 
 \label{MajoranaRel}
 \end{equation} 
-This allows us to understand the operators $\gammaA{i} , \gammaB{i}$ as Majorana fermions. If we also take the inverse of \prettyref{eq:MajoranaTrans} we obtain that each  (Dirac) fermion in Hamiltonian \eqref{eq:kitaevHam} is composed by two Majorana fermions such that 
+This allows us to understand the operators $\gammaA{i} , \gammaB{i}$ as Majorana fermions. If we also take the inverse of \ref{eq:MajoranaTrans} we obtain that each  (Dirac) fermion in Hamiltonian \eqref{eq:kitaevHam} is composed by two Majorana fermions such that 
 $$a_j = \frac{e^{-i\theta/2}}{2}(\gammaA{j}+ i\gammaB{j})$$
 We could even adventure to say that these Majorana operators are actually dividing the Dirac fermions into real($\gammaA{}$) and imaginary $(\gammaB{})$ part ,the same way as complex numbers are a composite of two real numbers. 
 
 The new Kitaev Hamiltonian in the Majorana representation looks like 
 
 \begin{equation}
-H = \frac{i}{2} \sum_{j=1}^N \left[ -\mu \gammaA{j}\gammaB{j}  + (t- \super) \gammaB{j}\gammaA{j+1} + (t+ \super) \gammaA{j}\gammaB{j+1} \right]+Const,\label{eq:HamMajorana}
+H = \frac{i}{2} \sum_{j=1}^N \left[ -\mu \gammaA{j}\gammaB{j}  + (t+ \super) \gammaB{j}\gammaA{j+1} + (t- \super) \gammaA{j}\gammaB{j+1} \right]+Const,\label{eq:HamMajorana}
 \end{equation}
 
 Depending on the values of parameters $\mu, t$ and $\super$ we can identify two regimes represented by the following situations:
@@ -65,37 +83,67 @@ Depending on the values of parameters $\mu, t$ and $\super$ we can identify two 
 %\caption{{\small \textit{Taken from \cite{bernevig2015topological}. Ilustration of the Kitaev chain for open boundary conditions in the Majorana representation. a)Represents the trivial case where the hopping and the superconducting term approaches to $0$. b) The non-trivial topological phase. The coupling is produced between Majoranas in different Dirac fermions }}}
 %\end{figure}
 
-\begin{figure}[hbt]
-    \centering
-    \includegraphics[scale=0.5]{IMAGES/Majorana/KitaevChain.png}
-    \label{fig:top.phases kitaev}
-    \caption{Illustration of the Kitaev chain for open boundary conditions in the Majorana representation. a)Represents the trivial case where the hopping and the superconducting term approaches to $0$. b) The non-trivial topological phase. The coupling is produced between Majoranas in different Dirac fermions \protect\Source{By the author} }
-\end{figure}
-
-
-\begin{enumerate}
-\item{If $\super = t = 0, \mu <0$} Hamiltonian \eqref{eq:HamMajorana} becomes $\frac{-i\mu}{2} \sum_{j} \gammaA{j}\gammaB{j}$ which represents the coupling of the Majoranas in the same Dirac fermion. (See Figure \ref{fig:top.phases kitaev} (a))
-
-\item{If $\super = t > 0, \mu =0$} the situation is much more interesting. The Hamiltonian \eqref{eq:HamMajorana} takes the form $H = 2ti\sum_{j} \gammaA{j}\gammaB{j+1}$. This implies that the coupling is performed between  Majoranas of different Dirac fermions leaving the edge Majorana operators ($\gammaA{1}$ and $\gammaB{N}$) uncoupled (See Figure \ref{fig:top.phases kitaev}b)). Note that these uncoupled Majorana fermions can be at any state without any  repercussion in the energy of the system. This explains the emergence of a  ground state localized at edges of the chain. 
-\end{enumerate}
-
-These two situations are representatives of two different phases. The trivial phase occurs for $\frac{\mu}{2t}>1$ and the non-trivial phase appears when $\frac{\mu}{2t}<1$ (See figure \ref{fig:KitaevSpec}). The mean characteristic of the non-trivial phase is the creation of an stable zero-mode. This zero-mode is generated by the  uncoupled Majorana fermions at the edges of the Kitaev chain.  \\
-
 
 
 \begin{figure}[t]
     \centering
     \includegraphics[scale=0.65]{IMAGES/Majorana/Spectrum.png}
-    \label{fig:KitaevSpec}
-    \caption{Spectrum of Hamiltonian \eqref{eq:HamMajorana} with $30$ sites and $t=\super$ s. Method: Numerical diagonalization. \protect \Source{By the author} }
+    \caption{ \label{fig:KitaevSpec} Spectrum of Hamiltonian \ref{eq:HamMajorana} with $30$ sites and $t=\super$ s. Method: Numerical diagonalization. \protect \Source{By the author} }
 \end{figure}
+
+
+\begin{enumerate}
+
+  \item If $\super = t = 0$ and $\mu <0$, Hamiltonian \eqref{eq:HamMajorana} becomes $\frac{-i\mu}{2} \sum_{j} \gammaA{j}\gammaB{j}$ which represents the coupling of the Majoranas in the same Dirac fermion. (See \ref{fig:top.phases kitaev} (a))
+
+  \item If $\super = t > 0$ and $\mu =0$, the situation is much more interesting. The Hamiltonian \eqref{eq:HamMajorana} takes the form $H = 2ti\sum_{j}  \gammaB{j}\gammaA{j+1} $. This implies that the coupling is performed between  Majoranas of different Dirac fermions leaving the edge Majorana operators ($\gammaA{1}$ and $\gammaB{N}$) uncoupled (See Figure \ref{fig:top.phases kitaev}b)). Note that these uncoupled Majorana fermions can be at any state without any  repercussion in the energy of the system. This explains the emergence of a  ground state localized at edges of the chain. 
+\end{enumerate}
+
+These two situations are representatives of two different phases. The trivial phase occurs for $\frac{\mu}{2t}>1$ and the non-trivial phase appears when $\frac{\mu}{2t}<1$ (See \ref{fig:KitaevSpec}). The mean characteristic of the non-trivial phase  is the creation of an stable zero-mode generated by the  uncoupled Majorana fermions at the edges of the Kitaev chain. Note that if
+\begin{equation}
+H = 2ti\sum_{j}  \gammaB{j}\gammaA{j+1}, \label{eq:newM} 
+\end{equation}
+  
+\noindent it is possible to define new Dirac fermion operators as 
+$$c_j = \frac{1}{\sqrt{2}} \left( \gamma_{B,j}+ i\gamma_{A,j+1} \right) \ , \ c^\dagger_j = \frac{1}{\sqrt{2}} \left( \gamma_{B,j}- i\gamma_{A,j+1} \right). $$
+
+Then \eqref{eq:newM} becomes 
+\begin{equation}
+H = ti\sum_{j=1}^{N-1} \left(  2c^\dagger_jc_j-1 \right). \label{eq:newM} 
+\end{equation}
+
+Then a ground state $\vert \Omega \rangle$ of this Hamiltonian is an state vacuum at all sites $j$ from $1$ to $N-1$ $(c_j\vert \Omega \rangle = 0)$. This condition allows some degeneracy since the sites at the boundary are not coupled to the Hamiltonian $\gammaA{1}$ and $\gammaB{N}$. The Dirac  operators formed by these Majoranas 
+$$c_N = \frac{1}{\sqrt{2}} \left( \gamma_{B,N}+ i\gamma_{A,1} \right) \ , \ c^\dagger_N = \frac{1}{\sqrt{2}} \left( \gamma_{B,N}- i\gamma_{A,1} \right), $$ 
+can be either occupied $(c^\dagger_N c_N \vert \Omega \rangle = 1)$ or empty $(c^\dagger_N c_N \vert \Omega \rangle = 0)$. Each of these results will have a different parity that is a preserved symmetry of our Hamiltonian.   Indeed we can define a global parity operator as 
+
+\begin{equation}
+    \mathcal{P} =\prod_{i = 1}^N\left(  c^\dagger_jc_j-2 \right) = \prod_{i = 1}^N\gamma_{B,j}\gamma_{A,j+1}= \pm 1. 
+\end{equation}
+
+In the ground state $\vert \Omega \rangle$, this parity will be  defined by the result of  $\gamma_{B,N}\gamma_{A,1}$ since the other states are fix. This is a very important point, since this symmetry protection is actually correlating the two opposite sites of the Kitaev chain .i.e. Any attempt to disturb one site of the chain would have to change something on the other site, since the parity of the system must be preserved. This is a great deal, actually, it means that the coherence of Majorana fermions is actually very high. Why?. Then answer is topology and will be the objective of the next subsection.
+
+% With these ideas in mind we are going to study the characteristics 
+% of the Kitaev chain:
+% \begin{itemize}
+% \item Topological phase transition. \ref{subsec:top}
+% \item Non-abelian statistics. \ref{subsec:non-ab}
+% \end{itemize}
+% These two properties are the key to implement topological quantum algorithms. 
 
 
 
 % ---------------Subsection: Topological phase transition-------------
-\subsection{Topological phase transition}
+\subsection{Topological phase transition \label{subsec:top}}
 
 The two regimes described previously  can be characterized with a topological parameter.  One of the methods for this is following the idea used by \citeauthor{alicea_new_2012}\cite{alicea_new_2012}. The first part is to suppose that we have an infinite chain $(N=\infty)$ in Hamiltonian \eqref{eq:HamMajorana}. The new system is translation invariant, hence we can make a transformation to the momentum space. Then we may rewrite Hamiltonian \eqref{eq:HamMajorana}  as
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[scale=0.8]{IMAGES/Majorana/Topological.png}
+    \label{fig:topological}
+    \caption{ The following represents the path of $\hat{H}_k$ for the interval $[ -\pi, \pi ]$. a) Corresponds to the trivial phase. The resulting path can be homotopically deformed to a point. b) The non-trivial phase corresponds to a non-contractible loop around the unitary circle. \protect \Source{By the author}} 
+\end{figure}
+
 
 \begin{equation}
     H = 
@@ -107,11 +155,11 @@ The two regimes described previously  can be characterized with a topological pa
     \begin{pmatrix} 
       b_{-k}'     \\ 
       c_{-k}' 
-    \end{pmatrix}.
+    \end{pmatrix},
     \label{PBCHam2}
 \end{equation}
 
-with the Bloch Hamiltonian 
+\noindent with the Bloch Hamiltonian equal to 
 
 \begin{equation}
 H_k = \begin{pmatrix} 
@@ -125,7 +173,9 @@ H_k = \begin{pmatrix}
 
 
 
-\noindent where $\sigma_x$ , $\sigma_y$ are the corresponding Pauli matrices. The Brilloin zone ($BZ$) is the periodic space  $[-\pi , \pi]$ which can be mapped to the unitary circle.   Equation \eqref{sigma} determines  the coordinates of the Bloch Hamiltonian in the base $\{\sigma_x, \sigma_y\}$. We can map these coordinates to the unitary circle by taking the norm of this vector giving
+\noindent Here, $\sigma_x$ and $\sigma_y$ are the corresponding Pauli matrices. The Brilloin zone ($BZ$) is the periodic space  $[-\pi , \pi]$ which can be mapped to the unitary circle.   Equation \eqref{sigma} determines  the coordinates of the Bloch Hamiltonian in the base $\{\sigma_x, \sigma_y\}$. 
+
+We can map these coordinates to the unitary circle by taking the norm of this vector giving
 \begin{equation}
      \hat{H}_k= \frac{1}{\sqrt{\super^2 \sin^2 k + (\frac{\mu}{2}- t \cos k)^2}}
      \begin{pmatrix} 
@@ -134,9 +184,9 @@ H_k = \begin{pmatrix}
     \end{pmatrix}. 
 \end{equation}
 
-Note that $\super^2 \sin^2 k + (\frac{\mu}{2}- t \cos k)^2 \neq 0$ for all the values of $k$ as long as $\frac{\mu}{2t} \neq 1$ . When $\frac{\mu}{2t} = 1$ the $H_{k=0}=0$, so it cannot be normalized. \textbf{This is the same point were the phase transition occurs!}. At any other value of $\frac{\mu}{2t}$ it is possible to normalize $H_{k}$ for all values of $k\in BZ$. The result of mapping $\hat{H}_k$ for all $k$ is a path around the unitary circle. \\
+\noindent Note that $\super^2 \sin^2 k + (\frac{\mu}{2}- t \cos k)^2 \neq 0$ for all the values of $k$ as long as $\frac{\mu}{2t} \neq 1$ . When $\frac{\mu}{2t} = 1$ the $H_{k=0}=0$, so it cannot be normalized. \textbf{This is the same point were the phase transition occurs!}. At any other value of $\frac{\mu}{2t}$ it is possible to normalize $H_{k}$ for all values of $k\in BZ$. The result of mapping $\hat{H}_k$ for all $k$ is a path around the unitary circle. 
 
-This path can take two forms as we can observe in Figure \ref{fig:topological}. If $\frac{\mu}{2t} > 1$ the path reduced to a line in the upward part of the circle. In the non-trivial phase $\frac{\mu}{2t} < 1$ the path completes the round to the entire circle. Note that this method states a topological difference between the two phases. While the path described by the trivial phase can be contracted to a single dot, the path described by the non-trivial one is a circle that cannot be contracted. \\
+This path can take two forms as we can observe in Figure \ref{fig:topological}. If $\frac{\mu}{2t} > 1$ the path reduced to a line in the upward part of the circle. In the non-trivial phase $\frac{\mu}{2t} < 1$ the path completes the round to the entire circle. Note that this method states a topological difference between the two phases. While the path described by the trivial phase can be contracted to a single dot, the path described by the non-trivial one is a circle that cannot be contracted.
 
 Note that to determine whether path of a given phase is of type a) or type b) we only need to check if $\hat{H}_{k=0}$ and $\hat{H}_{k=\pi}$ are the same point or opposite points. This transforms into a simple equation 
 \begin{equation}
@@ -145,27 +195,31 @@ Note that to determine whether path of a given phase is of type a) or type b) we
 -1 & \mbox{non-trivial phase}
 \end{cases}
 \end{equation}
-where $\hat{H}_{k=0,y}$ is the $y$-th component of $\hat{H}_{k}$. The term $\hat{H}_{k,y}$ is a particular case of the Pfaffian $\mathcal{P}(k)$, which widely used as topological order in  phases transition including  Majorana modes . 
+\noindent where $\hat{H}_{k=0,y}$ is the $y$-th component of $\hat{H}_{k}$. The term $\hat{H}_{k,y}$ is a particular case of the Pfaffian $\mathcal{P}(k)$, which widely used as topological order in phase transitions involving  Majorana fermions. 
 
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[scale=0.8]{IMAGES/Majorana/Topological.png}
-    \label{fig:topological}
-    \caption{ The following represents the path of $\hat{H}_k$ for the interval $[ -\pi, \pi ]$. a) Corresponds to the trivial phase. The resulting path can be homotopically deformed to a point. b) The non-trivial phase corresponds to a non-contractible loop around the unitary circle. \protect \Source{By the author}} 
-\end{figure}
 
-The mean idea behind this topological characterization relies in the adiabatic theorem.  In simple words, the adiabatic theorem says that a slow evolution of a gaped Hamiltonian will produce a smooth evolution of its ordered eigenstates. i.g The order of the eigenstates remains unchanged. \\
+The mean idea behind this topological characterization relies in the adiabatic theorem.  In simple words, the adiabatic theorem says that a slow evolution of a gaped Hamiltonian will produce a smooth evolution of its ordered eigenstates. i.g The order of the eigenstates remains unchanged. 
 
-The keyword in the previous definition is "gaped". As we can observe in Figure \ref{fig:KitaevSpec} the phase transition occurs at $\frac{\mu}{2t}=1$. This is when the system transitions between a gapless and gaped Hamiltonians.  \\
+A keyword in the previous definition is "gaped". As we can observe in F \ref{fig:KitaevSpec} the phase transition occurs at $\frac{\mu}{2t}=1$. This point is where  the gap of the Hamiltonian closes. In periodic boundary conditions no Majorana zero modes will emerge since there are no edges in the system. Therefore, the states with zero energy for $\frac{\mu}{2t}<1$ will not appear at this situation. We obtain that the gapless point $\frac{\mu}{2t}=1$ divides two gapped regions. If we are to follow the adiabatic theorem, these two regions must be separated, hence meaning that no adiabatic evolution could lead from one region to the other since that would involve crossing  through a gapless region where state exchange is allowed.  
 
-The connection with topology comes from the fact that adiabatic evolutions can be understood as smooth deformations of the Hamiltonian. However since gapless Hamiltonians imply phase transitions, the theory defines the gapless points as holes (or forbidden points) in the phase space. Then characterizing the phase transitions in the Kitaev chain is mainly a topological problem where gaped Hamiltonians are holes in the topological space. In addition, the topological orders characterizing this transition will be Chern or Winding numbers. \\
+
+To summarize, gapless points are forbidden points of our Hamiltonians in the middle of an adiabatic evolution. This forbidden points can be thought as "holes" in the space of Hamiltonians, which generates spaces with non-trivial topologies.Since adiabatic evolutions can be understood as smooth evolutions of the Hamiltonian, the relation with topology is clear.  Then characterizing the phase transitions in the Kitaev chain, as in similar robust materials,  is mainly a topological problem. Therefore, phase transitions can be characterized by topological quantities such as Pfaffians, Chern numbers or Winding numbers, which are always integer values. 
+
+This brings an interesting question. If we have two connected topological materials, one characterized by the  number $0$ and the other by the number $1$, then what should happen at the surface?. Indeed something very exciting happens at these boundaries and those are the edge states, Majorana fermions, and all interesting topological phenomena in condensed matter. 
+
+Finally,  note that in a system that preserve symmetries, the space of Hamiltonians has more forbidden sites. Therefore, these systems have a different topological characterization and more importantly, topology protects these symmetries. This is the case of the Kitaev chain where the topological phase  protects the parity of the symmetry under perturbations involving the two opposed Majoranas at the edges. This endowed topological stability combined with Majorana's non-abelian statistics (next subsection) makes the Kitaev chain a promising platform for quantum computation. 
+
+
 
 
 % Though this connection between physics and topology is quite interesting, I will stop here because it is taking us out of our real discussion which is Majorana fermions.  You can find more information about this in ( \Jesus{add references}). 
 
 % -----------------------Subsection: Non-abelian Statistics -------------
-%\subsection{Non-abelian statistics}
+\subsection{Non-abelian statistics \label{subsec:non-ab}}
+
+Imagine that we have $4$ Majorana femions $\gamma_{A1}$
+
 
 
 
@@ -178,7 +232,6 @@ The connection with topology comes from the fact that adiabatic evolutions can b
 % 
 % ---------------------------------------------------
 \section{Real implementations of Majorana Chains \label{sec:exp}} 
-\Jesus{Here comes a summary of real models and implementations of Majorana chains. I am still thinking how to write this section. For now, I leave some ideas}
 
 Although the Kitaev chain its just a toy model, 
 
@@ -273,10 +326,9 @@ H =\sum_{k,\sigma}\left(\epsilon_1+\frac{U_1}{2}\right)d_{1\sigma}^{\dagger}d_{1
 
 
 The fidelity of this effective model has been discussed by \citet{ruiz-tijerina_interaction_2015}
-concluding that the Majorana effective hamiltonian reproduces the
-same results than the Kitaev chain model in the topological phase
-(This statement is true even for more realistic models of the TS that
-include Rashba spin-orbit interactions and a Zeeman field \citep{ruiz-tijerina_interaction_2015}
+concluding that this model reproduces the
+same results than coupling a  Kitaev chain model in the topological phase to a QD.
+(This statement is true even for more realistic models of the TS including Rashba spin-orbit interactions and a Zeeman field \citep{ruiz-tijerina_interaction_2015}
 ).\\
 
 
