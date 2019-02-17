@@ -1,13 +1,12 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: Methods.aux
 A level-1 auxiliary file: Majorana.aux
-White space in argument---line 155 of file Majorana.aux
+White space in argument---line 167 of file Majorana.aux
  : \citation{By
  :              the author.}
 I'm skipping whatever remains of this command
-White space in argument---line 156 of file Majorana.aux
+White space in argument---line 168 of file Majorana.aux
  : \citation{By
  :              the author.}
 I'm skipping whatever remains of this command
@@ -19,12 +18,12 @@ I was expecting a `,' or a `}'---line 29 of file Majorana-QD.bib
  : @article{liu_detecting_2011,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Database file #2: Kitaev-Majorana.bib.bib
-Database file #3: Kondo.bib
-Repeated entry---line 165 of file Kondo.bib
- : @article{dias_da_silva_transmission_2008
- :                                         ,
+Database file #2: Kitaev-Majorana.bib
+Repeated entry---line 249 of file Kitaev-Majorana.bib
+ : @article{nayak_non-abelian_2008
+ :                                ,
 I'm skipping whatever remains of this entry
+Database file #3: Kondo.bib
 Warning--empty journal in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
@@ -40,45 +39,45 @@ Warning--empty year in deng_majorana_2016
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
-You've used 30 entries,
+You've used 26 entries,
             2481 wiz_defined-function locations,
-            815 strings with 12582 characters,
-and the built_in function-call counts, 13411 in all, are:
-= -- 1161
-> -- 752
-< -- 17
-+ -- 288
-- -- 228
-* -- 1249
-:= -- 2243
-add.period$ -- 158
-call.type$ -- 30
-change.case$ -- 60
-chr.to.int$ -- 30
-cite$ -- 45
-duplicate$ -- 578
-empty$ -- 1095
-format.name$ -- 266
-if$ -- 2754
+            778 strings with 11374 characters,
+and the built_in function-call counts, 11540 in all, are:
+= -- 965
+> -- 708
+< -- 12
++ -- 268
+- -- 216
+* -- 1096
+:= -- 1971
+add.period$ -- 137
+call.type$ -- 26
+change.case$ -- 52
+chr.to.int$ -- 26
+cite$ -- 41
+duplicate$ -- 488
+empty$ -- 916
+format.name$ -- 248
+if$ -- 2342
 int.to.chr$ -- 1
-int.to.str$ -- 31
-missing$ -- 30
-newline$ -- 226
-num.names$ -- 90
-pop$ -- 176
+int.to.str$ -- 27
+missing$ -- 27
+newline$ -- 197
+num.names$ -- 78
+pop$ -- 156
 preamble$ -- 1
-purify$ -- 30
+purify$ -- 26
 quote$ -- 0
-skip$ -- 305
+skip$ -- 246
 stack$ -- 0
-substring$ -- 631
-swap$ -- 88
-text.length$ -- 2
+substring$ -- 478
+swap$ -- 64
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 207
+type$ -- 176
 warning$ -- 15
-while$ -- 100
+while$ -- 82
 width$ -- 0
-write$ -- 524
+write$ -- 454
 (There were 4 error messages)
