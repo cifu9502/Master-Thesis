@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.2.7)  17 FEB 2019 02:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.2.7)  18 FEB 2019 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -573,26 +573,26 @@ Package caption Info: Unknown document class (or package),
 )
 
 Package hyperref Warning: Option `hypertex' has already been used,
-(hyperref)                setting the option has no effect on input line 89.
+(hyperref)                setting the option has no effect on input line 90.
 
-Package hyperref Info: Option `unicode' set `true' on input line 89.
+Package hyperref Info: Option `unicode' set `true' on input line 90.
 
 Package hyperref Warning: Option `pdfusetitle' has already been used,
-(hyperref)                setting the option has no effect on input line 89.
+(hyperref)                setting the option has no effect on input line 90.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 89.
+(hyperref)                setting the option has no effect on input line 90.
 
-Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 89.
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 90.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 89.
-Package hyperref Info: Option `breaklinks' set `true' on input line 89.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 90.
+Package hyperref Info: Option `breaklinks' set `true' on input line 90.
 
 Package hyperref Warning: Option `backref' has already been used,
-(hyperref)                setting the option has no effect on input line 89.
+(hyperref)                setting the option has no effect on input line 90.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 89.
+Package hyperref Info: Option `colorlinks' set `true' on input line 90.
 \@float@every@Program=\toks34
 \c@Program=\count146
 (/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
@@ -619,7 +619,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \@nomenclaturefile=\write4
 \openout4 = `main.nlo'.
 
-Package nomencl Info: Writing nomenclature file main.nlo on input line 193.
+Package nomencl Info: Writing nomenclature file main.nlo on input line 196.
  (./main.aux
 (./Majorana.aux
 
@@ -631,23 +631,23 @@ LaTeX Warning: Label `eq:newM@cref' multiply defined.
 ) (./Append_A.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 199.
-LaTeX Font Info:    ... okay on input line 199.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 199.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 202.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -716,8 +716,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box65
-Package backref Info: ** backref set up for natbib ** on input line 199.
-Package hyperref Info: Link coloring ON on input line 199.
+Package backref Info: ** backref set up for natbib ** on input line 202.
+Package hyperref Info: Link coloring ON on input line 202.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -727,9 +727,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count154
 )
-LaTeX Info: Redefining \ref on input line 199.
-LaTeX Info: Redefining \pageref on input line 199.
-LaTeX Info: Redefining \nameref on input line 199.
+LaTeX Info: Redefining \ref on input line 202.
+LaTeX Info: Redefining \pageref on input line 202.
+LaTeX Info: Redefining \nameref on input line 202.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
@@ -739,15 +739,15 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 202.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 202.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 205.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 205.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 205.
  [1
 Non-PDF special ignored!
 <special> header=psfrag.pro
@@ -757,9 +757,9 @@ Non-PDF special ignored!
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 202.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 205.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 212.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 215.
 [2
 
 
@@ -842,14 +842,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 Package natbib Warning: Citation `plugge_majorana_2017' on page 5 undefined on 
 input line 25.
 
-
-LaTeX Warning: Reference `das_zero-bias_2012,deng_anomalous_2012,nadj-perge_obs
-ervation_2014,deng_majorana_2016,zhang_quantized_2018' on page 5 undefined on i
-nput line 25.
-
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 35.
-<IMAGES/Majorana/KitaevChain.png, id=146, 559.691pt x 169.433pt>
+<IMAGES/Majorana/KitaevChain.png, id=151, 559.691pt x 169.433pt>
 File: IMAGES/Majorana/KitaevChain.png Graphic file (type png)
 <use IMAGES/Majorana/KitaevChain.png>
 Package pdftex.def Info: IMAGES/Majorana/KitaevChain.png  used on input line 45
@@ -859,7 +854,7 @@ Package cleveref Info: loaded `english' language definitions on input line 51.
 [5]
 Package cleveref Info: loaded `english' language definitions on input line 74.
  [6 <./IMAGES/Majorana/KitaevChain.png>]
-<IMAGES/Majorana/Spectrum.png, id=179, 432.61626pt x 305.14pt>
+<IMAGES/Majorana/Spectrum.png, id=188, 432.61626pt x 305.14pt>
 File: IMAGES/Majorana/Spectrum.png Graphic file (type png)
 <use IMAGES/Majorana/Spectrum.png>
 Package pdftex.def Info: IMAGES/Majorana/Spectrum.png  used on input line 90.
@@ -867,7 +862,7 @@ Package pdftex.def Info: IMAGES/Majorana/Spectrum.png  used on input line 90.
 Package cleveref Info: loaded `english' language definitions on input line 105.
 
  [7 <./IMAGES/Majorana/Spectrum.png>]
-<IMAGES/Majorana/Topological.png, id=202, 518.738pt x 193.523pt>
+<IMAGES/Majorana/Topological.png, id=211, 518.738pt x 193.523pt>
 File: IMAGES/Majorana/Topological.png Graphic file (type png)
 <use IMAGES/Majorana/Topological.png>
 Package pdftex.def Info: IMAGES/Majorana/Topological.png  used on input line 14
@@ -888,51 +883,64 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 225.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<IMAGES/Majorana/nonAb.png, id=232, 188.3838pt x 89.6148pt>
+Overfull \hbox (3.60797pt too wide) in paragraph at lines 237--239
+\T1/ptm/m/n/10.95 In a Clif-ford al-ge-bra gen-er-ated by the op-er-a-tors $\OM
+L/ztmcm/m/it/10.95 ^^M[]$ \T1/ptm/m/n/10.95 and $\OML/ztmcm/m/it/10.95 ^^M[]$ \
+T1/ptm/m/n/10.95 (See al-ge-braic re-la-tions []),
+ []
+
+<IMAGES/Majorana/nonAb.png, id=241, 188.3838pt x 89.6148pt>
 File: IMAGES/Majorana/nonAb.png Graphic file (type png)
 <use IMAGES/Majorana/nonAb.png>
 Package pdftex.def Info: IMAGES/Majorana/nonAb.png  used on input line 259.
 (pdftex.def)             Requested size: 188.38333pt x 89.61458pt.
 Package cleveref Info: loaded `english' language definitions on input line 272.
 
- [11]
-
-LaTeX Warning: Reference `fig:sipin-orbit' on page 12 undefined on input line 2
-93.
-
-Package cleveref Info: loaded `english' language definitions on input line 295.
-
-[12 <./IMAGES/Majorana/nonAb.png>]
-<IMAGES/Majorana/Mwire.png, id=260, 501.875pt x 195.73125pt>
+[11]
+<IMAGES/Majorana/Mwire.png, id=263, 501.875pt x 195.73125pt>
 File: IMAGES/Majorana/Mwire.png Graphic file (type png)
 <use IMAGES/Majorana/Mwire.png>
-Package pdftex.def Info: IMAGES/Majorana/Mwire.png  used on input line 305.
+Package pdftex.def Info: IMAGES/Majorana/Mwire.png  used on input line 293.
 (pdftex.def)             Requested size: 351.31009pt x 137.01093pt.
-<IMAGES/Majorana/Exp.png, id=262, 405.515pt x 396.48125pt>
+Package cleveref Info: loaded `english' language definitions on input line 295.
+
+ [12 <./IMAGES/Majorana/nonAb.png>]
+Package cleveref Info: loaded `english' language definitions on input line 322.
+
+ [13 <./IMAGES/Majorana/Mwire.png>]
+<IMAGES/Majorana/Exp.png, id=303, 405.515pt x 396.48125pt>
 File: IMAGES/Majorana/Exp.png Graphic file (type png)
 <use IMAGES/Majorana/Exp.png>
-Package pdftex.def Info: IMAGES/Majorana/Exp.png  used on input line 313.
-(pdftex.def)             Requested size: 121.65543pt x 118.94528pt.
-<IMAGES/Majorana/Exp2.png, id=263, 494.84875pt x 391.4625pt>
+Package pdftex.def Info: IMAGES/Majorana/Exp.png  used on input line 328.
+(pdftex.def)             Requested size: 202.75699pt x 198.24013pt.
+<IMAGES/Majorana/Exp2.png, id=304, 494.84875pt x 391.4625pt>
 File: IMAGES/Majorana/Exp2.png Graphic file (type png)
 <use IMAGES/Majorana/Exp2.png>
-Package pdftex.def Info: IMAGES/Majorana/Exp2.png  used on input line 314.
-(pdftex.def)             Requested size: 148.45576pt x 117.43965pt.
-Package cleveref Info: loaded `english' language definitions on input line 326.
+Package pdftex.def Info: IMAGES/Majorana/Exp2.png  used on input line 329.
+(pdftex.def)             Requested size: 247.42377pt x 195.73076pt.
 
- [13 <./IMAGES/Majorana/Mwire.png> <./IMAGES/Majorana/Exp.png> <./IMAGES/Majora
-na/Exp2.png>]
+Overfull \hbox (35.05504pt too wide) in paragraph at lines 328--330
+ [][][][] 
+ []
 
-LaTeX Warning: Reference `chap: Methods' on page 14 undefined on input line 336
+
+Package natbib Warning: Citation `heck_coulomb-assisted_2012' on page 14 undefi
+ned on input line 333.
+
+Package cleveref Info: loaded `english' language definitions on input line 357.
+
+[14 <./IMAGES/Majorana/Exp.png> <./IMAGES/Majorana/Exp2.png>]
+
+LaTeX Warning: Reference `chap: Methods' on page 15 undefined on input line 370
 .
 
 
-LaTeX Warning: Reference `eq:Anderson' on page 14 undefined on input line 342.
+LaTeX Warning: Reference `eq:Anderson' on page 15 undefined on input line 376.
 
-Package cleveref Info: loaded `english' language definitions on input line 372.
+Package cleveref Info: loaded `english' language definitions on input line 392.
 
-[14]
-Overfull \hbox (18.37738pt too wide) detected at line 379
+[15]
+Overfull \hbox (18.37738pt too wide) detected at line 413
 []\OML/ztmcm/m/it/10.95 H \OT1/ztmcm/m/n/10.95 = [] [] \OML/ztmcm/m/it/10.95 d[
 ]d[] \OT1/ztmcm/m/n/10.95 + [](\OML/ztmcm/m/it/10.95 d[]d[] \OMS/ztmcm/m/n/10.9
 5 ^^@ \OT1/ztmcm/m/n/10.95 1)[] + \OML/ztmcm/m/it/10.95 t[] [] \OT1/ztmcm/m/n/1
@@ -941,92 +949,94 @@ Overfull \hbox (18.37738pt too wide) detected at line 379
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 382--387
+Underfull \hbox (badness 10000) in paragraph at lines 416--421
 
  []
 
 
-LaTeX Warning: Reference `sec:transport' on page 15 undefined on input line 391
+LaTeX Warning: Reference `sec:transport' on page 16 undefined on input line 425
 .
 
 
-LaTeX Warning: Reference `sec:GraphMethod' on page 15 undefined on input line 4
-04.
+LaTeX Warning: Reference `sec:GraphMethod' on page 16 undefined on input line 4
+38.
 
-Package cleveref Info: loaded `english' language definitions on input line 414.
+Package cleveref Info: loaded `english' language definitions on input line 444.
 
-[15]
+[16]
 
-LaTeX Warning: Reference `sec:Algorithm' on page 16 undefined on input line 419
+LaTeX Warning: Reference `sec:Algorithm' on page 17 undefined on input line 453
 .
 
-<IMAGES/Graphs/Grenn-Majorana.png, id=323, 676.77844pt x 440.39531pt>
+<IMAGES/Graphs/Grenn-Majorana.png, id=362, 676.77844pt x 440.39531pt>
 File: IMAGES/Graphs/Grenn-Majorana.png Graphic file (type png)
 <use IMAGES/Graphs/Grenn-Majorana.png>
 Package pdftex.def Info: IMAGES/Graphs/Grenn-Majorana.png  used on input line 4
-23.
+57.
 (pdftex.def)             Requested size: 338.3884pt x 220.19711pt.
-<IMAGES/Majorana/M1.png, id=326, 290.686pt x 201.553pt>
+Package cleveref Info: loaded `english' language definitions on input line 476.
+
+[17 <./IMAGES/Graphs/Grenn-Majorana.png>]
+
+LaTeX Warning: Reference `sec:GraphMethod' on page 18 undefined on input line 4
+80.
+
+<IMAGES/Majorana/M1.png, id=379, 290.686pt x 201.553pt>
 File: IMAGES/Majorana/M1.png Graphic file (type png)
 <use IMAGES/Majorana/M1.png>
-Package pdftex.def Info: IMAGES/Majorana/M1.png  used on input line 445.
+Package pdftex.def Info: IMAGES/Majorana/M1.png  used on input line 484.
 (pdftex.def)             Requested size: 212.199pt x 147.13245pt.
-<IMAGES/Majorana/M1-e1.png, id=327, 327.624pt x 195.129pt>
+<IMAGES/Majorana/M1-e1.png, id=380, 327.624pt x 195.129pt>
 File: IMAGES/Majorana/M1-e1.png Graphic file (type png)
 <use IMAGES/Majorana/M1-e1.png>
-Package pdftex.def Info: IMAGES/Majorana/M1-e1.png  used on input line 446.
+Package pdftex.def Info: IMAGES/Majorana/M1-e1.png  used on input line 485.
 (pdftex.def)             Requested size: 239.16351pt x 142.44298pt.
 
-Overfull \hbox (36.2368pt too wide) in paragraph at lines 445--446
+Overfull \hbox (36.2368pt too wide) in paragraph at lines 484--485
  [][][][] 
  []
 
-<IMAGES/Majorana/M1-eM.png, id=328, 281.05pt x 172.645pt>
+<IMAGES/Majorana/M1-eM.png, id=381, 281.05pt x 172.645pt>
 File: IMAGES/Majorana/M1-eM.png Graphic file (type png)
 <use IMAGES/Majorana/M1-eM.png>
-Package pdftex.def Info: IMAGES/Majorana/M1-eM.png  used on input line 447.
+Package pdftex.def Info: IMAGES/Majorana/M1-eM.png  used on input line 486.
 (pdftex.def)             Requested size: 210.78697pt x 129.48341pt.
+Package cleveref Info: loaded `english' language definitions on input line 495.
 
-LaTeX Warning: Reference `sec:GraphMethod' on page 16 undefined on input line 4
-53.
+[18 <./IMAGES/Majorana/M1.png> <./IMAGES/Majorana/M1-e1.png> <./IMAGES/Majorana
+/M1-eM.png>]
 
-Package cleveref Info: loaded `english' language definitions on input line 454.
-
-[16 <./IMAGES/Graphs/Grenn-Majorana.png>]
-Package cleveref Info: loaded `english' language definitions on input line 458.
-
- [17 <./IMAGES/Majorana/M1.png> <./IMAGES/Majorana/M1-e1.png> <./IMAGES/Majoran
-a/M1-eM.png>]
-
-LaTeX Warning: Reference `sec: NRG-DQD' on page 18 undefined on input line 473.
+LaTeX Warning: Reference `sec: NRG-DQD' on page 19 undefined on input line 509.
 
 
 
-LaTeX Warning: Reference `fig:NRG-1D' on page 18 undefined on input line 473.
+LaTeX Warning: Reference `fig:NRG-1D' on page 19 undefined on input line 509.
 
-<IMAGES/Majorana/NRG.png, id=357, 242.506pt x 220.825pt>
+<IMAGES/Majorana/NRG.png, id=398, 242.506pt x 220.825pt>
 File: IMAGES/Majorana/NRG.png Graphic file (type png)
 <use IMAGES/Majorana/NRG.png>
-Package pdftex.def Info: IMAGES/Majorana/NRG.png  used on input line 478.
+Package pdftex.def Info: IMAGES/Majorana/NRG.png  used on input line 514.
 (pdftex.def)             Requested size: 169.75304pt x 154.57643pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 480.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 516.
 
-Package natbib Warning: Citation `By the author.' on page 18 undefined on input
- line 480.
+Package natbib Warning: Citation `By the author.' on page 19 undefined on input
+ line 516.
 
 
-Package natbib Warning: Citation `By the author.' on page 18 undefined on input
- line 480.
+Package natbib Warning: Citation `By the author.' on page 19 undefined on input
+ line 516.
 
-)
-Package cleveref Info: loaded `english' language definitions on input line 237.
+Package cleveref Info: loaded `english' language definitions on input line 518.
 
- [18 <./IMAGES/Majorana/NRG.png>] (./main.bbl (./main.brf)
+[19])
+Package cleveref Info: loaded `english' language definitions on input line 240.
+
+ [20 <./IMAGES/Majorana/NRG.png>] (./main.bbl (./main.brf)
 \tf@brf=\write7
 \openout7 = `main.brf'.
 
- [19
+ [21
 
 
 ]
@@ -1041,9 +1051,9 @@ I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-Package cleveref Info: loaded `english' language definitions on input line 180.
+Package cleveref Info: loaded `english' language definitions on input line 176.
 
-[20]
+[22]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin9'.
@@ -1052,10 +1062,251 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.205 
+l.247 
       
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin9'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 
+      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\maththreesuperior ->{^3}
+                         
+l.258 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Command $ invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \rmfamily invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 
+      
+Please use the math alphabet \mathrm instead of the \rmfamily command. 
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.258 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+\Url@FormatString ...ndafter \UrlLeft \Url@String 
+                                                  \UrlRight \m@th $
+l.258 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.258 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (137.96964pt too wide) in paragraph at lines 258--258
+[]\T1/ptm/m/n/10.95 Eduardo J. H. Lee, Xi-aocheng Jiang, Ram√$[]\OML/ztmcm/m/it
+/10.95 nAguado; GeorgiosKatsaros; Charles M:Lieber; andSilvanoDe Franceschi: Ze
+ro \OMS/ztmcm/m/n/10.95 ^^@
+ []
+
+
+Overfull \hbox (12.46732pt too wide) in paragraph at lines 258--258
+[][]\OML/ztmcm/m/it/10.95 ina[][][][]to[]: []; \OT1/ztmcm/m/n/10.95 109
+ []
+
+
+Overfull \hbox (16.3054pt too wide) in paragraph at lines 258--258
+\OT1/ztmcm/m/n/10.95 (18) : 186802\OML/ztmcm/m/it/10.95 ; October\OT1/ztmcm/m/n
+/10.95 2012\OML/ztmcm/m/it/10.95 : doi \OT1/ztmcm/m/n/10.95 : []$$$\T1/ptm/m/n/
+10.95 .  URL [][]$\T1/cmtt/m/n/10.95 https : / / link . aps . org / doi / 10 . 
+1103 / PhysRevLett .
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 258.
+
+[23]
+Runaway argument?
+ B.~van Heck, A.~R. Akhmerov, F.~Hassler, M.~Burrello, and C.~W.~J. B\ETC.
+! Paragraph ended before \BR@@lbibitem was complete.
+<to be read again> 
+                   \par 
+l.269 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 280
+[][]
+ []
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin9'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 
+      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+! Undefined control sequence.
+<argument> ...lock ISSN 2045-2322. \newblock \doi 
+                                                  {10.1038/s41598-018-33529-...
+l.280 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.288 
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 288
+[][]
+ []
+
+! Undefined control sequence.
+<argument> ... 0 1003--1043, 1980. \newblock \doi 
+                                                  {10.1103/PhysRevB.21.1003}. 
+l.288 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.296 
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 296
+[][]
+ []
 
 
 ! LaTeX Error: Command \texteuro unavailable in encoding T1.
@@ -1064,37 +1315,141 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 
+l.296 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [21]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304 
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 304
+[][]
+ []
+
+! Undefined control sequence.
+<argument> ...95--450, April 2008. \newblock \doi 
+                                                  {10.1103/RevModPhys.80.395...
+l.304 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 313
+[][]
+ []
+
+! Undefined control sequence.
+<argument> ...--102, October 1954. \newblock \doi 
+                                                  {10.1103/PhysRev.96.99}. \...
+l.313 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.321 
+      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 321
+[][]
+ []
+
+! Undefined control sequence.
+<argument> ...893--898, June 1957. \newblock \doi 
+                                                  {10.1103/PhysRev.106.893}....
+l.321 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{thebibliography}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.322 \end{thebibliography}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.322 \end{thebibliography}
+                           
+Things are pretty mixed up, but I think the worst is over.
+
+) [24]
 \openout2 = `Append_A.aux'.
 
  (./Append_A.tex
 Appendix A.
 
-LaTeX Warning: Reference `eq:Anderson' on page 22 undefined on input line 8.
+LaTeX Warning: Reference `eq:Anderson' on page 25 undefined on input line 8.
 
-[22
+[25
 
 
 
 ]
 
-LaTeX Warning: Reference `FigDiscretization' on page 23 undefined on input line
+LaTeX Warning: Reference `FigDiscretization' on page 26 undefined on input line
  48.
 
 Package cleveref Info: loaded `english' language definitions on input line 95.
-[23]
+[26]
 Overfull \hbox (28.6966pt too wide) in alignment at lines 100--106
  [][][] []
  []
 
 
-LaTeX Warning: Reference `fig:Discretization' on page 24 undefined on input lin
+LaTeX Warning: Reference `fig:Discretization' on page 27 undefined on input lin
 e 116.
 
 
@@ -1104,40 +1459,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--121
 
 Package cleveref Info: loaded `english' language definitions on input line 131.
 
-[24]
+[27]
 
-LaTeX Warning: Reference `FigNRG-chain' on page 25 undefined on input line 144.
+LaTeX Warning: Reference `FigNRG-chain' on page 28 undefined on input line 144.
 
 
 Package cleveref Info: loaded `english' language definitions on input line 182.
 
-[25]
+[28]
 
-LaTeX Warning: Reference `FigNRG-chain' on page 26 undefined on input line 187.
+LaTeX Warning: Reference `FigNRG-chain' on page 29 undefined on input line 187.
 
 
 Package cleveref Info: loaded `english' language definitions on input line 203.
 
-[26]
+[29]
 Appendix B.
 
-LaTeX Warning: Reference `General model' on page 27 undefined on input line 212
+LaTeX Warning: Reference `General model' on page 30 undefined on input line 212
 .
 
-[27
+[30
 
 ]
 
-LaTeX Warning: Reference `fig:ExchangeMod' on page 28 undefined on input line 2
+LaTeX Warning: Reference `fig:ExchangeMod' on page 31 undefined on input line 2
 57.
 
 
-LaTeX Warning: Reference `fig:MSig/Shift_t1=t2' on page 28 undefined on input l
+LaTeX Warning: Reference `fig:MSig/Shift_t1=t2' on page 31 undefined on input l
 ine 277.
 
 Package cleveref Info: loaded `english' language definitions on input line 310.
 
-[28]
+[31]
 Overfull \hbox (17.05872pt too wide) detected at line 326
 [] []
  []
@@ -1148,23 +1503,23 @@ Overfull \hbox (17.05872pt too wide) detected at line 344
  []
 
 )
-Package cleveref Info: loaded `english' language definitions on input line 254.
+Package cleveref Info: loaded `english' language definitions on input line 257.
 
- [29]
+ [32]
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
 (./main.aux
 Package cleveref Info: loaded `english' language definitions on input line 19.
  (./Majorana.aux) (./Append_A.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 261.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0F03606987863BC54AF1DACB7EE342ED;3262.
+(rerunfilecheck)             Checksum: 631627C4393BA64581B26B5B46253C53;3270.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: DA3A8EB279CF3BC56F75728A8D8FC432;2750.
+(rerunfilecheck)             Checksum: D10B4A08F32DF827FC986E74F9D2C38C;3888.
 
 
 LaTeX Warning: There were undefined references.
@@ -1172,35 +1527,53 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 258.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 15446 strings out of 494485
- 236613 string characters out of 6175793
- 338585 words of memory out of 5000000
- 18699 multiletter control sequences out of 15000+600000
- 84534 words of font info for 136 fonts, out of 8000000 for 9000
+ 15497 strings out of 494485
+ 237706 string characters out of 6175793
+ 340261 words of memory out of 5000000
+ 18738 multiletter control sequences out of 15000+600000
+ 89602 words of font info for 139 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 43i,11n,89p,1200b,692s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/cifu/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600p
-k> </home/cifu/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600p
-k>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/esint-type1/esint10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a
-.pfb>
-Output written on main.pdf (29 pages, 1075083 bytes).
+ 43i,11n,89p,1121b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.yosida_magnetic_1957} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.ruderman_indirect_1954} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.bulla_numerical_2008} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.sindel_numerical_2005} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.krishna-murthy_renormalization-group_1980} has
+ been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.gorski_interplay_2018} has been referenced but
+ does not exist, replaced by a fixed one
+
+ </home/cifu/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk>
+ </home/cifu/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk>
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/esint-type1/esint10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/r
+sfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on main.pdf (32 pages, 1084511 bytes).
 PDF statistics:
- 689 PDF objects out of 1000 (max. 8388607)
- 545 compressed objects within 6 object streams
- 139 named destinations out of 1000 (max. 500000)
+ 773 PDF objects out of 1000 (max. 8388607)
+ 623 compressed objects within 7 object streams
+ 151 named destinations out of 1000 (max. 500000)
  202 words of extra memory for PDF output out of 10000 (max. 10000000)
 

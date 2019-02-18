@@ -5,17 +5,17 @@
 \contentsline {section}{\numberline {3.1}{The Kitaev Chain }}{5}{section.3.1}% 
 \contentsline {subsection}{\numberline {3.1.1}{Topological phase transition }}{8}{subsection.3.1.1}% 
 \contentsline {subsection}{\numberline {3.1.2}{Non-abelian statistics }}{11}{subsection.3.1.2}% 
-\contentsline {section}{\numberline {3.2}{Real implementations of Majorana Chains }}{12}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}{Coupling Majorana Fermions to QDs}}{13}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}{Model}}{14}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}{Non-interacting QD coupled to Majorana chain }}{15}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}{Kondo-Majorana physics}}{18}{subsection.3.3.3}% 
-\contentsline {section}{\textbf {References}}{19}{figure.3.10}% 
-\contentsline {chapter}{{Bibliography}}{19}{chapter*.1}% 
+\contentsline {section}{\numberline {3.2}{Real implementations of the Kitaev Chain }}{12}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}{Coupling Majorana Fermions to QDs}}{14}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}{Model}}{15}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}{Non-interacting QD coupled to Majorana chain }}{16}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}{Kondo-Majorana physics}}{19}{subsection.3.3.3}% 
+\contentsline {section}{\textbf {References}}{21}{figure.3.10}% 
+\contentsline {chapter}{{Bibliography}}{21}{chapter*.1}% 
 \contentsline {part}{{Appendices}}{}{}
-\contentsline {chapter}{\numberline {A}{Appendix}}{22}{appendix.A}% 
-\contentsline {section}{\numberline {A.1}{From the logarithmic discretization to the Wilson's chain.}}{22}{section.A.1}% 
-\contentsline {subsubsection}{{Logarithmic Discretization:}}{22}{section*.2}% 
-\contentsline {subsubsection}{{Mapping the Anderson model to a Chain-Hamiltonian}}{24}{section*.3}% 
-\contentsline {chapter}{\numberline {B}{Three peak appearance in the Double Quantum Dot model.}}{27}{appendix.B}% 
-\contentsline {section}{\numberline {B.1}{Initial DQD-Majorana Hamiltonian.}}{28}{section.B.1}% 
+\contentsline {chapter}{\numberline {A}{Appendix}}{25}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}{From the logarithmic discretization to the Wilson's chain.}}{25}{section.A.1}% 
+\contentsline {subsubsection}{{Logarithmic Discretization:}}{25}{section*.2}% 
+\contentsline {subsubsection}{{Mapping the Anderson model to a Chain-Hamiltonian}}{27}{section*.3}% 
+\contentsline {chapter}{\numberline {B}{Three peak appearance in the Double Quantum Dot model.}}{30}{appendix.B}% 
+\contentsline {section}{\numberline {B.1}{Initial DQD-Majorana Hamiltonian.}}{31}{section.B.1}% 

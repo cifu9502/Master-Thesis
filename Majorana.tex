@@ -22,7 +22,7 @@ The insight of topology into  the field of condensed matter physics is that thos
 
 In the last two decades, a new type promising topological material has captivated the attention of many physicists. This is the Majorana wire, inspired in a famous Kitaev's toy model representing a spinless p-wave superconducting chain \cite{kitaev_unpaired_2001}. Under certain conditions, the Majorana wires experience topological phase transition characterized by the emergence of  zero-modes localized at edges of the wire. Kitaev associated these modes with Majorana quasi-particles  appearing at the boundary of the topological superconducting wires . Just like the IQHE, topology protects these  Majorana's  from quantum decoherence. In addition, Kitaev proposed that  Majorana's non-abelian statistics provided a suitable method to encode quantum information \cite{kitaev_fault-tolerant_2003}. These two characteristics gave the   origin of an entire field called topological quantum computation \cite{pachos_introduction_2012}.
 
-The promise of using Majorana quasi-particles to implement quantum architectures motivated the pursuit of Majorana fermions during the following years. This motived a huge bunch of theoretical projects devoted to propose real implementations of the Kitaev model \cite{alicea_majorana_2010,alicea_new_2012,beenakker_search_2013,sarma_majorana_2015,plugge_majorana_2017,aasen_milestones_2016}. The first experiment confirming the observation of  Majorana zero modes (MZM) in topological superconductors was performed in 2012 by \citeauthor{mourik_signatures_2012}. Since that moment, many other groups have created Majorana chains \ref{das_zero-bias_2012,deng_anomalous_2012,nadj-perge_observation_2014,deng_majorana_2016,zhang_quantized_2018}. These good experimental results inspired other ways to detect Majorana signatures. One of the most famous is the idea of coupling Majorana wires with QD's \cite{liu_detecting_2011}, which opened new lights to the design of quantum architectures with Majorana chains \cite{barkeshli_physical_2015,karzig_scalable_2017}. 
+The promise of using Majorana quasi-particles to implement quantum architectures motivated the pursuit of Majorana fermions during the following years. This motived a huge bunch of theoretical projects devoted to propose real implementations of the Kitaev model \cite{alicea_majorana_2010,alicea_new_2012,beenakker_search_2013,sarma_majorana_2015,plugge_majorana_2017,aasen_milestones_2016}. The first experiment confirming the observation of  Majorana zero modes (MZM) in topological superconductors was performed in 2012 by \citeauthor{mourik_signatures_2012}. Since that moment, many other groups have created Majorana chains \cite{das_zero-bias_2012,deng_anomalous_2012,nadj-perge_observation_2014,deng_majorana_2016,zhang_quantized_2018} These good experimental results inspired other ways to detect Majorana signatures. One of the most famous is the idea of coupling Majorana wires with QD's \cite{liu_detecting_2011}, which opened new lights to the design of quantum architectures with Majorana chains \cite{barkeshli_physical_2015,karzig_scalable_2017}. 
 
 In this chapter we will present a review of the main ideas behind the Kitaev chain (section \ref{sec:KitaevChain}) and how that model inspired real implementations of Majorana wires \ref{sec:exp}.  In \ref{sec:GreenMaj-DQD} we will take a look to the idea of coupling QDs to a Majorana chain. This will be our last step before going into the main objective of this thesis: The manipulation of Majorana zero modes inside a double quantum dot. 
 
@@ -284,36 +284,70 @@ Now imagine that we have three Majoranas $\gamma_1, \gamma_2$ and $\gamma_3$ and
 % 
 % 
 % ---------------------------------------------------
-\section{Real implementations of Majorana Chains \label{sec:exp}} 
+\section{Real implementations of the Kitaev Chain \label{sec:exp}} 
 
-Although the Kitaev chain its just a toy model, 
+ One of the main problems to implement real devices capable to exhibit Majorana quasi-particles at the boundaries, was that Majorana's are spin-less. Since all materials have fermion doubling,  it was necessary to endow the system with a physical property that could separate the spin energy bands. To bypass this problem, \citeauthor{lutchyn_majorana_2010}  proposed using a material with strong spin-orbit Rashba interaction \cite{manchon_new_2015}, which would split the energy band by spin, hence destroying fermion doubling. 
 
-The promise of finding the exotic Majorana particles that could bring new insights to quantum computing motivated the implementation of real models that could emulate the physics of a Kitaev chain. 
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.7]{IMAGES/Majorana/Mwire.png}
+\caption{ \label{fig:spin-orbit} \protect\Source{\cite{alicea_new_2012}}}
+\end{figure}
 
-Spin is a major problem. A material with spin-orbit coupling is  the solution to this situation. \ref{fig:sipin-orbit} 
+
+This idea allowed scientist to designed the first Majorana wires. The recipe consists ingrowing a semi-conducting wire with high spin-orbit coupling, over an s'wave superconductor and inducing a Zeeman magnetic field (\ref{fig:spin-orbit}(a)). Such model is described by the following Hamiltonian \cite{alicea_new_2012}$(65)$
 
 \begin{equation}
-    H =\int\mbox{d}x\psi^{\dagger}\left(\frac{\partial^{2}}{2m\partial x^{2}}-\mu -i\alpha\sigma_{y}\partial x+h\sigma_{x}\right)\psi+\Delta\psi_{\downarrow}\psi_{\uparrow}+\Delta^{*}\psi_{\downarrow}\psi_{\uparrow},
+    H =\int\mbox{d}x\psi^{\dagger}\left(\frac{-1}{2m}\partial_x^{2}-\mu -i\alpha\sigma_{y}\partial_x+h\sigma_{x}\right)\psi+\Delta\psi_{\downarrow}\psi_{\uparrow}+\Delta^{*}\psi_{\downarrow}\psi_{\uparrow},
     \label{eq:MajoranaChainHam}
 \end{equation}
+\noindent where $\mu$ is the chemical potential, $h$ is the Zeeman splitting energy, $\Delta$ is the superconducting gap and $\alpha > 0$ is the Rashba spin-coupling parameter, favoring spin-align. If $\Delta =0$, the band structure would split and divide in two bands  \cite{alicea_new_2012}$(67)$
+\begin{equation}
+    \epsilon_\pm(k) = \frac{k^2}{2m} -\mu \pm \sqrt{(\alpha k)^2+h^2}
+\end{equation}
 
+\noindent with opposed spins as observed in the blue and red lines of \ref{fig:spin-orbit}(b).  
+
+The superconducting proximity effect opens a gap $\Delta$ that projects the upper and lower bands forming as observe in the black bands of \ref{fig:spin-orbit}(b) . The separation of both energy channels allow us to think the conduction band as an spin-less system where Majorana modes can emerge. As pointed out by \citeauthor{alicea_new_2012}, the system is in the topological phase if the the following criterion is satisfied 
+\begin{equation}
+  h > \sqrt{\Delta^2 +\mu^2 }. 
+  \label{eq:topcond}
+\end{equation}
+
+% After these theoretical proposals different groups confirming the observation of Majorana signatures in SnSb 
+
+This theoretical proposal led in 2012 to the first observation of Majorana signatures in InSb nanowires \footnote{A material with strong spin-orbit coupling and large $g$ factor.}, by \citeauthor{mourik_signatures_2012} from the Kavli Institute at Delft. This was a huge boost to the field which immediately attracted abundant experimental and theoretical work. 
+
+In just 6 years, more than 5 groups have documented the observation of Majorana signatures \cite{das_zero-bias_2012,deng_anomalous_2012,nadj-perge_observation_2014,deng_majorana_2016,zhang_quantized_2018}. This signature is characterized by the emergence of a robust zero bias conductance peak ZBCP of height $\frac{2e^2}{\hbar}$ produced by the Majorana zero mode MZM localized at the edges of the wire. Though the first experiments didn't observed such an stable signature, the last year \citeauthor{zhang_quantized_2018} published a paper documenting the observation of this robust peak with the expected theoretical magnitude in and InSb wire \ref{fig:exp}. As can be observed in \ref{fig:exp}(b) the ZBCP increases up to $\frac{2e^2}{\hbar}$ for a strong magnetic field, where the system enters the topological phase according to equation \eqref{eq:topcond}. 
 
 
 
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.7]{IMAGES/Majorana/Mwire.png}
 
-\caption{ \label{fig:spin-orbit} \protect\Source{\cite{alicea_new_2012}}}
+     \subfloat[ \label{fig:exp1}]{\includegraphics[scale=0.5]{IMAGES/Majorana/Exp.png}}  
+     \subfloat[\label{fig:exp2}]{\includegraphics[scale=0.5]{IMAGES/Majorana/Exp2.png}}
+\caption{ (a) Experimental setup (b) Observed magnetic field dependance of the zero bias peak.  \label{fig:exp}\protect\Source{\cite{zhang_quantized_2018}}}
 \end{figure}
 
-\begin{figure}[H]
-\centering
+Despite the successful experimental results, there is still certain  skepticism about the existence of Majorana fermions mainly, because Majorana zero-modes (MZM) have been found in superposition with other similar types of phenomenon such Andreev bound states or even the Kondo effect. \cite{lee_zero-bias_2012} The new experimental proposals focus on distinguishing MZMs from other effects and implementing  braiding protocols \cite{aasen_milestones_2016,sarma_majorana_2015,heck_coulomb-assisted_2012} . One promising idea that could lead to important results in both research lines is coupling Majorana wires with QDs. This will be the objective of the following section. 
+%  After this, other papers revealing edge localization, as well as . The last year (2018) measured a robust zero bias peak (ZBP) of 
 
-     \subfloat[ \label{fig:exp1}]{\includegraphics[scale=0.3]{IMAGES/Majorana/Exp.png}}  
-     \subfloat[\label{fig:exp2}]{\includegraphics[scale=0.3]{IMAGES/Majorana/Exp2.png}}
-\caption{ \label{ex}\protect\Source{\cite{zhang_quantized_2018}}}
-\end{figure}
+
+% A material with spin-orbit coupling is  the solution to this situation. \ref{fig:sipin-orbit} 
+
+% Spin is a major problem. A material with spin-orbit coupling is  the solution to this situation. \ref{fig:sipin-orbit} 
+
+
+% This growin SnAs wires  has lead very impressive results. In 2012 a group in Delft detected the first observation of a Majorana Zero Mode .  T
+
+
+
+% All these advances represented a huge boost to the field 
+
+% Despite the succesful experimental results, some skepticism about the existence of Majorana fermions remains 
+
+
 
 
 % -----------------------Leaking Majorana modes in quantum dots-------------
@@ -440,7 +474,12 @@ Similarly,
 
 This is the Green function we have been looking for. After a few algebraic operations it is possible to show that this result is equivalent to the first computation done by \citeauthor{liu_detecting_2011}  in the paper \cite{liu_detecting_2011}. 
 
-\begin{figure}[t]
+
+
+
+To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}= -i\Gamma_1$ as we already did in \ref{sec:GraphMethod}. Note that these computations are only for the spin-$\dw$ channel. The spin-$\up$ channel is even simpler since this channel is not coupled to the Majorana mode by convention. Hence it corresponds to the case of a single quantum dot coupled to a Lead.  The results for the DOS can be observed in \ref{fig:M1-Tot}. Each figure has an inset showing the model in the Majorana representation. The small blue and red balls are Majorana fermions just as the ones in figure \ref{fig:top.phases kitaev}. The Majorana at the edge of the  chain is represented by the isolated red ball connected to the QD (Figure \ref{fig:M1}). The other isolated blue ball in Figure \ref{fig:M1-em} represents the Majorana at the other edge which is connected to the sphere by the parameter $\epsilon$. 
+
+\begin{figure}[H]
      \centering
     \subfloat[Tuning the Majorana coupling $t_1$ \label{fig:M1}]{\includegraphics[scale=0.73]{IMAGES/Majorana/M1.png}}
      \subfloat[Tuning dot's gate voltage $\ep_1$ \label{fig:M1-e1}]{\includegraphics[scale=0.73]{IMAGES/Majorana/M1-e1.png}}  \\
@@ -450,8 +489,6 @@ This is the Green function we have been looking for. After a few algebraic opera
 \end{figure}
 
 
-To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}= -i\Gamma_1$ as we already did in \ref{sec:GraphMethod}. Note that these computations are only for the spin-$\dw$ channel. The spin-$\up$ channel is even simpler since this channel is not coupled to the Majorana mode by convention. Hence it corresponds to the case of a single quantum dot coupled to a Lead.  The results for the DOS can be observed in \ref{fig:M1-Tot}. Each figure has an inset showing the model in the Majorana representation. The small blue and red balls are Majorana fermions just as the ones in figure \ref{fig:top.phases kitaev}. The Majorana at the edge of the  chain is represented by the isolated red ball connected to the QD (Figure \ref{fig:M1}). The other isolated blue ball in Figure \ref{fig:M1-em} represents the Majorana at the other edge which is connected to the sphere by the parameter $\epsilon$. 
-
 \begin{itemize}
     \item\textbf{ \ref{fig:M1-Tot}.(a),(b):}  The spin-$\up$ DOS shows the result of coupling the QD with the lead and without Majorana fermions. When the parameter $t$ is increased, the Majorana fermion is couple to the spin-$\dw$ which causes the dispersion of the DOS. The most relevant signature is the robust height of $0.5$  in the DOS that is observed in the central peak for all $t>0$. This mid-height DOS is responsible for the decay of half a quanta in the conductivity of the QD.
     % In addition we observe that two new states emerge at $\omega \sim t^2$ caused 
@@ -460,7 +497,6 @@ To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}=
     
     \item\textbf{ \ref{fig:M1-Tot}.(e),(f):} The term $\epsilon_M$ couples both Majoranas at the edges of the chain. The strength of this parameter decays exponentially with the length of the Majorana  chain so that it is often neglected . Here we observe the consequences of including this parameter in the model. The spin-$\dw$ DOS emulates the spin-$\up$ DOS for energies $\omega < \ep_M$. This clearly destroys the Majorana zero mode.   
 \end{itemize}
-
 
 
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -141,6 +141,53 @@ V.~Mourik, K.~Zuo, S.~M. Frolov, S.~R. Plissard, E.~P. a.~M. Bakkers, and L.~P.
 \newblock URL
   \url{http://science-sciencemag-org.ez67.periodicos.capes.gov.br/content/336/6084/1003}.
 
+\bibitem[Das et~al.(2012)Das, Ronen, Most, Oreg, Heiblum, and
+  Shtrikman]{das_zero-bias_2012}
+Anindya Das, Yuval Ronen, Yonatan Most, Yuval Oreg, Moty Heiblum, and Hadas
+  Shtrikman.
+\newblock Zero-bias peaks and splitting in an {Al}-{InAs} nanowire topological
+  superconductor as a signature of {Majorana} fermions.
+\newblock \emph{Nature Physics}, 8\penalty0 (12):\penalty0 887, December 2012.
+\newblock ISSN 1745-2481.
+\newblock \doi{10.1038/nphys2479}.
+\newblock URL \url{https://www.nature.com/articles/nphys2479}.
+
+\bibitem[Deng et~al.(2012)Deng, Yu, Huang, Larsson, Caroff, and
+  Xu]{deng_anomalous_2012}
+M.~T. Deng, C.~L. Yu, G.~Y. Huang, M.~Larsson, P.~Caroff, and H.~Q. Xu.
+\newblock Anomalous {Zero}-{Bias} {Conductance} {Peak} in a {Nb}-{InSb}
+  {Nanowire}-{Nb} {Hybrid} {Device}.
+\newblock \emph{Nano Letters}, 12\penalty0 (12):\penalty0 6414--6419, December
+  2012.
+\newblock ISSN 1530-6984.
+\newblock \doi{10.1021/nl303758w}.
+\newblock URL \url{http://dx.doi.org/10.1021/nl303758w}.
+
+\bibitem[Nadj-Perge et~al.(2014)Nadj-Perge, Drozdov, Li, Chen, Jeon, Seo,
+  MacDonald, Bernevig, and Yazdani]{nadj-perge_observation_2014}
+Stevan Nadj-Perge, Ilya~K. Drozdov, Jian Li, Hua Chen, Sangjun Jeon, Jungpil
+  Seo, Allan~H. MacDonald, B.~Andrei Bernevig, and Ali Yazdani.
+\newblock Observation of {Majorana} fermions in ferromagnetic atomic chains on
+  a superconductor.
+\newblock \emph{Science}, 346\penalty0 (6209):\penalty0 602--607, October 2014.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.1259327}.
+\newblock URL \url{http://science.sciencemag.org/content/346/6209/602}.
+
+\bibitem[Zhang et~al.(2018)Zhang, Liu, Gazibegovic, Xu, Logan, Wang, van Loo,
+  Bommer, de~Moor, Car, Op~het Veld, van Veldhoven, Koelling, Verheijen,
+  Pendharkar, Pennachio, Shojaei, Lee, Palmstrøm, Bakkers, Sarma, and
+  Kouwenhoven]{zhang_quantized_2018}
+Hao Zhang, Chun-Xiao Liu, Sasa Gazibegovic, Di~Xu, John~A. Logan, Guanzhong
+  Wang, Nick van Loo, Jouri D.~S. Bommer, Michiel W.~A. de~Moor, Diana Car, Roy
+  L.~M. Op~het Veld, Petrus~J. van Veldhoven, Sebastian Koelling, Marcel~A.
+  Verheijen, Mihir Pendharkar, Daniel~J. Pennachio, Borzoyeh Shojaei, Joon~Sue
+  Lee, Chris~J. Palmstrøm, Erik P. A.~M. Bakkers, S.~Das Sarma, and Leo~P.
+  Kouwenhoven.
+\newblock Quantized {Majorana} conductance.
+\newblock \emph{Nature}, 556:\penalty0 74, March 2018.
+\newblock URL \url{http://dx.doi.org/10.1038/nature26142}.
+
 \bibitem[Barkeshli and Sau(2015)]{barkeshli_physical_2015}
 Maissam Barkeshli and Jay~D. Sau.
 \newblock Physical {Architecture} for a {Universal} {Topological} {Quantum}
@@ -178,19 +225,47 @@ Chetan Nayak, Steven~H. Simon, Ady Stern, Michael Freedman, and Sankar
 \newblock \doi{10.1103/RevModPhys.80.1083}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.80.1083}.
 
-\bibitem[Zhang et~al.(2018)Zhang, Liu, Gazibegovic, Xu, Logan, Wang, van Loo,
-  Bommer, de~Moor, Car, Op~het Veld, van Veldhoven, Koelling, Verheijen,
-  Pendharkar, Pennachio, Shojaei, Lee, Palmstrøm, Bakkers, Sarma, and
-  Kouwenhoven]{zhang_quantized_2018}
-Hao Zhang, Chun-Xiao Liu, Sasa Gazibegovic, Di~Xu, John~A. Logan, Guanzhong
-  Wang, Nick van Loo, Jouri D.~S. Bommer, Michiel W.~A. de~Moor, Diana Car, Roy
-  L.~M. Op~het Veld, Petrus~J. van Veldhoven, Sebastian Koelling, Marcel~A.
-  Verheijen, Mihir Pendharkar, Daniel~J. Pennachio, Borzoyeh Shojaei, Joon~Sue
-  Lee, Chris~J. Palmstrøm, Erik P. A.~M. Bakkers, S.~Das Sarma, and Leo~P.
-  Kouwenhoven.
-\newblock Quantized {Majorana} conductance.
-\newblock \emph{Nature}, 556:\penalty0 74, March 2018.
-\newblock URL \url{http://dx.doi.org/10.1038/nature26142}.
+\bibitem[Lutchyn et~al.(2010)Lutchyn, Sau, and
+  Das~Sarma]{lutchyn_majorana_2010}
+Roman~M. Lutchyn, Jay~D. Sau, and S.~Das~Sarma.
+\newblock Majorana {Fermions} and a {Topological} {Phase} {Transition} in
+  {Semiconductor}-{Superconductor} {Heterostructures}.
+\newblock \emph{Physical Review Letters}, 105\penalty0 (7):\penalty0 077001,
+  August 2010.
+\newblock \doi{10.1103/PhysRevLett.105.077001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.105.077001}.
+
+\bibitem[Manchon et~al.(2015)Manchon, Koo, Nitta, Frolov, and
+  Duine]{manchon_new_2015}
+A.~Manchon, H.~C. Koo, J.~Nitta, S.~M. Frolov, and R.~A. Duine.
+\newblock New perspectives for {Rashba} spin–orbit coupling.
+\newblock \emph{Nature Materials}, 14\penalty0 (9):\penalty0 871--882,
+  September 2015.
+\newblock ISSN 1476-4660.
+\newblock \doi{10.1038/nmat4360}.
+\newblock URL \url{https://www.nature.com/articles/nmat4360}.
+
+\bibitem[Lee et~al.(2012)Lee, Jiang, Aguado, Katsaros, Lieber, and
+  De~Franceschi]{lee_zero-bias_2012}
+Eduardo J.~H. Lee, Xiaocheng Jiang, Ramón Aguado, Georgios Katsaros,
+  Charles~M. Lieber, and Silvano De~Franceschi.
+\newblock Zero-{Bias} {Anomaly} in a {Nanowire} {Quantum} {Dot} {Coupled} to
+  {Superconductors}.
+\newblock \emph{Physical Review Letters}, 109\penalty0 (18):\penalty0 186802,
+  October 2012.
+\newblock \doi{10.1103/PhysRevLett.109.186802}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.109.186802}.
+
+\bibitem[Heck et~al.(2012)Heck, Akhmerov, Hassler, Burrello, and
+  Beenakker]{heck_coulomb-assisted_2012}
+B.~van Heck, A.~R. Akhmerov, F.~Hassler, M.~Burrello, and C.~W.~J. Beenakker.
+\newblock Coulomb-assisted braiding of {Majorana} fermions in a {Josephson}
+  junction array.
+\newblock \emph{New Journal of Physics}, 14\penalty0 (3):\penalty0 035019,
+  March 2012.
+\newblock ISSN 1367-2630.
+\newblock \doi{10.1088/1367-2630/14/3/035019}.
+\newblock URL \url{https://doi.org/10.1088%2F1367-2630%2F14%2F3%2F035019}.
 
 \bibitem[G\'orski et~al.(2018)G\'orski, Bara\'nski, Weymann, and
   Domański]{gorski_interplay_2018}

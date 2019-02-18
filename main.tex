@@ -41,6 +41,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
 
+
 \usepackage{afterpage}
 
 
@@ -147,8 +148,10 @@ urlcolor=black
 \newfloat{Program}{htbp}{lop}[chapter]
 \AtBeginDocument{%
 \let\ref\autoref
-\renewcommand\equationautorefname{\@gobble}
+% \renewcommand\equationautorefname{\@gobble}
 }
+
+
 
 
 % \@ifundefined{showcaptionsetup}{}{%
