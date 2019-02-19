@@ -1,7 +1,8 @@
 \chapter{Preliminaries \label{chap:Preliminaries}}
 
 
-We will start with a  description of transport processes in QDs which will lead us to talk about the Anderson model. Then we will take a look to the Kondo effect and, in particular, to its consequences in quantum dots.  
+
+In this chapter we will give a brief description description about transport processes in quantum dots (QDs). This will lead us to talk discuss the Anderson model and the Kondo effect,which are key ingredients in the objective of this project . 
 
 %-------------------------------------------------------------
 %Here goes the introduction of transport between quantum dots. stil need to add important considerations like the smooth varying DOS. Not so discrete. 
@@ -37,33 +38,24 @@ Since $m_{\mathsf{eff}}$ can be much smaller than the free electron mass in some
      \centering
     
      \subfloat[ \label{fig:QD-transport}]{\includegraphics[scale=0.7]{IMAGES/Preliminars/QD-Transport.png}}
-    \subfloat[\label{fig:QD-Blockade}]{\includegraphics[scale=0.3]{IMAGES/Preliminars/QD-Blockade.png}}
-     \caption{ a) Representation of transport through QD. The red curve represents the hybridized energy level. The gate voltage tunes this level. In the case represented, the energy level is in the middle of the drain and source voltages allowing transport between the leads.   Charging diagram of a quantum dot. b) Plot of the conductance vs the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$ \protect\Source{a) By the Author , b) \cite{sindel_numerical_2005}  }}
+    \subfloat[\label{fig:QD-Blockade}]{\includegraphics[scale=0.3]{IMAGES/Preliminars/QD-Blockade1.png}}
+     \caption{ a) Representation of transport through QD. The red curve represents the hybridized energy level. The gate voltage tunes this level. In the case represented, the energy level is in the middle of the drain and source voltages allowing transport between the leads. b) Charging diagram of a quantum dot. Differential conductance dependence over the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$. Coulomb blockade occurs at the diamond-shaped regions with zero conductance. At these regions the number of electrons is constant and increases $1$ by $1$ when the gate voltage is scaled up.  \protect\Source{a) By the Author , b) Adapted from \cite{sindel_numerical_2005}  }}
 \end{figure}
 
-  Nowadays, QDs can be manufactured with several methods, forms and orientations \citep{bimberg_quantum_1999}.
- \Jesus{Methods and forms}
-  According to their orientation with respect to the based 2D-plane  two main types of QDs can be distinguished : Vertical (Figure \ref{QD-figuresA}) and lateral (Figure \ref{QD-figuresB}) QDs. 
+  Nowadays, QDs can be manufactured with different substracts, geometries and  and orientations \citep{bimberg_quantum_1999}. They can be merged in structures like double quantum dots (\ref{QD-figuresA}) or can even be built out vertical to the base 2D-electron gas (\ref{QD-figuresB}). The precise experimental control over these devices allows to design atom-like structures with controllable energy levels. This has important applications on laser physics and in the implementation of single electron transistors. 
+  % According to their orientation with respect to the based 2D-plane  two main types of QDs can be distinguished : Vertical (Figure \ref{QD-figuresA}) and lateral (Figure \ref{QD-figuresB}) QDs. 
 
 
-  Both types  of quantum dots have $3$-main gates. Two of them are the Drain $V_D$ and source $V_S$ gate voltages used to control the current through the QD. The third one is the gate voltage $V_G$ which controls the electron confinement  inside the QD by tuning the  the energy levels . 
+  Usually quantum dots have $3$-main gates. Two of them are the Drain $V_D$ and source $V_S$ voltages used to control the electric gradient through the QD. The third one is the gate voltage $V_G$ which allows to control with high precision the number of electrons inside the dot. 
 
-% \begin{figure}[t]
-%     \centering
-%     \includegraphics[scale=0.3]{IMAGES/Preliminars/QD-Blockade.png}
-%     \caption{ Charging diagram of a quantum dot. The conductance is plotted vs the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$ \protect\Source{\cite{sindel_numerical_2005} } }
-%     \label{fig:QD-Blockade}
-% \end{figure}
-
-
-Ideally, the energy spectrum of a QD is a discrete set of energy levels resembling the spectrum of an atom. However, when the QD is connected to metallic leads these energy levels hybridized with respect to a hybridization parameter $\Gamma$ which depends on the voltage connecting the lead with the dots $V$ as 
+   Ideally, the energy spectrum of a QD is a discrete set of energy levels resembling the spectrum of an atom.  When the QD is connected to metallic leads these energy levels hybridized with respect to a broadening parameter $\Gamma$ which increases as the square of the source-drain voltage $V_{SD}$ 
 \begin{equation}
-    \Gamma \propto \pi \Vert V \Vert^2
+    \Gamma \propto \pi \Vert V_{SD} \Vert^2
 \end{equation}
 
-in a flat band. A representation of this fact can be found in  \ref{fig:specDots}. Ideally, $\Gamma \ll \Delta E$ such that the energy levels do not overlap each other. In addition the gate voltage allows us to tune the energy levels of the QD.
+in a flat band approximation. This broadening is depicted in \ref{fig:specDots}. Ideally, $\Gamma \ll \Delta E$ is smaller enough such that the energy levels do not overlap each other. 
 
-It is possible to execute transport measurements through a QD by attaching it to two leads, source and drain (See \ref{fig:QD-transport}) . Each lead will have a characteristic gate voltage $V_S$ (Left lead) and $V_D$ (Right lead). An electron can pass from the source to the drain if there is an energy level in the middle of the two voltages, just as in \ref{fig:QD-transport}. If this condition is not satisfied,  the dot enters into a coulomb blockade region without  electron transport between both leads as can be observed in \ref{fig:QD-Blockade}. Inside the coulomb blockade regions the number of electrons is constant. When increasing $V_G$ a single electron enters into the dot each time. Since all of these effects can be controlled by a tuning the gate voltage, the system described is indeed a single electron transistor (SET).  
+It is possible to execute transport measurements through a QD attached to two leads, source and drain (See \ref{fig:QD-transport}) . Each lead will have a characteristic gate voltage $V_S$ (Left lead) and $V_D$ (Right lead). An electron can pass from the source to the drain if there is an energy level in the middle of the two voltages, just as in \ref{fig:QD-transport}. If this condition is not satisfied,  the dot enters into a coulomb blockade region without  electron transport between both leads as can be observed in \ref{fig:QD-Blockade}. Inside the coulomb blockade regions described (black diamonds) the number of electrons is constant. When increasing $V_G$ a single electron enters into the dot each time the system makes a transition between blockade regions. Since all of these effects can be controlled precisely with the gate voltage, the system described is indeed a single electron transistor (SET).  
 
 
 
@@ -94,10 +86,11 @@ It is possible to execute transport measurements through a QD by attaching it to
 
 %------------------------------------------------------------
 \section{The Anderson Model}
-The key ingredient in the Kondo phenomena is the presence of magnetic impurities whose states are hybridized to conduction electron in the metal. To study this idea the physics Nobel prize winner Philip Anderson created a model that simulated the quantum interaction between the impurity and the conduction band \citep{anderson_localized_1961}. The Anderson Model can be applied to different problems. In this thesis we are mainly interested in the study of artificially manufacture impurities better known as quantum dots.   
+% The key ingredient in the Kondo phenomena is the presence of magnetic impurities whose states are hybridized to conduction electron in the metal. To study this idea the physics Nobel prize winner Philip Anderson created a model that simulated the quantum interaction between the impurity and the conduction band \citep{anderson_localized_1961}. The Anderson Model can be applied to different problems. In this thesis we are mainly interested in the study of artificially manufacture impurities better known as quantum dots.   
 
  %Here the study of the  magnetic impurities in metals responsible for the Kondo effect, as well as artificial impurities like quantum dots. 
- 
+ The Anderson model is used to describe quantum impurity systems where Coulomb repulsions and strongly correlated phenomena are dominant \citep{anderson_localized_1961}. A quantum dot attached to a metallic lead is basically an artificial impurity that can be experimentally designed, modified and manipulated. Hence QDs are is the perfect type of structure to probe the of the physics behind   Anderson's ideas.  
+
  Due to the small confinement space inside these dots, the coulomb repulsion is relevant. However, it is usually impossible to provide a complete analytical description of these kind of systems due to the high correlations generated by this factor. Instead, we can obtain an overall description of the transport through the impurity by neglecting this coulomb repulsion. This will allow us to obtain some analytic intuition of the models  before adventuring with long-lasting numerical simulations of interacting models. During this thesis, we will consider these two regimes as follows
 \begin{itemize}
     \item \textbf{Non-interacting systems:} Coulomb repulsion is not relevant . In this case, spin-$\uparrow$ and spin-$\dw$ channels are independent which simplifies many of the procedures. They can be described analytically through the ballistic transport approach. 
@@ -107,9 +100,6 @@ The key ingredient in the Kondo phenomena is the presence of magnetic impurities
 
 
 %The Anderson model takes in account both regimes and  the only difference in each case will be the value of $U$ parameter ($U=0$ non-interacting , $U>0$ interacting). 
-
-With these cases in mind 
-
 
 To build the Anderson model first consider that we have a QD (impurity) coupled to the conduction band of a metallic lead. We will define a coulomb repulsion factor $U$ which will be set to $0$ if the system is non-interacting . Using the Hunds rules we know that the energy levels inside the dot should be filled from lower to higher energies with two electrons with different spin at each state. Each pair of electrons will interact magnetically and electrically. In addition, there is and energy term associated to each electron and a Zeeman splitting factor in case a $\hat{z}$-directed magnetic field $B$ is placed.  Considering these interactions we can obtain a very general expression in second quantization for the QD Hamiltonian
 of the form \citep[(3.2)]{sindel_numerical_2005}
@@ -209,10 +199,18 @@ After the transformation the operator will be decoupled from the dot hamiltonian
 \section{The Kondo Effect \label{sec:Kondo} }
 
 
-The Kondo effect is one of the biggest condensed matter problems in the 20th century. It counted with the participation of an uncountable number of experimentalist that contributed to this problem. In addition, had an strong theoretical activies led by the physicists Jacques Friedel, Jun Kondo and the two nobel prizes Philip Anderson and Kenneth Wilson \citep{hewson_kondo_1997}. 
+\begin{figure}[t]
+     \centering
+    
+     \subfloat[ \label{fig:KondoTemp}]{\includegraphics[scale=0.6]{IMAGES/Preliminars/KondoTemp.png}}
+    \subfloat[\label{fig:KondoKloud}]{\includegraphics[scale=1.3]{IMAGES/Preliminars/kondoCloud.png}}
+     \caption{ a) Resistivity minimum near the Kondo temperature $T_k$. b) Kondo cloud formed by a singlet grouped around the impurity divided in spin-$\up$,spin-$\dw$ regions.   \protect\Source{a) \cite{Kondo_deBoer1934} , b) \cite{Ternes_2008}  }}
+\end{figure}
 
 
-The history of the Kondo effect began in the early 1930s. By that time it was known that the resistivity of a metal is regulated by different scattering interactions against lattice phonon vibrations $\rho_{phonon} \sim T^5$, other electrons $\sim T^2$ and static impurities which is temperature independent. The form of these contribution clearly implies that the resistivity should decay uniformly with a decreasing temperature. Nevertheless, those years groundbreaking experiments revealed the observation of a resistance minimum in some metals at temperatures lower than $10K$ (See \ref{fig:KondoTemp}). 
+The Kondo effect is one of the biggest condensed matter problems in the 20th century. There was an uncountable number of experimental and theoretical physicist that contributed to this problem . The most reknown are probably the physicists Jacques Friedel, Jun Kondo and the two nobel prizes Philip Anderson and Kenneth Wilson \citep{hewson_kondo_1997}. 
+
+The history of the Kondo effect began in the early 1930s. By that time it was known that the resistivity of a metal is regulated by different scattering interactions against lattice phonon vibrations $\rho_{phonon} \sim T^5$, other electrons $\sim T^2$ and static impurities, which is temperature independent. The form of these contribution clearly implies that the resistivity should decay uniformly with a decreasing temperature. Nevertheless, some groundbreaking experiments revealed the observation of a resistance minimum in some metals at temperatures lower than $10K$ \cite{Kondo_deBoer1934} (See \ref{fig:KondoTemp} ). 
 
 This phenomenon intrigued the scientific community for the following decades until the year 1964 when the physicist  Jun Kondo gave the first convincing solution to this puzzle. Kondo attributed the phenomenon to the scattering of the electrons due to the spin-interaction with a small concentration of magnetic impurities in the metal. To describe it he proposed the following interaction Hamiltonian
 
@@ -251,58 +249,67 @@ T_K }{T}}}.
 \label{logKondo}
 \end{equation}
 \noindent Note that when $T< T_K$ the term $ \ln {\frac {
-T_K }{T}}$ increases, so that it will eventually compensate the decaying resistivity which finally explained the  resistance minimum. 
+T_K }{T}}$ increases. Eventually, it compensate the decaying resistivity which finally explained the  resistance minimum. 
 
-Although Kondo's explanation was initially very successful it also presented a troublesome outcome. The logarithmic term introduced by Kondo diverges when the temperature approximates to $0$, hence proving to be inefficient at temperatures well bellow $T_K$. Going to the following orders in perturbation theory also led to divergent resistivities which led the following physicist to explore alternative non-pertubative approaches to the Kondo effect. 
+Although Kondo's explanation was initially very successful it also presented a troublesome outcome. The logarithmic term introduced by Kondo diverges when the temperature approximates to $0$, hence proving to be inefficient at temperatures well bellow $T_K$. Going to the following orders in perturbation theory also led to divergent resistivities which led the to explore non-pertubative approaches to solve the Kondo effect. 
 
+On the other hand, Anderson had already created his famous impurity model. One of his main contributions was the inclusion of the Hubbard term to represent the Coulomb interaction inside the dot, which proofed to be fundamental to understand the Kondo effect. Years later, Kenneth Wilson was able to effectively diagonalize the Anderson model using a numerical method that combines ideas from scalability and the renormalization group. 
 
-On the other hand, Anderson had already created by that his famous impurity model. One of his main contributions was the inclusion of the Hubbard term to represent the coulomb interaction inside the dot, which proofed to be fundamental to understand the Kondo effect. Years later Kenneth Wilson was able to effectively diagonalize the Anderson model using a numerical method that combines ideas from scalability and the renormalization group. This allowed him to include low-energy contributions which are the ones responsible for the strong correlations in the Kondo effect. 
+Wilson's explanation solved the Kondo problem almost completely. It turned out that at very low temperatures, the impurity entangles with the low-energy electrons forming a strongly correlated many-body singlet. This singlet surrounds the impurity in an structure formed by alternating regions of spin-$\up$ and spin-$\dw$ particles called the Kondo cloud (See Figure \ref{fig:KondoKloud}). This Kondo cloud is predicted to have an astonishing correlation length between $0.1\mu m$ to $10 \mu m$. This is a huge radius if we think that the impurity(or QD) can have a radius bellow $1nm$. The Kondo effect, is produces when the conduction electrons scatter with the Kondo cloud, which increases the resistivity of the material. 
 
-Wilson's numerical renormalization group 
+% At very low temperatures, the impurity entangles  
+% It turns out that the smallest energy scales had a very important role in the . 
 
-
-%where $\hat{\textbf{S}}$ and $\hat{\textbf{s}}_0$ denotes the impurity and the conduction spin operators. Kondo computed the resistivity using perturbation theory of $H_K$ over the parameter $J$, obtaining that the second order correction diverges logaritmically for temperatures $T<T:$
-
- %Kondo explained that the conducting electrons in the metal scattered with the electrons in the impurity due to the spin interaction.
-
-
-
-\begin{figure}[t]
-     \centering
-    
-     \subfloat[ \label{fig:KondoTemp}]{\includegraphics[scale=0.7]{IMAGES/Preliminars/KondoTemp.png}}
-    \subfloat[\label{fig:QD-Blockade}]{\includegraphics[scale=0.3]{IMAGES/Preliminars/QD-Blockade.png}}
-     \caption{ a) Representation of transport through QD. The red curve represents the hybridized energy level. The gate voltage tunes this level. In the case represented, the energy level is in the middle of the drain and source voltages allowing transport between the leads.   Charging diagram of a quantum dot. b) Plot of the conductance vs the gate voltage $V_G$ and the source-drain voltage $(V_{SD}=V_{S}-V_{D} )$ \protect\Source{a) \cite{Kondo_deBoer1934} , b) \cite{sindel_numerical_2005}  }}
-\end{figure}
-
-The resistivity of materials is known to decay linearly with 
-
-In low temperature metals the resistivity decays uniformly with the temperature due to the absence of scattering electrons at lower energies. However, in the early 30s the physicist where intrigued by the observation of a resistance minimum in some metals at temperatures near to $ 10K$ \cite{sindel_numerical_2005}.  The effect was studied by the material physicist  Kondo  who attributed this phenomenon to a small concentration of magnetic impurities in the metal \citep{hewson_kondo_1997}. Kondo explained that the conducting electrons in the metal scattered with the electrons in the impurity due to the spin interaction. 
-
-The resistivity of a metal is normally regulated by different scattering parameters including lattice vibrations $\rho_{phonon} \sim T^5$
-
-
-Using perturbation theory is possible to explain how this spin flip produces a  temperature dependent effect which  introduces an additional logarithmic term to the resistivity of the form
-
-\begin{equation}
-\rho_{Kondo}(T)  \propto \ln{\left( \frac{T_{kondo}}{T} \right)},
-\label{logKondo}
-\end{equation}
+% This allowed him to understand the contributions from all energy scales
 
 
 
-which occurs due to the spin-flip between the particles in the impurity and in the reservoir. The entire resistivity including  and 
+% Wilson's numerical renormalization group 
 
-We can seen that under the scale of temperature defined by $T_k$ the Kondo effect dominates over all other interactions. However, there is a fundamental problem in the Kondo model. For temperatures much smaller than $T_K$ the resistivity diverges. This problem is solved by applying a re-normalization group approach to treat the strong correlations appearing at low temperatures. In the Kondo problem a logarithmic discretization is used. The numerical procedure receives the name of Numerical renormalization Group (NRG). 
+
+% %where $\hat{\textbf{S}}$ and $\hat{\textbf{s}}_0$ denotes the impurity and the conduction spin operators. Kondo computed the resistivity using perturbation theory of $H_K$ over the parameter $J$, obtaining that the second order correction diverges logaritmically for temperatures $T<T:$
+
+%  %Kondo explained that the conducting electrons in the metal scattered with the electrons in the impurity due to the spin interaction.
+
+
+
+
+% The resistivity of materials is known to decay linearly with 
+
+% In low temperature metals the resistivity decays uniformly with the temperature due to the absence of scattering electrons at lower energies. However, in the early 30s the physicist where intrigued by the observation of a resistance minimum in some metals at temperatures near to $ 10K$ \cite{sindel_numerical_2005}.  The effect was studied by the material physicist  Kondo  who attributed this phenomenon to a small concentration of magnetic impurities in the metal \citep{hewson_kondo_1997}. Kondo explained that the conducting electrons in the metal scattered with the electrons in the impurity due to the spin interaction. 
+
+% The resistivity of a metal is normally regulated by different scattering parameters including lattice vibrations $\rho_{phonon} \sim T^5$
+
+
+% Using perturbation theory is possible to explain how this spin flip produces a  temperature dependent effect which  introduces an additional logarithmic term to the resistivity of the form
+
+% \begin{equation}
+% \rho_{Kondo}(T)  \propto \ln{\left( \frac{T_{kondo}}{T} \right)},
+% \label{logKondo}
+% \end{equation}
+
+
+
+% which occurs due to the spin-flip between the particles in the impurity and in the reservoir. The entire resistivity including  and 
+
+% We can seen that under the scale of temperature defined by $T_k$ the Kondo effect dominates over all other interactions. However, there is a fundamental problem in the Kondo model. For temperatures much smaller than $T_K$ the resistivity diverges. This problem is solved by applying a re-normalization group approach to treat the strong correlations appearing at low temperatures. In the Kondo problem a logarithmic discretization is used. The numerical procedure receives the name of Numerical renormalization Group (NRG). 
 
 
 \subsection{Kondo Effect in QDs}
 
 
-The problem of magnetic impurities in metals can be treated using the Anderson model in a similar form as the transport
- in quantum dots. Hence, it is not a surprise that Kondo Effect could also occur in QDs. When an odd number of electrons is in the QD the last level bellow the Fermi energy is half-occupied and hence the dot is magnetized. The unlocalized electrons in the reservoirs then interact with this localized electron . Spin-exchange can occur as in the case of  magnetic impurities in metals. At low temperatures, this magnetic  interaction gives rise to strong quantum correlations that favor the formation of a singlet state between the localized electron and the electrons in the leads. As a result, the zero-bias density of states is increased producing a zero-bias conductance peak. \\
+\begin{figure}
+  \centering
+  \includegraphics[scale= 0.28]{IMAGES/Preliminars/expKondoQD.png}
+  \caption{ \label{fig:ExpKondo} Observation of the Kondo effect in a single electron transistor. Color scale temperatures from 15mk (Black) to 800mk(Red) a) Dependence of the zero bias conductance over the gate voltage. A plato in the conductance peak appears in the odd particle regimes. b) Dependence of the conductance over the gate source drain voltage inside an odd electron regime. A zero bias conductance peak (ZBCP)  of height $\frac{2e^2}{\hbar}$ is observed. This is the Kondo signature.  \protect\Source{\cite{wiel_kondo_2000}}}
+\end{figure}
 
-Note that the physical implications of the Kondo effect  between the case of magnetic impurities in metals and transport through QD are different. The reason for this is difference in the dimension in both processes . While the scattering at 3D systems against magnetic impurities should produce a drop in the conductivity at low temperatures, the scattering in 0D systems enhances the conductivity of the QD due to the few scattering directions. This implies that the Kondo Effect in QDs acts in the opposite way as in the impurity case. 
+
+  The problem of magnetic impurities in metals can be treated using the Anderson model in a similar form as the transport in quantum dots. Hence, it is not a surprise that the Kondo Effect could also occur these systems. In 1998 the technological advances allowed the observation of the Kondo effect for the first time in a single electro transistor \cite{goldhaber-gordon_kondo_1998}. When an odd number of electrons is in the QD the last level bellow the Fermi energy is half-occupied and hence the dot can be considered as a magnetic impurity. The unlocalized electrons in the reservoirs then interact with this localized electron. Spin-exchange can occur as it happened with  magnetic impurities in metals. At low temperatures, this magnetic  interaction gives rise to strong quantum correlations that favor the formation of a singlet state between the localized electron and the electrons in the leads. As a result, the zero-bias density of states is increased producing a zero-bias conductance peak \ref{fig:ExpKondo}(b). \\
+
+Note that the physical implications of the Kondo effect  between the case of magnetic impurities in metals and transport through QD are different. The reason for this are the dimensions of the system. While the scattering at 3D systems against magnetic impurities is an obstacle to conduction electrons, the scattering in 0D systems enhances the conductivity of the QD since there is only one scattering direction. 
+
+ As we previously discussed, transport in quantum dots can occur only if there is a state in the middle of the drain and source voltage. The Kondo effect creates a zero bias peak that is present whenever the dot has odd electrons . This explains the zero-bias platoes observed in \ref{fig:ExpKondo}(a). We may think that the new singlet state at the Fermi energy is creating a "channel" that allows quantum transport between both sides of the dot.  
 
 
 

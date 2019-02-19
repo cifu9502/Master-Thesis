@@ -325,12 +325,12 @@ In just 6 years, more than 5 groups have documented the observation of Majorana 
 \begin{figure}[t]
 \centering
 
-     \subfloat[ \label{fig:exp1}]{\includegraphics[scale=0.5]{IMAGES/Majorana/Exp.png}}  
-     \subfloat[\label{fig:exp2}]{\includegraphics[scale=0.5]{IMAGES/Majorana/Exp2.png}}
+     \subfloat[ \label{fig:exp1}]{\includegraphics[scale=0.4]{IMAGES/Majorana/Exp.png}}  
+     \subfloat[\label{fig:exp2}]{\includegraphics[scale=0.4]{IMAGES/Majorana/Exp2.png}}
 \caption{ (a) Experimental setup (b) Observed magnetic field dependance of the zero bias peak.  \label{fig:exp}\protect\Source{\cite{zhang_quantized_2018}}}
 \end{figure}
 
-Despite the successful experimental results, there is still certain  skepticism about the existence of Majorana fermions mainly, because Majorana zero-modes (MZM) have been found in superposition with other similar types of phenomenon such Andreev bound states or even the Kondo effect. \cite{lee_zero-bias_2012} The new experimental proposals focus on distinguishing MZMs from other effects and implementing  braiding protocols \cite{aasen_milestones_2016,sarma_majorana_2015,heck_coulomb-assisted_2012} . One promising idea that could lead to important results in both research lines is coupling Majorana wires with QDs. This will be the objective of the following section. 
+Despite the successful experimental results, there is still certain  skepticism about the existence of Majorana fermions, mainly because Majorana zero-modes (MZM) have been found in superposition with similar types of phenomena that produce zero-modes. Some examples of these are the Andreev bound states or even the Kondo peak \cite{lee_zero-bias_2012}. New experimental proposals focus on distinguishing MZMs from these effects and implementing  braiding protocols \cite{aasen_milestones_2016,sarma_majorana_2015,heck_coulomb-assisted_2012} . One promising idea that could lead to important results in both research lines is coupling Majorana wires with QDs. This will be the objective of the following section. 
 %  After this, other papers revealing edge localization, as well as . The last year (2018) measured a robust zero bias peak (ZBP) of 
 
 
@@ -353,23 +353,27 @@ Despite the successful experimental results, there is still certain  skepticism 
 % -----------------------Leaking Majorana modes in quantum dots-------------
 
 \section{Coupling Majorana Fermions to QDs}
-\citeauthor{liu_detecting_2011} were the first to propose the possibility of using QDs in the pursuit of Majorana fermions . When a QD is attached to the end of a Majorana chain in the topological phase,  the Majorana Zero Mode at the end of the chain leaks inside the QD \cite{vernek_subtle_2014} producing a zero-bias conductance peak of half a quanta $\frac{e^{2}}{2h}$ through the dot.  This method of detecting Majorana signatures presents the following  advantages:
+\citeauthor{liu_detecting_2011} were the first to propose in 2011 the possibility of using QDs in the pursuit of Majorana fermions . When a QD is attached to the end of a Majorana chain in the topological phase,  the Majorana Zero Mode at the end of the chain leaks inside the QD \cite{vernek_subtle_2014} producing a zero-bias conductance peak of half a quanta $\frac{e^{2}}{2h}$ through the dot.  This method of detecting Majorana signatures presents the following  advantages:
 
 \begin{enumerate}
   \item The qubit information  is not completely destroyed, in contrast to other detection methods such as tunneling spectroscopy.
   \item If performed under the  Kondo temperature $T_k$ it allows the possibility of observing the  MZM co-existing with the Kondo peak, \cite{lee_kondo_2013,ruiz-tijerina_interaction_2015,gorski_interplay_2018} .
-
   \item Today's precise experimental control over the QD parameters allows the manipulation of MZMs inside multi-dot systems, which offers new possibilities to design of quantum architectures with Majorana chains.\cite{barkeshli_physical_2015,karzig_scalable_2017} 
 \end{enumerate}
 
-In this project we will main exploit the second and the third hints to manipulate MZMs in double quantum dot systems. But before going through that model it is necessary to understand the single dot-Majorana coupling.
+In this project we will exploit the second and the third properties to manipulate MZMs in double quantum dot systems in the Kondo regime. But before going through that model, it is necessary to understand the single dot-Majorana coupling.
 
 \subsection{Model}
 
-
 In this section we will recreate the results of \citeauthor{liu_detecting_2011} using the methods developed in \ref{chap: Methods} . This will also allow us to probe our methods in a system with Majorana zero modes. 
 
-The Hamiltonian for Majorana-QD-lead hybrid system is  given by
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.6]{IMAGES/Majorana/QD-M.png}
+\caption{\label{fig:ModelM-QD} Model for the QD-Majorana system. Solid lines: Hopping interactions: $V_1$ couplings of QD1 . Dashed lines: Majorana spin-$\dw$ effective couplings \eqref{eq:MajoranaCoupling} $t_1$. The atomic energy levels appear inside each QD $\ep_1$ are tuned by the gate voltages. The coulomb interaction is represented by $U_1$ separates two energy levels.  The red dashed horizontal lines represent the Fermi level. }
+\end{figure}
+
+The Hamiltonian for Majorana-QD-lead hybrid system (See \ref{fig:ModelM-QD}) is  given by
 \begin{equation}
     H=H_{QD-Lead}+H_{M-QD}+H_M.
 \end{equation}
@@ -479,7 +483,13 @@ This is the Green function we have been looking for. After a few algebraic opera
 
 To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}= -i\Gamma_1$ as we already did in \ref{sec:GraphMethod}. Note that these computations are only for the spin-$\dw$ channel. The spin-$\up$ channel is even simpler since this channel is not coupled to the Majorana mode by convention. Hence it corresponds to the case of a single quantum dot coupled to a Lead.  The results for the DOS can be observed in \ref{fig:M1-Tot}. Each figure has an inset showing the model in the Majorana representation. The small blue and red balls are Majorana fermions just as the ones in figure \ref{fig:top.phases kitaev}. The Majorana at the edge of the  chain is represented by the isolated red ball connected to the QD (Figure \ref{fig:M1}). The other isolated blue ball in Figure \ref{fig:M1-em} represents the Majorana at the other edge which is connected to the sphere by the parameter $\epsilon$. 
 
-\begin{figure}[H]
+
+
+\begin{itemize}
+    \item\textbf{ \ref{fig:M1-Tot}.(a),(b):}  The spin-$\up$ DOS shows the result of coupling the QD with the lead and without Majorana fermions. When the parameter $t$ is increased, the Majorana fermion is couple to the spin-$\dw$ which causes the dispersion of the DOS. The most relevant signature is the robust height of $0.5$  in the DOS that is observed in the central peak for all $t>0$. This mid-height DOS is responsible for the decay of half a quanta in the conductivity of the QD.
+    % In addition we observe that two new states emerge at $\omega \sim t^2$ caused 
+
+    \begin{figure}[h]
      \centering
     \subfloat[Tuning the Majorana coupling $t_1$ \label{fig:M1}]{\includegraphics[scale=0.73]{IMAGES/Majorana/M1.png}}
      \subfloat[Tuning dot's gate voltage $\ep_1$ \label{fig:M1-e1}]{\includegraphics[scale=0.73]{IMAGES/Majorana/M1-e1.png}}  \\
@@ -488,10 +498,6 @@ To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}=
      \caption{Density of states for a Majorana coupled to a QD under the tuning of different parameter. The tuning parameter is drawn in purple line in the inset model.  \label{fig:M1-Tot} \protect\Source{ By the author  }}
 \end{figure}
 
-
-\begin{itemize}
-    \item\textbf{ \ref{fig:M1-Tot}.(a),(b):}  The spin-$\up$ DOS shows the result of coupling the QD with the lead and without Majorana fermions. When the parameter $t$ is increased, the Majorana fermion is couple to the spin-$\dw$ which causes the dispersion of the DOS. The most relevant signature is the robust height of $0.5$  in the DOS that is observed in the central peak for all $t>0$. This mid-height DOS is responsible for the decay of half a quanta in the conductivity of the QD.
-    % In addition we observe that two new states emerge at $\omega \sim t^2$ caused 
   
     \item\textbf{ \ref{fig:M1-Tot}.(c),(d):} This time a gate voltage is induced in the dot which breaks PHS. However the robust $0.5$-height Majorana signature prevails in the dot even at very high gate voltages where the dot is expected to be empty.
     
@@ -506,18 +512,41 @@ To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}=
 
 \subsection{Kondo-Majorana physics}
 
-In interacting quantum dots the Kondo effect is visible at low temperatures even when the QD is attached to a Majorana chain, hence allowing us to study the combined Kondo-Majorana physics. To observe this effect, we used the NRG code with a fixed Coulomb repulsion of $U = 17\Gamma_1$ just as in section \ref{sec: NRG-DQD}. Thus, particle-hole equilibrium is achieved when $\left(\epsilon_{1}+\frac{U_1}{2}\right)\hat{n}_{1\sigma}$.  \ref{fig:NRG-1M} shows this case. The spin-$\up$ DOS emulates the Kondo peak from Figure \ref{fig:NRG-1D}. The spin-$\dw$ DOS instead, reveals a Majorana zero mode of half the amplitude of the Kondo peak. This new type of Majorana signature resembles the one in Figure \ref{fig:M1}. However, the energy scale where this physics is observed is one order of magnitude less than in the non-interacting case. 
+In interacting quantum dots the Kondo effect is visible at low temperatures even when the QD is attached to a Majorana chain, which allows the study Kondo-Majorana physics. To observe this , we used the NRG code with a fixed Coulomb repulsion of $U = 17.6\Gamma_1$ just as in section \ref{sec: NRG-DQD}. Then, particle-hole equilibrium is achieved when $\left(\epsilon_{1}+\frac{U_1}{2}\right)\hat{n}_{1\sigma}$. Any tunning of the dots gate voltage must be understood as a displacement $\Delta \epsilon_1$ from this equilibrium point. 
 
-% the observecharacterized by the the Majorana in the spin-$\dw$ channel will produce a peak at the fermi energy of half of the amplitude of the Kondo peak  This will be our Majorana signature. 
-\begin{figure}[H]
+\begin{figure}[t]
 \centering
-\includegraphics[scale=0.7]{IMAGES/Majorana/NRG.png}
+\includegraphics[scale=0.5]{IMAGES/Majorana/NRG_M1.png}
+\caption{ \label{fig:NRG-1M} DOS at $t_1 = \Gamma_1$ at the PHS-point.  Insets: Left: QD-Majorana model. Right: Low energy DOS. \protect\Source{By the author.}}
 
-\caption{ \Jesus{The units of this plot are a bit different than the NRG plots. That's mainly due to a problem I am having with the NRG plots. I will unify the format soon. } \label{fig:NRG-1M} \protect\Source{\cite{By the author.}}}
 \end{figure}
 
 
- \citeauthor{ruiz-tijerina_interaction_2015}  proved that this effective coupling  is able to reproduce efficiently the results obtained when the Kitaev chain in the topological phase is attached to a single QD. 
+
+ \ref{fig:NRG-1M} shows the PHS case for a Majorana coupling $t_1=\Gamma_1$. The two small wide peaks at the borders of the plot are the coulomb states. In the right inset of the figure, we observe the low-temperature regime inside the gap. There, two zero modes can be appreciated.  While the spin-$\up$ DOS is the same Kondo peak from Figure \ref{fig:NRG-1D}, the spin-$\dw$ DOS reveals a Majorana zero mode of half the amplitude of the Kondo peak $\left(\frac{0.5}{\pi\Gamma_1}\right)$.  This  Majorana signature resembles the one in Figure \ref{fig:M1}.
+
+ \begin{figure}[t]
+ \centering
+   \includegraphics[scale=0.6]{IMAGES/Majorana/NRG-FullED.png}
+   \caption{ \label{fig:QD-ed}(a)\&(b): Dependance of the DOS over the gate voltage $\Delta \epsilon_1$ at $t_1 = \Gamma_1$. (a)Spin-$\up$ (b) Spin-$\dw$. (c) DOS at the red-dashed horizontal cut in (a)\&(b). Insets: Left: QD-Majorana model. Right: Low energy DOS. (d) DOS at the Green-dashed vertical cut in (a)\&(b). \protect\Source{By the author.} }
+   \end{figure}
+
+ It is possible to separate Kondo and Majorana physics by inducing a gate voltage in the dot. As observed in \ref{fig:QD-ed}(a), the gate voltage detunes the Kondo peak from the Fermi energy. Instead, the MZM in \ref{fig:QD-ed}(b) remains at the same position. At $\Delta \epsilon_1 = 5\Gamma_1$ we can already observe a decaying Kondo peak next to the robust Majorana signature of height $\frac{0.5}{\pi\Gamma}$ (\ref{fig:QD-ed}(c)). This is more clear in \ref{fig:QD-ed}(d) where the spin-$\up$ DOS decays with $\Delta \ep_1$ while the spin-$\dw$ DOS is stable, even at $\Delta \ep_1 \sim \frac{U}{2} = 8.6$ where the dot is supposed to be empty. 
+
+% the observecharacterized by the the Majorana in the spin-$\dw$ channel will produce a peak at the fermi energy of half of the amplitude of the Kondo peak  This will be our Majorana signature. 
+
+
+ This interesting result was already pointed out by  \citeauthor{ruiz-tijerina_interaction_2015}  
+ who proved that increasing the gate voltage would produce a visible decay in the the zero bias conductance down to $\frac{0.5 e^2}{h}$ (See \ref{fig:Luis}). Hence, allowing to measure the Majorana signature without the superposition with the Kondo peak.  This result is clear from \ref{fig:QD-ed}. At $\Delta \epsilon = 0$ the DOS at the Fermi energy is $\frac{1}{\pi \Gamma_1}$ for spin-$\up$ and $\frac{0.5}{\pi \Gamma_1}$ for spin-$\down$. Instead, at big $\Delta \epsilon_1$ the only $\frac{0.5}{\pi \Gamma_1}$ spin-$\dw$ peak appear.  Since the zero bias conductance at zero temperature is essentially the sum of both spectral densities (times unit correction), \ref{fig:QD-ed} recovers the results in \ref{fig:Luis}. 
+
+ \begin{figure}
+ \centering
+ \includegraphics[scale=0.5]{IMAGES/Majorana/Luis.png}
+ \caption{\label{fig:Luis}Dependence of the zero-bias conductunce over tuning voltage \protect\Source{Adapted from \cite{ruiz-tijerina_interaction_2015}.}}
+ \end{figure}
+
+
+
 
 % \begin{eqnarray*}
 % H_{TS} & = & 2\epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}-\epsilon_{m}\\

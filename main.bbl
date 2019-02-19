@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{53}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -83,6 +83,273 @@ A.~Yu Kitaev.
 \newblock URL \url{http://arxiv.org/abs/quant-ph/9707021}.
 \newblock arXiv: quant-ph/9707021.
 
+\bibitem[Wilczek(2009)]{wilczek_majorana_2009}
+Frank Wilczek.
+\newblock Majorana returns, September 2009.
+\newblock URL \url{https://www.nature.com/articles/nphys1380}.
+
+\bibitem[Fu and Kane(2008)]{fu_superconducting_2008}
+Liang Fu and C.~L. Kane.
+\newblock Superconducting {Proximity} {Effect} and {Majorana} {Fermions} at the
+  {Surface} of a {Topological} {Insulator}.
+\newblock \emph{Phys. Rev. Lett.}, 100\penalty0 (9):\penalty0 096407, March
+  2008.
+\newblock \doi{10.1103/PhysRevLett.100.096407}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.100.096407}.
+
+\bibitem[Sato et~al.(2009)Sato, Takahashi, and Fujimoto]{sato_non-abelian_2009}
+Masatoshi Sato, Yoshiro Takahashi, and Satoshi Fujimoto.
+\newblock Non-{Abelian} {Topological} {Order} in \$s\$-{Wave} {Superfluids} of
+  {Ultracold} {Fermionic} {Atoms}.
+\newblock \emph{Phys. Rev. Lett.}, 103\penalty0 (2):\penalty0 020401, July
+  2009.
+\newblock \doi{10.1103/PhysRevLett.103.020401}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.103.020401}.
+
+\bibitem[Mourik et~al.(2012)Mourik, Zuo, Frolov, Plissard, Bakkers, and
+  Kouwenhoven]{mourik_signatures_2012}
+V.~Mourik, K.~Zuo, S.~M. Frolov, S.~R. Plissard, E.~P. a.~M. Bakkers, and L.~P.
+  Kouwenhoven.
+\newblock Signatures of {Majorana} {Fermions} in {Hybrid}
+  {Superconductor}-{Semiconductor} {Nanowire} {Devices}.
+\newblock \emph{Science}, 336\penalty0 (6084):\penalty0 1003--1007, May 2012.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.1222360}.
+\newblock URL
+  \url{http://science-sciencemag-org.ez67.periodicos.capes.gov.br/content/336/6084/1003}.
+
+\bibitem[Das et~al.(2012)Das, Ronen, Most, Oreg, Heiblum, and
+  Shtrikman]{das_zero-bias_2012}
+Anindya Das, Yuval Ronen, Yonatan Most, Yuval Oreg, Moty Heiblum, and Hadas
+  Shtrikman.
+\newblock Zero-bias peaks and splitting in an {Al}-{InAs} nanowire topological
+  superconductor as a signature of {Majorana} fermions.
+\newblock \emph{Nature Physics}, 8\penalty0 (12):\penalty0 887, December 2012.
+\newblock ISSN 1745-2481.
+\newblock \doi{10.1038/nphys2479}.
+\newblock URL \url{https://www.nature.com/articles/nphys2479}.
+
+\bibitem[Deng et~al.(2012)Deng, Yu, Huang, Larsson, Caroff, and
+  Xu]{deng_anomalous_2012}
+M.~T. Deng, C.~L. Yu, G.~Y. Huang, M.~Larsson, P.~Caroff, and H.~Q. Xu.
+\newblock Anomalous {Zero}-{Bias} {Conductance} {Peak} in a {Nb}-{InSb}
+  {Nanowire}-{Nb} {Hybrid} {Device}.
+\newblock \emph{Nano Letters}, 12\penalty0 (12):\penalty0 6414--6419, December
+  2012.
+\newblock ISSN 1530-6984.
+\newblock \doi{10.1021/nl303758w}.
+\newblock URL \url{http://dx.doi.org/10.1021/nl303758w}.
+
+\bibitem[Oreg et~al.(2010)Oreg, Refael, and von Oppen]{oreg_helical_2010}
+Yuval Oreg, Gil Refael, and Felix von Oppen.
+\newblock Helical {Liquids} and {Majorana} {Bound} {States} in {Quantum}
+  {Wires}.
+\newblock \emph{Physical Review Letters}, 105\penalty0 (17):\penalty0 177002,
+  October 2010.
+\newblock \doi{10.1103/PhysRevLett.105.177002}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.105.177002}.
+
+\bibitem[Lutchyn et~al.(2010)Lutchyn, Sau, and
+  Das~Sarma]{lutchyn_majorana_2010}
+Roman~M. Lutchyn, Jay~D. Sau, and S.~Das~Sarma.
+\newblock Majorana {Fermions} and a {Topological} {Phase} {Transition} in
+  {Semiconductor}-{Superconductor} {Heterostructures}.
+\newblock \emph{Physical Review Letters}, 105\penalty0 (7):\penalty0 077001,
+  August 2010.
+\newblock \doi{10.1103/PhysRevLett.105.077001}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.105.077001}.
+
+\bibitem[Hewson(1997)]{hewson_kondo_1997}
+Alexander~Cyril Hewson.
+\newblock \emph{The {Kondo} {Problem} to {Heavy} {Fermions}}.
+\newblock Cambridge University Press, April 1997.
+\newblock ISBN 978-0-521-59947-4.
+\newblock Google-Books-ID: fPzgHneNFDAC.
+
+\bibitem[Ruderman and Kittel(1954)]{ruderman_indirect_1954}
+M.~A. Ruderman and C.~Kittel.
+\newblock Indirect {Exchange} {Coupling} of {Nuclear} {Magnetic} {Moments} by
+  {Conduction} {Electrons}.
+\newblock \emph{Physical Review}, 96\penalty0 (1):\penalty0 99--102, October
+  1954.
+\newblock \doi{10.1103/PhysRev.96.99}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.96.99}.
+
+\bibitem[Kasuya(1956)]{kasuya_theory_1956}
+Tadao Kasuya.
+\newblock A {Theory} of {Metallic} {Ferro}- and {Antiferromagnetism} on
+  {Zener}'s {Model}.
+\newblock \emph{Progress of Theoretical Physics}, 16\penalty0 (1):\penalty0
+  45--57, July 1956.
+\newblock ISSN 0033-068X.
+\newblock \doi{10.1143/PTP.16.45}.
+\newblock URL \url{https://academic.oup.com/ptp/article/16/1/45/1861363}.
+
+\bibitem[Yosida(1957)]{yosida_magnetic_1957}
+Kei Yosida.
+\newblock Magnetic {Properties} of {Cu}-{Mn} {Alloys}.
+\newblock \emph{Physical Review}, 106\penalty0 (5):\penalty0 893--898, June
+  1957.
+\newblock \doi{10.1103/PhysRev.106.893}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.106.893}.
+
+\bibitem[Dias~da Silva et~al.(2008)Dias~da Silva, Sandler, Ingersent, and
+  Ulloa]{dias_da_silva_transmission_2008}
+Luis G. G.~V. Dias~da Silva, Nancy Sandler, Kevin Ingersent, and Sergio~E.
+  Ulloa.
+\newblock Transmission in double quantum dots in the {Kondo} regime:
+  {Quantum}-critical transitions and interference effects.
+\newblock \emph{Physica E: Low-dimensional Systems and Nanostructures},
+  40\penalty0 (5):\penalty0 1002--1005, March 2008.
+\newblock ISSN 1386-9477.
+\newblock \doi{10.1016/j.physe.2007.08.098}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S1386947707003074}.
+
+\bibitem[Zubarev(1960)]{zubarev_double-time_1960}
+D.~N. Zubarev.
+\newblock {DOUBLE}-{TIME} {GREEN} {FUNCTIONS} {IN} {STATISTICAL} {PHYSICS}.
+\newblock \emph{Soviet Physics Uspekhi}, 3\penalty0 (3):\penalty0 320, 1960.
+\newblock ISSN 0038-5670.
+\newblock \doi{10.1070/PU1960v003n03ABEH003275}.
+\newblock URL
+  \url{http://iopscience.iop.org/article/10.1070/PU1960v003n03ABEH003275/meta}.
+
+\bibitem[Wilson(1975)]{wilson_renormalization_1975}
+Kenneth~G. Wilson.
+\newblock The renormalization group: {Critical} phenomena and the {Kondo}
+  problem.
+\newblock \emph{Reviews of Modern Physics}, 47\penalty0 (4):\penalty0 773--840,
+  October 1975.
+\newblock \doi{10.1103/RevModPhys.47.773}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.47.773}.
+
+\bibitem[Holleitner et~al.(2002)Holleitner, Blick, Hüttel, Eberl, and
+  Kotthaus]{holleitner_probing_2002}
+Alexander~W. Holleitner, Robert~H. Blick, Andreas~K. Hüttel, Karl Eberl, and
+  Jörg~P. Kotthaus.
+\newblock Probing and {Controlling} the {Bonds} of an {Artificial} {Molecule}.
+\newblock \emph{Science}, 297\penalty0 (5578):\penalty0 70--72, July 2002.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.1071215}.
+\newblock URL \url{http://science.sciencemag.org/content/297/5578/70}.
+
+\bibitem[Bimberg et~al.(1999)Bimberg, Grundmann, and
+  Ledentsov]{bimberg_quantum_1999}
+Dieter Bimberg, Marius Grundmann, and Nikolai~N. Ledentsov.
+\newblock \emph{Quantum {Dot} {Heterostructures}}.
+\newblock Wiley, Chichester, Eng.; New York, 1 edition, March 1999.
+\newblock ISBN 978-0-471-97388-1.
+
+\bibitem[Sindel(2005)]{sindel_numerical_2005}
+Michael Sindel.
+\newblock \emph{Numerical {Renormalization} {Group} studies of {Quantum}
+  {Impurity} {Models} in the {Strong} {Coupling} {Limit}}.
+\newblock Text.{PhDThesis}, Ludwig-Maximilians-Universität München, January
+  2005.
+\newblock URL \url{https://edoc.ub.uni-muenchen.de/3115/}.
+
+\bibitem[Anderson(1961)]{anderson_localized_1961}
+P.~W. Anderson.
+\newblock Localized {Magnetic} {States} in {Metals}.
+\newblock \emph{Physical Review}, 124\penalty0 (1):\penalty0 41--53, October
+  1961.
+\newblock \doi{10.1103/PhysRev.124.41}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.124.41}.
+
+\bibitem[de~Haas et~al.(1934)de~Haas, de~Boer, and van~dën
+  Berg]{Kondo_deBoer1934}
+W.J. de~Haas, J.~de~Boer, and G.J. van~dën Berg.
+\newblock The electrical resistance of gold, copper and lead at low
+  temperatures.
+\newblock \emph{Physica}, 1\penalty0 (7):\penalty0 1115 -- 1124, 1934.
+\newblock ISSN 0031-8914.
+\newblock \doi{https://doi.org/10.1016/S0031-8914(34)80310-2}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0031891434803102}.
+
+\bibitem[Ternes et~al.(2008)Ternes, Heinrich, and Schneider]{Ternes_2008}
+Markus Ternes, Andreas~J Heinrich, and Wolf-Dieter Schneider.
+\newblock Spectroscopic manifestations of the kondo effect on single adatoms.
+\newblock \emph{Journal of Physics: Condensed Matter}, 21\penalty0
+  (5):\penalty0 053001, dec 2008.
+\newblock \doi{10.1088/0953-8984/21/5/053001}.
+\newblock URL \url{https://doi.org/10.1088%2F0953-8984%2F21%2F5%2F053001}.
+
+\bibitem[Wiel et~al.(2000)Wiel, Franceschi, Fujisawa, Elzerman, Tarucha, and
+  Kouwenhoven]{wiel_kondo_2000}
+W.~G. van~der Wiel, S.~De Franceschi, T.~Fujisawa, J.~M. Elzerman, S.~Tarucha,
+  and L.~P. Kouwenhoven.
+\newblock The {Kondo} {Effect} in the {Unitary} {Limit}.
+\newblock \emph{Science}, 289\penalty0 (5487):\penalty0 2105--2108, September
+  2000.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.289.5487.2105}.
+\newblock URL
+  \url{http://science-sciencemag-org.ez67.periodicos.capes.gov.br/content/289/5487/2105}.
+
+\bibitem[Goldhaber-Gordon et~al.(1998)Goldhaber-Gordon, Shtrikman, Mahalu,
+  Abusch-Magder, Meirav, and Kastner]{goldhaber-gordon_kondo_1998}
+D.~Goldhaber-Gordon, Hadas Shtrikman, D.~Mahalu, David Abusch-Magder,
+  U.~Meirav, and M.~A. Kastner.
+\newblock Kondo effect in a single-electron transistor.
+\newblock \emph{Nature}, 391\penalty0 (6663):\penalty0 156--159, January 1998.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/34373}.
+\newblock URL \url{https://www.nature.com/articles/34373}.
+
+\bibitem[Spielman(2010)]{spielman10}
+Daniel~A Spielman.
+\newblock Algorithms, graph theory, and linear equations in laplacian matrices.
+\newblock In \emph{Proceedings of the International Congress of
+  Mathematicians}, volume~4, pages 2698--2722, 2010.
+\newblock URL
+  \url{http://www.mathunion.org/ICM/ICM2010.4/Main/icm2010.4.2698.2722.pdf}.
+
+\bibitem[Bulla et~al.(2008)Bulla, Costi, and Pruschke]{bulla_numerical_2008}
+Ralf Bulla, Theo~A. Costi, and Thomas Pruschke.
+\newblock Numerical renormalization group method for quantum impurity systems.
+\newblock \emph{Reviews of Modern Physics}, 80\penalty0 (2):\penalty0 395--450,
+  April 2008.
+\newblock \doi{10.1103/RevModPhys.80.395}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.80.395}.
+
+\bibitem[Krishna-murthy et~al.(1980)Krishna-murthy, Wilkins, and
+  Wilson]{krishna-murthy_renormalization-group_1980}
+H.~R. Krishna-murthy, J.~W. Wilkins, and K.~G. Wilson.
+\newblock Renormalization-group approach to the {Anderson} model of dilute
+  magnetic alloys. 1. {Static} properties for the symmetric case.
+\newblock \emph{Phys.Rev.}, B21:\penalty0 1003--1043, 1980.
+\newblock \doi{10.1103/PhysRevB.21.1003}.
+
+\bibitem[Costi et~al.(1994)Costi, Hewson, and Zlatic]{costi_transport_1994}
+T.~A. Costi, A.~C. Hewson, and V.~Zlatic.
+\newblock Transport coefficients of the {Anderson} model via the numerical
+  renormalization group.
+\newblock \emph{Journal of Physics: Condensed Matter}, 6\penalty0
+  (13):\penalty0 2519, 1994.
+\newblock ISSN 0953-8984.
+\newblock \doi{10.1088/0953-8984/6/13/013}.
+\newblock URL \url{http://stacks.iop.org/0953-8984/6/i=13/a=013}.
+
+\bibitem[Hofstetter(2000)]{hofstetter_generalized_2000}
+Walter Hofstetter.
+\newblock Generalized {Numerical} {Renormalization} {Group} for {Dynamical}
+  {Quantities}.
+\newblock \emph{Physical Review Letters}, 85\penalty0 (7):\penalty0 1508--1511,
+  August 2000.
+\newblock \doi{10.1103/PhysRevLett.85.1508}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.85.1508}.
+
+\bibitem[Oliveira and Oliveira(1994)]{oliveira_generalized_1994}
+Wanda~C. Oliveira and Luiz~N. Oliveira.
+\newblock Generalized numerical renormalization-group method to calculate the
+  thermodynamical properties of impurities in metals.
+\newblock \emph{Physical Review B}, 49\penalty0 (17):\penalty0 11986--11994,
+  May 1994.
+\newblock \doi{10.1103/PhysRevB.49.11986}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.49.11986}.
+
 \bibitem[Pachos(2012)]{pachos_introduction_2012}
 Jiannis~K. Pachos.
 \newblock \emph{Introduction to {Topological} {Quantum} {Computation}}.
@@ -128,40 +395,6 @@ David Aasen, Michael Hell, Ryan~V. Mishmash, Andrew Higginbotham, Jeroen Danon,
   2016.
 \newblock \doi{10.1103/PhysRevX.6.031016}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevX.6.031016}.
-
-\bibitem[Mourik et~al.(2012)Mourik, Zuo, Frolov, Plissard, Bakkers, and
-  Kouwenhoven]{mourik_signatures_2012}
-V.~Mourik, K.~Zuo, S.~M. Frolov, S.~R. Plissard, E.~P. a.~M. Bakkers, and L.~P.
-  Kouwenhoven.
-\newblock Signatures of {Majorana} {Fermions} in {Hybrid}
-  {Superconductor}-{Semiconductor} {Nanowire} {Devices}.
-\newblock \emph{Science}, 336\penalty0 (6084):\penalty0 1003--1007, May 2012.
-\newblock ISSN 0036-8075, 1095-9203.
-\newblock \doi{10.1126/science.1222360}.
-\newblock URL
-  \url{http://science-sciencemag-org.ez67.periodicos.capes.gov.br/content/336/6084/1003}.
-
-\bibitem[Das et~al.(2012)Das, Ronen, Most, Oreg, Heiblum, and
-  Shtrikman]{das_zero-bias_2012}
-Anindya Das, Yuval Ronen, Yonatan Most, Yuval Oreg, Moty Heiblum, and Hadas
-  Shtrikman.
-\newblock Zero-bias peaks and splitting in an {Al}-{InAs} nanowire topological
-  superconductor as a signature of {Majorana} fermions.
-\newblock \emph{Nature Physics}, 8\penalty0 (12):\penalty0 887, December 2012.
-\newblock ISSN 1745-2481.
-\newblock \doi{10.1038/nphys2479}.
-\newblock URL \url{https://www.nature.com/articles/nphys2479}.
-
-\bibitem[Deng et~al.(2012)Deng, Yu, Huang, Larsson, Caroff, and
-  Xu]{deng_anomalous_2012}
-M.~T. Deng, C.~L. Yu, G.~Y. Huang, M.~Larsson, P.~Caroff, and H.~Q. Xu.
-\newblock Anomalous {Zero}-{Bias} {Conductance} {Peak} in a {Nb}-{InSb}
-  {Nanowire}-{Nb} {Hybrid} {Device}.
-\newblock \emph{Nano Letters}, 12\penalty0 (12):\penalty0 6414--6419, December
-  2012.
-\newblock ISSN 1530-6984.
-\newblock \doi{10.1021/nl303758w}.
-\newblock URL \url{http://dx.doi.org/10.1021/nl303758w}.
 
 \bibitem[Nadj-Perge et~al.(2014)Nadj-Perge, Drozdov, Li, Chen, Jeon, Seo,
   MacDonald, Bernevig, and Yazdani]{nadj-perge_observation_2014}
@@ -225,16 +458,6 @@ Chetan Nayak, Steven~H. Simon, Ady Stern, Michael Freedman, and Sankar
 \newblock \doi{10.1103/RevModPhys.80.1083}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.80.1083}.
 
-\bibitem[Lutchyn et~al.(2010)Lutchyn, Sau, and
-  Das~Sarma]{lutchyn_majorana_2010}
-Roman~M. Lutchyn, Jay~D. Sau, and S.~Das~Sarma.
-\newblock Majorana {Fermions} and a {Topological} {Phase} {Transition} in
-  {Semiconductor}-{Superconductor} {Heterostructures}.
-\newblock \emph{Physical Review Letters}, 105\penalty0 (7):\penalty0 077001,
-  August 2010.
-\newblock \doi{10.1103/PhysRevLett.105.077001}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.105.077001}.
-
 \bibitem[Manchon et~al.(2015)Manchon, Koo, Nitta, Frolov, and
   Duine]{manchon_new_2015}
 A.~Manchon, H.~C. Koo, J.~Nitta, S.~M. Frolov, and R.~A. Duine.
@@ -277,46 +500,5 @@ G.~G\'orski, J.~Bara\'nski, I.~Weymann, and T.~Domański.
 \newblock ISSN 2045-2322.
 \newblock \doi{10.1038/s41598-018-33529-1}.
 \newblock URL \url{https://www.nature.com/articles/s41598-018-33529-1}.
-
-\bibitem[Krishna-murthy et~al.(1980)Krishna-murthy, Wilkins, and
-  Wilson]{krishna-murthy_renormalization-group_1980}
-H.~R. Krishna-murthy, J.~W. Wilkins, and K.~G. Wilson.
-\newblock Renormalization-group approach to the {Anderson} model of dilute
-  magnetic alloys. 1. {Static} properties for the symmetric case.
-\newblock \emph{Phys.Rev.}, B21:\penalty0 1003--1043, 1980.
-\newblock \doi{10.1103/PhysRevB.21.1003}.
-
-\bibitem[Sindel(2005)]{sindel_numerical_2005}
-Michael Sindel.
-\newblock \emph{Numerical {Renormalization} {Group} studies of {Quantum}
-  {Impurity} {Models} in the {Strong} {Coupling} {Limit}}.
-\newblock Text.{PhDThesis}, Ludwig-Maximilians-Universität München, January
-  2005.
-\newblock URL \url{https://edoc.ub.uni-muenchen.de/3115/}.
-
-\bibitem[Bulla et~al.(2008)Bulla, Costi, and Pruschke]{bulla_numerical_2008}
-Ralf Bulla, Theo~A. Costi, and Thomas Pruschke.
-\newblock Numerical renormalization group method for quantum impurity systems.
-\newblock \emph{Reviews of Modern Physics}, 80\penalty0 (2):\penalty0 395--450,
-  April 2008.
-\newblock \doi{10.1103/RevModPhys.80.395}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.80.395}.
-
-\bibitem[Ruderman and Kittel(1954)]{ruderman_indirect_1954}
-M.~A. Ruderman and C.~Kittel.
-\newblock Indirect {Exchange} {Coupling} of {Nuclear} {Magnetic} {Moments} by
-  {Conduction} {Electrons}.
-\newblock \emph{Physical Review}, 96\penalty0 (1):\penalty0 99--102, October
-  1954.
-\newblock \doi{10.1103/PhysRev.96.99}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.96.99}.
-
-\bibitem[Yosida(1957)]{yosida_magnetic_1957}
-Kei Yosida.
-\newblock Magnetic {Properties} of {Cu}-{Mn} {Alloys}.
-\newblock \emph{Physical Review}, 106\penalty0 (5):\penalty0 893--898, June
-  1957.
-\newblock \doi{10.1103/PhysRev.106.893}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.106.893}.
 
 \end{thebibliography}
