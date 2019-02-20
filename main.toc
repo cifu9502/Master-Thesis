@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {7.2.2}{Interacting manipulation }}{64}{subsection.7.2.2}% 
 \contentsline {section}{\numberline {7.3}{Additional results}}{69}{section.7.3}% 
 \contentsline {subsection}{\numberline {7.3.1}{Indirect exchange through the Majorana mode}}{69}{subsection.7.3.1}% 
-\contentsline {subsection}{\numberline {7.3.2}{Indirect Majorana coupling through the lead}}{71}{subsection.7.3.2}% 
+\contentsline {subsection}{\numberline {7.3.2}{Indirect Majorana coupling through the lead}}{70}{subsection.7.3.2}% 
 \contentsline {subsection}{\numberline {7.3.3}{Critical behavior in zero-bias DOS }}{71}{subsection.7.3.3}% 
 \contentsline {chapter}{\numberline {8}{Conclusions}}{72}{chapter.8}% 
 \contentsline {section}{\textbf {References}}{73}{figure.8.1}% 

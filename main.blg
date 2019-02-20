@@ -9,10 +9,6 @@ A level-1 auxiliary file: NResults.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
 Database file #1: Majorana-QD.bib
-Repeated entry---line 139 of file Majorana-QD.bib
- : @article{heck_coulomb-assisted_2012
- :                                    ,
-I'm skipping whatever remains of this entry
 Database file #2: Kitaev-Majorana.bib
 Repeated entry---line 183 of file Kitaev-Majorana.bib
  : @article{zitko_quantum_2011
@@ -59,32 +55,32 @@ Repeated entry---line 566 of file Kitaev-Majorana.bib
  :                               ,
 I'm skipping whatever remains of this entry
 Database file #3: Kondo.bib
-Repeated entry---line 220 of file Kondo.bib
+Repeated entry---line 224 of file Kondo.bib
  : @article{goldhaber-gordon_kondo_1998
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 239 of file Kondo.bib
+Repeated entry---line 243 of file Kondo.bib
  : @article{dias_da_silva_transmission_2008
  :                                         ,
 I'm skipping whatever remains of this entry
+Warning--empty journal in ruiz-tijerina_interaction_2015
+Warning--empty year in ruiz-tijerina_interaction_2015
+Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty journal in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
-Warning--empty journal in lee_kondo_2013
-Warning--empty year in lee_kondo_2013
-Warning--empty year in lee_kondo_2013
 Warning--empty journal in vernek_subtle_2014
 Warning--empty year in vernek_subtle_2014
 Warning--empty year in vernek_subtle_2014
 Warning--empty journal in deng_majorana_2016
 Warning--empty year in deng_majorana_2016
 Warning--empty year in deng_majorana_2016
-Warning--empty journal in ruiz-tijerina_interaction_2015
-Warning--empty year in ruiz-tijerina_interaction_2015
-Warning--empty year in ruiz-tijerina_interaction_2015
+Warning--empty journal in lee_kondo_2013
+Warning--empty year in lee_kondo_2013
+Warning--empty year in lee_kondo_2013
 You've used 59 entries,
             2481 wiz_defined-function locations,
-            1043 strings with 19803 characters,
+            1043 strings with 19813 characters,
 and the built_in function-call counts, 26005 in all, are:
 = -- 2260
 > -- 1455
@@ -123,4 +119,4 @@ warning$ -- 15
 while$ -- 192
 width$ -- 0
 write$ -- 1033
-(There were 14 error messages)
+(There were 13 error messages)

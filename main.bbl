@@ -5,64 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Kitaev(2001)]{kitaev_unpaired_2001}
-A.~Yu Kitaev.
-\newblock Unpaired {Majorana} fermions in quantum wires.
-\newblock \emph{Phys.-Usp.}, 44\penalty0 (10S):\penalty0 131, 2001.
-\newblock ISSN 1063-7869.
-\newblock \doi{10.1070/1063-7869/44/10S/S29}.
-\newblock URL \url{http://stacks.iop.org/1063-7869/44/i=10S/a=S29}.
-
-\bibitem[Alicea(2010)]{alicea_majorana_2010}
-Jason Alicea.
-\newblock Majorana fermions in a tunable semiconductor device.
-\newblock \emph{Phys. Rev. B}, 81\penalty0 (12):\penalty0 125318, March 2010.
-\newblock \doi{10.1103/PhysRevB.81.125318}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.81.125318}.
-
-\bibitem[Alicea(2012)]{alicea_new_2012}
-Jason Alicea.
-\newblock New directions in the pursuit of {Majorana} fermions in solid state
-  systems.
-\newblock \emph{Rep. Prog. Phys.}, 75\penalty0 (7):\penalty0 076501, 2012.
-\newblock ISSN 0034-4885.
-\newblock \doi{10.1088/0034-4885/75/7/076501}.
-\newblock URL \url{http://stacks.iop.org/0034-4885/75/i=7/a=076501}.
-
-\bibitem[Liu and Baranger()]{liu_detecting_2011}
-Dong~E. Liu and Harold~U. Baranger.
-\newblock Detecting a majorana-fermion zero mode using a quantum dot.
-\newblock 84\penalty0 (20).
-\newblock ISSN 1098-0121, 1550-235X.
-\newblock \doi{10.1103/PhysRevB.84.201308}.
-\newblock URL \url{http://arxiv.org/abs/1107.4338}.
-
-\bibitem[Lee et~al.()Lee, Lim, and Lopez]{lee_kondo_2013}
-Minchul Lee, Jong~Soo Lim, and Rosa Lopez.
-\newblock Kondo effect in a quantum dot side-coupled to a topological
-  superconductor.
-\newblock 87\penalty0 (24):\penalty0 241402.
-\newblock \doi{10.1103/PhysRevB.87.241402}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.87.241402}.
-
-\bibitem[Vernek et~al.()Vernek, Penteado, Seridonio, and
-  Egues]{vernek_subtle_2014}
-E.~Vernek, P.~H. Penteado, A.~C. Seridonio, and J.~C. Egues.
-\newblock Subtle leakage of a majorana mode into a quantum dot.
-\newblock 89\penalty0 (16):\penalty0 165314.
-\newblock \doi{10.1103/PhysRevB.89.165314}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.89.165314}.
-
-\bibitem[Deng et~al.()Deng, Vaitiekenas, Hansen, Danon, Leijnse, Flensberg,
-  Nygard, Krogstrup, and Marcus]{deng_majorana_2016}
-M.~T. Deng, S.~Vaitiekenas, E.~B. Hansen, J.~Danon, M.~Leijnse, K.~Flensberg,
-  J.~Nygard, P.~Krogstrup, and C.~M. Marcus.
-\newblock Majorana bound state in a coupled quantum-dot hybrid-nanowire system.
-\newblock 354\penalty0 (6319):\penalty0 1557--1562.
-\newblock ISSN 0036-8075, 1095-9203.
-\newblock \doi{10.1126/science.aaf3961}.
-\newblock URL \url{http://science.sciencemag.org/content/354/6319/1557}.
-
 \bibitem[Ruiz-Tijerina et~al.()Ruiz-Tijerina, Vernek, Dias~da Silva, and
   Egues]{ruiz-tijerina_interaction_2015}
 David~A. Ruiz-Tijerina, E.~Vernek, Luis G. G.~V. Dias~da Silva, and J.~C.
@@ -72,6 +14,14 @@ David~A. Ruiz-Tijerina, E.~Vernek, Luis G. G.~V. Dias~da Silva, and J.~C.
 \newblock 91\penalty0 (11):\penalty0 115435.
 \newblock \doi{10.1103/PhysRevB.91.115435}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.91.115435}.
+
+\bibitem[Kitaev(2001)]{kitaev_unpaired_2001}
+A.~Yu Kitaev.
+\newblock Unpaired {Majorana} fermions in quantum wires.
+\newblock \emph{Phys.-Usp.}, 44\penalty0 (10S):\penalty0 131, 2001.
+\newblock ISSN 1063-7869.
+\newblock \doi{10.1070/1063-7869/44/10S/S29}.
+\newblock URL \url{http://stacks.iop.org/1063-7869/44/i=10S/a=S29}.
 
 \bibitem[Wilczek(2009)]{wilczek_majorana_2009}
 Frank Wilczek.
@@ -112,6 +62,15 @@ Masatoshi Sato, Yoshiro Takahashi, and Satoshi Fujimoto.
   2009.
 \newblock \doi{10.1103/PhysRevLett.103.020401}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.103.020401}.
+
+\bibitem[Alicea(2012)]{alicea_new_2012}
+Jason Alicea.
+\newblock New directions in the pursuit of {Majorana} fermions in solid state
+  systems.
+\newblock \emph{Rep. Prog. Phys.}, 75\penalty0 (7):\penalty0 076501, 2012.
+\newblock ISSN 0034-4885.
+\newblock \doi{10.1088/0034-4885/75/7/076501}.
+\newblock URL \url{http://stacks.iop.org/0034-4885/75/i=7/a=076501}.
 
 \bibitem[Beenakker(2013)]{beenakker_search_2013}
 C.w.j. Beenakker.
@@ -176,6 +135,22 @@ Roman~M. Lutchyn, Jay~D. Sau, and S.~Das~Sarma.
 \newblock \doi{10.1103/PhysRevLett.105.077001}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.105.077001}.
 
+\bibitem[Liu and Baranger()]{liu_detecting_2011}
+Dong~E. Liu and Harold~U. Baranger.
+\newblock Detecting a majorana-fermion zero mode using a quantum dot.
+\newblock 84\penalty0 (20).
+\newblock ISSN 1098-0121, 1550-235X.
+\newblock \doi{10.1103/PhysRevB.84.201308}.
+\newblock URL \url{http://arxiv.org/abs/1107.4338}.
+
+\bibitem[Vernek et~al.()Vernek, Penteado, Seridonio, and
+  Egues]{vernek_subtle_2014}
+E.~Vernek, P.~H. Penteado, A.~C. Seridonio, and J.~C. Egues.
+\newblock Subtle leakage of a majorana mode into a quantum dot.
+\newblock 89\penalty0 (16):\penalty0 165314.
+\newblock \doi{10.1103/PhysRevB.89.165314}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.89.165314}.
+
 \bibitem[Hewson(1997)]{hewson_kondo_1997}
 Alexander~Cyril Hewson.
 \newblock \emph{The {Kondo} {Problem} to {Heavy} {Fermions}}.
@@ -209,7 +184,7 @@ Stephan Plugge, Asbj{\o}rn Rasmussen, Reinhold Egger, and Karsten Flensberg.
 \newblock \emph{New Journal of Physics}, 19\penalty0 (1):\penalty0 012001, jan
   2017.
 \newblock \doi{10.1088/1367-2630/aa54e1}.
-\newblock URL \url{https://doi.org/10.1088%2F1367-2630%2Faa54e1}.
+\newblock URL \url{https://doi.org/10.1088\%2F1367-2630\%2Faa54e1}.
 
 \bibitem[Karzig et~al.(2017)Karzig, Knapp, Lutchyn, Bonderson, Hastings, Nayak,
   Alicea, Flensberg, Plugge, Oreg, Marcus, and Freedman]{karzig_scalable_2017}
@@ -238,7 +213,7 @@ Joelson~F Silva and E~Vernek.
 \newblock \emph{Journal of Physics: Condensed Matter}, 28\penalty0
   (43):\penalty0 435702, sep 2016.
 \newblock \doi{10.1088/0953-8984/28/43/435702}.
-\newblock URL \url{https://doi.org/10.1088%2F0953-8984%2F28%2F43%2F435702}.
+\newblock URL \url{https://doi.org/10.1088\%2F0953-8984\%2F28\%2F43\%2F435702}.
 
 \bibitem[Ivanov(2017)]{ivanov_coherent_2017}
 T.~I. Ivanov.
@@ -356,7 +331,7 @@ Markus Ternes, Andreas~J Heinrich, and Wolf-Dieter Schneider.
 \newblock \emph{Journal of Physics: Condensed Matter}, 21\penalty0
   (5):\penalty0 053001, dec 2008.
 \newblock \doi{10.1088/0953-8984/21/5/053001}.
-\newblock URL \url{https://doi.org/10.1088%2F0953-8984%2F21%2F5%2F053001}.
+\newblock URL \url{https://doi.org/10.1088\%2F0953-8984\%2F21\%2F5\%2F053001}.
 
 \bibitem[Wiel et~al.(2000)Wiel, Franceschi, Fujisawa, Elzerman, Tarucha, and
   Kouwenhoven]{wiel_kondo_2000}
@@ -445,6 +420,13 @@ Luis G. G.~V. Dias~da Silva, Nancy Sandler, Kevin Ingersent, and Sergio~E.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S1386947707003074}.
 
+\bibitem[Alicea(2010)]{alicea_majorana_2010}
+Jason Alicea.
+\newblock Majorana fermions in a tunable semiconductor device.
+\newblock \emph{Phys. Rev. B}, 81\penalty0 (12):\penalty0 125318, March 2010.
+\newblock \doi{10.1103/PhysRevB.81.125318}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.81.125318}.
+
 \bibitem[Sarma et~al.(2015)Sarma, Freedman, and Nayak]{sarma_majorana_2015}
 Sankar~Das Sarma, Michael Freedman, and Chetan Nayak.
 \newblock Majorana zero modes and topological quantum computation.
@@ -474,6 +456,16 @@ Stevan Nadj-Perge, Ilya~K. Drozdov, Jian Li, Hua Chen, Sangjun Jeon, Jungpil
 \newblock ISSN 0036-8075, 1095-9203.
 \newblock \doi{10.1126/science.1259327}.
 \newblock URL \url{http://science.sciencemag.org/content/346/6209/602}.
+
+\bibitem[Deng et~al.()Deng, Vaitiekenas, Hansen, Danon, Leijnse, Flensberg,
+  Nygard, Krogstrup, and Marcus]{deng_majorana_2016}
+M.~T. Deng, S.~Vaitiekenas, E.~B. Hansen, J.~Danon, M.~Leijnse, K.~Flensberg,
+  J.~Nygard, P.~Krogstrup, and C.~M. Marcus.
+\newblock Majorana bound state in a coupled quantum-dot hybrid-nanowire system.
+\newblock 354\penalty0 (6319):\penalty0 1557--1562.
+\newblock ISSN 0036-8075, 1095-9203.
+\newblock \doi{10.1126/science.aaf3961}.
+\newblock URL \url{http://science.sciencemag.org/content/354/6319/1557}.
 
 \bibitem[Zhang et~al.(2018)Zhang, Liu, Gazibegovic, Xu, Logan, Wang, van Loo,
   Bommer, de~Moor, Car, Op~het Veld, van Veldhoven, Koelling, Verheijen,
@@ -526,6 +518,14 @@ B.~van Heck, A.~R. Akhmerov, F.~Hassler, M.~Burrello, and C.~W.~J. Beenakker.
 \newblock ISSN 1367-2630.
 \newblock \doi{10.1088/1367-2630/14/3/035019}.
 \newblock URL \url{https://doi.org/10.1088%2F1367-2630%2F14%2F3%2F035019}.
+
+\bibitem[Lee et~al.()Lee, Lim, and Lopez]{lee_kondo_2013}
+Minchul Lee, Jong~Soo Lim, and Rosa Lopez.
+\newblock Kondo effect in a quantum dot side-coupled to a topological
+  superconductor.
+\newblock 87\penalty0 (24):\penalty0 241402.
+\newblock \doi{10.1103/PhysRevB.87.241402}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.87.241402}.
 
 \bibitem[G\'orski et~al.(2018)G\'orski, Bara\'nski, Weymann, and
   Domański]{gorski_interplay_2018}
