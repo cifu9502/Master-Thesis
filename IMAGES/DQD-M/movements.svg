@@ -17,9 +17,9 @@
    version="1.1"
    inkscape:version="0.92.4 (unknown)"
    sodipodi:docname="movements.svg"
-   inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
-   inkscape:export-xdpi="150"
-   inkscape:export-ydpi="150">
+   inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+   inkscape:export-xdpi="250"
+   inkscape:export-ydpi="250">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -28,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="879.14827"
-     inkscape:cy="-704.47944"
+     inkscape:cx="270.84782"
+     inkscape:cy="-632.79008"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -40,6 +40,18 @@
      inkscape:window-maximized="1" />
   <defs
      id="defs4909">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2740">
+      <stop
+         style="stop-color:#fa2b42;stop-opacity:1;"
+         offset="0"
+         id="stop2736" />
+      <stop
+         style="stop-color:#fa2b42;stop-opacity:0;"
+         offset="1"
+         id="stop2738" />
+    </linearGradient>
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
@@ -2156,6 +2168,70 @@
        id="radialGradient4615-6-9-8-7-1"
        xlink:href="#linearGradient4605"
        inkscape:collect="always" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6714"
+       id="radialGradient6730-5-3-3-3"
+       cx="61.999977"
+       cy="276.64792"
+       fx="61.999977"
+       fy="276.64792"
+       r="17.084238"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.44595579,0,0,0.44595579,599.15063,1531.5864)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6732"
+       id="radialGradient6740-5-5-5-5"
+       cx="294.81854"
+       cy="274.9458"
+       fx="294.81854"
+       fy="274.9458"
+       r="29.510553"
+       gradientTransform="matrix(0.44595579,0,0,1.4641507,613.61493,1252.013)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.7345965,0,0,0.46860654,499.13123,1306.4111)"
+       r="45.371532"
+       fy="663.79077"
+       fx="248.57144"
+       cy="663.79077"
+       cx="248.57144"
+       id="radialGradient4613-6-9-02-9-6-6"
+       xlink:href="#linearGradient4605"
+       inkscape:collect="always" />
+    <radialGradient
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.7345965,0,0,0.46860654,499.13123,1343.6523)"
+       r="45.371532"
+       fy="736.12799"
+       fx="249.28572"
+       cy="736.12799"
+       cx="249.28572"
+       id="radialGradient4615-6-9-8-7-1-1"
+       xlink:href="#linearGradient4605"
+       inkscape:collect="always" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2740"
+       id="radialGradient2742"
+       cx="288.13022"
+       cy="1720.2467"
+       fx="288.13022"
+       fy="1720.2467"
+       r="10.203072"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2740"
+       id="radialGradient2744"
+       cx="288.11118"
+       cy="1789.8716"
+       fx="288.11118"
+       fy="1789.8716"
+       r="9.7295637"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata4912">
@@ -8497,7 +8573,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4619-5-2-96-0-6"
-       d="m 704.19792,1631.2906 29.57022,18.193"
+       d="m 704.7411,1630.9439 29.14266,17.0675"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.35070872;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
@@ -8508,7 +8584,7 @@
        inkscape:connector-curvature="0"
        inkscape:connector-type="polyline"
        id="path4623-2-3-2-7-0"
-       d="m 706.66926,1676.1126 27.30979,-13.976"
+       d="m 706.09529,1675.6949 27.74806,-15.0283"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.35070872;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <circle
        inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
@@ -8521,7 +8597,7 @@
        r="6.2965412" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#661b02;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.0000001, 3.0000001;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 632.59504,1657.4207 27.42355,17.2214"
+       d="m 632.18286,1658.225 27.45094,16.6558"
        id="path4609-6-8-2"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -8532,7 +8608,7 @@
        inkscape:export-ydpi="150" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#661b02;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.0000001, 3.0000001;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 632.48999,1652.2629 28.36824,-20.0457"
+       d="m 632.00045,1651.4094 28.44956,-19.4171"
        id="path4611-0-4-6"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -8541,5 +8617,198 @@
        inkscape:export-filename="/home/cifu/nrgcode/Data/DQDM.png"
        inkscape:export-xdpi="150"
        inkscape:export-ydpi="150" />
+    <ellipse
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       ry="19.608557"
+       rx="31.676924"
+       cy="1790.6188"
+       cx="289.00906"
+       id="path4299-3-3-3-0-4-2-2"
+       style="opacity:0.95999995;fill:url(#radialGradient4615-6-9-8-7-1-1);fill-opacity:1;stroke:#010301;stroke-width:3.3056848;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <ellipse
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       ry="19.608557"
+       rx="31.676924"
+       cy="1719.4802"
+       cx="288.48441"
+       id="path4299-3-6-1-6-4-7-7-7"
+       style="opacity:0.95999995;fill:url(#radialGradient4613-6-9-02-9-6-6);fill-opacity:1;stroke:#010301;stroke-width:3.3056848;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4518-6-8-0-4-0-0"
+       d="m 273.79239,1781.6684 v 0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73459655px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4520-5-7-9-4-9-9"
+       d="m 273.79239,1781.6684 v 0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73459655px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       d="m 363.35196,1798.1423 a 23.003691,41.555061 0 0 1 -19.92178,-20.7775 23.003691,41.555061 0 0 1 0,-41.5551 23.003691,41.555061 0 0 1 19.92178,-20.7775 l 0,41.5551 z"
+       sodipodi:end="4.712389"
+       sodipodi:start="1.5707963"
+       sodipodi:ry="41.555061"
+       sodipodi:rx="23.003691"
+       sodipodi:cy="1756.5873"
+       sodipodi:cx="363.35196"
+       sodipodi:type="arc"
+       id="path4549-74-0-1-3-3-3"
+       style="opacity:0.95999995;fill:url(#radialGradient6740-5-5-5-5);fill-opacity:1;stroke:#0d1c35;stroke-width:3.3056848;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:connection-end="#path4549-74-0-1-3-3-3"
+       inkscape:connection-start="#path4299-3-6-1-6-4-7-7-7"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4619-5-2-96-0-6-6"
+       d="m 311.49454,1732.9562 29.14267,17.0676"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.35070872;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       inkscape:connection-end="#path4549-74-0-1-3-3-3"
+       inkscape:connection-start="#path4299-3-3-3-0-4-2-2"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path4623-2-3-2-7-0-0"
+       d="m 312.84875,1777.7073 27.74804,-15.0283"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.35070872;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <circle
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       cy="1756.9712"
+       cx="233.55325"
+       id="path4340-20-6-5-54-8-6-6"
+       style="opacity:0.95999995;fill:url(#radialGradient6730-5-3-3-3);fill-opacity:1;stroke:#b40e21;stroke-width:2.64454722;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       r="6.2965417" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#661b02;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.0000002, 3.0000002;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 238.7539,1753.4217 28.44957,-19.417"
+       id="path4611-0-4-6-6"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path4340-20-6-5-54-8-6-6"
+       inkscape:connection-end="#path4299-3-6-1-6-4-7-7-7"
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <circle
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       cy="1720.2467"
+       cx="288.13022"
+       id="path4340-20-6-5-9-4-5-9"
+       style="opacity:0.95999995;fill:url(#radialGradient2742);fill-opacity:1;stroke:#b00e20;stroke-width:3.54152966;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.54153006, 3.54153005999999992;stroke-dashoffset:0;stroke-opacity:1"
+       r="8.4323072" />
+    <circle
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png"
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       cy="1789.8716"
+       cx="288.11118"
+       id="path4340-20-6-5-9-4-5-3"
+       style="opacity:0.95999995;fill:url(#radialGradient2744);fill-opacity:1;stroke:#b00e20;stroke-width:3.37717247;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.37717307, 3.37717307000000000;stroke-dashoffset:0;stroke-opacity:1"
+       r="8.0409775" />
+    <g
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       id="g10082-48-4-9-7"
+       transform="matrix(0.38067196,0,0,0.38067196,208.46059,1597.1826)"
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png">
+      <g
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         transform="matrix(1.0629921,0,0,-1.0629921,-186.02362,789.27165)"
+         id="g10084-7-9-1-5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path10086-1-0-4-9"
+           d="m 483.11,440.07 h -25.95 v -1.54 h 1.2 c 3.83,0 3.94,-0.55 3.94,-2.33 v -26.11 c 0,-1.8 -0.11,-2.34 -3.94,-2.34 h -1.2 v -1.55 c 1.75,0.16 5.64,0.16 7.58,0.16 2.05,0 6.58,0 8.37,-0.16 v 1.55 h -1.65 c -4.74,0 -4.74,0.64 -4.74,2.39 v 26.4 c 0,1.64 0.11,1.99 2.46,1.99 h 5.12 c 7.13,0 8.17,-2.94 8.97,-9.66 h 1.25 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><path
+           id="path10088-72-9-9-2"
+           d="m 498.27,420.92 v 0.04 0.04 0.05 0.04 0.03 0.04 0.04 0.03 0.04 0.03 l -0.01,0.03 v 0.03 0.03 0.03 l -0.01,0.03 v 0.02 l -0.01,0.03 v 0.02 l -0.01,0.03 v 0.02 l -0.01,0.04 -0.02,0.04 -0.02,0.03 -0.01,0.03 -0.03,0.03 -0.02,0.03 -0.03,0.02 -0.03,0.02 -0.03,0.02 -0.04,0.01 -0.04,0.01 -0.04,0.02 h -0.03 -0.02 l -0.03,0.01 h -0.02 l -0.03,0.01 h -0.03 -0.03 -0.03 -0.03 l -0.04,0.01 h -0.03 -0.04 -0.03 -0.04 -0.04 -0.04 -0.04 -0.04 -0.05 -0.04 c -2.24,-2.2 -5.39,-2.23 -6.83,-2.23 v -1.25 c 0.84,0 3.14,0 5.05,0.97 v -17.77 c 0,-1.16 0,-1.61 -3.49,-1.61 h -1.31 v -1.25 c 0.62,0.03 4.9,0.14 6.2,0.14 1.08,0 5.47,-0.11 6.24,-0.14 v 1.25 h -1.33 c -3.49,0 -3.49,0.45 -3.49,1.61 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /></g>    </g>
+    <g
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       id="g10082-48-4-9-2"
+       transform="matrix(0.3903704,0,0,0.3903704,206.49871,1648.0449)"
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png">
+      <g
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         transform="matrix(1.0629921,0,0,-1.0629921,-186.02362,789.27165)"
+         id="g10084-7-9-1-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path10086-1-0-4-97"
+           d="m 483.11,440.07 h -25.95 v -1.54 h 1.2 c 3.83,0 3.94,-0.55 3.94,-2.33 v -26.11 c 0,-1.8 -0.11,-2.34 -3.94,-2.34 h -1.2 v -1.55 c 1.75,0.16 5.64,0.16 7.58,0.16 2.05,0 6.58,0 8.37,-0.16 v 1.55 h -1.65 c -4.74,0 -4.74,0.64 -4.74,2.39 v 26.4 c 0,1.64 0.11,1.99 2.46,1.99 h 5.12 c 7.13,0 8.17,-2.94 8.97,-9.66 h 1.25 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><path
+           id="path10088-72-9-9-3"
+           d="m 498.27,420.92 v 0.04 0.04 0.05 0.04 0.03 0.04 0.04 0.03 0.04 0.03 l -0.01,0.03 v 0.03 0.03 0.03 l -0.01,0.03 v 0.02 l -0.01,0.03 v 0.02 l -0.01,0.03 v 0.02 l -0.01,0.04 -0.02,0.04 -0.02,0.03 -0.01,0.03 -0.03,0.03 -0.02,0.03 -0.03,0.02 -0.03,0.02 -0.03,0.02 -0.04,0.01 -0.04,0.01 -0.04,0.02 h -0.03 -0.02 l -0.03,0.01 h -0.02 l -0.03,0.01 h -0.03 -0.03 -0.03 -0.03 l -0.04,0.01 h -0.03 -0.04 -0.03 -0.04 -0.04 -0.04 -0.04 -0.04 -0.05 -0.04 c -2.24,-2.2 -5.39,-2.23 -6.83,-2.23 v -1.25 c 0.84,0 3.14,0 5.05,0.97 v -17.77 c 0,-1.16 0,-1.61 -3.49,-1.61 h -1.31 v -1.25 c 0.62,0.03 4.9,0.14 6.2,0.14 1.08,0 5.47,-0.11 6.24,-0.14 v 1.25 h -1.33 c -3.49,0 -3.49,0.45 -3.49,1.61 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /></g>    </g>
+    <g
+       inkscape:export-ydpi="200"
+       inkscape:export-xdpi="200"
+       id="g10082-48-4-9-6"
+       transform="matrix(0.38067196,0,0,0.38067196,118.96739,1602.3913)"
+       inkscape:export-filename="/home/cifu/nrgcode/Data/IND.png">
+      <g
+         word-spacing="normal"
+         letter-spacing="normal"
+         font-size-adjust="none"
+         font-stretch="normal"
+         font-weight="normal"
+         font-variant="normal"
+         font-style="normal"
+         stroke-miterlimit="10.433"
+         xml:space="preserve"
+         transform="matrix(1.0629921,0,0,-1.0629921,-186.02362,789.27165)"
+         id="g10084-7-9-1-1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"><path
+           id="path10086-1-0-4-2"
+           d="m 483.11,440.07 h -25.95 v -1.54 h 1.2 c 3.83,0 3.94,-0.55 3.94,-2.33 v -26.11 c 0,-1.8 -0.11,-2.34 -3.94,-2.34 h -1.2 v -1.55 c 1.75,0.16 5.64,0.16 7.58,0.16 2.05,0 6.58,0 8.37,-0.16 v 1.55 h -1.65 c -4.74,0 -4.74,0.64 -4.74,2.39 v 26.4 c 0,1.64 0.11,1.99 2.46,1.99 h 5.12 c 7.13,0 8.17,-2.94 8.97,-9.66 h 1.25 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /><path
+           id="path10088-72-9-9-9"
+           d="m 498.27,420.92 v 0.04 0.04 0.05 0.04 0.03 0.04 0.04 0.03 0.04 0.03 l -0.01,0.03 v 0.03 0.03 0.03 l -0.01,0.03 v 0.02 l -0.01,0.03 v 0.02 l -0.01,0.03 v 0.02 l -0.01,0.04 -0.02,0.04 -0.02,0.03 -0.01,0.03 -0.03,0.03 -0.02,0.03 -0.03,0.02 -0.03,0.02 -0.03,0.02 -0.04,0.01 -0.04,0.01 -0.04,0.02 h -0.03 -0.02 l -0.03,0.01 h -0.02 l -0.03,0.01 h -0.03 -0.03 -0.03 -0.03 l -0.04,0.01 h -0.03 -0.04 -0.03 -0.04 -0.04 -0.04 -0.04 -0.04 -0.05 -0.04 c -2.24,-2.2 -5.39,-2.23 -6.83,-2.23 v -1.25 c 0.84,0 3.14,0 5.05,0.97 v -17.77 c 0,-1.16 0,-1.61 -3.49,-1.61 h -1.31 v -1.25 c 0.62,0.03 4.9,0.14 6.2,0.14 1.08,0 5.47,-0.11 6.24,-0.14 v 1.25 h -1.33 c -3.49,0 -3.49,0.45 -3.49,1.61 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;stroke-width:0" /></g>    </g>
   </g>
 </svg>

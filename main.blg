@@ -9,57 +9,52 @@ A level-1 auxiliary file: NResults.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
 Database file #1: Majorana-QD.bib
-Repeated entry---line 108 of file Majorana-QD.bib
+Repeated entry---line 139 of file Majorana-QD.bib
  : @article{heck_coulomb-assisted_2012
  :                                    ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 171 of file Majorana-QD.bib
- : 
- : @article{liu_detecting_2011,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Database file #2: Kitaev-Majorana.bib
-Repeated entry---line 199 of file Kitaev-Majorana.bib
+Repeated entry---line 183 of file Kitaev-Majorana.bib
  : @article{zitko_quantum_2011
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 265 of file Kitaev-Majorana.bib
+Repeated entry---line 249 of file Kitaev-Majorana.bib
  : @article{heck_coulomb-assisted_2012
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 283 of file Kitaev-Majorana.bib
+Repeated entry---line 267 of file Kitaev-Majorana.bib
  : @article{nayak_non-abelian_2008
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 299 of file Kitaev-Majorana.bib
+Repeated entry---line 283 of file Kitaev-Majorana.bib
  : @article{su_andreev_2017
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 318 of file Kitaev-Majorana.bib
+Repeated entry---line 302 of file Kitaev-Majorana.bib
  : @article{nadj-perge_observation_2014
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 362 of file Kitaev-Majorana.bib
+Repeated entry---line 327 of file Kitaev-Majorana.bib
  : @article{lee_zero-bias_2012
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 385 of file Kitaev-Majorana.bib
+Repeated entry---line 344 of file Kitaev-Majorana.bib
  : @article{schuray_fano_2017
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 555 of file Kitaev-Majorana.bib
+Repeated entry---line 514 of file Kitaev-Majorana.bib
  : @article{das_zero-bias_2012
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 574 of file Kitaev-Majorana.bib
+Repeated entry---line 533 of file Kitaev-Majorana.bib
  : @article{deng_anomalous_2012
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 591 of file Kitaev-Majorana.bib
+Repeated entry---line 550 of file Kitaev-Majorana.bib
  : @article{oreg_helical_2010
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 607 of file Kitaev-Majorana.bib
+Repeated entry---line 566 of file Kitaev-Majorana.bib
  : @article{lutchyn_majorana_2010
  :                               ,
 I'm skipping whatever remains of this entry
@@ -89,16 +84,16 @@ Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 You've used 59 entries,
             2481 wiz_defined-function locations,
-            1043 strings with 19814 characters,
-and the built_in function-call counts, 26031 in all, are:
-= -- 2266
+            1043 strings with 19803 characters,
+and the built_in function-call counts, 26005 in all, are:
+= -- 2260
 > -- 1455
 < -- 27
 + -- 556
 - -- 438
-* -- 2444
-:= -- 4360
-add.period$ -- 313
+* -- 2442
+:= -- 4354
+add.period$ -- 311
 call.type$ -- 59
 change.case$ -- 117
 chr.to.int$ -- 59
@@ -106,13 +101,13 @@ cite$ -- 74
 duplicate$ -- 1124
 empty$ -- 2145
 format.name$ -- 511
-if$ -- 5369
+if$ -- 5363
 int.to.chr$ -- 1
 int.to.str$ -- 60
 missing$ -- 61
-newline$ -- 439
+newline$ -- 437
 num.names$ -- 177
-pop$ -- 327
+pop$ -- 329
 preamble$ -- 1
 purify$ -- 59
 quote$ -- 0
@@ -127,5 +122,5 @@ type$ -- 401
 warning$ -- 15
 while$ -- 192
 width$ -- 0
-write$ -- 1037
-(There were 15 error messages)
+write$ -- 1033
+(There were 14 error messages)

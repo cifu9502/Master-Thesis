@@ -73,6 +73,11 @@ David~A. Ruiz-Tijerina, E.~Vernek, Luis G. G.~V. Dias~da Silva, and J.~C.
 \newblock \doi{10.1103/PhysRevB.91.115435}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.91.115435}.
 
+\bibitem[Wilczek(2009)]{wilczek_majorana_2009}
+Frank Wilczek.
+\newblock Majorana returns, September 2009.
+\newblock URL \url{https://www.nature.com/articles/nphys1380}.
+
 \bibitem[Kitaev(2003)]{kitaev_fault-tolerant_2003}
 A.~Yu Kitaev.
 \newblock Fault-tolerant quantum computation by anyons.
@@ -83,10 +88,12 @@ A.~Yu Kitaev.
 \newblock URL \url{http://arxiv.org/abs/quant-ph/9707021}.
 \newblock arXiv: quant-ph/9707021.
 
-\bibitem[Wilczek(2009)]{wilczek_majorana_2009}
-Frank Wilczek.
-\newblock Majorana returns, September 2009.
-\newblock URL \url{https://www.nature.com/articles/nphys1380}.
+\bibitem[Pachos(2012)]{pachos_introduction_2012}
+Jiannis~K. Pachos.
+\newblock \emph{Introduction to {Topological} {Quantum} {Computation}}.
+\newblock Cambridge University Press, Cambridge ; New York, 1 edition edition,
+  May 2012.
+\newblock ISBN 978-1-107-00504-4.
 
 \bibitem[Fu and Kane(2008)]{fu_superconducting_2008}
 Liang Fu and C.~L. Kane.
@@ -105,6 +112,16 @@ Masatoshi Sato, Yoshiro Takahashi, and Satoshi Fujimoto.
   2009.
 \newblock \doi{10.1103/PhysRevLett.103.020401}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.103.020401}.
+
+\bibitem[Beenakker(2013)]{beenakker_search_2013}
+C.w.j. Beenakker.
+\newblock Search for {Majorana} {Fermions} in {Superconductors}.
+\newblock \emph{Annual Review of Condensed Matter Physics}, 4\penalty0
+  (1):\penalty0 113--136, March 2013.
+\newblock ISSN 1947-5454.
+\newblock \doi{10.1146/annurev-conmatphys-030212-184337}.
+\newblock URL
+  \url{https://www.annualreviews.org/doi/10.1146/annurev-conmatphys-030212-184337}.
 
 \bibitem[Mourik et~al.(2012)Mourik, Zuo, Frolov, Plissard, Bakkers, and
   Kouwenhoven]{mourik_signatures_2012}
@@ -166,6 +183,84 @@ Alexander~Cyril Hewson.
 \newblock ISBN 978-0-521-59947-4.
 \newblock Google-Books-ID: fPzgHneNFDAC.
 
+\bibitem[Lee et~al.(2012)Lee, Jiang, Aguado, Katsaros, Lieber, and
+  De~Franceschi]{lee_zero-bias_2012}
+Eduardo J.~H. Lee, Xiaocheng Jiang, Ram\'on Aguado, Georgios Katsaros,
+  Charles~M. Lieber, and Silvano De~Franceschi.
+\newblock Zero-{Bias} {Anomaly} in a {Nanowire} {Quantum} {Dot} {Coupled} to
+  {Superconductors}.
+\newblock \emph{Physical Review Letters}, 109\penalty0 (18):\penalty0 186802,
+  October 2012.
+\newblock \doi{10.1103/PhysRevLett.109.186802}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.109.186802}.
+
+\bibitem[Malciu et~al.(2018)Malciu, Mazza, and Mora]{malciu_braiding_2018}
+Corneliu Malciu, Leonardo Mazza, and Christophe Mora.
+\newblock Braiding {Majorana} zero modes using quantum dots.
+\newblock \emph{Physical Review B}, 98\penalty0 (16):\penalty0 165426, October
+  2018.
+\newblock \doi{10.1103/PhysRevB.98.165426}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.98.165426}.
+
+\bibitem[Plugge et~al.(2017)Plugge, Rasmussen, Egger, and
+  Flensberg]{plugge_majorana_2017}
+Stephan Plugge, Asbj{\o}rn Rasmussen, Reinhold Egger, and Karsten Flensberg.
+\newblock Majorana box qubits.
+\newblock \emph{New Journal of Physics}, 19\penalty0 (1):\penalty0 012001, jan
+  2017.
+\newblock \doi{10.1088/1367-2630/aa54e1}.
+\newblock URL \url{https://doi.org/10.1088%2F1367-2630%2Faa54e1}.
+
+\bibitem[Karzig et~al.(2017)Karzig, Knapp, Lutchyn, Bonderson, Hastings, Nayak,
+  Alicea, Flensberg, Plugge, Oreg, Marcus, and Freedman]{karzig_scalable_2017}
+Torsten Karzig, Christina Knapp, Roman~M. Lutchyn, Parsa Bonderson, Matthew~B.
+  Hastings, Chetan Nayak, Jason Alicea, Karsten Flensberg, Stephan Plugge,
+  Yuval Oreg, Charles~M. Marcus, and Michael~H. Freedman.
+\newblock Scalable designs for quasiparticle-poisoning-protected topological
+  quantum computation with {Majorana} zero modes.
+\newblock \emph{Physical Review B}, 95\penalty0 (23):\penalty0 235305, June
+  2017.
+\newblock \doi{10.1103/PhysRevB.95.235305}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.95.235305}.
+
+\bibitem[Barkeshli and Sau(2015)]{barkeshli_physical_2015}
+Maissam Barkeshli and Jay~D. Sau.
+\newblock Physical {Architecture} for a {Universal} {Topological} {Quantum}
+  {Computer} based on a {Network} of {Majorana} {Nanowires}.
+\newblock \emph{arXiv:1509.07135 [cond-mat, physics:quant-ph]}, September 2015.
+\newblock URL \url{http://arxiv.org/abs/1509.07135}.
+\newblock arXiv: 1509.07135.
+
+\bibitem[Silva and Vernek(2016)]{silva_andreev_2016}
+Joelson~F Silva and E~Vernek.
+\newblock Andreev and majorana bound states in single and double quantum dot
+  structures.
+\newblock \emph{Journal of Physics: Condensed Matter}, 28\penalty0
+  (43):\penalty0 435702, sep 2016.
+\newblock \doi{10.1088/0953-8984/28/43/435702}.
+\newblock URL \url{https://doi.org/10.1088%2F0953-8984%2F28%2F43%2F435702}.
+
+\bibitem[Ivanov(2017)]{ivanov_coherent_2017}
+T.~I. Ivanov.
+\newblock Coherent tunneling through a double quantum dot coupled to {Majorana}
+  bound states.
+\newblock \emph{Physical Review B}, 96\penalty0 (3):\penalty0 035417, July
+  2017.
+\newblock \doi{10.1103/PhysRevB.96.035417}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.96.035417}.
+
+\bibitem[Su et~al.(2017)Su, Tacla, Hocevar, Car, Plissard, Bakkers, Daley,
+  Pekker, and Frolov]{su_andreev_2017}
+Zhaoen Su, Alexandre~B. Tacla, Moïra Hocevar, Diana Car, Sébastien~R.
+  Plissard, Erik P. A.~M. Bakkers, Andrew~J. Daley, David Pekker, and Sergey~M.
+  Frolov.
+\newblock Andreev molecules in semiconductor nanowire double quantum dots.
+\newblock \emph{Nature Communications}, 8\penalty0 (1):\penalty0 585, September
+  2017.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-017-00665-7}.
+\newblock URL \url{https://www.nature.com/articles/s41467-017-00665-7}.
+
 \bibitem[Ruderman and Kittel(1954)]{ruderman_indirect_1954}
 M.~A. Ruderman and C.~Kittel.
 \newblock Indirect {Exchange} {Coupling} of {Nuclear} {Magnetic} {Moments} by
@@ -192,19 +287,6 @@ Kei Yosida.
   1957.
 \newblock \doi{10.1103/PhysRev.106.893}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRev.106.893}.
-
-\bibitem[Dias~da Silva et~al.(2008)Dias~da Silva, Sandler, Ingersent, and
-  Ulloa]{dias_da_silva_transmission_2008}
-Luis G. G.~V. Dias~da Silva, Nancy Sandler, Kevin Ingersent, and Sergio~E.
-  Ulloa.
-\newblock Transmission in double quantum dots in the {Kondo} regime:
-  {Quantum}-critical transitions and interference effects.
-\newblock \emph{Physica E: Low-dimensional Systems and Nanostructures},
-  40\penalty0 (5):\penalty0 1002--1005, March 2008.
-\newblock ISSN 1386-9477.
-\newblock \doi{10.1016/j.physe.2007.08.098}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/S1386947707003074}.
 
 \bibitem[Zubarev(1960)]{zubarev_double-time_1960}
 D.~N. Zubarev.
@@ -245,7 +327,7 @@ Dieter Bimberg, Marius Grundmann, and Nikolai~N. Ledentsov.
 Michael Sindel.
 \newblock \emph{Numerical {Renormalization} {Group} studies of {Quantum}
   {Impurity} {Models} in the {Strong} {Coupling} {Limit}}.
-\newblock Text.{PhDThesis}, Ludwig-Maximilians-Universität München, January
+\newblock Text.{PhDThesis}, Ludwig-Maximilians-Universitat Munchen, January
   2005.
 \newblock URL \url{https://edoc.ub.uni-muenchen.de/3115/}.
 
@@ -350,22 +432,18 @@ Wanda~C. Oliveira and Luiz~N. Oliveira.
 \newblock \doi{10.1103/PhysRevB.49.11986}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.49.11986}.
 
-\bibitem[Pachos(2012)]{pachos_introduction_2012}
-Jiannis~K. Pachos.
-\newblock \emph{Introduction to {Topological} {Quantum} {Computation}}.
-\newblock Cambridge University Press, Cambridge ; New York, 1 edition edition,
-  May 2012.
-\newblock ISBN 978-1-107-00504-4.
-
-\bibitem[Beenakker(2013)]{beenakker_search_2013}
-C.w.j. Beenakker.
-\newblock Search for {Majorana} {Fermions} in {Superconductors}.
-\newblock \emph{Annual Review of Condensed Matter Physics}, 4\penalty0
-  (1):\penalty0 113--136, March 2013.
-\newblock ISSN 1947-5454.
-\newblock \doi{10.1146/annurev-conmatphys-030212-184337}.
+\bibitem[Dias~da Silva et~al.(2008)Dias~da Silva, Sandler, Ingersent, and
+  Ulloa]{dias_da_silva_transmission_2008}
+Luis G. G.~V. Dias~da Silva, Nancy Sandler, Kevin Ingersent, and Sergio~E.
+  Ulloa.
+\newblock Transmission in double quantum dots in the {Kondo} regime:
+  {Quantum}-critical transitions and interference effects.
+\newblock \emph{Physica E: Low-dimensional Systems and Nanostructures},
+  40\penalty0 (5):\penalty0 1002--1005, March 2008.
+\newblock ISSN 1386-9477.
+\newblock \doi{10.1016/j.physe.2007.08.098}.
 \newblock URL
-  \url{https://www.annualreviews.org/doi/10.1146/annurev-conmatphys-030212-184337}.
+  \url{http://www.sciencedirect.com/science/article/pii/S1386947707003074}.
 
 \bibitem[Sarma et~al.(2015)Sarma, Freedman, and Nayak]{sarma_majorana_2015}
 Sankar~Das Sarma, Michael Freedman, and Chetan Nayak.
@@ -374,16 +452,6 @@ Sankar~Das Sarma, Michael Freedman, and Chetan Nayak.
 \newblock ISSN 2056-6387.
 \newblock \doi{10.1038/npjqi.2015.1}.
 \newblock URL \url{https://www.nature.com/articles/npjqi20151}.
-
-\bibitem[Plugge et~al.(2017)Plugge, Rasmussen, Egger, and
-  Flensberg]{plugge_majorana_2017}
-Stephan Plugge, Asbjørn Rasmussen, Reinhold Egger, and Karsten Flensberg.
-\newblock Majorana box qubits.
-\newblock \emph{New Journal of Physics}, 19\penalty0 (1):\penalty0 012001,
-  January 2017.
-\newblock ISSN 1367-2630.
-\newblock \doi{10.1088/1367-2630/aa54e1}.
-\newblock URL \url{https://doi.org/10.1088%2F1367-2630%2Faa54e1}.
 
 \bibitem[Aasen et~al.(2016)Aasen, Hell, Mishmash, Higginbotham, Danon, Leijnse,
   Jespersen, Folk, Marcus, Flensberg, and Alicea]{aasen_milestones_2016}
@@ -421,26 +489,6 @@ Hao Zhang, Chun-Xiao Liu, Sasa Gazibegovic, Di~Xu, John~A. Logan, Guanzhong
 \newblock \emph{Nature}, 556:\penalty0 74, March 2018.
 \newblock URL \url{http://dx.doi.org/10.1038/nature26142}.
 
-\bibitem[Barkeshli and Sau(2015)]{barkeshli_physical_2015}
-Maissam Barkeshli and Jay~D. Sau.
-\newblock Physical {Architecture} for a {Universal} {Topological} {Quantum}
-  {Computer} based on a {Network} of {Majorana} {Nanowires}.
-\newblock \emph{arXiv:1509.07135 [cond-mat, physics:quant-ph]}, September 2015.
-\newblock URL \url{http://arxiv.org/abs/1509.07135}.
-\newblock arXiv: 1509.07135.
-
-\bibitem[Karzig et~al.(2017)Karzig, Knapp, Lutchyn, Bonderson, Hastings, Nayak,
-  Alicea, Flensberg, Plugge, Oreg, Marcus, and Freedman]{karzig_scalable_2017}
-Torsten Karzig, Christina Knapp, Roman~M. Lutchyn, Parsa Bonderson, Matthew~B.
-  Hastings, Chetan Nayak, Jason Alicea, Karsten Flensberg, Stephan Plugge,
-  Yuval Oreg, Charles~M. Marcus, and Michael~H. Freedman.
-\newblock Scalable designs for quasiparticle-poisoning-protected topological
-  quantum computation with {Majorana} zero modes.
-\newblock \emph{Physical Review B}, 95\penalty0 (23):\penalty0 235305, June
-  2017.
-\newblock \doi{10.1103/PhysRevB.95.235305}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.95.235305}.
-
 \bibitem[Turaev(2016)]{turaev_book}
 Vladimir~G. Turaev.
 \newblock \emph{Quantum {Invariants} of {Knots} and 3-{Manifolds}}.
@@ -468,17 +516,6 @@ A.~Manchon, H.~C. Koo, J.~Nitta, S.~M. Frolov, and R.~A. Duine.
 \newblock \doi{10.1038/nmat4360}.
 \newblock URL \url{https://www.nature.com/articles/nmat4360}.
 
-\bibitem[Lee et~al.(2012)Lee, Jiang, Aguado, Katsaros, Lieber, and
-  De~Franceschi]{lee_zero-bias_2012}
-Eduardo J.~H. Lee, Xiaocheng Jiang, Ram\'on Aguado, Georgios Katsaros,
-  Charles~M. Lieber, and Silvano De~Franceschi.
-\newblock Zero-{Bias} {Anomaly} in a {Nanowire} {Quantum} {Dot} {Coupled} to
-  {Superconductors}.
-\newblock \emph{Physical Review Letters}, 109\penalty0 (18):\penalty0 186802,
-  October 2012.
-\newblock \doi{10.1103/PhysRevLett.109.186802}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.109.186802}.
-
 \bibitem[Heck et~al.(2012)Heck, Akhmerov, Hassler, Burrello, and
   Beenakker]{heck_coulomb-assisted_2012}
 B.~van Heck, A.~R. Akhmerov, F.~Hassler, M.~Burrello, and C.~W.~J. Beenakker.
@@ -501,52 +538,13 @@ G.~G\'orski, J.~Bara\'nski, I.~Weymann, and T.~Domański.
 \newblock \doi{10.1038/s41598-018-33529-1}.
 \newblock URL \url{https://www.nature.com/articles/s41598-018-33529-1}.
 
-\bibitem[Žitko and Simon(2011)]{zitko_quantum_2011}
-Rok Žitko and Pascal Simon.
+\bibitem[Zitko and Simon(2011)]{zitko_quantum_2011}
+Rok Zitko and Pascal Simon.
 \newblock Quantum impurity coupled to {Majorana} edge fermions.
 \newblock \emph{Physical Review B}, 84\penalty0 (19):\penalty0 195310, November
   2011.
 \newblock \doi{10.1103/PhysRevB.84.195310}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.84.195310}.
-
-\bibitem[Malciu et~al.(2018)Malciu, Mazza, and Mora]{malciu_braiding_2018}
-Corneliu Malciu, Leonardo Mazza, and Christophe Mora.
-\newblock Braiding {Majorana} zero modes using quantum dots.
-\newblock \emph{Physical Review B}, 98\penalty0 (16):\penalty0 165426, October
-  2018.
-\newblock \doi{10.1103/PhysRevB.98.165426}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.98.165426}.
-
-\bibitem[Su et~al.(2017)Su, Tacla, Hocevar, Car, Plissard, Bakkers, Daley,
-  Pekker, and Frolov]{su_andreev_2017}
-Zhaoen Su, Alexandre~B. Tacla, Moïra Hocevar, Diana Car, Sébastien~R.
-  Plissard, Erik P. A.~M. Bakkers, Andrew~J. Daley, David Pekker, and Sergey~M.
-  Frolov.
-\newblock Andreev molecules in semiconductor nanowire double quantum dots.
-\newblock \emph{Nature Communications}, 8\penalty0 (1):\penalty0 585, September
-  2017.
-\newblock ISSN 2041-1723.
-\newblock \doi{10.1038/s41467-017-00665-7}.
-\newblock URL \url{https://www.nature.com/articles/s41467-017-00665-7}.
-
-\bibitem[Silva and Vernek(2016)]{silva_andreev_2016}
-Joelson~F. Silva and E.~Vernek.
-\newblock Andreev and {Majorana} bound states in single and double quantum dot
-  structures.
-\newblock \emph{Journal of Physics: Condensed Matter}, 28\penalty0
-  (43):\penalty0 435702, September 2016.
-\newblock ISSN 0953-8984.
-\newblock \doi{10.1088/0953-8984/28/43/435702}.
-\newblock URL \url{https://doi.org/10.1088%2F0953-8984%2F28%2F43%2F435702}.
-
-\bibitem[Ivanov(2017)]{ivanov_coherent_2017}
-T.~I. Ivanov.
-\newblock Coherent tunneling through a double quantum dot coupled to {Majorana}
-  bound states.
-\newblock \emph{Physical Review B}, 96\penalty0 (3):\penalty0 035417, July
-  2017.
-\newblock \doi{10.1103/PhysRevB.96.035417}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.96.035417}.
 
 \bibitem[Schuray et~al.(2017)Schuray, Weithofer, and Recher]{schuray_fano_2017}
 Alexander Schuray, Luzie Weithofer, and Patrik Recher.

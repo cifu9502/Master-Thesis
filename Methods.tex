@@ -1,7 +1,6 @@
 \chapter{Theory and Methods \label{chap: Methods}}
 
-In this chapter we describe the two methods that we will use to compute the density of states in this project. Using the ballistic transport method, we will obtain an exact analytical expression of this quantity for non-interacting systems (\ref{sec:transport}). The physics of interacting systems is more complex and does not support an exact approach. Instead, we appeal to the renown numerical renormalization group (NRG) to deal with the strong correlations of these systems \ref{sec:The-Numerical-Renormaliztion} . Both models will be tested on the model of a double quantum dot attached to a metallic lead.
-We will observe that at very low energies, the physics of interacting systems emulates characteristic features of non-interacting models. 
+In this chapter we describe the two methods that we will use to compute the density of states in this project. Using the ballistic transport method, we will obtain an exact analytical expression of this quantity for non-interacting systems (\ref{sec:transport}). The physics of interacting systems is more complex and does not support an exact approach. Instead, we appeal to the renown numerical renormalization group (NRG) to deal with the strong correlations of the interacting Anderson model \ref{sec:The-Numerical-Renormaliztion} . Both models will be tested on the model of a double quantum dot attached to a metallic lead. We will observe that at very low energies, the physics of interacting systems emulates characteristic features of non-interacting models. The methods developed in this chapter will be probed again in \ref{chap:Majorana} for a QD coupled to a Majorana chain. Finally we will use them to study the the objective of this thesis, a double quantum dot attached to a Majorana chain \ref{chap:Results}.  
 
 
 \section{Ballistic transport \label{sec:transport} }
@@ -250,6 +249,7 @@ This algorithm will be our main method to find the green function and therefore 
 % \Jesus{I promise a real proof of this fact to be included in the abstract. The idea is using induction in graphs  \ref{sec:AbsGraphmethod}. }
 
 \subsection{Ballistic transport in a  double quantum dot \label{sec:GreedDQD}}
+
 
 In this subsection we describe the remaining steps to extract the density of states of the double quantum dot from the Green function \ref{eq:SumSolGreen}. We will plot the results and observe the evolution of the DOS while tuning the parameters of the model. 
 
@@ -685,21 +685,21 @@ It is known that the Fourier transform of an expression of the form ${\displayst
 \rho_{d}=\frac{1}{Z(\beta)}\sum_{\vert j\rangle,\vert q\rangle}{\displaystyle \left(e^{-\beta E_{j}}+e^{-\beta E_{q}} \right) \delta\left(\omega-E_{j}+E_{q} \right) } \left\Vert \langle j\vert d\vert q\rangle \right\Vert^{2}. \label{eq:DOSeigenstates}
 \end{equation}
 
-\noindent This new expression for the DOS can be integrated to NRG code in different ways . A first method created by Costi \textit{et al.} consisted in computing \eqref{eq:DOSeigenstates} with the eigenstates of each shell Hamiltonian $H_N$  \cite{costi_transport_1994}. It is necessary to take into account that the operator $\langle j\vert d\vert q\rangle\right\Vert$ is constantly rotating after each diagonalization procedure generating different representation. Then, an important part of Costi's algorithm is to obtain these new representations of $\langle j\vert d\vert q\rangle\right\Vert_N$ recursively starting from an input representation $\langle j\vert d\vert q\rangle\right\Vert_{N=0}$.
+\noindent This new expression for the DOS can be integrated to NRG code in different ways . A first method created by Costi \textit{et al.} consisted in computing \eqref{eq:DOSeigenstates} with the eigenstates of each shell Hamiltonian $H_N$  \cite{costi_transport_1994}. It is necessary to take into account that the operator $\langle j\vert d\vert q\rangle\Vert$ is constantly rotating after each diagonalization procedure generating different representation. Then, an important part of Costi's algorithm is to obtain these new representations of $\langle j\vert d\vert q\rangle\Vert_N$ recursively starting from an input representation $\langle j\vert d\vert q\rangle\Vert_{N=0}$.
 
 Although Costi's method predicts accurately the DOS at low-energies, it fails to fit the high energy levels. The method that corrects this problem receives the name of Density Matrix Numerical Renormalization Group (DMNRG) \cite{hofstetter_generalized_2000}. The main idea of DMNRG is to include the entanglement corrections with the lower energy-states using the density matrix formalism. For this, Hofstetter defines the density matrix at the last shell Hamiltonian $N_{max}$ $\hat{\rho}$ as the thermal mixed state 
 
 \begin{equation}
-\hat{\rho}_{N_{max}} = \sum_{j}e^{-\beta E_{j}}\vert j          \rangle_N_{max} \langle j\vert, \label{eq:rho_n}
+\hat{\rho}_{N_{max}} = \sum_{j}e^{-\beta E_{j}}\vert j          \rangle_{N_{max}} \langle j\vert, \label{eq:rho_n}
 \end{equation}
 
-\noindent where the subindex $N_{max}$ pinpoints that $\vert j \rangle_N_{max} \langle j\vert$ is an eigenstate of the last shell Hamiltonian $H_{N_max}$. 
+\noindent where the subindex $N_{max}$ pinpoints that $\vert j \rangle_{N_{max}} \langle j\vert$ is an eigenstate of the last shell Hamiltonian $H_{N_max}$. 
 
 With this new density matrix we could rewrite \ref{eq:MeanGreen} as 
 \begin{equation}
-G_{d,d^{\dagger}}^{N_{max}}(t)\left = \text{Tr}\left(\hat{\rho}_{N_{max}}\mathbb{T}\left[\left\{ d^{\dagger},d\right\} \right]\right). 
+G_{d,d^{\dagger}}^{N_{max}}(t) = \text{Tr} \left( \hat{\rho}_{N_{max}}\mathbb{T}\left[\left\{ d^{\dagger},d\right\} \right]\right). 
 \end{equation}
-\noindent From the Green function $G_{d,d^{\dagger}}^{N_{max}}(t)\left$ we can obtain the density of states associated to the temperature $T_{N_max}$. Nevertheless, these results are not relevant at higher temperatures. 
+\noindent From the Green function $G_{d,d^{\dagger}}^{N_{max}}(t)$ we can obtain the density of states associated to the temperature $T_{N_max}$. Nevertheless, these results are not relevant at higher temperatures. 
 
 \begin{figure}
 \centering
@@ -723,7 +723,7 @@ The DM-NRG code applies recursively this idea to obtain the density matrix corre
 \end{equation}
 and the density of states at each temperature regime can be computed at each stage from the green function 
 \begin{equation}
-G_{d,d^{\dagger}}^{N}(t)\left = \text{Tr}\left(\hat{\rho}_{N}\mathbb{T}\left[\left\{ d^{\dagger},d\right\} \right]\right). 
+G_{d,d^{\dagger}}^{N} (t) = \text{Tr} \left( \hat{\rho}_{N}\mathbb{T}\left[ \{ d^{\dagger},d \} \right] \right). 
 \end{equation}
 
 The DM-NRG algorithm produces significantly better results  at high energies than Costi's initial idea. Indeed, DM-NRG is still one of the best methods to compute dynamic quantities of an impurity system. In the following subsection we will some details of how DM-NRG is integrated with the NRG code. 
@@ -812,16 +812,23 @@ For the entire thesis we will fix the value of the coulomb repulsion parameters 
 
 
 
- NRG-code  We used the same configurations from \ref{fig:GreenDQD}. 
+ NRG-code  We used the same configurations from \ref{fig:GreenDQD}. The  results appear in \ref{fig:NRG-DQD}:
 
+ \begin{enumerate}
+ 
+\item The single QD attached to a metallic lead is a particular case of the double quantum dot model, where the second dot is not attached $\Gamma_2 = t_{dots}=0$.  \ref{fig:NRG-DQD} shows the NRG results for this case. The three plots show the external Coulomb peaks at $e_1 = \frac{U}{2} \sim 8.62\Gamma_1$, which represent the DOS of the energy levels. In addition  Figure \ref{fig:NRG-1D} shows a central peak at the Fermi energy. Note, that there shouldn't be a state in this position since it is between two energy levels (Coulomb peaks).\textbf{This is the Kondo Peak} \cite{hewson_kondo_1997}.  
+\item 
+In Figure \ref{fig:NRGDQD-G2} we observe the DOS when the two QDs are symmetrically attached.  At low energies, the inset shows the appearance of two satellite peaks representing the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction. This is an anti-ferromagnetic coupling that appears in the interacting case due to the strong correlations between both dots. A detailed explanation  these new states is included in section \ref{sec:DoublePeak}.  
+\item The most interesting case is in Figure \ref{fig:NRGDQD-tdots}. As we already observed in the non-interacting case, the interference with the second dot completely destroys the zero mode which is now formed by the Kondo peak. This effect is observed at low energies closed to $t_{dots}=0.689\Gamma$. The paper describing this result was a central part of one of my advisor's project \cite{dias_da_silva_transmission_2008}. This result encouraged me to formulate the following question. What happens if we attached a Majorana mode to one of these dots?. Would it the destroyed by interference or it will survive to it. Answering this question is one of the mean objectives of chapter \ref{chap:Results}. 
+ \end{enumerate}
+
+With these results we finish the first test of our methods. We will probe them again in the next chapter where we present a motivation to the search of Majorana fermions in quantum dots. This chapter will eventually lead us to understand the importance of studying multi-dot Majorana systems in \ref{chap:Results}. There, we will employ these methods again to study the manipulation of  Majorana zero modes in double quantum dot. 
 
 %$$ -\ed{1,2} = \frac{U_{1,2}}{2}  = 8.62\Gamma_1$$
 
-The single QD attached to a metallic lead is a particular case of the double quantum dot model, where the second dot is not attached $\Gamma_2 = t_{dots}=0$.  \ref{fig:NRG-DQD} shows the NRG results for this case. The three plots show the external Coulomb peaks at $e_1 = \frac{U}{2} \sim 8.62\Gamma_1$, which represent the DOS of the energy levels. In addition  Figure \ref{fig:NRG-1D} shows a central peak at the Fermi energy. \textbf{This is the Kondo Peak}. 
 
-In Figure \ref{fig:NRGDQD-G2} we observe the DOS when the two QDs are symmetrically attached.  At low energies, the inset shows the appearance of two satellite peaks representing the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction. This is an anti-ferromagnetic coupling that appears in the interacting case due to the strong correlations between both dots. A detailed explanation of the appearance of these new states is included in section \ref{sec:DoublePeak}.  
 
-The most interesting case is in Figure \ref{fig:NRGDQD-tdots}. As we already observed in the non-interacting case, the interference with the second dot completely destroys the Kondo peak. This effect is observed at low energies closed to $t_{dots}=0.689\Gamma$. The paper describing this result was a central part of one of my advisor's project. This result encouraged me to formulate the following question. What happens if we attached a Majorana mode to one of these dots?. Would it e destroyed by interference or it will survive to it. Answering this question is one of the mean objectives of chapter \ref{chap:Results}. 
+
 
 
 
