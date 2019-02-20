@@ -48,28 +48,10 @@
 	"buffers":
 	[
 		{
-			"file": "Intro.tex",
-			"settings":
-			{
-				"buffer_size": 8032,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "Majorana.tex",
 			"settings":
 			{
-				"buffer_size": 48997,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Kitaev-Majorana.bib",
-			"settings":
-			{
-				"buffer_size": 65792,
+				"buffer_size": 51802,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -78,7 +60,25 @@
 			"file": "main.tex",
 			"settings":
 			{
-				"buffer_size": 8146,
+				"buffer_size": 8138,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Preliminars.tex",
+			"settings":
+			{
+				"buffer_size": 26542,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Kondo.bib",
+			"settings":
+			{
+				"buffer_size": 37512,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -87,7 +87,7 @@
 			"file": "main.bbl",
 			"settings":
 			{
-				"buffer_size": 14978,
+				"buffer_size": 23141,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -105,10 +105,6 @@
 		"selected_items":
 		[
 			[
-				"v",
-				"LaTeXTools: View PDF"
-			],
-			[
 				"b",
 				"Build With: LaTeX - Basic Builder"
 			],
@@ -118,6 +114,10 @@
 			],
 			[
 				"vi",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"v",
 				"LaTeXTools: View PDF"
 			],
 			[
@@ -189,12 +189,12 @@
 	],
 	"file_history":
 	[
-		"/home/cifu/Master-Thesis/main.aux",
+		"/home/cifu/Master-Thesis/Intro.tex",
 		"/home/cifu/Master-Thesis/Kitaev-Majorana.bib",
+		"/home/cifu/Master-Thesis/main.aux",
 		"/home/cifu/Master-Thesis/NResults.tex",
 		"/home/cifucito/Master-Thesis/Majorana-QD.bib",
 		"/home/cifucito/Master-Thesis/Kitaev-Majorana.bib",
-		"/home/cifu/Master-Thesis/Intro.tex",
 		"/home/cifu/Master-Thesis/Methods.tex",
 		"/home/cifu/Master-Thesis/Kondo.bib",
 		"/home/cifu/Master-Thesis/main.tex",
@@ -254,54 +254,24 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Intro.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8032,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1531,
-								1531
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 103.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "Majorana.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 48997,
+						"buffer_size": 51802,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								44324,
-								44324
+								2906,
+								2906
 							]
 						],
 						"settings":
@@ -309,7 +279,7 @@
 							"WordCount":
 							{
 								"changes": 0,
-								"count": 4948,
+								"count": 5255,
 								"modified": false,
 								"selection": false,
 								"status": -1,
@@ -320,63 +290,34 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 22822.0,
+						"translation.y": 935.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Kitaev-Majorana.bib",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 65792,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1594,
-								1594
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeXTools/BibLaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 326.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "main.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8146,
+						"buffer_size": 8138,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								624,
-								624
+								7798,
+								7798
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 0,
+								"changes": 6,
 								"count": 476,
 								"modified": false,
 								"selection": false,
@@ -386,10 +327,87 @@
 							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 195.0,
+						"translation.y": 4881.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Preliminars.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								296,
+								296
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 5889,
+								"count": 3028,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Kondo.bib",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								10
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 32,
+								"count": 4709,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"syntax": "Packages/LaTeXTools/BibLaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -398,7 +416,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14978,
+						"buffer_size": 23141,
 						"regions":
 						{
 						},
@@ -413,7 +431,8 @@
 						{
 							"WordCount":
 							{
-								"changes": -1,
+								"changes": 4,
+								"count": 915,
 								"modified": true,
 								"selection": true,
 								"status": -1,
@@ -518,7 +537,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 213.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

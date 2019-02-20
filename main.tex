@@ -204,6 +204,7 @@ urlcolor=black
 \maketitle
 \begin{abstract}
 
+
 % \protect\Jesus{Provisional abstract}
 In the last decades the interest in  the \textquotedblleft search
 of Majorana fermions\textquotedblright{} in condensed matter systems
@@ -224,7 +225,8 @@ expand this idea using the numerical renormalization group  to study the model o
 %\listof{Program}{Abbreviations}
 
 \nomenclature{QD}{Quantum Dot}
-\nomenclature{DQD}{Double Quantum Dot}
+\nomenclature{DQD}
+{Double Quantum Dot}
 \nomenclature{DOS}{Density of States}
 \nomenclature{MBS}{Majorana Bound State}
  
@@ -232,10 +234,11 @@ expand this idea using the numerical renormalization group  to study the model o
 
 
 
+
 %Main chapters
- \include{Intro}
- \include{Preliminars}
- \include{Methods}
+\include{Intro}
+\include{Preliminars}
+\include{Methods}
 
 \include{Majorana}
 \include{NResults}
@@ -244,18 +247,18 @@ expand this idea using the numerical renormalization group  to study the model o
 
 
 
-
-
-% \include{Model}
-
-
 \bibliographystyle{unsrtnat}
 \addcontentsline{toc}{section}{\textbf{References}}
 \bibliography{Majorana-QD,Kitaev-Majorana,Kondo}
 \appendix
 %dummy comment inserted by tex2lyx to ensure that this paragraph is not empty
 \include{Append_A}
-%\include{Append_B}
+
 % Indices come here.
 
 \end{document}
+
+
+
+%\include{Append_B}
+% \include{Model}

@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {5.2.5}{The Density Matrix Renormalization Group (DM-NRG) }}{29}{subsection.5.2.5}% 
 \contentsline {subsection}{\numberline {5.2.6}{Specifications of the NRG Code }}{32}{subsection.5.2.6}% 
 \contentsline {subsection}{\numberline {5.2.7}{NRG results in a Double Quantum Dot Coupled to a Metallic Lead}}{33}{subsection.5.2.7}% 
-\contentsline {chapter}{\numberline {6}{The Pursuit of Majorana Fermions }}{36}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}{ Motivation: The Pursuit of Majorana Fermions }}{36}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}{The Kitaev Chain }}{37}{section.6.1}% 
 \contentsline {subsection}{\numberline {6.1.1}{Topological phase transition }}{40}{subsection.6.1.1}% 
 \contentsline {subsection}{\numberline {6.1.2}{Non-abelian statistics }}{43}{subsection.6.1.2}% 
@@ -30,24 +30,25 @@
 \contentsline {subsection}{\numberline {6.3.1}{Model}}{47}{subsection.6.3.1}% 
 \contentsline {subsection}{\numberline {6.3.2}{Non-interacting QD coupled to Majorana chain }}{48}{subsection.6.3.2}% 
 \contentsline {subsection}{\numberline {6.3.3}{Kondo-Majorana physics}}{51}{subsection.6.3.3}% 
-\contentsline {chapter}{\numberline {7}{Coupling the Majorana Zero Mode to a Double Quantum Dot }}{54}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}{Non-interacting case}}{55}{section.7.1}% 
-\contentsline {subsection}{\numberline {7.1.1}{The Green function:}}{55}{subsection.7.1.1}% 
-\contentsline {section}{\numberline {7.2}{NRG for the interacting system}}{57}{section.7.2}% 
-\contentsline {section}{\numberline {7.3}{Manipulation of Majorana zero modes}}{57}{section.7.3}% 
-\contentsline {subsection}{\numberline {7.3.1}{Non-interacting manipulation}}{59}{subsection.7.3.1}% 
-\contentsline {subsection}{\numberline {7.3.2}{Interacting manipulation }}{62}{subsection.7.3.2}% 
-\contentsline {subsection}{\numberline {7.3.3}{ a) Removing Kondo and Majorana with QD-interference }}{67}{subsection.7.3.3}% 
-\contentsline {subsection}{\numberline {7.3.4}{ b) Indirect Majorana after Removing Kondo with QD-interference }}{69}{subsection.7.3.4}% 
-\contentsline {subsection}{\numberline {7.3.5}{ e) Transferring the MZM through gate voltage shifting $\epsilon _{2}$. }}{73}{subsection.7.3.5}% 
-\contentsline {section}{\numberline {7.4}{Particle-Hole symmetric shifting of $\epsilon _{2}=\frac {U}{2}$.}}{75}{section.7.4}% 
-\contentsline {section}{\numberline {7.5}{Shifting $t_2$}}{75}{section.7.5}% 
-\contentsline {section}{\textbf {References}}{77}{figure.7.30}% 
-\contentsline {chapter}{{Bibliography}}{77}{chapter*.2}% 
+\contentsline {subsection}{\numberline {6.3.4}{State-of-the-art and prospective applications}}{53}{subsection.6.3.4}% 
+\contentsline {chapter}{\numberline {7}{Coupling the Majorana Zero Mode to a Double Quantum Dot }}{55}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}{Applying our methods to the DQD-Majorana system}}{56}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}{Non-interacting Green function:}}{56}{subsection.7.1.1}% 
+\contentsline {subsection}{\numberline {7.1.2}{NRG for the interacting system}}{58}{subsection.7.1.2}% 
+\contentsline {section}{\numberline {7.2}{Manipulation of Majorana zero modes}}{59}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}{Non-interacting manipulation}}{60}{subsection.7.2.1}% 
+\contentsline {subsection}{\numberline {7.2.2}{Interacting manipulation }}{63}{subsection.7.2.2}% 
+\contentsline {section}{\numberline {7.3}{Additional results}}{68}{section.7.3}% 
+\contentsline {subsection}{\numberline {7.3.1}{Indirect exchange through the Majorana mode}}{68}{subsection.7.3.1}% 
+\contentsline {subsection}{\numberline {7.3.2}{Indirect Majorana coupling through the lead}}{69}{subsection.7.3.2}% 
+\contentsline {subsection}{\numberline {7.3.3}{Critical behavior in zero-bias DOS }}{70}{subsection.7.3.3}% 
+\contentsline {chapter}{\numberline {8}{Conclusions}}{71}{chapter.8}% 
+\contentsline {section}{\textbf {References}}{73}{figure.8.1}% 
+\contentsline {chapter}{{Bibliography}}{73}{chapter*.1}% 
 \contentsline {part}{{Appendices}}{}{}
-\contentsline {chapter}{\numberline {A}{Appendix}}{83}{appendix.A}% 
-\contentsline {section}{\numberline {A.1}{From the logarithmic discretization to the Wilson's chain.}}{83}{section.A.1}% 
-\contentsline {subsubsection}{{Logarithmic Discretization:}}{83}{section*.3}% 
-\contentsline {subsubsection}{{Mapping the Anderson model to a Chain-Hamiltonian}}{85}{section*.4}% 
-\contentsline {chapter}{\numberline {B}{Three peak appearance in the Double Quantum Dot model.}}{88}{appendix.B}% 
-\contentsline {section}{\numberline {B.1}{Initial DQD-Majorana Hamiltonian.}}{89}{section.B.1}% 
+\contentsline {chapter}{\numberline {A}{Appendix}}{80}{appendix.A}% 
+\contentsline {section}{\numberline {A.1}{From the logarithmic discretization to the Wilson's chain.}}{80}{section.A.1}% 
+\contentsline {subsubsection}{{Logarithmic Discretization:}}{80}{section*.2}% 
+\contentsline {subsubsection}{{Mapping the Anderson model to a Chain-Hamiltonian}}{82}{section*.3}% 
+\contentsline {chapter}{\numberline {B}{Three peak appearance in the Double Quantum Dot model.}}{85}{appendix.B}% 
+\contentsline {section}{\numberline {B.1}{Initial DQD-Majorana Hamiltonian.}}{86}{section.B.1}% 

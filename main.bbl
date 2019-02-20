@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -470,7 +470,7 @@ A.~Manchon, H.~C. Koo, J.~Nitta, S.~M. Frolov, and R.~A. Duine.
 
 \bibitem[Lee et~al.(2012)Lee, Jiang, Aguado, Katsaros, Lieber, and
   De~Franceschi]{lee_zero-bias_2012}
-Eduardo J.~H. Lee, Xiaocheng Jiang, Ramón Aguado, Georgios Katsaros,
+Eduardo J.~H. Lee, Xiaocheng Jiang, Ram\'on Aguado, Georgios Katsaros,
   Charles~M. Lieber, and Silvano De~Franceschi.
 \newblock Zero-{Bias} {Anomaly} in a {Nanowire} {Quantum} {Dot} {Coupled} to
   {Superconductors}.
@@ -500,5 +500,61 @@ G.~G\'orski, J.~Bara\'nski, I.~Weymann, and T.~Domański.
 \newblock ISSN 2045-2322.
 \newblock \doi{10.1038/s41598-018-33529-1}.
 \newblock URL \url{https://www.nature.com/articles/s41598-018-33529-1}.
+
+\bibitem[Žitko and Simon(2011)]{zitko_quantum_2011}
+Rok Žitko and Pascal Simon.
+\newblock Quantum impurity coupled to {Majorana} edge fermions.
+\newblock \emph{Physical Review B}, 84\penalty0 (19):\penalty0 195310, November
+  2011.
+\newblock \doi{10.1103/PhysRevB.84.195310}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.84.195310}.
+
+\bibitem[Malciu et~al.(2018)Malciu, Mazza, and Mora]{malciu_braiding_2018}
+Corneliu Malciu, Leonardo Mazza, and Christophe Mora.
+\newblock Braiding {Majorana} zero modes using quantum dots.
+\newblock \emph{Physical Review B}, 98\penalty0 (16):\penalty0 165426, October
+  2018.
+\newblock \doi{10.1103/PhysRevB.98.165426}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.98.165426}.
+
+\bibitem[Su et~al.(2017)Su, Tacla, Hocevar, Car, Plissard, Bakkers, Daley,
+  Pekker, and Frolov]{su_andreev_2017}
+Zhaoen Su, Alexandre~B. Tacla, Moïra Hocevar, Diana Car, Sébastien~R.
+  Plissard, Erik P. A.~M. Bakkers, Andrew~J. Daley, David Pekker, and Sergey~M.
+  Frolov.
+\newblock Andreev molecules in semiconductor nanowire double quantum dots.
+\newblock \emph{Nature Communications}, 8\penalty0 (1):\penalty0 585, September
+  2017.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/s41467-017-00665-7}.
+\newblock URL \url{https://www.nature.com/articles/s41467-017-00665-7}.
+
+\bibitem[Silva and Vernek(2016)]{silva_andreev_2016}
+Joelson~F. Silva and E.~Vernek.
+\newblock Andreev and {Majorana} bound states in single and double quantum dot
+  structures.
+\newblock \emph{Journal of Physics: Condensed Matter}, 28\penalty0
+  (43):\penalty0 435702, September 2016.
+\newblock ISSN 0953-8984.
+\newblock \doi{10.1088/0953-8984/28/43/435702}.
+\newblock URL \url{https://doi.org/10.1088%2F0953-8984%2F28%2F43%2F435702}.
+
+\bibitem[Ivanov(2017)]{ivanov_coherent_2017}
+T.~I. Ivanov.
+\newblock Coherent tunneling through a double quantum dot coupled to {Majorana}
+  bound states.
+\newblock \emph{Physical Review B}, 96\penalty0 (3):\penalty0 035417, July
+  2017.
+\newblock \doi{10.1103/PhysRevB.96.035417}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.96.035417}.
+
+\bibitem[Schuray et~al.(2017)Schuray, Weithofer, and Recher]{schuray_fano_2017}
+Alexander Schuray, Luzie Weithofer, and Patrik Recher.
+\newblock Fano resonances in {Majorana} bound states--quantum dot hybrid
+  systems.
+\newblock \emph{Physical Review B}, 96\penalty0 (8):\penalty0 085417, August
+  2017.
+\newblock \doi{10.1103/PhysRevB.96.085417}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.96.085417}.
 
 \end{thebibliography}

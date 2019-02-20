@@ -9,37 +9,57 @@ A level-1 auxiliary file: NResults.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
 Database file #1: Majorana-QD.bib
-I was expecting a `,' or a `}'---line 29 of file Majorana-QD.bib
+Repeated entry---line 108 of file Majorana-QD.bib
+ : @article{heck_coulomb-assisted_2012
+ :                                    ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 171 of file Majorana-QD.bib
  : 
  : @article{liu_detecting_2011,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Database file #2: Kitaev-Majorana.bib
-Repeated entry---line 283 of file Kitaev-Majorana.bib
+Repeated entry---line 199 of file Kitaev-Majorana.bib
+ : @article{zitko_quantum_2011
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 265 of file Kitaev-Majorana.bib
  : @article{heck_coulomb-assisted_2012
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 301 of file Kitaev-Majorana.bib
+Repeated entry---line 283 of file Kitaev-Majorana.bib
  : @article{nayak_non-abelian_2008
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 336 of file Kitaev-Majorana.bib
+Repeated entry---line 299 of file Kitaev-Majorana.bib
+ : @article{su_andreev_2017
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 318 of file Kitaev-Majorana.bib
  : @article{nadj-perge_observation_2014
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 573 of file Kitaev-Majorana.bib
+Repeated entry---line 362 of file Kitaev-Majorana.bib
+ : @article{lee_zero-bias_2012
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 385 of file Kitaev-Majorana.bib
+ : @article{schuray_fano_2017
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 555 of file Kitaev-Majorana.bib
  : @article{das_zero-bias_2012
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 592 of file Kitaev-Majorana.bib
+Repeated entry---line 574 of file Kitaev-Majorana.bib
  : @article{deng_anomalous_2012
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 609 of file Kitaev-Majorana.bib
+Repeated entry---line 591 of file Kitaev-Majorana.bib
  : @article{oreg_helical_2010
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 625 of file Kitaev-Majorana.bib
+Repeated entry---line 607 of file Kitaev-Majorana.bib
  : @article{lutchyn_majorana_2010
  :                               ,
 I'm skipping whatever remains of this entry
@@ -67,45 +87,45 @@ Warning--empty year in deng_majorana_2016
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
-You've used 53 entries,
+You've used 59 entries,
             2481 wiz_defined-function locations,
-            1001 strings with 18395 characters,
-and the built_in function-call counts, 23457 in all, are:
-= -- 2041
-> -- 1319
-< -- 24
-+ -- 504
-- -- 398
-* -- 2199
-:= -- 3931
-add.period$ -- 281
-call.type$ -- 53
-change.case$ -- 105
-chr.to.int$ -- 53
-cite$ -- 68
-duplicate$ -- 1010
-empty$ -- 1926
-format.name$ -- 461
-if$ -- 4832
+            1043 strings with 19814 characters,
+and the built_in function-call counts, 26031 in all, are:
+= -- 2266
+> -- 1455
+< -- 27
++ -- 556
+- -- 438
+* -- 2444
+:= -- 4360
+add.period$ -- 313
+call.type$ -- 59
+change.case$ -- 117
+chr.to.int$ -- 59
+cite$ -- 74
+duplicate$ -- 1124
+empty$ -- 2145
+format.name$ -- 511
+if$ -- 5369
 int.to.chr$ -- 1
-int.to.str$ -- 54
-missing$ -- 55
-newline$ -- 395
-num.names$ -- 159
-pop$ -- 299
+int.to.str$ -- 60
+missing$ -- 61
+newline$ -- 439
+num.names$ -- 177
+pop$ -- 327
 preamble$ -- 1
-purify$ -- 53
+purify$ -- 59
 quote$ -- 0
-skip$ -- 521
+skip$ -- 580
 stack$ -- 0
-substring$ -- 1079
-swap$ -- 154
+substring$ -- 1190
+swap$ -- 172
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 359
+type$ -- 401
 warning$ -- 15
-while$ -- 174
+while$ -- 192
 width$ -- 0
-write$ -- 931
-(There were 10 error messages)
+write$ -- 1037
+(There were 15 error messages)
