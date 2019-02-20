@@ -685,7 +685,7 @@ It is known that the Fourier transform of an expression of the form ${\displayst
 \rho_{d}=\frac{1}{Z(\beta)}\sum_{\vert j\rangle,\vert q\rangle}{\displaystyle \left(e^{-\beta E_{j}}+e^{-\beta E_{q}} \right) \delta\left(\omega-E_{j}+E_{q} \right) } \left\Vert \langle j\vert d\vert q\rangle \right\Vert^{2}. \label{eq:DOSeigenstates}
 \end{equation}
 
-\noindent This new expression for the DOS can be integrated to NRG code in different ways . A first method created by Costi \textit{et al.} consisted in computing \eqref{eq:DOSeigenstates} with the eigenstates of each shell Hamiltonian $H_N$  \cite{costi_transport_1994}. It is necessary to take into account that the operator $\langle j\vert d\vert q\rangle\right\Vert$ is constantly rotating after each diagonalization procedure generating different representation. Then, an important part of Costi's algorithm is to obtain these new representations of $\langle j\vert d\vert q\rangle\right\Vert_N$ recursively starting from an input representation $\langle j\vert d\vert q\rangle\right\Vert_{N=0}$.
+\noindent This new expression for the DOS can be integrated to NRG code in different ways . A first method created by Costi \textit{et al.} consisted in computing \eqref{eq:DOSeigenstates} with the eigenstates of each shell Hamiltonian $H_N$  \cite{costi_transport_1994}. It is necessary to take into account that the operator $\langle j \left\Vert d\vert q\rangle \right\Vert$ is constantly rotating after each diagonalization procedure generating different representation. Then, an important part of Costi's algorithm is to obtain these new representations of $\langle j\vert d\vert q\rangle\right\Vert_N$ recursively starting from an input representation $\langle j\vert d\vert q\rangle\right\Vert_{N=0}$.
 
 Although Costi's method predicts accurately the DOS at low-energies, it fails to fit the high energy levels. The method that corrects this problem receives the name of Density Matrix Numerical Renormalization Group (DMNRG) \cite{hofstetter_generalized_2000}. The main idea of DMNRG is to include the entanglement corrections with the lower energy-states using the density matrix formalism. For this, Hofstetter defines the density matrix at the last shell Hamiltonian $N_{max}$ $\hat{\rho}$ as the thermal mixed state 
 
@@ -693,12 +693,14 @@ Although Costi's method predicts accurately the DOS at low-energies, it fails to
 \hat{\rho}_{N_{max}} = \sum_{j}e^{-\beta E_{j}}\vert j          \rangle_N_{max} \langle j\vert, \label{eq:rho_n}
 \end{equation}
 
-\noindent where the subindex $N_{max}$ pinpoints that $\vert j \rangle_N_{max} \langle j\vert$ is an eigenstate of the last shell Hamiltonian $H_{N_max}$. 
+\noindent where the subindex $N_{max}$ pinpoints that $\vert j \rangle_{N_{max}} \langle j\vert$ is an eigenstate of the last shell Hamiltonian $H_{N_max}$. 
 
 With this new density matrix we could rewrite \ref{eq:MeanGreen} as 
 \begin{equation}
-G_{d,d^{\dagger}}^{N_{max}}(t)\left = \text{Tr}\left(\hat{\rho}_{N_{max}}\mathbb{T}\left[\left\{ d^{\dagger},d\right\} \right]\right). 
+G_{d,d^{\dagger}}^{N_{max}}(t)\left = \text{Tr}\left(\hat{\rho}_{N_{max}}\mathbb{T}\left[\left\{ d^{\dagger},d\right\} \right] \right). 
+
 \end{equation}
+
 \noindent From the Green function $G_{d,d^{\dagger}}^{N_{max}}(t)\left$ we can obtain the density of states associated to the temperature $T_{N_max}$. Nevertheless, these results are not relevant at higher temperatures. 
 
 \begin{figure}
