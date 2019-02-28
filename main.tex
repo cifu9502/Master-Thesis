@@ -18,7 +18,9 @@
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{esint}
-\usepackage[numbers]{natbib}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[nottoc]{tocbibind}
+% \usepackage[encoding]{inputenc}
 
 \usepackage[unicode=true,pdfusetitle,
  bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
@@ -149,6 +151,8 @@ urlcolor=black
 \AtBeginDocument{%
 \let\ref\autoref
 % \renewcommand\equationautorefname{\@gobble}
+\def\equationautorefname~#1\null{#1\null}
+% \def\equationautorefname~#1\null{~#1\null}
 }
 
 
@@ -241,11 +245,10 @@ In addition, recent experimental works reporting the detection of such quasi-par
 %Main chapters
 \include{Intro}
 \include{Preliminars}
-\include{Methods}
+% \include{Methods}
 
 \include{Majorana}
-\include{NResults}
-
+% \include{NResults}
 
 
 \chapter{Conclusions}
@@ -258,9 +261,9 @@ Moreover,  we introduced the Graph-Gauss-Jordan algorithm (\ref{sec:GraphMethod}
 In \ref{chap:Results} we used the methods from chapter \ref{chap: Methods} to study the transitions of the Majorana zero modes  inside a double quantum dots. Comparing the exact analytical solution in the non-interacting system and the NRG results for interacting quantum dots, we were able to characterized the displacements of the MZM inside the double quantum dot for the three setups in FIG.\ref{fig:MajoranaModels}. All these manipulations are summarized in \ref{fig:ResultModels} . We observe a considerable agreement regarding the location of the Majorana signature between the interacting and non-interacting results with minor differences: 
 
 \begin{itemize}
-    \item[]FIG.\ref{fig:ResultModels}(a): In the symmetric coupling the MZM leaks inside both dots. For interacting dots, the Majorana signature will emerge near the Kondo temperature.   At this regime the system presents combined Kondo-Majorana physics . Additional satellite peaks produced by the indirect exchange through the lead and the MZM appear at low energies. If the gate voltage of one dot is turned on the MZM is induced to tunnel only into the other dot, which is the key to MZM manipulation. 
-    \item[]FIG.\ref{fig:MajoranaModels}(b): In this system the spin-$\up$ zero mode at QD1 (The Kondo peak if the system is interacting) is destroyed by quantum interference with the second dot. This interference will also destroy the MZM in the first dot but a type I Majorana signature will still appear in the second dot. The Majorana mode can be induced to tunnel back into the first dot if a gate voltage is applied on the second dot. This signature is visible at very low energies (bellow $0.1\Gamma_1$) in the interacting case. 
-    \item[]FIG.\ref{fig:MajoranaModels}(c): An indirect type II Majorana signature is observed in the first dot. This signature is robust, specially in the interacting case, where it is present in all configurations, despite gate voltage tunning. 
+    \item[]\ref{fig:ResultModels}(a): In the symmetric coupling the MZM leaks inside both dots. For interacting dots, the Majorana signature will emerge near the Kondo temperature.   At this regime the system presents combined Kondo-Majorana physics . Additional satellite peaks produced by the indirect exchange through the lead and the MZM appear at low energies. If the gate voltage of one dot is turned on the MZM is induced to tunnel only into the other dot, which is the key to MZM manipulation. 
+    \item[]\ref{fig:MajoranaModels}(b): In this system the spin-$\up$ zero mode at QD1 (The Kondo peak if the system is interacting) is destroyed by quantum interference with the second dot. This interference will also destroy the MZM in the first dot but a type I Majorana signature will still appear in the second dot. The Majorana mode can be induced to tunnel back into the first dot if a gate voltage is applied on the second dot. This signature is visible at very low energies (bellow $0.1\Gamma_1$) in the interacting case. 
+    \item[]\ref{fig:MajoranaModels}(c): An indirect type II Majorana signature is observed in the first dot. This signature is robust, specially in the interacting case, where it is present in all configurations, despite gate voltage tunning. 
 
 \end{itemize}
 
@@ -283,6 +286,7 @@ Besides MZM manipulation we also pointed out other cases that could lead to futu
 
 
 \bibliographystyle{unsrtnat}
+% \bibliographystyle{ieeetr}
 \addcontentsline{toc}{section}{\textbf{References}}
 \bibliography{Majorana-QD,Kitaev-Majorana,Kondo}
 \appendix

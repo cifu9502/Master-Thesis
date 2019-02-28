@@ -59,7 +59,7 @@
 			"file": "Majorana.tex",
 			"settings":
 			{
-				"buffer_size": 54453,
+				"buffer_size": 24655,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -68,16 +68,25 @@
 			"file": "main.tex",
 			"settings":
 			{
-				"buffer_size": 8137,
+				"buffer_size": 13435,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Majorana-QD.bib",
+			"file": "main.bbl",
 			"settings":
 			{
-				"buffer_size": 27569,
+				"buffer_size": 19306,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Intro.tex",
+			"settings":
+			{
+				"buffer_size": 44188,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -86,7 +95,7 @@
 			"file": "Kitaev-Majorana.bib",
 			"settings":
 			{
-				"buffer_size": 64359,
+				"buffer_size": 58647,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -95,7 +104,7 @@
 			"file": "NResults.tex",
 			"settings":
 			{
-				"buffer_size": 62225,
+				"buffer_size": 60358,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -113,20 +122,28 @@
 		"selected_items":
 		[
 			[
-				"b",
+				"bu",
+				"Build With: LaTeX"
+			],
+			[
+				"buil",
 				"Build With: LaTeX - Basic Builder"
 			],
 			[
-				"",
-				"About"
+				"bui",
+				"LaTeXTools: Build cache of LaTeX packages"
 			],
 			[
-				"bu",
+				"b",
 				"Build With: LaTeX - Basic Builder"
 			],
 			[
 				"vi",
 				"LaTeXTools: View PDF"
+			],
+			[
+				"",
+				"About"
 			],
 			[
 				"v",
@@ -240,6 +257,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Rashba",
+			"semiconducto",
+			"assisted",
+			"gobble",
 			"logc",
 			"Fina",
 			"andreev",
@@ -267,7 +288,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -276,15 +297,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 54453,
+						"buffer_size": 24655,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								472,
-								472
+								63,
+								63
 							]
 						],
 						"settings":
@@ -303,7 +324,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 216.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -315,15 +336,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8137,
+						"buffer_size": 13435,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7706,
-								7706
+								4681,
+								4681
 							]
 						],
 						"settings":
@@ -337,48 +358,42 @@
 								"status": -1,
 								"syntax": "plain text"
 							},
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6856.0,
+						"translation.y": 3213.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Majorana-QD.bib",
+					"file": "main.bbl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27569,
+						"buffer_size": 19306,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6628,
-								6628
+								10806,
+								10806
 							]
 						],
 						"settings":
 						{
-							"WordCount":
-							{
-								"changes": 8,
-								"count": 3540,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"syntax": "Packages/LaTeXTools/BibLaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 4697.0,
+						"translation.y": 5507.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -386,19 +401,49 @@
 				},
 				{
 					"buffer": 3,
-					"file": "Kitaev-Majorana.bib",
+					"file": "Intro.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 64359,
+						"buffer_size": 44188,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20846,
-								20846
+								4308,
+								4308
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1703.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Kitaev-Majorana.bib",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 58647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1878,
+								1878
 							]
 						],
 						"settings":
@@ -416,27 +461,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 749.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "NResults.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 62225,
+						"buffer_size": 60358,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45426,
-								45426
+								0,
+								0
 							]
 						],
 						"settings":
@@ -458,7 +503,7 @@
 						"translation.y": 23780.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -466,7 +511,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -505,13 +550,13 @@
 	},
 	"output.latextools":
 	{
-		"height": 96.0
+		"height": 172.0
 	},
 	"pinned_build_system": "",
 	"project": "MasterThesis.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -549,7 +594,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 203.0,
+	"side_bar_width": 142.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

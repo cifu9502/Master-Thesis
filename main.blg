@@ -1,56 +1,42 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/dev/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Intro.aux
 A level-1 auxiliary file: Preliminars.aux
-A level-1 auxiliary file: Methods.aux
 A level-1 auxiliary file: Majorana.aux
-A level-1 auxiliary file: NResults.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
 Database file #1: Majorana-QD.bib
 Database file #2: Kitaev-Majorana.bib
-Repeated entry---line 183 of file Kitaev-Majorana.bib
- : @article{zitko_quantum_2011
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 249 of file Kitaev-Majorana.bib
- : @article{heck_coulomb-assisted_2012
- :                                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 267 of file Kitaev-Majorana.bib
+Repeated entry---line 283 of file Kitaev-Majorana.bib
  : @article{nayak_non-abelian_2008
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 283 of file Kitaev-Majorana.bib
+Repeated entry---line 299 of file Kitaev-Majorana.bib
  : @article{su_andreev_2017
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 302 of file Kitaev-Majorana.bib
+Repeated entry---line 318 of file Kitaev-Majorana.bib
  : @article{nadj-perge_observation_2014
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 327 of file Kitaev-Majorana.bib
+Repeated entry---line 343 of file Kitaev-Majorana.bib
  : @article{lee_zero-bias_2012
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 344 of file Kitaev-Majorana.bib
- : @article{schuray_fano_2017
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 514 of file Kitaev-Majorana.bib
+Repeated entry---line 530 of file Kitaev-Majorana.bib
  : @article{das_zero-bias_2012
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 533 of file Kitaev-Majorana.bib
+Repeated entry---line 549 of file Kitaev-Majorana.bib
  : @article{deng_anomalous_2012
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 550 of file Kitaev-Majorana.bib
+Repeated entry---line 566 of file Kitaev-Majorana.bib
  : @article{oreg_helical_2010
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 566 of file Kitaev-Majorana.bib
+Repeated entry---line 582 of file Kitaev-Majorana.bib
  : @article{lutchyn_majorana_2010
  :                               ,
 I'm skipping whatever remains of this entry
@@ -63,60 +49,61 @@ Repeated entry---line 243 of file Kondo.bib
  : @article{dias_da_silva_transmission_2008
  :                                         ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "kitaev_unpaired_2003"
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
+Warning--empty journal in deng_majorana_2016
+Warning--empty year in deng_majorana_2016
+Warning--empty year in deng_majorana_2016
 Warning--empty journal in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
 Warning--empty journal in vernek_subtle_2014
 Warning--empty year in vernek_subtle_2014
 Warning--empty year in vernek_subtle_2014
-Warning--empty journal in deng_majorana_2016
-Warning--empty year in deng_majorana_2016
-Warning--empty year in deng_majorana_2016
 Warning--empty journal in lee_kondo_2013
 Warning--empty year in lee_kondo_2013
 Warning--empty year in lee_kondo_2013
-You've used 59 entries,
+You've used 52 entries,
             2481 wiz_defined-function locations,
-            1043 strings with 19813 characters,
-and the built_in function-call counts, 26005 in all, are:
-= -- 2260
-> -- 1455
-< -- 27
-+ -- 556
-- -- 438
-* -- 2442
-:= -- 4354
-add.period$ -- 311
-call.type$ -- 59
-change.case$ -- 117
-chr.to.int$ -- 59
-cite$ -- 74
-duplicate$ -- 1124
-empty$ -- 2145
-format.name$ -- 511
-if$ -- 5363
+            990 strings with 18353 characters,
+and the built_in function-call counts, 23043 in all, are:
+= -- 1965
+> -- 1376
+< -- 19
++ -- 520
+- -- 416
+* -- 2201
+:= -- 3908
+add.period$ -- 277
+call.type$ -- 52
+change.case$ -- 103
+chr.to.int$ -- 52
+cite$ -- 67
+duplicate$ -- 976
+empty$ -- 1857
+format.name$ -- 478
+if$ -- 4717
 int.to.chr$ -- 1
-int.to.str$ -- 60
-missing$ -- 61
-newline$ -- 437
-num.names$ -- 177
-pop$ -- 329
+int.to.str$ -- 53
+missing$ -- 54
+newline$ -- 389
+num.names$ -- 156
+pop$ -- 289
 preamble$ -- 1
-purify$ -- 59
+purify$ -- 52
 quote$ -- 0
-skip$ -- 580
+skip$ -- 491
 stack$ -- 0
-substring$ -- 1190
-swap$ -- 172
-text.length$ -- 2
+substring$ -- 986
+swap$ -- 140
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 401
+type$ -- 352
 warning$ -- 15
-while$ -- 192
+while$ -- 165
 width$ -- 0
-write$ -- 1033
-(There were 13 error messages)
+write$ -- 915
+(There were 10 error messages)
