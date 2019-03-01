@@ -154,13 +154,6 @@ In the ground state $\vert \Omega \rangle$, this parity will be  defined by the 
 
 Both regimes described previously  can be characterized with a topological parameter.  A didactic method to explain is the one used by \citeauthor{alicea_new_2012}\cite{alicea_new_2012}. First of all, suppose that we have an infinite Kitaev chain chain $(N=\infty)$ in  \eqref{eq:HamMajorana}. This system is translation invariant, hence we can make a Fourier transformation to the momentum space as
 
-\begin{figure}[t]
-    \centering
-    \includegraphics[scale=0.8]{IMAGES/Majorana/Topological.png}
-    \caption{ \label{fig:topological}  Path of $\hat{H}_k$ for the interval $[ -\pi, \pi ]$. a) Trivial phase: The resulting path can be homotopically deformed to a point. b) Non-trivial phase: The path is a non-contractible loop around the unitary circle. \protect \Source{By the author}} 
-\end{figure}
-
-
 \begin{equation}
     H = 
     \sum_{k \in BZ} 
@@ -210,6 +203,13 @@ This path can take two forms as we can observe in \ref{fig:topological}. If $\fr
 \end{cases}
 \end{equation}
 \noindent where $\hat{H}_{k=0,y}$ is the $y$-th component of $\hat{H}_{k}$. The term $\hat{H}_{k,y}$ is a particular case of the Pfaffian $\mathcal{P}(k)$, which widely used to characterize topological phase transitions involving  Majorana fermions.
+
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[scale=0.8]{IMAGES/Majorana/Topological.png}
+    \caption{ \label{fig:topological}  Path of $\hat{H}_k$ for the interval $[ -\pi, \pi ]$. a) Trivial phase: The resulting path can be homotopically deformed to a point. b) Non-trivial phase: The path is a non-contractible loop around the unitary circle. \protect \Source{By the author}} 
+\end{figure}
 
 
 In a more general perspective, the mean idea behind this topological characterization relies in the adiabatic theorem.  In simple words, the adiabatic theorem says that a slow evolution of a gaped Hamiltonian will produce a smooth evolution of its  eigenstates, so that the order of energies remains unchanged. 
@@ -301,13 +301,6 @@ Now imagine that we have three Majoranas $\gamma_1, \gamma_2$ and $\gamma_3$ and
 
  One of the main problems to implement real devices capable to exhibit Majorana quasi-particles at the boundaries, is that Majorana's are spin-less. Since all materials have fermion doubling,  it was necessary to endow the system with a physical property that could separate the spin energy bands. To bypass this problem, \citeauthor{lutchyn_majorana_2010}  proposed using a material with strong spin-orbit Rashba interaction \cite{manchon_new_2015} and applying a magnetic field. This would split the energy band by spin, hence destroying fermion doubling. 
 
-\begin{figure}[t]
-\centering
-\includegraphics[scale=0.7]{IMAGES/Majorana/Mwire.png}
-\caption{ \label{fig:spin-orbit} (a) Setup of a Majorana wire with high spin-orbit coupling, over a superconducting plane and an induced Zeeman field. (b) Splitting of the energy bands with different spins in the non-superconducting regime (red and yellow bands). With superconducting proximity , a gap is opened and the red and blue energy bands are projected forming the black bands. \protect\Source{Adapted from \cite{alicea_new_2012}}}
-\end{figure}
-
-
 This idea allowed scientists to designed the first Majorana wires. The recipe consists ingrowing a semi-conducting wire with high spin-orbit coupling, over an s'wave superconductor and inducing a Zeeman magnetic field (\ref{fig:spin-orbit}(a)). Such model is described by a Hamiltonian of the form \cite{alicea_new_2012}$(65)$
 
 \begin{equation}
@@ -336,6 +329,14 @@ And diagonalizing this matrix we obtain that the band splits as
 \end{equation}
 
 \noindent with opposed spins as observed in the blue and red lines of \ref{fig:spin-orbit}(b).  
+
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[scale=0.7]{IMAGES/Majorana/Mwire.png}
+    \caption{ \label{fig:spin-orbit} (a) Setup of a Majorana wire with high spin-orbit coupling, over a superconducting plane and an induced Zeeman field. (b) Splitting of the energy bands with different spins in the non-superconducting regime (red and yellow bands). With superconducting proximity , a gap is opened and the red and blue energy bands are projected forming the black bands. \protect\Source{Adapted from \cite{alicea_new_2012}}}
+\end{figure}
+
 
 The superconducting proximity effect $(\Delta>0)$ opens a gap  that projects the upper and lower bands forming the black bands of \ref{fig:spin-orbit}(b) . This separation of both energy channels allows us to think the conduction band as an spin-less . This system enters into the topological phase  when 
 \begin{equation}
@@ -559,9 +560,9 @@ This thesis is integrated by $4$-major chapters:
 \begin{itemize}
 \item In  \ref{chap:Preliminaries}, we will take a review to the basis of quantum transport in single electron transistors, the Anderson model and the emergence of the Kondo effect in quantum dots. 
 
- \item In \ref{chap: Methods} we provide a description of the methods that we will use to study the Double Quantum Dot-Majorana system. To study non-interacting systems we will use the Zubarev's ballistic transport\cite{zubarev_double-time_1960} which is optimized through the Graph-Gauss-Jordan elimination algorithm define in \ref{sec:GraphMethod}. For non-interacting systems we use Wilson's Numerical Renormalization Group (NRG) technique \citep{wilson_renormalization_1975}. We will probe our methods in a double quantum dot attached to a magnetic field. Hence, background information about double quantum dots systems will be presented in this chapter. 
+ \item In \ref{chap: Methods} we provide a description of the methods that we will use to study the Double Quantum Dot-Majorana system. To study non-interacting systems we will use the Zubarev's ballistic transport\cite{zubarev_double-time_1960} which is optimized through the Graph-Gauss-Jordan elimination algorithm define in \ref{sec:GraphMethod}. For non-interacting systems we use Wilson's Numerical Renormalization Group (NRG) technique \citep{wilson_renormalization_1975}. We will test our methods in a double quantum dot attached to a magnetic field. Hence, background information about double quantum dots systems will be presented in this chapter. 
 
-\item In \ref{chap:Majorana} We will probe our methods in the QD-Majorana system, confirming the results of previous papers \cite{dias_da_silva_transmission_2008,liu_detecting_2011} .
+\item In \ref{chap:Majorana} We will test our methods in the QD-Majorana system, confirming the results of previous papers \cite{dias_da_silva_transmission_2008,liu_detecting_2011} .
 
  % \item Majorana fermions. The discussion will start with the Kitaev chain addressing its main characteristics such as topological characterization and non-abelian statistics . Then we take a look to the real implementations of majorana chains were we will discuss the most recent experimental accomplishments  in the area.  At the end, we face the the problem of a hybrid Quantum Dot-Majorana system using the methods described in \ref{chap: Methods}.
 

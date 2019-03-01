@@ -3,7 +3,9 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Intro.aux
 A level-1 auxiliary file: Preliminars.aux
+A level-1 auxiliary file: Methods.aux
 A level-1 auxiliary file: Majorana.aux
+A level-1 auxiliary file: NResults.aux
 The style file: unsrtnat.bst
 A level-1 auxiliary file: Append_A.aux
 Database file #1: Majorana-QD.bib
@@ -23,6 +25,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 343 of file Kitaev-Majorana.bib
  : @article{lee_zero-bias_2012
  :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 360 of file Kitaev-Majorana.bib
+ : @article{schuray_fano_2017
+ :                           ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 530 of file Kitaev-Majorana.bib
  : @article{das_zero-bias_2012
@@ -65,45 +71,45 @@ Warning--empty year in vernek_subtle_2014
 Warning--empty journal in lee_kondo_2013
 Warning--empty year in lee_kondo_2013
 Warning--empty year in lee_kondo_2013
-You've used 52 entries,
+You've used 56 entries,
             2481 wiz_defined-function locations,
-            990 strings with 18353 characters,
-and the built_in function-call counts, 23043 in all, are:
-= -- 1965
-> -- 1376
-< -- 19
-+ -- 520
-- -- 416
-* -- 2201
-:= -- 3908
-add.period$ -- 277
-call.type$ -- 52
-change.case$ -- 103
-chr.to.int$ -- 52
-cite$ -- 67
-duplicate$ -- 976
-empty$ -- 1857
-format.name$ -- 478
-if$ -- 4717
+            1021 strings with 19289 characters,
+and the built_in function-call counts, 24939 in all, are:
+= -- 2154
+> -- 1432
+< -- 23
++ -- 544
+- -- 432
+* -- 2363
+:= -- 4189
+add.period$ -- 297
+call.type$ -- 56
+change.case$ -- 111
+chr.to.int$ -- 56
+cite$ -- 71
+duplicate$ -- 1067
+empty$ -- 2037
+format.name$ -- 498
+if$ -- 5133
 int.to.chr$ -- 1
-int.to.str$ -- 53
-missing$ -- 54
-newline$ -- 389
-num.names$ -- 156
-pop$ -- 289
+int.to.str$ -- 57
+missing$ -- 58
+newline$ -- 417
+num.names$ -- 168
+pop$ -- 311
 preamble$ -- 1
-purify$ -- 52
+purify$ -- 56
 quote$ -- 0
-skip$ -- 491
+skip$ -- 548
 stack$ -- 0
-substring$ -- 986
-swap$ -- 140
-text.length$ -- 0
+substring$ -- 1132
+swap$ -- 163
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 352
+type$ -- 380
 warning$ -- 15
-while$ -- 165
+while$ -- 182
 width$ -- 0
-write$ -- 915
-(There were 10 error messages)
+write$ -- 985
+(There were 11 error messages)
