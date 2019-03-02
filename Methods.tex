@@ -1,7 +1,6 @@
 \chapter{Theory and Methods \label{chap: Methods}}
 
 
-
 The density of states contains important physical information about the presence of zero-modes which can be caused by the Kondo effect or by a Majorana quasi-particle. Studying this quantity will allow as to observe both effects separately inside each quantum dots. In this chapter we describe the two methods that we will use during the entire project to compute the DOS:
 
 \begin{itemize}
@@ -61,7 +60,7 @@ Note that the sum of $Im[ \langle \alpha  \vert \Green{H}\ket{\alpha'}]$ over al
 \noindent  Two types of Green functions are usually defined in this case.
 
  \begin{align}
-  G^r_{A,B}(t,t') =& -i\theta(t-t')\langle \{ A(t) , B(t') \} \rangle  . \\
+  G^r_{A,B}(t,t') =& -i\theta(t-t')\langle \{ A(t) , B(t') \} \rangle  .  \label{eq:TempGreen}  \\
    G^a_{A,B}(t,t') =& -i\theta(t'-t)\langle \{ A(t) , B(t') \} \rangle  .
  \end{align}
   
@@ -167,6 +166,8 @@ According to the Anderson model the Hamiltonian for this system looks like
 
     % \left(\omega-\epsilon_{2}\right)\Green{d_{2},d_{1}^{\dagger}}= & t_{dots}\Green{d_{1},d_{1}^{\dagger}}+V_{2}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}}. \\
  \noindent This system is already closed, hence, it will have a unique solution. The associated matrix form is  \begin{equation}
+% \include{Majorana}
+% \include{NResults}
 \left[\begin{array}{ccc}
 \omega-\epsilon_{2} & -V_{2} & -t_{dots}\\
 -V_{2}^{*} & \omega-\epsilon_{k} & -V_{1}\\
@@ -192,7 +193,7 @@ Now, our objective is to compute the green function  $\Green{d_{1\downarrow},d_{
 \begin{figure}[t]
     \centering
     \includegraphics[scale=0.3]{IMAGES/Graphs/DQD-Pro.png}
-    \caption{  \label{fig:graphDQD} Graph representation of Gauss-Jordan elimination a) Graph $\GDQD$ b) After the elimination of vertex $c_k$, the energies of dots $d_1$ and $d_2$, and the coupling parameter are changed. c) After Gaussian elimination of dot $2$ the energy of the remaining dot $\epsilon_DQD^+$ represents the transport information through $d_1$ of the entire DQD. \protect\Source{By the author.}}
+    \caption{  \label{fig:graphDQD} Graph representation of Gauss-Jordan elimination a) Graph $\GDQD$ b) After the elimination of vertex $c_k$, the energies of dots $d_1$ and $d_2$, and the coupling parameter are changed. c) After Gaussian elimination of dot $2$ the energy of the remaining dot $\epsilon_DQD^+$ represents the transport information through $d_1$ of the entire DQD. \protect\Source{}}
     
 \end{figure}
 
@@ -347,7 +348,7 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
         \centering
          \includegraphics[scale=0.47]{IMAGES/DQD/Non-interacting.png}
          \caption{\label{fig:GreenDQD} Evolution of the density of states at each QD (Left: dot 1, Right: dot 2) at three distinct arrangements of DQD-lead coupling. The inset at the first column depicts the type of coupling. The purple line represents the tuning variable. The energy unit is $\Gamma_1$. $e_1 =e_2 =0$ in all arrangements. (a),(b) The lead is connected to both QDs. Tuning variable: $\Gamma_2$. (c)(d) Indirect coupling of the second dot through dot one. Tuning variable: $t_{dots}$. (e)(f) Triangular coupling. Tuning variable: $t_{dots}$.  
-         \protect\Source{ By the Author  }}
+         \protect\Source{   }}
     \end{figure}
 % ----------------SUPER FIGURE ---------------------------
 
@@ -371,7 +372,7 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
 %      \subfloat[Attaching QD2 to the lead \label{fig:DQD-G2}]{\includegraphics[scale=0.6]{IMAGES/DQD/g1g2-m.png}} \\
 %     \subfloat[Indirect connection of QD2 \label{fig:DQD-tdots}]{\includegraphics[scale=0.6]{IMAGES/DQD/tdots-m.png}}\\
 %     \subfloat[Breaking PHS with triangular connection \label{fig:DQD-PHS}]{\includegraphics[scale=0.6]{IMAGES/DQD/phs-m.png}}
-%      \caption{\label{fig:GreenDQD} For the tree cases we considered $e_1 =e_2 =0$. The inset shows the set-up. At each case the purple coupling shows the tuning variable. \protect\Source{ By the Author  }}
+%      \caption{\label{fig:GreenDQD} For the tree cases we considered $e_1 =e_2 =0$. The inset shows the set-up. At each case the purple coupling shows the tuning variable. \protect\Source{   }}
 % \end{figure}
 
 
@@ -402,7 +403,7 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
 \begin{figure}[hbt]
 \centering
 \includegraphics[scale=0.45]{IMAGES/DQD/NRG-Final.png}\caption{\label{fig:Discretization}.
-NRG algorithm: The logarithmic discretization of the conduction band according to the discretization parameter $\Lambda$. The system with the lead attached to the QD-impurity is mapped to the Wilson's chain, such that each step of the chain contains the contributions at different energy scales $\Lambda^{-N/2}$. \protect\Source{ By the Author  } }
+NRG algorithm: The logarithmic discretization of the conduction band according to the discretization parameter $\Lambda$. The system with the lead attached to the QD-impurity is mapped to the Wilson's chain, such that each step of the chain contains the contributions at different energy scales $\Lambda^{-N/2}$. \protect\Source{   } }
 \end{figure}
 %--------------------------------------------------
 
@@ -438,7 +439,7 @@ H_{N+1}=T\left[H_{N}\right]=\Lambda^{\frac{1}{2}}H_{N}+\xi_{N}\left(f_{N+1,\sigm
 
 \noindent with 
 \begin{equation}
-H_{-1} := \frac{2 H_d}{1+\Lambda^{-1}}.
+H_{-1} := \frac{2 H_d\Lambda^{-1/2}}{D(1+\Lambda^{-1})}\ ,\ \xi_{-1}=\sqrt{\frac{2\Gamma}{\pi D}}.\label{eq:H-1}
 \end{equation}
 
 Note that at each step  $H_N$ is being rescaled by a factor $\Lambda^(1/2)$ before including the following contribution.  This is performed iteratively to eliminate the high order excitations, which allows to obtain an effective model valid for the lower energies. In consequence, each Hamiltonian $H_N$ represents only the physics that is relevant at the energy scale $\Lambda^{-N/2}$. 
@@ -449,7 +450,7 @@ Note that at each step  $H_N$ is being rescaled by a factor $\Lambda^(1/2)$ befo
 %\end{equation}
 On the other hand, the Renormalization Group transformation $\mathcal{T}$ can be defined as 
 
-$$\mathcal{T}^N H_{-1} =  \frac{1+\Lambda^{-1}}{2}\Lambda^\frac{ N-1 }{2} H_N$$
+$$\mathcal{T}^N H_{-1} =  \frac{1+\Lambda^{-1}}{2}\Lambda^\frac{ -N }{2} H_N$$
 
 \noindent In the limit $\xrightarrow{N\rightarrow\infty}$ we should recover the initial Anderson Hamiltonian. In addition, note that the leading coefficients of the contributions to each Hamiltonian $H_N$ are given by 
 \[
@@ -457,14 +458,14 @@ $$\mathcal{T}^N H_{-1} =  \frac{1+\Lambda^{-1}}{2}\Lambda^\frac{ N-1 }{2} H_N$$
 \]
 \noindent which decays exponentially with the length of the chain. Therefore, we may thing that at some point these new contributions will be so small that the that the map $\mathcal{T}$ will eventually converge. Formally the theory for NRG convergence is too complex for this thesis. However the results show that the operator that truly converges is $\mathcal{T}^2$ and not $\mathcal{T}$\cite{krishna-murthy_renormalization-group_1980}. This has important consequences, for instance the convergence of the code has to be analyzed on odd and even values of $N$ separately. 
 
-To this point the expression \prettyref{eq:chain-Hamiltonian} and the derived limit of $H_N$ to the Anderson Hamiltonian are exact. The first approximations arrive in the following step which include an iterative diagonalization of the Hamiltonian.
+To this point, the equation \eqref{eq:Newchain-Hamiltonian} and the derived limit of $H_N$ to the Anderson Hamiltonian are exact expressions . The first approximations will be performed in the following section which descries the iterative diagonalization of the shell Hamiltonians.
  
  \subsection{Iterative Diagonalization \label{subsec:IterativeDiag}}
 
 \begin{figure}[bt]
 \centering
 \includegraphics[scale=0.5]{IMAGES/DQD/cutting.png}
-\caption{ \label{fig:IterativeDiagonalization} Iterative diagonalization process. a)$\rightarrow$b): Rescaling. b)$\rightarrow$c): Including next site and diagonalizing. c)$\rightarrow$d): Truncation . \protect\Source{ Adapted from \cite{wilson_renormalization_1975} } }
+\caption{ \label{fig:IterativeDiagonalization} Schematic representation of the spectrum in the iterative diagonalization process. a)$\rightarrow$b): Rescaling. b)$\rightarrow$c): Including next site and diagonalizing. c)$\rightarrow$d): Truncation of high energy states . \protect\Source{ Adapted from \cite{bulla_numerical_2008} } }
 \end{figure}
 
 
@@ -482,10 +483,10 @@ The final outcome of this operations will be the complete spectrum of the Anders
 
 \subsection{Symmetries \label{subsec:Syms}}
 
-The symmetries of the initial Hamiltonian take a very important role in this iterative diagonalization. Lets suppose that the initial Hamiltonian $H_d$ has certain symmetries classified by the quantum number $S$ . Then $H_d$ can be written  in block Hamiltonians over a basis of the form $\vert S, i\rangle$. A diagnolization process of an square matrix with $L$ rows usually has square order, proportionate to the number of entries $\mathcal{O}\sim L^2$. However, if the matrix is organized in blocks of length $N_j$  such that $\sum_j L_j = L$, then the order of diagonalization will be around $\sum_j L_j^2  $ which is in general much smaller than $(\sum_j L_j)^2 L^2$. Therefore the block diagonalization provides an important numerical speed-up to the algorithm. 
+The symmetries of the initial Hamiltonian take a very important role in this iterative diagonalization. Lets suppose that the initial Hamiltonian $H_d$ has certain symmetries classified by the quantum number $S$ . Then $H_d$ can be written  in block Hamiltonians over a basis of the form $\vert S, i\rangle$. A diagnolization process of an square matrix with $L$ rows usually has square order, proportionate to the number of entries $\mathcal{O}\sim L^2$. However, if the matrix is organized in blocks of length $L_j$  such that $\sum_j L_j = L$, then the order of diagonalization will be around $\sum_j L_j^2  $ which is in general much smaller than $(\sum_j L_j)^2 L^2$. Therefore the block diagonalization provides an important numerical speed-up to the algorithm. 
 
-To maintain  this advantage we must preserve this symmetry structure for the rest of the NRG code. For it, we first need to verify that the picked symmetry also commutes with the hopping terms in the chain Hamiltonian. If so, for each step  $N$ of the NRG algorithm we will have that the $H_N$ Hamiltonian can be written in a block diagonal form with basis 
-$\vert S_N, i_N\rangle$. Then it is necessary to define transition rules from the quantum numbers $S_N$ to $S_{N+1}$. By doing this, we assure that the block architecture is transmitted through the entire algorithm, hence reducing the computational time significantly at each step of the NRG chain. 
+To maintain  this advantage, we must preserve this symmetry structure for the rest of the NRG code. For it, we first need to verify that the picked symmetry also commutes with the hopping terms in the chain Hamiltonian. If so, for each step  $N$ of the NRG algorithm  the $H_N$ Hamiltonian can be written in a block diagonal form with basis 
+$\vert S_N, i_N\rangle$. Then it is necessary to define transition rules from the quantum numbers $S_N$ to $S_{N+1}$. By doing this, we assure that the block architecture is transmitted through the entire algorithm, hence reducing the computational time significantly at each step of the NRG chain. This is a key procedure to optimize the algorithm
 
 
 In the following subsection we will give a example of this symmetry propagation in the model a quantum dot attached to a metallic lead. 
@@ -514,7 +515,9 @@ In the following subsection we will give a example of this symmetry propagation 
 % \item  To diagonalize iteratively the chain hamiltonian . 
 % \end{enumerate}
 
-% The final result will be the spectrum of the Hamiltonian. Other important properties of the material such as density of states, conductivity, specific heat, susceptibility can also be computed. On this project we are mainly interested in the Density of States (DOS). The method used to compute the DOS is the Density Matrix numerical renormalization Group (DM-NRG). A complete description of this algorithm will be given in the following sections.  \\
+% The final result will be the spectrum of the Hamiltonian. Other important properties of the material such as density of states, conductivity, specific heat, susceptibility can also be computed. On this project we are mainly interested in the Density of
+% \include{Majorana}
+% \include{NResults} States (DOS). The method used to compute the DOS is the Density Matrix numerical renormalization Group (DM-NRG). A complete description of this algorithm will be given in the following sections.  \\
 
 % For now, we proceed to describe how the NRG is applied to solve the Anderson model in a QD:\\
 
@@ -538,58 +541,53 @@ In the following subsection we will give a example of this symmetry propagation 
 
 
 
-\subsection{Iterative diagonalization in a single QD Hamiltonian \label{subsec:QD-Diag} }
+\subsection{Iterative diagonalization in a single QD attached to a metallic lead \label{subsec:QD-Diag} }
 
 Now that we have an iterative representation of the Anderson Model
-Hamiltonian \prettyref{eq:chain-Hamiltonian}, lets take a look to
-how the NRG code would work for a QD. We start with the dot Hamiltonian.
-(Since the $D$ term is always present as a normalizing factor, we
-are going to avoid this term in future computations and suppose that
-we are working with unit-less variables $\epsilon_{d},\ U$ and $\Gamma':=\sqrt{\frac{2\Gamma}{\pi D}}$
-).
+Hamiltonian \eqref{eq:Newchain-Hamiltonian}, we will describe how the NRG code works for a QD attached to a lead. We start with the dot Hamiltonian.
+
 \begin{equation}
-H_{d}=\frac{1}{D}\left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2D}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}.\label{eq:DotHam}
+H_{d}=\frac{1}{D}\left(\epsilon+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2D}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}.\label{eq:DotHam}
 \end{equation}
 
 
-Now observe that hamiltonian \eqref{eq:DotHam} already has a
-diagonal form in the base $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $
+\noindent Now observe that Hamiltonian \eqref{eq:DotHam} is already in the
+diagonal form for the basis $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $
 \[
 H_{d}=\frac{1}{D}\left[\begin{array}{cccc}
-2\epsilon_{d}+\frac{3U}{2} & 0 & 0 & 0\\
-0 & \epsilon_{d}+\frac{U}{2} & 0 & 0\\
-0 & 0 & \epsilon_{d}+\frac{U}{2} & 0\\
+2\epsilon+\frac{3U}{2} & 0 & 0 & 0\\
+0 & \epsilon+\frac{U}{2} & 0 & 0\\
+0 & 0 & \epsilon+\frac{U}{2} & 0\\
 0 & 0 & 0 & \frac{U}{2}
 \end{array}\right].
 \]
 
 
-Lets define $H_{-1}=\Lambda^{\frac{-1}{2}}H_{d}.$ Adding the first
-chain interaction to $H_{d}$ we obtain a new Hamiltonian of the form 
+Lets define $H_{-1} := \frac{2 H_d \Lambda^{-1/2}}{1+\Lambda^{-1}}$ as in \ref{eq:H-1}. It is convenient here to define unit-less variables $\epsilon' =\frac{2\epsilon \Lambda^{-1/2}}{D(1+\Lambda^{-1})}, U'= \frac{2U\Lambda^{-1/2}}{D(1+\Lambda^{-1})}$ and $\Gamma':=\sqrt{\frac{2\Gamma}{\pi D}}$. Then adding the first site of the Wilson's chain interaction to $H_{d}$ we obtain a new Hamiltonian of the form 
 
 \begin{equation}
 H_{0}=\Lambda^{\frac{1}{2}}H_{-1}+\Gamma'\left(d_{\sigma}^{\dagger}f_{0\sigma}+f_{0\sigma}^{\dagger}d_{\sigma}\right).\label{eq:H0fromH-1}
 \end{equation}
 
 
-The Hilbert space for this Hamiltonian has to be extended to include
-the $4$ degrees of freedom of the $f_{0\sigma}^{\dagger}$ particles
-which are also given by $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $.
-Therefore the total Hilbert space for $H_{0}$ is given by a base
+
+The Hilbert space for this mew Hamiltonian must be extended to include
+the $4$ degrees of freedom of the $f_{0\sigma}^{\dagger}$ particles,
+which are given by $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $.
+Therefore, the total Hilbert space for $H_{0}$ is given by a base
 of the form 
 \[
 \vert s_{1}\rangle\vert s_{2}\rangle:=\vert s_{1}\rangle\otimes\vert s_{2}\rangle\mbox{ with }\vert s_{i}\rangle\in\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} .
 \]
 
 
-We obtain an space of dimension $4\times4=16.$ Now, before adventuring
+\noindent We obtain an space of dimension $4\times4=16.$ Now, before adventuring
 to write the Hamiltonian for $H_{0}$ as a $16\times16$-matrix note
-that $H_{-1}$ preserves particle number $\mathcal{N}$ and the total spin $S$.
-We can associate each state to one of these symmetries as 
+that $H_{-1}$ preserves the total particle number $\mathcal{N}$ and the total spin $S$. We can associate each state to one of these symmetries as 
 
 \begin{align}
-\uparrow\downarrow\rangle\longrightarrow\vert \mathcal{N}=2,S=0\rangle\ ,& \ \vert0\rangle\longrightarrow\vert \mathcal{N}=0,S=0\rangle \\ 
-\uparrow\rangle\longrightarrow\vert \mathcal{N}=1,S=\frac{1}{2}\rangle\ ,& \ \vert 0\rangle\longrightarrow\vert \mathcal{N}=1,S=\frac{-1}{2}\rangle.
+\vert \uparrow\downarrow\rangle\longrightarrow\vert \mathcal{N}=2,S=0\rangle\ ,& \ \vert0\rangle\longrightarrow\vert \mathcal{N}=0,S=0\rangle \\ 
+\vert \uparrow\rangle\longrightarrow\vert \mathcal{N}=1,S=\frac{1}{2}\rangle\ ,& \ \vert \downarrow \rangle\longrightarrow\vert \mathcal{N}=1,S=\frac{-1}{2}\rangle.
 \end{align}
 
 The propagation rule for the symmetry is defined with the following identity 
@@ -598,7 +596,7 @@ The propagation rule for the symmetry is defined with the following identity
 \end{equation} 
   
 
- Then we can use  $\mathcal{N}$ and $S$ as quantum numbers and generate the Hamiltonian $H_{0}$ in blocks. We will observe that the terms in the diagonal will correspond to the eigenvalues of $H_{-1}$ for the first space. The non-diagonal terms are the result of the hopping interactions with the first site. 
+ \noindent Then we can use  $\mathcal{N}$ and $S$ as quantum numbers to generate the the block structure of $H_{0}$ . We will observe that the terms in the diagonal will correspond to the eigenvalues of $H_{-1}$ for the first space. The non-diagonal terms are the result of the hopping interactions with the first site. 
 
 \begin{multicols}{2}
 
@@ -606,7 +604,7 @@ $H_{\mathcal{N}=0,S=0}:$
 \[
 \begin{array}{c}
 \vert0\rangle\vert0\rangle\rightarrow\end{array}\begin{array}{c}
-\left[\frac{U}{2}\right]\end{array}
+\left[\frac{U'}{2}\right]\end{array}
 \]
 
 
@@ -614,7 +612,7 @@ $H_{\mathcal{N}=4,S=0}:$
 \[
 \begin{array}{c}
 \vert\uparrow\!\downarrow\rangle\vert\uparrow\!\downarrow\rangle\rightarrow\end{array}\begin{array}{c}
-\left[2\epsilon_{d}+\frac{3U}{2}\right]\end{array}
+\left[2\epsilon'+\frac{3U'}{2}\right]\end{array}
 \]
 
 
@@ -628,8 +626,8 @@ $H_{\mathcal{N}=1,S=\frac{1}{2}}:$
 \vert\uparrow\rangle\vert0\rangle\rightarrow\\
 \vert0\rangle\vert\uparrow\rangle\rightarrow
 \end{array}\left[\begin{array}{cc}
-\epsilon_{d}+\frac{U}{2} & \Gamma'\\
-\Gamma' & \frac{U}{2}
+\epsilon'+\frac{U'}{2} & \Gamma'\\
+\Gamma' & \frac{U'}{2}
 \end{array}\right]
 \]
 
@@ -637,11 +635,11 @@ $H_{\mathcal{N}=1,S=\frac{1}{2}}:$
 $H_{\mathcal{N}=1,S=\frac{-1}{2}}:$
 \[
 \begin{array}{c}
-\vert\uparrow\rangle\vert0\rangle\rightarrow\\
-\vert0\rangle\vert\uparrow\rangle\rightarrow
+\vert\downarrow\rangle\vert0\rangle\rightarrow\\
+\vert0\rangle\vert\downarrow\rangle\rightarrow
 \end{array}\left[\begin{array}{cc}
-\epsilon_{d}+\frac{U}{2} & \Gamma'\\
-\Gamma' & \frac{U}{2}
+\epsilon'+\frac{U'}{2} & \Gamma'\\
+\Gamma' & \frac{U'}{2}
 \end{array}\right]
 \]
 
@@ -654,7 +652,7 @@ $H_{\mathcal{N}=2,S=-1}:$
 \[
 \begin{array}{c}
 \vert\downarrow\rangle\vert\downarrow\rangle\rightarrow\end{array}\begin{array}{c}
-\left[\epsilon_{d}+\frac{U}{2}\right]\end{array}
+\left[\epsilon'+\frac{U'}{2}\right]\end{array}
 \]
 
 
@@ -662,7 +660,7 @@ $H_{\mathcal{N}=2,S=1}:$
 \[
 \begin{array}{c}
 \vert\uparrow\rangle\vert\uparrow\rangle\rightarrow\end{array}\begin{array}{c}
-\left[\epsilon_{d}+\frac{U}{2}\right]\end{array}
+\left[\epsilon'+\frac{U'}{2}\right]\end{array}
 \]
 
 
@@ -677,10 +675,10 @@ $H_{\mathcal{N}=2,S=0}:$
 \vert\downarrow\rangle\vert\uparrow\rangle\rightarrow\\
 \vert0\rangle\vert\uparrow\!\downarrow\rangle\rightarrow
 \end{array}\left[\begin{array}{cccc}
-2\epsilon_{d}+\frac{3U}{2} & \Gamma & -\Gamma & 0\\
-\Gamma & \epsilon_{d}+\frac{U}{2} & 0 & \Gamma\\
--\Gamma & 0 & \epsilon_{d}+\frac{U}{2} & -\Gamma\\
-0 & \Gamma & -\Gamma & \frac{U}{2}
+2\epsilon'+\frac{3U'}{2} & \Gamma' & -\Gamma' & 0\\
+\Gamma' & \epsilon'+\frac{U'}{2} & 0 & \Gamma'\\
+-\Gamma' & 0 & \epsilon'+\frac{U'}{2} & -\Gamma'\\
+0 & \Gamma' & -\Gamma' & \frac{U'}{2}
 \end{array}\right]
 \]
 
@@ -693,8 +691,8 @@ $H_{\mathcal{N}=3,S=\frac{1}{2}}:$
 \vert\uparrow\!\downarrow\rangle\vert\uparrow\rangle\rightarrow\\
 \vert\uparrow\rangle\vert\uparrow\!\downarrow\rangle\rightarrow
 \end{array}\left[\begin{array}{cc}
-\epsilon_{d}+\frac{U}{2} & -\Gamma'\\
--\Gamma' & \frac{U}{2}
+\epsilon'+\frac{U'}{2} & -\Gamma'\\
+-\Gamma' & \frac{U'}{2}
 \end{array}\right]
 \]
 
@@ -705,8 +703,8 @@ $H_{\mathcal{N}=3,S=\frac{-1}{2}}:$
 \vert\uparrow\!\downarrow\rangle\vert\downarrow\rangle\rightarrow\\
 \vert\downarrow\rangle\vert\uparrow\!\downarrow\rangle\rightarrow
 \end{array}\left[\begin{array}{cc}
-\epsilon_{d}+\frac{U}{2} & -\Gamma'\\
--\Gamma' & \frac{U}{2}
+\epsilon'+\frac{U'}{2} & -\Gamma'\\
+-\Gamma' & \frac{U'}{2}
 \end{array}\right]
 \]
 
@@ -715,12 +713,12 @@ $H_{\mathcal{N}=3,S=\frac{-1}{2}}:$
 
 \begin{figure}[t]
 	\subfloat[$N$ takes only even values]{\includegraphics[scale=0.5]{IMAGES/even.png}}\subfloat[$N$ run only through odd values]{\includegraphics[scale=0.5]{IMAGES/odd.png}}\caption{\label{Fig-Dot-Spectrum} Evolution of the QD-spectrum vs number of
-	iterations of the code for $U=0.5,\ e_{d}=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
+	iterations of the code for $U'=0.5,\ \ep'=-0.25,\ \Gamma=2.82\times10^{-2}.$ }
 \end{figure}
 
-The next step would be to diagonalize $H_{0}$ by blocks $H_{\mathcal{N},S}$ and then including the next place in the chain. The following Hamiltonians are generated in the same way from equation \eqref{eq:NRG-Renormalization}. The symmetries of the new states can be obtained from the propagation rule \eqref{eq:PropRuleQD}. When the number of states surpasses the 1000 states, the code will automatically cutoff the higher energy states. However it is important that a Block is not divided in this cutting, since it could break the preserved symmetry. 
+The next step would be to diagonalize $H_{0}$ by blocks $(H_{\mathcal{N},S})$ and then including the next place in the chain. The following Hamiltonians are generated in the same way from equation \eqref{eq:NRG-Renormalization}. The symmetries of the new states can be obtained from the propagation rule \eqref{eq:PropRuleQD}. When the number of states surpasses the 1000 states, the code will automatically cutoff the higher energy states. However it is important that a Block is not divided in this cutting, since it could break the preserved symmetry. 
 
-Finally, the spectrum for $\Lambda = 2.5$ takes the 'spaghetti' form in \ref{Fig-Dot-Spectrum}. Before $N=30$ low-energy contributions generate significant changes in the energy levels.  The stable strum after the step $N=30$ shows that the code has converged at this stage. As we previously declared, it is not $\mathcal{T}$ but $\mathcal{T}^2$ the transformation that has fixed points, which explains why it was necessary to plot the even and the odd spectrum separately.
+Finally, the spectrum for $\Lambda = 2.5$ takes the 'spaghetti' form in \ref{Fig-Dot-Spectrum}.  Note that before $N=30$, the low-energy contributions generate significant changes in the energy levels.  However, the stable spectrum after the step $N=30$ is a signature that the code has converged. As we previously declared, it is not $\mathcal{T}$ but $\mathcal{T}^2$ the transformation that has fixed points, which explains why it was necessary to plot the even and the odd spectrum separately.
 
 % The resulting eigenvectors will be characterized by both quantum numbers
 % so that we can write them in the form $\vert N,S,i\rangle$ with $i$
@@ -728,17 +726,17 @@ Finally, the spectrum for $\Lambda = 2.5$ takes the 'spaghetti' form in \ref{Fig
 
 % We now proceed by induction supposing that for each $N$ the Hamiltonian $H_{N}$ is already diagonalized and the eigenvectors are organized in states with labels $\vert N,S,i\rangle.$ The next step will be to add the $4$-Hilbert space corresponding to $f_{N+1,\sigma}$ organized the eigenvectors according to the quantum numbers $\vert N',S',i\rangle$ and proceed to diagonalize by blocks the new Hamiltonian. Apart of it, the code must have a cutoff to the number of states. \\
 
-At the end of the NRG code, we obtain a complete list of the spectrum $(E_{i, N})$ and the eigenstates $(\vert i , N \rangle)$ of the Hamiltonian at each step $N$ of the chain ( See \ref{Fig-Dot-Spectrum}). It is important to keep all of these states since each one of them represents different thermodynamic regimes of the system. While the site $N=1$ represents the physics of the system relevant at temperatures around $K_B D \Lambda^{-1}$, the site $N=30$ shows the low energy contributions at $T \sim K_B D \Lambda^{-30}$ where the ground state is strongly correlated. Furthermore, the states at low temperatures are entangled with the higher energy states. We need to take this into account to extract dynamical quantities of the system, which is the objective of the following section. 
+At the end of the NRG code, we obtain a complete list of the spectrum $(E_{i, N})$ and the eigenstates $(\vert i , N \rangle)$ of the Hamiltonian at each step $N$ of the chain ( See \ref{Fig-Dot-Spectrum}). It is important to keep all of these states since each one of them represents different thermodynamic regimes of the system. While the site $N=1$ represents the physics of the system relevant at temperatures around $\frac{D \Lambda^{-1}}{K_B }$, the site $N=30$ shows the low energy contributions at $T \sim \frac{D \Lambda^{-30}}{K_B }$ where the ground state is strongly correlated. Furthermore, the states at low temperatures are entangled with the higher energy states. We need to take this into account to extract dynamical quantities of the system, which is the objective of the following section. 
 
 \subsection{The Density Matrix Renormalization Group (DM-NRG) \label{subsec:DM-NRG}}
 The NRG codes allows us to compute several thermodynamic quantities such as the entropy $S$, the free energy and the partition function $Z(\beta)$. In addition, we can compute the spin magnetization or dynamical quantities such  the density of states, the magnetic susceptibility and the conductivity. To perform this we can use the spectrum obtained in the NRG code to define the Boltzman distribution of the system. Then we apply the usual methods of statistical mechanics.  
 
 % It is necessary to embed NRG with the faculty to compute these operators at each step $N$ of the code. {} 
 
-In this thesis we will focus in computing the density of states at the impurity (QD). For this, let $\vert j\rangle$ and $\vert q \rangle$ label a base of eigenstates of the Hamiltonian $H$. Now recall the definition of the time-ordered green function \eqref{eq:TempGreen}
+In this thesis we will focus in computing the density of states at the impurity (QD). For this, let $\vert j\rangle$ and $\vert q \rangle$ label a base of eigenstates of the Hamiltonian $H$. Now recall the definition of the retarded green function \eqref{eq:TempGreen}
 
 \begin{align}
-G_{d,d^{\dagger}}(t)&=\left\langle \mathbb{T}\left[d(t)d^{\dagger}(0)\right]\right\rangle \\ \label{eq:MeanGreen}
+G_{d,d^{\dagger}}(t)&=\theta(t)\left\langle \{ d(t)d^{\dagger}(0) \} \right\rangle \\ \label{eq:MeanGreen}
 &=\theta(t)\left\langle \left[e^{\frac{i}{\hbar}Ht}de^{-\frac{i}{\hbar}Ht}d^{\dagger}\right]\right\rangle +\theta(-t)\left\langle \left[d^{\dagger}e^{\frac{i}{\hbar}Ht}de^{\frac{-i}{\hbar}Ht}\right]\right\rangle \\
 &=\theta(t)\sum_{\vert j\rangle,\vert q\rangle}p_{j}\langle j\vert e^{\frac{i}{\hbar}Ht}d\vert q\rangle\langle q\vert e^{-\frac{i}{\hbar}Ht}d^{\dagger}\vert j\rangle+\theta(-t)\sum_{\vert j\rangle,\vert q\rangle}p_{q}\langle q\vert d^{\dagger}e^{\frac{i}{\hbar}Ht}\vert j\rangle\langle j\vert de^{-\frac{i}{\hbar}Ht}\vert q\rangle\\
 &=\theta(t)\sum_{\vert j\rangle,\vert q\rangle}p_{j}e^{\frac{-i}{\hbar}t\left(E_{j}-E_{q}\right)}\left\Vert \langle j\vert d\vert q\rangle\right\Vert ^{2}+\theta(-t)\sum_{\vert j\rangle,\vert q\rangle}p_{q}e^{\frac{i}{\hbar}t\left(E_{j}-E_{q}\right)}\left\Vert \langle j\vert d\vert q\rangle\right\Vert ^{2}
@@ -746,7 +744,7 @@ G_{d,d^{\dagger}}(t)&=\left\langle \mathbb{T}\left[d(t)d^{\dagger}(0)\right]\rig
 
 \noindent Where $p_{j}:=\frac{e^{-\beta E_{j}}}{Z(\beta)}$ defines the Boltzmann probability of the eigenstate $\vert j\rangle$ according to Hamiltonian $H$. 
 
-It is known that the Fourier transform of an expression of the form ${\displaystyle e^{-ax}\theta(x)}$ is $\frac{1}{\omega+is-a}$. Then the Green function in the frequency space is 
+It is known that the Fourier transform of an expression of the form ${\displaystyle e^{-ax}\theta(x)}$ is $\frac{1}{\omega+is-a}$. Then the Green function in the energy domain is 
 \begin{equation}
 \Green{d,d^{\dagger}}=\frac{1}{Z(\beta)}\sum_{\vert j\rangle,\vert q\rangle}{\displaystyle \frac{e^{-\beta E_{j}}+e^{-\beta E_{q}}}{\omega+is-E_{j}+E_{q}}}\left\Vert \langle j\vert d\vert q\rangle\right\Vert ^{2}
 . \label{eq:greenT}
@@ -757,7 +755,7 @@ It is known that the Fourier transform of an expression of the form ${\displayst
 \rho_{d}=\frac{1}{Z(\beta)}\sum_{\vert j\rangle,\vert q\rangle}{\displaystyle \left(e^{-\beta E_{j}}+e^{-\beta E_{q}} \right) \delta\left(\omega-E_{j}+E_{q} \right) } \left\Vert \langle j\vert d\vert q\rangle \right\Vert^{2}. \label{eq:DOSeigenstates}
 \end{equation}
 
-\noindent This new expression for the DOS can be integrated to NRG code in different ways . A first method created by Costi \textit{et al.} consisted in computing \eqref{eq:DOSeigenstates} with the eigenstates of each shell Hamiltonian $H_N$  \cite{costi_transport_1994}. It is necessary to take into account that the operator $\langle j\vert d\vert q\rangle\Vert$ is constantly rotating after each diagonalization procedure generating different representation. Then, an important part of Costi's algorithm is to obtain these new representations of $\langle j\vert d\vert q\rangle\Vert_N$ recursively starting from an input representation $\langle j\vert d\vert q\rangle\Vert_{N=0}$.
+\noindent This new expression for the DOS can be integrated into  the NRG code in different ways . A first method created by Costi \textit{et al.} consists in computing \eqref{eq:DOSeigenstates} with the eigenstates of each shell Hamiltonian $H_N$  \cite{costi_transport_1994}. It is necessary to take into account that the operator $ d$ is constantly rotating after each diagonalization procedure, which produces different representations at each shell Hamiltonian basis. Then, an important part of Costi's algorithm is to obtain these new representations of $d$ at the $H_N$-basis $(\langle j\vert d\vert q\rangle\Vert_N)$ recursively starting from an input representation $\langle j\vert d\vert q\rangle\Vert_{N=0}$.
 
 Although Costi's method predicts accurately the DOS at low-energies, it fails to fit the high energy levels. The method that corrects this problem receives the name of Density Matrix Numerical Renormalization Group (DMNRG) \cite{hofstetter_generalized_2000}. The main idea of DMNRG is to include the entanglement corrections with the lower energy-states using the density matrix formalism. For this, Hofstetter defines the density matrix at the last shell Hamiltonian $N_{max}$ $\hat{\rho}$ as the thermal mixed state 
 
@@ -765,24 +763,24 @@ Although Costi's method predicts accurately the DOS at low-energies, it fails to
 \hat{\rho}_{N_{max}} = \sum_{j}e^{-\beta E_{j}}\vert j          \rangle_{N_{max}} \langle j\vert, \label{eq:rho_n}
 \end{equation}
 
-\noindent where the subindex $N_{max}$ pinpoints that $\vert j \rangle_{N_{max}} \langle j\vert$ is an eigenstate of the last shell Hamiltonian $H_{N_max}$. 
+\noindent where the subindex $N_{max}$ suggests that $\vert j \rangle_{N_{max}} \langle j\vert$ is an eigenstate of the last shell Hamiltonian $H_{N_{max}}$. 
 
-With this new density matrix we could rewrite \eqref{eq:MeanGreen} as 
+With this new density matrix, we could rewrite \eqref{eq:MeanGreen} as 
 \begin{equation}
-G_{d,d^{\dagger}}^{N_{max}}(t) = \text{Tr} \left( \hat{\rho}_{N_{max}}\mathbb{T}\left[\left\{ d^{\dagger},d\right\} \right]\right). 
+G_{d,d^{\dagger}}^{N_{max}}(t) = \text{Tr} \left( \hat{\rho}_{N_{max}}\theta(t)\left\{ d^{\dagger}(t),d(0)\right\} \right). 
 \end{equation}
-\noindent From the Green function $G_{d,d^{\dagger}}^{N_{max}}(t)$ we can obtain the density of states associated to the temperature $T_{N_max}$. Nevertheless, these results are not relevant at higher temperatures. 
+\noindent From the Green function $G_{d,d^{\dagger}}^{N_{max}}(t)$ we can obtain the density of states associated to the temperature $T_{N_{max}}$. Nevertheless, these results are not relevant at higher temperatures. 
 
 \begin{figure}
 \centering
 \includegraphics[scale=1]{IMAGES/DQD/DMRGchain.png}
-\caption{\label{fig:OpenQuantum} Wilson's chain depicted as an open quantum system.  }
+\caption{\label{fig:OpenQuantum} Wilson's chain depicted as an open quantum system. Adapted from \cite{hofstetter_generalized_2000}.  }
 \end{figure}
 
-To solve this problem we may think Wilson's chain as an open quantum system where the reservoir are the low-energy sites of the chain and the system contains the high energy site including the impurity/QD  as observed in \ref{fig:OpenQuantum}. Using this analogy it is possible we can readily obtain the density matrix $\rho_S$ by taking the partial trace over the reservoir
+To solve this problem we may think Wilson's chain as an open quantum system where the environment are the low-energy sites of the chain and the system $(\rho_{red})$ contains the high-energy sites including the QD-impurity  as observed in \ref{fig:OpenQuantum}. Using this analogy,  we can readily obtain the density matrix $\rho_S$ by taking the partial trace over the environment
 
 \begin{equation}
-\rho_s = \text{Tr}_R[\rho_{N_{max}}].
+\rho_{sys} = \text{Tr}_{env}[\rho_{N_{max}}].
 \end{equation} 
 
 The DM-NRG code applies recursively this idea to obtain the density matrix corresponding to each scale of temperature $T_N$. It starts from $\rho_{N_{max}}$ defined at \eqref{eq:rho_n} and obtains $\rho_{N_{max}-1} $ by taking the partial trace over the vector space corresponding to the last site of the chain
@@ -793,12 +791,12 @@ The DM-NRG code applies recursively this idea to obtain the density matrix corre
 \begin{equation}
 \rho_{N-1} = \text{Tr}_{N}[\rho_{N}],
 \end{equation}
-and the density of states at each temperature regime can be computed at each stage from the green function 
+and the density of states at each temperature regime can be computed from the green function 
 \begin{equation}
-G_{d,d^{\dagger}}^{N} (t) = \text{Tr} \left( \hat{\rho}_{N}\mathbb{T}\left[ \{ d^{\dagger},d \} \right] \right). 
+G_{d,d^{\dagger}}^{N} (t) = \text{Tr} \left( \hat{\rho}_{N}\theta(t)\left\{ d^{\dagger}(t),d(0)\right\} \right). 
 \end{equation}
 
-The DM-NRG algorithm produces significantly better results  at high energies than Costi's initial idea. Indeed, DM-NRG is still one of the best methods to compute dynamic quantities of an impurity system. In the following subsection we will some details of how DM-NRG is integrated with the NRG code. 
+The DM-NRG algorithm produces significantly better results  at high energies than Costi's initial idea. Indeed, DM-NRG is still one of the best methods to compute dynamic quantities of an impurity system. In the following subsection we will give some details of how DM-NRG is integrated with the NRG code. 
 
 
 % Then, we could rewrite equation  \eqref{eq:MeanGreen} as 
@@ -824,7 +822,7 @@ The DM-NRG algorithm produces significantly better results  at high energies tha
 
 \subsection{Specifications of the NRG Code }
 
-The NRG code used in this thesis was implemented by my thesis advisor Luis Gregorio Dias during his posdoc at the University of Ohio.  The general scheme  is shown in \ref{fig:Code}. It incorporates different stages in order to complete the procedure described in this classes. Here we give a brief description of each step:
+The NRG code used in this thesis was implemented by my thesis advisor Luis Gregorio Dias during his posdoc at the University of Ohio.  The general scheme  is shown in \ref{fig:Code}. It incorporates different stages.. Here we give a brief description of them:
 
 \begin{figure}[t]
 \centering
@@ -833,14 +831,14 @@ The NRG code used in this thesis was implemented by my thesis advisor Luis Grego
 \end{figure}
 
 \begin{itemize}
-\item \textbf{Model:} The model defines the type of impurity that we are going to study. It could be a single QD or more complex structures such as a DQD or a Majorana-QD system. My main contribution to this code was at this stage by designing the mode DQD-Majorana, which describes a DQD coupled to a Majorana zero mode. These models preserve different symmetries. In the single dot Hamiltonian presented in \ref{subsec:QD-Diag} we used the symmetry $\mathcal{N}S_z$, which is equivalent to charge-spin $QS_z$. However we will find that Majorana systems  require another  symmetry-type that we call as $N\up P\dw$. The model is defined by initial Hamiltonian $H_{-1}$ and the annihilation operators $d_{i\sigma}$ which must be submitted in the code written in the block symmetry representation described in \ref{subsec:Syms}.
-\item \textbf{Input:} The input is a .dat file that attributes a numerical value to each parameter of the model. In addition, it allows to set different code specifications as the number of iterations $N_{max}$, the scaling parameter $\Lambda$ and the maximum number of states before the cut-off. It is also possible to include additional implementations to improve the results of the NRG code such as the Z-trick \cite{oliveira_generalized_1994} and the Complete Fock State. In this project, we only used the Z-trick, which significantly improves the spectral resolution at high energies.
-\item \textbf{NRG-Main:} This part of the code mainly integrates the ideas of \ref{subsec:Logarithmic} and implements the iterative diagonalization described in \ref{subsec:IterativeDiag}. Each shell Hamiltonian $H_n$ is diagonalized. The high-energy eigenstates are cut-off if they exceed the limit. Then the states are rotated and the eigenvalues are rescaled to include the next step of the Wilson's chain. The symmetry block structure is preserved during the entire loop. NRG produces as out a detailed evolution of the spectrum which produces the spaghetti form. In addition, it can print the states and operators that are necessary to start other instances of the code like DM-NRG.
-\item \textbf{Site $N+1$:} This is an small class that creates another site of the chain in the base $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $ . This base must be rewritten according to the symmetry quantum number to coupled it with the matrices at the NRG code. 
-\item \textbf{DM-NRG}: As described in \ref{subsec:DM-NRG}, this code generates iteratively the density matrix associated to each energy scale. Then it computes the green function and the density of states. The DOS of the single $QD$ model is an example of its outputs. The plot shows the characteristic Kondo peak at the Fermi energy in the middle of the Coulomb peaks describing the energy states. 
+\item \textbf{Model:} The model defines the type of impurity that we are going to study. It could be a single QD or more complex structures such as a DQD or a Majorana-QD system. My main contribution to this code was at this stage. I designed the mode DQD-Majorana, which describes a DQD coupled to a Majorana zero mode. These models preserve different symmetries. In the single dot Hamiltonian presented in \ref{subsec:QD-Diag} we used the symmetry $\mathcal{N}S_z$, which is equivalent to charge-spin $QS_z$. However we will find that Majorana systems  require another  symmetry-type that we call as $N\up P\dw$. The model is defined by an initial Hamiltonian $H_{-1}$ and the annihilation operators $d_{i\sigma}$ which must be submitted in the code written in the block symmetry representation described in \ref{subsec:Syms}.
+\item \textbf{Input:} The input is a '.dat'-file that attributes a numerical value to each parameter of the model. In addition, it allows to set different code specifications as the number of iterations $N_{max}$, the scaling parameter $\Lambda$ and the maximum number of states before the cut-off. It is also possible to include additional implementations to improve the results of the NRG code such as the Z-trick \cite{oliveira_generalized_1994} and the Complete Fock State. In this project, we only used the Z-trick, which significantly improves the spectral resolution at high energies.
+\item \textbf{NRG:} This part of the code mainly integrates the ideas of \ref{subsec:Logarithmic} and implements the iterative diagonalization described in \ref{subsec:IterativeDiag}. Each shell Hamiltonian $H_n$ is diagonalized. The high-energy eigenstates are cut-off if they exceed the maximum limit. Then, the states are rotated and the eigenvalues are rescaled to include the next step of the Wilson's chain. The symmetry block structure is preserved during the entire loop. NRG's output is a detailed evolution of the spectrum which produces the spaghetti form. In addition, it can print the states and operators that are necessary to start other instances of the code like DM-NRG.
+\item \textbf{Site $N+1$:} This is an small class that creates another site of the chain in the base $\left\{ \vert\uparrow\!\downarrow\rangle,\vert\uparrow\rangle,\vert\downarrow\rangle,\vert0\rangle\right\} $ . This base must be rewritten according to the symmetry quantum number. It is coupled with the matrices at the NRG code. 
+\item \textbf{DM-NRG}: As described in \ref{subsec:DM-NRG}, this code generates iteratively the density matrix associated to each energy scale . Then it computes the green function and the density of states. The DOS of the single QD model is an example of its outputs. The plot shows the characteristic Kondo peak at the Fermi energy in the middle of the Coulomb peaks describing the energy states. 
 \end{itemize}
 
- This NRG code was previously implemented in C++. It can be cloned from the Github link \url{https://git.io/fh9cM}.  To optimize the performance of NRG, the code uses the packages Boost, LAPACK and Gnu Scientific Library (GSL), which provide a rapid interface for numerical matrix diagonalization. 
+ This NRG code is implemented in C++. It can be cloned from the Github link \url{https://git.io/fh9cM}.  To optimize the performance of NRG, the code uses the packages Boost, LAPACK and Gnu Scientific Library (GSL), which provide a rapid interface for numerical matrix diagonalization. 
  
 
 
@@ -852,33 +850,32 @@ The NRG code used in this thesis was implemented by my thesis advisor Luis Grego
 
 
 
-\subsection{NRG results in a Double Quantum Dot Coupled to a Metallic Lead\label{sec: NRG-DQD}}
+\subsection{NRG results in a double quantum dot coupled to a metallic lead\label{sec: NRG-DQD}}
 
 \begin{figure}[bt]
      \centering
-    \subfloat[  \label{fig:NRG-1D}]{\includegraphics[scale=0.6]{IMAGES/DQD/NRG-QD.png}}
-     \subfloat[$\Gamma_2 = \Gamma_1$ . Inset: Low energy DOS. \label{fig:NRGDQD-G2}]{\includegraphics[scale=0.45]{IMAGES/DQD/NRG-DQD.png}} \\
-    \subfloat[\label{fig:NRGDQD-tdots} $t_{dots}=0.689\Gamma$. Low energy DOS. ]{\includegraphics[scale=0.5]{IMAGES/DQD/NRG-IndirectDQD.png}}
+    \subfloat[ Single QD-lead system \label{fig:NRG-1D}]{\includegraphics[scale=0.6]{IMAGES/DQD/NRG-QD.png}}
+     \subfloat[Symmetric coupling \label{fig:NRGDQD-G2}]{\includegraphics[scale=0.45]{IMAGES/DQD/NRG-DQD.png}} \\
+    \subfloat[\label{fig:NRGDQD-tdots} T-junction of the dots. Low energy DOS. ]{\includegraphics[scale=0.5]{IMAGES/DQD/NRG-IndirectDQD.png}}
     
-     \caption{\label{fig:NRG-DQD} Density of states in QD1 predicted by NRG at each case.  The insets show the.  Note that figure a) is in a different scale due to a major central peak .. \protect\Source{ By the Author  }}
+     \caption{\label{fig:NRG-DQD} Density of states for the DQD attached to the lead at different configurations. Left insets: Setup that is being used. Right insets: Low energy DOS.  \protect\Source{ }}
 \end{figure}
 
 
-We now intend to observe the results of this code applied to the model double quantum dot attached to a metallic lead.
-The  Hamiltonian for this system is the Anderson model with the impurity given by the interacting version of Hamilonian \eqref{eq:HDQD}
+We now intend to observe the results of this code applied to the model double quantum dot attached to a metallic lead. The  Hamiltonian for this system is the Anderson model with the impurity described by the interacting version of Hamilonian \eqref{eq:HDQD}
 
 \begin{equation}
 H_{DQD}=\sum_{i=1}^2\sum_\sigma \left( \epsilon_{i} + \frac{U_i}{2} \right) d_{i\sigma}^{\dagger}d_{i\sigma} + \left(\sum_{i\sigma} d_{i\sigma}^{\dagger}d_{i\sigma} -1 \right)^2 + \sum_\sigma t_{dots}d_{1\sigma}^{\dagger}d_{2\sigma}+t_{dots}^*d_{2\sigma}^{\dagger}d_{1\sigma}
 \label{eq:interactingDQD}
 \end{equation}
 
- The Hilbert space of this system has $16$-dimensions and the symmetries in this Hamiltonian are exactly the same than the ones in the single QD case $\mathcal{N}S$. Nevertheless, we decided to use the DQD-Majorana mode to simulate this system. By setting the Majorana couplings to $t_1=t_2= 0$ we can decouple the Majorana mode, hence obtaining the DQD model (See \ref{chap:Results}). The results we obtained are in agreement with previous previous works \cite{dias_da_silva_transmission_2008}, which was an important test to confirm the veracity of this new mode. 
+\noindent The Hilbert space of this system has $16$-dimensions and the symmetries in this Hamiltonian are exactly the same than the ones in the single QD case $\mathcal{N}S$. Nevertheless, we decided to test the DQD-Majorana mode in this system. By setting the Majorana couplings to $t_1=t_2= 0$ we can decouple the Majorana mode, hence obtaining the DQD model (See \ref{chap:Results}). The results we obtained are in agreement with previous previous papers \cite{dias_da_silva_transmission_2008}, which was an important test to confirm the veracity of this new mode. 
 
 For the entire thesis we will fix the value of the coulomb repulsion parameters to 
 \begin{equation}
  U_1 = U_2 = 17.7305 \Gamma_1.
 \end{equation}
-\noindent We picked these parameters considerably higher than the broadening unit $\Gamma_1$ to guarantee the appearance of Kondo physics which is caused by these strong correlations. 
+\noindent We picked these parameters considerably higher than the broadening unit $\Gamma_1$ to guarantee the appearance of Kondo physics at visible temperatures in comparison with the Coulomb peak.  
 
 %Still need to correct this ... but for know.... PAPER!
 
@@ -888,13 +885,15 @@ For the entire thesis we will fix the value of the coulomb repulsion parameters 
 
  \begin{enumerate}
  
-\item The single QD attached to a metallic lead is a particular case of the double quantum dot model, where the second dot is not attached $\Gamma_2 = t_{dots}=0$.  \ref{fig:NRG-DQD} shows the NRG results for this case. The three plots show the external Coulomb peaks at $e_1 = \frac{U}{2} \sim 8.62\Gamma_1$, which represent the DOS of the energy levels. In addition  Figure \ref{fig:NRG-1D} shows a central peak at the Fermi energy. Note, that there shouldn't be a state in this position since it is between two energy levels (Coulomb peaks).\textbf{This is the Kondo Peak} \cite{hewson_kondo_1997}.  
+\item The single QD attached to a metallic lead is a particular case of the double quantum dot model, where the second dot is not attached $\Gamma_2 = t_{dots}=0$.  \ref{fig:NRG-DQD} shows the NRG results for this case. The three plots show the external Coulomb peaks at $e_1 = \frac{U}{2} \sim 8.62\Gamma_1$, which represent the DOS of the energy levels. In addition  Figure \ref{fig:NRG-1D} shows a central peak at the Fermi energy. Note, that there shouldn't be a state in this position since it is inside a gap between two energy levels (Coulomb peaks).\textbf{This is the Kondo Peak} \cite{hewson_kondo_1997}. This peak explains the zero-bias platoes in \ref{fig:ExpKondo}.  
 \item 
-In Figure \ref{fig:NRGDQD-G2} we observe the DOS when the two QDs are symmetrically attached.  At low energies, the inset shows the appearance of two satellite peaks representing the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction. This is an anti-ferromagnetic coupling that appears in the interacting case due to the strong correlations between both dots. A detailed explanation  these new states is included in section \ref{sec:DoublePeak}.  
-\item The most interesting case is in Figure \ref{fig:NRGDQD-tdots}. As we already observed in the non-interacting case, the interference with the second dot completely destroys the zero mode which is now formed by the Kondo peak. This effect is observed at low energies closed to $t_{dots}=0.689\Gamma$. The paper describing this result was a central part of one of my advisor's project \cite{dias_da_silva_transmission_2008}. This result encouraged me to formulate the following question. What happens if we attached a Majorana mode to one of these dots?. Would it the destroyed by interference or it will survive to it. Answering this question is one of the mean objectives of chapter \ref{chap:Results}. 
+In Figure \ref{fig:NRGDQD-G2} we observe the DOS when the two QDs are symmetrically attached.  At low energies, the inset shows the appearance of two satellite peaks representing the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction. This is an anti-ferromagnetic coupling that appears in the interacting case due to the strong correlations between both dots. 
+
+% A detailed explanation  these new states is included in \ref{sec:DoublePeak}.  
+\item The most interesting case is in Figure \ref{fig:NRGDQD-tdots}. As we already observed in the non-interacting case, the interference with the second dot completely destroys the zero mode which is now formed by the Kondo peak. This effect is observed at low energies closed to $t_{dots}=0.689\Gamma$. The paper describing this result was a central part of one of my advisor's project \cite{dias_da_silva_transmission_2008}. This result encouraged me to formulate the following question. What happens if we attached a Majorana mode to one of these dots?. Would it the destroyed by interference or it will survive to it. Solving this question is one of the mean objectives of chapter \ref{chap:Results}. 
  \end{enumerate}
 
-With these results we finish the first test of our methods. We will probe them again in the next chapter where we present a motivation to the search of Majorana fermions in quantum dots. This chapter will eventually lead us to understand the importance of studying multi-dot Majorana systems in \ref{chap:Results}. There, we will employ these methods again to study the manipulation of  Majorana zero modes in double quantum dot. 
+With these results we finish the first test of our methods. We will probe them again in the next chapter in the QD-Majorana system, and again in \ref{chap:Results} to study the manipulation of  Majorana zero modes in a double quantum dot. 
 
 %$$ -\ed{1,2} = \frac{U_{1,2}}{2}  = 8.62\Gamma_1$$
 

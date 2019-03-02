@@ -21,11 +21,11 @@
 % -----------------------Leaking Majorana modes in quantum dots-------------
 
 % \section{Coupling Majorana Fermions to quantum dots \label{sec:QD-Majorana}}
-In the introduction we pointed out three properties that make particularly promising the coupling of QDs with Majorana bounds states. These are:
+In the introduction we pointed out three properties that make particularly promising the QD-Majorana systems. These are:
 \begin{enumerate}
 \item It does not destroy the entire qubit information.
 \item The possibility of exploring Kondo-Majorana physics.
-\item Manipulation of Majorana zero modes inside the QDs which provides promising applications to the design of quantum architectures. 
+\item It provides the unique opportunity of manipulating the Majorana zero modes inside the QDs, which has promising applications in the design of quantum architectures. 
 \end{enumerate}
 
 
@@ -37,15 +37,17 @@ In the introduction we pointed out three properties that make particularly promi
 %   \item Today's precise experimental control over the QD parameters allows the manipulation of MZMs inside multi-dot systems, which offers new possibilities to design of quantum architectures with Majorana chains.\cite{barkeshli_physical_2015,karzig_scalable_2017} 
 % \end{enumerate}
 
-In this project we will exploit the second and the third properties to manipulate MZMs in double quantum dot systems in the Kondo regime. But before going through that model, we first test our methods in the single dot-Majorana system. As we will observe in this chapter, we were able to reproduce effectively the results of previous papers \cite{dias_da_silva_transmission_2008,liu_detecting_2011} . 
+In this project we will exploit the second and the third properties to manipulate MZMs in double quantum dot systems in the Kondo regime. But before going through that model, we are going to test our methods in the single dot-Majorana system. As we will observe in this chapter, we were able to reproduce effectively the results of previous papers \cite{dias_da_silva_transmission_2008,liu_detecting_2011} .
+
+
 \section{Model}
 
 In this section we will recreate the results of \citeauthor{liu_detecting_2011} using the methods developed in \ref{chap: Methods} . This will also allow us to probe our methods in a system with Majorana zero modes. 
 
 \begin{figure}[t]
-\centering
-\includegraphics[scale=0.6]{IMAGES/Majorana/QD-M.png}
-\caption{\label{fig:ModelM-QD} Model for the QD-Majorana system. Solid lines: Hopping interactions: $V_1$ couplings of QD1 . Dashed lines: Majorana spin-$\dw$ effective couplings \eqref{eq:MajoranaCoupling} $t_1$. The atomic energy levels appear inside each QD $\ep_1$ are tuned by the gate voltages. The coulomb interaction is represented by $U_1$ separates two energy levels.  The red dashed horizontal lines represent the Fermi level. }
+    \centering
+    \includegraphics[scale=0.6]{IMAGES/Majorana/QD-M.png}
+    \caption{\label{fig:ModelM-QD} Model for the QD-Majorana system. Solid lines: Hopping interactions: $V_1$ couplings of QD1 . Dashed lines: Majorana spin-$\dw$ effective couplings \eqref{eq:MajoranaCoupling} $t_1$. The atomic energy levels appear inside each QD $\ep_1$ are tuned by the gate voltages. The coulomb interaction is represented by $U_1$ separates two energy levels.  The red dashed horizontal lines represent the Fermi level. }
 \end{figure}
 
 The Hamiltonian for Majorana-QD-lead hybrid system (See \ref{fig:ModelM-QD}) is  given by
@@ -54,7 +56,7 @@ The Hamiltonian for Majorana-QD-lead hybrid system (See \ref{fig:ModelM-QD}) is 
 \end{equation}
 Where $H_{QD-Lead}$ is the Hamiltonian for the non-interacting Anderson model \eqref{eq:Anderson}, $H_M$ is the Hamiltonian of the Majorana chain and $H_{M-QD}$ represents the coupling between the QD and the Majorana Fermion at the boundary.
 
-Now, the real question is how to define the coupling between the QD and the Majorana fermion. In fact, there are many ways to represent this interaction. One alternative is to replace in $H_{M}$ with the entire Kitaev chain hamiltonian \eqref{eq:kitaevHam} (or  even with the  Majorana chain \eqref{eq:MajoranaChainHam}) and then pick $H_{M-QD}$ as a simple coupling between the QD and the first site of the chain \cite{vernek_subtle_2014}.  A simpler approach is  to define an effective coupling with the Majorana operator at the edge of the Majorana chain. Since the Kitaev chain is spin-less, we choose to couple the Majorana to the spin-$\dw$ channel of the QD \footnote{An appropriate justification of this fact can be found in \cite{ruiz-tijerina_interaction_2015}} . Therefore, the Majorana fermion should be the superposition of the creation and annihilation operators of a spin $\dw$ particle $f_\dw$:
+Now, the real question is how to define the coupling between the QD and the MBS. In fact, there are many ways to represent this interaction. One alternative is to replace in $H_{M}$ with the entire Kitaev chain Hamiltonian \eqref{eq:kitaevHam} (or  even with the  Majorana chain \eqref{eq:MajoranaChainHam}) and then pick $H_{M-QD}$ as the coupling between the QD and the first site of the chain \cite{vernek_subtle_2014}.  A simpler approach is  to define an effective coupling with the Majorana operator at the edge of the Majorana chain. Since the Kitaev chain is spin-less, we choose to couple the Majorana to the spin-$\dw$ channel of the QD \footnote{An appropriate justification of this fact can be found in \cite{ruiz-tijerina_interaction_2015}} . Therefore, the Majorana fermion should be the superposition of the creation and annihilation operators of a spin $\dw$ particle $f_\dw$:
 
 $$\gamma_1 := \frac{1}{\sqrt{2}} \left( f^\dagger_{\dw} + f_{\dw}\ \right) , \gamma_2 := \frac{1}{\sqrt{2}} \left( f^\dagger_{\dw} - f_{\dw} \right).$$
 
@@ -62,29 +64,32 @@ This makes possible to define an effective coupling between the Majorana Mode an
 
 %H_{TS} & = & 2\epsilon_{m}\gamma_{1}\gamma_{2}\nonumber \\
 \begin{eqnarray}
-H_{M-QD} & = &  t_1 \left(d_{\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{\downarrow}\right) 
+H_{M-QD} & = &  t_1 \left(d_{\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{\downarrow}\right) .
 % \\
 % & = &  \sum_{i}t_{i} \left(d_{i\downarrow}^{\dagger}f^\dagger_{\dw} + 
 % f_{\downarrow}d_{i\dw} +d_{i\downarrow}^{\dagger}f_{\dw}+
 % +f_{\downarrow}^{\dagger} d_{i\downarrow}\right).
 \label{eq:MajoranaCoupling}
 \end{eqnarray}
-
-
+\noindent In addition the too Majoranas at the edges of the chain can have an internal coupling 
+\begin{equation}
+H_M = \epsilon_M  \gamma_1\gamma_2. 
+\end{equation}
+\noindent According to Kitaev's initial paper \cite{kitaev_unpaired_2001}, this coupling term decreases exponentially with the length of the chain. This explains why this term is not taken into account in many computations. 
 
 
 % \begin{equation}
 %     \omega\Green{A,B} =\delta_{A^{\dagger},B}+\Green{\left[A,H\right],B}
 % \end{equation}
 
-Then the coupling with the chain is given by 
+Replacing the Dirac fermion operators we obtain the following Hamiltonians 
 
 \begin{eqnarray*}
 H_{M} & = & \epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}\\
-H_{M-QD}&=&\frac{t_1}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}+\frac{t_1^{*}}{\sqrt{2}}f_{\downarrow}^{\dagger}d_{1\downarrow}+\frac{t_1}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\frac{t_1^{*}}{\sqrt{2}}f_{\downarrow}d_{1\downarrow}
+H_{M-QD}&=&\frac{t_1}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}+\frac{t_1^{*}}{\sqrt{2}}f_{\downarrow}^{\dagger}d_{1\downarrow}+\frac{t_1}{\sqrt{2}}d_{1\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\frac{t_1^{*}}{\sqrt{2}}f_{\downarrow}d_{1\downarrow}.
 \end{eqnarray*}
 
-Finally we obtain the following hamiltonian
+\noindent Finally we have the Hamiltonian
 
 \begin{equation}
 H =\sum_{k,\sigma}\left(\epsilon_1+\frac{U_1}{2}\right)d_{1\sigma}^{\dagger}d_{1\sigma}+ \frac{U}{2}(d_{1\sigma}^{\dagger}d_{1\sigma}-1)^{2} + t_1 \left(d_{1\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{1\downarrow}\right) + Vd^\dagger_{1\sigma}c_{k\sigma}+V^* c^\dagger_{k\sigma}d_{1\sigma}+ \epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}.
@@ -92,7 +97,7 @@ H =\sum_{k,\sigma}\left(\epsilon_1+\frac{U_1}{2}\right)d_{1\sigma}^{\dagger}d_{1
 \end{equation}
 
 
-The fidelity of this effective model has been discussed by \citet{ruiz-tijerina_interaction_2015}
+\noindent The fidelity of this effective model has been discussed by \citet{ruiz-tijerina_interaction_2015}
 concluding that this model reproduces the
 same results than coupling a  Kitaev chain model in the topological phase to a QD.
 (This statement is true even for more realistic models of the TS including Rashba spin-orbit interactions and a Zeeman field \citep{ruiz-tijerina_interaction_2015}
@@ -114,34 +119,34 @@ In the non-interacting case we can use the ballistic transport equations from \r
     \left(\omega+\epsilon_{\mathbf{k}}\right)\Green{c^\dagger_{\mathbf{k}},d_{1\downarrow}^{\dagger}}&=-V_{1}^{*}\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}} \label{eq:QDM5}
 \end{align}
 
-The graph representing these green functions is represented in \ref{fig:green-M-QD} a)  (Look \ref{sec:GraphMethod} for details). However using that $\left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}=\left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}$ we can take
- $\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}$ out of the equations. After eliminating this term \ref{eq:QDM2} becomes
+The graph representing these green functions is in \ref{fig:green-M-QD} (a)  (Look \ref{sec:GraphMethod} for details). However using that $\left(\omega-\epsilon_{M}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}=\left(\omega+\epsilon_{M}\right)\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}$ we can take
+ $\Green{f_{\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}$ out of the equations. After eliminating this term from \eqref{eq:QDM2} it becomes
  
  \begin{align}
 \left(\omega-\epsilon_{1}\right)\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}&=1+\frac{t_{1}}{\sqrt{2}}\left(1+\frac{\omega-\epsilon_{M}}{\omega+\epsilon_{M}}\right)\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}+V_{1}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}},d_{1\downarrow}^{\dagger}} \\
 &=1+\frac{\sqrt{2}t_{1}}{\omega+\epsilon_{M}}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}+V_{1}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}},d_{1\downarrow}^{\dagger}}
 \end{align}
 
-Similarly, 
+\noindent Similarly, 
 
 \begin{equation}
     \left(\omega+\epsilon_{1}\right)\Green{d_{1\downarrow}^{\dagger},d_{1\downarrow}^{\dagger}}=-\frac{\sqrt{2}t_{1}}{\omega+\epsilon_{M}}\Green{f_{\downarrow},d_{1\downarrow}^{\dagger}}-V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k\downarrow}}^{\dagger},d_{1\downarrow}^{\dagger}}
 \end{equation} 
  
  
- With these new equations we obtain new associated graph is  in \ref{fig:green-M-QD} b) .  Using the graph algorithm from \ref{sec:Algorithm}  we proceed to pop out vertexes $c_k$ , $c_k^\dagger$ and $d_1^\dagger$ in that order. The result is the graph in figure \ref{fig:green-M-QD}.c) with 
+ With these new equations we can construct the graph is  in \ref{fig:green-M-QD} (b) .  Using the Graph-Gauss-Jordan algorithm from \ref{sec:Algorithm}  we proceed to pop out vertexes $c_k$ , $c_k^\dagger$ and $d_1^\dagger$ in that order. The result is the graph in figure \ref{fig:green-M-QD}(c) with 
  
  \begin{figure}[t]
     \centering
     \includegraphics[scale=0.5]{IMAGES/Graphs/Grenn-Majorana.png}
-    \caption{ \label{fig:green-M-QD} Graph $\GM$ representing the transport equations.   \protect\Source{By the author}}
+    \caption{ \label{fig:green-M-QD} Graph $\GM$ representing the transport equations.   \protect\Source{}}
 \end{figure}
  
  \begin{equation}
     \epsilon_{M,d_1^\dagger,c^\dagger}= \epsilon_{M}+\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega+\epsilon_{1}+\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega+\epsilon_{\mathbf{k}}}}.
 \end{equation}
  
- We finally pop out $f_\dw$ to obtain 
+ \noindent We finally pop out $f_\dw$ to obtain 
  
 \begin{equation}
     \Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}=\left[\omega-\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{1}}-\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega -\epsilon_{M,d_1^\dagger,c^\dagger}}\right]^{-1}.
@@ -151,7 +156,7 @@ Similarly,
 %     \GreenG{f_{\downarrow},f_{\downarrow}^{\dagger}}{\GM-d_{1}}=\left[\omega-\epsilon_{M}-\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega+\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}}\right]^{-1}.
 % \end{equation}
 
-This is the Green function we have been looking for. After a few algebraic operations it is possible to show that this result is equivalent to the first computation done by \citeauthor{liu_detecting_2011}  in the paper \cite{liu_detecting_2011}. 
+\noindent This is the Green function we have been looking for. After a few algebraic operations it is possible to show that this result is equivalent to the first computation done by \citeauthor{liu_detecting_2011}  in the paper \cite{liu_detecting_2011}. 
 
 
 
@@ -161,7 +166,7 @@ To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}=
 
 
 \begin{itemize}
-    \item\textbf{ \ref{fig:M1-Tot}.(a),(b):}  The spin-$\up$ DOS shows the result of coupling the QD with the lead and without Majorana fermions. When the parameter $t$ is increased, the Majorana fermion is couple to the spin-$\dw$ which causes the dispersion of the DOS. The most relevant signature is the robust height of $0.5$  in the DOS that is observed in the central peak for all $t>0$. This mid-height DOS is responsible for the decay of half a quanta in the conductivity of the QD.
+    \item\textbf{ \ref{fig:M1-Tot}.(a),(b):}  The spin-$\up$ DOS shows the result of coupling the QD with the lead and without Majoranas. When the parameter $t$ is increased, the MZM is coupled to the spin-$\dw$ which causes the dispersion of the DOS. The most relevant signature is the robust height of $0.5$  in the DOS that is observed in the central peak for all $t>0$. This mid-height DOS is responsible for the decay of half a quanta in the conductivity of the QD \cite{liu_detecting_2011}.
     % In addition we observe that two new states emerge at $\omega \sim t^2$ caused 
 
     \begin{figure}[h]
@@ -170,13 +175,13 @@ To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}=
      \subfloat[Tuning dot's gate voltage $\ep_1$ \label{fig:M1-e1}]{\includegraphics[scale=0.73]{IMAGES/Majorana/M1-e1.png}}  \\
     \subfloat[Tuning $\ep_M$ \label{fig:M1-em}]{\includegraphics[scale=0.75]{IMAGES/Majorana/M1-eM.png}}
     
-     \caption{Density of states for a Majorana coupled to a QD under the tuning of different parameter. The tuning parameter is drawn in purple line in the inset model.  \label{fig:M1-Tot} \protect\Source{ By the author  }}
+     \caption{Density of states for a Majorana coupled to a QD under the tuning of different parameter. The tuning parameter is drawn in purple line in the inset model.  \label{fig:M1-Tot} \protect\Source{   }}
 \end{figure}
 
   
-    \item\textbf{ \ref{fig:M1-Tot}.(c),(d):} This time a gate voltage is induced in the dot which breaks PHS. However the robust $0.5$-height Majorana signature prevails in the dot even at very high gate voltages where the dot is expected to be empty.
+    \item\textbf{ \ref{fig:M1-Tot}.(c),(d):} This time a gate voltage is induced in the dot which breaks PHS. However the robust $0.5$-height Majorana signature prevails in the dot even at very high gate voltages where the dot is expected to be empty. This result is similar to the one in \cite{vernek_subtle_2014}, where the is attached to the last cite of the Kitaev chain.
     
-    \item\textbf{ \ref{fig:M1-Tot}.(e),(f):} The term $\epsilon_M$ couples both Majoranas at the edges of the chain. The strength of this parameter decays exponentially with the length of the Majorana  chain so that it is often neglected . Here we observe the consequences of including this parameter in the model. The spin-$\dw$ DOS emulates the spin-$\up$ DOS for energies $\omega < \ep_M$. This clearly destroys the Majorana zero mode.   
+    \item\textbf{ \ref{fig:M1-Tot}.(e),(f):} The term $\epsilon_M$ couples both Majoranas at the edges of the chain. The strength of this parameter decays exponentially with the length of the Majorana  chain so that it is often neglected . Here we observe the consequences of including this parameter in the model. The spin-$\dw$ DOS for energies $\omega < \ep_M$ is forced to take the same value of the the spin-$\up$ DOS. This clearly destroys the Majorana zero mode in the dot.   
 \end{itemize}
 
 
@@ -188,9 +193,8 @@ To compute the DOS we need to replace $\sum \frac{V_1V^*_1}{\omega -\epsilon_k}=
 \section{Kondo-Majorana physics}
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.5]{IMAGES/Majorana/NRG_M1.png}
-\caption{ \label{fig:NRG-1M} DOS at $t_1 = \Gamma_1$ at the PHS-point.  Insets: Left: QD-Majorana model. Right: Low energy DOS. \protect\Source{By the author.}}
-
+\includegraphics[scale=0.6]{IMAGES/Majorana/NRG_M1.png}
+\caption{ \label{fig:NRG-1M} DOS at $t_1 = \Gamma_1$ at the PHS-point.  Insets: Left: QD-Majorana model. Right: Zoom to low energy DOS. \protect\Source{.}}
 \end{figure}
 
 In interacting quantum dots the Kondo effect is visible at low temperatures even when the QD is attached to a Majorana chain, which allows the study Kondo-Majorana physics. To observe this , we used the NRG code with a fixed Coulomb repulsion of $U = 17.6\Gamma_1$ just as in section \ref{sec: NRG-DQD}. Then, particle-hole equilibrium is achieved when $\left(\epsilon_{1}+\frac{U_1}{2}\right)\hat{n}_{1\sigma}$. Any tunning of the dots gate voltage must be understood as a displacement $\Delta \epsilon_1$ from this equilibrium point. 
@@ -200,22 +204,22 @@ In interacting quantum dots the Kondo effect is visible at low temperatures even
 
  \begin{figure}[h]
  \centering
-   \includegraphics[scale=0.6]{IMAGES/Majorana/NRG-FullED.png}
-   \caption{ \label{fig:QD-ed}(a)\&(b): Dependance of the DOS over the gate voltage $\Delta \epsilon_1$ at $t_1 = \Gamma_1$. (a)Spin-$\up$ (b) Spin-$\dw$. (c) DOS at the red-dashed horizontal cut in (a)\&(b). Insets: Left: QD-Majorana model. Right: Low energy DOS. (d) DOS at the Green-dashed vertical cut in (a)\&(b). \protect\Source{By the author.} }
-   \end{figure}
+   \includegraphics[scale=0.57]{IMAGES/Majorana/NRG-FullED.png}
+   \caption{ \label{fig:QD-ed}(a)\&(b): Dependance of the DOS over the gate voltage $\Delta \epsilon_1$ at $t_1 = \Gamma_1$. (a)Spin-$\up$ (b) Spin-$\dw$. (c) DOS at the red-dashed horizontal cut in (a)\&(b). Insets: Left: QD-Majorana model. Right: Low energy DOS. (d) DOS at the Green-dashed vertical cut in (a)\&(b). \protect\Source{.} }
+ \end{figure}
 
 
 
  \ref{fig:NRG-1M} shows the PHS case for a Majorana coupling $t_1=\Gamma_1$. The two small wide peaks at the borders of the plot are the coulomb states. In the right inset of the figure, we observe the low-temperature regime inside the gap. There, two zero modes can be appreciated.  While the spin-$\up$ DOS is the same Kondo peak from Figure \ref{fig:NRG-1D}, the spin-$\dw$ DOS reveals a Majorana zero mode of half the amplitude of the Kondo peak $\left(\frac{0.5}{\pi\Gamma_1}\right)$.  This  Majorana signature resembles the one in Figure \ref{fig:M1}.
+ \begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.48]{IMAGES/Majorana/Luis.png}
+ \caption{\label{fig:Luis}Dependence of the zero-bias conductunce over tuning voltage \protect\Source{Adapted from \cite{ruiz-tijerina_interaction_2015}.}}
+ \end{figure}
 
 
  It is possible to separate Kondo and Majorana physics by inducing a gate voltage in the dot. As observed in \ref{fig:QD-ed}(a), the gate voltage detunes the Kondo peak from the Fermi energy. Instead, the MZM in \ref{fig:QD-ed}(b) remains at the same position. At $\Delta \epsilon_1 = 5\Gamma_1$ we can already observe a decaying Kondo peak next to the robust Majorana signature of height $\frac{0.5}{\pi\Gamma}$ (\ref{fig:QD-ed}(c)). This is more clear in \ref{fig:QD-ed}(d) where the spin-$\up$ DOS decays with $\Delta \ep_1$ while the spin-$\dw$ DOS is stable, even at $\Delta \ep_1 \sim \frac{U}{2} = 8.6$ where the dot is supposed to be empty. 
 
- \begin{figure}[h]
- \centering
- \includegraphics[scale=0.5]{IMAGES/Majorana/Luis.png}
- \caption{\label{fig:Luis}Dependence of the zero-bias conductunce over tuning voltage \protect\Source{Adapted from \cite{ruiz-tijerina_interaction_2015}.}}
- \end{figure}
 
 % the observecharacterized by the the Majorana in the spin-$\dw$ channel will produce a peak at the fermi energy of half of the amplitude of the Kondo peak  This will be our Majorana signature. 
 

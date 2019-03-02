@@ -1,4 +1,4 @@
-\begin{thebibliography}{56}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -27,6 +27,16 @@ A.~Yu Kitaev.
 Frank Wilczek.
 \newblock Majorana returns, September 2009.
 \newblock URL \url{https://www.nature.com/articles/nphys1380}.
+
+\bibitem[Kitaev(2003)]{kitaev_fault-tolerant_2003}
+A.~Yu Kitaev.
+\newblock Fault-tolerant quantum computation by anyons.
+\newblock \emph{Annals of Physics}, 303\penalty0 (1):\penalty0 2--30, January
+  2003.
+\newblock ISSN 00034916.
+\newblock \doi{10.1016/S0003-4916(02)00018-0}.
+\newblock URL \url{http://arxiv.org/abs/quant-ph/9707021}.
+\newblock arXiv: quant-ph/9707021.
 
 \bibitem[Pachos(2012)]{pachos_introduction_2012}
 Jiannis~K. Pachos.

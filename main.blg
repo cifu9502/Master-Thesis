@@ -55,7 +55,6 @@ Repeated entry---line 243 of file Kondo.bib
  : @article{dias_da_silva_transmission_2008
  :                                         ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "kitaev_unpaired_2003"
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
@@ -71,45 +70,45 @@ Warning--empty year in vernek_subtle_2014
 Warning--empty journal in lee_kondo_2013
 Warning--empty year in lee_kondo_2013
 Warning--empty year in lee_kondo_2013
-You've used 56 entries,
+You've used 57 entries,
             2481 wiz_defined-function locations,
-            1021 strings with 19289 characters,
-and the built_in function-call counts, 24939 in all, are:
-= -- 2154
-> -- 1432
-< -- 23
-+ -- 544
-- -- 432
-* -- 2363
-:= -- 4189
-add.period$ -- 297
-call.type$ -- 56
-change.case$ -- 111
-chr.to.int$ -- 56
-cite$ -- 71
-duplicate$ -- 1067
-empty$ -- 2037
-format.name$ -- 498
-if$ -- 5133
+            1030 strings with 19465 characters,
+and the built_in function-call counts, 25315 in all, are:
+= -- 2196
+> -- 1439
+< -- 24
++ -- 548
+- -- 434
+* -- 2392
+:= -- 4250
+add.period$ -- 304
+call.type$ -- 57
+change.case$ -- 113
+chr.to.int$ -- 57
+cite$ -- 72
+duplicate$ -- 1086
+empty$ -- 2072
+format.name$ -- 501
+if$ -- 5213
 int.to.chr$ -- 1
-int.to.str$ -- 57
-missing$ -- 58
-newline$ -- 417
-num.names$ -- 168
-pop$ -- 311
+int.to.str$ -- 58
+missing$ -- 59
+newline$ -- 426
+num.names$ -- 171
+pop$ -- 314
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 57
 quote$ -- 0
-skip$ -- 548
+skip$ -- 558
 stack$ -- 0
-substring$ -- 1132
-swap$ -- 163
+substring$ -- 1150
+swap$ -- 166
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 380
+type$ -- 387
 warning$ -- 15
-while$ -- 182
+while$ -- 186
 width$ -- 0
-write$ -- 985
+write$ -- 1006
 (There were 11 error messages)
