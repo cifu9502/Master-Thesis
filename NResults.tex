@@ -93,11 +93,11 @@ This new model is a combination between the DQD  (\ref{fig:graphDQD}) and the Ma
      \begin{figure}[bt]
     \centering
     \includegraphics[scale=0.4]{IMAGES/Graphs/FinalGraph.png}
-    \caption{\label{fig:Graph-MDQD} Graph method applied to a DQD coupled to a Majorana zero mode. a) Initial stage. b) Popped vertexes $c^\dagger_k$, $c_k$, $d_{2, \downarrow}$ , $d^\dagger_{2, \downarrow}$ in that order. c) Popped vertexes $d^\dagger_{1, \downarrow}$ and $f_\dw$, the final energy is $\omega-\Green{d_1,d_1^\dagger}$  . \protect\Source{   }} 
+    \caption{\label{fig:Graph-MDQD} Graph method applied to a DQD coupled to a Majorana zero mode. a) Initial stage. b) Eliminated vertexes $c^\dagger_k$, $c_k$, $d_{2, \downarrow}$ , $d^\dagger_{2, \downarrow}$ in that order. c) Eliminated vertexes $d^\dagger_{1, \downarrow}$ and $f_\dw$, the final energy is $\omega-\Green{d_1,d_1^\dagger}$  . \protect\Source{   }} 
     \end{figure}
 
 % ------------------------FIGURE GRAPH---------------------------
- The graph representing this equation is in  \ref{fig:Graph-MDQD}(a). Using the algorithm in \ref{sec:Algorithm} we start popping vertexes $c_k,c^\dagger_k, d_{2,\dw}$ and $ d^\dagger_{2,\dw}$ in that order. The self-energies associated to $d_{1,\dw}$ and $d^\dagger_{1,\dw}$ will be similar to the energy of the DQD \eqref{eq:EnDQD} giving 
+ The graph representing this equation is in  \ref{fig:Graph-MDQD}(a). Using the algorithm in \ref{sec:Algorithm} we start eliminating vertexes $c_k,c^\dagger_k, d_{2,\dw}$ and $ d^\dagger_{2,\dw}$ in that order. The self-energies associated to $d_{1,\dw}$ and $d^\dagger_{1,\dw}$ will be similar to the energy of the DQD \eqref{eq:EnDQD} giving 
 \begin{equation}
     \epsilon_{DQD}^{\pm}=\pm\epsilon_{1}+\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}+\frac{\left\Vert \pm t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right\Vert ^{2}}{\omega\pm\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}. \label{eq:epDQD}
 \end{equation}
@@ -111,7 +111,7 @@ This new model is a combination between the DQD  (\ref{fig:graphDQD}) and the Ma
 \begin{equation}
     \epsilon_{M2}=\omega-\epsilon_{M}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2} } {\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}-\frac{\frac{\omega}{\omega+\epsilon_{M}}\left\Vert t_{2}\right\Vert ^{2}}{\omega+\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega+\epsilon_{\mathbf{k}}}}. \label{eq:M2}
 \end{equation}
-It only remains to pop out vertexes $d^\dagger_1$ and $f_\dw$  to obtain the green function 
+It only remains to eliminate out vertexes $d^\dagger_1$ and $f_\dw$  to obtain the green function 
 
 \begin{equation}
     G_{{d_{1\downarrow},d_{1\downarrow}^{\dagger}}}\left(\omega\right)=\frac{1}{\omega-\epsilon_{DQD}^{+}-\frac{\left\Vert T_{+}\right\Vert ^{2}}{\omega-\epsilon_{M2}-\frac{\left\Vert T_{-}\right\Vert ^{2}}{\epsilon_{DQD}^{-}}}}.
@@ -347,7 +347,7 @@ We are now writing a paper summarizing these results. As we observed, we were ab
 \caption{\label{fig:indirect} Dependence of the DOS in the symmetric model \ref{fig:MajoranaModels}(a) over $t_1=t_2$ and $\omega$. Up: High energy . Down: Zoom to low energy states.  \protect\Source{}}
 \end{figure}
 
-This section contains additional results that we are considering to study in  future publications. 
+This section contains additional results which we are considering to study in  future publications. 
 
 \subsection{Indirect exchange through the Majorana mode}
 

@@ -1,4 +1,4 @@
-\chapter{Coupling a QD with a Majorana chain \label{chap:Majorana} \label{sec:QD-Majorana}}
+\chapter{Coupling a QD with a Majorana zero mode \label{chap:Majorana} \label{sec:QD-Majorana}}
 %  After this, other papers revealing edge localization, as well as . The last year (2018) measured a robust zero bias peak (ZBP) of 
 
 
@@ -134,7 +134,7 @@ The graph representing these green functions is in \ref{fig:green-M-QD} (a)  (Lo
 \end{equation} 
  
  
- With these new equations we can construct the graph is  in \ref{fig:green-M-QD} (b) .  Using the Graph-Gauss-Jordan algorithm from \ref{sec:Algorithm}  we proceed to pop out vertexes $c_k$ , $c_k^\dagger$ and $d_1^\dagger$ in that order. The result is the graph in figure \ref{fig:green-M-QD}(c) with 
+ With these new equations we can construct the graph is  in \ref{fig:green-M-QD} (b) .  Using the Graph-Gauss-Jordan algorithm from \ref{sec:Algorithm}  we proceed to eliminate vertexes $c_k$ , $c_k^\dagger$ and $d_1^\dagger$ in that order. The result is the graph in figure \ref{fig:green-M-QD}(c) with 
  
  \begin{figure}[t]
     \centering
@@ -146,7 +146,7 @@ The graph representing these green functions is in \ref{fig:green-M-QD} (a)  (Lo
     \epsilon_{M,d_1^\dagger,c^\dagger}= \epsilon_{M}+\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega+\epsilon_{1}+\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega+\epsilon_{\mathbf{k}}}}.
 \end{equation}
  
- \noindent We finally pop out $f_\dw$ to obtain 
+ \noindent We finally eliminate $f_\dw$ to obtain 
  
 \begin{equation}
     \Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}=\left[\omega-\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{1}}-\frac{\omega}{\omega+\epsilon_{M}}\frac{\left\Vert t\right\Vert ^{2}}{\omega -\epsilon_{M,d_1^\dagger,c^\dagger}}\right]^{-1}.

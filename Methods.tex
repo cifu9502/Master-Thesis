@@ -188,7 +188,7 @@ According to the Anderson model the Hamiltonian for this system looks like
 
 Although this matrix is not Laplacian, the procedure in \cite{spielman10}  can still be applied with the downside of loosing part of the  speed-up of the algorithm. We still preserve  some of the advantages of using graphs, such as the schematic representation of the transport process,  the possibility of taking minimal cuttings and the relation between Gauss-Jordan elimination and random walks \cite{spielman10}  . All of these, simplify the complexity of the solution. 
  
-Now, our objective is to compute the green function  $\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}$.   For this we take the graph $\GDQD$ associated to the matrix  \eqref{eq:MatrixDQD}. See \ref{fig:graphDQD}(a).  The vertexes of this graph are the operators in the first site of the of the green functions  $(d_{1\downarrow},d_{2},c_{\boldsymbol{k}}$. $d_1^\dagger)$. $d^\dagger_1$ is not included since it only appears in the second sub-index of the green functions. The edges are given by the non-diagonal sites in the matrix  multiplied by $-1$ and there is a self-energy assigned to each vertex, equal to the difference between $\omega$  and the corresponding diagonal term. These self-energies can also be understood as additional edges connecting each vertex with itself. The plot of the energy parameters in this algorithm is quite important, hence we prefer to keep this name to differentiate them from the other couplings.  
+Now, our goal is to compute the green function  $\Green{d_{1\downarrow},d_{1\downarrow}^{\dagger}}$.  To this end, we take the graph $\GDQD$ associated to the matrix  \eqref{eq:MatrixDQD} (See \ref{fig:graphDQD}(a) ).  The vertexes of this graph are the operators in the first site of the of the green functions  $(d_{1\downarrow},d_{2},c_{\boldsymbol{k}}$. $d_1^\dagger)$. $d^\dagger_1$ is not included since it only appears in the second sub-index of the green functions. The edges are given by the non-diagonal sites in the matrix  multiplied by $-1$ and there is a self-energy assigned to each vertex, equal to the difference between $\omega$  and the corresponding diagonal term. These self-energies can also be understood as additional edges connecting each vertex with itself. The plot of the energy parameters in this algorithm is quite important, hence we prefer to keep this name to differentiate them from the other couplings.  
 
 \begin{figure}[t]
     \centering
@@ -198,7 +198,7 @@ Now, our objective is to compute the green function  $\Green{d_{1\downarrow},d_{
 \end{figure}
 
 
-The algorithm consists in the following. Each step of Gauss-Jordan elimination leads to a new graph with different energies and couplings. The elimination of a row and column is equivalent to pop the corresponding vertex in the graph. For instance, lets eliminate the first row and column of the matrix in \eqref{eq:MatrixDQD}. For it we just need to subtract the rank-$1$ matrix with the same first row and first column
+The algorithm consists in the following: Each step of Gauss-Jordan elimination leads to a new graph with different energies and couplings. The elimination of a row and column is equivalent to eliminate the corresponding vertex in the graph. For instance, lets eliminate the first row and column of the matrix in \eqref{eq:MatrixDQD}. For it we just need to subtract the rank-$1$ matrix with the same first row and first column
 \begin{align}
        & \left[\begin{array}{ccc}
     \omega-\epsilon_{k} & -V_{2} & -V_{1}\\
@@ -216,15 +216,15 @@ The algorithm consists in the following. Each step of Gauss-Jordan elimination l
     \label{eq:Gauss-Jordan} 
 \end{align}
 
-The graph associated to this new matrix can be observed in \ref{fig:graphDQD}(b) where operator $c_k$ has been popped. It is possible to associate the correction to the the energies and couplings to the possible walks passing through the vertex $c_k$.  For instance $d_1$'s energy $\epsilon_1$ receives an extra-term $\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{k}}$ representing an additional walk  from $d_1$ to $d_1$ passing through  $c_k$. The same logic can be applied to the other coupling terms. The correction to $t_{dots}$ is $\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{k}}$ which corresponds to a path from $d_1$ to $d_2$ passing through the popped vertex $c_k$. Note that this term includes the multiplication of both couplings $V_1, V_2*$ divided by the difference of $\omega$ with the self-energy $\epsilon_k$ of the vertex. This correspondence between the energy correction and eliminated paths through the graph makes the "popping" process an straightforward task. 
+The graph associated to this new matrix can be observed in \ref{fig:graphDQD}(b) where operator $c_k$ has been removed. It is possible to associate the correction to the the energies and couplings to the possible walks passing through the vertex $c_k$.  For instance $d_1$'s energy $\epsilon_1$ receives an extra-term $\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{k}}$ representing an additional walk  from $d_1$ to $d_1$ passing through  $c_k$. The same logic can be applied to the other coupling terms. The correction to $t_{dots}$ is $\frac{V_{1}^{*}V_{2}}{\omega-\epsilon_{k}}$ which corresponds to a path from $d_1$ to $d_2$ passing through the eliminated vertex $c_k$. Note that this term includes the multiplication of both couplings $V_1, V_2*$ divided by the difference of $\omega$ with the self-energy $\epsilon_k$ of the vertex. This correspondence between the energy correction and eliminated paths through the graph makes the "vertex-elimination" process a straightforward task. 
 
-We now proceed to pop vertex $d_2$, which leaves just a single vertex as  shown in \ref{fig:graphDQD}(c). The self-energy of it can be readily computed with the previous path elimination idea which gives 
+We now proceed to eliminate vertex $d_2$, which leaves just a single vertex as  shown in \ref{fig:graphDQD}(c). The self-energy of it can be readily computed with the previous path elimination idea which gives 
 \begin{equation}
     \epsilon^+_{DQD}=\epsilon_{1}+\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}+\frac{\left\Vert t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right\Vert ^{2}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}},  \label{eq:EnDQD}
 \end{equation}
 \noindent where we selectively included the $\sum_k$-terms in the places where $k$ appeared. 
 
-As a result of  Gauss-Jordan elimination the linear equation in \eqref{eq:MatrixDQD} has evolved into the trivial form 
+As a result of  Gauss-Jordan elimination, the linear equation in \eqref{eq:MatrixDQD} has evolved into the trivial form 
 \begin{equation}
 \left[\begin{array}{ccc}
 0 & 0 & 0\\
@@ -244,7 +244,7 @@ The Green function is then
 \begin{align}
 \Green{d_{1},d_{1}^{\dagger}}=\frac{1}{\omega -  \epsilon^+_{DQD}} =\left[\left(\omega-\epsilon_{1}-\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)-\frac{\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)\left(t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)^{*}}{\omega-\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_2V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}\right]^{-1}. \label{eq:SumSolGreen} 
 \end{align}
-\noindent This Green function will emerge again in the last chapter when solving the double dot-Majorana system. For now, we will continue sum up the previous algorithm.     
+\noindent This Green function will appear again in the last chapter when solving the double dot-Majorana system.    
 % the inverse of the green function $G_{d_1d^\dagger_1}$. The final result is then 
 
 % \begin{equation}
@@ -262,11 +262,11 @@ The Green function is then
 In this part we summarize the steps of the Graph-Gauss-Jordan elimination process to compute the Green function  $\Green{d,d\dagger}$ of an operator $d$:
 \begin{enumerate}
     \item Computing the transport equations with the second term of the Green function fixed in the creation operator $d^\dagger$ at all equations. 
-     \item  Setting up the  graph associated to the transport system. The self-energy of each vertex is initialized as $\omega$ minus the corresponding diagonal term.  The edge weights are given by the coupling of the off-diagonal terms multiplied by $-41$. 
-    \item Popping out the vertexes of the graph. Each popping process carries the following steps.
+     \item  Setting up the  graph associated to the transport system. The self-energy of each vertex is initialized as $\omega$ minus the corresponding diagonal term.  The edge weights are given by the coupling of the off-diagonal terms multiplied by $-1$. 
+    \item Eliminating the vertexes of the graph one by one. Each vertex-elimination process carries the following steps.
     \begin{enumerate}
-        \item Computing the extra-terms of the energies and couplings based on the walks passing through the popped vertex.
-        \item Eliminating this vertex from the graph. 
+        \item Computing the extra-terms of the energies and couplings based on the walks passing through the eliminated vertex.
+        \item Removing this vertex from the graph. 
         \item Iterating till there is only one  vertex.
         \end{enumerate}
     \item The energy in the remaining vertex $d$ is the self- energy $\epsilon_d = \omega -\frac{1}{ \Green{d,d^\dagger}}$ .
@@ -322,11 +322,11 @@ This algorithm will be our main method to find the Green function and therefore 
 \subsection{Non-interacting DOS in a  double quantum dot coupled to a lead \label{sec:GreedDQD}}
 
 
-In this subsection we describe the remaining steps to obtain the density of states of the double quantum dot from the Green function \eqref{eq:SumSolGreen}. We will plot the results and observe the evolution of the DOS while tuning the parameters of the model. 
+In this subsection, we describe the remaining steps to obtain the density of states of the double quantum dot from the Green function \eqref{eq:SumSolGreen}. We will plot the results and observe the evolution of the DOS while tuning the parameters of the model. 
 
-First note that equation \eqref{eq:SumSolGreen} depends on the term $\sum_{\boldsymbol{k}}\frac{V_{i}^{*}V_{j}}{\omega-\epsilon_{\boldsymbol{k}}}$ which describes the broadening of the DOS when the QD enters in contact with the lead. This broadening is usually named $\Gamma_i=V_{i}^{*}V_{i}$ (Or $\Delta$ depending on the text book). 
+First note that equation \eqref{eq:SumSolGreen} depends on the term $\sum_{\boldsymbol{k}}\frac{V_{i}^{*}V_{j}}{\omega-\epsilon_{\boldsymbol{k}}}$, which describes the broadening of the DOS when the QD enters in contact with the lead. This broadening is usually named $\Gamma_i=V_{i}^{*}V_{i}$ (Or $\Delta$ depending on the text book). 
 % $$-\Gamma_i = \sum_{\boldsymbol{k}}\frac{V_{1}^{*}V_{1}}{\omega-\epsilon_{\boldsymbol{k}}}. $$
-In general $V_i$  is a function of $\textbf{k}$. However, in the limit of flat-band we can assume that $V_i $ is constant. Therefore, it is enough to integrate
+In general, $V_i$  is a function of $\textbf{k}$. However, in the limit of flat-band we can assume that $V_i $ is constant. Therefore, it is enough to integrate
 \begin{equation}
     \sum_{\boldsymbol{k}}\frac{1}{\omega-\epsilon_{\boldsymbol{k}}+is}=\int_{-D}^{D}\frac{d\epsilon_{\boldsymbol{k}}}{\omega-\epsilon_{\boldsymbol{k}}+is}=-\ln\left(\frac{D-\epsilon_{\boldsymbol{k}}+is}{-D-\epsilon_{\boldsymbol{k}}+is}\right)\xrightarrow[D\rightarrow\infty]{}-i , 
 \end{equation}
@@ -397,12 +397,14 @@ In \ref{fig:GreenDQD} we can observe the evolution of the Density of States unde
 
 \section{The Numerical Renormalization Group\label{sec:The-Numerical-Renormaliztion} (NRG) }
 
-\subsection{From the Renormalization Group to the Wilson's Chain \label{subsec:Logarithmic}}
+The numerical renormalization group is renown for providing the most successful and complete explanation of the Kondo problem. of integrating the strong correlations in coulomb interacting systems. In this chapter, we will review the main ideas of the NRG algorithm including the logarithmic discretization, the construction of Wilson's chain and the iterative diagonalization in symmetry blocks. At the end, we will give some specifications about our code and we will show its results in the model of a double quantum dot attached to a metallic lead. 
+
+\subsection{From the Renormalization Group to  Wilson's Chain \label{subsec:Logarithmic}}
 
 %-------------------------------------------------------
 \begin{figure}[hbt]
 \centering
-\includegraphics[scale=0.45]{IMAGES/DQD/NRG-Final.png}\caption{\label{fig:Discretization}.
+\includegraphics[scale=0.45]{IMAGES/DQD/NRG-Final.png}\caption{\label{fig:Discretization}
 NRG algorithm: The logarithmic discretization of the conduction band according to the discretization parameter $\Lambda$. The system with the lead attached to the QD-impurity is mapped to the Wilson's chain, such that each step of the chain contains the contributions at different energy scales $\Lambda^{-N/2}$. \protect\Source{   } }
 \end{figure}
 %--------------------------------------------------
@@ -442,7 +444,7 @@ H_{N+1}=T\left[H_{N}\right]=\Lambda^{\frac{1}{2}}H_{N}+\xi_{N}\left(f_{N+1,\sigm
 H_{-1} := \frac{2 H_d\Lambda^{-1/2}}{D(1+\Lambda^{-1})}\ ,\ \xi_{-1}=\sqrt{\frac{2\Gamma}{\pi D}}.\label{eq:H-1}
 \end{equation}
 
-Note that at each step  $H_N$ is being rescaled by a factor $\Lambda^(1/2)$ before including the following contribution.  This is performed iteratively to eliminate the high order excitations, which allows to obtain an effective model valid for the lower energies. In consequence, each Hamiltonian $H_N$ represents only the physics that is relevant at the energy scale $\Lambda^{-N/2}$. 
+Note that at each step  $H_N$ is being rescaled by a factor $\Lambda^{1/2}$ before including the following contribution.  This is performed iteratively to eliminate the high order excitations, which allows to obtain an effective model valid for the lower energies. In consequence, each Hamiltonian $H_N$ represents only the physics that is relevant at the energy scale $\Lambda^{-N/2}$. 
 
 %Then the initial Anderson model can be recovered in the limit 
 %\begin{equation}    
@@ -458,7 +460,7 @@ $$\mathcal{T}^N H_{-1} =  \frac{1+\Lambda^{-1}}{2}\Lambda^\frac{ -N }{2} H_N$$
 \]
 \noindent which decays exponentially with the length of the chain. Therefore, we may thing that at some point these new contributions will be so small that the that the map $\mathcal{T}$ will eventually converge. Formally the theory for NRG convergence is too complex for this thesis. However the results show that the operator that truly converges is $\mathcal{T}^2$ and not $\mathcal{T}$\cite{krishna-murthy_renormalization-group_1980}. This has important consequences, for instance the convergence of the code has to be analyzed on odd and even values of $N$ separately. 
 
-To this point, the equation \eqref{eq:Newchain-Hamiltonian} and the derived limit of $H_N$ to the Anderson Hamiltonian are exact expressions . The first approximations will be performed in the following section which descries the iterative diagonalization of the shell Hamiltonians.
+To this point, the equation \eqref{eq:Newchain-Hamiltonian} and the derived limit of $H_N$ to the Anderson Hamiltonian are exact expressions. The first approximations will be performed in the following section which descries the iterative diagonalization of the shell Hamiltonians.
  
  \subsection{Iterative Diagonalization \label{subsec:IterativeDiag}}
 

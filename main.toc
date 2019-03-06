@@ -1,54 +1,54 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}{Abstract}}{2}{chapter.1}
-\contentsline {chapter}{\numberline {2}{Table of Contents}}{3}{chapter.2}
-\contentsline {chapter}{\numberline {3}{Introduction and Motivation: \\ The Pursuit of Majorana Fermions in superconducting wires. }}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}{The Kitaev Chain }}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}{Topological phase transition }}{10}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}{Non-abelian statistics }}{12}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}{Real implementations of the Kitaev Chain }}{14}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}{Detecting Majorana zero modes in quantum dots}}{16}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}{Why double quantum dots?}}{17}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}{Overview}}{18}{section.3.3}
-\contentsline {chapter}{\numberline {4}{Preliminaries }}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}{Transport process in quantum dots (QDs) }}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}{The Anderson Model }}{21}{section.4.2}
-\contentsline {section}{\numberline {4.3}{The Kondo Effect }}{23}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}{Kondo Effect in QDs}}{25}{subsection.4.3.1}
-\contentsline {chapter}{\numberline {5}{Theory and Methods }}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}{Green function formalism }}{27}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}{Green function of fermion operators and the equations of motion}}{28}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}{Graph-Gauss-Jordan elimination process: Solving the equations of motion }}{30}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}{Graph Algorithm }}{33}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}{Non-interacting DOS in a double quantum dot coupled to a lead }}{33}{subsection.5.1.4}
-\contentsline {section}{\numberline {5.2}{The Numerical Renormalization Group (NRG) }}{35}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}{From the Renormalization Group to the Wilson's Chain }}{35}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}{Iterative Diagonalization }}{38}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}{Symmetries }}{39}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}{Iterative diagonalization in a single QD attached to a metallic lead }}{39}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}{The Density Matrix Renormalization Group (DM-NRG) }}{42}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}{Specifications of the NRG Code }}{44}{subsection.5.2.6}
-\contentsline {subsection}{\numberline {5.2.7}{NRG results in a double quantum dot coupled to a metallic lead}}{46}{subsection.5.2.7}
-\contentsline {chapter}{\numberline {6}{Coupling a QD with a Majorana chain }}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}{Model}}{49}{section.6.1}
-\contentsline {section}{\numberline {6.2}{Non-interacting QD coupled to Majorana chain }}{51}{section.6.2}
-\contentsline {section}{\numberline {6.3}{Kondo-Majorana physics}}{54}{section.6.3}
-\contentsline {chapter}{\numberline {7}{Coupling the Majorana Zero Mode to a Double Quantum Dot }}{57}{chapter.7}
-\contentsline {section}{\numberline {7.1}{Applying our methods to the DQD-Majorana system}}{58}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}{Non-interacting Green function:}}{58}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}{NRG for the interacting system}}{60}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}{Manipulation of Majorana zero modes}}{60}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}{Non-interacting manipulation}}{62}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}{Interacting manipulation }}{65}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}{Additional results}}{69}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}{Indirect exchange through the Majorana mode}}{70}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}{Indirect Majorana coupling through the lead}}{72}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}{Critical behavior in zero-bias DOS }}{72}{subsection.7.3.3}
-\contentsline {chapter}{\numberline {8}{Conclusions}}{73}{chapter.8}
-\contentsline {section}{\textbf {References}}{74}{figure.8.1}
-\contentsline {chapter}{Bibliography}{75}{chapter*.1}
+\contentsline {chapter}{List of Figures}{5}{chapter*.3}
+\contentsline {chapter}{\numberline {1}{Abbreviations}}{9}{chapter.1}
+\contentsline {chapter}{\numberline {2}{Introduction and Motivation: \\ The Pursuit of Majorana Fermions in superconducting wires. }}{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}{The Kitaev Chain }}{12}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}{Topological phase transition }}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}{Non-abelian statistics }}{17}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}{Real implementations of the Kitaev Chain }}{19}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}{Detecting Majorana zero modes using quantum dots}}{21}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}{Why double quantum dots?}}{22}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}{Overview}}{23}{section.2.3}
+\contentsline {chapter}{\numberline {3}{Preliminaries }}{24}{chapter.3}
+\contentsline {section}{\numberline {3.1}{Transport process in quantum dots (QDs) }}{24}{section.3.1}
+\contentsline {section}{\numberline {3.2}{The Anderson Model }}{26}{section.3.2}
+\contentsline {section}{\numberline {3.3}{The Kondo Effect }}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}{Kondo Effect in QDs}}{30}{subsection.3.3.1}
+\contentsline {chapter}{\numberline {4}{Theory and Methods }}{32}{chapter.4}
+\contentsline {section}{\numberline {4.1}{Green function formalism }}{32}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}{Green function of fermion operators and the equations of motion}}{33}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}{Graph-Gauss-Jordan elimination process: Solving the equations of motion }}{35}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}{Graph Algorithm }}{38}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}{Non-interacting DOS in a double quantum dot coupled to a lead }}{38}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}{The Numerical Renormalization Group (NRG) }}{40}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}{From the Renormalization Group to Wilson's Chain }}{40}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}{Iterative Diagonalization }}{43}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}{Symmetries }}{44}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}{Iterative diagonalization in a single QD attached to a metallic lead }}{44}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}{The Density Matrix Renormalization Group (DM-NRG) }}{47}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}{Specifications of the NRG Code }}{49}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}{NRG results in a double quantum dot coupled to a metallic lead}}{51}{subsection.4.2.7}
+\contentsline {chapter}{\numberline {5}{Coupling a QD with a Majorana zero mode }}{54}{chapter.5}
+\contentsline {section}{\numberline {5.1}{Model}}{54}{section.5.1}
+\contentsline {section}{\numberline {5.2}{Non-interacting QD coupled to Majorana chain }}{56}{section.5.2}
+\contentsline {section}{\numberline {5.3}{Kondo-Majorana physics}}{59}{section.5.3}
+\contentsline {chapter}{\numberline {6}{Coupling the Majorana Zero Mode to a Double Quantum Dot }}{62}{chapter.6}
+\contentsline {section}{\numberline {6.1}{Applying our methods to the DQD-Majorana system}}{63}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}{Non-interacting Green function:}}{63}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}{NRG for the interacting system}}{65}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}{Manipulation of Majorana zero modes}}{65}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}{Non-interacting manipulation}}{67}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}{Interacting manipulation }}{70}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}{Additional results}}{74}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}{Indirect exchange through the Majorana mode}}{75}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}{Indirect Majorana coupling through the lead}}{77}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}{Critical behavior in zero-bias DOS }}{77}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7}{Conclusions}}{78}{chapter.7}
+\contentsline {section}{\textbf {References}}{79}{figure.7.1}
+\contentsline {chapter}{Bibliography}{80}{chapter*.4}
 \contentsline {part}{{Appendices}}{}{}
-\contentsline {chapter}{\numberline {A}{Appendix}}{82}{appendix.A}
-\contentsline {section}{\numberline {A.1}{From the logarithmic discretization to the Wilson's chain.}}{82}{section.A.1}
-\contentsline {subsubsection}{{Logarithmic Discretization:}}{82}{section*.2}
-\contentsline {subsubsection}{{Mapping the Anderson model to a Chain-Hamiltonian}}{84}{section*.3}
-\contentsline {section}{\numberline {A.2}{Initial DQD-Majorana Hamiltonian.}}{86}{section.A.2}
+\contentsline {chapter}{\numberline {A}{Appendix}}{87}{appendix.A}
+\contentsline {section}{\numberline {A.1}{From the logarithmic discretization to the Wilson's chain.}}{87}{section.A.1}
+\contentsline {subsubsection}{{Logarithmic Discretization:}}{87}{section*.5}
+\contentsline {subsubsection}{{Mapping the Anderson model to a Chain-Hamiltonian}}{89}{section*.6}
+\contentsline {section}{\numberline {A.2}{Initial DQD-Majorana Hamiltonian.}}{91}{section.A.2}

@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.25)  1 MAR 2019 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.25)  6 MAR 2019 00:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
-(./main.tex
+(/home/cifu/Master-Thesis/main.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(./ubcthesis.cls
+(/home/cifu/Master-Thesis/ubcthesis.cls
 Document Class: ubcthesis 2012/04/07 v1.70 
  University of British Columbia Thesis Class
-(./genthesis.cls
+(/home/cifu/Master-Thesis/genthesis.cls
 Document Class: genthesis 2012/04/07 v1.70 
  University of British Columbia Thesis Class
 \hours=\count79
@@ -611,34 +611,36 @@ Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
 
 
 Writing nomenclature file main.nlo
-(./main.aux (./Intro.aux
+(/home/cifu/Master-Thesis/main.aux (/home/cifu/Master-Thesis/Intro.aux
 
 LaTeX Warning: Label `eq:newM' multiply defined.
 
 
 LaTeX Warning: Label `eq:newM@cref' multiply defined.
 
-) (./Preliminars.aux) (./Methods.aux) (./Majorana.aux) (./NResults.aux)
-(./Append_A.aux))
+) (/home/cifu/Master-Thesis/Preliminars.aux)
+(/home/cifu/Master-Thesis/Methods.aux) (/home/cifu/Master-Thesis/Majorana.aux)
+(/home/cifu/Master-Thesis/NResults.aux) (/home/cifu/Master-Thesis/Append_A.aux)
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 206.
-LaTeX Font Info:    ... okay on input line 206.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 206.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 214.
+LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 214.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -707,8 +709,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box64
-Package backref Info: ** backref set up for natbib ** on input line 206.
-Package hyperref Info: Link coloring ON on input line 206.
+Package backref Info: ** backref set up for natbib ** on input line 214.
+Package hyperref Info: Link coloring ON on input line 214.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -718,11 +720,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 206.
-LaTeX Info: Redefining \pageref on input line 206.
-LaTeX Info: Redefining \nameref on input line 206.
+LaTeX Info: Redefining \ref on input line 214.
+LaTeX Info: Redefining \pageref on input line 214.
+LaTeX Info: Redefining \nameref on input line 214.
 
-(./main.out) (./main.out)
+(/home/cifu/Master-Thesis/main.out) (/home/cifu/Master-Thesis/main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -730,36 +732,35 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 209.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 209.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 217.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 217.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 209.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 217.
  [1
 Non-PDF special ignored!
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 209.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 217.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 224.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 232.
+
 [2
 
 
-]
-Chapter 2.
-(./main.toc
+] (/home/cifu/Master-Thesis/main.toc
 Package cleveref Info: loaded `english' language definitions on input line 1.
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 2.
 
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 2.
@@ -805,20 +806,48 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
+Package cleveref Info: loaded `english' language definitions on input line 240.
+
+ [4]
+(/home/cifu/Master-Thesis/main.lof
+Package cleveref Info: loaded `english' language definitions on input line 1.
+ [5
+
+]
+Package cleveref Info: loaded `english' language definitions on input line 36.
+ [6]
+Overfull \hbox (6.54413pt too wide) in paragraph at lines 41--41
+ \T1/ptm/m/n/10.95 plings of QD1 . Dashed lines: Ma-jo-rana spin-$\OMS/ztmcm/m/
+n/10.95 #$ \T1/ptm/m/n/10.95 ef-fec-tive cou-plings [] 
+ []
+
+Package cleveref Info: loaded `english' language definitions on input line 56.
+[7])
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+Package cleveref Info: loaded `english' language definitions on input line 241.
+
+ [8]
+Chapter 1.
+(/home/cifu/Master-Thesis/main.lop)
+\tf@lop=\write8
+\openout8 = `main.lop'.
+
 
 No file main.nls.
-Package cleveref Info: loaded `english' language definitions on input line 247.
+[9
 
-[4]
+]
 \openout2 = `Intro.aux'.
 
- (./Intro.tex
-Chapter 3.
+ (/home/cifu/Master-Thesis/Intro.tex
+Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 2.
 
-<IMAGES/Majorana/Coffe&donuts.jpg, id=280, 449.68pt x 175.65625pt>
+<IMAGES/Majorana/Coffe&donuts.jpg, id=536, 449.68pt x 175.65625pt>
 File: IMAGES/Majorana/Coffe&donuts.jpg Graphic file (type jpg)
 <use IMAGES/Majorana/Coffe&donuts.jpg>
 Package pdftex.def Info: IMAGES/Majorana/Coffe&donuts.jpg  used on input line 1
@@ -830,37 +859,38 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-[5
+[10
 
 
- <./IMAGES/Majorana/Coffe&donuts.jpg>]
+ </home/cifu/Master-Thesis/IMAGES/Majorana/Coffe&donuts.jpg>]
 Package cleveref Info: loaded `english' language definitions on input line 37.
- [6]
+ [11]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
-<IMAGES/Majorana/KitaevChain.png, id=322, 559.691pt x 169.433pt>
+<IMAGES/Majorana/KitaevChain.png, id=574, 559.691pt x 169.433pt>
 File: IMAGES/Majorana/KitaevChain.png Graphic file (type png)
 <use IMAGES/Majorana/KitaevChain.png>
 Package pdftex.def Info: IMAGES/Majorana/KitaevChain.png  used on input line 75
 .
 (pdftex.def)             Requested size: 279.8448pt x 84.71628pt.
 Package cleveref Info: loaded `english' language definitions on input line 87.
- [7]
-<IMAGES/Majorana/Spectrum.png, id=338, 432.61626pt x 305.14pt>
+ [12]
+<IMAGES/Majorana/Spectrum.png, id=588, 432.61626pt x 305.14pt>
 File: IMAGES/Majorana/Spectrum.png Graphic file (type png)
 <use IMAGES/Majorana/Spectrum.png>
 Package pdftex.def Info: IMAGES/Majorana/Spectrum.png  used on input line 107.
 (pdftex.def)             Requested size: 281.19724pt x 198.33864pt.
 Package cleveref Info: loaded `english' language definitions on input line 125.
 
- [8 <./IMAGES/Majorana/KitaevChain.png>]
+
+[13 </home/cifu/Master-Thesis/IMAGES/Majorana/KitaevChain.png>]
 Package cleveref Info: loaded `english' language definitions on input line 141.
 
- [9 <./IMAGES/Majorana/Spectrum.png>]
+ [14 </home/cifu/Master-Thesis/IMAGES/Majorana/Spectrum.png>]
 Package cleveref Info: loaded `english' language definitions on input line 206.
 
- [10]
-<IMAGES/Majorana/Topological.png, id=381, 518.738pt x 193.523pt>
+ [15]
+<IMAGES/Majorana/Topological.png, id=627, 518.738pt x 193.523pt>
 File: IMAGES/Majorana/Topological.png Graphic file (type png)
 <use IMAGES/Majorana/Topological.png>
 Package pdftex.def Info: IMAGES/Majorana/Topological.png  used on input line 21
@@ -868,10 +898,11 @@ Package pdftex.def Info: IMAGES/Majorana/Topological.png  used on input line 21
 (pdftex.def)             Requested size: 414.99097pt x 154.81859pt.
 Package cleveref Info: loaded `english' language definitions on input line 223.
 
- [11 <./IMAGES/Majorana/Topological.png>]
+ [16 </home/cifu/Master-Thesis/IMAGES/Majorana/Topological.png>]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 238.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Underfull \hbox (badness 3514) in paragraph at lines 238--238
@@ -887,42 +918,43 @@ T1/ptm/m/n/10.95 (See al-ge-braic re-la-tions []), $\OT1/ztmcm/m/n/10.95 [\OML/
 ztmcm/m/it/10.95 H; ^^M[]^^M[]\OT1/ztmcm/m/n/10.95 ] =
  []
 
-<IMAGES/Majorana/nonAb.png, id=393, 188.3838pt x 89.6148pt>
+<IMAGES/Majorana/nonAb.png, id=639, 188.3838pt x 89.6148pt>
 File: IMAGES/Majorana/nonAb.png Graphic file (type png)
 <use IMAGES/Majorana/nonAb.png>
 Package pdftex.def Info: IMAGES/Majorana/nonAb.png  used on input line 272.
 (pdftex.def)             Requested size: 188.38333pt x 89.61458pt.
 Package cleveref Info: loaded `english' language definitions on input line 274.
 
-[12]
+[17]
 Package cleveref Info: loaded `english' language definitions on input line 303.
 
- [13 <./IMAGES/Majorana/nonAb.png>]
-<IMAGES/Majorana/Mwire.png, id=428, 501.875pt x 195.73125pt>
+ [18 </home/cifu/Master-Thesis/IMAGES/Majorana/nonAb.png>]
+<IMAGES/Majorana/Mwire.png, id=672, 501.875pt x 195.73125pt>
 File: IMAGES/Majorana/Mwire.png Graphic file (type png)
 <use IMAGES/Majorana/Mwire.png>
 Package pdftex.def Info: IMAGES/Majorana/Mwire.png  used on input line 336.
 (pdftex.def)             Requested size: 351.31009pt x 137.01093pt.
 Package cleveref Info: loaded `english' language definitions on input line 351.
 
- [14]
-<IMAGES/Majorana/Exp.png, id=453, 405.515pt x 396.48125pt>
+ [19]
+<IMAGES/Majorana/Exp.png, id=698, 405.515pt x 396.48125pt>
 File: IMAGES/Majorana/Exp.png Graphic file (type png)
 <use IMAGES/Majorana/Exp.png>
 Package pdftex.def Info: IMAGES/Majorana/Exp.png  used on input line 359.
 (pdftex.def)             Requested size: 162.20311pt x 158.58968pt.
-<IMAGES/Majorana/Exp2.png, id=454, 494.84875pt x 391.4625pt>
+<IMAGES/Majorana/Exp2.png, id=699, 494.84875pt x 391.4625pt>
 File: IMAGES/Majorana/Exp2.png Graphic file (type png)
 <use IMAGES/Majorana/Exp2.png>
 Package pdftex.def Info: IMAGES/Majorana/Exp2.png  used on input line 360.
 (pdftex.def)             Requested size: 197.93599pt x 156.58221pt.
 Package cleveref Info: loaded `english' language definitions on input line 370.
 
- [15 <./IMAGES/Majorana/Mwire.png>]
+ [20 </home/cifu/Master-Thesis/IMAGES/Majorana/Mwire.png>]
 Package cleveref Info: loaded `english' language definitions on input line 378.
 
-[16 <./IMAGES/Majorana/Exp.png> <./IMAGES/Majorana/Exp2.png>]
-<IMAGES/Majorana/Prospective.png, id=502, 358.09785pt x 143.45595pt>
+ [21 </home/cifu/Master-Thesis/IMAGES/Majorana/Exp.png> </home/cifu/Master-Thes
+is/IMAGES/Majorana/Exp2.png>]
+<IMAGES/Majorana/Prospective.png, id=746, 358.09785pt x 143.45595pt>
 File: IMAGES/Majorana/Prospective.png Graphic file (type png)
 <use IMAGES/Majorana/Prospective.png>
 Package pdftex.def Info: IMAGES/Majorana/Prospective.png  used on input line 38
@@ -930,69 +962,71 @@ Package pdftex.def Info: IMAGES/Majorana/Prospective.png  used on input line 38
 (pdftex.def)             Requested size: 358.09698pt x 143.45558pt.
 Package cleveref Info: loaded `english' language definitions on input line 396.
 
- [17 <./IMAGES/Majorana/Prospective.png>])
-Package cleveref Info: loaded `english' language definitions on input line 247.
 
- [18]
+[22 </home/cifu/Master-Thesis/IMAGES/Majorana/Prospective.png>])
+Package cleveref Info: loaded `english' language definitions on input line 256.
+
+ [23]
 \openout2 = `Preliminars.aux'.
 
- (./Preliminars.tex
-Chapter 4.
-<IMAGES/Preliminars/VerticalQD.png, id=547, 558.085pt x 474.77374pt>
+
+(/home/cifu/Master-Thesis/Preliminars.tex
+Chapter 3.
+<IMAGES/Preliminars/VerticalQD.png, id=787, 558.085pt x 474.77374pt>
 File: IMAGES/Preliminars/VerticalQD.png Graphic file (type png)
 <use IMAGES/Preliminars/VerticalQD.png>
 Package pdftex.def Info: IMAGES/Preliminars/VerticalQD.png  used on input line 
 15.
 (pdftex.def)             Requested size: 167.42679pt x 142.43321pt.
-<IMAGES/Preliminars/QD-horizontal.png, id=548, 351.3125pt x 349.305pt>
+<IMAGES/Preliminars/QD-horizontal.png, id=788, 351.3125pt x 349.305pt>
 File: IMAGES/Preliminars/QD-horizontal.png Graphic file (type png)
 <use IMAGES/Preliminars/QD-horizontal.png>
 Package pdftex.def Info: IMAGES/Preliminars/QD-horizontal.png  used on input li
 ne 16.
 (pdftex.def)             Requested size: 140.5225pt x 139.71951pt.
-<IMAGES/Preliminars/specDot.png, id=553, 546.04pt x 171.039pt>
+<IMAGES/Preliminars/specDot.png, id=793, 546.04pt x 171.039pt>
 File: IMAGES/Preliminars/specDot.png Graphic file (type png)
 <use IMAGES/Preliminars/specDot.png>
 Package pdftex.def Info: IMAGES/Preliminars/specDot.png  used on input line 30.
 
 (pdftex.def)             Requested size: 273.01933pt x 85.51929pt.
-[19
+[24
 
 
 
- <./IMAGES/Preliminars/VerticalQD.png> <./IMAGES/Preliminars/QD-horizontal.png>
-]
-<IMAGES/Preliminars/QD-Transport.png, id=567, 262.581pt x 187.902pt>
+ </home/cifu/Master-Thesis/IMAGES/Preliminars/VerticalQD.png> </home/cifu/Maste
+r-Thesis/IMAGES/Preliminars/QD-horizontal.png>]
+<IMAGES/Preliminars/QD-Transport.png, id=804, 262.581pt x 187.902pt>
 File: IMAGES/Preliminars/QD-Transport.png Graphic file (type png)
 <use IMAGES/Preliminars/QD-Transport.png>
 Package pdftex.def Info: IMAGES/Preliminars/QD-Transport.png  used on input lin
 e 39.
 (pdftex.def)             Requested size: 183.80542pt x 131.53049pt.
-<IMAGES/Preliminars/QD-Blockade1.png, id=568, 587.796pt x 410.9754pt>
+<IMAGES/Preliminars/QD-Blockade1.png, id=805, 587.796pt x 410.9754pt>
 File: IMAGES/Preliminars/QD-Blockade1.png Graphic file (type png)
 <use IMAGES/Preliminars/QD-Blockade1.png>
 Package pdftex.def Info: IMAGES/Preliminars/QD-Blockade1.png  used on input lin
 e 40.
 (pdftex.def)             Requested size: 176.34015pt x 123.29356pt.
 Package cleveref Info: loaded `english' language definitions on input line 88.
- [20 <./IMAGES/Preliminars/specDot.png>]
+ [25 </home/cifu/Master-Thesis/IMAGES/Preliminars/specDot.png>]
 Package cleveref Info: loaded `english' language definitions on input line 99.
- [21 <./IMAGES/Preliminars/QD-Transport.png> <./IMAGES/Preliminars/QD-Blockade1
-.png>]
+ [26 </home/cifu/Master-Thesis/IMAGES/Preliminars/QD-Transport.png> </home/cifu
+/Master-Thesis/IMAGES/Preliminars/QD-Blockade1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
 Package cleveref Info: loaded `english' language definitions on input line 155.
 
-[22]
-<IMAGES/Preliminars/KondoTemp.png, id=610, 264.23718pt x 261.97874pt>
+[27]
+<IMAGES/Preliminars/KondoTemp.png, id=844, 264.23718pt x 261.97874pt>
 File: IMAGES/Preliminars/KondoTemp.png Graphic file (type png)
 <use IMAGES/Preliminars/KondoTemp.png>
 Package pdftex.def Info: IMAGES/Preliminars/KondoTemp.png  used on input line 2
 07.
 (pdftex.def)             Requested size: 158.54352pt x 157.18845pt.
-<IMAGES/Preliminars/kondoCloud.png, id=611, 134.75343pt x 115.93312pt>
+<IMAGES/Preliminars/kondoCloud.png, id=845, 134.75343pt x 115.93312pt>
 File: IMAGES/Preliminars/kondoCloud.png Graphic file (type png)
 <use IMAGES/Preliminars/kondoCloud.png>
 Package pdftex.def Info: IMAGES/Preliminars/kondoCloud.png  used on input line 
@@ -1000,12 +1034,12 @@ Package pdftex.def Info: IMAGES/Preliminars/kondoCloud.png  used on input line
 (pdftex.def)             Requested size: 175.17943pt x 150.71303pt.
 Package cleveref Info: loaded `english' language definitions on input line 217.
 
- [23]
+ [28]
 Package cleveref Info: loaded `english' language definitions on input line 252.
 
- [24 <./IMAGES/Preliminars/KondoTemp.png (PNG copy)> <./IMAGES/Preliminars/kond
-oCloud.png (PNG copy)>]
-<IMAGES/Preliminars/expKondoQD.png, id=644, 1471.95923pt x 544.55444pt>
+ [29 </home/cifu/Master-Thesis/IMAGES/Preliminars/KondoTemp.png (PNG copy)> </h
+ome/cifu/Master-Thesis/IMAGES/Preliminars/kondoCloud.png (PNG copy)>]
+<IMAGES/Preliminars/expKondoQD.png, id=876, 1471.95923pt x 544.55444pt>
 File: IMAGES/Preliminars/expKondoQD.png Graphic file (type png)
 <use IMAGES/Preliminars/expKondoQD.png>
 Package pdftex.def Info: IMAGES/Preliminars/expKondoQD.png  used on input line 
@@ -1018,50 +1052,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
 Package cleveref Info: loaded `english' language definitions on input line 317.
 
-[25])
-Package cleveref Info: loaded `english' language definitions on input line 248.
+[30])
+Package cleveref Info: loaded `english' language definitions on input line 257.
 
- [26 <./IMAGES/Preliminars/expKondoQD.png>]
+ [31 </home/cifu/Master-Thesis/IMAGES/Preliminars/expKondoQD.png>]
 \openout2 = `Methods.aux'.
 
- (./Methods.tex
-Chapter 5.
-[27
+
+(/home/cifu/Master-Thesis/Methods.tex
+Chapter 4.
+[32
 
 
 
 ]
 Package cleveref Info: loaded `english' language definitions on input line 74.
- [28]
+ [33]
 Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 Package cleveref Info: loaded `english' language definitions on input line 147.
 
-[29]
+[34]
 Package cleveref Info: loaded `english' language definitions on input line 190.
 
- [30]
-<IMAGES/Graphs/DQD-Pro.png, id=724, 937.25156pt x 752.0597pt>
+ [35]
+<IMAGES/Graphs/DQD-Pro.png, id=954, 937.25156pt x 752.0597pt>
 File: IMAGES/Graphs/DQD-Pro.png Graphic file (type png)
 <use IMAGES/Graphs/DQD-Pro.png>
 Package pdftex.def Info: IMAGES/Graphs/DQD-Pro.png  used on input line 195.
 (pdftex.def)             Requested size: 281.17763pt x 225.61964pt.
 Package cleveref Info: loaded `english' language definitions on input line 202.
 
- [31 <./IMAGES/Graphs/DQD-Pro.png>]
+ [36 </home/cifu/Master-Thesis/IMAGES/Graphs/DQD-Pro.png>]
 Overfull \hbox (7.68066pt too wide) detected at line 246
 []
  []
 
 Package cleveref Info: loaded `english' language definitions on input line 264.
 
-[32]
+[37]
 Package cleveref Info: loaded `english' language definitions on input line 343.
 
- [33]
-<IMAGES/DQD/Non-interacting.png, id=765, 867.24pt x 590.4459pt>
+ [38]
+<IMAGES/DQD/Non-interacting.png, id=994, 867.24pt x 590.4459pt>
 File: IMAGES/DQD/Non-interacting.png Graphic file (type png)
 <use IMAGES/DQD/Non-interacting.png>
 Package pdftex.def Info: IMAGES/DQD/Non-interacting.png  used on input line 349
@@ -1069,117 +1104,121 @@ Package pdftex.def Info: IMAGES/DQD/Non-interacting.png  used on input line 349
 (pdftex.def)             Requested size: 407.60286pt x 277.50961pt.
 Package cleveref Info: loaded `english' language definitions on input line 358.
 
- [34 <./IMAGES/DQD/Non-interacting.png>]
-<IMAGES/DQD/NRG-Final.png, id=777, 908.6748pt x 514.5624pt>
+ [39 </home/cifu/Master-Thesis/IMAGES/DQD/Non-interacting.png>]
+<IMAGES/DQD/NRG-Final.png, id=1004, 908.6748pt x 514.5624pt>
 File: IMAGES/DQD/NRG-Final.png Graphic file (type png)
 <use IMAGES/DQD/NRG-Final.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-Final.png  used on input line 405.
+Package pdftex.def Info: IMAGES/DQD/NRG-Final.png  used on input line 407.
 (pdftex.def)             Requested size: 408.89989pt x 231.55093pt.
-Package cleveref Info: loaded `english' language definitions on input line 419.
+Package cleveref Info: loaded `english' language definitions on input line 415.
 
- [35]
-Package cleveref Info: loaded `english' language definitions on input line 424.
 
- [36 <./IMAGES/DQD/NRG-Final.png>]
-<IMAGES/DQD/cutting.png, id=804, 609.77812pt x 390.70969pt>
+[40]
+Package cleveref Info: loaded `english' language definitions on input line 421.
+
+ [41 </home/cifu/Master-Thesis/IMAGES/DQD/NRG-Final.png>]
+Package cleveref Info: loaded `english' language definitions on input line 462.
+
+ [42]
+<IMAGES/DQD/cutting.png, id=1037, 609.77812pt x 390.70969pt>
 File: IMAGES/DQD/cutting.png Graphic file (type png)
 <use IMAGES/DQD/cutting.png>
-Package pdftex.def Info: IMAGES/DQD/cutting.png  used on input line 467.
+Package pdftex.def Info: IMAGES/DQD/cutting.png  used on input line 469.
 (pdftex.def)             Requested size: 304.8883pt x 195.35435pt.
-Package cleveref Info: loaded `english' language definitions on input line 473.
+Package cleveref Info: loaded `english' language definitions on input line 480.
 
- [37]
-Package cleveref Info: loaded `english' language definitions on input line 479.
+ [43 </home/cifu/Master-Thesis/IMAGES/DQD/cutting.png (PNG copy)>]
+Package cleveref Info: loaded `english' language definitions on input line 553.
 
- [38 <./IMAGES/DQD/cutting.png (PNG copy)>]
-Overfull \hbox (21.29085pt too wide) in paragraph at lines 554--556
+ [44]
+Overfull \hbox (21.29085pt too wide) in paragraph at lines 556--558
 \T1/ptm/m/n/10.95 Now ob-serve that Hamil-to-nian [] is al-ready in the di-ag-o
 -nal form for the ba-sis $[]$ 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 563.
+Package cleveref Info: loaded `english' language definitions on input line 621.
 
-[39]
-Package cleveref Info: loaded `english' language definitions on input line 622.
-
- [40]
-<IMAGES/even.png, id=850, 462.528pt x 346.896pt>
+[45]
+<IMAGES/even.png, id=1074, 462.528pt x 346.896pt>
 File: IMAGES/even.png Graphic file (type png)
 <use IMAGES/even.png>
-Package pdftex.def Info: IMAGES/even.png  used on input line 715.
+Package pdftex.def Info: IMAGES/even.png  used on input line 717.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
-<IMAGES/odd.png, id=851, 485.6544pt x 346.896pt>
+<IMAGES/odd.png, id=1075, 485.6544pt x 346.896pt>
 File: IMAGES/odd.png Graphic file (type png)
 <use IMAGES/odd.png>
-Package pdftex.def Info: IMAGES/odd.png  used on input line 715.
+Package pdftex.def Info: IMAGES/odd.png  used on input line 717.
 (pdftex.def)             Requested size: 242.8266pt x 173.44757pt.
 
-Overfull \hbox (58.96431pt too wide) in paragraph at lines 715--716
+Overfull \hbox (58.96431pt too wide) in paragraph at lines 717--718
 [][][][] 
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 720.
+Package cleveref Info: loaded `english' language definitions on input line 722.
 
-[41 <./IMAGES/even.png> <./IMAGES/odd.png>]
-Package cleveref Info: loaded `english' language definitions on input line 748.
+[46 </home/cifu/Master-Thesis/IMAGES/even.png> </home/cifu/Master-Thesis/IMAGES
+/odd.png>]
+Package cleveref Info: loaded `english' language definitions on input line 750.
 
- [42]
-<IMAGES/DQD/DMRGchain.png, id=879, 273.27094pt x 111.41624pt>
+ [47]
+<IMAGES/DQD/DMRGchain.png, id=1103, 273.27094pt x 111.41624pt>
 File: IMAGES/DQD/DMRGchain.png Graphic file (type png)
 <use IMAGES/DQD/DMRGchain.png>
-Package pdftex.def Info: IMAGES/DQD/DMRGchain.png  used on input line 776.
+Package pdftex.def Info: IMAGES/DQD/DMRGchain.png  used on input line 778.
 (pdftex.def)             Requested size: 273.27025pt x 111.41597pt.
-Package cleveref Info: loaded `english' language definitions on input line 789.
-
- [43]
-<IMAGES/NRG/NRGcode.png, id=897, 1026.7158pt x 748.7172pt>
-File: IMAGES/NRG/NRGcode.png Graphic file (type png)
-<use IMAGES/NRG/NRGcode.png>
-Package pdftex.def Info: IMAGES/NRG/NRGcode.png  used on input line 829.
-(pdftex.def)             Requested size: 410.67905pt x 299.48157pt.
-Package cleveref Info: loaded `english' language definitions on input line 836.
-
- [44 <./IMAGES/DQD/DMRGchain.png>]
-Package cleveref Info: loaded `english' language definitions on input line 837.
-
- [45 <./IMAGES/NRG/NRGcode.png>]
-<IMAGES/DQD/NRG-QD.png, id=920, 284.262pt x 212.795pt>
-File: IMAGES/DQD/NRG-QD.png Graphic file (type png)
-<use IMAGES/DQD/NRG-QD.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-QD.png  used on input line 857.
-(pdftex.def)             Requested size: 170.5585pt x 127.67796pt.
-<IMAGES/DQD/NRG-DQD.png, id=921, 366.168pt x 274.626pt>
-File: IMAGES/DQD/NRG-DQD.png Graphic file (type png)
-<use IMAGES/DQD/NRG-DQD.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-DQD.png  used on input line 858.
-(pdftex.def)             Requested size: 164.77406pt x 123.58055pt.
-<IMAGES/DQD/NRG-IndirectDQD.png, id=922, 382.228pt x 286.671pt>
-File: IMAGES/DQD/NRG-IndirectDQD.png Graphic file (type png)
-<use IMAGES/DQD/NRG-IndirectDQD.png>
-Package pdftex.def Info: IMAGES/DQD/NRG-IndirectDQD.png  used on input line 859
-.
-(pdftex.def)             Requested size: 191.11353pt x 143.33514pt.
-Package cleveref Info: loaded `english' language definitions on input line 890.
-
- [46]
-Package cleveref Info: loaded `english' language definitions on input line 894.
-
- [47 <./IMAGES/DQD/NRG-QD.png> <./IMAGES/DQD/NRG-DQD.png> <./IMAGES/DQD/NRG-Ind
-irectDQD.png>])
-Package cleveref Info: loaded `english' language definitions on input line 249.
+Package cleveref Info: loaded `english' language definitions on input line 791.
 
  [48]
+<IMAGES/NRG/NRGcode.png, id=1118, 1026.7158pt x 748.7172pt>
+File: IMAGES/NRG/NRGcode.png Graphic file (type png)
+<use IMAGES/NRG/NRGcode.png>
+Package pdftex.def Info: IMAGES/NRG/NRGcode.png  used on input line 831.
+(pdftex.def)             Requested size: 410.67905pt x 299.48157pt.
+Package cleveref Info: loaded `english' language definitions on input line 838.
+
+ [49 </home/cifu/Master-Thesis/IMAGES/DQD/DMRGchain.png>]
+Package cleveref Info: loaded `english' language definitions on input line 839.
+
+
+[50 </home/cifu/Master-Thesis/IMAGES/NRG/NRGcode.png>]
+<IMAGES/DQD/NRG-QD.png, id=1141, 284.262pt x 212.795pt>
+File: IMAGES/DQD/NRG-QD.png Graphic file (type png)
+<use IMAGES/DQD/NRG-QD.png>
+Package pdftex.def Info: IMAGES/DQD/NRG-QD.png  used on input line 859.
+(pdftex.def)             Requested size: 170.5585pt x 127.67796pt.
+<IMAGES/DQD/NRG-DQD.png, id=1142, 366.168pt x 274.626pt>
+File: IMAGES/DQD/NRG-DQD.png Graphic file (type png)
+<use IMAGES/DQD/NRG-DQD.png>
+Package pdftex.def Info: IMAGES/DQD/NRG-DQD.png  used on input line 860.
+(pdftex.def)             Requested size: 164.77406pt x 123.58055pt.
+<IMAGES/DQD/NRG-IndirectDQD.png, id=1143, 382.228pt x 286.671pt>
+File: IMAGES/DQD/NRG-IndirectDQD.png Graphic file (type png)
+<use IMAGES/DQD/NRG-IndirectDQD.png>
+Package pdftex.def Info: IMAGES/DQD/NRG-IndirectDQD.png  used on input line 861
+.
+(pdftex.def)             Requested size: 191.11353pt x 143.33514pt.
+Package cleveref Info: loaded `english' language definitions on input line 892.
+
+ [51]
+Package cleveref Info: loaded `english' language definitions on input line 896.
+
+ [52 </home/cifu/Master-Thesis/IMAGES/DQD/NRG-QD.png> </home/cifu/Master-Thesis
+/IMAGES/DQD/NRG-DQD.png> </home/cifu/Master-Thesis/IMAGES/DQD/NRG-IndirectDQD.p
+ng>])
+Package cleveref Info: loaded `english' language definitions on input line 258.
+
+ [53]
 \openout2 = `Majorana.aux'.
 
 
-(./Majorana.tex
-Chapter 6.
-<IMAGES/Majorana/QD-M.png, id=968, 595.5048pt x 165.4983pt>
+(/home/cifu/Master-Thesis/Majorana.tex
+Chapter 5.
+<IMAGES/Majorana/QD-M.png, id=1188, 595.5048pt x 165.4983pt>
 File: IMAGES/Majorana/QD-M.png Graphic file (type png)
 <use IMAGES/Majorana/QD-M.png>
 Package pdftex.def Info: IMAGES/Majorana/QD-M.png  used on input line 49.
 (pdftex.def)             Requested size: 357.30565pt x 99.29973pt.
-[49
+[54
 
 
 
@@ -1199,8 +1238,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--105
 
 Package cleveref Info: loaded `english' language definitions on input line 105.
 
-[50 <./IMAGES/Majorana/QD-M.png>]
-<IMAGES/Graphs/Grenn-Majorana.png, id=1008, 691.08188pt x 466.74374pt>
+[55 </home/cifu/Master-Thesis/IMAGES/Majorana/QD-M.png>]
+<IMAGES/Graphs/Grenn-Majorana.png, id=1226, 691.08188pt x 466.74374pt>
 File: IMAGES/Graphs/Grenn-Majorana.png Graphic file (type png)
 <use IMAGES/Graphs/Grenn-Majorana.png>
 Package pdftex.def Info: IMAGES/Graphs/Grenn-Majorana.png  used on input line 1
@@ -1208,16 +1247,16 @@ Package pdftex.def Info: IMAGES/Graphs/Grenn-Majorana.png  used on input line 1
 (pdftex.def)             Requested size: 345.54008pt x 233.37129pt.
 Package cleveref Info: loaded `english' language definitions on input line 151.
 
- [51]
+ [56]
 Package cleveref Info: loaded `english' language definitions on input line 171.
 
- [52 <./IMAGES/Graphs/Grenn-Majorana.png>]
-<IMAGES/Majorana/M1.png, id=1042, 290.686pt x 201.553pt>
+ [57 </home/cifu/Master-Thesis/IMAGES/Graphs/Grenn-Majorana.png>]
+<IMAGES/Majorana/M1.png, id=1258, 290.686pt x 201.553pt>
 File: IMAGES/Majorana/M1.png Graphic file (type png)
 <use IMAGES/Majorana/M1.png>
 Package pdftex.def Info: IMAGES/Majorana/M1.png  used on input line 174.
 (pdftex.def)             Requested size: 212.199pt x 147.13245pt.
-<IMAGES/Majorana/M1-e1.png, id=1043, 327.624pt x 195.129pt>
+<IMAGES/Majorana/M1-e1.png, id=1259, 327.624pt x 195.129pt>
 File: IMAGES/Majorana/M1-e1.png Graphic file (type png)
 <use IMAGES/Majorana/M1-e1.png>
 Package pdftex.def Info: IMAGES/Majorana/M1-e1.png  used on input line 175.
@@ -1227,21 +1266,22 @@ Overfull \hbox (36.2368pt too wide) in paragraph at lines 174--175
  [][][][] 
  []
 
-<IMAGES/Majorana/M1-eM.png, id=1044, 281.05pt x 172.645pt>
+<IMAGES/Majorana/M1-eM.png, id=1260, 281.05pt x 172.645pt>
 File: IMAGES/Majorana/M1-eM.png Graphic file (type png)
 <use IMAGES/Majorana/M1-eM.png>
 Package pdftex.def Info: IMAGES/Majorana/M1-eM.png  used on input line 176.
 (pdftex.def)             Requested size: 210.78697pt x 129.48341pt.
 Package cleveref Info: loaded `english' language definitions on input line 185.
 
-[53 <./IMAGES/Majorana/M1.png> <./IMAGES/Majorana/M1-e1.png> <./IMAGES/Majorana
-/M1-eM.png>]
-<IMAGES/Majorana/NRG_M1.png, id=1056, 539.8569pt x 361.35pt>
+[58 </home/cifu/Master-Thesis/IMAGES/Majorana/M1.png> </home/cifu/Master-Thesis
+/IMAGES/Majorana/M1-e1.png> </home/cifu/Master-Thesis/IMAGES/Majorana/M1-eM.png
+>]
+<IMAGES/Majorana/NRG_M1.png, id=1272, 539.8569pt x 361.35pt>
 File: IMAGES/Majorana/NRG_M1.png Graphic file (type png)
 <use IMAGES/Majorana/NRG_M1.png>
 Package pdftex.def Info: IMAGES/Majorana/NRG_M1.png  used on input line 196.
 (pdftex.def)             Requested size: 323.91664pt x 216.81168pt.
-<IMAGES/Majorana/NRG-FullED.png, id=1058, 571.8966pt x 425.9112pt>
+<IMAGES/Majorana/NRG-FullED.png, id=1274, 571.8966pt x 425.9112pt>
 File: IMAGES/Majorana/NRG-FullED.png Graphic file (type png)
 <use IMAGES/Majorana/NRG-FullED.png>
 Package pdftex.def Info: IMAGES/Majorana/NRG-FullED.png  used on input line 207
@@ -1251,55 +1291,55 @@ Package pdftex.def Info: IMAGES/Majorana/NRG-FullED.png  used on input line 207
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<IMAGES/Majorana/Luis.png, id=1062, 524.13817pt x 274.08397pt>
+<IMAGES/Majorana/Luis.png, id=1278, 524.13817pt x 274.08397pt>
 File: IMAGES/Majorana/Luis.png Graphic file (type png)
 <use IMAGES/Majorana/Luis.png>
 Package pdftex.def Info: IMAGES/Majorana/Luis.png  used on input line 216.
 (pdftex.def)             Requested size: 251.58347pt x 131.5588pt.
 Package cleveref Info: loaded `english' language definitions on input line 219.
 
-[54 <./IMAGES/Majorana/NRG_M1.png>]
+[59 </home/cifu/Master-Thesis/IMAGES/Majorana/NRG_M1.png>]
 Package cleveref Info: loaded `english' language definitions on input line 227.
 
- [55 <./IMAGES/Majorana/NRG-FullED.png> <./IMAGES/Majorana/Luis.png>])
-Package cleveref Info: loaded `english' language definitions on input line 251.
+ [60 </home/cifu/Master-Thesis/IMAGES/Majorana/NRG-FullED.png> </home/cifu/Mast
+er-Thesis/IMAGES/Majorana/Luis.png>])
+Package cleveref Info: loaded `english' language definitions on input line 260.
 
- [56]
+ [61]
 \openout2 = `NResults.aux'.
 
- (./NResults.tex
-Chapter 7.
-<IMAGES/GenModel.png, id=1095, 543.4704pt x 390.9807pt>
+ (/home/cifu/Master-Thesis/NResults.tex
+Chapter 6.
+<IMAGES/GenModel.png, id=1307, 543.4704pt x 390.9807pt>
 File: IMAGES/GenModel.png Graphic file (type png)
 <use IMAGES/GenModel.png>
 Package pdftex.def Info: IMAGES/GenModel.png  used on input line 5.
 (pdftex.def)             Requested size: 217.3843pt x 156.3895pt.
-[57
+[62
 
 
 
- <./IMAGES/GenModel.png>]
-<IMAGES/Graphs/FinalGraph.png, id=1116, 849.92531pt x 702.37407pt>
+ </home/cifu/Master-Thesis/IMAGES/GenModel.png>]
+<IMAGES/Graphs/FinalGraph.png, id=1327, 837.1275pt x 672.26157pt>
 File: IMAGES/Graphs/FinalGraph.png Graphic file (type png)
 <use IMAGES/Graphs/FinalGraph.png>
 Package pdftex.def Info: IMAGES/Graphs/FinalGraph.png  used on input line 95.
-(pdftex.def)             Requested size: 339.9641pt x 280.94466pt.
+(pdftex.def)             Requested size: 334.84506pt x 268.89986pt.
 Package cleveref Info: loaded `english' language definitions on input line 113.
 
- [58]
+ [63]
 Package cleveref Info: loaded `english' language definitions on input line 127.
 
- [59 <./IMAGES/Graphs/FinalGraph.png>]
-<IMAGES/DQD-M/3Model.png, id=1148, 479.391pt x 177.3024pt>
+ [64 </home/cifu/Master-Thesis/IMAGES/Graphs/FinalGraph.png>]
+<IMAGES/DQD-M/3Model.png, id=1358, 479.391pt x 177.3024pt>
 File: IMAGES/DQD-M/3Model.png Graphic file (type png)
 <use IMAGES/DQD-M/3Model.png>
 Package pdftex.def Info: IMAGES/DQD-M/3Model.png  used on input line 149.
 (pdftex.def)             Requested size: 335.57141pt x 124.11081pt.
 Package cleveref Info: loaded `english' language definitions on input line 160.
 
-
-[60]
-<IMAGES/GreenResults/t1=t2.png, id=1155, 904.20888pt x 590.3903pt>
+ [65]
+<IMAGES/GreenResults/t1=t2.png, id=1365, 904.20888pt x 590.3903pt>
 File: IMAGES/GreenResults/t1=t2.png Graphic file (type png)
 <use IMAGES/GreenResults/t1=t2.png>
 Package pdftex.def Info: IMAGES/GreenResults/t1=t2.png  used on input line 167.
@@ -1307,133 +1347,135 @@ Package pdftex.def Info: IMAGES/GreenResults/t1=t2.png  used on input line 167.
 (pdftex.def)             Requested size: 325.51494pt x 212.54034pt.
 Package cleveref Info: loaded `english' language definitions on input line 174.
 
- [61 <./IMAGES/DQD-M/3Model.png>]
+ [66 </home/cifu/Master-Thesis/IMAGES/DQD-M/3Model.png>]
 Package cleveref Info: loaded `english' language definitions on input line 182.
 
- [62 <./IMAGES/GreenResults/t1=t2.png>]
-<IMAGES/GreenResults/t1>0.png, id=1181, 867.24pt x 590.3903pt>
+ [67 </home/cifu/Master-Thesis/IMAGES/GreenResults/t1=t2.png>]
+<IMAGES/GreenResults/t1>0.png, id=1388, 867.24pt x 590.3903pt>
 File: IMAGES/GreenResults/t1>0.png Graphic file (type png)
 <use IMAGES/GreenResults/t1>0.png>
 Package pdftex.def Info: IMAGES/GreenResults/t1>0.png  used on input line 187.
 (pdftex.def)             Requested size: 312.20616pt x 212.54034pt.
 Package cleveref Info: loaded `english' language definitions on input line 196.
 
-
-[63 <./IMAGES/GreenResults/t1>0.png>]
-<IMAGES/GreenResults/t2>0.png, id=1195, 867.24pt x 590.3903pt>
+ [68 </home/cifu/Master-Thesis/IMAGES/GreenResults/t1>0.png>]
+<IMAGES/GreenResults/t2>0.png, id=1402, 867.24pt x 590.3903pt>
 File: IMAGES/GreenResults/t2>0.png Graphic file (type png)
 <use IMAGES/GreenResults/t2>0.png>
 Package pdftex.def Info: IMAGES/GreenResults/t2>0.png  used on input line 200.
 (pdftex.def)             Requested size: 390.2544pt x 265.67317pt.
-<IMAGES/NRG/NRG-t1=t2.png, id=1202, 608.0316pt x 391.2216pt>
+<IMAGES/NRG/NRG-t1=t2.png, id=1409, 608.0316pt x 391.2216pt>
 File: IMAGES/NRG/NRG-t1=t2.png Graphic file (type png)
 <use IMAGES/NRG/NRG-t1=t2.png>
 Package pdftex.def Info: IMAGES/NRG/NRG-t1=t2.png  used on input line 250.
 (pdftex.def)             Requested size: 316.17825pt x 203.4364pt.
 Package cleveref Info: loaded `english' language definitions on input line 255.
 
- [64 <./IMAGES/GreenResults/t2>0.png>]
-<IMAGES/NRG/FullEd2.png, id=1216, 757.3896pt x 528.5346pt>
+ [69 </home/cifu/Master-Thesis/IMAGES/GreenResults/t2>0.png>]
+<IMAGES/NRG/FullEd2.png, id=1423, 757.3896pt x 528.5346pt>
 File: IMAGES/NRG/FullEd2.png Graphic file (type png)
 <use IMAGES/NRG/FullEd2.png>
 Package pdftex.def Info: IMAGES/NRG/FullEd2.png  used on input line 265.
 (pdftex.def)             Requested size: 378.69388pt x 264.26666pt.
 Package cleveref Info: loaded `english' language definitions on input line 268.
 
-
-[65 <./IMAGES/NRG/NRG-t1=t2.png>]
-<IMAGES/NRG/t1=t2.png, id=1230, 630.6762pt x 453.3738pt>
+ [70 </home/cifu/Master-Thesis/IMAGES/NRG/NRG-t1=t2.png>]
+<IMAGES/NRG/t1=t2.png, id=1435, 630.6762pt x 453.3738pt>
 File: IMAGES/NRG/t1=t2.png Graphic file (type png)
 <use IMAGES/NRG/t1=t2.png>
 Package pdftex.def Info: IMAGES/NRG/t1=t2.png  used on input line 278.
 (pdftex.def)             Requested size: 315.33733pt x 226.68634pt.
 Package cleveref Info: loaded `english' language definitions on input line 289.
 
- [66 <./IMAGES/NRG/FullEd2.png>]
-<IMAGES/NRG/t1>0.png, id=1250, 665.3658pt x 433.62pt>
+ [71 </home/cifu/Master-Thesis/IMAGES/NRG/FullEd2.png>]
+<IMAGES/NRG/t1>0.png, id=1454, 665.3658pt x 433.62pt>
 File: IMAGES/NRG/t1>0.png Graphic file (type png)
 <use IMAGES/NRG/t1>0.png>
 Package pdftex.def Info: IMAGES/NRG/t1>0.png  used on input line 296.
 (pdftex.def)             Requested size: 266.1416pt x 173.44492pt.
-<IMAGES/NRG/c)LogEv-ed1.png, id=1255, 814.4829pt x 448.074pt>
+<IMAGES/NRG/c)LogEv-ed1.png, id=1459, 814.4829pt x 448.074pt>
 File: IMAGES/NRG/c)LogEv-ed1.png Graphic file (type png)
 <use IMAGES/NRG/c)LogEv-ed1.png>
 Package pdftex.def Info: IMAGES/NRG/c)LogEv-ed1.png  used on input line 305.
 (pdftex.def)             Requested size: 325.78738pt x 179.22641pt.
 Package cleveref Info: loaded `english' language definitions on input line 308.
 
- [67 <./IMAGES/NRG/t1=t2.png>]
-<IMAGES/NRG/t2>0.png, id=1266, 686.565pt x 433.62pt>
+[72 </home/cifu/Master-Thesis/IMAGES/NRG/t1=t2.png>]
+<IMAGES/NRG/t2>0.png, id=1468, 686.565pt x 433.62pt>
 File: IMAGES/NRG/t2>0.png Graphic file (type png)
 <use IMAGES/NRG/t2>0.png>
 Package pdftex.def Info: IMAGES/NRG/t2>0.png  used on input line 326.
 (pdftex.def)             Requested size: 281.49347pt x 177.78534pt.
 Package cleveref Info: loaded `english' language definitions on input line 337.
 
- [68 <./IMAGES/NRG/t1>0.png> <./IMAGES/NRG/c)LogEv-ed1.png>]
-<IMAGES/NRG/Indirect.png, id=1287, 903.8568pt x 563.706pt>
+ [73 </home/cifu/Master-Thesis/IMAGES/NRG/t1>0.png> </home/cifu/Master-Thesis/I
+MAGES/NRG/c)LogEv-ed1.png>]
+<IMAGES/NRG/Indirect.png, id=1488, 903.8568pt x 563.706pt>
 File: IMAGES/NRG/Indirect.png Graphic file (type png)
 <use IMAGES/NRG/Indirect.png>
 Package pdftex.def Info: IMAGES/NRG/Indirect.png  used on input line 346.
 (pdftex.def)             Requested size: 406.7318pt x 253.66534pt.
 Package cleveref Info: loaded `english' language definitions on input line 355.
 
-
-[69 <./IMAGES/NRG/t2>0.png>]
-<IMAGES/NRG/Lowt1=t2.png, id=1297, 505.89pt x 361.35pt>
+[74 </home/cifu/Master-Thesis/IMAGES/NRG/t2>0.png>]
+<IMAGES/NRG/Lowt1=t2.png, id=1498, 505.89pt x 361.35pt>
 File: IMAGES/NRG/Lowt1=t2.png Graphic file (type png)
 <use IMAGES/NRG/Lowt1=t2.png>
 Package pdftex.def Info: IMAGES/NRG/Lowt1=t2.png  used on input line 360.
 (pdftex.def)             Requested size: 252.94437pt x 180.67456pt.
 Package cleveref Info: loaded `english' language definitions on input line 367.
 
- [70 <./IMAGES/NRG/Indirect.png>]
-<IMAGES/NRG/IND.png, id=1310, 633.8079pt x 216.81pt>
+ [75 </home/cifu/Master-Thesis/IMAGES/NRG/Indirect.png>]
+<IMAGES/NRG/IND.png, id=1509, 633.8079pt x 216.81pt>
 File: IMAGES/NRG/IND.png Graphic file (type png)
 <use IMAGES/NRG/IND.png>
 Package pdftex.def Info: IMAGES/NRG/IND.png  used on input line 370.
 (pdftex.def)             Requested size: 405.63568pt x 138.75792pt.
 Package cleveref Info: loaded `english' language definitions on input line 385.
 
- [71 <./IMAGES/NRG/Lowt1=t2.png> <./IMAGES/NRG/IND.png>]
-<IMAGES/NRG/Critical.png, id=1321, 508.7808pt x 289.08pt>
+ [76 </home/cifu/Master-Thesis/IMAGES/NRG/Lowt1=t2.png> </home/cifu/Master-Thes
+is/IMAGES/NRG/IND.png>]
+<IMAGES/NRG/Critical.png, id=1519, 508.7808pt x 289.08pt>
 File: IMAGES/NRG/Critical.png Graphic file (type png)
 <use IMAGES/NRG/Critical.png>
 Package pdftex.def Info: IMAGES/NRG/Critical.png  used on input line 398.
 (pdftex.def)             Requested size: 305.27083pt x 173.44933pt.
 )
-Package cleveref Info: loaded `english' language definitions on input line 252.
+Package cleveref Info: loaded `english' language definitions on input line 261.
 
- [72 <./IMAGES/NRG/Critical.png>]
-Chapter 8.
-[73
+ [77 </home/cifu/Master-Thesis/IMAGES/NRG/Critical.png>]
+Chapter 7.
+[78
 
 
 ]
-<IMAGES/Graphs/Majorana_Old_Models.png, id=1351, 1010.174pt x 730.73pt>
+<IMAGES/Graphs/Majorana_Old_Models.png, id=1547, 1010.174pt x 730.73pt>
 File: IMAGES/Graphs/Majorana_Old_Models.png Graphic file (type png)
 <use IMAGES/Graphs/Majorana_Old_Models.png>
 Package pdftex.def Info: IMAGES/Graphs/Majorana_Old_Models.png  used on input l
-ine 275.
+ine 284.
 (pdftex.def)             Requested size: 252.54288pt x 182.68205pt.
 
-Overfull \hbox (2.94533pt too wide) in paragraph at lines 282--283
+Overfull \hbox (2.94533pt too wide) in paragraph at lines 291--292
 []\T1/ptm/m/n/10.95 Besides MZM ma-nip-u-la-tion we also pointed out other case
 s that could lead to fu-ture projects,
  []
 
-(./main.bbl (./main.brf)
-\tf@brf=\write7
-\openout7 = `main.brf'.
+(/home/cifu/Master-Thesis/main.bbl (/home/cifu/Master-Thesis/main.brf)
+\tf@brf=\write9
+\openout9 = `main.brf'.
 
 Package cleveref Info: loaded `english' language definitions on input line 1.
- [74 <./IMAGES/Graphs/Majorana_Old_Models.png>]
-[75
+ [79 </home/cifu/Master-Thesis/IMAGES/Graphs/Majorana_Old_Models.png>] [80
 
 ]
-Package cleveref Info: loaded `english' language definitions on input line 168.
+Package cleveref Info: loaded `english' language definitions on input line 163.
 
- [76]
+ [81]
+Package cleveref Info: loaded `english' language definitions on input line 244.
+
+
+[82]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin9'.
@@ -1442,39 +1484,36 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.231 
+l.317 
       
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-Package cleveref Info: loaded `english' language definitions on input line 250.
+Package cleveref Info: loaded `english' language definitions on input line 336.
 
-[77]
-Package cleveref Info: loaded `english' language definitions on input line 337.
+[83]
+Package cleveref Info: loaded `english' language definitions on input line 421.
 
- [78]
-Underfull \hbox (badness 3271) in paragraph at lines 382--382
+ [84]
+Underfull \hbox (badness 3271) in paragraph at lines 448--448
 \T1/ptm/m/it/10.95 So-viet Physics Us-pekhi\T1/ptm/m/n/10.95 , 3(3):320, 1960. 
  ISSN 0038-5670.  doi: $10 . 1070 /
  []
 
-Package cleveref Info: loaded `english' language definitions on input line 421.
+Package cleveref Info: loaded `english' language definitions on input line 510.
 
-[79]
-Package cleveref Info: loaded `english' language definitions on input line 501.
-
- [80]) [81]
+[85]) [86]
 \openout2 = `Append_A.aux'.
 
- (./Append_A.tex
+ (/home/cifu/Master-Thesis/Append_A.tex
 Appendix A.
-[82
+[87
 
 
 
 ]
 Package cleveref Info: loaded `english' language definitions on input line 95.
- [83]
+ [88]
 Overfull \hbox (28.6966pt too wide) in alignment at lines 100--106
  [][][] []
  []
@@ -1486,10 +1525,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--121
 
 Package cleveref Info: loaded `english' language definitions on input line 131.
 
-[84]
+[89]
 Package cleveref Info: loaded `english' language definitions on input line 182.
 
- [85]
+ [90]
 Overfull \hbox (17.05872pt too wide) detected at line 332
 [] []
  []
@@ -1500,40 +1539,38 @@ Overfull \hbox (17.05872pt too wide) detected at line 350
  []
 
 )
-Package cleveref Info: loaded `english' language definitions on input line 296.
+Package cleveref Info: loaded `english' language definitions on input line 305.
 
- [86]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
- (./main.aux
+ [91]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
+ (/home/cifu/Master-Thesis/main.aux
 Package cleveref Info: loaded `english' language definitions on input line 19.
- (./Intro.aux) (./Preliminars.aux) (./Methods.aux)
-(./Majorana.aux) (./NResults.aux) (./Append_A.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 300.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
+ (/home/cifu/Master-Thesis/Intro.aux)
+(/home/cifu/Master-Thesis/Preliminars.aux)
+(/home/cifu/Master-Thesis/Methods.aux) (/home/cifu/Master-Thesis/Majorana.aux)
+(/home/cifu/Master-Thesis/NResults.aux) (/home/cifu/Master-Thesis/Append_A.aux)
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 28E11A5871E964DD3B9C6D09C2CD3786;11639.
+(rerunfilecheck)             Checksum: E03D2436E5DED858E9FDB62D7C41F9C9;11670.
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: 6FF2ECEC23D0B884567042CE2B64B24D;8162.
 
-
-Package rerunfilecheck Warning: File `main.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `main.brf':
-(rerunfilecheck)             Before: EBEF5C5977D953BA04F68DA096D35FF3;7191
-(rerunfilecheck)             After:  C39B410CFC685977492D43B8D0622693;7250.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
  ) 
 Here is how much of TeX's memory you used:
- 16144 strings out of 492982
- 251084 string characters out of 6134896
- 355954 words of memory out of 5000000
- 18953 multiletter control sequences out of 15000+600000
+ 16159 strings out of 492982
+ 252709 string characters out of 6134896
+ 366984 words of memory out of 5000000
+ 18954 multiletter control sequences out of 15000+600000
  87265 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,15n,51p,1447b,782s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,15n,51p,1447b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -1550,10 +1587,11 @@ sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on main.pdf (86 pages, 23864513 bytes).
+Output written on /home/cifu/Master-Thesis/main.pdf (91 pages, 23883208 bytes).
+
 PDF statistics:
- 1796 PDF objects out of 2073 (max. 8388607)
- 1543 compressed objects within 16 object streams
- 409 named destinations out of 1000 (max. 500000)
+ 2011 PDF objects out of 2073 (max. 8388607)
+ 1751 compressed objects within 18 object streams
+ 416 named destinations out of 1000 (max. 500000)
  666 words of extra memory for PDF output out of 10000 (max. 10000000)
 

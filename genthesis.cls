@@ -1585,7 +1585,7 @@
 \newenvironment{abstract}{%
   \@startonecolumn
   \@startabstracthook
-    \chapter{\abstractname}
+    \chapter*{\abstractname}
 }
 {\clearpage\@endonecolumn}
 \newenvironment{verse}
@@ -1698,7 +1698,7 @@
     \else
       \@restonecolfalse
     \fi
-    \chapter{\contentsname}
+    \chapter*{\contentsname}
     \@starttoc{toc}%
     \if@restonecol\twocolumn\fi
     }
