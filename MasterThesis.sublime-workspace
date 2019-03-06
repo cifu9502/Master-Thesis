@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"rene",
+				"\\renewcommand{cmd}{def}                           \tlatex-document"
+			],
+			[
+				"sqrt",
+				"\\sqrt{arg}                                        \tlatex-document"
+			],
+			[
+				"item",
+				"\\item                                             \tlatex-document"
+			],
+			[
+				"sec",
+				"\\section{title}                                   \tlatex-document"
+			],
+			[
 				"om",
 				"\\omega                                            \tlatex-mathsymbols"
 			],
@@ -26,10 +42,6 @@
 			[
 				"lef",
 				"\\left(                                            \tlatex-document"
-			],
-			[
-				"item",
-				"\\item[label]                                      \tlatex-document"
 			],
 			[
 				"cap",
@@ -56,46 +68,10 @@
 	"buffers":
 	[
 		{
-			"file": "Majorana.tex",
-			"settings":
-			{
-				"buffer_size": 24655,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "main.tex",
 			"settings":
 			{
-				"buffer_size": 13435,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "main.bbl",
-			"settings":
-			{
-				"buffer_size": 19306,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Intro.tex",
-			"settings":
-			{
-				"buffer_size": 44188,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Kitaev-Majorana.bib",
-			"settings":
-			{
-				"buffer_size": 58647,
+				"buffer_size": 13894,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -104,7 +80,43 @@
 			"file": "NResults.tex",
 			"settings":
 			{
-				"buffer_size": 60358,
+				"buffer_size": 60203,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Majorana.tex",
+			"settings":
+			{
+				"buffer_size": 26020,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Intro.tex",
+			"settings":
+			{
+				"buffer_size": 57860,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Append_A.tex",
+			"settings":
+			{
+				"buffer_size": 20792,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Kitaev-Majorana.bib",
+			"settings":
+			{
+				"buffer_size": 60713,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -122,32 +134,32 @@
 		"selected_items":
 		[
 			[
-				"bu",
-				"Build With: LaTeX"
-			],
-			[
-				"buil",
-				"Build With: LaTeX - Basic Builder"
-			],
-			[
-				"bui",
-				"LaTeXTools: Build cache of LaTeX packages"
+				"v",
+				"LaTeXTools: View PDF"
 			],
 			[
 				"b",
-				"Build With: LaTeX - Basic Builder"
+				"Build With: LaTeX"
 			],
 			[
 				"vi",
 				"LaTeXTools: View PDF"
 			],
 			[
-				"",
-				"About"
+				"bu",
+				"Build With: LaTeX - Basic Builder"
 			],
 			[
-				"v",
-				"LaTeXTools: View PDF"
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"bui",
+				"Build With: LaTeX - Basic Builder"
+			],
+			[
+				"buil",
+				"Build With: LaTeX - Basic Builder"
 			],
 			[
 				"vie",
@@ -214,17 +226,21 @@
 	],
 	"file_history":
 	[
-		"/home/cifu/Master-Thesis/Majorana-QD.bib",
-		"/home/cifu/Master-Thesis/main.bbl",
+		"/home/cifu/Master-Thesis/Methods.tex",
 		"/home/cifu/Master-Thesis/Preliminars.tex",
-		"/home/cifu/Master-Thesis/Kondo.bib",
+		"/home/cifu/Master-Thesis/Majorana.tex",
 		"/home/cifu/Master-Thesis/Intro.tex",
+		"/home/cifu/Master-Thesis/Kondo.bib",
+		"/home/cifu/Master-Thesis/main.bbl",
+		"/home/cifu/Master-Thesis/main.blg",
+		"/home/cifu/Master-Thesis/main.brf",
+		"/home/cifu/Master-Thesis/main.fls",
 		"/home/cifu/Master-Thesis/Kitaev-Majorana.bib",
+		"/home/cifu/Master-Thesis/Majorana-QD.bib",
 		"/home/cifu/Master-Thesis/main.aux",
 		"/home/cifu/Master-Thesis/NResults.tex",
 		"/home/cifucito/Master-Thesis/Majorana-QD.bib",
 		"/home/cifucito/Master-Thesis/Kitaev-Majorana.bib",
-		"/home/cifu/Master-Thesis/Methods.tex",
 		"/home/cifu/Master-Thesis/main.tex",
 		"/home/cifu/Master-Thesis/main.pdf",
 		"/home/cifu/Desktop/Master-Thesis/main.log",
@@ -238,7 +254,6 @@
 		"/home/cifu/Master-Thesis/Append_A.tex",
 		"/home/cifu/tutorial_2019_v2/05_1_spectral_function_SIAM/g.sh",
 		"/home/cifu/tutorial_2019_v2/01_1_thermodynamics_Kondo/imp/generatedata.sh",
-		"/home/cifu/Master-Thesis/Majorana.tex",
 		"/home/cifu/Manipulation-of-Majorana-Fermions/main.tex"
 	],
 	"find":
@@ -254,9 +269,27 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"pop",
+			".NRG",
+			"abstra",
+			"logari",
+			"abelian any",
+			"TempGree",
+			"retarded green",
+			"By the Author",
+			"Representation",
+			"author",
+			"By the author",
+			"\\epsilon_{d}",
+			"\\epsilon_{di}",
+			"\\ref{eq:",
+			"\\epsilon_{d}",
+			"\\ref{eq",
+			"Quantized",
+			"conductance",
 			"Rashba",
 			"semiconducto",
 			"assisted",
@@ -288,63 +321,37 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Majorana.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 24655,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								63,
-								63
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 5341,
-								"count": 5564,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "main.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 13435,
+						"buffer_size": 13894,
 						"regions":
 						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										9349,
+										9349
+									]
+								],
+								"scope": "bookmarks"
+							}
 						},
 						"selection":
 						[
 							[
-								4681,
-								4681
+								9236,
+								9236
 							]
 						],
 						"settings":
@@ -363,125 +370,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3213.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "main.bbl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19306,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10806,
-								10806
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5507.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Intro.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 44188,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4308,
-								4308
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1703.0,
+						"translation.y": 5162.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "Kitaev-Majorana.bib",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 58647,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1878,
-								1878
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 6,
-								"count": 7886,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"syntax": "Packages/LaTeXTools/BibLaTeX.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 749.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 1,
 					"file": "NResults.tex",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 60358,
+						"buffer_size": 60203,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								37271,
+								37271
 							]
 						],
 						"settings":
@@ -500,7 +409,124 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 23780.0,
+						"translation.y": 14890.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Majorana.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26020,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2,
+								2
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Intro.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57860,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32644,
+								32644
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 13634.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Append_A.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17819,
+								12849
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1015.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Kitaev-Majorana.bib",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 60713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45583,
+								45583
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeXTools/BibLaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5436.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
@@ -511,7 +537,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -556,7 +582,7 @@
 	"project": "MasterThesis.sublime-project",
 	"replace":
 	{
-		"height": 48.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -594,7 +620,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 142.0,
+	"side_bar_width": 70.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
