@@ -12,8 +12,8 @@ The density of states contains important physical information about the presence
 Both methods will be tested on the model of a double quantum dot attached to a metallic lead. We will observe that at very low energies, the physics of interacting systems emulate characteristic features of the non-interacting model. The methods developed in this chapter will be tested  again in \ref{chap:Majorana} for a QD coupled to a Majorana chain. Finally we will use them to make our leading contribution to this theory, the analysis of a double quantum dot attached  to a Majorana wire (\ref{chap:Results}). 
 
 
-\section{Green function formalism \label{sec:transport} }
-
+\section{Double Green function formalism and the equations of motion \label{sec:transport} }
+% \subsection{Green function formalism}
 The Green function $G$ of a Hamiltonian $H$ is the operator that satisfies the homogeneous equation 
 \begin{equation}
     \left(i\hbar\frac{\partial}{\partial t}-H\right)G\left(t-t'\right)=\delta(t-t'). \label{eq:greeni}
@@ -140,12 +140,12 @@ When taking the Fourier transform of \eqref{eq:Motion} we obtain the following e
 
 
 % ----------------------------- Graph Method-----------------------
-\subsection{Graph-Gauss-Jordan elimination process: Solving the equations of motion \label{sec:GraphMethod}}
+\subsection{Presenting the Graph-Gauss-Jordan elimination process to solve the EOM \label{sec:GraphMethod}}
 
 
 Solving the transport equations involves dealing with a set of linear equations where all the possible variables including  $\omega$ , and the Hamiltonian parameters are assumed to be constant.  This can be done by  Gauss-Jordan elimination, noting that after each elimination process we need to carry on the account in terms of the initial  variables. The solution  will be a polynomial fraction.  When the number of operators in the Hamiltonian increases the number of terms in the polynomial grows-up rapidly according to the number of initial parameters. This reveals the importance of exploring new methods that could simplify the solution of this system, and present a readable factorized expression of the final solution.   \\
 
-The method presented here uses graph theory algorithms that provide a shortcut to Gauss-Jordan elimination \cite{spielman10}. We will explain this method by solving  the transport equations for a non-interacting $(U=0)$ DQD connected to one lead. 
+The method presented here uses graph theory algorithms that provide a shortcut to Gauss-Jordan elimination \cite{spielman10}. We will explain this method by solving  the EOM for a non-interacting $(U=0)$ DQD connected to one lead. 
 
 According to the Anderson model the Hamiltonian for this system looks like 
 \begin{equation}
@@ -154,7 +154,7 @@ According to the Anderson model the Hamiltonian for this system looks like
 \end{equation} 
 \noindent Where the operators $d^\dagger_1$ and $d^\dagger_2$ create an electron in dots $1$ and $2$ respectively \footnote{This case is different from the Anderson model defined in \ref{sec:Anderson}, where the $d^\dagger_i$ where creation operators in distinct energy levels, not dots.}. Since the system is non-interacting, we ignore the spin-degeneracy of this Hamiltonian.   The only new parameter here is the term $t_{dots}$, which represents the tunneling between both quantum dots. 
 
- Using equation \eqref{eq:Transport} with $B = d_1^\dagger$ and $A$ shifting among all the other operators we compute the following  transport equations
+ Using equation \eqref{eq:Transport} with $B = d_1^\dagger$ and $A$ shifting among all the other operators we compute the following  EOM
 \begin{align}
      \left(\omega-\epsilon_{1}\right)\Green{d_{1},d_{1}^{\dagger}}&=1+t_{dots}\Green{d_{2},d_{1}^{\dagger}}+V_{1}^{*}\sum_{\mathbf{k}}\Green{c_{\mathbf{k}},d_{1}^{\dagger}}, \label{eq:green1}  \\
      \left(\omega-\epsilon_{\mathbf{k}}\right)\Green{c_{\mathbf{k}},d_{1}^{\dagger}} &= V_{1}\Green{d_{1},d_{1}^{\dagger}}+V_{2}\Green{d_{2},d_{1}^{\dagger}}, \label{eq:green2} \\

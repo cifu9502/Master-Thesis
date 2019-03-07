@@ -17,12 +17,10 @@
 \backcite {kitaev_fault-tolerant_2003}{{2}{1}{figure.1.1}}
 \backcite {pachos_introduction_2012}{{2}{1}{figure.1.1}}
 \backcite {turaev_book}{{2}{1}{figure.1.1}}
-\backcite {alicea_new_2012}{{2}{1}{figure.1.1}}
 \backcite {fu_superconducting_2008}{{2}{1}{figure.1.1}}
 \backcite {beenakker_search_2013}{{2}{1}{figure.1.1}}
-\backcite {zhang_quantized_2018}{{2}{1}{figure.1.1}}
 \backcite {mourik_signatures_2012}{{2}{1}{figure.1.1}}
-\backcite {deng_majorana_2016}{{2}{1}{figure.1.1}}
+\backcite {zhang_quantized_2018}{{2}{1}{figure.1.1}}
 \backcite {oreg_helical_2010}{{2}{1}{figure.1.1}}
 \backcite {lutchyn_majorana_2010}{{2}{1}{figure.1.1}}
 \backcite {alicea_new_2012}{{6}{1.1.1}{subsection.1.1.1}}
@@ -36,9 +34,8 @@
 \backcite {alicea_new_2012}{{10}{1.1.3}{subsection.1.1.3}}
 \backcite {alicea_new_2012}{{11}{1.6}{figure.1.6}}
 \backcite {mourik_signatures_2012}{{11}{1.1.3}{equation.1.1.23}}
-\backcite {zhang_quantized_2018}{{11}{1.1.3}{equation.1.1.23}}
 \backcite {das_zero-bias_2012}{{11}{1.1.3}{equation.1.1.23}}
-\backcite {deng_majorana_2016}{{11}{1.1.3}{equation.1.1.23}}
+\backcite {zhang_quantized_2018}{{11}{1.1.3}{equation.1.1.23}}
 \backcite {nadj-perge_observation_2014}{{11}{1.1.3}{equation.1.1.23}}
 \backcite {zhang_quantized_2018}{{11}{1.1.3}{equation.1.1.23}}
 \backcite {sarma_majorana_2012}{{11}{1.1.3}{figure.1.7}}

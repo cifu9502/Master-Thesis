@@ -36,49 +36,6 @@ David~A. Ruiz-Tijerina, E.~Vernek, Luis G. G.~V. Dias~da Silva, and J.~C.
 \newblock \doi{10.1103/PhysRevB.91.115435}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.91.115435}.
 
-\bibitem[Alicea(2012)]{alicea_new_2012}
-Jason Alicea.
-\newblock New directions in the pursuit of {Majorana} fermions in solid state
-  systems.
-\newblock \emph{Rep. Prog. Phys.}, 75\penalty0 (7):\penalty0 076501, 2012.
-\newblock ISSN 0034-4885.
-\newblock \doi{10.1088/0034-4885/75/7/076501}.
-\newblock URL \url{http://stacks.iop.org/0034-4885/75/i=7/a=076501}.
-
-\bibitem[Zhang et~al.(2018)Zhang, Liu, Gazibegovic, Xu, Logan, Wang, van Loo,
-  Bommer, de~Moor, Car, Op~het Veld, van Veldhoven, Koelling, Verheijen,
-  Pendharkar, Pennachio, Shojaei, Lee, Palmstrom, Bakkers, Sarma, and
-  Kouwenhoven]{zhang_quantized_2018}
-Hao Zhang, Chun-Xiao Liu, Sasa Gazibegovic, Di~Xu, John~A. Logan, Guanzhong
-  Wang, Nick van Loo, Jouri D.~S. Bommer, Michiel W.~A. de~Moor, Diana Car, Roy
-  L.~M. Op~het Veld, Petrus~J. van Veldhoven, Sebastian Koelling, Marcel~A.
-  Verheijen, Mihir Pendharkar, Daniel~J. Pennachio, Borzoyeh Shojaei, Joon~Sue
-  Lee, Chris~J. Palmstrom, Erik P. A.~M. Bakkers, S.~Das Sarma, and Leo~P.
-  Kouwenhoven.
-\newblock Quantized {Majorana} conductance.
-\newblock \emph{Nature}, 556:\penalty0 74, March 2018.
-\newblock URL \url{http://dx.doi.org/10.1038/nature26142}.
-
-\bibitem[Malciu et~al.(2018)Malciu, Mazza, and Mora]{malciu_braiding_2018}
-Corneliu Malciu, Leonardo Mazza, and Christophe Mora.
-\newblock Braiding {Majorana} zero modes using quantum dots.
-\newblock \emph{Physical Review B}, 98\penalty0 (16):\penalty0 165426, October
-  2018.
-\newblock \doi{10.1103/PhysRevB.98.165426}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.98.165426}.
-
-\bibitem[Karzig et~al.(2017)Karzig, Knapp, Lutchyn, Bonderson, Hastings, Nayak,
-  Alicea, Flensberg, Plugge, Oreg, Marcus, and Freedman]{karzig_scalable_2017}
-Torsten Karzig, Christina Knapp, Roman~M. Lutchyn, Parsa Bonderson, Matthew~B.
-  Hastings, Chetan Nayak, Jason Alicea, Karsten Flensberg, Stephan Plugge,
-  Yuval Oreg, Charles~M. Marcus, and Michael~H. Freedman.
-\newblock Scalable designs for quasiparticle-poisoning-protected topological
-  quantum computation with {Majorana} zero modes.
-\newblock \emph{Physical Review B}, 95\penalty0 (23):\penalty0 235305, June
-  2017.
-\newblock \doi{10.1103/PhysRevB.95.235305}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.95.235305}.
-
 \bibitem[Kitaev(2001)]{kitaev_unpaired_2001}
 A.~Yu Kitaev.
 \newblock Unpaired {Majorana} fermions in quantum wires.
@@ -134,6 +91,15 @@ Masatoshi Sato, Yoshiro Takahashi, and Satoshi Fujimoto.
 \newblock \doi{10.1103/PhysRevLett.103.020401}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.103.020401}.
 
+\bibitem[Alicea(2012)]{alicea_new_2012}
+Jason Alicea.
+\newblock New directions in the pursuit of {Majorana} fermions in solid state
+  systems.
+\newblock \emph{Rep. Prog. Phys.}, 75\penalty0 (7):\penalty0 076501, 2012.
+\newblock ISSN 0034-4885.
+\newblock \doi{10.1088/0034-4885/75/7/076501}.
+\newblock URL \url{http://stacks.iop.org/0034-4885/75/i=7/a=076501}.
+
 \bibitem[Beenakker(2013)]{beenakker_search_2013}
 C.w.j. Beenakker.
 \newblock Search for {Majorana} {Fermions} in {Superconductors}.
@@ -187,6 +153,20 @@ M.~T. Deng, S.~Vaitiekenas, E.~B. Hansen, J.~Danon, M.~Leijnse, K.~Flensberg,
 \newblock ISSN 0036-8075, 1095-9203.
 \newblock \doi{10.1126/science.aaf3961}.
 \newblock URL \url{http://science.sciencemag.org/content/354/6319/1557}.
+
+\bibitem[Zhang et~al.(2018)Zhang, Liu, Gazibegovic, Xu, Logan, Wang, van Loo,
+  Bommer, de~Moor, Car, Op~het Veld, van Veldhoven, Koelling, Verheijen,
+  Pendharkar, Pennachio, Shojaei, Lee, Palmstrom, Bakkers, Sarma, and
+  Kouwenhoven]{zhang_quantized_2018}
+Hao Zhang, Chun-Xiao Liu, Sasa Gazibegovic, Di~Xu, John~A. Logan, Guanzhong
+  Wang, Nick van Loo, Jouri D.~S. Bommer, Michiel W.~A. de~Moor, Diana Car, Roy
+  L.~M. Op~het Veld, Petrus~J. van Veldhoven, Sebastian Koelling, Marcel~A.
+  Verheijen, Mihir Pendharkar, Daniel~J. Pennachio, Borzoyeh Shojaei, Joon~Sue
+  Lee, Chris~J. Palmstrom, Erik P. A.~M. Bakkers, S.~Das Sarma, and Leo~P.
+  Kouwenhoven.
+\newblock Quantized {Majorana} conductance.
+\newblock \emph{Nature}, 556:\penalty0 74, March 2018.
+\newblock URL \url{http://dx.doi.org/10.1038/nature26142}.
 
 \bibitem[Oreg et~al.(2010)Oreg, Refael, and von Oppen]{oreg_helical_2010}
 Yuval Oreg, Gil Refael, and Felix von Oppen.
@@ -326,6 +306,26 @@ Minchul Lee, Jong~Soo Lim, and Rosa Lopez.
 \newblock 87\penalty0 (24):\penalty0 241402.
 \newblock \doi{10.1103/PhysRevB.87.241402}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.87.241402}.
+
+\bibitem[Malciu et~al.(2018)Malciu, Mazza, and Mora]{malciu_braiding_2018}
+Corneliu Malciu, Leonardo Mazza, and Christophe Mora.
+\newblock Braiding {Majorana} zero modes using quantum dots.
+\newblock \emph{Physical Review B}, 98\penalty0 (16):\penalty0 165426, October
+  2018.
+\newblock \doi{10.1103/PhysRevB.98.165426}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.98.165426}.
+
+\bibitem[Karzig et~al.(2017)Karzig, Knapp, Lutchyn, Bonderson, Hastings, Nayak,
+  Alicea, Flensberg, Plugge, Oreg, Marcus, and Freedman]{karzig_scalable_2017}
+Torsten Karzig, Christina Knapp, Roman~M. Lutchyn, Parsa Bonderson, Matthew~B.
+  Hastings, Chetan Nayak, Jason Alicea, Karsten Flensberg, Stephan Plugge,
+  Yuval Oreg, Charles~M. Marcus, and Michael~H. Freedman.
+\newblock Scalable designs for quasiparticle-poisoning-protected topological
+  quantum computation with {Majorana} zero modes.
+\newblock \emph{Physical Review B}, 95\penalty0 (23):\penalty0 235305, June
+  2017.
+\newblock \doi{10.1103/PhysRevB.95.235305}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.95.235305}.
 
 \bibitem[Su et~al.(2017)Su, Tacla, Hocevar, Car, Plissard, Bakkers, Daley,
   Pekker, and Frolov]{su_andreev_2017}

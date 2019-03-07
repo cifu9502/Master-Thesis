@@ -217,6 +217,7 @@ urlcolor=black
 
 % }
 
+% \usepackage{glossaries-extra}
 \usepackage[symbols,nogroupskip,sort=none]{glossaries-extra}
 
 
@@ -245,6 +246,11 @@ urlcolor=black
    \clearpage
 }
 
+% \usepackage[document]{ragged2e}
+
+\usepackage{ragged2e}
+% --------------------------------BEGIN DOCUMENT-----------------------------------------------------------------------
+
 \begin{document}
 
 \mainmatter
@@ -257,21 +263,39 @@ urlcolor=black
 
 
 \begin{dedication}
-\textit{ To a little cheek }
+\textit{ { \Large To my wonderful family and to a little cheek} }
+\end{dedication}
+
+\begin{dedication}
+\textit{}
+\end{dedication}
+
+\begin{dedication}
+\justifying
+{\large \textit{"Sometimes I believe that  begging to research is quiet similar to that magic situation when babies learn to talk. Initially they are just there, hearing conversations. They seem disoriented with the vocabulary. But they catch sounds and make some bubbles. Soon enough, before you even notice, their own words will start to flow."}\\ Refereeing to my first research meeting with professors Andr\'es Reyes and A.P. Balachandran. Hear me talk.}
 \end{dedication}
 
 \chapter*{Acknowledgments}
-We thank Edson Vernek for enlightening discussions. We also acknowledges the financial support by CNPq (grants No. 307107/2013-2 and 449148/2014-9), and FAPESP (grant No. 2016/18495-4), which allowed us to present partial and complete results of this project in workshops and conferences. 
+
+This piece summarizes the main aspects of my work during the last two years in Brazil. It has been an enriching experience. I learned Portuguese and gotten a fantastic cultural exchange.  I also took advantage of the large condensed matter community in the country to participate in conferences, present my advances, and increase my knowledge on quantum mechanics. In my way, I met up to three Nobel prizes, one of them, Duncan Haldane, inspired me to study topological materials. Today, I look backwards and I get marveled by all the amazing things that happened and those who allowed me to live all of this.
+
+
+ Therefore, in this brief statement I just want to thank all the amazing people that received me here in Brasil and made all of this possible:  My thesis advisor Luis Gregorio, who  suggested to me this project, helped enter into the USP and has guided me ever since with patience till the day were I presented this document. I thank my previous advisors, Andres and Cesar, and all my previous professors in Colombia who prepared for this life of research. I  to thank to my friends and my room partners, all of them have contributed to make this stage of my life here an amazing adventure. And finally, and maybe the most important, I would like to thank to all my family and to that little cheek. Even from far away I have always felt their support, which endeavored me to pursue for this goal.
+a
+
+ I also acknowledges the financial support by CNPq (grants No. 307107/2013-2 and 449148/2014-9), and FAPESP (grant No. 2016/18495-4), which allowed us to present partial and complete results of this project in workshops and conferences. 
+
+ 
 
 \begin{abstract}
 
-Majorana zero modes (MZMs) emerging at the edges of topological superconducting wires are a promising platform for fault-tolerant quantum computation. Novel proposals quantum dots (QDs) to detect Majorana signatures. This detection method provides the following advantages: 1) QDs are the best device to study the coexistence of Kondo-Majorana signatures, which have been recently reported in experiments.  2)  Today's precise experimental control over QDs offers the unique possibility of manipulating the Majoranas inside multi-dot systems, which is turning new lights into the design of quantum architectures.  
+Majorana zero modes (MZMs) emerging at the edges of topological superconducting wires are a promising platform for fault-tolerant quantum computation. Novel proposals use quantum dots (QDs) coupled to the end of these wires to detect Majorana signatures. This detection method provides the following advantages: 1) This device allows to study the prospective coexistence of Kondo-Majorana signatures, which have been recently reported in experiments.  2)  Today's precise experimental control over QDs offers the unique possibility of manipulating  MZMs inside multi-dot systems. This innovative idea has enlightened the design of scalable quantum architectures, bringing us closer to the implementation of a topological quantum computer. 
 
 % These two features motivated our study Kondo-Majorana signatures in double quantum dots (DQD). 
 
-The simplest case where Majorana manipulation is possible is in a double quantum dot (DQD). This model shows several possibilities for manipulation of MZMs, including different geometric configurations of the dots from symmetric and  linear couplings to T-dot junctions. In this project we perform a theoretical study  of the transitions of the Majorana signature in a DQD in the non-interacting and interacting regimes. By tuning the dot's gate voltages, we will show that it is possible to control the localization of the MZM inside the DQD.  We will explore the interplay of these signatures with the Kondo effect. 
+The simplest case where Majorana manipulation is possible is in a double quantum dot (DQD). This system offers several possibilities for manipulation of MZMs, including different geometric configurations of the dots, from symmetric and  linear couplings to T-dot junctions. In this project, we perform a theoretical study  of the transitions of the Majorana signature in these geometries in non-interacting and interacting regimes. By tuning the dot's gate voltages, we will show that it is possible to control the localization of the MZM inside both dots.  We will also explore the interplay of these signatures with the Kondo effect, which emerges in non-interacting dots in superposition with the MZM.   
 
-We adopt two methods in this project: 1) The green equations of motion (EOM) allow us to obtain exact expressions for the density of states in coulomb-non-interacting systems. We present the Graph -Gauss-Jordan elimination process as a simple-graphical method to solve the emergent linear systems in the EOM. 2) We use the numerical renormalization group (NRG) in interacting systems, where the Kondo effect emerges allowing us to observe combined Kondo-Majorana physics. We will test these methods first in a double quantum dot (DQD) (\ref{chap: Methods}) and then in a QD-Majorana model (\ref{sec:QD-Majorana})  confirming the results of previous papers  \cite{dias_da_silva_transmission_2008,liu_detecting_2011,ruiz-tijerina_interaction_2015}.  Finally, we include the main contribution of this thesis, the study of a DQD coupled to a Majorana chain (\ref{chap:Results}). 
+We adopt two methods in this project: 1) The Green equations of motion (EOM) allow us to obtain exact expressions for the density of states in coulomb-non-interacting systems. We present the Graph -Gauss-Jordan elimination process as a simple-graphical method to solve the emergent linear systems in the EOM. 2) We use Wilson's numerical renormalization group (NRG) in interacting systems, to study the combined Kondo-Majorana physics. We will test these methods, first in a double quantum dot (DQD) (\ref{chap: Methods}) and then in a QD-Majorana model (\ref{sec:QD-Majorana}), where we confirm the results of previous papers  \cite{dias_da_silva_transmission_2008,liu_detecting_2011,ruiz-tijerina_interaction_2015}.  Finally, we include the main contribution of this thesis, the study of a DQD coupled to a Majorana chain (\ref{chap:Results}). 
 
 
 % , following theoretical advances from a publication by the advisor of this dissertation and collaborators \cite{ruiz-tijerina_interaction_2015}
@@ -296,12 +320,12 @@ We adopt two methods in this project: 1) The green equations of motion (EOM) all
 
 % \inputencoding{utf8}
 
-As quasi-particulas de Majorana que emergen nas bordas de un superconductor topologico s\~ao uma plataforma prometedora na computa\c{c}\~ao quantica. Novas propostas usam quantum dots (QDs) para detectar signaturas de Majorana. Este m\'etodo tem duas vantagens: 1) Os QDs  s\~ao o melhor dispositivo para estudar a co-exist\^encia de signaturas de Kondo e Majorana, as quais t\^em sido reportadas recentemente em experimentos. 2) O control experimental preciso sobre os quantum dots que temos hoje em dia oferece a oportunidade \'unica para manipular quasi-part\'iculas de Majoranas dentro de sistemas com v\'arios dots. Esta ideia abriu novos caminhos para o desenho de arquiteturas qu\^anticas. 
+O uso das quasi-particulas de Majorana que emergem nas bordas de um supercondutor topol\'ogico \'e uma plataforma promisora para computa\c{c}\~ao qu\^antica. Novas propostas usam quantum dots (QDs) para detectar sinais de Majorana. Este m\'etodo tem duas vantagens: 1) Os QDs  s\~ao os melhores dispositivos para estudar a co-exist\^encia de Kondo e Majorana, a qual t\^em sido reportada recentemente em experimentos. 2) O controle experimental preciso sobre os quantum dots que temos hoje em dia oferece a oportunidade \'unica para manipular quasi-part\'iculas de Majoranas dentro de sistemas com v\'arios dots. Esta ideia abriu novos caminhos para o desenho de arquiteturas qu\^anticas, nos aproximando do objetivo de implementar um computador qu\^antico topol\'ogico.
 
 
-O caso mais simples em que \'e poss\'ivel manipular tais quasi-part\'iculas \'e num dobro quantum dot (DQD). Este modelo oferece v\'arias possibilidades para mover os Majorana, incluindo m\'ultiplas configura\c{c}\~oes geom\'etricas dos dots como acoples sim\'etricos, lineares e em junturas T. Neste trabalho vamos apresentar uma an\'alise te\'orico das transiciones das signaturas de Majorana dentro do DQD em sistemas interatuantes e n\~ao interatuantes. Vamos ver que \'e poss\'ivel controlar a localiza\c{c}\~ao do modo zero de Majorana  mediante o incremento nos voltagens de gate dos QD. Tamb\'em vamos explorar como essas signaturas interagem com o efeito Kondo.
+O caso mais simples em que se \'e poss\'ivel manipular tais quasi-part\'iculas \'e num quantum dot duplo (DQD). Este modelo oferece v\'arias possibilidades para mover os Majoranas, incluindo m\'ultiplas configura\c{c}\~oes geom\'etricas dos dots como acoplamentos sim\'etricos, lineares e em jun\c{c}\~oes T. Neste trabalho vamos apresentar uma an\'alise te\'orica das transi\c{c}\~es dos sinais de Majorana dentro do DQD em sistemas interagentes e n\~ao interagentes. Vamos ver que \'e poss\'ivel controlar a localiza\c{c}\~ao dos modos zero de Majorana  mediante o incremento nas voltagens de gate dos QDs. Tamb\'em vamos explorar como esses sinais interagem com o efeito Kondo que emerge em superposi\c{c}\~ao com o modo zero de Majorana.
 
-Principalmente, vamos a usar dois m\'etodos neste projecto: 1) Usamos as equa\c{c}\~oes de movimento no formalismo the fun\c{c}\~oes de green para  obter express\~oes exatas para a densidade de estados em sistemas n\~ao interatuantes.  Vamos apresentar o m\'etodo the elimina\c{c}\~ao de Gauss-Jordan com grafos, o qual permite resolver rapidamente o sistema linear emergente nas equa\c{c}\~oes de movimento. 2) Em sistemas Coulomb interatuantes usamos NRG, no qual vamos poder observar a intera\c{c}\~ao entre o Majorana e o efeito Kondo. Vamos testar ambos m\'etodos nos modelos de um double quantum dot e um QD acoplado com uma cadeia de Majorana, com o qual vamos reproduzir os resultados de paper anteriores. Finalmente, inclu\'imos a maior contribui\c{c}\~ao deste trabalho, o estudo de um DQD acoplado a uma cadeia de Majorana. 
+Principalmente, vamos a usar dois m\'etodos neste projecto: 1) Usamos as equa\c{c}\~oes de movimento no formalismo de fun\c{c}\~oes de Green para  obter express\~oes exatas para a densidade de estados em sistemas n\~ao interagentes.  Vamos apresentar o m\'etodo the elimina\c{c}\~ao de Gauss-Jordan com grafos, o qual permite resolver rapidamente o sistema linear emergente nas equa\c{c}\~oes de movimento. 2) Em sistemas Coulomb interagentes usamos NRG, no qual poderemos observar a intera\c{c}\~ao entre o Majorana e o efeito Kondo. Vamos testar ambos os m\'etodos nos modelos de um double quantum dot e um QD acoplado com uma cadeia de Majorana, com o qual vamos reproduzir os resultados presentes na literatura. Finalmente, inclu\'imos a maior contribui\c{c}\~ao deste trabalho, o estudo de um DQD acoplado a uma cadeia de Majorana. 
 
 
 
