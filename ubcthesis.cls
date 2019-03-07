@@ -75,27 +75,42 @@
     \vspace{1em}%
     \if@subtitle
       {\subtitlefont \@condupper{@uppersubtitle}{\@subtitle}\par}%
-      \vspace{1em}%
+      \vspace{4em}%
     \fi
-    by \par%
-    \vspace{1em}%
-    {\authorfont%
+    \vspace{3em}
+
+    {\Large by} \par%
+    \vspace{3em}%
+    {\large \authorfont%
       \@condupper{@upperauthor}{\@author}\par%
-    }%
+    }%    
     \if@empty\@previousdegrees\else\vfil\fi%
     \if@empty\@previousdegrees\else\@previousdegrees\fi%
     \vfil
-    Advisor: Luis Gregorio Dias da Silva\par%
-    %A THESIS SUBMITTED IN PARTIAL FULFILLMENT OF\par%
-    %THE REQUIREMENTS FOR THE DEGREE OF\par%
+    \vspace{3em}
+    {\large Advisor: Luis Gregorio Dias da Silva} \par%
+    \vspace{2em}%
+    {\large A thesis submitted in partial fulfillment of} \par%
+    {\large the requirements for the degree of}\par
+    % A THESIS SUBMITTED IN PARTIAL FULFILLMENT OF\par%
+    % THE REQUIREMENTS FOR THE DEGREE OF\par%
     \vspace{1em}
-    {\degreetitlefont\@condupper{@upperdegreetitle}{\@degreetitle}\par}%
-    \vspace{1em}
-    in \par%
-    \vspace{1em}
+
+    % \includegraphics[width=2cm]{IMAGES/ifusp.png}
+    % \begin{center}
+    
+
+    {{\Large Master of Science}\par}%
+    \vspace{0.4em}
+    {\large in} \par%
+    \vspace{0.4em}
     {\facultyfont \@condupper{@upperfaculty}{\@faculty}\par}%
-    \vspace{1em}
-    (\@program)\par%
+    \vspace{5em}
+
+    \includegraphics[scale=0.23]{IMAGES/ifusp.png}
+
+    % \includegraphics[scale=0.25]{IMAGES/LogoIfusp.jpg}
+    \par%
     \vspace{1em plus 1fil minus 0.5em}%
     \setbox0=\@logocopybare
     \setlength{\@logocopywidth}{\wd0}
@@ -103,6 +118,7 @@
     \settowidth{\@logowidth}{\@logo}
     \centerline{\hbox{%
         \hfill\@logo\@logocopy\hspace{\@logowidth}}}
+  \vspace{1em}
     \if@empty\@copyrightnotice\else\vfil\@copyrightnotice\fi
   \end{center}
   \vfil\null

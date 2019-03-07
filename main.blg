@@ -55,15 +55,15 @@ Repeated entry---line 243 of file Kondo.bib
  : @article{dias_da_silva_transmission_2008
  :                                         ,
 I'm skipping whatever remains of this entry
+Warning--empty journal in liu_detecting_2011
+Warning--empty year in liu_detecting_2011
+Warning--empty year in liu_detecting_2011
 Warning--empty journal in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty year in ruiz-tijerina_interaction_2015
 Warning--empty journal in deng_majorana_2016
 Warning--empty year in deng_majorana_2016
 Warning--empty year in deng_majorana_2016
-Warning--empty journal in liu_detecting_2011
-Warning--empty year in liu_detecting_2011
-Warning--empty year in liu_detecting_2011
 Warning--empty journal in vernek_subtle_2014
 Warning--empty year in vernek_subtle_2014
 Warning--empty year in vernek_subtle_2014
@@ -72,7 +72,7 @@ Warning--empty year in lee_kondo_2013
 Warning--empty year in lee_kondo_2013
 You've used 57 entries,
             2481 wiz_defined-function locations,
-            1030 strings with 19465 characters,
+            1030 strings with 19464 characters,
 and the built_in function-call counts, 25315 in all, are:
 = -- 2196
 > -- 1439

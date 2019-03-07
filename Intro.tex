@@ -1,6 +1,8 @@
  % \chapter{Introduction}
-\chapter{Introduction and Motivation: \\ The Pursuit of Majorana Fermions in superconducting wires. \label{chap:Motivation} }
+\chapter{ \label{chap:Motivation}  Introduction and Motivation: \\ The Pursuit of Majorana Fermions in superconducting wires. }
 
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
 \begin{chapquote}{\textit{F. Duncan M. Haldane}}
 ``It started out with a toy model demonstration, and then I realized it was very good model.  You don't understand the full implications until other people start thinking it is true and they observe the big picture [...] Now, that toy model is like Hydrogen atom for topological materials- it turned out to be the first example of topological quantum matter.''
@@ -8,7 +10,7 @@
 \begin{figure}[b]
   \centering
   \includegraphics[scale = 0.5]{IMAGES/Majorana/Coffe&donuts.jpg}
-  \caption{Coffee$\rightarrow$donut: adiabatic evolution \label{fig:Coffe}}
+  \caption{Up: Failed topological evolution from a cup of coffee to a sphere. Down: Smooth evolution of a coffee cup into a donut. \label{fig:Coffe}Taken from \url{https://bit.ly/2ETicqM} }
 \end{figure}
 
 
@@ -22,7 +24,7 @@ sequence of smooth and small alterations" (\ref{fig:Coffe}).\footnote{For decade
 
 
 
-The insight of topology into  the field of condensed matter physics is the following. Those materials who are attributed a topological characterization are endowed with a characteristic stability under smooth deformations (or adiabatic evolutions). Moreover, they usually present exotic excitations at its boundaries . The most famous example of this behavior is the integer quantum hall effect (IQHE), which exhibits an insulating bulk with electron currents passing through the edges of the material. More importantly, the magnetic field defines conductivity platoes representing different topological phases. This effect is so robust that it allowed to define with high precision a resistivity standard unit $ R_K =\frac{h}{\ep^2} = 25812.807557(18) \Omega$, which had major impact in science and technology. 
+The insight of topology into  the field of condensed matter physics is the following. Those materials who are attributed a topological characterization are endowed with a characteristic stability under smooth deformations (or adiabatic evolutions). Moreover, they usually present exotic excitations at its boundaries . The most famous example of this behavior is the integer quantum hall effect (IQHE), which exhibits an insulating bulk with electron currents passing through the edges of the material. More importantly, the magnetic field defines conductivity plateaus representing different topological phases. This effect is so robust that it allowed to define with high precision a resistivity standard unit $ R_K =\frac{h}{\ep^2} = 25812.807557(18) \Omega$, which had major impact in science and technology. 
 % have  groundbreaking in the design of high precision devices.
 
 
@@ -126,7 +128,7 @@ $$c_j = \frac{1}{\sqrt{2}} \left( \gamma_{B,j}+ i\gamma_{A,j+1} \right) \ , \ c^
 
 \noindent Then \eqref{eq:newM} becomes 
 \begin{equation}
-H = ti\sum_{j=1}^{N-1} \left(  2c^\dagger_jc_j-1 \right). \label{eq:newM} 
+H = ti\sum_{j=1}^{N-1} \left(  2c^\dagger_jc_j-1 \right). \label{eq:newM2} 
 \end{equation}
 
 Therefore, a ground state $\vert \Omega \rangle$ of this Hamiltonian is an state vacuum at all sites $j$ from $1$ to $N-1$ $(c_j\vert \Omega \rangle = 0)$. This condition allows some degeneracy since the sites at the boundary are not coupled to the Hamiltonian $\gammaA{1}$ and $\gammaB{N}$. The Dirac  operators formed by these Majoranas 
@@ -358,7 +360,7 @@ In just 6 years, more than 5 groups have documented the observation of Majorana 
 
      \subfloat[ \label{fig:exp1}]{\includegraphics[scale=0.4]{IMAGES/Majorana/Exp.png}}  
      \subfloat[\label{fig:exp2}]{\includegraphics[scale=0.4]{IMAGES/Majorana/Exp2.png}}
-\caption{ (a) Experimental setup (b) Observed magnetic field dependance of the zero bias peak.  \label{fig:exp}\protect\Source{\cite{zhang_quantized_2018}}}
+\caption{ (a) Experimental setup of InSb wire exhibiting a quantized Majorana signature. (b) Up: Observed magnetic field dependence of the conductivity. Down: Zero-bias conductivity. The ZBCP rises up to the expected value $\frac{2e^2}{h}$  forming a quantized plateau at magnetic fields around $0,5T$  \label{fig:exp}\protect\Source{Adapted from \cite{zhang_quantized_2018}}}
 \end{figure}
 
 Despite the successful experimental results, there is still certain  skepticism about the existence of Majorana fermions, mainly because Majorana zero-modes (MZM) have been found in superposition with similar types of phenomena that produce zero-modes. Some examples of these are the Andreev reflection \cite{sarma_majorana_2012} or even the Kondo peak \cite{gorski_interplay_2018}. New experimental proposals focus on distinguishing MZMs from these effects and implementing  braiding protocols \cite{aasen_milestones_2016,sarma_majorana_2015,heck_coulomb-assisted_2012} . One promising idea that could lead to important results in both research lines is coupling Majorana wires with QDs. This will be the objective of the following section. 
