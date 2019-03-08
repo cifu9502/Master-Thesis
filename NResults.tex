@@ -134,7 +134,8 @@ To  improve the efficiency of the code we used the symmetries of the system to m
 
 To initialize the model in \ref{fig:Code} we set $H_{-1}$ equal to 
 \begin{equation}
-H =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{i\sigma}^{\dagger}d_{i\sigma}+ \frac{U_i}{2}(d_{i \sigma}^{\dagger}d_{i \sigma}-1)^{2} + t_i(\gamma d_{i,\dw}+d^\dagger_{i,\dw}\gamma),
+H_{-1} =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{i\sigma}^{\dagger}d_{i\sigma}+ \frac{U_i}{2}(d_{i \sigma}^{\dagger}d_{i \sigma}-1)^{2} + t_i(\gamma d_{i,\dw}+d^\dagger_{i,\dw}\gamma),
+\label{eq:imp_Ham}
 \end{equation} 
 \noindent and wrote the Hamiltonian in the symmetry-block diagonal representation (see \ref{sec:Double-Dot-Majorana-Hamiltonian.}). We also include manually the Hamiltonian $H_0$ into the code (See \ref{fig:Code}) to guarantee that both quantum dots are coupled to the first site of the chain. After this, the code follows the standard NRG algorithm and prints the density matrices to initialize DM-NRG. The final result is the spectral density which contains sufficient physical information to study the MZM-DQD model. In the following section, we show how the density of states can be used to simulate the Manipulation process of an MZM inside the DQD. 
 

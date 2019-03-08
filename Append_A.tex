@@ -8,7 +8,7 @@ We start with an Anderson model Hamiltonian such as the one
 in \prettyref{eq:Anderson} without magnetic field
 
 \begin{equation}
-H=\frac{U}{2}+\sum_{\sigma}\left[\left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\sum_{\mathbf{k}}\ep_{\mathbf{k}}c_{\mathbf{k}\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\mathbf{k}}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\mathbf{k}}^{*}c_{\mathbf{k}\sigma}^{\dagger}d_{\sigma}\right].\label{HamWilson}
+H=\frac{U}{2}+\sum_{\sigma}\left[\left(\epsilon+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\sum_{\mathbf{k}}\ep_{\mathbf{k}}c_{\mathbf{k}\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\mathbf{k}}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\mathbf{k}}^{*}c_{\mathbf{k}\sigma}^{\dagger}d_{\sigma}\right].\label{HamWilson}
 \end{equation}
 
 At low-energies we can assume that QD couples only to s-wave states in the leads\citep{krishna-murthy_renormalization-group_1980}. This implies that that the Fermi surface is contained
@@ -16,7 +16,7 @@ in a single, isotropic conduction band extending inside some fixed cutoffs $-D$ 
 equation \ref{HamWilson} into an integral over $\epsilon$ between
 the energy cutoffs
 \begin{eqnarray}
-H & =\sum_{\sigma} & \Biggl[\left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\int_{-D}^{D}\mbox{d}\epsilon\ \epsilon c_{\epsilon\sigma}^{\dagger}c_{\epsilon\sigma}\nonumber \\
+H & =\sum_{\sigma} & \Biggl[\left(\epsilon+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\int_{-D}^{D}\mbox{d}\epsilon\ \epsilon c_{\epsilon\sigma}^{\dagger}c_{\epsilon\sigma}\nonumber \\
  &  & \qquad\qquad\qquad\qquad\qquad\qquad+\int_{-D}^{D}\sqrt{\rho_{\sigma}(\epsilon)}\mbox{d}\epsilon\ V_{\epsilon}d_{\sigma}^{\dagger}c_{\mathbf{k}\sigma}+V_{\epsilon}^{*}c_{\epsilon\sigma}^{\dagger}d_{\sigma}\Biggr].\label{eq:hamEnergy}
 \end{eqnarray}
 
@@ -33,22 +33,22 @@ and $c_{k\sigma}:=\sqrt{D}c_{\epsilon\sigma}$ so that \prettyref{eq:hamEnergy}
 becomes
 
 \begin{eqnarray}
-H & = & D\sum_{\sigma}\Biggl[\frac{1}{D}\left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2D}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\int_{-1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma}\nonumber \\
- &  & \qquad\qquad\qquad\qquad\qquad\qquad\qquad+\sqrt{\frac{\Gamma}{\pi D}}\int_{-1}^{1}\mbox{d}k\ d_{\sigma}^{\dagger}c_{k\sigma}+c_{k\sigma}^{\dagger}d_{\sigma}\label{eq:Norm-HamEnergy}\\
- & = & H_{d}+D\sum_{\sigma}\Biggl[\int_{-1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma}+\sqrt{\frac{\Gamma}{\pi D}}\int_{-1}^{1}\mbox{d}k\ d_{\sigma}^{\dagger}c_{k\sigma}+c_{k\sigma}^{\dagger}d_{\sigma}\Biggr],
+H & = & D\sum_{\sigma}\Biggl[\frac{1}{D}\left(\epsilon+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U}{2D}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2}+\int_{1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma}\nonumber \\
+ &  & \qquad\qquad\qquad\qquad\qquad\qquad\qquad+\sqrt{\frac{\Gamma}{\pi D}}\int_{1}^{1}\mbox{d}k\ d_{\sigma}^{\dagger}c_{k\sigma}+c_{k\sigma}^{\dagger}d_{\sigma}\label{eq:Norm-HamEnergy}\\
+ & = & H_{d}+D\sum_{\sigma}\Biggl[\int_{1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma}+\sqrt{\frac{\Gamma}{\pi D}}\int_{1}^{1}\mbox{d}k\ d_{\sigma}^{\dagger}c_{k\sigma}+c_{k\sigma}^{\dagger}d_{\sigma}\Biggr],
 \end{eqnarray}
 
 
 where $\Gamma=\pi\rho V^{2}$ is associated to the lever-width \citep[(3.5)]{sindel_numerical_2005}.
 At this point we have our model dependent of three unit-less constants
-$\frac{\epsilon_{d}}{D}\ ,\ \frac{U}{2D}$ and $\frac{\Gamma}{\pi D}$.
+$\frac{\epsilon}{D}\ ,\ \frac{U}{2D}$ and $\frac{\Gamma}{\pi D}$.
 The logarithmic discretization starts by defining an scaling parameter
 $\Lambda\geq1$ in diving the energy domain $[-1,1]$ into an array
 of intervals of the form $\{[\pm\Lambda^{-(n+1)},\pm\Lambda^{n}]\}_{n\in\mathbb{N}}$,
 as we can observe in \ref{fig:Discretization}. Note that the width
 of these intervals is decreasing exponentially by 
 \[
-d_{n}=\Lambda^{-n}\left(1-\Lambda^{-1}\right).
+d_{n}=\Lambda^{-n}\left(1-\Lambda^{1}\right).
 \]
 
 
@@ -72,7 +72,7 @@ c_{k\sigma}^{\dagger}=\sum_{np}\phi_{np}^{+}(k)c_{np\sigma}^{+\dagger}+\phi_{np}
 
 with the new creation operators defined as 
 \[
-c_{np\sigma}^{\pm\dagger}:=\left(c_{np\sigma}^{\pm}\right)^{\dagger}=\int_{-1}^{1}\mbox{d}\epsilon\ \left[\phi_{np}^{+}(\epsilon)\right]^{*}c_{\epsilon\sigma}^{\dagger}.
+c_{np\sigma}^{\pm\dagger}:=\left(c_{np\sigma}^{\pm}\right)^{\dagger}=\int_{1}^{1}\mbox{d}\epsilon\ \left[\phi_{np}^{+}(\epsilon)\right]^{*}c_{\epsilon\sigma}^{\dagger}.
 \]
 
 
@@ -87,22 +87,22 @@ the $k$-dependent terms in hamiltonian \prettyref{eq:Norm-HamEnergy}.
 Then we obtain
 
 \begin{eqnarray}
-\int_{-1}^{1}\mbox{d}k\ c_{k\sigma}^{\dagger}d_{\sigma} & = & \int_{-1}^{1}\mbox{d}k\ \left(\sum_{np}\phi_{np}^{+}(k)c_{np\sigma}^{+\dagger}+\phi_{np}^{-}(k)c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
- & = & \left(\sum_{np}\left(\int_{-1}^{1}\mbox{d}k\ \phi_{np}^{+}(k)\right)c_{np\sigma}^{+\dagger}+\left(\int_{-1}^{1}\mbox{d}k\ \phi_{np}^{-}(k)\right)c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
+\int_{1}^{1}\mbox{d}k\ c_{k\sigma}^{\dagger}d_{\sigma} & = & \int_{1}^{1}\mbox{d}k\ \left(\sum_{np}\phi_{np}^{+}(k)c_{np\sigma}^{+\dagger}+\phi_{np}^{-}(k)c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
+ & = & \left(\sum_{np}\left(\int_{1}^{1}\mbox{d}k\ \phi_{np}^{+}(k)\right)c_{np\sigma}^{+\dagger}+\left(\int_{1}^{1}\mbox{d}k\ \phi_{np}^{-}(k)\right)c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
  & = & \left(\sum_{np}\left(\int_{\Lambda^{-(n+1)}}^{\Lambda^{-n}}\mbox{d}k\ \frac{e^{i\omega_{n}pk}}{\sqrt{d_{n}}}\right)c_{np\sigma}^{+\dagger}+\left(\int_{-\Lambda^{-n}}^{-\Lambda^{-(n+1)}}\mbox{d}k\ \frac{e^{-i\omega_{n}pk}}{\sqrt{d_{n}}}\right)c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
  & = & \left(\sum_{np}\sqrt{d_{n}}\delta_{p}c_{np\sigma}^{+\dagger}+\sqrt{d_{n}}\delta_{p}c_{np\sigma}^{-\dagger}\right)d_{\sigma}\nonumber \\
- & = & \sqrt{1-\Lambda^{-1}}\sum_{n}\Lambda^{-\frac{n}{2}}\left(c_{np\sigma}^{+\dagger}+c_{np\sigma}^{-\dagger}\right)d_{\sigma}.\label{eq:firt-Integral}
+ & = & \sqrt{1-\Lambda^{1}}\sum_{n}\Lambda^{-\frac{n}{2}}\left(c_{np\sigma}^{+\dagger}+c_{np\sigma}^{-\dagger}\right)d_{\sigma}.\label{eq:firt-Integral}
 \end{eqnarray}
 
 
 And 
 
 \begin{eqnarray}
-\int_{-1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma} & = & \sum_{n,n',p,p'}\sum_{s,s'=\pm}\left(\int_{-1}^{1}k\mbox{d}k\ \phi_{np}^{s}(k)\left(\phi_{np}^{s'}(k)\right)^{*}\right)c_{np\sigma}^{s\dagger}c_{n'p'\sigma}^{s'}\nonumber \\
+\int_{1}^{1}\mbox{d}k\ kc_{k\sigma}^{\dagger}c_{k\sigma} & = & \sum_{n,n',p,p'}\sum_{s,s'=\pm}\left(\int_{1}^{1}k\mbox{d}k\ \phi_{np}^{s}(k)\left(\phi_{np}^{s'}(k)\right)^{*}\right)c_{np\sigma}^{s\dagger}c_{n'p'\sigma}^{s'}\nonumber \\
  & = & \sum_{n,n',p,p'}\sum_{s,s'=\pm}\left(\frac{\delta_{nn'}\delta_{ss'}}{d_{n}}\int_{\Lambda^{-(n+1)}}^{\Lambda^{-n}}k\mbox{d}k\ e^{is\omega_{n}k\left(p-p'\right)}\right)c_{np\sigma}^{s\dagger}c_{np'\sigma}^{s}\nonumber \\
- & = & \sum_{npp'}\sum_{s=\pm}\left(\frac{s}{2}\Lambda^{-2n}\left(1-\Lambda^{-2}\right)\delta_{pp'}+\frac{1-\delta_{pp'}}{is\omega_{n}\left(p-p'\right)}\left[ke^{is\omega_{n}k\left(p-p'\right)}\right]_{\Lambda^{-(n+1)}}^{\Lambda^{-n}}\right)\frac{c_{np\sigma}^{s\dagger}c_{np'\sigma}^{s'}}{d_{n}}\nonumber \\
- & = & \frac{1}{2}\left(1+\Lambda^{-1}\right)\sum_{np}\Lambda^{-n}\left(c_{np\sigma}^{+\dagger}c_{np\sigma}^{+}-c_{np\sigma}^{-\dagger}c_{np\sigma}^{-}\right)\nonumber \\
- &  & \ \ \ \ \ \ \!\ \ \ \ \!\ \ +\sum_{n}\sum_{p\neq p'}\frac{1-\Lambda^{-1}}{2i\pi\left(p'-p\right)}\left(c_{np\sigma}^{+\dagger}c_{np'\sigma}^{+}-c_{np'\sigma}^{-\dagger}c_{np\sigma}^{-}\right)e^{\frac{2i\pi\left(p-p'\right)}{1-\Lambda^{-1}}}.\label{eq:second-integral}
+ & = & \sum_{npp'}\sum_{s=\pm}\left(\frac{s}{2}\Lambda^{-2n}\left(1-\Lambda^{2}\right)\delta_{pp'}+\frac{1-\delta_{pp'}}{is\omega_{n}\left(p-p'\right)}\left[ke^{is\omega_{n}k\left(p-p'\right)}\right]_{\Lambda^{-(n+1)}}^{\Lambda^{-n}}\right)\frac{c_{np\sigma}^{s\dagger}c_{np'\sigma}^{s'}}{d_{n}}\nonumber \\
+ & = & \frac{1}{2}\left(1+\Lambda^{1}\right)\sum_{np}\Lambda^{-n}\left(c_{np\sigma}^{+\dagger}c_{np\sigma}^{+}-c_{np\sigma}^{-\dagger}c_{np\sigma}^{-}\right)\nonumber \\
+ &  & \ \ \ \ \ \ \!\ \ \ \ \!\ \ +\sum_{n}\sum_{p\neq p'}\frac{1-\Lambda^{1}}{2i\pi\left(p'-p\right)}\left(c_{np\sigma}^{+\dagger}c_{np'\sigma}^{+}-c_{np'\sigma}^{-\dagger}c_{np\sigma}^{-}\right)e^{\frac{2i\pi\left(p-p'\right)}{1-\Lambda^{1}}}.\label{eq:second-integral}
 \end{eqnarray}
 
 
@@ -129,14 +129,14 @@ with $p\neq0$. This leaves only the first part of \prettyref{eq:second-integral}
 so that we can define $c_{n\sigma}^{\pm\dagger}:=c_{np\sigma}^{\pm\dagger}$
 . Let 
 \begin{equation}
-f_{0\sigma}^{\dagger}=\sqrt{\frac{1-\Lambda^{-1}}{2}}\sum_{n}\Lambda^{-\frac{n}{2}}\left(c_{n\sigma}^{+\dagger}+c_{n\sigma}^{-\dagger}\right),\mbox{ so that }\sqrt{2}f_{0\sigma}^{\dagger}d_{\sigma}=\int_{-1}^{1}\mbox{d}k\ c_{k\sigma}^{\dagger}d_{\sigma}.\label{eq:f_0}
+f_{0\sigma}^{\dagger}=\sqrt{\frac{1-\Lambda^{1}}{2}}\sum_{n}\Lambda^{-\frac{n}{2}}\left(c_{n\sigma}^{+\dagger}+c_{n\sigma}^{-\dagger}\right),\mbox{ so that }\sqrt{2}f_{0\sigma}^{\dagger}d_{\sigma}=\int_{1}^{1}\mbox{d}k\ c_{k\sigma}^{\dagger}d_{\sigma}.\label{eq:f_0}
 \end{equation}
 
 
-Note $\left\{ f_{0\sigma}^{\dagger},f_{0\sigma}\right\} =\frac{1-\Lambda^{-1}}{2}\sum_{n}2\Lambda^{-n}=1$.
+Note $\left\{ f_{0\sigma}^{\dagger},f_{0\sigma}\right\} =\frac{1-\Lambda^{1}}{2}\sum_{n}2\Lambda^{-n}=1$.
 Replacing this in \prettyref{eq:Norm-HamEnergy}we get 
 \[
-H=H_{d}+D\sum_{\sigma}\Biggl[\sqrt{\frac{2\Gamma}{\pi D}}\left(d_{\sigma}^{\dagger}f_{0\sigma}+f_{0\sigma}^{\dagger}d_{\sigma}\right)+\frac{1}{2}\left(1+\Lambda^{-1}\right)\sum_{n}\Lambda^{-n}\left(c_{n\sigma}^{+\dagger}c_{n\sigma}^{+}-c_{n\sigma}^{-\dagger}c_{n\sigma}^{-}\right)\Biggr].
+H=H_{d}+D\sum_{\sigma}\Biggl[\sqrt{\frac{2\Gamma}{\pi D}}\left(d_{\sigma}^{\dagger}f_{0\sigma}+f_{0\sigma}^{\dagger}d_{\sigma}\right)+\frac{1}{2}\left(1+\Lambda^{1}\right)\sum_{n}\Lambda^{-n}\left(c_{n\sigma}^{+\dagger}c_{n\sigma}^{+}-c_{n\sigma}^{-\dagger}c_{n\sigma}^{-}\right)\Biggr].
 \]
 
 
@@ -154,14 +154,14 @@ f_{m\sigma}^{\dagger}=\sum_{n}a_{mn}^{+}c_{n\sigma}^{+\dagger}+a_{mn}^{-}c_{n\si
 \]
 and 
 \begin{equation}
-\frac{1}{2}\left(1+\Lambda^{-1}\right)\sum_{n}\Lambda^{-n}\left(c_{n\sigma}^{+\dagger}c_{n\sigma}^{+}-c_{n\sigma}^{-\dagger}c_{n\sigma}^{-}\right)=\sum_{m=0}^{\infty}\Lambda^{\frac{-m}{2}}\xi_{m}\left(f_{m\sigma}^{\dagger}f_{m+1,\sigma}+f_{m+1\sigma}^{\dagger}f_{m\sigma}\right).\label{eq:final equation}
+\frac{1}{2}\left(1+\Lambda^{1}\right)\sum_{n}\Lambda^{-n}\left(c_{n\sigma}^{+\dagger}c_{n\sigma}^{+}-c_{n\sigma}^{-\dagger}c_{n\sigma}^{-}\right)=\sum_{m=0}^{\infty}\Lambda^{\frac{-m}{2}}\xi_{m}\left(f_{m\sigma}^{\dagger}f_{m+1,\sigma}+f_{m+1\sigma}^{\dagger}f_{m\sigma}\right).\label{eq:final equation}
 \end{equation}
 
 
 It is possible to find a solution for this system using the formula of
 the right part of equation \ref{eq:final equation}. Since the relation
 is only given between consecutive terms $m,m+1$ and we already have
-the coefficients for $m=0$ $\left(a_{0n}^{s}=\sqrt{\frac{1-\Lambda^{-1}}{2}}\Lambda^{-\frac{n}{2}}\right).$
+the coefficients for $m=0$ $\left(a_{0n}^{s}=\sqrt{\frac{1-\Lambda^{1}}{2}}\Lambda^{-\frac{n}{2}}\right).$
 Then it is possible to determine the upper coefficients in a recursive way starting
 from $m=0$. Supposing we can obtain the $m^{\mbox{th}}$-coefficients
 $(a_{mn}^{s})$ and then finding iteratively the coefficients of $m+1\ (a_{mn}^{s})$
@@ -172,7 +172,7 @@ the problem can be solved analytically obtaining that the final Hamiltonian
 is given by 
 
 \begin{equation}
-H=H_{d}+D\sum_{\sigma}\Biggl[\sqrt{\frac{2\Gamma}{\pi D}}\left(d_{\sigma}^{\dagger}f_{0\sigma}+f_{0\sigma}^{\dagger}d_{\sigma}\right)+\frac{1}{2}\left(1+\Lambda^{-1}\right)\sum_{n=0}^{\infty}\Lambda^{\frac{-n}{2}}\xi_{n}\left(f_{n\sigma}^{\dagger}f_{n+1,\sigma}+f_{n+1\sigma}^{\dagger}f_{n\sigma}\right)\Biggr].\label{eq:chain-Hamiltonian}
+H=H_{d}+D\sum_{\sigma}\Biggl[\sqrt{\frac{2\Gamma}{\pi D}}\left(d_{\sigma}^{\dagger}f_{0\sigma}+f_{0\sigma}^{\dagger}d_{\sigma}\right)+\frac{1}{2}\left(1+\Lambda^{1}\right)\sum_{n=0}^{\infty}\Lambda^{\frac{-n}{2}}\xi_{n}\left(f_{n\sigma}^{\dagger}f_{n+1,\sigma}+f_{n+1\sigma}^{\dagger}f_{n\sigma}\right)\Biggr].\label{eq:chain-Hamiltonian}
 \end{equation}
 
 
@@ -266,7 +266,7 @@ which implies an exponential decaying of the hopping term in the chain.
 
 
 % %\begin{equation}
-% %H = \sum_{i,k} \left(\epsilon_{d}+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U_i}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2} + t_i d_i+d^\dagger_i \gamma_1 + \Gamma_i(d_{\sigma}c_{\sigma})
+% %H = \sum_{i,k} \left(\epsilon+\frac{U}{2}\right)d_{\sigma}^{\dagger}d_{\sigma}+\frac{U_i}{2}(d_{\sigma}^{\dagger}d_{\sigma}-1)^{2} + t_i d_i+d^\dagger_i \gamma_1 + \Gamma_i(d_{\sigma}c_{\sigma})
 % %\end{equation}
 
 
@@ -284,7 +284,21 @@ which implies an exponential decaying of the hopping term in the chain.
 % --------------------------------------
 \section{Initial DQD-Majorana Hamiltonian.\label{sec:Double-Dot-Majorana-Hamiltonian.}}
 
-$H_{N_{\uparrow}=0,P_{\downarrow}=-1}:$
+The impurity Hamiltonian of our model is written in block diagonal form with quantum numbers: spin-$\up$ total number$(\mathcal{N}_\up)$ and spin-$\dw$ parity $(P_\dw)$. The initial basis is described by 
+\begin{align}
+\vert \uparrow\downarrow\rangle\longrightarrow\vert \mathcal{N}_\uparrow =1,P_\downarrow=-1\rangle\ ,& \ \vert0\rangle\longrightarrow\vert \mathcal{N}_\uparrow=0,P_\downarrow=1\rangle \\ 
+\vert \uparrow\rangle\longrightarrow\vert \mathcal{N}_\uparrow=1,P_\downarrow=1\rangle\ ,& \ \vert \downarrow \rangle\longrightarrow\vert \mathcal{N}_\uparrow=0,P_\downarrow=-1\rangle.
+\end{align}
+
+\noindent And the propagation rule for the symmetry is defined with the following identity 
+\begin{equation}
+  \vert \mathcal{N}_{\uparrow1},P_{\downarrow 1}\rangle\otimes\vert \mathcal{N}_{\uparrow 2},P_{\downarrow 2}\rangle\subset\vert \mathcal{N}_{\uparrow1}+\mathcal{N}_{\uparrow2},P_{\downarrow 1}*P_{\downarrow 2}\rangle \label{eq:PropRuleQD}
+\end{equation} 
+
+Let $\epsilon^+ =\ep_1 + \ep_2$ and $U^+ =U_1 + U_2$ In this base, the impurity Hamiltonian $H$ \eqref{eq:imp_Ham} is described in the following way:
+
+
+$H_{\mathcal{N}_{\uparrow}=0,P_{\downarrow}=-1}:$
 \[
 \begin{array}{c}
 \vert\downarrow,\downarrow,\downarrow\rangle\rightarrow\\
@@ -292,15 +306,15 @@ $H_{N_{\uparrow}=0,P_{\downarrow}=-1}:$
 \vert0,\downarrow,0\rangle\rightarrow\\
 \vert\downarrow,0,0\rangle\rightarrow
 \end{array}\left[\begin{array}{cccc}
-\epsilon_{d}^{+}+\frac{U^{+}}{2}-2h+\epsilon_{m} & 0 & -\tilde{t}_{+1} & \tilde{t}_{+2}\\
-0 & \frac{U^{+}}{2}+\epsilon_{m} & \tilde{t}_{-2}^{*} & \tilde{t}_{-1}^{*}\\
--\tilde{t}_{+1}^{*} & \tilde{t}_{-2} & \epsilon_{d_{2}}+\frac{U^{+}}{2}-h-\epsilon_{m} & t\\
-\tilde{t}_{+2}^{*} & \tilde{t}_{-1} & t^{*} & \epsilon_{d_{1}}+\frac{U^{+}}{2}-h-\epsilon_{m}
+\epsilon^{+}+\frac{U^{+}}{2} & 0 & -t_{1} & t_{2}\\
+0 & \frac{U^{+}}{2} & t_{2}^{*} & t_{1}^{*}\\
+-t_{1}^{*} & t_{2} & \epsilon_{d_{2}}+\frac{U^{+}}{2} & t_{dots}\\
+t_{2}^{*} & t_{1} & t^{*}_{dots} & \epsilon_{d_{1}}+\frac{U^{+}}{2}
 \end{array}\right]
 \]
 
 
-$H_{N_{\uparrow}=0,P_{\downarrow}=1}:$
+$H_{\mathcal{N}_{\uparrow}=0,P_{\downarrow}=1}:$
 \[
 \begin{array}{c}
 \vert0,0,0\rangle\rightarrow\\
@@ -308,15 +322,15 @@ $H_{N_{\uparrow}=0,P_{\downarrow}=1}:$
 \vert\downarrow,0,\downarrow\rangle\rightarrow\\
 \vert0,\downarrow,\downarrow\rangle\rightarrow
 \end{array}\left[\begin{array}{cccc}
-\frac{U^{+}}{2}-\epsilon_{m} & 0 & \tilde{t}_{+1} & \tilde{t}_{+2}\\
-0 & \epsilon_{d}^{+}+\frac{U^{+}}{2}-2h-\epsilon_{m} & \tilde{t}_{-2}^{*} & -\tilde{t}_{-1}^{*}\\
-\tilde{t}_{+1}^{*} & \tilde{t}_{-2} & \epsilon_{d_{1}}+\frac{U^{+}}{2}-h+\epsilon_{m} & t\\
-\tilde{t}_{+2}^{*} & -\tilde{t}_{-1} & t^{*} & \epsilon_{d_{2}}+\frac{U^{+}}{2}-h+\epsilon_{m}
+\frac{U^{+}}{2} & 0 & t_{1} & t_{2}\\
+0 & \epsilon^{+}+\frac{U^{+}}{2} & t_{2}^{*} & -t_{1}^{*}\\
+t_{1}^{*} & t_{2} & \epsilon_{d_{1}}+\frac{U^{+}}{2} & t_{dots}\\
+t_{2}^{*} & -t_{1} & t^{*}_{dots} & \epsilon_{d_{2}}+\frac{U^{+}}{2}
 \end{array}\right]
 \]
 
 
-$H_{N_{\uparrow}=2,P_{\downarrow}=-1}:$
+$H_{\mathcal{N}_{\uparrow}=2,P_{\downarrow}=-1}:$
 \[
 \begin{array}{c}
 \vert\uparrow\!\downarrow,\uparrow\!\downarrow,\downarrow\rangle\rightarrow\\
@@ -324,17 +338,17 @@ $H_{N_{\uparrow}=2,P_{\downarrow}=-1}:$
 \vert\uparrow,\uparrow\!\downarrow,0\rangle\rightarrow\\
 \vert\uparrow\!\downarrow,\uparrow,0\rangle\rightarrow
 \end{array}\left[\begin{array}{cccc}
-2\epsilon_{d}^{+}+\frac{3U^{+}}{2}+\epsilon_{m} & 0 & \tilde{t}_{+1} & \tilde{t}_{+2}\\
-0 & \epsilon_{d}^{+}+\frac{U^{+}}{2}+2h+\epsilon_{m} & \tilde{t}_{-2}^{*} & -\tilde{t}_{-1}^{*}\\
-\tilde{t}_{+1}^{*} & \tilde{t}_{-2} & f(d_{1},d_{2})+h-\epsilon_{m} & -t\\
-\tilde{t}_{+2}^{*} & -\tilde{t}_{-1} & -t^{*} & f(d_{2},d_{1})+h-\epsilon_{m}
+2\epsilon^{+}+\frac{3U^{+}}{2} & 0 & t_{1} & t_{2}\\
+0 & \epsilon^{+}+\frac{U^{+}}{2} & t_{2}^{*} & -t_{1}^{*}\\
+t_{1}^{*} & t_{2} & f(d_{1},d_{2}) & -t_{dots}\\
+t_{2}^{*} & -t_{1} & -t^{*}_{dots} & f(d_{2},d_{1})
 \end{array}\right]
 \]
 
 
-with $f(d_{i},d_{j})=\epsilon_{d_{i}}+\frac{U_{i}}{2}+2\epsilon_{d_{j}}+\frac{3U_{j}}{2}.$
+With $f(d_{i},d_{j})=\epsilon_{d_{i}}+\frac{U_{i}}{2}+2\epsilon_{d_{j}}+\frac{3U_{j}}{2}.$
 
-$H_{N_{\uparrow}=2,P_{\downarrow}=1}:$
+$H_{\mathcal{N}_{\uparrow}=2,P_{\downarrow}=1}:$
 \[
 \begin{array}{c}
 \vert\uparrow,\uparrow,0\rangle\rightarrow\\
@@ -342,9 +356,96 @@ $H_{N_{\uparrow}=2,P_{\downarrow}=1}:$
 \vert\uparrow\!\downarrow,\uparrow,\downarrow\rangle\rightarrow\\
 \vert\uparrow,\uparrow\!\downarrow,\downarrow\rangle\rightarrow
 \end{array}\left[\begin{array}{cccc}
-\epsilon_{d}^{+}+\frac{U^{+}}{2}+2h-\epsilon_{m} & 0 & -\tilde{t}_{+1} & \tilde{t}_{+2}\\
-0 & 2\epsilon_{d}^{+}+\frac{3U^{+}}{2}-\epsilon_{m} & \tilde{t}_{-2}^{*} & \tilde{t}_{-1}^{*}\\
--\tilde{t}_{+1}^{*} & \tilde{t}_{-2} & f(d_{2},d_{1})+h+\epsilon_{m} & -t\\
-\tilde{t}_{+2}^{*} & \tilde{t}_{-1} & -t^{*} & f(d_{1},d_{2})+h+\epsilon_{m}
+\epsilon^{+}+\frac{U^{+}}{2} & 0 & -t_{1} & t_{2}\\
+0 & 2\epsilon^{+}+\frac{3U^{+}}{2} & t_{2}^{*} & t_{1}^{*}\\
+-t_{1}^{*} & t_{2} & f(d_{2},d_{1}) & -t_{dots}\\
+t_{2}^{*} & t_{1} & -t^{*}_{dots} & f(d_{1},d_{2})
 \end{array}\right]
 \]
+
+Finally, 
+ $$H_{\mathcal{N}_{\uparrow}=1,P_{\downarrow}=-1}: \left[\begin{array}{cc}
+H_{\mathcal{N}_{\uparrow}=0,P_{\downarrow}=-1} & -\mathbb{T}_{dots}\\
+-\mathbb{T^{*}}_{dots} & H_{\mathcal{N}_{\uparrow}=2,P_{\downarrow}=-1}
+\end{array}\right]
+$$
+$$H_{\mathcal{N}_{\uparrow}=1,P_{\downarrow}=1}: \left[\begin{array}{cc}
+H_{\mathcal{N}_{\uparrow}=0,P_{\downarrow}=1} & \mathbb{T}_{dots}\\
+\mathbb{T^{*}}_{dots} & H_{\mathcal{N}_{\uparrow}=2,P_{\downarrow}=1}
+\end{array}\right] 
+ $$
+
+with 
+$$\mathbb{T}=\left[\begin{array}{cccc}
+t_{dots} & 0 & 0 & 0\\
+0 & -t_{dots} & 0 & 0\\
+0 & 0 & -t_{dots} & 0\\
+0 & 0 & 0 & t_{dots}
+\end{array}\right]. $$
+This completes the input values for the Majorana-DQD mode in the NRG code. 
+
+
+% $H_{\mathcal{N}_{\uparrow}=0,P_{\downarrow}=-1}:$
+% \[
+% \begin{array}{c}
+% \vert\downarrow,\downarrow,\downarrow\rangle\rightarrow\\
+% \vert0,0,\downarrow\rangle\rightarrow\\
+% \vert0,\downarrow,0\rangle\rightarrow\\
+% \vert\downarrow,0,0\rangle\rightarrow
+% \end{array}\left[\begin{array}{cccc}
+% \epsilon^{+}+\frac{U^{+}}{2}+\epsilon_{m} & 0 & -t_{1} & t_{2}\\
+% 0 & \frac{U^{+}}{2}+\epsilon_{m} & t_{2}^{*} & t_{1}^{*}\\
+% -t_{1}^{*} & t_{2} & \epsilon_{d_{2}}+\frac{U^{+}}{2}-\epsilon_{m} & t\\
+% t_{2}^{*} & t_{1} & t^{*} & \epsilon_{d_{1}}+\frac{U^{+}}{2}-\epsilon_{m}
+% \end{array}\right]
+% \]
+
+
+% $H_{\mathcal{N}_{\uparrow}=0,P_{\downarrow}=1}:$
+% \[
+% \begin{array}{c}
+% \vert0,0,0\rangle\rightarrow\\
+% \vert\downarrow,\downarrow,0\rangle\rightarrow\\
+% \vert\downarrow,0,\downarrow\rangle\rightarrow\\
+% \vert0,\downarrow,\downarrow\rangle\rightarrow
+% \end{array}\left[\begin{array}{cccc}
+% \frac{U^{+}}{2}-\epsilon_{m} & 0 & t_1 & t_{2}\\
+% 0 & \epsilon^{+}+\frac{U^{+}}{2}-2h-\epsilon_{m} & t_{2}^{*} & -t_{1}^{*}\\
+% t_1^{*} & t_{2} & \epsilon_{d_{1}}+\frac{U^{+}}{2}-h+\epsilon_{m} & t\\
+% t_{2}^{*} & -t_{1} & t^{*} & \epsilon_{d_{2}}+\frac{U^{+}}{2}-h+\epsilon_{m}
+% \end{array}\right]
+% \]
+
+
+% $H_{\mathcal{N}_{\uparrow}=2,P_{\downarrow}=-1}:$
+% \[
+% \begin{array}{c}
+% \vert\uparrow\!\downarrow,\uparrow\!\downarrow,\downarrow\rangle\rightarrow\\
+% \vert\uparrow,\uparrow,\downarrow\rangle\rightarrow\\
+% \vert\uparrow,\uparrow\!\downarrow,0\rangle\rightarrow\\
+% \vert\uparrow\!\downarrow,\uparrow,0\rangle\rightarrow
+% \end{array}\left[\begin{array}{cccc}
+% 2\epsilon^{+}+\frac{3U^{+}}{2}+\epsilon_{m} & 0 & t_1 & t_{2}\\
+% 0 & \epsilon^{+}+\frac{U^{+}}{2}+2h+\epsilon_{m} & t_{2}^{*} & -t_{1}^{*}\\
+% t_1^{*} & t_{2} & f(d_{1},d_{2})+h-\epsilon_{m} & -t\\
+% t_{2}^{*} & -t_{1} & -t^{*} & f(d_{2},d_{1})+h-\epsilon_{m}
+% \end{array}\right]
+% \]
+
+
+% with $f(d_{i},d_{j})=\epsilon_{d_{i}}+\frac{U_{i}}{2}+2\epsilon_{d_{j}}+\frac{3U_{j}}{2}.$
+
+% $H_{\mathcal{N}_{\uparrow}=2,P_{\downarrow}=1}:$
+% \[
+% \begin{array}{c}
+% \vert\uparrow,\uparrow,0\rangle\rightarrow\\
+% \vert\uparrow\!\downarrow,\uparrow\!\downarrow,0\rangle\rightarrow\\
+% \vert\uparrow\!\downarrow,\uparrow,\downarrow\rangle\rightarrow\\
+% \vert\uparrow,\uparrow\!\downarrow,\downarrow\rangle\rightarrow
+% \end{array}\left[\begin{array}{cccc}
+% \epsilon^{+}+\frac{U^{+}}{2}+2h-\epsilon_{m} & 0 & -t_1 & t_{2}\\
+% 0 & 2\epsilon^{+}+\frac{3U^{+}}{2}-\epsilon_{m} & t_{2}^{*} & t_{1}^{*}\\
+% -t_1^{*} & t_{2} & f(d_{2},d_{1})+h+\epsilon_{m} & -t\\
+% t_{2}^{*} & t_{1} & -t^{*} & f(d_{1},d_{2})+h+\epsilon_{m}
+% \end{array}\right]
+% \]
