@@ -29,9 +29,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="-112.65108"
-     inkscape:cx="1402.0141"
-     inkscape:zoom="1.8101934"
+     inkscape:cy="1397.0762"
+     inkscape:cx="910.00895"
+     inkscape:zoom="0.90509672"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -40,6 +40,18 @@
      id="base" />
   <defs
      id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5667">
+      <stop
+         style="stop-color:#f89085;stop-opacity:1;"
+         offset="0"
+         id="stop5663" />
+      <stop
+         style="stop-color:#f89085;stop-opacity:0;"
+         offset="1"
+         id="stop5665" />
+    </linearGradient>
     <linearGradient
        id="linearGradient6647"
        inkscape:collect="always">
@@ -816,6 +828,82 @@
          y="358.5278"
          ry="25.145245" />
     </clipPath>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4581"
+       id="radialGradient4611-29-3-1-3"
+       cx="315.66489"
+       cy="698.80878"
+       fx="315.66489"
+       fy="698.80878"
+       r="17.915144"
+       gradientTransform="matrix(0.64745414,0,0,2.1257048,662.07383,-1663.4256)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4605"
+       id="radialGradient4613-6-9-7-5"
+       cx="248.57144"
+       cy="663.79077"
+       fx="248.57144"
+       fy="663.79077"
+       r="45.371532"
+       gradientTransform="matrix(0.64745414,0,0,0.41301756,643.65448,-482.92695)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4605"
+       id="radialGradient4615-6-9-5-6"
+       cx="249.28572"
+       cy="736.12799"
+       fx="249.28572"
+       fy="736.12799"
+       r="45.371532"
+       gradientTransform="matrix(0.64745414,0,0,0.41301756,642.26709,-454.40679)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4581"
+       id="radialGradient4611-29-3-1-3-3"
+       cx="315.66489"
+       cy="698.80878"
+       fx="315.66489"
+       fy="698.80878"
+       r="17.915144"
+       gradientTransform="matrix(0.64745416,0,0,2.1257048,950.42374,-1653.7372)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4605"
+       id="radialGradient4613-6-9-7-5-5"
+       cx="248.57144"
+       cy="663.79077"
+       fx="248.57144"
+       fy="663.79077"
+       r="45.371532"
+       gradientTransform="matrix(0.64745416,0,0,0.41301758,932.00438,-473.23848)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4605"
+       id="radialGradient4615-6-9-5-6-6"
+       cx="249.28572"
+       cy="736.12799"
+       fx="249.28572"
+       fy="736.12799"
+       r="45.371532"
+       gradientTransform="matrix(0.64745416,0,0,0.41301758,930.617,-444.71831)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5667"
+       id="radialGradient5669"
+       cx="1043.4976"
+       cy="-169.29306"
+       fx="1043.4976"
+       fy="-169.29306"
+       r="7.3129476"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <metadata
      id="metadata7">
@@ -4597,5 +4685,192 @@
            inkscape:connector-curvature="0"
            id="path5305"
            d="m 496.03,440.23 v -1.55 h 1.18 c 3.85,0 3.94,-0.54 3.94,-2.34 v -26.25 c 0,-1.8 -0.09,-2.34 -3.94,-2.34 h -1.18 v -1.55 h 18.23 l -1.34,1.55 h -5.05 c -2.33,0 -2.44,0.34 -2.44,1.98 v 26.95 c 0,1.66 0.11,2 2.44,2 h 4.98 c 3.1,0 6.54,-1.09 9.08,-4.64 2.14,-2.93 2.58,-7.22 2.58,-11.11 0,-5.53 -0.94,-8.51 -2.73,-10.95 -1,-1.34 -3.83,-4.23 -8.86,-4.23 l 1.34,-1.55 c 8.36,0 15.24,7.37 15.24,16.73 0,9.47 -6.72,17.3 -15.24,17.3 z" /></g>    </g>
+    <ellipse
+       style="opacity:0.95999995;fill:url(#radialGradient4615-6-9-5-6);fill-opacity:1;stroke:#010301;stroke-width:2.9135437;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4299-3-3-3-0-2"
+       cx="803.66809"
+       cy="-150.37302"
+       rx="27.919214"
+       ry="17.282467"
+       inkscape:export-xdpi="260"
+       inkscape:export-ydpi="260"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQD.png" />
+    <ellipse
+       style="opacity:0.95999995;fill:url(#radialGradient4613-6-9-7-5);fill-opacity:1;stroke:#010301;stroke-width:2.9135437;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4299-3-6-1-6-3-9"
+       cx="804.59302"
+       cy="-208.76968"
+       rx="27.919214"
+       ry="17.282467"
+       inkscape:export-xdpi="260"
+       inkscape:export-ydpi="260"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQD.png" />
+    <path
+       style="opacity:0.95999995;fill:url(#radialGradient4611-29-3-1-3);fill-opacity:1;stroke:#0d1c35;stroke-width:2.9135437;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4549-74-0-6-1"
+       sodipodi:type="arc"
+       sodipodi:cx="876.59485"
+       sodipodi:cy="-177.96434"
+       sodipodi:rx="20.274851"
+       sodipodi:ry="36.62553"
+       sodipodi:start="1.5707963"
+       sodipodi:end="4.712389"
+       d="m 876.59485,-141.33881 a 20.274851,36.62553 0 0 1 -17.55854,-18.31276 20.274851,36.62553 0 0 1 0,-36.62554 20.274851,36.62553 0 0 1 17.55854,-18.31276 l 0,36.62553 z"
+       inkscape:export-xdpi="260"
+       inkscape:export-ydpi="260"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQD.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.07185292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 826.34632,-197.93676 30.16009,15.01943"
+       id="path4619-5-2-1-27"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path4299-3-6-1-6-3-9"
+       inkscape:connection-end="#path4549-74-0-6-1"
+       inkscape:export-xdpi="260"
+       inkscape:export-ydpi="260"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQD.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.07185292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 826.43327,-160.37745 30.03295,-13.19835"
+       id="path4623-2-3-0-0"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path4299-3-3-3-0-2"
+       inkscape:connection-end="#path4549-74-0-6-1"
+       inkscape:export-xdpi="260"
+       inkscape:export-ydpi="260"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQD.png" />
+    <path
+       inkscape:connection-end="#path4549-74-0-6-1"
+       inkscape:connection-start="#path4299-3-3-3-0-2"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path6991-2-9"
+       d="m 826.43327,-160.37745 30.03295,-13.19835"
+       style="fill:#0e010b;fill-opacity:1;fill-rule:evenodd;stroke:#100112;stroke-width:2.58981633;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQD.png"
+       inkscape:export-xdpi="260"
+       inkscape:export-ydpi="260" />
+    <path
+       inkscape:connection-end="#path4299-3-6-1-6-3-9"
+       inkscape:connection-start="#path4549-74-0-6-1"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path6993-0-3"
+       d="m 856.50641,-182.91733 -30.16009,-15.01943"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.64745408px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQD.png"
+       inkscape:export-xdpi="260"
+       inkscape:export-ydpi="260" />
+    <ellipse
+       style="opacity:0.95999995;fill:url(#radialGradient4615-6-9-5-6-6);fill-opacity:1;stroke:#010301;stroke-width:2.9135437;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4299-3-3-3-0-2-2"
+       cx="1092.0179"
+       cy="-140.68452"
+       rx="27.919216"
+       ry="17.282467"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png" />
+    <ellipse
+       style="opacity:0.95999995;fill:url(#radialGradient4613-6-9-7-5-5);fill-opacity:1;stroke:#010301;stroke-width:2.9135437;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4299-3-6-1-6-3-9-9"
+       cx="1092.9429"
+       cy="-199.08119"
+       rx="27.919216"
+       ry="17.282467"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png" />
+    <path
+       style="opacity:0.95999995;fill:url(#radialGradient4611-29-3-1-3-3);fill-opacity:1;stroke:#0d1c35;stroke-width:2.9135437;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4549-74-0-6-1-1"
+       sodipodi:type="arc"
+       sodipodi:cx="1164.9447"
+       sodipodi:cy="-168.27585"
+       sodipodi:rx="20.274853"
+       sodipodi:ry="36.62553"
+       sodipodi:start="1.5707963"
+       sodipodi:end="4.712389"
+       d="m 1164.9447,-131.65032 a 20.274853,36.62553 0 0 1 -17.5585,-18.31276 20.274853,36.62553 0 0 1 0,-36.62553 20.274853,36.62553 0 0 1 17.5585,-18.31277 l 0,36.62553 z"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.07185292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1114.6962,-188.24827 30.1601,15.01942"
+       id="path4619-5-2-1-27-2"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path4299-3-6-1-6-3-9-9"
+       inkscape:connection-end="#path4549-74-0-6-1-1"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.07185292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1114.7831,-150.68896 30.033,-13.19834"
+       id="path4623-2-3-0-0-7"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path4299-3-3-3-0-2-2"
+       inkscape:connection-end="#path4549-74-0-6-1-1"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png" />
+    <path
+       inkscape:connection-end="#path4549-74-0-6-1-1"
+       inkscape:connection-start="#path4299-3-3-3-0-2-2"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path6991-2-9-0"
+       d="m 1114.7831,-150.68896 30.033,-13.19834"
+       style="fill:#0e010b;fill-opacity:1;fill-rule:evenodd;stroke:#100112;stroke-width:2.58981633;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       inkscape:connection-end="#path4299-3-6-1-6-3-9-9"
+       inkscape:connection-start="#path4549-74-0-6-1-1"
+       inkscape:connector-curvature="0"
+       inkscape:connector-type="polyline"
+       id="path6993-0-3-9"
+       d="m 1144.8563,-173.22885 -30.1601,-15.01942"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.64745408px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <circle
+       style="opacity:1;fill:url(#radialGradient5669);fill-opacity:1;fill-rule:nonzero;stroke:#ca1e1e;stroke-width:2.92218758;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path1751"
+       cx="1043.4976"
+       cy="-169.29306"
+       r="5.8518538"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:3.74999998,3.74999998;stroke-dashoffset:0"
+       d="m 1049.1113,-167.64115 23.312,14.64605"
+       id="path5659"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path1751"
+       inkscape:connection-end="#path4299-3-3-3-0-2-2"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74999998;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:3.74999998,3.74999998;stroke-dashoffset:0"
+       d="m 1047.5884,-173.47743 24.7258,-13.95836"
+       id="path5661"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path1751"
+       inkscape:connection-end="#path4299-3-6-1-6-3-9-9"
+       inkscape:export-filename="/home/cifucito/nrgcode/TwoChNRG/Data/DQDM.png"
+       inkscape:export-xdpi="400"
+       inkscape:export-ydpi="400" />
   </g>
 </svg>
