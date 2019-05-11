@@ -30,11 +30,11 @@
  The model in \ref{fig:GenModel} can be described from the combination of the Hamiltonians of a QD-Majorana system \eqref{eq:QD-Mham} and a DQD \eqref{eq:HDQD}. Integrating these models we obtain
 
 \begin{equation}
-H =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{i\sigma}^{\dagger}d_{i\sigma}+ \frac{U_i}{2}(d_{i \sigma}^{\dagger}d_{i \sigma}-1)^{2} + t_i(\gamma d_{i,\dw}+d^\dagger_{i,\dw}\gamma) + V_id^\dagger_{i\sigma}c_{k\sigma}+V_i^* c^\dagger_{k\sigma}d_{i\sigma}.
+H =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{i\sigma}^{\dagger}d_{i\sigma}+ \frac{U_i}{2}(d_{i \sigma}^{\dagger}d_{i \sigma}-1)^{2} + t_i\gamma d_{i,\dw} + V_id^\dagger_{i\sigma}c_{k\sigma}+ t_{d o t s}d_{1 \sigma}^{\dagger} d_{2 \sigma} +\text{h.c}.
 \label{eq:Generalmodel}
 \end{equation}
 
-Where $V_1,V_2$ is the coupling of dots $1,2$ to the lead. $t_1,t_2$ define the Majorana couplings with each dot. $t_{dots}$ is the interdot coupling. $\ep_1,\ep_2$ are the energy levels of the dot, which are tuned by the the gate voltage and $U_1,U_2$ are the coulomb repulsion parameters. 
+Where $V_1,V_2$ is the coupling of dots $1,2$ to the lead. $t_1,t_2$ define the Majorana couplings with each dot. $t_{dots}$ is the inter-dot coupling. $\ep_1,\ep_2$ are the energy levels of the dot, which are tuned by the the gate voltage and $U_1,U_2$ are the coulomb repulsion parameters. 
 % \Jesus{I neglected $\epsilon_M$ in this case. Depending on the future NRG results I will choose to add it or leave it that way. }
 
 
@@ -99,12 +99,12 @@ This new model is a combination between the DQD  (\ref{fig:graphDQD}) and the Ma
 % ------------------------FIGURE GRAPH---------------------------
  The graph representing this equation is in  \ref{fig:Graph-MDQD}(a). Using the algorithm in \ref{sec:Algorithm} we start eliminating vertexes $c_k,c^\dagger_k, d_{2,\dw}$ and $ d^\dagger_{2,\dw}$ in that order. The self-energies associated to $d_{1,\dw}$ and $d^\dagger_{1,\dw}$ will be similar to the energy of the DQD \eqref{eq:EnDQD} giving 
 \begin{equation}
-    \epsilon_{DQD}^{\pm}=\pm\epsilon_{1}+\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}+\frac{\left\Vert \pm t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right\Vert ^{2}}{\omega\pm\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}. \label{eq:epDQD}
+    \epsilon_{DQD}^{\pm}=\pm\epsilon_{1}+\sum_{\mathbf{k}}\frac{V_{1}V_{1}^{*}}{\omega-\epsilon_{\mathbf{k}}}+\frac{\left\Vert \pm t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right\Vert ^{2}}{\omega\mp\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}. \label{eq:epDQD}
 \end{equation}
 \noindent There is also a correction in the couplings between the Majorana mode and $d_{1,\dw}$, $d^\dagger_{1,\dw}$ given by 
 
 \begin{equation}
-    T_{\pm}=\pm t_{1}\pm t_{2}\frac{\left(\pm t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega\pm\epsilon_{2}\pm\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}. \label{eq:T+-}
+    T_{\pm}=\pm t_{1}\pm t_{2}\frac{\left(\pm t_{dots}+\sum_{\mathbf{k}}\frac{V_{1}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}\right)}{\omega\mp\epsilon_{2}-\sum_{\mathbf{k}}\frac{V_{2}V_{2}^{*}}{\omega-\epsilon_{\mathbf{k}}}}. \label{eq:T+-}
 \end{equation}
 
 \noindent In addition, since the Majorana is in contact with dot $2$, there is an extra-term appearing in the  Majorana self-energy given by 
@@ -134,7 +134,7 @@ To  improve the efficiency of the code we used the symmetries of the system to m
 
 To initialize the model in \ref{fig:Code} we set $H_{-1}$ equal to 
 \begin{equation}
-H_{-1} =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{i\sigma}^{\dagger}d_{i\sigma}+ \frac{U_i}{2}(d_{i \sigma}^{\dagger}d_{i \sigma}-1)^{2} + t_i(\gamma d_{i,\dw}+d^\dagger_{i,\dw}\gamma),
+H_{-1} =\sum_{i=1}^2\sum_{k,\sigma}\left(\epsilon_{i}+\frac{U_i}{2}\right)d_{i\sigma}^{\dagger}d_{i\sigma}+ \frac{U_i}{2}(d_{i \sigma}^{\dagger}d_{i \sigma}-1)^{2} + t_i(\gamma d_{i,\dw}+d^\dagger_{i,\dw}\gamma)+t_{d o t s}\left(d_{1 \sigma}^{\dagger} d_{2 \sigma}+d_{2 \sigma}^{\dagger} d_{1 \sigma}\right),
 \label{eq:imp_Ham}
 \end{equation} 
 \noindent and wrote the Hamiltonian in the symmetry-block diagonal representation (see \ref{sec:Double-Dot-Majorana-Hamiltonian.}). We also include manually the Hamiltonian $H_0$ into the code (See \ref{fig:Code}) to guarantee that both quantum dots are coupled to the first site of the chain. After this, the code follows the standard NRG algorithm and prints the density matrices to initialize DM-NRG. The final result is the spectral density which contains sufficient physical information to study the MZM-DQD model. In the following section, we show how the density of states can be used to simulate the Manipulation process of an MZM inside the DQD. 
@@ -335,7 +335,7 @@ Now we consider a Coulomb repulsion energy of $U = 17\Gamma_1$ in both dots. The
 
     Finally, \ref{fig:Nt2>0} shows the NRG results for the last configuration, where the dots are coupled in series \ref{fig:MajoranaModels}(c). Notably, the indirectly-attached MZM exhibits a robust type II Majorana signature in the first dot over a destroyed Kondo peak. This is observed clearly in  \ref{fig:logc} where $\rho_{1\dw}$ exhibits a constant $\frac{0.5}{\pi \Gamma_1}$-height Majorana peak  . This signature is stable under the gate voltage tuning in dot $1$ and similar results are obtained in dot $2$ . In addition, only  in the particle hole symmetric case the second dot presents a type II Majorana signature (Inset \ref{fig:Nt2>0}(b)). 
 
-    We could understand this effect by thinking that the dots in model (c) are attached in series. Therefore both QDs can be thought as extensions of the Kitaev chain, were the first dot is the last place in the wire. Hence the Majorana should be localized at this dot despite the application of gate voltages. This situation is similar to the case of a single dot attached to a Majorana chain, where it is known that the MZM appears in the dot even when this is supposed to be empty \cite{vernek_subtle_2014}. It still remains the doubt about why this effect is not observed in the non-interacting case . On the other hand, there is a fano resonance at the Fermi energy in the spin-$\dw$ DOS  \ref{fig:Nt2>0}(d)(e) . This zero mode was not identified as a potential Majorana signature since it varies with the values of $\Delta \ep_1$ (\ref{fig:logc}) and $\Delta \ep_2$.
+    We could understand this effect by thinking that the dots in model (c) are attached in series. Therefore both QDs can be thought as extensions of the Kitaev chain, were the first dot is the last place in the wire. Hence the Majorana should be localized at this dot despite the application of gate voltages. This situation is similar to the case of a single dot attached to a Majorana chain, where it is known that the MZM appears in the dot even when this is supposed to be empty \cite{vernek_subtle_2014}. It still remains the doubt about why this effect is not observed in the non-interacting case . On the other hand, there is a Fano resonance at the Fermi energy in the spin-$\dw$ DOS  \ref{fig:Nt2>0}(d)(e) . This zero mode was not identified as a potential Majorana signature since it varies with the values of $\Delta \ep_1$ (\ref{fig:logc}) and $\Delta \ep_2$.
     
 
 We are now writing a paper summarizing these results. As we observed, we were able to characterize the transitions of the Majorana signature in different geometric arrangements of the dots. In the following section we will present some ideas that are still in development. We hope they could lead us to future publications
@@ -391,7 +391,7 @@ Imagine a model were we connect both dots symmetrically to the leads but we only
 
 \subsection{Critical behavior in  zero-bias DOS }
 
-In \ref{fig:Nt1>0}(f) we observe a sharp peak at DOS. This peak is actually a big problem for our results since they are  supported on the spectral densities at the Fermi energy. In \ref{fig:Critical} we observe a critical behaviour in the zero-bias DOS close to $\Delta\epsilon_2 =0$. This is quite intriguing . 
+In \ref{fig:Nt1>0}(f) we observe a sharp peak at DOS. This peak is actually a big problem for our results since they are  supported on the spectral densities at the Fermi energy. In \ref{fig:Critical} we observe a critical behavior in the zero-bias DOS close to $\Delta\epsilon_2 =0$. This is quite intriguing . 
 
 
 \begin{figure}[t]

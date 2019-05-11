@@ -4,48 +4,8 @@
 		"selected_items":
 		[
 			[
-				"ch",
-				"\\chapter*{title}                                  \tlatex-document"
-			],
-			[
-				"clear",
-				"\\clearpage                                        \tlatex-document"
-			],
-			[
-				"new",
-				"\\newpage                                          \tlatex-document"
-			],
-			[
-				"vs",
-				"\\vspace{length}                                   \tlatex-document"
-			],
-			[
-				"rene",
-				"\\renewcommand{cmd}{def}                           \tlatex-document"
-			],
-			[
-				"sqrt",
-				"\\sqrt{arg}                                        \tlatex-document"
-			],
-			[
-				"item",
-				"\\item                                             \tlatex-document"
-			],
-			[
-				"sec",
-				"\\section{title}                                   \tlatex-document"
-			],
-			[
-				"om",
-				"\\omega                                            \tlatex-mathsymbols"
-			],
-			[
-				"ing",
-				"\\includegraphics[options]{name}                   \tlatex-document"
-			],
-			[
-				"sqr",
-				"\\sqrt{arg}                                        \tlatex-document"
+				"subsee",
+				"\\subsection{title}                                \tlatex-document"
 			],
 			[
 				"ep",
@@ -58,6 +18,10 @@
 			[
 				"lef",
 				"\\left(                                            \tlatex-document"
+			],
+			[
+				"item",
+				"\\item[label]                                      \tlatex-document"
 			],
 			[
 				"cap",
@@ -83,23 +47,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "main.tex",
-			"settings":
-			{
-				"buffer_size": 21662,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ubcthesis.cls",
-			"settings":
-			{
-				"buffer_size": 4106,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -121,19 +68,19 @@
 				"LaTeXTools: View PDF"
 			],
 			[
-				"vie",
+				"vi",
 				"LaTeXTools: View PDF"
 			],
 			[
-				"bu",
-				"Build With: LaTeX - Basic Builder"
+				"buil",
+				"Build With: LaTeX - PdfLaTeX"
 			],
 			[
 				"",
-				"About"
+				"Build With: LaTeX - Basic Builder"
 			],
 			[
-				"vi",
+				"vie",
 				"LaTeXTools: View PDF"
 			],
 			[
@@ -141,7 +88,7 @@
 				"Build With: LaTeX - Basic Builder"
 			],
 			[
-				"buil",
+				"bu",
 				"Build With: LaTeX - Basic Builder"
 			],
 			[
@@ -199,32 +146,22 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/cifu/Master-Thesis"
-	],
 	"file_history":
 	[
-		"/home/cifu/Master-Thesis/main.lof",
-		"/home/cifu/Master-Thesis/main.tex",
-		"/home/cifu/Master-Thesis/Kitaev-Majorana.bib",
-		"/home/cifu/Master-Thesis/Intro.tex",
-		"/home/cifu/Master-Thesis/Append_A.tex",
-		"/home/cifu/Master-Thesis/ubcthesis.cls",
-		"/home/cifu/Master-Thesis/main.bbl",
-		"/home/cifu/Master-Thesis/IMAGES/e2/Fermi.svg",
-		"/home/cifu/Master-Thesis/Kondo.bib",
-		"/home/cifu/Master-Thesis/NResults.tex",
-		"/home/cifu/Master-Thesis/Majorana.tex",
-		"/home/cifu/Master-Thesis/Majorana-QD.bib",
-		"/home/cifu/Master-Thesis/Methods.tex",
-		"/home/cifu/Master-Thesis/Preliminars.tex",
-		"/home/cifu/Master-Thesis/main.blg",
-		"/home/cifu/Master-Thesis/main.brf",
-		"/home/cifu/Master-Thesis/main.fls",
-		"/home/cifu/Master-Thesis/main.aux",
-		"/home/cifucito/Master-Thesis/Majorana-QD.bib",
+		"/home/cifucito/Dropbox/JesusCifuentes/Paper/main_Jesus_2504.tex",
+		"/home/cifucito/Master-Thesis/NResults.tex",
+		"/home/cifucito/Master-Thesis/main.tex",
+		"/home/cifucito/Master-Thesis/Methods.tex",
+		"/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty",
+		"/home/cifucito/Master-Thesis/Intro.tex",
+		"/home/cifucito/Master-Thesis/Majorana.tex",
+		"/home/cifucito/Master-Thesis/Append_A.tex",
 		"/home/cifucito/Master-Thesis/Kitaev-Majorana.bib",
+		"/home/cifucito/Master-Thesis/Majorana-QD.bib",
+		"/home/cifu/Master-Thesis/Intro.tex",
+		"/home/cifu/Master-Thesis/Methods.tex",
+		"/home/cifu/Master-Thesis/Kondo.bib",
+		"/home/cifu/Master-Thesis/main.tex",
 		"/home/cifu/Master-Thesis/main.pdf",
 		"/home/cifu/Desktop/Master-Thesis/main.log",
 		"/home/cifu/Desktop/Master-Thesis/Methods.tex",
@@ -234,13 +171,17 @@
 		"/home/cifu/Desktop/NRG_Lectures.txt",
 		"/home/cifu/Desktop/Master-Thesis/Kondo.bib",
 		"/home/cifu/Desktop/Master-Thesis/main.bbl",
+		"/home/cifu/Master-Thesis/Append_A.tex",
 		"/home/cifu/tutorial_2019_v2/05_1_spectral_function_SIAM/g.sh",
 		"/home/cifu/tutorial_2019_v2/01_1_thermodynamics_Kondo/imp/generatedata.sh",
+		"/home/cifu/Master-Thesis/Majorana.tex",
+		"/home/cifu/Master-Thesis/NResults.tex",
+		"/home/cifu/Master-Thesis/main.bbl",
 		"/home/cifu/Manipulation-of-Majorana-Fermions/main.tex"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -254,39 +195,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"logo",
-			"luis grego",
-			"eq:newM",
-			"plat",
-			"interplay",
-			"Interplay",
-			"pop",
-			".NRG",
-			"abstra",
-			"logari",
-			"abelian any",
-			"TempGree",
-			"retarded green",
-			"By the Author",
-			"Representation",
-			"author",
-			"By the author",
+			"Results",
+			"LLDOS",
+			"self-ener",
+			"fraction",
+			"an MZM",
+			"a MZM",
+			"an MZM",
+			"a MZM",
+			"by compa",
+			"Finally",
+			"Fig.",
+			"{-2}",
+			"{-1}",
+			"{-2}",
+			"{+2}",
+			"{+1}",
+			"\\tilde{t}",
 			"\\epsilon_{d}",
-			"\\epsilon_{di}",
-			"\\ref{eq:",
-			"\\epsilon_{d}",
-			"\\ref{eq",
-			"Quantized",
-			"conductance",
-			"Rashba",
-			"semiconducto",
-			"assisted",
-			"gobble",
-			"logc",
-			"Fina",
-			"andreev",
-			"Sarma",
-			"das ",
+			"light",
+			"lights",
 			"pretty",
 			"Weyman",
 			"\\sec",
@@ -309,69 +237,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "main.tex",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 21662,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8175,
-								8175
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5026.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "ubcthesis.cls",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4106,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/TeX.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1125.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -416,7 +283,7 @@
 	},
 	"output.latextools":
 	{
-		"height": 172.0
+		"height": 73.0
 	},
 	"pinned_build_system": "",
 	"project": "MasterThesis.sublime-project",
@@ -431,14 +298,6 @@
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"if",
-				"IMAGES/e2/Fermi.svg"
-			],
-			[
-				"",
-				"Intro.tex"
-			]
 		],
 		"width": 0.0
 	},
@@ -468,7 +327,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 166.0,
+	"side_bar_width": 292.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

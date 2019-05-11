@@ -217,7 +217,8 @@ urlcolor=black
 
 % }
 
-% \usepackage{glossaries-extra}
+% \usepackage{glossaries-extra
+\usepackage{pdfpages}
 \usepackage[symbols,nogroupskip,sort=none]{glossaries-extra}
 
 
@@ -260,6 +261,11 @@ urlcolor=black
 \textit{}
 \end{dedication}
 % \newpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+\includepdf[page={1,2}]{Portada_port.pdf}
+\includepdf[page={1,2}]{portada.pdf}
+
 
 
 \begin{dedication}
@@ -275,17 +281,17 @@ urlcolor=black
 
 \begin{dedication}
 \justifying
-{\large \textit{"I believe that  begining research is quiet similar to that magical situation when babies learn how to talk. Initially they are just there, listening conversations. They seem disoriented with the vocabulary, but they catch sounds and make some bubbles. Soon enough, before you even notice, their own words will start to flow."}\\ Memories from my first research meeting with Professors Andr\'es Reyes and A.P. Balachandran. Hear me talk.}
+{\large \textit{"I believe that  beginning research is quiet similar to that magical situation when babies learn how to talk. Initially they are just there, listening conversations. They seem disoriented with the vocabulary, but they are paying attention and they are catching sounds. Soon enough, before you even notice, their own words start to flow."}\\ Memories from my first research meeting with Professors Andr\'es Reyes and A.P. Balachandran. Hear me talk.}
 
 \end{dedication}
 
 \chapter*{Acknowledgments}
 
-This piece summarizes the main aspects of my work during the last two years in Brazil. It has been an enriching experience. I learned Portuguese and gotten a fantastic cultural exchange.  I also took advantage of the large condensed matter community in the country to participate in conferences, present my advances, and increase my knowledge on quantum mechanics. In my way, I met up to three Nobel prizes, one of them, Duncan Haldane, inspired me to study topological materials. Today, I look backwards and I get marveled by all the amazing things that happened and those who allowed me to live all of this.
+This piece summarizes the main aspects of my work during these two lovely years in Brazil. I must acknowledge that coming to this country has been a wonderful and enriching experience. I was gladly surprised by how large is the condensed matter community in the country. I took advantage of this aspect to participate  to participate in several conferences, present my advances, and increase my knowledge on quantum mechanics. In my way, I met up to three Nobel prizes, including Duncan Haldane, whose work inspired me to study topological materials.
 
+ Apart from the academic life, I also learned Portuguese and got the chance to get immersed in depth into the amazing Brazilian culture, I loved their music (specially forr\'o) and meet amazing people.  Today, I look backwards and I get marveled by all the amazing things that happened in these years and those who allowed those things to be possible. 
+  Therefore, in this brief statement, I want to thank all the wonderful people that received me here in Brazil:  My thesis advisor Prof. Luis Gregorio, who  suggested to me this project, helped enter into the USP and has guided me ever since with patience and care. I thank my previous advisors, Andres and Cesar, and all my previous professors in Colombia who prepared for this life of research. I thank to my friends and my room partners, all of them have contributed to make this stage of my life an amazing adventure. And finally, but also very important, I would like to thank to my family and to that little cheek. Even from far away I have always felt their support, which endeavored me to pursue for this goal.
 
- Therefore, in this brief statement I just want to thank all the amazing people that received me here in Brasil and made all of this possible:  My thesis advisor Prof. Luis Gregorio, who  suggested to me this project, helped enter into the USP and has guided me ever since with patience till this day. I thank my previous advisors, Andres and Cesar, and all my previous professors in Colombia who prepared for this life of research. I  to thank to my friends and my room partners, all of them have contributed to make this stage of my life here an amazing adventure. And finally, but also very important, I would like to thank to all my family and to that little cheek. Even from far away I have always felt their support, which endeavored me to pursue for this goal.
-a
 
  I also acknowledge the financial support by CNPq (grants No. 307107/2013-2 and 449148/2014-9), and FAPESP (grant No. 2016/18495-4), which allowed us to present partial and complete results of this project in workshops and conferences. 
 
@@ -348,6 +354,7 @@ Principalmente, vamos a usar dois m\'etodos neste projecto: 1) Usamos as equa\c{
 % \nomenclature{MBS}{Majorana Bound State}
  
 % \printnomenclature
+
 
 
 
