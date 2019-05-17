@@ -45,11 +45,12 @@ we obtain
 \begin{equation}
     Im \langle \alpha  \vert \Green{H}\ket{\alpha'}] = \pi \delta(\omega -\epsilon_\alpha)\delta_{\alpha,\alpha'}.
 \end{equation}
-Note that the sum of $Im[ \langle \alpha  \vert \Green{H}\ket{\alpha'}]$ over all the eigenstates of $H$ is simply $\pi$ times the density of states:
+Note that the sum of $Im[ \langle \alpha  \vert \Green{H}\ket{\alpha'}]$ over all the eigenstates of $H$ is simply $\pi$ times the density of states
 
 \begin{equation}
     \rho(\omega)=-\frac{1}{\pi} \sum_\alpha Im \left[ \langle \alpha  \vert \Green{H}\ket{\alpha'}\right] = \sum_\alpha \delta(\omega-\epsilon_\alpha) . \label{eq:DOS_def}
 \end{equation}
+In the following section we will show how to extend this idea to fermion algebras in the second  quantization.  
 
 \subsection{Green function of fermion operators and the equations of motion}
 
@@ -68,12 +69,12 @@ Note that the sum of $Im[ \langle \alpha  \vert \Green{H}\ket{\alpha'}]$ over al
 \noindent Where $\theta(t-t')$ is the Heaviside step function and  the brackets $\langle \rangle$ refer to the statistical mean over thermal states. $G^r_{A,B}$ is called the retarded Green function. It is non-zero only if $t>t'$, such it allows to compute the response of the system after it has been perturbed. 
  The advanced Green function $G^a_{A,B}$ is the adjoint of $G^r_{A,B}$ and represents exactly the opposite regime. 
 
-  Usually we can obtain all relevant physical properties just with the retarded Green function, including the density of states.  To perform this, we need to take first the Fourier transform of the retarded green function to enter into the energy domain
+  Usually, we can obtain all relevant physical properties just with the retarded Green function, including the density of states.  To perform this, we need to take the Fourier transform of the retarded green function to enter into the energy domain
 \begin{equation}
    \Green{A,B}=\int_{-\infty}^{\infty}\text{d}(t-t')\  G^r_{A,B}(t,t')e^{-i\omega(t-t')}.
 \end{equation}
 
- \noindent Now, in this formalism, the DOS is associated to a fermion operator $A$. Similar to  \eqref{eq:DOS_def}, it can be computed as 
+ \noindent In this formalism, the DOS is associated to a fermion operator $A$. Similar to  \eqref{eq:DOS_def}, it can be computed as 
 \begin{equation}
     \rho_{A,A^\dagger}=-\frac{1}{\pi}Im\left[\Green{A,A^\dagger}\right].
     \label{eq:Density of States}
@@ -83,39 +84,6 @@ The density of states contains important physical information related to operato
 
 
 
-
-
-%  $ A(t)B(t')$ or  $B(t')A(t)$ is considered into account according to the time operation. 
-%   and advanced $G^a_{A,B}$  Green functions are defined as 
-
-%  In many body physics we use second quantization operators to define the Green functions.
-
-%   Two given fermion operators $a_i(t)$ , $a_j(t')$ satisfy anticommutation relations of the form $\{ a_i(t) , a_j(t')\}$
-
-%  second quantization most computations are performed with double time green functions of the form 
-
-% \begin{equation}
-% \begin{aligned}
-%   G_{A,B}(t-t') =& \langle \mathbb{T}( A(t),B(t') ) \rangle. \label{eq:TempGreen} \\
-%   := & \theta(t-t')  A(t),B(t') - \theta(t'-t) B(t'),A(t)
-%  \\
-%   =&  \theta(t-t')  A(t),B(t') - \theta(t'-t) B(t'),A(t)
-% \end{aligned}
- 
-% \end{equation}
-
-%   are not only associated with the Hamiltonian, but also with the fermion operators. These operators are time dependent. Then, The for two fermion operators $A$ and $B$ ,  the Green function is then defined as the mean value of the time ordered multiplication of both operators
-
-% \begin{equation}
-% \begin{aligned}
-%   G_{A,B}(t-t') =& \langle \mathbb{T}( A(t),B(t') ) \rangle. \label{eq:TempGreen} \\
-%   := & \theta(t-t')  A(t),B(t') - \theta(t'-t) B(t'),A(t)
-%  \\
-%   =&  \theta(t-t')  A(t),B(t') - \theta(t'-t) B(t'),A(t)
-% \end{aligned}
- 
-% \end{equation}
- 
 But before talking more about the DOS,  we still  need an efficient method to compute the Green function of the system. We can achieve this by analyzing  the evolution of the retarded Green function in the time domain. This is determined by Schroedinger's differential equation
 in the Heisenberg picture 
 \begin{equation}
@@ -142,12 +110,11 @@ When taking the Fourier transform of \eqref{eq:Motion} we obtain the following e
 % ----------------------------- Graph Method-----------------------
 \subsection{Presenting the Graph-Gauss-Jordan elimination process to solve the EOM \label{sec:GraphMethod}}
 
+Solving the transport equations involves dealing with a set of linear equations where all the possible variables including  $\omega$ , and the Hamiltonian parameters are assumed to be constant.  This can be done by  Gauss-Jordan elimination, noting that after each elimination process we need to solve the system in terms of the initial  variables. The solution  will be a polynomial fraction.  When the number of operators in the Hamiltonian increases the number of terms in the polynomial grows-up rapidly according to the number of initial parameters. This reveals the importance of exploring alternative methods that could simplify the solution of this system, and present a readable factorized expression of the final Green function. 
 
-Solving the transport equations involves dealing with a set of linear equations where all the possible variables including  $\omega$ , and the Hamiltonian parameters are assumed to be constant.  This can be done by  Gauss-Jordan elimination, noting that after each elimination process we need to carry on the account in terms of the initial  variables. The solution  will be a polynomial fraction.  When the number of operators in the Hamiltonian increases the number of terms in the polynomial grows-up rapidly according to the number of initial parameters. This reveals the importance of exploring new methods that could simplify the solution of this system, and present a readable factorized expression of the final solution.   \\
+The method presented here uses graph theory algorithms that provide a shortcut to Gauss-Jordan elimination \cite{spielman10}. This idea is not entirely new, as it was previously applied to study infinite tight binding lattices \cite{AOKI1982538}. Nevertheless, the real insight of this approach is the possibility of using the graph structure to tackle problems with non-trivial geometries, just like the double quantum dot-Majorana system.  
 
-The method presented here uses graph theory algorithms that provide a shortcut to Gauss-Jordan elimination \cite{spielman10}. We will explain this method by solving  the EOM for a non-interacting $(U=0)$ DQD connected to one lead. 
-
-According to the Anderson model the Hamiltonian for this system looks like 
+We will explain this method by solving the EOM for a non-interacting $(U=0)$ DQD connected to one lead. According to the Anderson model, the Hamiltonian for this system looks like 
 \begin{equation}
     H=\sum_{i=1}^2\epsilon_{i}d_{i}^{\dagger}d_{i}+ t_{dots}d_{1}^{\dagger}d_{2}+t_{dots}^*d_{2}^{\dagger}d_{1}+\sum_{k}\left(V_{i}d_{i}^{\dagger}c_{\mathbf{k}}+V_{i}^{*}c_{\mathbf{k}}^{\dagger}d_{i}\right) + \epsilon_{\mathbf{k}}c_{\mathbf{k}}^{\dagger}c_{\mathbf{k}}.
     \label{eq:HDQD}
@@ -260,17 +227,21 @@ The Green function is then
 \subsection{Graph Algorithm \label{sec:Algorithm}}
 
 In this part we summarize the steps of the Graph-Gauss-Jordan elimination process to compute the Green function  $\Green{d,d\dagger}$ of an operator $d$:
+
+
 \begin{enumerate}
-    \item Computing the transport equations with the second term of the Green function fixed in the creation operator $d^\dagger$ at all equations. 
-     \item  Setting up the  graph associated to the transport system. The self-energy of each vertex is initialized as $\omega$ minus the corresponding diagonal term.  The edge weights are given by the coupling of the off-diagonal terms multiplied by $-1$. 
-    \item Eliminating the vertexes of the graph one by one. Each vertex-elimination process carries the following steps.
-    \begin{enumerate}
-        \item Computing the extra-terms of the energies and couplings based on the walks passing through the eliminated vertex.
-        \item Removing this vertex from the graph. 
-        \item Iterating till there is only one  vertex.
+    \item Computing the equations of motion with the second term of the Green function fixed in the creation operator $d^\dagger$. 
+     \item  Mapping the linear system to the associated directed flow graph. Enumerate the vertexes of the graph as $\nu_n$, setting $\nu_1 = d$. The self-energy $\epsilon_{n}$ of each vertex $\nu_n$ is initialized as $\omega$ minus the corresponding diagonal term $c_{nn}$ .  The coupling terms $c_{ij}$ connecting vertexes $\nu_i$ to $\nu_j$ are given by the $(i,j)$-off-diagonal terms of the matrix multiplied by $-1$.   
+    \item Removing one-by-one the vertexes of the graph, starting by the last vertex $\nu_N$. While removing each vertex $\nu_n$ the extra-terms of the energies and couplings are computed as follows:
+      \begin{enumerate}
+        \item Energies: Let $c_{in}$,\ $c_{ni}$ be the coupling constants associated to the edges from $\nu_i$ to $\nu_n$  and from $\nu_n$ to $\nu_i$ respectively. In our case $c_{ni} = c_{in}^*$. Then there is an indirect path from $\nu_i$ to itself passing through $\nu_n$. When  $\nu_n$ is eliminated , the extra-term added to $\epsilon_{i}$ is   $\frac{c_{in}c_{in}}{\omega-\epsilon_{n}}$. 
+        \item Couplings: Let $c_{in},\ c_{nj}$ be the coupling constants associated to the edges from $\nu_i$ to $\nu_n$  and from $\nu_n$ to $\nu_j$. Then there is an indirect path from $\nu_i$ to $\nu_j$ passing through $\nu_n$. When  $\nu_n$ is eliminated , the extra-term added to $c_{ij}$ is   $\frac{c_{in}c_{nj}}{\omega-\epsilon_{\nu}}$. 
         \end{enumerate}
-    \item The energy in the remaining vertex $d$ is the self- energy $\epsilon_d = \omega -\frac{1}{ \Green{d,d^\dagger}}$ .
+    \ignorespacesafterend  
+    This process is iterated from $n=N$ till $n=1$.
+    \item The self-energy in the remaining vertex $\nu_1 = d$ is related with the green-function as $\epsilon_d = \omega -\frac{1}{ \Green{d,d^\dagger}}$.
 \end{enumerate}
+    
 This algorithm will be our main method to find the Green function and therefore the density of states of any non-interacting system.  
 
 
@@ -885,7 +856,7 @@ For the entire thesis we will fix the value of the coulomb repulsion parameters 
  
 \item The single QD attached to a metallic lead is a particular case of the double quantum dot model, where the second dot is not attached $\Gamma_2 = t_{dots}=0$.  \ref{fig:NRG-DQD} shows the NRG results for this case. The three plots show the external Coulomb peaks at $e_1 = \frac{U}{2} \sim 8.62\Gamma_1$, which represent the DOS of the energy levels. In addition,  Figure \ref{fig:NRG-1D} shows a central peak at the Fermi energy. Note that there shouldn't be a state in this position since it is inside a gap between two energy levels (Coulomb peaks).\textbf{This is the Kondo Peak} \cite{hewson_kondo_1997}. This peak explains the zero-bias plateaus in \ref{fig:ExpKondo}.  
 \item 
-In Figure \ref{fig:NRGDQD-G2} we observe the DOS when the two QDs are symmetrically attached.  At low energies, the inset shows the appearance of two satellite peaks representing the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction. This is an anti-ferromagnetic coupling that appears in the interacting case due to the strong correlations between both dots. 
+In Figure \ref{fig:NRGDQD-G2} we observe the DOS when the two QDs are symmetrically attached.  At low energies, the inset shows the appearance of two satellite peaks representing the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction. This is an anti-ferromagnetic coupling that appears in the interacting case due to the strong correlations, which cause an state-exchange interaction between both dots through the lead at energies around $\pm 3.56\Gamma^2/U$ \cite{LIAO2015354}.
 
 % A detailed explanation  these new states is included in \ref{sec:DoublePeak}.  
 \item The most interesting case is in Figure \ref{fig:NRGDQD-tdots}. As we already observed in the non-interacting case, the interference with the second dot completely destroys the zero mode which is now formed by the Kondo peak. This effect is observed at low energies closed to $t_{dots}=0.689\Gamma$. The paper describing this result was a central part of one of my advisor's project \cite{dias_da_silva_transmission_2008}. This result encouraged me to formulate the following question. What happens if we attached a Majorana mode to one of these dots?. Would it the destroyed by interference or it will survive to it. Solving this question is one of the mean objectives of chapter \ref{chap:Results}. 

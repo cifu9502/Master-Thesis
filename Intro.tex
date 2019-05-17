@@ -14,7 +14,7 @@
 \end{figure}
 
 
-In 2001 Alexei Yu Kitaev presented a toy model that could lead to the implementation of topological qubits \citep{kitaev_unpaired_2001}, an innovative idea that promised to sort out the problem of high decoherence in quantum computation. Kitaev used the properties of an exotic quasi-particle bound at the edges of a superconducting wire. This "bound state" was cataloged as a "Majorana fermion", the iconic particle predicted by Ettore Majorana in the 1930s. Majoranas were initially proposed as a real field solution of the Dirac equation, which describes fermions that are their own antiparticle\citep{wilczek_majorana_2009}.  So far, no fundamental particle with these characteristics has been observed. However, novel exciting  proposals are oriented to search these particles at the boundaries of topological superconducting wires. 
+In 2001, Alexei Yu Kitaev presented a toy model that could lead to the implementation of topological qubits \citep{kitaev_unpaired_2001}, an innovative idea that promised to sort out the problem of high decoherence in quantum computation. Kitaev used the properties of an exotic quasi-particle bound at the edges of a superconducting wire. This "bound state" was cataloged as a "Majorana fermion", the iconic particle predicted by Ettore Majorana in the 1930s. Majoranas were initially proposed as a real field solution of the Dirac equation, which describes fermions that are their own antiparticle\citep{wilczek_majorana_2009}.  So far, no fundamental particle with these characteristics has been observed. However, novel exciting  proposals are oriented to search these particles at the boundaries of topological superconducting wires. 
 
 
 
@@ -28,14 +28,14 @@ The insight of topology into  the field of condensed matter physics is the follo
 % have  groundbreaking in the design of high precision devices.
 
 
-Kitaev's toy model describes a one dimensional  topological chain. Similar to the IQHE, this chain exhibits bizarre edge states, which are documented as bounded Majorana quasi-particles . Besides topological protection, these Majoranas have another important characteristic. DIsplayed in multi-state system Majoranas can display anionic non-abelian statistics \citep{kitaev_fault-tolerant_2003}. This means that if we have three Majorana fermions $\gamma_1 ,\gamma_2 $ and $\gamma_3$ and we, somehow, get to exchange the first two Majoranas and then we  the second and the third, it produces a different state than exchanging the last two Majoranas first and then the first two. This is a very interesting property for quantum computing since it allows to encode information in many body systems.  Kitaev pointed out that the combination of these two properties of Majoranas, topological stability and non-abelian statistics, could lead  to the implementation of fault-tolerant quantum computers . This marked the beginning of a new area called  topological quantum computing \cite{pachos_introduction_2012}, which combines areas as different as topology, knot theory \cite{turaev_book} and condensed matter physics. 
+Kitaev's toy model describes a one dimensional  topological chain. Similar to the IQHE, this chain exhibits bizarre edge states, which are documented as bounded Majorana quasi-particles. Besides the topological protection, these Majoranas have another important characteristic. Displayed in multi-state system Majoranas can show anionic non-abelian statistics \citep{kitaev_fault-tolerant_2003}. This means that if we have three Majorana fermions $\gamma_1 ,\gamma_2 $ and $\gamma_3$ and we, somehow, get to exchange the first two Majoranas and then the second and the third, it produces a different state than exchanging the last two Majoranas first and then the first two. This is a very interesting property for quantum computing since it allows to encode information in many body systems.  Kitaev pointed out that the combination of these two properties, topological stability and non-abelian statistics, could lead Majoranas to be the base of promising  implementation of fault-tolerant quantum computers \citep{kitaev_fault-tolerant_2001}. This marked the beginning of a new area called  topological quantum computing \cite{pachos_introduction_2012}, which combines areas as different as topology, knot theory \cite{turaev_book} and solid state physics. 
 
-These ideas motivated the pursuit of Majorana fermions in condensed matter systems \citep{fu_superconducting_2008,sato_non-abelian_2009,alicea_new_2012,beenakker_search_2013}. Indeed, the last decade has been full of excitement, as new experiments have turned some of the theoretical predictions of the 1990s and 2000s into reality. Very recently the first evidence of Majorana end states
-in TS has been found in multiple experiments \citep{mourik_signatures_2012,das_zero-bias_2012,deng_anomalous_2012,deng_majorana_2016,zhang_quantized_2018}
-following the prescription by \citet{oreg_helical_2010} and \citet{lutchyn_majorana_2010}.These experiments have been based on tunneling spectroscopy in junctions between TS and non metallic (NM) leads, where resonances have been
-observed at zero energy, consistent with the presence of Majorana zero-energy modes.
+These ideas motivated the pursuit of Majorana fermions in condensed matter systems \citep{fu_superconducting_2008,sato_non-abelian_2009,alicea_new_2012,beenakker_search_2013}. Indeed, the last decade has been full of excitement, as new experiments have turned some of the theoretical predictions of the 1990s and 2000s into reality. Recently, the first evidence of Majorana bound states
+in topological superconductors (TS) has been found in multiple experiments \citep{mourik_signatures_2012,das_zero-bias_2012,deng_anomalous_2012,deng_majorana_2016,zhang_quantized_2018}
+following the prescription by \citet{oreg_helical_2010} and \citet{lutchyn_majorana_2010}. These experiments have been based on tunneling spectroscopy in junctions between TS and non metallic (NM) leads, where resonances have been
+observed at zero energy, which is consistent with the presence of Majorana zero-energy modes. All of these facts, have contributed to the ``boom'' of Majorana wires, which has become one of the hottest research topics in Physics during the last decade. 
 
-In the following section we will present a review of the main ideas behind the Kitaev chain (section \ref{sec:KitaevChain}) taking special attention on its topological characterization and non-abelian statistics. Finally, we will tell how that model inspired real implementations of Majorana wires in \ref{sec:exp}. This discussion will eventually bring us closer  to the main motivation of this thesis which is taken in the next section: The detection Majorana zero modes using quantum dots. 
+In this section, we will present a review of the main ideas behind the Kitaev chain (section \ref{sec:KitaevChain}) taking special attention on its topological characterization and non-abelian statistics. Finally, we will tell how that model inspired real implementations of Majorana wires in \ref{sec:exp}. This discussion will eventually bring us closer  to the main motivation of this thesis in \ref{sec:QDM}, the detection Majorana zero modes using quantum dots. 
 
 % ----------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ There are different ways to diagonalize this Hamiltonians. The usual method is t
 \gammaA{j} = e^{i\theta /2}a_j+ e^{-i\theta/2 } \ann_j \ \ , \ \ \gammaB{j} = -i(e^{i\theta /2}a_j - e^{-i\theta/2} \ann_j).
 \label{eq:MajoranaTrans}
 \end{equation}
-It is simple check that these operators are self-adjoint $(\gammaA{j}^\dagger = \gammaA{j}, \gammaA{j}^\dagger = \gammaB{j})$ , which implies that they are their own antiparticle.  Moreover, they satisfy the fermion anti-commutation relations
+It is simple to check that these operators are self-adjoint $(\gammaA{j}^\dagger = \gammaA{j}, \gammaA{j}^\dagger = \gammaB{j})$ , which implies that they are their own antiparticle.  Moreover, they satisfy the fermion anti-commutation relations
 \begin{equation}
 \begin{aligned}
 \{\gammaA{i}, \gammaA{j}\} = \{ & \gammaB{i} , \gammaB{j}\} = 2\delta_{ij}  ,\\ 
@@ -85,7 +85,7 @@ Taking the inverse of \eqref{eq:MajoranaTrans} we obtain that each  (Dirac) ferm
 a_j = \frac{e^{-i\theta/2}}{2}(\gammaA{j}+ i\gammaB{j}) \ ,\ a^\dagger_j = \frac{e^{i\theta/2}}{2}(\gammaA{j}- i\gammaB{j}).
 \end{equation}
 
-\noindent Hence, we could adventure to say that these Majorana operators are actually splitting the Dirac fermions into real($\gammaA{}$) and imaginary $(\gammaB{})$ part ,the same way as complex numbers are a composite of two real numbers. This is just a possible interpretation to elucidate that each Dirac fermion is composed by two types of Majorana quasi-particles just as in \ref{fig:top.phases kitaev}. 
+\noindent Hence, we could adventure to say that these Majorana operators are actually splitting the Dirac fermions into real($\gammaA{}$) and imaginary $(\gammaB{})$ parts ,the same way as complex numbers are a composite of two real numbers. This is just a possible interpretation to elucidate that each Dirac fermion is composed by two types of Majorana quasi-particles just as in \ref{fig:top.phases kitaev}. 
 
 The new Kitaev Hamiltonian in the "Majorana representation" looks like 
 \begin{equation}
@@ -115,7 +115,7 @@ Depending on the values of parameters $\mu, t$ and $\super$ we can identify two 
 
   \item If $\super = t = 0$ and $\mu <0$, Hamiltonian \eqref{eq:HamMajorana} becomes $\frac{-i\mu}{2} \sum_{j} \gammaA{j}\gammaB{j}$ which represents the coupling of the Majoranas in the same Dirac fermion. (See \ref{fig:top.phases kitaev} (a))
 
-  \item If $\super = t > 0$ and $\mu =0$, the situation is much more interesting. The Hamiltonian \eqref{eq:HamMajorana} takes the form $H = 2ti\sum_{j}  \gammaB{j}\gammaA{j+1} $. This implies that the coupling is performed between  Majoranas of different Dirac fermions. Notably, this configuration leaves the edge Majorana operators ($\gammaA{1}$ and $\gammaB{N}$) uncoupled to the system (See Figure \ref{fig:top.phases kitaev}b)). Note that these uncoupled Majorana fermions can be at any state without any  repercussion in the energy of the system. This explains the emergence of a  ground state localized at edges of the chain. 
+  \item If $\super = t > 0$ and $\mu =0$, the situation is much more interesting. The Hamiltonian \eqref{eq:HamMajorana} takes the form $H = 2ti\sum_{j}  \gammaB{j}\gammaA{j+1} $. This implies that the coupling is performed between  Majoranas of different Dirac fermions. Notably, this configuration leaves the edge Majorana operators ($\gammaA{1}$ and $\gammaB{N}$) uncoupled to the system (See \ref{fig:top.phases kitaev}b)). Note that these uncoupled Majorana fermions can be at any state without any  repercussion in the energy of the system. This explains the emergence of a  ground state localized at the edges of the chain. 
 \end{enumerate}
 
 These two situations are representatives of two different topological phases. The trivial phase occurs for $\frac{\mu}{2t}>1$ and the non-trivial phase appears when $\frac{\mu}{2t}<1$ (See \ref{fig:KitaevSpec}). The main characteristic of the non-trivial phase  is the creation of a robust zero-mode generated by the  uncoupled Majorana fermions at the edges of the Kitaev chain. Note that if
@@ -128,7 +128,7 @@ $$c_j = \frac{1}{\sqrt{2}} \left( \gamma_{B,j}+ i\gamma_{A,j+1} \right) \ , \ c^
 
 \noindent Then \eqref{eq:newM} becomes 
 \begin{equation}
-H = ti\sum_{j=1}^{N-1} \left(  2c^\dagger_jc_j-1 \right). \label{eq:newM2} 
+H = it\sum_{j=1}^{N-1} \left(  2c^\dagger_jc_j-1 \right). \label{eq:newM2} 
 \end{equation}
 
 Therefore, a ground state $\vert \Omega \rangle$ of this Hamiltonian is an state vacuum at all sites $j$ from $1$ to $N-1$ $(c_j\vert \Omega \rangle = 0)$. This condition allows some degeneracy since the sites at the boundary are not coupled to the Hamiltonian $\gammaA{1}$ and $\gammaB{N}$. The Dirac  operators formed by these Majoranas 
@@ -139,7 +139,7 @@ can be either occupied $(c^\dagger_N c_N \vert \Omega \rangle = 1)$ or empty $(c
     \mathcal{P} =\prod_{i = 1}^N\left(  2c^\dagger_jc_j-1 \right) = \prod_{i = 1}^N -i\gamma_{B,j}\gamma_{A,j+1}= \pm 1. 
 \end{equation}
 
-In the ground state $\vert \Omega \rangle$, this parity will be  defined by the result of  $\gamma_{B,N}\gamma_{A,1}$ because the other states are fixed by $(c_j\vert \Omega \rangle = 0)$. This is an important point, since  symmetry protection is actually correlating the two opposite sites of the Kitaev chain .i.e. Any attempt to disturb one site of the chain would perturb the other site to guarantee the preservation of fermion parity  This is a great deal,  it shows how coherent are these Majorana edge states. A possible explanation for this is the topology of the Kitaev chain, which is the objective of the next subsection.
+In the ground state $\vert \Omega \rangle$, this parity will be  defined by the result of  $\gamma_{B,N}\gamma_{A,1}$ because the other states are fixed by $(c_j\vert \Omega \rangle = 0)$. This is an important point, since  symmetry protection is actually correlating the two opposite sites of the Kitaev chain .i.e. Any attempt to disturb one site of the chain would perturb the other site to guarantee the preservation of fermion parity.  This is a great deal,  it shows how coherent are these Majorana edge states. A possible explanation for this is the topology of the Kitaev chain, which is the objective of the next subsection.
 
 % With these ideas in mind we are going to study the characteristics 
 % of the Kitaev chain:
@@ -195,14 +195,16 @@ We can map these coordinates to the unitary circle by taking the norm of this ve
     \end{pmatrix}. 
 \end{equation}
 
-\noindent Note that $\super^2 \sin^2 k + (\frac{\mu}{2}- t \cos k)^2 \neq 0$ for all the values of $k$ as long as $\frac{\mu}{2t} \neq 1$ . When $\frac{\mu}{2t} = 1$ the $H_{k=0}=0$, so it cannot be normalized. This is the same point were the phase transition occurs!. At any other value of $\frac{\mu}{2t}$ it is possible to normalize $H_{k}$ for all values of $k\in BZ$. The result of mapping $\hat{H}_k$ for all $k$ is a path onto the unitary circle. 
+\noindent Note that $\super^2 \sin^2 k + (\frac{\mu}{2}- t \cos k)^2 \neq 0$ for all the values of $k$ as long as $\frac{\mu}{2t} \neq 1$ . When $\frac{\mu}{2t} = 1$, $H_{k=0}=0$, so it cannot be normalized. This is the same point were the phase transition occurs!. At any other value of $\frac{\mu}{2t}$ it is possible to normalize $H_{k}$ for all values of $k\in BZ$. The result of mapping $\hat{H}_k$ for all $k$ is a path onto the unitary circle. 
 
-This path can take two forms as we can observe in \ref{fig:topological}. If $\frac{\mu}{2t} > 1$ the path is an arc in the part of the circle. In the non-trivial phase $\frac{\mu}{2t} < 1$ the path completes a wind around the circle. This is a topological difference between both phases. While the path described by the trivial phase can be contracted to a single dot, the path described by the non-trivial circle is a circle that cannot be contracted. We can determine whether path of a given phase is of type a) or type b) we only need to check if $\hat{H}_{k=0}$ and $\hat{H}_{k=\pi}$ are the same point $(0,1)$ or the opposite points $(0,1)$ and $(0,-1)$. This transforms into a simple equation 
+This path can take two forms as we can observe in \ref{fig:topological}. If $\frac{\mu}{2t} > 1$ the path is an arc in the upper part of the circle. In the non-trivial phase $\frac{\mu}{2t} < 1$ the path completes a wind around the circle. This is a topological difference between both phases. While the path described by the trivial phase can be contracted to a single dot, the path described by the non-trivial circle cannot be contracted. 
+
+To determine whether the path of a given phase is type a) or type b) we only need to check if $\hat{H}_{k=0}$ and $\hat{H}_{k=\pi}$ are the same point $(0,1)$ or the opposite points $(0,1)$ and $(0,-1)$. This can be expressed into a simple equation 
 \begin{equation}
     \hat{H}_{k=0,y}\hat{H}_{k=\pi,y}=\begin{cases}
 1 & \mbox{trivial phase}\\
 -1 & \mbox{non-trivial phase}
-\end{cases}
+\end{cases},
 \end{equation}
 \noindent where $\hat{H}_{k=0,y}$ is the $y$-th component of $\hat{H}_{k}$. The term $\hat{H}_{k,y}$ is a particular case of the Pfaffian $\mathcal{P}(k)$, which widely used to characterize topological phase transitions involving  Majorana fermions.
 
@@ -216,14 +218,14 @@ This path can take two forms as we can observe in \ref{fig:topological}. If $\fr
 
 In a more general perspective, the main idea behind this topological characterization relies in the adiabatic theorem.  In simple words, the adiabatic theorem says that a slow evolution of a gaped Hamiltonian will produce a smooth evolution of its  eigenstates, so that the order of energies remains unchanged. 
 
-A keyword in the previous definition is "gaped". As we can observe in  \ref{fig:KitaevSpec} the phase transition occurs at $\frac{\mu}{2t}=1$. This point is where  the gap of the Hamiltonian closes. In periodic boundary conditions no Majorana zero modes will emerge since there are no edges in the system. Therefore, the edge states with zero energy for $\frac{\mu}{2t}<1$ will not appear. We obtain that the gapless point $\frac{\mu}{2t}=1$ divides two gapped regimes. According to the adiabatic theorem, these two regions must be separated, hence meaning that no adiabatic evolution could lead from one region to the other since that would involve crossing  through a gapless Hamiltonian. 
+A keyword in the previous definition is ``gaped''. As we can observe in  \ref{fig:KitaevSpec} the phase transition occurs at $\frac{\mu}{2t}=1$. This point is where  the gap of the Hamiltonian closes. In periodic boundary conditions no Majorana zero modes will emerge since there are no edges in the system. Therefore, the edge states with zero energy for $\frac{\mu}{2t}<1$ will not appear. We obtain that the gapless point $\frac{\mu}{2t}=1$ divides two gapped regimes. According to the adiabatic theorem, these two regions must be separated, hence meaning that no adiabatic evolution could lead from one region to the other since that would involve crossing  through a ``gapless'' Hamiltonian. 
 
 
-In conclusion, these gapless Hamiltonians are forbidden in an adiabatic evolution. The banned points can be thought as "holes" in the space of Hamiltonians, which generates spaces with non-trivial topologies. Since adiabatic evolutions can be understood as smooth deformations of the Hamiltonian, the relation with topology becomes clear.  Thus, characterizing the phase transitions in the Kitaev chain, as in similar robust materials,  is mainly a topological problem. This involves computing topological quantities such as Pfaffians, Chern numbers or Winding numbers, which are always integer values. 
+In conclusion, these gapless Hamiltonians are forbidden in an adiabatic evolution. Hence, the banned points can be thought as "holes" in the space of Hamiltonians, which generates spaces with non-trivial topologies. Since adiabatic evolutions can be understood as smooth deformations of the Hamiltonian, the relation with topology becomes clear.  Thus, characterizing the phase transitions in the Kitaev chain, as in similar robust materials,  is mainly a topological problem, whose solution involves computing topological quantities such as Pfaffians, Chern numbers or Winding numbers, which are always integer values. 
 
-All of this, lead us to an interesting question. If we have two connected topological materials, one characterized by the  number $0$ and the other by the number $1$, then what should happen at the boundary between these two discrete parameters?. Indeed some excitations are visible at the boundaries of topological materials. In the IQHE, these excitations are quantized currents passing through the edges of the placket. In the Kitaev chain  these are the Majorana quasi-particles. 
+All of these ideas lead us to an interesting question. If we have two connected topological materials, one characterized by the  number $0$ and the other by the number $1$, then what should happen at the boundary between these two discrete parameters?. Indeed some excitations are visible at the boundaries of topological materials. In the IQHE, these excitations are quantized currents passing through the edges of the placket. In the Kitaev chain  these excitations are the Majorana quasi-particles!. 
 
-Finally,  note that in a system that preserves symmetries, the space of Hamiltonians has more forbidden points. Therefore, these systems have  different topological characterizations according to the protected symmetries \cite{ryu_topological_2010}.  This is the case of the Kitaev chain where the topological phase  protects the parity of the symmetry under perturbations involving the two opposed Majoranas at the edges. This endowed topological stability combined with Majorana's non-abelian statistics (next subsection) makes the Kitaev chain a promising platform for quantum computation. 
+Finally,  note that in a system that preserves certain symmetries, the space of Hamiltonians has more forbidden points. Therefore, these systems have  different topological characterizations according to the protected symmetries \cite{ryu_topological_2010}.  This is the case of the Kitaev chain where the topological phase  protects the parity of the symmetry under perturbations involving the two opposed Majoranas at the edges. This endowed topological stability combined with Majorana's non-abelian statistics (next subsection) makes the Kitaev chain a promising platform for quantum computation. 
 
 
 
@@ -250,7 +252,7 @@ while  $H(0)=H(T)$.
 
 The adiabatic evolution is then represented by a unitary operator  $ U(t) = e^{-\frac{i}{\hbar}\int H(t)} $ and is applied according to Heisenberg's picture as 
 $$\gamma_i(T) = U^\dagger(t)\gamma_iU(t).$$
- \noindent Since Majoranas preserve fermion parity,  $H$ must commute with the parity operator  $P = -i\gamma_{1}\gamma_{2} $. In a Clifford algebra generated by the operators $\gamma_1$ and $\gamma_2$ (See algebraic relations \eqref{MajoranaRel}), $[H,\gamma_{1}\gamma_{2}]=0$ implies that $H(t) \propto \gamma_{1}\gamma_{2}$ or $H(t)$ is a constant. Taking the non-trivial answer we obtain that the  evolution operator has the form $  U(t) = e^{\alpha(t) \gamma_1\gamma_2}$, where $\alpha(t)$ is a complex function over $t$. We can simplify this exponential noting that $\left( \gamma_1\gamma_2 \right)^2 =-1$ which after Taylor expansion reduces to
+ \noindent Since Majoranas preserve fermion parity,  $H$ must commute with the parity operator  $P = -i\gamma_{1}\gamma_{2} $. In a Clifford algebra generated by the operators $\gamma_1$ and $\gamma_2$ (See algebraic relations \eqref{MajoranaRel}), $$[H,\gamma_{1}\gamma_{2}]=0$$ implies that $H(t) \propto \gamma_{1}\gamma_{2}$ or $H(t)$ is a constant. Taking the non-trivial answer we obtain that the  evolution operator has the form $  U(t) = e^{\alpha(t) \gamma_1\gamma_2}$, where $\alpha(t)$ is a complex function over $t$. We can simplify this exponential noting that $\left( \gamma_1\gamma_2 \right)^2 =-1$ which after Taylor expansion reduces to
  \begin{equation}
   U(t) = \cos(\alpha(t))-\gamma_1\gamma_2\sin(\alpha(t)).
  \end{equation}
@@ -289,7 +291,7 @@ Now imagine that we have three Majoranas $\gamma_1, \gamma_2$ and $\gamma_3$ and
 
  The particles that satisfy this strange property receive the name of non-abelian anyons. While the word "anyon" usually integrates several types of particles  including bosons and fermions, the word non-abelian makes emphasis on those anyons with non-commutative exchange statistics. 
 
- Non-abelian statistics is what make anyons a fantastic candidate to implement quantum algorithms. The idea of exchanging anyons can be thought as a braiding code like in \ref{fig:Non-ab}. Since the order of braiding matters, different braiding orders  can be associated to distinct algorithms. This generates another form of codifying information  which has been extendedly studied in knot theory \cite{turaev_book}. And if these anyons where topological, they will be protected from quantum decoherence \cite{nayak_non-abelian_2008}. To the date, the closest candidates to satisfy both properties (non-abelian statistics and topological characterization) are the Majorana fermions. Nonetheless, the basic braiding protocol that would unleash the keys to topological quantum computation \cite{pachos_introduction_2012} has not been measured yet. Many theoretical proposals have been set up in this direction, but there is still a long experimental road. 
+ Non-abelian statistics is what make anyons a fantastic candidate to implement quantum algorithms. The idea of exchanging anyons can be thought as a braiding code like in \ref{fig:Non-ab}. Since the order of braiding matters, different braiding orders  can be associated to distinct algorithms. This generates another form of codifying information  which has been extendedly studied in knot theory \cite{turaev_book}. And if these anyons where topological, they will be protected from quantum decoherence \cite{nayak_non-abelian_2008}. To the date, the closest candidates to satisfy both properties (non-abelian statistics and topological characterization) are the Majorana fermions. Nonetheless, the basic braiding protocol that would unleash the keys to topological quantum computation \cite{pachos_introduction_2012} has not been measured yet. Many theoretical proposals have been set up in this direction, but there is still a long experimental road to it. 
 
 
 
@@ -351,7 +353,7 @@ At these points, Majorana bound states emerge at the edges of the wire.
 
 This theoretical proposal led in 2012 to the first observation of Majorana signatures in InSb nanowires \footnote{A material with strong spin-orbit coupling and large $g$ factor.}, by \citeauthor{mourik_signatures_2012} from the Kavli Institute at Delft. This was a huge boost to the field which immediately attracted abundant experimental and theoretical work. 
 
-In just 6 years, more than 5 groups have documented the observation of Majorana signatures \cite{das_zero-bias_2012,deng_anomalous_2012,nadj-perge_observation_2014,deng_majorana_2016,zhang_quantized_2018}. This signature is characterized by the emergence of a robust zero bias conductance peak ZBCP of height $\frac{2e^2}{\hbar}$ produced by the Majorana zero mode MZM localized at the edges of the wire. Though the first experiments didn't observed such an stable signature, the last year \citeauthor{zhang_quantized_2018} published a paper documenting the observation of this robust peak with the expected theoretical magnitude in and InSb wire \ref{fig:exp}. As can be observed in \ref{fig:exp}(b) the ZBCP increases up to $\frac{2e^2}{\hbar}$ for a strong magnetic field, where the system enters the topological phase according to equation \eqref{eq:topcond}. 
+In just 6 years, more than 5 groups have documented the observation of Majorana signatures \cite{das_zero-bias_2012,deng_anomalous_2012,nadj-perge_observation_2014,deng_majorana_2016,zhang_quantized_2018}. This signature is characterized by the emergence of a robust zero bias conductance peak ZBCP of height $\frac{2e^2}{\hbar}$ produced by the Majorana zero mode MZM localized at the edges of the wire. Though the first experiments didn't observed such an stable signature, the last year \citeauthor{zhang_quantized_2018} published a paper documenting the observation of this robust peak with the expected theoretical magnitude in and InSb wire (See \ref{fig:exp}(a)) . As can be observed in \ref{fig:exp}(b) the ZBCP increases up to $\frac{2e^2}{\hbar}$ for a strong magnetic field, where the system enters the topological phase according to equation \eqref{eq:topcond}. This zero-bias peak maintains an stable magnitude for an small range of parameters generating an small plateau, which became the first observation of a quantized Majorana signature. 
 
 
 
@@ -363,19 +365,19 @@ In just 6 years, more than 5 groups have documented the observation of Majorana 
 \caption{ (a) Experimental setup of InSb wire exhibiting a quantized Majorana signature. (b) Up: Observed magnetic field dependence of the conductivity. Down: Zero-bias conductivity. The ZBCP rises up to the expected value $\frac{2e^2}{h}$  forming a quantized plateau at magnetic fields around $0,5T$  \label{fig:exp}\protect\Source{Adapted from \cite{zhang_quantized_2018}}}
 \end{figure}
 
-Despite the successful experimental results, there is still certain  skepticism about the existence of Majorana fermions, mainly because Majorana zero-modes (MZM) have been found in superposition with similar types of phenomena that produce zero-modes. Some examples of these are the Andreev reflection \cite{sarma_majorana_2012} or even the Kondo peak \cite{gorski_interplay_2018}. New experimental proposals focus on distinguishing MZMs from these effects and implementing  braiding protocols \cite{aasen_milestones_2016,sarma_majorana_2015,heck_coulomb-assisted_2012} . One promising idea that could lead to important results in both research lines is coupling Majorana wires with QDs. This will be the objective of the following section. 
+Despite the successful experimental results, there is still certain  skepticism about the existence of Majorana fermions, mainly because Majorana zero-modes (MZM) have been found in superposition with similar types of phenomena that produce zero-modes. Some examples of these are the Andreev reflection \cite{sarma_majorana_2012} or even the Kondo peak \cite{gorski_interplay_2018}. New experimental proposals focus on distinguishing MZMs from these effects and implementing  braiding protocols \cite{aasen_milestones_2016,sarma_majorana_2015,heck_coulomb-assisted_2012}. One promising idea that could lead to important results in both research lines is coupling Majorana wires with QDs. This is the objective of the following section. 
 
 
-\section{Detecting Majorana zero modes using quantum dots}
+\section{\label{sec:QDM}Detecting Majorana zero modes using quantum dots}
 
 \citeauthor{liu_detecting_2011} were the first to propose in 2011 the possibility of using QDs to detect Majorana zero modes \cite{liu_detecting_2011} . When a QD is attached to the end of a Majorana chain in the topological phase,  the Majorana Zero Mode at the end of the chain leaks inside the QD \cite{vernek_subtle_2014} producing a zero-bias conductance peak of half a quanta $\frac{e^{2}}{2h}$ through the dot. This method of detecting Majorana signatures presents important advantages:
 
 \begin{enumerate}
-  \item \textbf{It does not destroy the entire qubit information:} Other detection methods such as tunneling spectroscopy have the downside that it probes not only the end of the Topological Superconductor(TS), but its bulk as well. This completely destroys the qubit information. When attaching the Majorana chain to a QD it is the conductivity is measured through the QD which does not disturb the bulk of the chain. 
-  \item \textbf{Kondo-Majorana physics:} The observation of Kondo signatures in superconducting devices \cite{lee_zero-bias_2012} and the similarities between Kondo and Majorana signatures \cite{vernek_subtle_2014}  motivated to study the  existence of prospective Kondo-Majorana physics \cite{lee_kondo_2013,gorski_interplay_2018}. 
+  \item \textbf{It does not destroy the entire qubit information:} Other detection methods such as tunneling spectroscopy have the downside that it probes not only the end of the Topological Superconductor(TS), but its bulk as well. This completely destroys the qubit information. When attaching the Majorana chain to a QD, the conductivity is measured through the dot which does not disturb the bulk of the chain. 
+  \item \textbf{Kondo-Majorana physics:} The observation of Kondo signatures in superconducting devices \cite{lee_zero-bias_2012} and the similarities between Kondo and Majorana signatures \cite{vernek_subtle_2014}  motivated  studies of prospective Kondo-Majorana physics \cite{lee_kondo_2013,gorski_interplay_2018}. 
   These two effects could co-exist at temperatures of a few mili-kelvins in quantum impurity systems.
 
-   Quantum dots (QD) are artificial and adaptable quantum impurities, which makes them the best device to perform this kind of study. In particular, a QD-Majorana system was already studied by my advisor in a previous paper \citep{ruiz-tijerina_interaction_2015}., where he proofed that it is possible separate Kondo and Majorana physics by tuning dot's gate voltage or by applying a strong magnetic field. 
+   Quantum dots (QD) are artificial and adaptable quantum impurities, which makes them the best device to perform this kind of study. In particular, a QD-Majorana system was already studied by my advisor in a previous paper \citep{ruiz-tijerina_interaction_2015}, where he proved that it is possible separate Kondo and Majorana physics by tuning dot's gate voltage or by applying a strong magnetic field. 
   \item \textbf{Manipulation of Majorana zero modes:} Today's precise experimental experimental control over QDs makes us dream with the possibility of implementing scalable braiding proposals \ref{fig:braid}(a) and  quantum architectures for topological quantum computation \ref{fig:braid}(b). 
 
     These architectures perform adiabatic evolutions similar to the ones described in  \ref{subsec:non-ab} to braid Majorana fermions. This operation strongly relies on the possibility of manipulating the Majorana zero modes inside the dots. The mean idea of MZM manipulation is to  tune the gate voltage of one dot to induce the Majoranas to "move" into the other dots.  In a prospective braiding protocol, as the one described in  \cite{malciu_braiding_2018} (\ref{fig:braid}(a)), this manipulation process would have to be performed several times. However, till this moment MZM manipulation hasn't been achieved experimentally. 
@@ -388,171 +390,16 @@ Despite the successful experimental results, there is still certain  skepticism 
   \caption{\label{fig:braid} a) Braiding proposal b) Basic architecture with four Majorana Zero Modes in a scalable quantum computer.\protect\Source{Adapted from (a) \cite{malciu_braiding_2018} (b) \cite{karzig_scalable_2017} .}}
 \end{figure}
 
-   Nonetheless, the future for this area is still very promising. Recent experiments have documented the observation of Majorana signatures in Majorana-QD devices \cite{deng_majorana_2016} and Andreev molecules in topological superconductors attached to double quantum dots \cite{su_andreev_2017}. The next steps are clearly directed to achieve Majorana manipulation. 
+   Nonetheless, the future for this area is still very promising. Recent experiments have documented the observation of Majorana signatures in Majorana-QD devices \cite{deng_majorana_2016,deng_nonlocality_2018} and Andreev molecules in topological superconductors attached to double quantum dots \cite{su_andreev_2017}. The next steps are clearly directed to achieve Majorana manipulation. 
 
    \subsection{Why double quantum dots?}
 
-    The simplest case where Majorana manipulation is possible is in a double quantum dot (DQD). Tunneling Majorana modes in these basic structures have inspired theoretical studies \cite{silva_andreev_2016,ivanov_coherent_2017} and experimental setups confirming the observations of Andreev molecules \cite{su_andreev_2017}. Even though quantum tunneling of a MZM into a double dot shows several possibilities for manipulation of MZM,  there is still no complete analysis of the transitions of the Majorana signatures between the QDs in this model.
+    The simplest case where Majorana manipulation is possible is in a double quantum dot (DQD). Tunneling Majorana modes in these basic structures have inspired theoretical studies \cite{silva_andreev_2016,ivanov_coherent_2017,RICCO201625} and experimental setups confirming the observations of Andreev molecules \cite{su_andreev_2017}. Even though quantum tunneling of a MZM into a double dot shows several possibilities for manipulation of MZM,  there is still no complete analysis of the transitions of the Majorana signatures between the QDs in this model.
 
-   In this thesis we fill this gap by performing a transport study of a DQD attached to a MZM and a metallic lead. The simplicity of this model allows us to explore analytically different configurations of QD's from symmetric and linear couplings to T-junctions . We considered both non-interacting and interacting regimes, observing major agreement between both approaches about the location of the Majorana signature. While the non-interacting regime is suitable to obtain exact expressions for the Green function, the interacting case  shows how the Majorana signature co-exists with strongly correlated phenomena such as the Kondo effect  and RKKY interactions \cite{ruderman_indirect_1954,kasuya_theory_1956,yosida_magnetic_1957}. 
-
-
-
-
-  
-
-% \subsection{State-of-the-art and prospective applications}
-
-% The possibility of using QD's in the pursuit of Majorana quasi-particles has attracted considerable attention in the last few years. The observation of Kondo signatures in QD-superconductor heterostructures \cite{deng_anomalous_2012} has motivated the study of Kondo-Majorana co-existance in QDs \cite{ruiz-tijerina_interaction_2015,gorski_interplay_2018} and non-fermi liquid behavior \cite{zitko_quantum_2011}. In addition, the precise experimental experimental control over QDs has opened the possibility of implementing scalable braiding proposals \ref{fig:braid}(a) and  quantum architectures for topological quantum computation \ref{fig:braid}(b). 
-
-% These architectures perform adiabatic evolutions similar to the ones described in  \ref{subsec:non-ab} to braid Majorana fermions. This operation strongly relies on the possibility of manipulating the Majorana zero modes inside the dots. The mean idea of MZM manipulation is to  tune the gate voltage of one dot to induce the Majoranas to "move" into the other dots.  In a prospective braiding protocol, as the one described in  \cite{malciu_braiding_2018} (\ref{fig:braid}(a)), this manipulation process would have to be performed several times. However, till this moment MZM manipulation hasn't been achieved experimentally. 
-
-
-% Nonetheless, the future for this area is still very promising. Recent experiments have documented the observation of Majorana signatures in Majorana-QD devices \cite{deng_majorana_2016} and Andreev molecules in topological superconductors attached to double quantum dots \cite{su_andreev_2017}. The next steps are clearly directed to achieve Majorana manipulation. The simplest device where this process is possible is in a double quantum dot (DQD). This fundamental case is the mean objective of this thesis and will be treated in the following chapter. 
-
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[scale=1]{IMAGES/Majorana/Prospective.png}
-%   \caption{\label{fig:braid} a) Braiding proposal b) Basic architecture with four Majorana Zero Modes in a scalable quantum computer.\protect\Source{Adapted from (a) \cite{malciu_braiding_2018} (b) \cite{karzig_scalable_2017} .}}
-% \end{figure}
+   In this thesis we fill this gap by performing an study of the spectral density in a DQD attached to a MZM and a metallic lead. The simplicity of this model allows us to explore analytically different configurations of QD's from symmetric and linear couplings to T-junctions . We considered both non-interacting and interacting regimes, observing major agreement between both approaches about the location of the Majorana signature. While the non-interacting regime is suitable to obtain exact expressions for the Green function, the interacting case  shows how the Majorana signature co-exists with strongly correlated phenomena such as the Kondo effect  and RKKY interactions \cite{ruderman_indirect_1954,kasuya_theory_1956,yosida_magnetic_1957}. 
 
 
 
-
-%  In \ref{sec:GreenMaj-DQD} we will take a look to the idea of coupling QDs to a Majorana chain. This will be our last step before going into the main objective of this thesis: The manipulation of Majorana zero modes inside a double quantum dot. 
-
-
-
-
-% The detection 
-% These experiments have been based on tunneling spectroscopy in junctions between TS and non metallic (NM) leads, where resonances have been
-% observed at zero energy, consistent with the presence of Majorana zero-energy modes (MZM).
-
-% These ideas motivated the pursuit of Majorana fermions in condensed matter systems \citep{fu_superconducting_2008,sato_non-abelian_2009,alicea_new_2012,beenakker_search_2013}. Indeed, the last decade have been full of excitement, as new experiments have turned some of the theoretical predictions of the 1990s and 2000s into a reality. Very recently the first evidence of Majorana end states
-% in TS has been found in multiple experiments \citep{mourik_signatures_2012,das_zero-bias_2012,deng_anomalous_2012,deng_majorana_2016,zhang_quantized_2018}
-% following the prescription by \citet{oreg_helical_2010} and \citet{lutchyn_majorana_2010}.These experiments have been based on tunneling spectroscopy in junctions between TS and non metallic (NM) leads, where resonances have been
-% observed at zero energy, consistent with the presence of Majorana zero-energy modes. However, this technique has the downside that it probes not only the end of the Topological Superconductor(TS), but its bulk as well ,which completely destroys the qubit information.
-
-%  A less destroying method to detect Majorana fermions consists in attaching a Quantum Dot (QD) to the edges of a Majorana chain in the topological phase and executing transport measurements through the QD  \cite{liu_detecting_2011} . The Majorana zero mode (MZM) at the end of the chain then leaks inside the QD \cite{vernek_subtle_2014} which produces a zero-bias conductance peak (ZBCP) of half a quanta $\frac{e^{2}}{2h}$ through the dot. This is a Majorana signature that can be detected experimentally. Nevertheless, the MZM is similar to the conductance peaks produced by other effects such as the Andreev reflection \cite{sarma_majorana_2012} or the Kondo effect \cite{gorski_interplay_2018} . These effects could be superposed with the Majorana zero mode, or might even replace it. This has  created skepticism about the true existence of Majorana quasi-particles, despite the positive experimental results.The new experimental proposals focus on distinguishing MZMs from other effects.
-
-%  In this project we will focus on its relation with the Kondo effect \citep{hewson_kondo_1997} which produces a $\frac{e^{2}}{h}$-height ZBCP (the double of the Majorana peak). The observation of Kondo signatures in superconducting devices \cite{lee_zero-bias_2012} motivated the study of prospective Kondo-Majorana physics . Since topological superconductors and the Kondo effect can coexist at temperatures of a few mili-kelvins , it is possible observe combined Kondo-Majorana physics in this type of devices. This idea motivated an NRG study of a Quantum dot-Majorana hybrid system in the Kondo regime  \citep{ruiz-tijerina_interaction_2015}. 
-
-
-
-
-% \begin{figure}[t]
-%     \centering
-%     \includegraphics[scale=0.4]{IMAGES/Kondo-MajoranaCond.png}
-%     \caption{\label{Fig-Kondo-Majorana conductance}(a) QD spin-down
-%     density of states. Because this channel couples to the Majorana mode,
-%     it displays the characteristic zero-bias signature of amplitude
-%     $\frac{e^{2}}{2h}$. (b) QD spin-up density of states,
-%     displaying the zero-bias peak of the Kondo effect, with
-%     unit amplitude. (c) Zero-bias conductance of the QD coupled
-%     to the Majorana mode, as a function of the QD energy level ($\lambda$
-%     parameterizes the strength of the Majorana-QD tunnel coupling).
-%     The presence of the spin-up Kondo resonance enhances the
-%     QD conductance in particle-hole symmetry ($V_{g}=0$),
-%     but quickly disappears as the QD level is detuned from this point.
-%     The spin-down Majorana signature, on the other hand, is
-%     robust {[}7{]}, leaving a residual conductance of $\frac{e^{2}}{2h}$.
-%     \protect\Source{\citep{ruiz-tijerina_interaction_2015}}.}
-% \end{figure}
-
-% This study revealed that transport measurements
-% through the quantum dot will show contributions to the enhanced conductance
-% coming from the Kondo effect and the Majorana mode: The Majorana mode
-% at the end of the wire will leak into one of the quantum dot spin channels,
-% giving rise to a zero-mode in the density of states
-% (\ref{Fig-Kondo-Majorana conductance}a)) contributing a conductance
-% of $\frac{e^{2}}{2h}$(\ref{Fig-Kondo-Majorana conductance}c)). The
-% zero\textendash bias peak from the Kondo effect appears in the other
-% spin channel (\ref{Fig-Kondo-Majorana conductance}b)), contributing
-% a conductance of $\frac{e^{2}}{h}$. Then, the Kondo effect can be
-% "turned off" through gate voltages
-% and magnetic fields, leaving only the Majorana contribution. Clear
-% evidence of the destruction of the Kondo peak will appear in the conductance,allowing for a distinction between Majorana and Kondo signatures.
-
-%  Another insight of this method is the the possibility of manipulating  Majorana fermions  in multidot systems, which recently has turned on new lights into the design of braiding protocols \cite{malciu_braiding_2018}
-%  of quantum architectures \cite{plugge_majorana_2017,karzig_scalable_2017,barkeshli_physical_2015}.
-
-%   The simplest case where Majorana manipulation is possible is in a double quantum dot (DQD). Tunneling Majorana modes in these basic structures have inspired theoretical studies \cite{silva_andreev_2016,ivanov_coherent_2017}
-%  and experimental setups confirming the observations of Andreev molecules \cite{su_andreev_2017}. Even though quantum tunneling of a MZM into a double dot shows several possibilities for manipulation of MZM,  there is still no complete analysis of the transitions of the Majorana signatures between the QDs in this model.
-
-%    In this thesis we fill this gap by performing a transport study of a DQD coupled to a MZM and a metallic lead. The simplicity of this model allows us to explore analytically different geometries of QD's from linear couplings to T-junctions . We considered both non-interacting and interacting regimes, observing major agreement between both approaches about the location of the Majorana signature. While the non-interacting regime is suitable to obtain exact expressions for the Green function, the interacting case  shows how the Majorana signature co-exists with strongly correlated phenomena such as the Kondo effect  and RKKY interactions.   \cite{ruderman_indirect_1954,kasuya_theory_1956,yosida_magnetic_1957} 
-%   by shifting the QD gate voltages and tunnel couplings which brings possible applications in  braiding procedures. The simplest system where Majorana manipulation is possible is  a  Double Quantum Dot (DQD) coupled to a majorana chain. By tuning the QD gate voltages and the majorana coupling we will be able to probe the mobility of the majorana modes through the dots.
- 
-
-
-% The promise of using Majorana quasi-particles to implement quantum architectures motivated the pursuit of Majorana fermions during the following years. This motived a huge bunch of theoretical projects devoted to propose real implementations of the Kitaev model \cite{alicea_majorana_2010,alicea_new_2012,beenakker_search_2013,sarma_majorana_2015,plugge_majorana_2017,aasen_milestones_2016}. The first experiment confirming the observation of  Majorana zero modes (MZM) in topological superconductors was performed in 2012 by \citeauthor{mourik_signatures_2012}. Since that moment, many other groups have created Majorana chains \cite{das_zero-bias_2012,deng_anomalous_2012,nadj-perge_observation_2014,deng_majorana_2016,zhang_quantized_2018} These good experimental results inspired other ways to detect Majorana signatures. One of the most famous is the idea of coupling Majorana wires with QD's \cite{liu_detecting_2011}, which opened new lights to the design of quantum architectures with Majorana chains \cite{barkeshli_physical_2015,karzig_scalable_2017}. 
-
-
-
-% \newpage
-
-
-% % https://www.princeton.edu/news/2016/10/04/good-day-great-ideas-princetons-haldane-wins-one-theoretical-physics
-% % https://www.aps.org/publications/apsnews/201611/nobel.cfm
-% % https://www.nobelprize.org/prizes/physics/2016/haldane/biographical/
-
-
-% In 2001 Alexei Yu. Kitaev presented a toy model for implementing topological qubits, an innovative idea that promised to sort out the problem of high decoherence in quantum computation \citep{kitaev_unpaired_2001}. Kitaev's idea was centered in using the properties of an exotic quasi-particle bound at the edges of a superconducting wire. This bound state was characterized as a Majorana fermion, the iconic fermion predicted by Ettore Majorana 
-% to be its own anti-particle \citep{wilczek_majorana_2009}. Kitaev pointed out that Majoranas are non-abelian anyons protected by topological stability \citep{kitaev_fault-tolerant_2003}, two desired properties to implement fault-tolerant quantum computers \cite{pachos_introduction_2012}.
-
-% These ideas motivated the pursuit of Majorana fermions in condensed matter systems \citep{fu_superconducting_2008,sato_non-abelian_2009,alicea_new_2012,beenakker_search_2013}. The last five years have been full of excitement, as new experiments have turned some of the theoretical predictions of the 1990s and 2000s into a reality. Very recently the first evidence of Majorana end states
-% in TS has been found in multiple experiments \citep{mourik_signatures_2012,das_zero-bias_2012,deng_anomalous_2012}
-% following the prescription by \citet{oreg_helical_2010} and \citet{lutchyn_majorana_2010}.These experiments have been based on tunneling spectroscopy in junctions between TS and non metallic (NM) leads, where resonances have been
-% observed at zero energy, consistent with the presence of Majorana zero-energy modes.
-
-% A downside of the tunneling spectroscopy technique in this case, is that it probes not only the end of the Topological Superconductor(TS), but its bulk as well ,
-% which completely destroys the qubit information. A less destroying
-% model presented by \citet{liu_detecting_2011} consists consists in attaching a Quantum Dot (QD) to the edges of a Majorana chain in the topological phase and executing transport measurements through the QD \cite{liu_detecting_2011} . The Majorana zero mode at the end of the chain then leaks inside the QD \cite{vernek_subtle_2014} which produces a zero-bias conductance peak of half a quanta $\frac{e^{2}}{2h}$ through the dot. This is a Majorana signature that can be detected experimentally.
-
-% The Majorana zero mode has some similarities with the $\frac{e^{2}}{h}$zero-bias conductance peak produced by the Kondo effect \citep{hewson_kondo_1997}, one of the main problems of the $20^\text{th}$-century evidence that led to the observation of the first strongly correlated quantum many-body state. Since topological superconductors and the Kondo effect can coexist at temperatures of a few mili-kelvins \cite{lee_zero-bias_2012}, it is possible observe combined Kondo-Majorana physics in this type of devices. This idea motivated an NRG study of a Quantum dot-Majorana hybrid system in the Kondo regime  \citep{ruiz-tijerina_interaction_2015}. 
-
-% \begin{figure}[t]
-%     \centering
-%     \includegraphics[scale=0.4]{IMAGES/Kondo-MajoranaCond.png}
-%     \caption{\label{Fig-Kondo-Majorana conductance}(a) QD spin-down
-%     density of states. Because this channel couples to the Majorana mode,
-%     it displays the characteristic zero-bias signature of amplitude
-%     $\frac{e^{2}}{2h}$. (b) QD spin-up density of states,
-%     displaying the zero-bias peak of the Kondo effect, with
-%     unit amplitude. (c) Zero-bias conductance of the QD coupled
-%     to the Majorana mode, as a function of the QD energy level ($\lambda$
-%     parameterizes the strength of the Majorana-QD tunnel coupling).
-%     The presence of the spin-up Kondo resonance enhances the
-%     QD conductance in particle-hole symmetry ($V_{g}=0$),
-%     but quickly disappears as the QD level is detuned from this point.
-%     The spin-down Majorana signature, on the other hand, is
-%     robust {[}7{]}, leaving a residual conductance of $\frac{e^{2}}{2h}$.
-%     \protect\Source{\citep{ruiz-tijerina_interaction_2015}}.}
-% \end{figure}
-
-% This study revealed that transport measurements
-% through the quantum dot will show contributions to the enhanced conductance
-% coming from the Kondo effect and the Majorana mode: The Majorana mode
-% at the end of the wire will leak into one of the quantum dot spin channels,
-% giving rise to a zero-mode in the density of states
-% (\ref{Fig-Kondo-Majorana conductance}a)) contributing a conductance
-% of $\frac{e^{2}}{2h}$(\ref{Fig-Kondo-Majorana conductance}c)). The
-% zero\textendash bias peak from the Kondo effect appears in the other
-% spin channel (\ref{Fig-Kondo-Majorana conductance}b)), contributing
-% a conductance of $\frac{e^{2}}{h}$. Then, the Kondo effect can be
-% "turned off" through gate voltages
-% and magnetic fields, leaving only the Majorana contribution. Clear
-% evidence of the destruction of the Kondo peak will appear in the conductance,allowing for a distinction between Majorana and Kondo signatures.
-
-%  Another insight of this method is the the possibility of manipulating  Majorana fermions  in multidot systems, which recently has turned on new lights into the design of braiding protocols \cite{malciu_braiding_2018}
-%  of quantum architectures \cite{plugge_majorana_2017,karzig_scalable_2017,barkeshli_physical_2015}.
-
-%   The simplest case where Majorana manipulation is possible is in a double quantum dot (DQD). Tunneling Majorana modes in these basic structures have inspired theoretical studies \cite{silva_andreev_2016,ivanov_coherent_2017}
-%  and experimental setups confirming the observations of Andreev molecules \cite{su_andreev_2017}. Even though quantum tunneling of a MZM into a double dot shows several possibilities for manipulation of MZM,  there is still no complete analysis of the transitions of the Majorana signatures between the QDs in this model.
-
-%    In this thesis we fill this gap by performing a transport study of a DQD coupled to a MZM and a metallic lead. The simplicity of this model allows us to explore analytically different geometries of QD's from linear couplings to T-junctions . We considered both non-interacting and interacting regimes, observing major agreement between both approaches about the location of the Majorana signature. While the non-interacting regime is suitable to obtain exact expressions for the Green function, the interacting case  shows how the Majorana signature co-exists with strongly correlated phenomena such as the Kondo effect  and RKKY interactions.   \cite{ruderman_indirect_1954,kasuya_theory_1956,yosida_magnetic_1957} 
-%   by shifting the QD gate voltages and tunnel couplings which brings possible applications in  braiding procedures. The simplest system where Majorana manipulation is possible is  a  Double Quantum Dot (DQD) coupled to a majorana chain. By tuning the QD gate voltages and the majorana coupling we will be able to probe the mobility of the majorana modes through the dots.
- 
-% In addition, when both dots are coupled to the lead the Double Quantum Dot exhibits an anti-ferromagnetic interaction known as  Ruderman-Kittel-Kasuya-Yosida (RKKY) \cite{ruderman_indirect_1954,kasuya_theory_1956,yosida_magnetic_1957}. On the other hand, when only one dot is coupled  and the second Dot is indirectly attached through the first dot,  the Kondo effect is annihilated due to the destructive interference  generated by extra dot \cite{dias_da_silva_transmission_2008}. Both cases reveal interesting results for majorana manipulation and hybrid Kondo-Majorana systems.
 
 
 \section{Overview}

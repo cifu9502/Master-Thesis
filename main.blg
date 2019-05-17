@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Intro.aux
 A level-1 auxiliary file: Preliminars.aux
@@ -47,14 +47,15 @@ Repeated entry---line 582 of file Kitaev-Majorana.bib
  :                               ,
 I'm skipping whatever remains of this entry
 Database file #3: Kondo.bib
-Repeated entry---line 224 of file Kondo.bib
+Repeated entry---line 249 of file Kondo.bib
  : @article{goldhaber-gordon_kondo_1998
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 243 of file Kondo.bib
+Repeated entry---line 268 of file Kondo.bib
  : @article{dias_da_silva_transmission_2008
  :                                         ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "kitaev_fault-tolerant_2001"
 Warning--empty journal in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
 Warning--empty year in liu_detecting_2011
@@ -70,45 +71,45 @@ Warning--empty year in vernek_subtle_2014
 Warning--empty journal in lee_kondo_2013
 Warning--empty year in lee_kondo_2013
 Warning--empty year in lee_kondo_2013
-You've used 57 entries,
+You've used 61 entries,
             2481 wiz_defined-function locations,
-            1030 strings with 19464 characters,
-and the built_in function-call counts, 25315 in all, are:
-= -- 2196
-> -- 1439
-< -- 24
-+ -- 548
-- -- 434
-* -- 2392
-:= -- 4250
-add.period$ -- 304
-call.type$ -- 57
-change.case$ -- 113
-chr.to.int$ -- 57
-cite$ -- 72
-duplicate$ -- 1086
-empty$ -- 2072
-format.name$ -- 501
-if$ -- 5213
+            1066 strings with 20708 characters,
+and the built_in function-call counts, 27211 in all, are:
+= -- 2361
+> -- 1551
+< -- 25
++ -- 590
+- -- 468
+* -- 2570
+:= -- 4572
+add.period$ -- 327
+call.type$ -- 61
+change.case$ -- 121
+chr.to.int$ -- 61
+cite$ -- 76
+duplicate$ -- 1162
+empty$ -- 2225
+format.name$ -- 539
+if$ -- 5609
 int.to.chr$ -- 1
-int.to.str$ -- 58
-missing$ -- 59
-newline$ -- 426
-num.names$ -- 171
-pop$ -- 314
+int.to.str$ -- 62
+missing$ -- 63
+newline$ -- 457
+num.names$ -- 183
+pop$ -- 331
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 61
 quote$ -- 0
-skip$ -- 558
+skip$ -- 598
 stack$ -- 0
-substring$ -- 1150
-swap$ -- 166
+substring$ -- 1251
+swap$ -- 175
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 387
+type$ -- 415
 warning$ -- 15
-while$ -- 186
+while$ -- 198
 width$ -- 0
-write$ -- 1006
+write$ -- 1080
 (There were 11 error messages)

@@ -230,6 +230,7 @@ urlcolor=black
 \glsxtrnewsymbol[description={Zero-bias conductance peak}]{ZBCP}{ZBCP}
 \glsxtrnewsymbol[description={Numerical renormalization group}]{NRG}{NRG}
 \glsxtrnewsymbol[description={Equations of motion}]{EOM}{EOM}
+\glsxtrnewsymbol[description={Topological Superconductor}]{TS}{TS}
 % \glsxtrnewsymbol[description={}]{F}{\ensuremath{F}}
 
 
@@ -253,49 +254,59 @@ urlcolor=black
 % --------------------------------BEGIN DOCUMENT-----------------------------------------------------------------------
 
 \begin{document}
-
-\mainmatter
-\maketitle
-\pagenumbering{roman}
-\begin{dedication}
-\textit{}
-\end{dedication}
-% \newpage
-\pagenumbering{roman}
-\setcounter{page}{1}
 \includepdf[page={1,2}]{Portada_port.pdf}
 \includepdf[page={1,2}]{portada.pdf}
 
 
+\mainmatter
+% \maketitle
+% \pagenumbering{roman}
+% \begin{dedication}
+% \textit{}
+% \end{dedication}
+% \newpage
+
+
 
 \begin{dedication}
+
+
 \textit{ { \Large To my  family} \\ 
 }
 \vspace{2em}
-\textit{{ \Large To a little cheek}}
+\textit{{ \Large To that little cheek}}
 \end{dedication}
 
 % \begin{dedication}
 % \textit{}
 % \end{dedication}
 
-\begin{dedication}
-\justifying
-{\large \textit{"I believe that  beginning research is quiet similar to that magical situation when babies learn how to talk. Initially they are just there, listening conversations. They seem disoriented with the vocabulary, but they are paying attention and they are catching sounds. Soon enough, before you even notice, their own words start to flow."}\\ Memories from my first research meeting with Professors Andr\'es Reyes and A.P. Balachandran. Hear me talk.}
-
-\end{dedication}
+% \pagenumbering{gobble}
 
 \chapter*{Acknowledgments}
 
-This piece summarizes the main aspects of my work during these two lovely years in Brazil. I must acknowledge that coming to this country has been a wonderful and enriching experience. I was gladly surprised by how large is the condensed matter community in the country. I took advantage of this aspect to participate  to participate in several conferences, present my advances, and increase my knowledge on quantum mechanics. In my way, I met up to three Nobel prizes, including Duncan Haldane, whose work inspired me to study topological materials.
+This piece summarizes the main aspects of my work during these two lovely years in Brazil. This has been a wonderful  that will always remain in my mind. While working in this thesis, I not only learned about physics, condensed matter and quantum computing, but I also acquired experience in independent research , which allowed me to improve my coding, writing, oral and drawing skills. This manuscript, our upcoming paper on "Majorana manipulation in double quantum dots" and the thesis presentation performed on May 8,2019, are the final outcomes of this enriching experience. 
 
- Apart from the academic life, I also learned Portuguese and got the chance to get immersed in depth into the amazing Brazilian culture, I loved their music (specially forr\'o) and meet amazing people.  Today, I look backwards and I get marveled by all the amazing things that happened in these years and those who allowed those things to be possible. 
-  Therefore, in this brief statement, I want to thank all the wonderful people that received me here in Brazil:  My thesis advisor Prof. Luis Gregorio, who  suggested to me this project, helped enter into the USP and has guided me ever since with patience and care. I thank my previous advisors, Andres and Cesar, and all my previous professors in Colombia who prepared for this life of research. I thank to my friends and my room partners, all of them have contributed to make this stage of my life an amazing adventure. And finally, but also very important, I would like to thank to my family and to that little cheek. Even from far away I have always felt their support, which endeavored me to pursue for this goal.
+Furthermore, I was gladly surprised by the large condensed matter community in Brazil, which allowed me to participate in several conferences, present my advances, and increase my background. In my way, I met up to three Nobel prizes, including Duncan Haldane, whose work inspired me to study topological materials. Apart from the academic life, I also learned Portuguese and got the chance to get immersed in depth into the amazing Brazilian culture, I loved their music (specially forr\'o) and meet amazing people.  Today, I look backwards and I get marveled by all the amazing things that happened in these years and those who allowed everything to be possible. 
+
+  Therefore, in this brief statement, I want to thank all the wonderful people that received me here in Brazil:  My thesis advisor Prof. Luis Gregorio, who  suggested to me this project, helped me enter into the USP and guided me ever since with patience and care. I thank my previous advisors, Andres and Cesar, and all my former professors in Brazil and Colombia who prepared for this life of research. I thank to my friends and my room partners, all of them have contributed to make this stage of my life an amazing adventure. And finally, but also very important, I would like to thank  my family and  that little cheek. Even from far away I have always felt their support, which endeavored me to complete this goal.
 
 
- I also acknowledge the financial support by CNPq (grants No. 307107/2013-2 and 449148/2014-9), and FAPESP (grant No. 2016/18495-4), which allowed us to present partial and complete results of this project in workshops and conferences. 
+ I also acknowledge the financial support by: 1)  Grants No. $307107/2013-2$ and $449148/2014$ $-9$, Conselho Nacional de Desenvolvimento Cient\'ifico e Tecnol\'ogico (CNPq). 2) Grant No. $2016/18495-4$, Funda\c{c}\~ao de Amparo \`a Pesquisa do Estado de S\~ao Paulo (FAPESP). The Institute of Physics (IFUSP). These grants allowed us to develop and present partial and complete results of this project in workshops and conferences. Without this support nothing of this would have ever been possible. Thank you all. 
 
- 
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+
+
+ \begin{dedication}
+\justifying
+
+
+{\large \textit{"I believe that beginning research is quite similar to that magical situation when babies learn how to talk. Initially, they are just there, listening to conversations. They seem disoriented with the vocabulary, but they are paying attention and they are catching sounds. Soon enough, before you even notice, their own words start to flow."}\\  Memories from my first research meeting with Professors Andr\'es Reyes and A.P. Balachandran. Hear me talk.}
+
+\end{dedication}
 
 \begin{abstract}
 
@@ -305,7 +316,10 @@ Majorana zero modes (MZMs) emerging at the edges of topological superconducting 
 
 The simplest case where Majorana manipulation is possible is in a double quantum dot (DQD). This system offers several possibilities for manipulation of MZMs, including different geometric configurations of the dots, from symmetric and  linear couplings to T-dot junctions. In this project, we perform a theoretical study  of the transitions of the Majorana signature in these geometries in non-interacting and interacting regimes. By tuning the dot's gate voltages, we will show that it is possible to control the localization of the MZM inside both dots.  We will also explore the interplay of these signatures with the Kondo effect, which emerges in non-interacting dots in superposition with the MZM.   
 
-We adopt two methods in this project: 1) The Green equations of motion (EOM) allow us to obtain exact expressions for the density of states in coulomb-non-interacting systems. We present the Graph -Gauss-Jordan elimination process as a simple-graphical method to solve the emergent linear systems in the EOM. 2) We use Wilson's numerical renormalization group (NRG) in interacting systems, to study the combined Kondo-Majorana physics. We will test these methods, first in a double quantum dot (DQD) (\ref{chap: Methods}) and then in a QD-Majorana model (\ref{sec:QD-Majorana}), where we confirm the results of previous papers  \cite{dias_da_silva_transmission_2008,liu_detecting_2011,ruiz-tijerina_interaction_2015}.  Finally, we include the main contribution of this thesis, the study of a DQD coupled to a Majorana chain (\ref{chap:Results}). 
+We adopt two methods in this project: 1) The Green equations of motion (EOM) allow us to obtain exact expressions for the density of states in coulomb-non-interacting systems. We present the Graph -Gauss-Jordan elimination process as a simple-graphical method to solve the emergent linear systems in the EOM. 2) We use Wilson's numerical renormalization group (NRG) in interacting systems, to study the combined Kondo-Majorana physics. We will test these methods, first in a double quantum dot (DQD) (\ref{chap: Methods}) and then in a QD-Majorana model (\ref{sec:QD-Majorana}), where we confirm the results of previous papers  \cite{dias_da_silva_transmission_2008,liu_detecting_2011,ruiz-tijerina_interaction_2015}.  Finally, we include the main contribution of this thesis, the study of a DQD coupled to a Majorana chain (\ref{chap:Results}). \\
+
+\vspace*{1cm}
+\textbf{Keywords:}  Double quantum dot; Majorana; Manipulation; Kondo; Spectral density.
 
 
 % , following theoretical advances from a publication by the advisor of this dissertation and collaborators \cite{ruiz-tijerina_interaction_2015}
@@ -337,6 +351,8 @@ O caso mais simples em que se \'e poss\'ivel manipular tais quasi-part\'iculas \
 
 Principalmente, vamos a usar dois m\'etodos neste projecto: 1) Usamos as equa\c{c}\~oes de movimento no formalismo de fun\c{c}\~oes de Green para  obter express\~oes exatas para a densidade de estados em sistemas n\~ao interagentes.  Vamos apresentar o m\'etodo the elimina\c{c}\~ao de Gauss-Jordan com grafos, o qual permite resolver rapidamente o sistema linear emergente nas equa\c{c}\~oes de movimento. 2) Em sistemas Coulomb interagentes usamos NRG, no qual poderemos observar a intera\c{c}\~ao entre o Majorana e o efeito Kondo. Vamos testar ambos os m\'etodos nos modelos de um double quantum dot e um QD acoplado com uma cadeia de Majorana, com o qual vamos reproduzir os resultados presentes na literatura. Finalmente, inclu\'imos a maior contribui\c{c}\~ao deste trabalho, o estudo de um DQD acoplado a uma cadeia de Majorana. 
 
+\vspace*{1cm}
+\textbf{Palavras chaves:}  Ponto qu\^antico duplo; Majorana; Manipula\c{c}\~ao; Kondo; Densidade espectral.
 
 
 % \inputencoding{latin9}
@@ -376,12 +392,12 @@ In this work, we developed two methods to study the system of a  double quantum 
 Moreover,  we introduced the Graph-Gauss-Jordan algorithm (\ref{sec:GraphMethod}) as a simple, didactic, analytical and graphical method to solve the equations of motion. This method allowed us to obtain exact expressions for the non-interacting Green functions at several stages of the project. In particular, in the double quantum dot - Majorana model it proved to be extremely useful to simplify the complexity of the solution given by a fractional polynomial of $9^\text{th}$-degree in up to 7 variables. Furthermore, with this expression we were able to predict interesting parameters for simulation in the interacting regime. We hope for its extended use in condensed matter physics.
 
 
-In \ref{chap:Results} we used the methods from chapter \ref{chap: Methods} to study the transitions of the Majorana zero modes  inside a double quantum dot. Comparing the exact analytical solution in the non-interacting system and the NRG results for interacting quantum dots, we were able to characterized the displacements of the MZM inside the double quantum dot for the three setups in \ref{fig:MajoranaModels}, representing a symmetric coupling, a T-dot junction and a linear coupling of the dots. All of these manipulations are summarized in \ref{fig:ResultModels} . We observe a considerable agreement regarding the location of the Majorana signature between the interacting and non-interacting results with minor differences: 
+In \ref{chap:Results}. we used the methods from  \ref{chap: Methods} to study the transitions of the Majorana zero modes  inside a double quantum dot. Comparing the exact analytical solution in the non-interacting system and the NRG results for interacting quantum dots, we were able to characterized the displacements of the MZM inside the double quantum dot for the three setups in \ref{fig:MajoranaModels}, representing a symmetric coupling, a T-dot junction and a linear coupling of the dots. All of these manipulations are summarized in \ref{fig:ResultModels} . We observe a considerable agreement regarding the location of the Majorana signature between the interacting and non-interacting results with minor differences: 
 
 \begin{itemize}
-    \item Symmetric coupling \ref{fig:ResultModels} C.I : The MZM leaks inside both dots. For interacting dots, the Majorana signature will emerge near the Kondo temperature.   At this regime the system presents combined Kondo-Majorana physics . Additional satellite peaks produced by the indirect exchange through the lead and the MZM appear at low energies. If the gate voltage of one dot is turned on the MZM is induced to tunnel only into the other dot, which is the key to MZM manipulation. 
-    \item T-dot coupling \ref{fig:ResultModels} C.II: The the spin-$\up$ zero mode at QD1 (The Kondo peak if the system is interacting) is destroyed by quantum interference with the second dot. This interference will also destroy the MZM in the first dot but a type I Majorana signature will still appear in the second dot. The Majorana mode can be induced to tunnel back into the first dot if a gate voltage is applied on the second dot. This signature is visible at very low energies (bellow $0.1\Gamma_1$) in the interacting case. 
-    \item Dots coupled in series \ref{fig:ResultModels} C.III : An indirect type II Majorana signature is observed in the first dot. This signature is robust, specially in the interacting case, where it is present in all configurations, despite gate voltage tunning. Fano resonances emerge in the second dot. One of them seems to have critical behavior. 
+    \item Symmetric coupling (\ref{fig:ResultModels} C.I) : The MZM leaks inside both dots. For interacting dots, the Majorana signature will emerge near the Kondo temperature.   At this regime the system presents combined Kondo-Majorana physics . Additional satellite peaks  produced by the indirect exchange through the lead and the MZM appear at low energies. If the gate voltage of one dot is turned on, the MZM is induced to tunnel only into the other dot, which is the key to MZM manipulation. 
+    \item T-dot coupling (\ref{fig:ResultModels} C.II): The the spin-$\up$ zero mode at QD1 (The Kondo peak if the system is interacting) is destroyed by quantum interference with the second dot. This interference will also destroy the MZM in the first dot but a type I Majorana signature will still appear in the second dot. The Majorana mode can be induced to tunnel back into the first dot if a gate voltage is applied on the second dot. This signature is visible at very low energies (bellow $0.1\Gamma_1$) in the interacting case. 
+    \item In-series coupling (\ref{fig:ResultModels} C.III) : An indirect type II Majorana signature is observed in the first dot. This signature is robust, specially in the interacting case, where it is present in all configurations, despite gate voltage tunning. Fano resonances emerge in the second dot. One of these signatures seems to have critical behavior. 
 
 \end{itemize}
 

@@ -35,7 +35,7 @@ The Hamiltonian for Majorana-QD-lead hybrid system (See \ref{fig:ModelM-QD}) is 
 \end{equation}
 Where $H_{QD-Lead}$ is the Hamiltonian for the non-interacting Anderson model \eqref{eq:Anderson}, $H_M$ is the Hamiltonian of the Majorana chain and $H_{M-QD}$ represents the coupling between the QD and the Majorana Fermion at the boundary.
 
-Now, the real question is how to define the coupling between the QD and the MBS. In fact, there are many ways to represent this interaction. One alternative is to replace in $H_{M}$ with the entire Kitaev chain Hamiltonian \eqref{eq:kitaevHam} (or  even with the  Majorana chain \eqref{eq:MajoranaChainHam}) and then pick $H_{M-QD}$ as the coupling between the QD and the first site of the chain \cite{vernek_subtle_2014}.  A simpler approach is  to define an effective coupling with the Majorana operator at the edge of the Majorana chain. Since the Kitaev chain is spin-less, we choose to couple the Majorana to the spin-$\dw$ channel of the QD \footnote{An appropriate justification of this fact can be found in \cite{ruiz-tijerina_interaction_2015}} . Therefore, the Majorana fermion should be the superposition of the creation and annihilation operators of a spin $\dw$ particle $f_\dw$:
+Now, the real question is how to define the coupling between the QD and the MBS. In fact, there are many ways to represent this interaction. One alternative is to replace in $H_{M}$ with the entire Kitaev chain Hamiltonian \eqref{eq:kitaevHam} (or  even with the  Majorana chain \eqref{eq:MajoranaChainHam}) and then pick $H_{M-QD}$ as the coupling between the QD and the first site of the chain \cite{vernek_subtle_2014}.  A simpler approach is  to define an effective coupling with the Majorana operator at the edge of the Majorana chain. Since the Kitaev chain is spin-less, we can choose to couple the Majorana to the spin-$\dw$ channel of the QD. It has been debated in previous papers that the magnetic fields applied to these type of systems -Usually surrounding $500mT$- are not big enough to disturb our choice of matching the spin-$\dw$ coordinate with the channel coupled to the spin-less MZM \cite{ruiz-tijerina_interaction_2015}. Therefore, the Majorana fermion should be the superposition of the creation and annihilation operators of a spin $\dw$ particle $f_\dw$:
 
 \begin{equation}
 \gamma_1 := \frac{1}{\sqrt{2}} \left( f^\dagger_{\dw} + f_{\dw}\ \right) , \gamma_2 := \frac{1}{\sqrt{2}} \left( f^\dagger_{\dw} - f_{\dw} \right).
@@ -215,115 +215,5 @@ In interacting quantum dots the Kondo effect is visible at low temperatures even
 
 Another possibility to distinguish Kondo and Majorana physics is quenching the Kondo effect with a strong magnetic field . Similar to what was observed in \ref{fig:Luis}, the Kondo peak will be destroyed while the Majorana signature remains stable \cite{ruiz-tijerina_interaction_2015}. 
 
-In the next chapter we will use the ideas from this chapter to study the model of a DQD attached to a Majorana zero mode.
+In the next chapter we will use the ideas from this chapter  to study the model of a DQD attached to a Majorana zero mode.
 
-
-
-% \subsection{State-of-the-art and prospective applications}
-
-% The possibility of using QD's in the pursuit of Majorana quasi-particles has attracted considerable attention in the last few years. The observation of Kondo signatures in QD-superconductor heterostructures \cite{deng_anomalous_2012} has motivated the study of Kondo-Majorana co-existance in QDs \cite{ruiz-tijerina_interaction_2015,gorski_interplay_2018} and non-fermi liquid behavior \cite{zitko_quantum_2011}. In addition, the precise experimental experimental control over QDs has opened the possibility of implementing scalable braiding proposals \ref{fig:braid}(a) and  quantum architectures for topological quantum computation \ref{fig:braid}(b). 
-
-% These architectures perform adiabatic evolutions similar to the ones described in  \ref{subsec:non-ab} to braid Majorana fermions. This operation strongly relies on the possibility of manipulating the Majorana zero modes inside the dots. The mean idea of MZM manipulation is to  tune the gate voltage of one dot to induce the Majoranas to "move" into the other dots.  In a prospective braiding protocol, as the one described in  \cite{malciu_braiding_2018} (\ref{fig:braid}(a)), this manipulation process would have to be performed several times. However, till this moment MZM manipulation hasn't been achieved experimentally. 
-
-
-% Notwithstanding, the future for this area is still very promising. Recent experiments have documented the observation of Majorana signatures in Majorana-QD devices \cite{deng_majorana_2016} and Andreev molecules in topological superconductors attached to double quantum dots \cite{su_andreev_2017}. The next steps are clearly directed to achieve Majorana manipulation. The simplest device where this process is possible is in a double quantum dot (DQD). This fundamental case is the mean objective of this thesis and will be treated in the following chapter. 
-
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[scale=1]{IMAGES/Majorana/Prospective.png}
-%   \caption{\label{fig:braid} a) Braiding proposal b) Basic architecture with four Majorana Zero Modes in a scalable quantum computer.\protect\Source{Adapted from (a) \cite{malciu_braiding_2018} (b) \cite{karzig_scalable_2017} .}}
-% \end{figure}
-
-
-
-
-% \begin{eqnarray*}
-% H_{TS} & = & 2\epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}-\epsilon_{m}\\
-% H_{int} & = & \sum_{i}\tilde{t_{i-}}d_{i\downarrow}^{\dagger}f_{\downarrow}+\tilde{t_{i-}}^{*}f_{\downarrow}^{\dagger}d_{i\downarrow}+\tilde{t_{i+}}d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\tilde{t_{i+}}^{*}f_{\downarrow}d_{i\downarrow}
-% \end{eqnarray*}
-
-% with $\tilde{t}_{i\pm}=\frac{1}{\sqrt{2}}\left(\left|t_{i1}\right|-i\left|t_{i1}\right|e^{i\phi_{i}}\right).$
-
-
-
-% so that 
-
-% \[
-% \gamma_{1}=\frac{1}{\sqrt{2}}\left(f_{\downarrow}^{\dagger}+f_{\downarrow}\right)\ ,\gamma_{2}=\frac{1}{i\sqrt{2}}\left(f_{\downarrow}^{\dagger}-f_{\downarrow}\right).
-% \]
-
-
-% \begin{eqnarray}
-% H_{TS} & = & 2\epsilon_{m}\gamma_{1}\gamma_{2}\nonumber \\
-% H_{int} & = & \sum_{i}t_{i1}\left(d_{i\downarrow}^{\dagger}\gamma_{1}+\gamma_{1}d_{i\downarrow}\right)+it_{i2}\left(d_{i\downarrow}^{\dagger}\gamma_{2}+\gamma_{2}d_{i\downarrow}\right),\label{eq:Majorana-ham}
-% \end{eqnarray}
-
-
-% where $\gamma_{1,2}$are the two Majorana operators and$t_{i1,2}$
-% are the hopping terms between the Majoranas and the QDs.
-
-
-
-
-% A Majorana chain coupled to a QD can be studied using the methods described in chapter \ref{chap: Methods}
-
-
-
-
-
-
-% % where $H_{d_{i}}$is the QD hamiltonian for dot $i$ \prettyref{eq:DotHam}
-% % ,$t$ is the hopping term between both dots, $H_{int}$is the dot-TS
-% % interaction and $H_{TS}$ is the TS-hamiltonian . In \citep{vernek_subtle_2014},
-% % the TS is modeled as a Kitaev chain \citep{kitaev_unpaired_2001}
-% % and $H_{int}$ is the hopping interaction between dots and chain 
-
-% \begin{eqnarray}
-% H_{TS} & = & -\sum_{j=1}^{N}\mu a_{j}^{\dagger}a_{j}+\sum_{j=1}^{N-1}\left[-t'(a_{j}^{\dagger}a_{i+1}+a_{j+1}^{\dagger}a_{j})+\Delta a_{j}a_{j+1}+\Delta^{*}a_{j+1}^{\dagger}a_{j}^{\dagger}\right]\nonumber \\
-% H_{int} & = & \sum t_{i}d_{i\downarrow}^{\dagger}a_{1}+t_{i}^{*}a_{1}^{\dagger}d_{i\downarrow},\label{eq:Kitaev-dot}
-% \end{eqnarray}
-
-
-% where $a_{j}^{\dagger}$is the creation operator at site $j$ of the
-% chain, $t'$ is the hopping term between consecutive sites, $\Delta$
-% is the superconducting gap and $t_{i}$ is the hopping interaction
-% between the dot $i$ and the first site of the chain. We also assume
-% the dot only interact with spin-down $\downarrow$ operators in the
-% chain. \\
-
-% Using a Green's function approach on \prettyref{eq:Kitaev-dot} ,
-% \citet{vernek_subtle_2014} concludes that the Majorana mode at the
-% end of the chain leaks inside the QD when the TS is in the topological
-% phase . This fact favors a more simple effective model that has been
-% used in literature for simulation QD-TS interactions \citep{liu_detecting_2011,golub_kondo_2011,lee_kondo_2013}.
-% The model consists in considering only the coupling between the dots
-% and the Majorana modes that emerge in the topological phase. The resulting
-% hamiltonian is 
-
-
-
-% \[
-% f_{\downarrow}^{\dagger}=\frac{1}{\sqrt{2}}\left(\gamma_{1}-i\gamma_{2}\right)\ ,\ f_{\downarrow}=\frac{1}{\sqrt{2}}\left(\gamma_{1}+i\gamma_{2}\right)
-% \]
-
-
-% so that 
-
-% \[
-% \gamma_{1}=\frac{1}{\sqrt{2}}\left(f_{\downarrow}^{\dagger}+f_{\downarrow}\right)\ ,\gamma_{2}=\frac{1}{i\sqrt{2}}\left(f_{\downarrow}^{\dagger}-f_{\downarrow}\right).
-% \]
-
-
-% Supposing $t_{i1}=\left|t_{i1}\right|$ and $t_{i2}=\left|t_{i2}\right|e^{i\phi_{i}}$
-% to have a $\phi_{i}$-phase with respect to $t_{i1}$, we get to the
-% following hamiltonian 
-
-
-
-% \begin{eqnarray}
-% H_{TS-2QDs} & = & H_{d_{i}}+\sum_{\sigma}\left(td_{1\sigma}^{\dagger}d_{2\sigma}+t^{*}d_{1\sigma}^{\dagger}d_{2\sigma}\right)\nonumber \\
-%  &  & \ \enskip\ \enskip+\sum_{i}\left[\tilde{t_{i-}}d_{i\downarrow}^{\dagger}f_{\downarrow}+\tilde{t_{i-}}^{*}f_{\downarrow}^{\dagger}d_{i\downarrow}+\tilde{t_{i+}}d_{i\downarrow}^{\dagger}f_{\downarrow}^{\dagger}+\tilde{t_{i+}}^{*}f_{\downarrow}d_{i\downarrow}\right]+2\epsilon_{m}f_{\downarrow}^{\dagger}f_{\downarrow}-\epsilon_{m}.\label{eqFinalMJ-2QDs}
-% \end{eqnarray}
-
-
-% \bibliography{Majorana-QD,Kitaev-Majorana,Kondo}
